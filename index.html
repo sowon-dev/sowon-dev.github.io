@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.0"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>야망찬 개발자의 블로그</title><meta property="og:type" content="blog"><meta property="og:title" content="야망찬 개발자의 블로그"><meta property="og:url" content="https://github.com/sowon-dev"><meta property="og:site_name" content="야망찬 개발자의 블로그"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://github.com/img/og_image.png"><meta property="article:author" content="Sowon"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://github.com/sowon-dev"},"headline":"야망찬 개발자의 블로그","image":["https://github.com/img/og_image.png"],"author":{"@type":"Person","name":"Sowon"},"description":""}</script><link rel="icon" href="/img/star.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-08T00:00:00.000Z" title="2020-06-08T00:00:00.000Z">2020-06-08</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">14 minutes read (About 2161 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/08/200608dbi/">ITWILL : 제약조건의 컬럼레벨과 테이블레벨문법, 제약조건 5가지, varchar와 char 비교</a></h1><div class="content"><h3 id="ITWILL학원-2강-Database-BY-정지윤강사"><a href="#ITWILL학원-2강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 2강 Database BY 정지윤강사"></a>ITWILL학원 : 2강 Database BY 정지윤강사</h3><h2 id="1-제약조건명-생성시-문법-2가지"><a href="#1-제약조건명-생성시-문법-2가지" class="headerlink" title="1. 제약조건명 생성시 문법 2가지"></a>1. 제약조건명 생성시 문법 2가지</h2><p>제약조건명 생성시 oracle에서 권장하는 이름작성 방법이 두가지(컬럼레벨문법과 테이블레벨문법)가 있다.</p>
+<html lang="en"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.0"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>야망찬 개발자의 블로그</title><meta property="og:type" content="blog"><meta property="og:title" content="야망찬 개발자의 블로그"><meta property="og:url" content="https://github.com/sowon-dev"><meta property="og:site_name" content="야망찬 개발자의 블로그"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://github.com/img/og_image.png"><meta property="article:author" content="Sowon"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://github.com/sowon-dev"},"headline":"야망찬 개발자의 블로그","image":["https://github.com/img/og_image.png"],"author":{"@type":"Person","name":"Sowon"},"description":""}</script><link rel="icon" href="/img/star.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-08T00:00:00.000Z" title="2020-06-08T00:00:00.000Z">2020-06-08</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">15 minutes read (About 2281 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/08/200608dbi/">ITWILL : 제약조건의 컬럼레벨과 테이블레벨문법, 제약조건 5가지, varchar와 char 비교</a></h1><div class="content"><h3 id="ITWILL학원-2강-Database-BY-정지윤강사"><a href="#ITWILL학원-2강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 2강 Database BY 정지윤강사"></a>ITWILL학원 : 2강 Database BY 정지윤강사</h3><h2 id="1-제약조건명-생성시-문법-2가지"><a href="#1-제약조건명-생성시-문법-2가지" class="headerlink" title="1. 제약조건명 생성시 문법 2가지"></a>1. 제약조건명 생성시 문법 2가지</h2><p>제약조건명 생성시 oracle에서 권장하는 이름작성 방법이 두가지(컬럼레벨문법과 테이블레벨문법)가 있다.</p>
 <ol>
 <li>Column-level 문법<br>컬럼레벨의 문법이다.<br>Not Null 제약조건사용시 column-level문법으로 작성해야한다! 나머지는 둘 중 하나만 쓰면 된다</li>
 </ol>
@@ -105,30 +105,38 @@
 <img src="img/200608dbi3.PNG">
 
 <ol>
-<li>select 명령어를 통해 제약조건_이름과 제약조건_타입, C가 not null인지 checnk조건인지 서치, 래퍼런스가있으면 그이름 가져오기</li>
-</ol>
-<img src="img/200608dbi4.PNG">
-
-<ol start="2">
+<li><p>select 명령어를 통해 제약조건_이름과 제약조건_타입, C가 not null인지 checnk조건인지 서치, 래퍼런스가있으면 그이름 가져오기</p>
+</li>
 <li><p>from user_constraints 은 DB사전안에 제약조건을 확인할 수 있는 곳이다</p>
 </li>
 <li><p>where table_name = 테이블명을 적어줘야하는데 아무명이나 들어갈 수 있도록 <code>&amp;tablename</code>으로 설정한다 -&gt; 추후 sql쿼리문을 저장하기 위해서</p>
 </li>
 <li><p>테이블명을 항상 <strong>대문자</strong>로 적어야한다</p>
 </li>
-<li><p>원하는 부분이 크기가 이상해서 보기 좋게 출력되지 않았다.</p>
+<li><p>데이터가 출력되었으나 보기 좋게 출력되지 않았다. 데이터를 가독성있게 작성해보자</p>
+</li>
+<li><p>not null과 check는 둘다 C라고 뜬다 따라서 search를 꼭 입력해줘야 그 뒤의 결과값으로 두가지가 구분 가능하다.search_condition으로 C가 not null조건인지 check조건인지 알수있다.</p>
 </li>
 </ol>
-<p>col constraint_원하는컬럼 foramt a원하는크기</p>
-<p>세미콜론으로 실행하지 않는건 시스템</p>
-<p>enter value for tabkename: employees</p>
-<p>not null과 check는 둘다 C라고 뜬다 따라서 search를 꼭 입력해줘야 그 뒤의 결과값으로 두가지가 구분 가능하다</p>
-<p>l은 버퍼로 들어가지않고 (ed) 버퍼에 남은 마지막 퀴리구문이 뭔지 확인하는 명령어 -&gt; / +enter 재실행</p>
+<img src="img/200608dbi4.PNG">
+
+<ol start="7">
+<li>col constraint_원하는컬럼 foramt a원하는크기 : col은 컬럼의 약어로 col이 나타나는 형식을 바꿔서 가독성을 높이는 명령어이다<ul>
+<li>여기서 col은 끝에 ;(세미콜론)을 넣지않았다. 이건 시스템언어이기때문이다</li>
+</ul>
+</li>
+</ol>
+<ol start="8">
+<li><p>enter value for tabkename: 테이블명은 항상 <strong>대문자</strong>로 적어준다</p>
+</li>
+<li><p>짜잔- 가독성있게 데이터가 잘 출력되었다.</p>
+</li>
+</ol>
 <h2 id="5-버퍼에-있는-자주-사용할-쿼리구문을-저장하는-방법"><a href="#5-버퍼에-있는-자주-사용할-쿼리구문을-저장하는-방법" class="headerlink" title="5. 버퍼에 있는 자주 사용할 쿼리구문을 저장하는 방법"></a>5. 버퍼에 있는 자주 사용할 쿼리구문을 저장하는 방법</h2><p>버퍼에 있는 쿼리구문이 앞으로 자주 사용될 것같다는 판단이 들면 버퍼가 덮어씌어지기전에 따로 저장해놓으면 된다<br>쿼리구문이 들어가 있는 파일을 저장하려면 무조건 확장자는 .sql로 저장해야한다</p>
 <img src="img/200608dbi5.PNG">
 
 <ol>
-<li>현재 버퍼의 쿼리구문 확인<br>현재 버퍼에 어떤 퀴리구문이 남아있는지 확인하는 명령어는<br><code>l</code>이다</li>
+<li>현재 버퍼의 쿼리구문 확인<br>현재 버퍼에 어떤 퀴리구문이 남아있는지 확인하는 명령어는<br><code>l</code>이다.<br>버퍼로 들어가지않고도(ed) 버퍼에 남은 마지막 퀴리구문이 뭔지 확인하는 명령어이다. -&gt; <code>l</code>에서 빠져나오려면 / + enter 하면 된다.</li>
 </ol>
 <ol start="2">
 <li>쿼리구문 저장하기<br>명령어는 <code>save 저장경로/저장하고픈 파일명.sql</code> 이다</li>
