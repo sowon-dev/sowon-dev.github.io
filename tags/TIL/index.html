@@ -18,7 +18,7 @@
 <ol start="3">
 <li>풀스택 (Full-stack)<br>하지만 요즘은 점점 경계가 모호해지고 있는 추세이다.<br>따라서 프론트엔드와 백엔드를 모두 포함하여 풀스택 (Full-stack)이라고 부르기도 한다.</li>
 </ol>
-<h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-09T00:00:00.000Z" title="2020-06-09T00:00:00.000Z">2020-06-09</time><span class="level-item"><a class="link-muted" href="/categories/JavaScript/">JavaScript</a></span><span class="level-item">8 minutes read (About 1242 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/09/200609jspi/">ITWILL : 반복문 for 순서 자세히, 개발자 도구로 디버깅, 기본 반복문암기, for문과 if문의 자리바꿈에 따른 변화, 반복문의 전위연산 VS 후위연산, do while문</a></h1><div class="content"><h3 id="ITWILL학원-6강-JS기초-BY-정규태강사"><a href="#ITWILL학원-6강-JS기초-BY-정규태강사" class="headerlink" title="ITWILL학원 : 6강 JS기초 BY 정규태강사"></a>ITWILL학원 : 6강 JS기초 BY 정규태강사</h3><h2 id="1-반복문-for"><a href="#1-반복문-for" class="headerlink" title="1. 반복문 : for"></a>1. 반복문 : for</h2><p>반복문의 기본식은 아래와 같다</p>
+<h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-09T00:00:00.000Z" title="2020-06-09T00:00:00.000Z">2020-06-09</time><span class="level-item"><a class="link-muted" href="/categories/JavaScript/">JavaScript</a></span><span class="level-item">9 minutes read (About 1382 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/09/200609jspi/">ITWILL : 반복문 for 순서 자세히, 개발자 도구로 디버깅, 기본 반복문암기, for문과 if문의 자리바꿈에 따른 변화, 반복문의 전위연산 VS 후위연산, do while문</a></h1><div class="content"><h3 id="ITWILL학원-6강-JS기초-BY-정규태강사"><a href="#ITWILL학원-6강-JS기초-BY-정규태강사" class="headerlink" title="ITWILL학원 : 6강 JS기초 BY 정규태강사"></a>ITWILL학원 : 6강 JS기초 BY 정규태강사</h3><h2 id="1-반복문-for"><a href="#1-반복문-for" class="headerlink" title="1. 반복문 : for"></a>1. 반복문 : for</h2><p>반복문의 기본식은 아래와 같다</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(초기식; 조건식; 증감식)&#123;</span><br><span class="line">	반복문장</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>if나 for 문은 중괄호{} 없이도 반복이 된다. 하지만 세미콜론;전까지의 한줄만 반복한다 </p>
@@ -109,6 +109,7 @@
 <p>초기식과 증감식 없더라도 확인가능하다<br>아래는 예시이다</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> i = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">	<span class="built_in">document</span>.write(i+<span class="string">" "</span>);</span><br><span class="line">	i++;</span><br><span class="line">&#125;<span class="keyword">while</span>(i&lt;=<span class="number">10</span>);</span><br><span class="line"><span class="comment">// 1 2 3 4 5 6 7 8 9 10</span></span><br></pre></td></tr></table></figure>
 
+
 <h3 id="3-구구단-세로로-나타내기"><a href="#3-구구단-세로로-나타내기" class="headerlink" title="3. 구구단 세로로 나타내기"></a>3. 구구단 세로로 나타내기</h3><p>구구단을 가로가 아닌 세로로 나타내보자<br>세로로 만들려면 일단 가로로 먼저 만들수있어야한다</p>
 <ol>
 <li>구구단 가로출력<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> dan=<span class="number">2</span>; dan&lt;=<span class="number">9</span>; dan++)&#123;</span><br><span class="line">	<span class="built_in">document</span>.write(<span class="string">'&lt;br&gt;'</span>)</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">let</span> num=<span class="number">1</span>; num&lt;=<span class="number">9</span>; num++)&#123;</span><br><span class="line">		<span class="built_in">document</span>.write(dan+<span class="string">'*'</span>+num+<span class="string">'='</span>+(dan*num)+<span class="string">' '</span>)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -123,6 +124,40 @@
 </li>
 </ol>
 <p>아래 이미지파일을 보면 왼쪽이 출력값이고 오른쪽이 소스코드이다<br><img src="/img/200609jspi1.PNG"></p>
+<h3 id="4-반복문으로-테이블만들기"><a href="#4-반복문으로-테이블만들기" class="headerlink" title="4. 반복문으로 테이블만들기"></a>4. 반복문으로 테이블만들기</h3><p>테이블만드는 방법도 다양하다</p>
+<p>테이블은 행x열(4x3)이고 각 칸안에는 1~12까지의 수를 넣은 테이블을 만들어보자</p>
+<ol>
+<li><p>이중 for문 사용</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> tageOpen=<span class="string">"&lt;table border='1'&gt;"</span></span><br><span class="line"><span class="keyword">let</span> tageClose=<span class="string">"&lt;/table&gt;"</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">document</span>.write(tageOpen)</span><br><span class="line"><span class="keyword">let</span> count = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> tr=<span class="number">1</span>; tr&lt;=<span class="number">4</span>; tr++)&#123;</span><br><span class="line">	<span class="built_in">document</span>.write(<span class="string">'&lt;tr&gt;'</span>)</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">let</span> td=<span class="number">1</span>; td&lt;=<span class="number">3</span>; td++)&#123;</span><br><span class="line">		<span class="built_in">document</span>.write(<span class="string">'&lt;td&gt;'</span> + (count+=<span class="number">1</span>) + <span class="string">"&lt;/td&gt;"</span>)</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">document</span>.write(<span class="string">'&lt;/tr&gt;'</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">document</span>.write(tageClose)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>tag로 테이블만들기</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> tageOpen=<span class="string">"&lt;table border='1'&gt;"</span></span><br><span class="line"><span class="keyword">let</span> tageClose=<span class="string">"&lt;/table&gt;"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> trtdtag;</span><br><span class="line"><span class="keyword">let</span> count1 = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">let</span> i=<span class="number">1</span>; i&lt;=<span class="number">4</span>; i++)&#123;	</span><br><span class="line">		trtdtag += <span class="string">"&lt;tr&gt;"</span>;</span><br><span class="line">		trtdtag += <span class="string">"&lt;td&gt;"</span> + (count1+=<span class="number">1</span>) + <span class="string">"&lt;/td&gt;"</span>;</span><br><span class="line">		trtdtag += <span class="string">"&lt;td&gt;"</span> + (count1+=<span class="number">1</span>) + <span class="string">"&lt;/td&gt;"</span>;</span><br><span class="line">		trtdtag += <span class="string">"&lt;td&gt;"</span> + (count1+=<span class="number">1</span>) + <span class="string">"&lt;/td&gt;"</span>;</span><br><span class="line">		trtdtag += <span class="string">"&lt;/tr&gt;"</span></span><br><span class="line">	&#125;</span><br><span class="line"><span class="built_in">document</span>.write(tageOpen + trtdtag + tageClose )</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>아래와 동일 테이블이 만들어진다.</p>
+<table border="1">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+    </tr>
+</table> 
 </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-09T00:00:00.000Z" title="2020-06-09T00:00:00.000Z">2020-06-09</time><span class="level-item"><a class="link-muted" href="/categories/HTML-CSS/">HTML&amp;CSS</a></span><span class="level-item">8 minutes read (About 1140 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/09/200609python/">[패스트캠퍼스 수강 후기] 파이썬 인강 자기계발 챌린지 16회차 미션</a></h1><div class="content"><h3 id="파이썬-인강-Web-기초-클라이언트-VS-서버-웹프로그래밍-HTTP-크롬-개발자도구"><a href="#파이썬-인강-Web-기초-클라이언트-VS-서버-웹프로그래밍-HTTP-크롬-개발자도구" class="headerlink" title="파이썬 인강 : Web 기초 (클라이언트 VS 서버, 웹프로그래밍, HTTP, 크롬 개발자도구)"></a>파이썬 인강 : Web 기초 (클라이언트 VS 서버, 웹프로그래밍, HTTP, 크롬 개발자도구)</h3><p>15회차까지는 파이썬 기초를 배웠다.<br>이번에는 web기초를 후루룩 배워보자<br>자주 접했지만 아직 암기까진 못한 웹기초!<br>이번엔 기초를 탄탄히 쌓아서 다시 보는 일이 없었으면 좋겠다 ㅋㅋㅋㅋㅋ</p>
 <img src="img/python06092.png">
 
