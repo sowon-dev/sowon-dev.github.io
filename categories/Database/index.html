@@ -1,5 +1,159 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.0"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Category: Database - 야망찬 개발자의 블로그</title><meta property="og:type" content="blog"><meta property="og:title" content="야망찬 개발자의 블로그"><meta property="og:url" content="https://github.com/sowon-dev"><meta property="og:site_name" content="야망찬 개발자의 블로그"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://github.com/img/og_image.png"><meta property="article:author" content="Sowon"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://github.com/sowon-dev"},"headline":"야망찬 개발자의 블로그","image":["https://github.com/img/og_image.png"],"author":{"@type":"Person","name":"Sowon"},"description":""}</script><link rel="icon" href="/img/star.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories">Categories</a></li><li class="is-active"><a href="#" aria-current="page">Database</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-26T00:00:00.000Z" title="2020-06-26T00:00:00.000Z">2020-06-26</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">4 minutes read (About 579 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/26/200626dbi2/">[ITWILL : DB]Order by 정렬</a></h1><div class="content"><h3 id="ITWILL학원-9강-Database-BY-정지윤강사"><a href="#ITWILL학원-9강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 9강 Database BY 정지윤강사"></a>ITWILL학원 : 9강 Database BY 정지윤강사</h3><p>order by를 입력하는 순서는 <strong>쿼리구문의 제일 마지막에 적어줘야한다.</strong></p>
+<html lang="en"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.0"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Category: Database - 야망찬 개발자의 블로그</title><meta property="og:type" content="blog"><meta property="og:title" content="야망찬 개발자의 블로그"><meta property="og:url" content="https://github.com/sowon-dev"><meta property="og:site_name" content="야망찬 개발자의 블로그"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://github.com/img/og_image.png"><meta property="article:author" content="Sowon"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://github.com/sowon-dev"},"headline":"야망찬 개발자의 블로그","image":["https://github.com/img/og_image.png"],"author":{"@type":"Person","name":"Sowon"},"description":""}</script><link rel="icon" href="/img/star.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories">Categories</a></li><li class="is-active"><a href="#" aria-current="page">Database</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-30T00:00:00.000Z" title="2020-06-30T00:00:00.000Z">2020-06-30</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">a minute read (About 221 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/30/200630dbi3/">[ITWILL : DB] 단일행함수 : 변환함수, 일반함수</a></h1><div class="content"><h3 id="ITWILL학원-10강-Database-BY-정지윤강사"><a href="#ITWILL학원-10강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 10강 Database BY 정지윤강사"></a>ITWILL학원 : 10강 Database BY 정지윤강사</h3><p>SQL함수에는 두가지 유형이 있다.</p>
+<ol>
+<li>단일행함수 : 행당 하나의 결과 반환</li>
+<li>여러행함수 : 행 집합당 하나의 결과 반환</li>
+</ol>
+<p>이 중 단일행함수에 대해 알아보자.</p>
+<h2 id="단일행함수종류"><a href="#단일행함수종류" class="headerlink" title="단일행함수종류"></a>단일행함수종류</h2><p>단일행함수는 총 5가지이다.</p>
+<ol>
+<li><a href="https://hexoblog-lwqbi.run.goorm.io/2020/06/30/200630dbi/">문자함수</a></li>
+<li><a href="https://hexoblog-lwqbi.run.goorm.io/2020/06/30/200630dbi2/">숫자함수</a></li>
+<li><a href="https://hexoblog-lwqbi.run.goorm.io/2020/06/30/200630dbi2/">날짜함수</a></li>
+<li><a href="https://hexoblog-lwqbi.run.goorm.io/2020/06/30/200630dbi3/">변환함수</a></li>
+<li><a href="https://hexoblog-lwqbi.run.goorm.io/2020/06/30/200630dbi3/">일반함수</a></li>
+</ol>
+<p><img src="https://slidesplayer.org/slide/14385477/89/images/3/%EB%8B%A8%EC%9D%BC%ED%96%89+%ED%95%A8%EC%88%98+%EB%8B%A8%EC%9D%BC%ED%96%89+%ED%95%A8%EC%88%98+%EB%8B%A8%EC%9D%BC%ED%96%89+%ED%95%A8%EC%88%98%EC%9D%98+%EC%A2%85%EB%A5%98+%EB%8D%B0%EC%9D%B4%ED%84%B0+%EA%B0%92%EC%9D%84+%EC%A1%B0%EC%9E%91%ED%95%98%EB%8A%94%EB%8D%B0+%EC%A3%BC%EB%A1%9C+%EC%82%AC%EC%9A%A9.jpg" alt=""></p>
+<h2 id="1-변환함수"><a href="#1-변환함수" class="headerlink" title="1. 변환함수"></a>1. 변환함수</h2></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-30T00:00:00.000Z" title="2020-06-30T00:00:00.000Z">2020-06-30</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">4 minutes read (About 585 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/30/200630dbi2/">[ITWILL : DB] 단일행함수 : 숫자함수, 날짜함수</a></h1><div class="content"><h3 id="ITWILL학원-10강-Database-BY-정지윤강사"><a href="#ITWILL학원-10강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 10강 Database BY 정지윤강사"></a>ITWILL학원 : 10강 Database BY 정지윤강사</h3><p>SQL함수에는 두가지 유형이 있다.</p>
+<ol>
+<li>단일행함수 : 행당 하나의 결과 반환</li>
+<li>여러행함수 : 행 집합당 하나의 결과 반환</li>
+</ol>
+<p>이 중 단일행함수에 대해 알아보자.</p>
+<h2 id="단일행함수종류"><a href="#단일행함수종류" class="headerlink" title="단일행함수종류"></a>단일행함수종류</h2><p>단일행함수는 총 5가지이다.</p>
+<ol>
+<li><a href="https://hexoblog-lwqbi.run.goorm.io/2020/06/30/200630dbi/">문자함수</a></li>
+<li><a href="https://hexoblog-lwqbi.run.goorm.io/2020/06/30/200630dbi2/">숫자함수</a></li>
+<li><a href="https://hexoblog-lwqbi.run.goorm.io/2020/06/30/200630dbi2/">날짜함수</a></li>
+<li><a href="https://hexoblog-lwqbi.run.goorm.io/2020/06/30/200630dbi3/">변환함수</a></li>
+<li><a href="https://hexoblog-lwqbi.run.goorm.io/2020/06/30/200630dbi3/">일반함수</a></li>
+</ol>
+<p><img src="https://slidesplayer.org/slide/14385477/89/images/3/%EB%8B%A8%EC%9D%BC%ED%96%89+%ED%95%A8%EC%88%98+%EB%8B%A8%EC%9D%BC%ED%96%89+%ED%95%A8%EC%88%98+%EB%8B%A8%EC%9D%BC%ED%96%89+%ED%95%A8%EC%88%98%EC%9D%98+%EC%A2%85%EB%A5%98+%EB%8D%B0%EC%9D%B4%ED%84%B0+%EA%B0%92%EC%9D%84+%EC%A1%B0%EC%9E%91%ED%95%98%EB%8A%94%EB%8D%B0+%EC%A3%BC%EB%A1%9C+%EC%82%AC%EC%9A%A9.jpg" alt="https://slidesplayer.org/slide/14385477/"></p>
+<h2 id="1-숫자함수"><a href="#1-숫자함수" class="headerlink" title="1. 숫자함수"></a>1. 숫자함수</h2><p>실무에서는 반올림, 버림을 자주 사용한다.<br>실무에서 올림은 잘 사용하지않는다.<br>mod함수는 홀수짝수 구분할때 주로 사용한다.</p>
+<p><img src="https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http%3A%2F%2Fcfile28.uf.tistory.com%2Fimage%2F2575E54F560BB83208BAA5" alt="https://oraclejavastudy.tistory.com/m/787?category=544330"></p>
+<h3 id="1-dual-듀얼-테이블"><a href="#1-dual-듀얼-테이블" class="headerlink" title="1. dual(듀얼) 테이블"></a>1. dual(듀얼) 테이블</h3><p>select는 출력쿼리이다.<br> 12&#42;123 이라는 간단한 산술결과값을 출력하고 싶다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ select 12*123 as value;</span><br><span class="line"></span><br><span class="line">//반환값에러 : FROM keyword not found</span><br></pre></td></tr></table></figure>
+<p>반환값에러가 나왔다.<br>select와 from은 항상 함께 해야한다.<br>테이블에서 정보를 빼낼 필요가 없지만 from키워드가 있어야하니까 가지고 있는 아무테이블명을 적을 수 있다.<br>단순한 산술결과나 함수결과를 출력할때는 from에 아무테이블명을 적어버리면 테이블의 row갯수만큼 반복 출력된다. 만약 그 아무테이블의 row가 12만개면 출력값이 12만번 반복된다.</p>
+<p>따라서 이런 상황에서 쓸 수 있는 행 하나짜리 테이블이 있다. 바로 dual(듀얼)이다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ select 12*123 as value</span><br><span class="line">$ from dual;</span><br><span class="line"></span><br><span class="line">//반환값 : 1476</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="2-0의-자릿수"><a href="#2-0의-자릿수" class="headerlink" title="2. 0의 자릿수"></a>2. 0의 자릿수</h3><p><img src="https://thebook.io/img/006977/100.jpg" alt="https://thebook.io/006977/ch04/02/02/01/"></p>
+<p>일의 자리는 0으로 나타내며 생략도 가능하다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ select round(45.923,2), round(45.923,0), round(45.923), round(45.923,-1)</span><br><span class="line">$ from dual;</span><br><span class="line"></span><br><span class="line">//반환값 : 45.92,  46,   46,   50</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="2-날짜함수"><a href="#2-날짜함수" class="headerlink" title="2. 날짜함수"></a>2. 날짜함수</h2><p><img src="https://image2.slideserve.com/5057776/slide29-l.jpg" alt="https://www.slideserve.com/mave/06-sql"></p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-30T00:00:00.000Z" title="2020-06-30T00:00:00.000Z">2020-06-30</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">8 minutes read (About 1154 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/30/200630dbi/">[ITWILL : DB] 단일행함수 : 문자함수</a></h1><div class="content"><h3 id="ITWILL학원-10강-Database-BY-정지윤강사"><a href="#ITWILL학원-10강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 10강 Database BY 정지윤강사"></a>ITWILL학원 : 10강 Database BY 정지윤강사</h3><p>SQL함수에는 두가지 유형이 있다.</p>
+<ol>
+<li>단일행함수 : 행당 하나의 결과 반환</li>
+<li>여러행함수 : 행 집합당 하나의 결과 반환</li>
+</ol>
+<p>이 중 단일행함수에 대해 알아보자.</p>
+<h2 id="단일행함수종류"><a href="#단일행함수종류" class="headerlink" title="단일행함수종류"></a>단일행함수종류</h2><p>단일행함수는 총 5가지이다.</p>
+<ol>
+<li><a href="https://hexoblog-lwqbi.run.goorm.io/2020/06/30/200630dbi/">문자함수</a></li>
+<li><a href="https://hexoblog-lwqbi.run.goorm.io/2020/06/30/200630dbi2/">숫자함수</a></li>
+<li><a href="https://hexoblog-lwqbi.run.goorm.io/2020/06/30/200630dbi2/">날짜함수</a></li>
+<li><a href="https://hexoblog-lwqbi.run.goorm.io/2020/06/30/200630dbi3/">변환함수</a></li>
+<li><a href="https://hexoblog-lwqbi.run.goorm.io/2020/06/30/200630dbi3/">일반함수</a></li>
+</ol>
+<p><img src="https://slidesplayer.org/slide/14385477/89/images/3/%EB%8B%A8%EC%9D%BC%ED%96%89+%ED%95%A8%EC%88%98+%EB%8B%A8%EC%9D%BC%ED%96%89+%ED%95%A8%EC%88%98+%EB%8B%A8%EC%9D%BC%ED%96%89+%ED%95%A8%EC%88%98%EC%9D%98+%EC%A2%85%EB%A5%98+%EB%8D%B0%EC%9D%B4%ED%84%B0+%EA%B0%92%EC%9D%84+%EC%A1%B0%EC%9E%91%ED%95%98%EB%8A%94%EB%8D%B0+%EC%A3%BC%EB%A1%9C+%EC%82%AC%EC%9A%A9.jpg" alt=""></p>
+<h2 id="1-문자함수"><a href="#1-문자함수" class="headerlink" title="1. 문자함수"></a>1. 문자함수</h2><p>문자함수는 크게 변환함수와 문자 조작 함수로 나누어진다.</p>
+<p><img src="http://thumbnail.egloos.net/600x0/http://pds22.egloos.com/pds/201107/12/53/d0103653_4e1c449e13952.png" alt="http://egloos.zum.com/pqowieuryt/v/18776"></p>
+<h3 id="1-대소문자-변환함수"><a href="#1-대소문자-변환함수" class="headerlink" title="1. 대소문자 변환함수"></a>1. 대소문자 변환함수</h3><p>변환함수는 총 3가지가 있다.<br>대소문자를 변환한다.</p>
+<table>
+<thead>
+<tr>
+<th align="center">기능</th>
+<th align="center">결과</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">LOWER(‘SQL Course’)</td>
+<td align="center">sql course</td>
+</tr>
+<tr>
+<td align="center">UPPER(‘SQL Course’)</td>
+<td align="center">SQL COURSE</td>
+</tr>
+<tr>
+<td align="center">INITCAP(‘SQL Course’)</td>
+<td align="center">Sql Course</td>
+</tr>
+</tbody></table>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ select_id, last_name</span><br><span class="line">$ from employees</span><br><span class="line">$ lower(last_name) = <span class="string">'higgins'</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-문자조작함수"><a href="#2-문자조작함수" class="headerlink" title="2. 문자조작함수"></a>2. 문자조작함수</h3><p><img src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F21492E365603D0992F" alt="https://oraclejavastudy.tistory.com/entry/%EC%98%A4%EB%9D%BC%ED%81%B4%EA%B3%B5%EB%B6%80-218-%EB%AC%B8%EC%9E%90%EC%A1%B0%EC%9E%91-%ED%95%A8%EC%88%98"></p>
+<ol>
+<li>concat(expr1, expr2)<br>concat은 인수를 2개밖에 못 받는다.<br>만약 2개초과로 쓰고싶다면 concat을 중첩해서 사용해야한다.</li>
+</ol>
+<p>예를 들어 last_name과 first_name을 합쳐서 full_name을 만들고싶다<br>concat이용한 구문과 연결연산자 이용한 구문의 출력값은 같다.<br>차이점은 concatl은 인수2개만 가능하고 연결연산자는 원하는만큼의 인수를 사용할 수 있다</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//concat이용한 구문</span><br><span class="line">$ select concat(last_name, first_name) as full_name</span><br><span class="line">$ from employees;</span><br><span class="line"></span><br><span class="line">//연결연산자(||) 이용한 구문</span><br><span class="line">$ select last_name || first_name as full_name</span><br><span class="line">$ from employees;</span><br></pre></td></tr></table></figure>
+
+<p>이때 last_name과 first_name 사이에 공백 한칸을 넣고싶다<br>그래서 처음에는 아래 코드를 작성했다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ select concat(last_name, <span class="string">' '</span>, first_name) as full_name</span><br><span class="line">$ from employees;</span><br><span class="line"></span><br><span class="line">//반환값에러 : invalid number of arguments</span><br></pre></td></tr></table></figure>
+
+<p>위 코드처럼 했더니 <code>invalid number of arguments</code>에러가 떴다.<br>즉, concat은 인수를 2개밖에 못 받기때문에 3개를 쓰려면 <code>중첩</code>해야한다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//concat 중첩하기</span><br><span class="line">$ select concat(concat(last_name, <span class="string">' '</span>), first_name) as full_name</span><br><span class="line">$ from employees;</span><br></pre></td></tr></table></figure>
+
+
+<ol start="2">
+<li>substr(expr1, expr2, expr3)<br>문자열의 일부분을 반환해주는 함수이다.</li>
+</ol>
+<ul>
+<li>expr1 : 반환할 문자열</li>
+<li>expr2 : 시작위치<ul>
+<li>음수인 경우 뒤에서 시작위치 ex)-1이면 뒤에서 첫번째글자</li>
+</ul>
+</li>
+<li>expr3 : 반환할 문자갯수<ul>
+<li>방향은 항상 왼쪽에서 오른쪽으로 문자갯수만큼 반환한다</li>
+<li>생략가능 : 생략되면 시작위치에서 끝까지 반환</li>
+</ul>
+</li>
+</ul>
+<p>주로 주민번호(770123-2123456)를 반환할때 사용한다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ select substr(770123-2123456, 1, 6)</span><br><span class="line">//반환값 : 770123</span><br><span class="line"></span><br><span class="line">$ select substr(<span class="string">'Kochhar, -3, 2)</span></span><br><span class="line"><span class="string">//반환값 : ha</span></span><br></pre></td></tr></table></figure>
+
+
+<ol start="3">
+<li>instr(expr1, expr2)<br>문자열(expr1)로 부터 특정 문자(expr2)의 첫번째 위치값을 반환해주는 함수이다.</li>
+</ol>
+<p>아래 문자열에는 o가 2개가 있다. 5번째와 7번째에 있는데 어느 값을 반환해줄까?<br>instr는 <strong>첫번째 위치값</strong>만 반환해준다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ select isnt(<span class="string">'HelloWorld'</span>, <span class="string">'o'</span>)</span><br><span class="line"></span><br><span class="line">//반환값 : 5</span><br></pre></td></tr></table></figure>
+
+
+<ol start="4">
+<li>lpad(expr1, expr2, expr3) 와 rpad(expr1, expr2, expr3)<br>오른쪽 정렬/왼쪽 정렬 해주는 함수</li>
+</ol>
+<ul>
+<li>expr1 : 반환할 문자열</li>
+<li>expr2 : 전체자리수</li>
+<li>expr3 : 남는 공간을 채울 문자 <ul>
+<li>공백을 주면 오른쪽/왼쪽정렬을 표현할 수 있어 유용하다.</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//lpad 오른쪽정렬</span><br><span class="line">$ select lpad(last_name, 20, <span class="string">' '</span>)</span><br><span class="line"></span><br><span class="line">//반환값 : 오른쪽정렬</span><br></pre></td></tr></table></figure>
+
+
+<ol start="5">
+<li>trim(expr1 from expr2)<br>문자열(expr2)로부터 특정 문자(expr1)가 접두어나 접미어에 있다면 삭제(절단)해주는 함수이다.</li>
+</ol>
+<p>(ex1) trim(‘H’ from ‘HHelloHWHorldHHH’) =&gt; elloHWHorld</p>
+<p>한자리 숫자를 출력하려고 할때 01,02,03 등등으로 출력된다.<br>이때 0을 빼고 한자리만 출력할때 주로 사용한다.</p>
+<ol start="6">
+<li>length(expr1)<br>문자열의 길이를 반환해주는 함수이다.</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ select length(<span class="string">'HelloWorld'</span>)</span><br><span class="line"></span><br><span class="line">//반환값 : 10</span><br></pre></td></tr></table></figure>
+
+
+<ol start="7">
+<li>replace(expr1, expr2, expr3)<br>문자열(expr1)로 부터 특정 문자(expr2)를 다른 문자(expr3)로 교체해주는 함수이다.</li>
+</ol>
+<p>DB에 폰번호가 .로 저장되어있을때 우리가 보기 편하게 -로 바꿔줄수있다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//기존데이터 : 010.1234.5678</span><br><span class="line">$ select last_name, replace(phone_number, <span class="string">'.'</span>, <span class="string">'-'</span>) as mobile</span><br><span class="line">$ from employees</span><br><span class="line"></span><br><span class="line">//replace후 반환 : 010-1234-5678</span><br></pre></td></tr></table></figure></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-26T00:00:00.000Z" title="2020-06-26T00:00:00.000Z">2020-06-26</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">4 minutes read (About 579 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/26/200626dbi2/">[ITWILL : DB]Order by 정렬</a></h1><div class="content"><h3 id="ITWILL학원-9강-Database-BY-정지윤강사"><a href="#ITWILL학원-9강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 9강 Database BY 정지윤강사"></a>ITWILL학원 : 9강 Database BY 정지윤강사</h3><p>order by를 입력하는 순서는 <strong>쿼리구문의 제일 마지막에 적어줘야한다.</strong></p>
 <ul>
 <li><p>오름차순정렬 : asc = ascending order, default</p>
 </li>
@@ -33,7 +187,7 @@
 <h2 id="4-다중컬럼기준-정렬"><a href="#4-다중컬럼기준-정렬" class="headerlink" title="4. 다중컬럼기준 정렬"></a>4. 다중컬럼기준 정렬</h2><p>다중컬럼 기준으로 정렬도 가능하다<br>이때는 정렬되는 순서가 달라지는데 <code>order by 1번컬럼, 2번컬럼</code>인 경우 1번컬럼 정렬 후!!! 2번컬럼이 정렬되어 출력된다.</p>
 <p>아래예시를 보자.<br>employees테이블에서 department_id는 오름차순 정렬한 뒤 salary는 내림차순정렬로 last_name, job_id, department_id, salary를 출력하는 춰리이다.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select last_name, job_id, department_id, salary</span><br><span class="line">from employees</span><br><span class="line">order by department_id, salary desc;</span><br></pre></td></tr></table></figure>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-26T00:00:00.000Z" title="2020-06-26T00:00:00.000Z">2020-06-26</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">11 minutes read (About 1580 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/26/200626dbi/">[ITWILL : DB]테이블 전체목록조회, 테이블구조조회, WHERE(조건문)절</a></h1><div class="content"><h3 id="ITWILL학원-9강-Database-BY-정지윤강사"><a href="#ITWILL학원-9강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 9강 Database BY 정지윤강사"></a>ITWILL학원 : 9강 Database BY 정지윤강사</h3><h2 id="1-테이블-전체-목록조회"><a href="#1-테이블-전체-목록조회" class="headerlink" title="1. 테이블 전체 목록조회"></a>1. 테이블 전체 목록조회</h2><p>내가 어떠한 테이블을 가지고 있는 지 모를때 아래 명령어를 날리면 몇개의 테이블을 가지고 있는지 알려준다</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-26T00:00:00.000Z" title="2020-06-26T00:00:00.000Z">2020-06-26</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">11 minutes read (About 1629 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/26/200626dbi/">[ITWILL : DB]테이블 전체목록조회, 테이블구조조회, WHERE(조건문)절</a></h1><div class="content"><h3 id="ITWILL학원-9강-Database-BY-정지윤강사"><a href="#ITWILL학원-9강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 9강 Database BY 정지윤강사"></a>ITWILL학원 : 9강 Database BY 정지윤강사</h3><h2 id="1-테이블-전체-목록조회"><a href="#1-테이블-전체-목록조회" class="headerlink" title="1. 테이블 전체 목록조회"></a>1. 테이블 전체 목록조회</h2><p>내가 어떠한 테이블을 가지고 있는 지 모를때 아래 명령어를 날리면 몇개의 테이블을 가지고 있는지 알려준다</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; select *</span><br><span class="line">SQL&gt; from tab;</span><br></pre></td></tr></table></figure>
 
 
@@ -47,7 +201,7 @@
 <li><p>숫자<br>employees테이블에 salary가 3500인 직원들의 last_name을 출력하는 쿼리.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; select last_name</span><br><span class="line">SQL&gt; from employees</span><br><span class="line">SQL&gt; where salary &#x3D; 3500;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>문자(대소문자 주의!)<br>employees테이블에 last_name이 Bell인 직원의 last_name과 연봉을 출력하는 쿼리.<br>리터럴값은 대소문자를 구분하기때문에 Bell로 저장된 직원을 bell이나 BELL로 찾으면 <code>no row selected</code>가 뜬다.<br>따라서 대소문자를 주의해야한다!</p>
+<li><p>문자(대소문자 주의!)<br>employees테이블에 last_name이 Bell인 직원의 last_name과 연봉을 출력하는 쿼리.<br>리터럴값은 대소문자를 구분하기때문에 Bell로 저장된 직원을 bell이나 BELL로 찾으면 <code>no row selected</code>가 뜬다.<br>따라서 대소문자를 주의해야한다!<br>모든 데이터가 소문자인지 대문자인지 intcap형태인지 헷갈리므로 이때 사용하는 <a href="https://sowon-dev.github.io/2020/06/30/200630dbi/">대소문자변환함수</a>가 있다.</p>
 </li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; select last_name, salary</span><br><span class="line">SQL&gt; from employees</span><br><span class="line">SQL&gt; where last_name &#x3D; &#39;Bell&#39;;</span><br></pre></td></tr></table></figure>
@@ -494,176 +648,7 @@
 </ol>
 <p>참고로 varchar1은 없다. varchar와 varchar2만 있을뿐…ㅋㅋㅋㅋㅋ</p>
 <p> <a href="https://goodgid.github.io/JS-char-vs-varchar/#:~:text=VARCHAR%EB%8A%94%20%EC%9D%B4%EB%A6%84%EC%9D%B4%20%EC%9D%98%EB%AF%B8%ED%95%98%EB%93%AF%20%EA%B0%80%EB%B3%80%EA%B8%B8%EC%9D%B4%EC%9D%B4%EB%8B%A4.&text=255%EA%B8%80%EC%9E%90%20%EC%9D%B4%ED%95%98%EC%97%90%EB%8A%94%201,%EC%A0%95%EB%B3%B4%EB%8F%84%20%EA%B0%99%EC%9D%B4%20%EC%A0%80%EC%9E%A5%EB%90%9C%EB%8B%A4.">varchar와 char 비교링크</a></p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-05T00:00:00.000Z" title="2020-06-05T00:00:00.000Z">2020-06-05</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">4 minutes read (About 535 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/05/200605dbi/">[ITWILL : DB]SQL 명령어</a></h1><div class="content"><h3 id="ITWILL학원-3강-Database-BY-정지윤강사"><a href="#ITWILL학원-3강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 3강 Database BY 정지윤강사"></a>ITWILL학원 : 3강 Database BY 정지윤강사</h3><h2 id="1-SQL-명령어"><a href="#1-SQL-명령어" class="headerlink" title="1. SQL 명령어"></a>1. SQL 명령어</h2><p>관계형 데이터베이스 작동을 위해 사용하는 표준언어이고 모든 프로그램 및 유저가 데이터베이스의 데이터를 엑세스학 위해 사용하는 일련의 명령문이다.</p>
-<ol>
-<li>SQL 대표적인 명령어<br>DDL(Data Definition Language) = 데이터 정의어<br>DML(Data Mainpulation Language) = 데이터 조작어<br>DCL(Data Control Language) = 데이터 제어어</li>
-</ol>
-<p><img src="/img/200605dbid3.PNG" alt="SQL 대표적인 명령어"></p>
-<p>아래는 대표적인 SQL 명령어 2가지이다</p>
-<ul>
-<li><p>SELECT : 데이터를 검색하는 명령어</p>
-</li>
-<li><p>DESCRIBE 테이블명 (약어 desc 테이블명) : 파일을 확인하고 not null 제약조건이 있는지 확인할 수 있는 명령어</p>
-</li>
-</ul>
-<p>sql 쿼리구문에서는 대소문자구분이 없다</p>
-<ol start="2">
-<li><p>오타수정하기<br>마지막 쿼리작업은 버퍼에 남아있다<br>이를 이용해 마지막 쿼리작업의 수정이 가능하다. 마지막이 아닌 쿼리는 수정작업 불가</p>
-<ol>
-<li><p>ed(edit의 약자)</p>
-</li>
-<li><p>i 클릭 -&gt; insert모드로 바뀌면서 오타등의 수정이 가능하다 (마우스안됨. 키보드만 가능)</p>
-</li>
-<li><p>버퍼안에서는 절대 ; (세미콜론) 입력하면 안됨 -&gt; 버터에 세미콜론찍고 나가면 오류 계속 발생함.</p>
-</li>
-<li><p>esc -&gt; 편집모드 insert모드를 빠져나와서 읽기모드로 가면됨</p>
-</li>
-<li><p>:(콜론) + w + q : 을 찍고 나오면 버퍼에서 빠져나오게 됨</p>
-</li>
-<li><p>/ + enter : 딱 나오게 된다</p>
-</li>
-</ol>
-</li>
-</ol>
-<p>dept라는 테이블을 만드는 예시를 보자</p>
-<ol>
-<li><p>create table dept : 그 뒤의 2~5번째줄은 테이블에 들어갈 데이터들이다</p>
-</li>
-<li><p>describe dept : 만든 테이블을 확인할 수 있는 명령어</p>
-</li>
-<li><p>ed : 가장 마지막 쿼리작업만 수정가능</p>
-</li>
-<li><p>버터 안 : 초기값은 읽기모드이므로  i 입력(쓰기모드) -&gt; 테이블 이름을 dept -&gt; dept5252로 변경</p>
-</li>
-<li><p>버퍼 안 : esc : 쓰기모드에서 읽기모드로 전환</p>
-</li>
-<li><p>:(콜론) + w + q : 버퍼종료</p>
-</li>
-<li><p>/ + enter : 다시 sql 터미널로 돌아오게된다.</p>
-</li>
-</ol>
-<p><img src="/img/200605dbid4.PNG" alt="예시"></p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-05T00:00:00.000Z" title="2020-06-05T00:00:00.000Z">2020-06-05</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">3 minutes read (About 455 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/05/200602dbi2/">[ITWILL : DB]데이터베이스기초활용</a></h1><div class="content"><h3 id="ITWILL학원-3강-Database-BY-정지윤강사"><a href="#ITWILL학원-3강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 3강 Database BY 정지윤강사"></a>ITWILL학원 : 3강 Database BY 정지윤강사</h3><h1 id="3강-응용SW기초기술활용-데이터베이스-기초활용"><a href="#3강-응용SW기초기술활용-데이터베이스-기초활용" class="headerlink" title="3강. 응용SW기초기술활용 : 데이터베이스 기초활용"></a>3강. 응용SW기초기술활용 : 데이터베이스 기초활용</h1><h2 id="1-데이터베이스-용어정리-P63"><a href="#1-데이터베이스-용어정리-P63" class="headerlink" title="1. 데이터베이스 용어정리 (P63)"></a>1. 데이터베이스 용어정리 (P63)</h2><ol>
-<li><p>개체 = 엔티티(Entity) = 유무형의 객체<br>테이블이라는 개체를 사용해서 DB에 데이터를 분류해서 저장해야한다.=&gt; 데이터베이스관리자의 역할이 아닌 개발자의 역할이다<br>즉 데이터 모델링과정을 잘해야 좋은 개발자이다.<br>데이터베이스관리자는 DB전체를 관리하는 사람이다 ex)백업 등</p>
-</li>
-<li><p>속성 = 애트리뷰트(attribute) = 컬럼</p>
-</li>
-</ol>
-<h2 id="2-DB구조"><a href="#2-DB구조" class="headerlink" title="2. DB구조"></a>2. DB구조</h2><p><img src="/img/200605dbid.PNG" alt=""></p>
-<p>위의 DB구성에서 추가적으로 아래 2가지가 있다.</p>
-<ul>
-<li>데이터베이스 관리자(DBA)</li>
-<li>하드웨어 </li>
-</ul>
-<ol>
-<li>물리적 구조 : 크게 중요하지 않음</li>
-<li>논리적 구조 : 물리적구조보다 더 중요하다. 논리적 구졸르 알아야 데이터 저장구조를 알게되고 효율적으로, 그리고 성능좋게 DB를 사용할 수 있다</li>
-</ol>
-<h2 id="3-데이터모델링"><a href="#3-데이터모델링" class="headerlink" title="3. 데이터모델링"></a>3. 데이터모델링</h2><p>현실 세계의 정보를 데이터베이스에 표현하는 중간 과정.<br>데이터 모델링 과정:<br>총 3단계로 구성되고 4단계라고 한다면 설계부분이 2가지 모델링(개념과 논리)로 나눠서 표현한 것이다.<br>    1. 요구사항 수집 및 분석<br>    2. 설계<br>        - 개념모델링<br>        - 논리모델링<br>    3. 이터베이스 구현(물리모델링)</p>
-<ol>
-<li>ERD (ER 다이어그램) VS IE 표기법</li>
-</ol>
-<p><img src="/img/200605dbid2.PNG" alt="표기법 차이"></p>
-<p>둘 다 실무 데이터모델링에서 잘 사용하는 방법이다.</p>
-<p><a href="https://cskstory.tistory.com/entry/%EC%97%94%ED%84%B0%ED%8B%B0-%EB%B6%84%EB%A5%98%ED%95%98%EA%B8%B0-%EC%98%88%EC%A0%9C">IE표기법 쇼핑몰 예제</a></p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-02T00:00:00.000Z" title="2020-06-02T00:00:00.000Z">2020-06-02</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">11 minutes read (About 1680 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/02/200602dbi/">[ITWILL : DB]간단 리눅스명령어(복붙포함), Oracle 명령어, DB작동방법</a></h1><div class="content"><h3 id="ITWILL학원-2강-Database-BY-정지윤강사"><a href="#ITWILL학원-2강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 2강 Database BY 정지윤강사"></a>ITWILL학원 : 2강 Database BY 정지윤강사</h3><h2 id="1-리눅스-OS-user"><a href="#1-리눅스-OS-user" class="headerlink" title="1. 리눅스 OS user"></a>1. 리눅스 OS user</h2><ol>
-<li><p>root<br>관리자권한 실행, 최상위유저, 자동으로 계정이 생성됨<br>회사의 서버관리자가 보통 사용</p>
-</li>
-<li><p>OS유저<br>서버관리자가 데이터베이스관리자나 개발자를 위해 만들어주는 계정<br>보통 아래 두가지 정도의 최소한의 권한을 가짐</p>
-</li>
-</ol>
-<ul>
-<li>home/oracle 디렉토리 권한</li>
-<li>u01/app/oracle 디렉토리 권한</li>
-</ul>
-<p>계정을 나누지 않으면 개발자나 DB관리자가 서버시스템파일 수정이나 삭제 해버리면 모든 게 먹통된다.<br>따라서 꼭 계정을 나눠서 사용해야한다.</p>
-<p>리눅스계열의 샌토OS를 강의때 사용할 예정.</p>
-<h2 id="2-DB-user"><a href="#2-DB-user" class="headerlink" title="2. DB user"></a>2. DB user</h2><p>DB를 처음 생성하면 관리자의 권한을 가지고 있는 두 개의 계정이 자동으로 생성됨<br>왜 굳이 두개 계정이 생성될까?<br>차이점을 확실히 알아야한다. 바로 권한에 차이가 있다</p>
-<ul>
-<li>sys : sysdba 권한(= dba + DB + DB시작/종료), 가장 높은 권한.</li>
-<li>system : dba 권한</li>
-<li>일반유저 : object 관리 권한(table, view, inex 등 관리)</li>
-</ul>
-<p>system이 새로운 유저를 만든 경우 dba 권한까지 줄 수 있다<br>sys가 새로운 유저를 만들었을 경우 sysdba권한까지 줄수있을까?</p>
-<h4 id="NOPE"><a href="#NOPE" class="headerlink" title="NOPE"></a>NOPE</h4><p>sys라도 유저에게 줄 수 있는 최대 권한은 dba까지이다.</p>
-<p>계정별 비밀번호는 default 값으로 180일간 사용가능하고 만료되기전에 비밀번호 바꿔줘야한다.<br>바꿔주지 않을 경우 계정만료가 되어버린다. sys한테 얘기해서 임시pw설정해야한다</p>
-<h2 id="3-리눅스-터미널-명령어"><a href="#3-리눅스-터미널-명령어" class="headerlink" title="3. 리눅스 터미널 명령어"></a>3. 리눅스 터미널 명령어</h2><ul>
-<li>pwd : 현재 위치하고 있는 디렉토리를 알려주는 명령어</li>
-<li>ls : 현재 디렉토리의 파일 목록을 출력하는 명령어</li>
-<li>mkdir 만들_이름 : 만들_이름이란 폴더를 생성하는 명령어</li>
-<li>명령어 –help : 궁금한 명령어 뒤에 –help 옵션을 주면 자세한 사용방법을 알려주는 명령어</li>
-<li>cd : 홈그라운드 가는 명령어. 원래는 cd 뒤에 이동경로를 입력해야하는데 아무것도 입력하지 않을 경우 홈그라운드로 이동한다.</li>
-</ul>
-<p>아래 명령어는 꼭 순서대로 실행해줄 것.</p>
-<ol>
-<li>lsnrctl start : 리스너를 작동시키는 명령어</li>
-<li>sqlplus /nolog : sql+실행시키는 명령어</li>
-<li>connect sys/oracle as sysdba : DB에 sys로 접속하는 명령어</li>
-<li>startup : DB에 sys로 로그인한 후 DB실행하는 명령어</li>
-<li>conn hr/hr : 유저 hr로 로그인</li>
-</ol>
-<p>파일안의 내용을 보고 싶을때는 아래 2가지 명령어를 활용할수있다</p>
-<ul>
-<li>cat 열고싶은_파일명 : 터미널내에서 열고싶은_파일의 내용이 출력된다 </li>
-<li>vi 열고싶은_파일명 : vi편집기 실행 -&gt; vi편집기 빠져나갈때는 <code>:q!</code></li>
-</ul>
-<p>리눅스 터미널에서 복붙은 <code>ctrl+c</code> 와 <code>ctrl+v</code>가 작동하질 않는다<br>이를 대체해서 <code>ctrl+insert</code>와 <code>Shift+insert</code>를 사용하면된다</p>
-<p><a href="https://itholic.github.io/linux-basic-command/">리눅스 터미널 명렁어 참고링크</a></p>
-<p><a href="https://ss64.com/ora/">오라클 명령어 참고링크</a></p>
-<h2 id="4-DB작동방법"><a href="#4-DB작동방법" class="headerlink" title="4. DB작동방법"></a>4. DB작동방법</h2><ol>
-<li>리스너 실행<br>DB를 적상적으로 작동시키려면 운영체제에 존재하는 리스너를 실행 후 DB를 실행한다.</li>
-</ol>
-<p><strong>순서 중요 : 리스너실행 후 DB실행 필수</strong><br>리스너없이 DB실행 가능하지만 작동오류가 난다.</p>
-<ul>
-<li>lsnrctl start(리스너컨트롤러의 약자) 명령어를 암기필수<br>컴퓨터 부팅후에는 항상 리스너를 켜고 DB작업을 하자!</li>
-</ul>
-<ol start="2">
-<li>SQL+실행<br>SQL+를 설치 후 실행한 뒤 SQL언어로 DB와 소통할 수 있다<br>운영체제별로 SQL+가 따로 있다.</li>
-</ol>
-<ul>
-<li>윈도우용 SQL+ : 시작프로그램에서 클릭을 통해 실행 -&gt; 터미널 열림</li>
-<li>리눅스용 SQL+ : 터미널창에서 명령어 입력으로 실행</li>
-</ul>
-<p>그렇다면 명령어는?</p>
-<ul>
-<li>sql+입장 명령어 : sqlplus /nolog</li>
-<li>sql+퇴장 명령어 : exit (user도 함께 종료)</li>
-</ul>
-<p>추후에는 에디터처럼 그래픽하게 사용할수있는 SQL DEVELOPER를 사용할 예정.</p>
-<ol start="3">
-<li>DB에 sys로 접속후 DB 연결하기<br><code>connect sys/비번 as sysdba</code> 명령어로 접속하면 현재 DB가 꺼져있는 상태(idle)면 아래 코드처럼 <code>show user</code> -&gt; <code>startup</code>순으로 진행하면된다</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; connect sys&#x2F;비번 as sysdba</span><br><span class="line">Connected to an idle instance</span><br><span class="line"></span><br><span class="line">SQL&gt; show user</span><br><span class="line">USER is &quot;SYS&quot;</span><br><span class="line"></span><br><span class="line">SQL&gt; startup</span><br><span class="line">ORACLE instance started</span><br><span class="line">(중략)</span><br><span class="line">Database mounted</span><br><span class="line">Database opened</span><br></pre></td></tr></table></figure>
-
-<p>만약 DB가 켜져있는 상태면 아래와 같이 나온다</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; connect sys&#x2F;비번 as sysdba</span><br><span class="line">Connected</span><br></pre></td></tr></table></figure>
-
-<p>이제 DB가 켜져있는 상태가 되었고 아래 명령어로 DB에 연결한다<br><code>conn</code>은 <code>connect</code>의 약자로 동일하게 사용가능한 명령어이다</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; conn sys&#x2F;비번 as sysdba</span><br><span class="line">Connected</span><br></pre></td></tr></table></figure>
-
-<p>sys를 제외한 나머지 유저들은 아래와 같이 연결할 수 있다</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; conn 유저이름&#x2F;비번</span><br><span class="line">Connected</span><br></pre></td></tr></table></figure>
-
-<p>sys에서 다른 유저로 접속하면 이전의 유저접속은 자동적으로 끊긴다.<br>어떤 유저로 접속한 지 궁금하면 <code>show user</code>명령어를 사용하면 된다</p>
-<ol start="4">
-<li>DB 끄는 명령어<br>리스너가 켜진 후 DB를 켜야하는데 만약 리스너를 깜박하고 DB를 먼저 켠 경우 뒤늦게<br>sys로 접속해서 DB를 끈 후 -&gt; 리스너를 켜고 -&gt; DB를 켜면 된다.<br>그렇다면 DB를 끄는 명령어는 무엇일까?<br>터미널창을 그냥 끄면 될까?</li>
-</ol>
-<h3 id="NOPE-1"><a href="#NOPE-1" class="headerlink" title="NOPE"></a>NOPE</h3><p>터미널창끈다고 DB가 꺼지는 건 아니다<br>DB를 끄는 명령어는 크게 두가지이다.</p>
-<pre><code>1. shut abort 명령어
-현재 처리중인 SQL statements를 모두 abort 시키고 rollback 안하고, users들 다 끊고, close &amp; dismount도 안한다. 
-즉, 그냥 꽝 닫는 것!
-다음번 오라클 시작시에 인스턴스가 자동 복구된다.</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; shut abort</span><br><span class="line">ORA-01031: insufficient privileges &#x2F;&#x2F;이건 권한부족으로 shut은 sys유저에서 진행해야한다</span><br><span class="line"></span><br><span class="line">SQL&gt; shut abort</span><br><span class="line">Oracle instance shut down</span><br></pre></td></tr></table></figure>
-
-<pre><code>2. stop 명령어 
-아래 명령어 또한 DB와 리스너를 종료하는 명령어다</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; stop</span><br><span class="line">Disconnected from Oracle Database</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>두 명령어의 차이점은 무엇일까?</p>
-</blockquote>
-<ol start="5">
-<li>exit 명렁어와 shut abort, stop의 차이점<br>이 명령어는 리스너나 DB를 끄는 명령어가 아니라 <strong>유저와 SQL+프로그램종료</strong>하는 언어다<br>DB꺼지는거아님<br>위의 명령어와 헷갈리지 말 것.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; exit</span><br><span class="line">Disconnected from Oracle Database</span><br></pre></td></tr></table></figure></li>
-</ol>
-</div></article></div><nav class="pagination is-centered mt-4" role="navigation" aria-label="pagination"><div class="pagination-previous is-invisible is-hidden-mobile"><a href="/categories/Database/page/0/">Previous</a></div><div class="pagination-next"><a href="/categories/Database/page/2/">Next</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link is-current" href="/categories/Database/">1</a></li><li><a class="pagination-link" href="/categories/Database/page/2/">2</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="" src="/img/avatar.png" alt="Sowon"></figure><p class="title is-size-4 is-block line-height-inherit">Sowon</p><p class="is-size-6 is-block">Welcome to my blog. I`m enjoying coding</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Busan</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">128</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">12</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">9</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/sowon-dev" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/sowon-dev"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://www.facebook.com/sowon.kim.39395"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://sowon-dev.github.io/"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://sowon-dev.github.io/"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="https://sowon-dev.github.io/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/Database/"><span class="level-start"><span class="level-item">Database</span></span><span class="level-end"><span class="level-item tag">11</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Django/"><span class="level-start"><span class="level-item">Django</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/HTML-CSS/"><span class="level-start"><span class="level-item">HTML&amp;CSS</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JAVA/"><span class="level-start"><span class="level-item">JAVA</span></span><span class="level-end"><span class="level-item tag">17</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JSP/"><span class="level-start"><span class="level-item">JSP</span></span><span class="level-end"><span class="level-item tag">10</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JavaScript/"><span class="level-start"><span class="level-item">JavaScript</span></span><span class="level-end"><span class="level-item tag">26</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Journal/"><span class="level-start"><span class="level-item">Journal</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Lectures-Seminars/"><span class="level-start"><span class="level-item">Lectures &amp; Seminars</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Python/"><span class="level-start"><span class="level-item">Python</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Version-control/"><span class="level-start"><span class="level-item">Version control</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%A0%9C%EC%A3%BC%EC%BD%94%EB%94%A9%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%BA%A0%ED%94%84-10%EA%B8%B0/"><span class="level-start"><span class="level-item">제주코딩베이스캠프 10기</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%BD%94%EB%93%9C%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%B8%A0-PRE35%EA%B8%B0/"><span class="level-start"><span class="level-item">코드스테이츠 PRE35기</span></span><span class="level-end"><span class="level-item tag">14</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">Recent</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2020-06-29T00:00:00.000Z">2020-06-29</time></p><p class="title is-6"><a class="link-muted" href="/2020/06/29/200629jspi2/">[ITWILL : JSP] ==과 str.equals(str2) 차이, 객체와 클래스</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JSP/">JSP</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-06-29T00:00:00.000Z">2020-06-29</time></p><p class="title is-6"><a class="link-muted" href="/2020/06/29/200629jspi/">[ITWILL : JSP] 세션(Session)</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JSP/">JSP</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-06-28T00:00:00.000Z">2020-06-28</time></p><p class="title is-6"><a class="link-muted" href="/2020/06/28/200628python/">[패스트캠퍼스python] 게시판만들기</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Django/">Django</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-06-27T00:00:00.000Z">2020-06-27</time></p><p class="title is-6"><a class="link-muted" href="/2020/06/27/200627python/">[패스트캠퍼스python] 상속, Django form기능</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Django/">Django</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-06-26T00:00:00.000Z">2020-06-26</time></p><p class="title is-6"><a class="link-muted" href="/2020/06/26/200626webi2/">[ITWILL : WEB] radio버튼클릭에 따라 하위태그 사라지게 하기</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/HTML-CSS/">HTML&amp;CSS</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/06/"><span class="level-start"><span class="level-item">June 2020</span></span><span class="level-end"><span class="level-item tag">80</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/05/"><span class="level-start"><span class="level-item">May 2020</span></span><span class="level-end"><span class="level-item tag">19</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/04/"><span class="level-start"><span class="level-item">April 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/03/"><span class="level-start"><span class="level-item">March 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/10/"><span class="level-start"><span class="level-item">October 2019</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/09/"><span class="level-start"><span class="level-item">September 2019</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/08/"><span class="level-start"><span class="level-item">August 2019</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/07/"><span class="level-start"><span class="level-item">July 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/HTML-CSS/"><span class="tag">HTML&amp;CSS</span><span class="tag is-grey-lightest">19</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ITWILL-JAVA/"><span class="tag">ITWILL(JAVA)</span><span class="tag is-grey-lightest">55</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Journal/"><span class="tag">Journal</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Oracle/"><span class="tag">Oracle</span><span class="tag is-grey-lightest">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Review/"><span class="tag">Review</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/TIL/"><span class="tag">TIL</span><span class="tag is-grey-lightest">123</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Web-Game/"><span class="tag">Web Game</span><span class="tag is-grey-lightest">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9/"><span class="tag">생활코딩</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%EA%B0%9C%EB%B0%9C/"><span class="tag">패스트캠퍼스(파이썬웹개발)</span><span class="tag is-grey-lightest">36</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a><p class="size-small"><span>&copy; 2020 Sowon</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+</div></article></div><nav class="pagination is-centered mt-4" role="navigation" aria-label="pagination"><div class="pagination-previous is-invisible is-hidden-mobile"><a href="/categories/Database/page/0/">Previous</a></div><div class="pagination-next"><a href="/categories/Database/page/2/">Next</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link is-current" href="/categories/Database/">1</a></li><li><a class="pagination-link" href="/categories/Database/page/2/">2</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="" src="/img/avatar.png" alt="Sowon"></figure><p class="title is-size-4 is-block line-height-inherit">Sowon</p><p class="is-size-6 is-block">Welcome to my blog. I`m enjoying coding</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Busan</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">131</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">12</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">9</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/sowon-dev" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/sowon-dev"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://www.facebook.com/sowon.kim.39395"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://sowon-dev.github.io/"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://sowon-dev.github.io/"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="https://sowon-dev.github.io/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/Database/"><span class="level-start"><span class="level-item">Database</span></span><span class="level-end"><span class="level-item tag">14</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Django/"><span class="level-start"><span class="level-item">Django</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/HTML-CSS/"><span class="level-start"><span class="level-item">HTML&amp;CSS</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JAVA/"><span class="level-start"><span class="level-item">JAVA</span></span><span class="level-end"><span class="level-item tag">17</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JSP/"><span class="level-start"><span class="level-item">JSP</span></span><span class="level-end"><span class="level-item tag">10</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JavaScript/"><span class="level-start"><span class="level-item">JavaScript</span></span><span class="level-end"><span class="level-item tag">26</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Journal/"><span class="level-start"><span class="level-item">Journal</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Lectures-Seminars/"><span class="level-start"><span class="level-item">Lectures &amp; Seminars</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Python/"><span class="level-start"><span class="level-item">Python</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Version-control/"><span class="level-start"><span class="level-item">Version control</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%A0%9C%EC%A3%BC%EC%BD%94%EB%94%A9%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%BA%A0%ED%94%84-10%EA%B8%B0/"><span class="level-start"><span class="level-item">제주코딩베이스캠프 10기</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%BD%94%EB%93%9C%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%B8%A0-PRE35%EA%B8%B0/"><span class="level-start"><span class="level-item">코드스테이츠 PRE35기</span></span><span class="level-end"><span class="level-item tag">14</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">Recent</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2020-06-30T00:00:00.000Z">2020-06-30</time></p><p class="title is-6"><a class="link-muted" href="/2020/06/30/200630dbi3/">[ITWILL : DB] 단일행함수 : 변환함수, 일반함수</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Database/">Database</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-06-30T00:00:00.000Z">2020-06-30</time></p><p class="title is-6"><a class="link-muted" href="/2020/06/30/200630dbi/">[ITWILL : DB] 단일행함수 : 문자함수</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Database/">Database</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-06-30T00:00:00.000Z">2020-06-30</time></p><p class="title is-6"><a class="link-muted" href="/2020/06/30/200630dbi2/">[ITWILL : DB] 단일행함수 : 숫자함수, 날짜함수</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Database/">Database</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-06-29T00:00:00.000Z">2020-06-29</time></p><p class="title is-6"><a class="link-muted" href="/2020/06/29/200629jspi/">[ITWILL : JSP] 세션(Session)</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JSP/">JSP</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-06-29T00:00:00.000Z">2020-06-29</time></p><p class="title is-6"><a class="link-muted" href="/2020/06/29/200629jspi2/">[ITWILL : JSP] ==과 str.equals(str2) 차이, 객체와 클래스</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JSP/">JSP</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/06/"><span class="level-start"><span class="level-item">June 2020</span></span><span class="level-end"><span class="level-item tag">83</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/05/"><span class="level-start"><span class="level-item">May 2020</span></span><span class="level-end"><span class="level-item tag">19</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/04/"><span class="level-start"><span class="level-item">April 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/03/"><span class="level-start"><span class="level-item">March 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/10/"><span class="level-start"><span class="level-item">October 2019</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/09/"><span class="level-start"><span class="level-item">September 2019</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/08/"><span class="level-start"><span class="level-item">August 2019</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/07/"><span class="level-start"><span class="level-item">July 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/HTML-CSS/"><span class="tag">HTML&amp;CSS</span><span class="tag is-grey-lightest">19</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ITWILL-JAVA/"><span class="tag">ITWILL(JAVA)</span><span class="tag is-grey-lightest">58</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Journal/"><span class="tag">Journal</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Oracle/"><span class="tag">Oracle</span><span class="tag is-grey-lightest">12</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Review/"><span class="tag">Review</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/TIL/"><span class="tag">TIL</span><span class="tag is-grey-lightest">126</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Web-Game/"><span class="tag">Web Game</span><span class="tag is-grey-lightest">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9/"><span class="tag">생활코딩</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%EA%B0%9C%EB%B0%9C/"><span class="tag">패스트캠퍼스(파이썬웹개발)</span><span class="tag is-grey-lightest">36</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a><p class="size-small"><span>&copy; 2020 Sowon</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
             site: {
                 url: 'https://github.com/sowon-dev',
                 external_link: {"enable":true,"exclude":[]}
