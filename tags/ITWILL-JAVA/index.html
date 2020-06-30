@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.0"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Tag: ITWILL(JAVA) - 야망찬 개발자의 블로그</title><meta property="og:type" content="blog"><meta property="og:title" content="야망찬 개발자의 블로그"><meta property="og:url" content="https://github.com/sowon-dev"><meta property="og:site_name" content="야망찬 개발자의 블로그"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://github.com/img/og_image.png"><meta property="article:author" content="Sowon"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://github.com/sowon-dev"},"headline":"야망찬 개발자의 블로그","image":["https://github.com/img/og_image.png"],"author":{"@type":"Person","name":"Sowon"},"description":""}</script><link rel="icon" href="/img/star.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">Tags</a></li><li class="is-active"><a href="#" aria-current="page">ITWILL(JAVA)</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-30T00:00:00.000Z" title="2020-06-30T00:00:00.000Z">2020-06-30</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">a minute read (About 221 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/30/200630dbi3/">[ITWILL : DB] 단일행함수 : 변환함수, 일반함수</a></h1><div class="content"><h3 id="ITWILL학원-10강-Database-BY-정지윤강사"><a href="#ITWILL학원-10강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 10강 Database BY 정지윤강사"></a>ITWILL학원 : 10강 Database BY 정지윤강사</h3><p>SQL함수에는 두가지 유형이 있다.</p>
+<html lang="en"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.0"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Tag: ITWILL(JAVA) - 야망찬 개발자의 블로그</title><meta property="og:type" content="blog"><meta property="og:title" content="야망찬 개발자의 블로그"><meta property="og:url" content="https://github.com/sowon-dev"><meta property="og:site_name" content="야망찬 개발자의 블로그"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://github.com/img/og_image.png"><meta property="article:author" content="Sowon"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://github.com/sowon-dev"},"headline":"야망찬 개발자의 블로그","image":["https://github.com/img/og_image.png"],"author":{"@type":"Person","name":"Sowon"},"description":""}</script><link rel="icon" href="/img/star.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">Tags</a></li><li class="is-active"><a href="#" aria-current="page">ITWILL(JAVA)</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-30T00:00:00.000Z" title="2020-06-30T00:00:00.000Z">2020-06-30</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">6 minutes read (About 860 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/30/200630dbi3/">[ITWILL : DB] 단일행함수 : 변환함수, 일반함수</a></h1><div class="content"><h3 id="ITWILL학원-10강-Database-BY-정지윤강사"><a href="#ITWILL학원-10강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 10강 Database BY 정지윤강사"></a>ITWILL학원 : 10강 Database BY 정지윤강사</h3><p>SQL함수에는 두가지 유형이 있다.</p>
 <ol>
 <li>단일행함수 : 행당 하나의 결과 반환</li>
 <li>여러행함수 : 행 집합당 하나의 결과 반환</li>
@@ -13,8 +13,77 @@
 <li><a href="https://hexoblog-lwqbi.run.goorm.io/2020/06/30/200630dbi3/">변환함수</a></li>
 <li><a href="https://hexoblog-lwqbi.run.goorm.io/2020/06/30/200630dbi3/">일반함수</a></li>
 </ol>
-<p><img src="https://slidesplayer.org/slide/14385477/89/images/3/%EB%8B%A8%EC%9D%BC%ED%96%89+%ED%95%A8%EC%88%98+%EB%8B%A8%EC%9D%BC%ED%96%89+%ED%95%A8%EC%88%98+%EB%8B%A8%EC%9D%BC%ED%96%89+%ED%95%A8%EC%88%98%EC%9D%98+%EC%A2%85%EB%A5%98+%EB%8D%B0%EC%9D%B4%ED%84%B0+%EA%B0%92%EC%9D%84+%EC%A1%B0%EC%9E%91%ED%95%98%EB%8A%94%EB%8D%B0+%EC%A3%BC%EB%A1%9C+%EC%82%AC%EC%9A%A9.jpg" alt=""></p>
-<h2 id="1-변환함수"><a href="#1-변환함수" class="headerlink" title="1. 변환함수"></a>1. 변환함수</h2></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-30T00:00:00.000Z" title="2020-06-30T00:00:00.000Z">2020-06-30</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">8 minutes read (About 1154 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/30/200630dbi/">[ITWILL : DB] 단일행함수 : 문자함수</a></h1><div class="content"><h3 id="ITWILL학원-10강-Database-BY-정지윤강사"><a href="#ITWILL학원-10강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 10강 Database BY 정지윤강사"></a>ITWILL학원 : 10강 Database BY 정지윤강사</h3><p>SQL함수에는 두가지 유형이 있다.</p>
+<h2 id="1-변환함수"><a href="#1-변환함수" class="headerlink" title="1. 변환함수"></a>1. 변환함수</h2><p>변환함수는 총 3가지이다.</p>
+<ol>
+<li>to_char()</li>
+<li>to_number() : 거의 사용안함.</li>
+<li>to_date() : 가장 많이 사용.</li>
+</ol>
+<p><img src="https://t1.daumcdn.net/cfile/tistory/25710F49542A415709" alt="https://goalker.tistory.com/69"></p>
+<p>출력형식은 아래와 같다.</p>
+<p><img src="https://wikidocs.net/images/page/3936/10.PNG" alt="https://wikidocs.net/3936"></p>
+<ol>
+<li><p>Y대신 R을 써도 연도표시가능</p>
+<ul>
+<li>RRRR : 숫자로 된 전체 연도 ex)2020</li>
+<li>RR : 두자리숫자로 된 전체 연도 ex)20</li>
+</ul>
+</li>
+<li><p>문자열은 큰 따옴표(“”)로 묶어 추가한다.</p>
+</li>
+<li><p>숫자 접미어는 숫자를 영어 철자로 표기한다.<br>아래 예시는 오늘이 6월 30일인 경우 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ select to_char(sysdate, <span class="string">'fmDdspth "of" month YYYY fnHH:MI:SS AM'</span>)</span><br><span class="line">$ from dual;</span><br><span class="line"></span><br><span class="line">//반환값 : thirtieth of june 2020 02:41:38PM</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>예시<br>대문자면 대문자로, 소문자면 소문자로, INITCAP이면 INITCAP형식으로 출력된다. </p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ select to_char(sysdate, <span class="string">'YEAR-MONTH-DD DAY HH24:MI:SS AM'</span>) as today</span><br><span class="line">$ from dual;</span><br><span class="line">//반환값 : TWENTY TWENTY-JUNE-30 TUESDAY 14:32:24 PM</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">$ select to_char(sysdate, <span class="string">'"Today is" RRRR-mm-dd DY! "and time is " HH:MI'</span>) as today</span><br><span class="line">$ from dual;</span><br><span class="line">//반환값 : Today is 2020-Jun-30 TUE! and time is 02:32</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="2-쿼리구문에-큰따옴표-“-“-가-사용되는-경우"><a href="#2-쿼리구문에-큰따옴표-“-“-가-사용되는-경우" class="headerlink" title="2. 쿼리구문에 큰따옴표(“ “)가 사용되는 경우"></a>2. 쿼리구문에 큰따옴표(“ “)가 사용되는 경우</h2><ol>
+<li>컬럼명 [AS] “Alias” : 대소문자, 공백, 특수문자 포함 시</li>
+<li>to_char(sysdate, ‘YYYY-MM-DD “Time” HH24:MI’) : 사용자 형식 내 문자열 포함 시</li>
+</ol>
+<h2 id="3-일반함수"><a href="#3-일반함수" class="headerlink" title="3. 일반함수"></a>3. 일반함수</h2><table>
+<thead>
+<tr>
+<th align="center">종류</th>
+<th align="left">의미</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">NVL(expr1, expr2)</td>
+<td align="left">expr1이 null이면 expr2 반환</td>
+</tr>
+<tr>
+<td align="center">NVL2(expr1, expr2, expr3)</td>
+<td align="left">expr1이 null이면 expr2 반환</td>
+</tr>
+<tr>
+<td align="center">NULLIF(expr1, expr2)</td>
+<td align="left">expr1 = expr2이면 null반환 같지않으면 expr1을 반환</td>
+</tr>
+<tr>
+<td align="center">COALESCE(expr1, expr2, …, exprn)</td>
+<td align="left">expr1이 null이 아니면 expr1을 출력하고 종료 후 다음행시작한다. 만약 expr1이 null이면 expr2가 null인지 검사하고 expr2가 null아니면 expr2의 실제값 반환하고 종료한다. 만약 expr2가 null이면 세번째인수 검사하면서 실제값이 나올때까지 n번 한다.</td>
+</tr>
+</tbody></table>
+<ol>
+<li>NVL 함수 : 가장 많이 사용<br>null값을 실제 값으로 변환한다,<br>사용할 수 있는 데이터 유형은 날짜, 문자, 및 숫자이다.<br>데이터 유형이 일치해야한다.</li>
+</ol>
+<p>아래는 직원들의 연봉을 계산하는 쿼리이다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ select last_name, salary, commission_pct,</span><br><span class="line">$ (salary*12) + (salary*12*commission_pct) as annual salary</span><br><span class="line">$ from employees;</span><br><span class="line"></span><br><span class="line">//출력값 : 에러</span><br></pre></td></tr></table></figure>
+
+<p>commission이 없는 직원의 경우 null값이 입력되어있기때문에 산술연산자가 제대로 계산되지 않는다.<br>이때 사용하는 것이 NVL함수이다<br>commission값이 null이면 0으로 변경해서 산술이 잘 이뤄지도록 만든다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ select last_name, salary, commission_pct,</span><br><span class="line">$ (salary*12) + (salary*12*nvl(commission_pct,0)) as annual salary</span><br><span class="line">$ from employees;</span><br><span class="line"></span><br><span class="line">//출력값 : 정상적으로 출력됨</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>NVL2함수 : 첫번째 표현식을 검사해서 NULL이 아니면 두번째 표현식을 반환하고 NULL이면 세번째 표현식을 반환한다.</li>
+</ol>
+<blockquote>
+<p>약간 내 느낌에 NVL2는 삼항연산자같다.ㅋㅋㅋㅋ<br>(조건 expr1 == null)? 참(expr3반환):거짓(expr2반환)</p>
+</blockquote>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-30T00:00:00.000Z" title="2020-06-30T00:00:00.000Z">2020-06-30</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">8 minutes read (About 1154 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/30/200630dbi/">[ITWILL : DB] 단일행함수 : 문자함수</a></h1><div class="content"><h3 id="ITWILL학원-10강-Database-BY-정지윤강사"><a href="#ITWILL학원-10강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 10강 Database BY 정지윤강사"></a>ITWILL학원 : 10강 Database BY 정지윤강사</h3><p>SQL함수에는 두가지 유형이 있다.</p>
 <ol>
 <li>단일행함수 : 행당 하나의 결과 반환</li>
 <li>여러행함수 : 행 집합당 하나의 결과 반환</li>
@@ -123,7 +192,7 @@
 <li>replace(expr1, expr2, expr3)<br>문자열(expr1)로 부터 특정 문자(expr2)를 다른 문자(expr3)로 교체해주는 함수이다.</li>
 </ol>
 <p>DB에 폰번호가 .로 저장되어있을때 우리가 보기 편하게 -로 바꿔줄수있다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//기존데이터 : 010.1234.5678</span><br><span class="line">$ select last_name, replace(phone_number, <span class="string">'.'</span>, <span class="string">'-'</span>) as mobile</span><br><span class="line">$ from employees</span><br><span class="line"></span><br><span class="line">//replace후 반환 : 010-1234-5678</span><br></pre></td></tr></table></figure></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-30T00:00:00.000Z" title="2020-06-30T00:00:00.000Z">2020-06-30</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">4 minutes read (About 585 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/30/200630dbi2/">[ITWILL : DB] 단일행함수 : 숫자함수, 날짜함수</a></h1><div class="content"><h3 id="ITWILL학원-10강-Database-BY-정지윤강사"><a href="#ITWILL학원-10강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 10강 Database BY 정지윤강사"></a>ITWILL학원 : 10강 Database BY 정지윤강사</h3><p>SQL함수에는 두가지 유형이 있다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//기존데이터 : 010.1234.5678</span><br><span class="line">$ select last_name, replace(phone_number, <span class="string">'.'</span>, <span class="string">'-'</span>) as mobile</span><br><span class="line">$ from employees</span><br><span class="line"></span><br><span class="line">//replace후 반환 : 010-1234-5678</span><br></pre></td></tr></table></figure></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-30T00:00:00.000Z" title="2020-06-30T00:00:00.000Z">2020-06-30</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">3 minutes read (About 505 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/30/200630dbi2/">[ITWILL : DB] 단일행함수 : 숫자함수, 날짜함수</a></h1><div class="content"><h3 id="ITWILL학원-10강-Database-BY-정지윤강사"><a href="#ITWILL학원-10강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 10강 Database BY 정지윤강사"></a>ITWILL학원 : 10강 Database BY 정지윤강사</h3><p>SQL함수에는 두가지 유형이 있다.</p>
 <ol>
 <li>단일행함수 : 행당 하나의 결과 반환</li>
 <li>여러행함수 : 행 집합당 하나의 결과 반환</li>
@@ -137,7 +206,6 @@
 <li><a href="https://hexoblog-lwqbi.run.goorm.io/2020/06/30/200630dbi3/">변환함수</a></li>
 <li><a href="https://hexoblog-lwqbi.run.goorm.io/2020/06/30/200630dbi3/">일반함수</a></li>
 </ol>
-<p><img src="https://slidesplayer.org/slide/14385477/89/images/3/%EB%8B%A8%EC%9D%BC%ED%96%89+%ED%95%A8%EC%88%98+%EB%8B%A8%EC%9D%BC%ED%96%89+%ED%95%A8%EC%88%98+%EB%8B%A8%EC%9D%BC%ED%96%89+%ED%95%A8%EC%88%98%EC%9D%98+%EC%A2%85%EB%A5%98+%EB%8D%B0%EC%9D%B4%ED%84%B0+%EA%B0%92%EC%9D%84+%EC%A1%B0%EC%9E%91%ED%95%98%EB%8A%94%EB%8D%B0+%EC%A3%BC%EB%A1%9C+%EC%82%AC%EC%9A%A9.jpg" alt="https://slidesplayer.org/slide/14385477/"></p>
 <h2 id="1-숫자함수"><a href="#1-숫자함수" class="headerlink" title="1. 숫자함수"></a>1. 숫자함수</h2><p>실무에서는 반올림, 버림을 자주 사용한다.<br>실무에서 올림은 잘 사용하지않는다.<br>mod함수는 홀수짝수 구분할때 주로 사용한다.</p>
 <p><img src="https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http%3A%2F%2Fcfile28.uf.tistory.com%2Fimage%2F2575E54F560BB83208BAA5" alt="https://oraclejavastudy.tistory.com/m/787?category=544330"></p>
 <h3 id="1-dual-듀얼-테이블"><a href="#1-dual-듀얼-테이블" class="headerlink" title="1. dual(듀얼) 테이블"></a>1. dual(듀얼) 테이블</h3><p>select는 출력쿼리이다.<br> 12&#42;123 이라는 간단한 산술결과값을 출력하고 싶다.</p>
