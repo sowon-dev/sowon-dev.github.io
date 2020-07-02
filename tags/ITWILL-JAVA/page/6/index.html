@@ -1,5 +1,163 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.0"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Tag: ITWILL(JAVA) - 야망찬 개발자의 블로그</title><meta property="og:type" content="blog"><meta property="og:title" content="야망찬 개발자의 블로그"><meta property="og:url" content="https://github.com/sowon-dev"><meta property="og:site_name" content="야망찬 개발자의 블로그"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://github.com/img/og_image.png"><meta property="article:author" content="Sowon"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://github.com/sowon-dev"},"headline":"야망찬 개발자의 블로그","image":["https://github.com/img/og_image.png"],"author":{"@type":"Person","name":"Sowon"},"description":""}</script><link rel="icon" href="/img/star.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">Tags</a></li><li class="is-active"><a href="#" aria-current="page">ITWILL(JAVA)</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-08T00:00:00.000Z" title="2020-06-08T00:00:00.000Z">2020-06-08</time><span class="level-item"><a class="link-muted" href="/categories/JAVA/">JAVA</a></span><span class="level-item">7 minutes read (About 1056 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/08/200608javai/">ITWILL : Method, 변수와 상수, 배열 Array의 선언방법 2가지 비교, new키워드</a></h1><div class="content"><h3 id="ITWILL학원-4강-JAVA-BY-윤미영강사"><a href="#ITWILL학원-4강-JAVA-BY-윤미영강사" class="headerlink" title="ITWILL학원 : 4강 JAVA BY 윤미영강사"></a>ITWILL학원 : 4강 JAVA BY 윤미영강사</h3><h2 id="1-Method"><a href="#1-Method" class="headerlink" title="1. Method"></a>1. Method</h2><p>괄호가 있으면 다 매서드라고 부른다<br>매서드는 항상 Class라는 주인이 있어야 한다.</p>
+<html lang="en"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.0"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Tag: ITWILL(JAVA) - 야망찬 개발자의 블로그</title><meta property="og:type" content="blog"><meta property="og:title" content="야망찬 개발자의 블로그"><meta property="og:url" content="https://github.com/sowon-dev"><meta property="og:site_name" content="야망찬 개발자의 블로그"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://github.com/img/og_image.png"><meta property="article:author" content="Sowon"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://github.com/sowon-dev"},"headline":"야망찬 개발자의 블로그","image":["https://github.com/img/og_image.png"],"author":{"@type":"Person","name":"Sowon"},"description":""}</script><link rel="icon" href="/img/star.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">Tags</a></li><li class="is-active"><a href="#" aria-current="page">ITWILL(JAVA)</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-08T00:00:00.000Z" title="2020-06-08T00:00:00.000Z">2020-06-08</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">16 minutes read (About 2333 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/08/200608dbi/">[ITWILL : DB]제약조건의 컬럼레벨과 테이블레벨문법, 제약조건 5가지, varchar와 char 비교</a></h1><div class="content"><h3 id="ITWILL학원-4강-Database-BY-정지윤강사"><a href="#ITWILL학원-4강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 4강 Database BY 정지윤강사"></a>ITWILL학원 : 4강 Database BY 정지윤강사</h3><h2 id="1-제약조건명-생성시-문법-2가지"><a href="#1-제약조건명-생성시-문법-2가지" class="headerlink" title="1. 제약조건명 생성시 문법 2가지"></a>1. 제약조건명 생성시 문법 2가지</h2><p>제약조건명 생성시 oracle에서 권장하는 이름작성 방법이 두가지(컬럼레벨문법과 테이블레벨문법)가 있다.</p>
+<ol>
+<li>Column-level 문법<br>컬럼레벨의 문법이다.<br>Not Null 제약조건사용시 column-level문법으로 작성해야한다! 나머지는 둘 중 하나만 쓰면 된다</li>
+</ol>
+<p>예시1 : <code>테이블명약자_컬럼명약자_제약조건유형약자</code></p>
+<p>예시2 : <code>emp_empid_pk</code> (employ테이블의 id컬럼 primary key의 제약이 있다 )</p>
+<ol start="2">
+<li>Table-level 문법<br>테이블레벨의 문법이다.</li>
+</ol>
+<p>예시 : <code>테이블명약자_컬럼명약자_제약조건유형약자(컬럼명)</code></p>
+<h2 id="2-제약조건-5가지"><a href="#2-제약조건-5가지" class="headerlink" title="2. 제약조건 5가지"></a>2. 제약조건 5가지</h2><ol>
+<li>Not null (NN)</li>
+</ol>
+<ul>
+<li>컬럼레벨문법만 가능</li>
+<li>빈 값(null값)이 컬럼에 삽입될 수 없다.</li>
+<li>테이블안의 여러컬럼에 선언 가능</li>
+<li>예를들어, 회원가입테이블에서 이름과 전화번호가 필수인 경우 Not Null 제약조건을 걸어서 필수사항을 꼭 기입하도록 하는 조건이다</li>
+<li>주로 사용하는 약자 nn</li>
+</ul>
+<ol start="2">
+<li>Unique (UK)</li>
+</ol>
+<ul>
+<li>고유한 값만 가능하다. (중복불가)</li>
+<li>테이블안의 여러컬럼에 선언 가능</li>
+</ul>
+<ol start="3">
+<li>Primary key (PK)</li>
+</ol>
+<ul>
+<li>Not null과 Unique성격을 동시에 가진다.</li>
+<li>테이블안의 여러컬럼에 선언 <code>불가</code>. <strong>테이블당 한 컬럼에만 사용가능</strong></li>
+<li>어떤 컬럼을 Primary key 조건을 걸면 좋을까? <ul>
+<li>개인의 선택이지만 지극히 개인정보는 선택하면 안된다</li>
+<li>예를들어 사원테이블에서 사원주민번호를 Primary key를 설정하면 주민번호가 대표key이므로 이곳 저곳에 데이터가 불려다니게 되므로 정보유출이 될 수 있다. (보안에 취약) </li>
+<li>따라서 사원 주민번호보단 사원번호를 Primary key를 설정하는 것이 좋다</li>
+</ul>
+</li>
+<li>예시</li>
+</ul>
+<p><img src="/img/200608dbi.PNG" alt=""></p>
+<ol start="4">
+<li>Foreign Key (FK)</li>
+</ol>
+<ul>
+<li>자기 자신 테이블이나 다른 테이블의 특정 컬럼(PK, UK)를 참조하는 제약조건</li>
+<li>아무컬럼이나 참조할 수 있는 것은 아니고 PK조건이나 UK조건이 있는 컬럼만 FK로 참조할 수 있다</li>
+<li>FK가 지정되어있으면 해당컬럼이 자식컬럼이 되고 참조한 PK이나 UK조건컬럼이 모부컬럼이 된다. </li>
+<li>테이블안의 여러컬럼에 선언 가능</li>
+<li>자식컬럼이 있는한 모부컬럼은 삭제되지않는다. </li>
+<li>모부컬럼에 있는 내용만 자식컬럼에 들어올 수 있다. BUT null</li>
+<li>유일하게 모부컬럼에 없는 null은 자식컬럼에 허용한다<ul>
+<li>null이란 zero도 아니고 공백도 아닌 특수한 값으로 아직 정의되지않은 값을 의미한다.</li>
+<li>모부컬럼에 없는 null이 자식컬럼에 들어올 수 있다</li>
+</ul>
+</li>
+</ul>
+<ol start="5">
+<li>Check (CK)</li>
+</ol>
+<ul>
+<li>해당 컬럼이 만족해야하는 조건들을 자유자재로 지정하는 제약 조건</li>
+<li>테이블안에 여러컬럼에 선언 가능</li>
+<li>컬럼레벨로 선언했을때와 테이블레벨로 선언했을때의 차이가 없는 유일한 제약조건이다</li>
+<li>예시1 : 컬럼레벨과 테이블레벨 차이점 예시 <ul>
+<li>Salary라는 컬럼은 급여데이터이기때문에 CHECK (salary &gt; 0)으로 제약조건을 걸수있다.</li>
+<li>컬럼레벨 : salary number(2), … constraint emp_salary_min CHECK (salary &gt; 0), …</li>
+<li>테이블레벨 : salary number(2), … constraint emp_salary_min CHECK (salary &gt; 0), …</li>
+<li>다른 제약조건들과 달리 두 레벨의 차이점이 없는 것이 특징이다</li>
+</ul>
+</li>
+<li>예시2 : 길이조건<ul>
+<li>주민번호 varchar2(13) constraint 000 check (length(주민번호) = 13), …</li>
+</ul>
+</li>
+<li>예시3 : 성별조건<ul>
+<li>아래 두 문장은 동일한 결과값을 가진다.</li>
+<li>성별 varchar2(10) constraint 000 check (성별 = ‘여’ or 성별 = ‘남’ ), …</li>
+<li>성별 varchar2(10) constraint 000 check (성별 in (‘여’,’남’)), …</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-제약조건-전체-예시"><a href="#3-제약조건-전체-예시" class="headerlink" title="3. 제약조건 전체 예시"></a>3. 제약조건 전체 예시</h2><p>위에서 배운 제약조건들을 다 넣은 예시룰 보자</p>
+<p><img src="/img/200608dbi2.PNG" alt=""></p>
+<ol>
+<li>사원번호는 주로 PK제약조건을 사용하기때문에 PK제약조건을 사용했다</li>
+<li>이름에 공백에 있으면 안되므로 NN제약조건을 사용했다</li>
+<li>number(8,2)는 전체 데이터는 8byte이고 소수점 둘째자리까지 나타낸다는 의미이다</li>
+<li>CHECK제약조건을 사용하여 급여는 0보다 커야한다는 제약을 걸었다</li>
+<li>내 테이블안의 FK제약조건을 사용했다<ul>
+<li>모부칼럼 : employees1 테이블의 employee_id 칼럼    </li>
+<li>자식칼럼 : employees1 테이블의 manager_id 칼럼    </li>
+</ul>
+</li>
+<li>다른 테이블을 가져와서 FK제약조건을 사용했다<ul>
+<li>모부컬럼 : departments 테이블의 department_id 칼럼</li>
+<li>자식컬럼 : employees1 테이블의 department_id 칼럼</li>
+</ul>
+</li>
+</ol>
+<h2 id="4-제약조건-확인하는-방법"><a href="#4-제약조건-확인하는-방법" class="headerlink" title="4. 제약조건 확인하는 방법"></a>4. 제약조건 확인하는 방법</h2><p>DB사전에서 찾아보면 테이블에 선언된 제약조건을 확인할 수 있다</p>
+<p><img src="/img/200608dbi3.PNG" alt=""></p>
+<ol>
+<li><p>select 명령어를 통해 제약조건_이름과 제약조건_타입, C가 not null인지 checnk조건인지 서치, 래퍼런스가있으면 그이름 가져오기</p>
+</li>
+<li><p>from user_constraints 은 DB사전안에 제약조건을 확인할 수 있는 곳이다</p>
+</li>
+<li><p>where table_name = 테이블명을 적어줘야하는데 아무명이나 들어갈 수 있도록 <code>&amp;tablename</code>으로 설정한다 -&gt; 추후 sql쿼리문을 저장하기 위해서</p>
+</li>
+<li><p>테이블명을 항상 <strong>대문자</strong>로 적어야한다</p>
+</li>
+<li><p>데이터가 출력되었으나 보기 좋게 출력되지 않았다. 데이터를 가독성있게 작성해보자</p>
+</li>
+<li><p>not null과 check는 둘다 C라고 뜬다 따라서 search를 꼭 입력해줘야 그 뒤의 결과값으로 두가지가 구분 가능하다.search_condition으로 C가 not null조건인지 check조건인지 알수있다.</p>
+</li>
+</ol>
+<p><img src="/img/200608dbi4.PNG" alt=""></p>
+<ol start="7">
+<li>col 원하는컬럼이름 format a원하는크기 : col은 컬럼의 약어로 col이 나타나는 형식을 바꿔서 가독성을 높이는 명령어이다<ul>
+<li>여기서 col은 끝에 ;(세미콜론)을 넣지않았다. 이건 시스템언어이기때문이다</li>
+<li>컬럼아래의 점선의 한 점이 1byte라고 생각하면 된다 따라서 글씨크기는 보통 a20해주면 깔끔</li>
+</ul>
+</li>
+</ol>
+<ol start="8">
+<li><p>enter value for tabkename: 테이블명은 항상 <strong>대문자</strong>로 적어준다</p>
+</li>
+<li><p>짜잔- 가독성있게 데이터가 잘 출력되었다.</p>
+</li>
+</ol>
+<h2 id="5-버퍼에-있는-자주-사용할-쿼리구문을-저장하는-방법"><a href="#5-버퍼에-있는-자주-사용할-쿼리구문을-저장하는-방법" class="headerlink" title="5. 버퍼에 있는 자주 사용할 쿼리구문을 저장하는 방법"></a>5. 버퍼에 있는 자주 사용할 쿼리구문을 저장하는 방법</h2><p>버퍼에 있는 쿼리구문이 앞으로 자주 사용될 것같다는 판단이 들면 버퍼가 덮어씌어지기전에 따로 저장해놓으면 된다<br>쿼리구문이 들어가 있는 파일을 저장하려면 무조건 확장자는 .sql로 저장해야한다</p>
+<p><img src="/img/200608dbi5.PNG" alt=""></p>
+<ol>
+<li>현재 버퍼의 쿼리구문 확인<br>현재 버퍼에 어떤 퀴리구문이 남아있는지 확인하는 명령어는<br><code>l</code>이다.<br>버퍼로 들어가지않고도(ed) 버퍼에 남은 마지막 퀴리구문이 뭔지 확인하는 명령어이다. -&gt; <code>l</code>에서 빠져나오려면 / + enter 하면 된다.</li>
+</ol>
+<ol start="2">
+<li>쿼리구문 저장하기<br>명령어는 <code>save 저장경로/저장하고픈 파일명.sql</code> 이다</li>
+</ol>
+<p>home 안에 있는 oracle에 cons.sql이라고 저장해보려면 아래의 문구를 쓰면 된다.</p>
+<p>save /home/oracle/cons.sql</p>
+<ol start="3">
+<li>저장한 쿼리파일 실행하기<br>명령어는 <code>@/저장경로/저장하고픈 파일명.sql</code></li>
+</ol>
+<p>위에 저장했더 경로의 파일을 그대로 불러오면된다</p>
+<p>@/home/oracle/cons.sql</p>
+<ol start="4">
+<li>테이블이름 입력에 확인하고싶은 테이블이름을 무조건 <strong>대문자</strong>로 입력한다<br>아래 5번에 제약조건쿼리구문이 실행된 것을 확인할 수 있다.</li>
+</ol>
+<h2 id="6-varchar와-char-비교"><a href="#6-varchar와-char-비교" class="headerlink" title="6. varchar와 char 비교"></a>6. varchar와 char 비교</h2><p>데이터를 저장할때 두가지 크게 고정길이와 가변길이 형식으로 쓸 수 있다</p>
+<ol>
+<li>char : 고정길이 문자열 형식<br>예를 들어 char(20)는 20byte를 가지는 문자열 형식이 있다<br>여기에 ninano라는 6자짜리 문자열을 넣으면 남은 공간인 14byte는 공백으로 채워 총 20byte를 사용한다<br>따라서 고정길이가 정확한 문자열에만 사용해야한다 아니면 공간의 낭비가 발생할 수 있다</li>
+</ol>
+<ol start="2">
+<li>varchar2 : 가변길이 문자열 형식<br>길이정보도 같이 저장되는 문자열 형식이다.<br>예를들어 varchar2(20)일때 ninano라는 6자짜리 문자열을 넣으면 6byte + 길이정보저장공간 1byte까지 총 7byte만 사용한다.<br>공간을 적게 차지할 수 있기에 보통 varchar2를 이용한다</li>
+</ol>
+<p>참고로 varchar1은 없다. varchar와 varchar2만 있을뿐…ㅋㅋㅋㅋㅋ</p>
+<p> <a href="https://goodgid.github.io/JS-char-vs-varchar/#:~:text=VARCHAR%EB%8A%94%20%EC%9D%B4%EB%A6%84%EC%9D%B4%20%EC%9D%98%EB%AF%B8%ED%95%98%EB%93%AF%20%EA%B0%80%EB%B3%80%EA%B8%B8%EC%9D%B4%EC%9D%B4%EB%8B%A4.&text=255%EA%B8%80%EC%9E%90%20%EC%9D%B4%ED%95%98%EC%97%90%EB%8A%94%201,%EC%A0%95%EB%B3%B4%EB%8F%84%20%EA%B0%99%EC%9D%B4%20%EC%A0%80%EC%9E%A5%EB%90%9C%EB%8B%A4.">varchar와 char 비교링크</a></p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-08T00:00:00.000Z" title="2020-06-08T00:00:00.000Z">2020-06-08</time><span class="level-item"><a class="link-muted" href="/categories/JAVA/">JAVA</a></span><span class="level-item">7 minutes read (About 1056 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/08/200608javai/">ITWILL : Method, 변수와 상수, 배열 Array의 선언방법 2가지 비교, new키워드</a></h1><div class="content"><h3 id="ITWILL학원-4강-JAVA-BY-윤미영강사"><a href="#ITWILL학원-4강-JAVA-BY-윤미영강사" class="headerlink" title="ITWILL학원 : 4강 JAVA BY 윤미영강사"></a>ITWILL학원 : 4강 JAVA BY 윤미영강사</h3><h2 id="1-Method"><a href="#1-Method" class="headerlink" title="1. Method"></a>1. Method</h2><p>괄호가 있으면 다 매서드라고 부른다<br>매서드는 항상 Class라는 주인이 있어야 한다.</p>
 <p>다른 사람이 만들어 놓은 매서드를 사용할 수 있다. = 라이브러리라고 부른다 </p>
 <p>예시</p>
 <ul>
@@ -553,104 +711,7 @@
 <li><code>!</code> 느낌표 넣어서 NOT연산</li>
 </ul>
 <p><a href="https://wikidocs.net/20699">논리연산자진리표</a>를 꼭 기억해야한다.</p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-02T00:00:00.000Z" title="2020-06-02T00:00:00.000Z">2020-06-02</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">11 minutes read (About 1680 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/02/200602dbi/">[ITWILL : DB]간단 리눅스명령어(복붙포함), Oracle 명령어, DB작동방법</a></h1><div class="content"><h3 id="ITWILL학원-2강-Database-BY-정지윤강사"><a href="#ITWILL학원-2강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 2강 Database BY 정지윤강사"></a>ITWILL학원 : 2강 Database BY 정지윤강사</h3><h2 id="1-리눅스-OS-user"><a href="#1-리눅스-OS-user" class="headerlink" title="1. 리눅스 OS user"></a>1. 리눅스 OS user</h2><ol>
-<li><p>root<br>관리자권한 실행, 최상위유저, 자동으로 계정이 생성됨<br>회사의 서버관리자가 보통 사용</p>
-</li>
-<li><p>OS유저<br>서버관리자가 데이터베이스관리자나 개발자를 위해 만들어주는 계정<br>보통 아래 두가지 정도의 최소한의 권한을 가짐</p>
-</li>
-</ol>
-<ul>
-<li>home/oracle 디렉토리 권한</li>
-<li>u01/app/oracle 디렉토리 권한</li>
-</ul>
-<p>계정을 나누지 않으면 개발자나 DB관리자가 서버시스템파일 수정이나 삭제 해버리면 모든 게 먹통된다.<br>따라서 꼭 계정을 나눠서 사용해야한다.</p>
-<p>리눅스계열의 샌토OS를 강의때 사용할 예정.</p>
-<h2 id="2-DB-user"><a href="#2-DB-user" class="headerlink" title="2. DB user"></a>2. DB user</h2><p>DB를 처음 생성하면 관리자의 권한을 가지고 있는 두 개의 계정이 자동으로 생성됨<br>왜 굳이 두개 계정이 생성될까?<br>차이점을 확실히 알아야한다. 바로 권한에 차이가 있다</p>
-<ul>
-<li>sys : sysdba 권한(= dba + DB + DB시작/종료), 가장 높은 권한.</li>
-<li>system : dba 권한</li>
-<li>일반유저 : object 관리 권한(table, view, inex 등 관리)</li>
-</ul>
-<p>system이 새로운 유저를 만든 경우 dba 권한까지 줄 수 있다<br>sys가 새로운 유저를 만들었을 경우 sysdba권한까지 줄수있을까?</p>
-<h4 id="NOPE"><a href="#NOPE" class="headerlink" title="NOPE"></a>NOPE</h4><p>sys라도 유저에게 줄 수 있는 최대 권한은 dba까지이다.</p>
-<p>계정별 비밀번호는 default 값으로 180일간 사용가능하고 만료되기전에 비밀번호 바꿔줘야한다.<br>바꿔주지 않을 경우 계정만료가 되어버린다. sys한테 얘기해서 임시pw설정해야한다</p>
-<h2 id="3-리눅스-터미널-명령어"><a href="#3-리눅스-터미널-명령어" class="headerlink" title="3. 리눅스 터미널 명령어"></a>3. 리눅스 터미널 명령어</h2><ul>
-<li>pwd : 현재 위치하고 있는 디렉토리를 알려주는 명령어</li>
-<li>ls : 현재 디렉토리의 파일 목록을 출력하는 명령어</li>
-<li>mkdir 만들_이름 : 만들_이름이란 폴더를 생성하는 명령어</li>
-<li>명령어 –help : 궁금한 명령어 뒤에 –help 옵션을 주면 자세한 사용방법을 알려주는 명령어</li>
-<li>cd : 홈그라운드 가는 명령어. 원래는 cd 뒤에 이동경로를 입력해야하는데 아무것도 입력하지 않을 경우 홈그라운드로 이동한다.</li>
-</ul>
-<p>아래 명령어는 꼭 순서대로 실행해줄 것.</p>
-<ol>
-<li>lsnrctl start : 리스너를 작동시키는 명령어</li>
-<li>sqlplus /nolog : sql+실행시키는 명령어</li>
-<li>connect sys/oracle as sysdba : DB에 sys로 접속하는 명령어</li>
-<li>startup : DB에 sys로 로그인한 후 DB실행하는 명령어</li>
-<li>conn hr/hr : 유저 hr로 로그인</li>
-</ol>
-<p>파일안의 내용을 보고 싶을때는 아래 2가지 명령어를 활용할수있다</p>
-<ul>
-<li>cat 열고싶은_파일명 : 터미널내에서 열고싶은_파일의 내용이 출력된다 </li>
-<li>vi 열고싶은_파일명 : vi편집기 실행 -&gt; vi편집기 빠져나갈때는 <code>:q!</code></li>
-</ul>
-<p>리눅스 터미널에서 복붙은 <code>ctrl+c</code> 와 <code>ctrl+v</code>가 작동하질 않는다<br>이를 대체해서 <code>ctrl+insert</code>와 <code>Shift+insert</code>를 사용하면된다</p>
-<p><a href="https://itholic.github.io/linux-basic-command/">리눅스 터미널 명렁어 참고링크</a></p>
-<p><a href="https://ss64.com/ora/">오라클 명령어 참고링크</a></p>
-<h2 id="4-DB작동방법"><a href="#4-DB작동방법" class="headerlink" title="4. DB작동방법"></a>4. DB작동방법</h2><ol>
-<li>리스너 실행<br>DB를 적상적으로 작동시키려면 운영체제에 존재하는 리스너를 실행 후 DB를 실행한다.</li>
-</ol>
-<p><strong>순서 중요 : 리스너실행 후 DB실행 필수</strong><br>리스너없이 DB실행 가능하지만 작동오류가 난다.</p>
-<ul>
-<li>lsnrctl start(리스너컨트롤러의 약자) 명령어를 암기필수<br>컴퓨터 부팅후에는 항상 리스너를 켜고 DB작업을 하자!</li>
-</ul>
-<ol start="2">
-<li>SQL+실행<br>SQL+를 설치 후 실행한 뒤 SQL언어로 DB와 소통할 수 있다<br>운영체제별로 SQL+가 따로 있다.</li>
-</ol>
-<ul>
-<li>윈도우용 SQL+ : 시작프로그램에서 클릭을 통해 실행 -&gt; 터미널 열림</li>
-<li>리눅스용 SQL+ : 터미널창에서 명령어 입력으로 실행</li>
-</ul>
-<p>그렇다면 명령어는?</p>
-<ul>
-<li>sql+입장 명령어 : sqlplus /nolog</li>
-<li>sql+퇴장 명령어 : exit (user도 함께 종료)</li>
-</ul>
-<p>추후에는 에디터처럼 그래픽하게 사용할수있는 SQL DEVELOPER를 사용할 예정.</p>
-<ol start="3">
-<li>DB에 sys로 접속후 DB 연결하기<br><code>connect sys/비번 as sysdba</code> 명령어로 접속하면 현재 DB가 꺼져있는 상태(idle)면 아래 코드처럼 <code>show user</code> -&gt; <code>startup</code>순으로 진행하면된다</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; connect sys&#x2F;비번 as sysdba</span><br><span class="line">Connected to an idle instance</span><br><span class="line"></span><br><span class="line">SQL&gt; show user</span><br><span class="line">USER is &quot;SYS&quot;</span><br><span class="line"></span><br><span class="line">SQL&gt; startup</span><br><span class="line">ORACLE instance started</span><br><span class="line">(중략)</span><br><span class="line">Database mounted</span><br><span class="line">Database opened</span><br></pre></td></tr></table></figure>
-
-<p>만약 DB가 켜져있는 상태면 아래와 같이 나온다</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; connect sys&#x2F;비번 as sysdba</span><br><span class="line">Connected</span><br></pre></td></tr></table></figure>
-
-<p>이제 DB가 켜져있는 상태가 되었고 아래 명령어로 DB에 연결한다<br><code>conn</code>은 <code>connect</code>의 약자로 동일하게 사용가능한 명령어이다</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; conn sys&#x2F;비번 as sysdba</span><br><span class="line">Connected</span><br></pre></td></tr></table></figure>
-
-<p>sys를 제외한 나머지 유저들은 아래와 같이 연결할 수 있다</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; conn 유저이름&#x2F;비번</span><br><span class="line">Connected</span><br></pre></td></tr></table></figure>
-
-<p>sys에서 다른 유저로 접속하면 이전의 유저접속은 자동적으로 끊긴다.<br>어떤 유저로 접속한 지 궁금하면 <code>show user</code>명령어를 사용하면 된다</p>
-<ol start="4">
-<li>DB 끄는 명령어<br>리스너가 켜진 후 DB를 켜야하는데 만약 리스너를 깜박하고 DB를 먼저 켠 경우 뒤늦게<br>sys로 접속해서 DB를 끈 후 -&gt; 리스너를 켜고 -&gt; DB를 켜면 된다.<br>그렇다면 DB를 끄는 명령어는 무엇일까?<br>터미널창을 그냥 끄면 될까?</li>
-</ol>
-<h3 id="NOPE-1"><a href="#NOPE-1" class="headerlink" title="NOPE"></a>NOPE</h3><p>터미널창끈다고 DB가 꺼지는 건 아니다<br>DB를 끄는 명령어는 크게 두가지이다.</p>
-<pre><code>1. shut abort 명령어
-현재 처리중인 SQL statements를 모두 abort 시키고 rollback 안하고, users들 다 끊고, close &amp; dismount도 안한다. 
-즉, 그냥 꽝 닫는 것!
-다음번 오라클 시작시에 인스턴스가 자동 복구된다.</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; shut abort</span><br><span class="line">ORA-01031: insufficient privileges &#x2F;&#x2F;이건 권한부족으로 shut은 sys유저에서 진행해야한다</span><br><span class="line"></span><br><span class="line">SQL&gt; shut abort</span><br><span class="line">Oracle instance shut down</span><br></pre></td></tr></table></figure>
-
-<pre><code>2. stop 명령어 
-아래 명령어 또한 DB와 리스너를 종료하는 명령어다</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; stop</span><br><span class="line">Disconnected from Oracle Database</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>두 명령어의 차이점은 무엇일까?</p>
-</blockquote>
-<ol start="5">
-<li>exit 명렁어와 shut abort, stop의 차이점<br>이 명령어는 리스너나 DB를 끄는 명령어가 아니라 <strong>유저와 SQL+프로그램종료</strong>하는 언어다<br>DB꺼지는거아님<br>위의 명령어와 헷갈리지 말 것.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; exit</span><br><span class="line">Disconnected from Oracle Database</span><br></pre></td></tr></table></figure></li>
-</ol>
-</div></article></div><nav class="pagination is-centered mt-4" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/tags/ITWILL-JAVA/page/5/">Previous</a></div><div class="pagination-next"><a href="/tags/ITWILL-JAVA/page/7/">Next</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/tags/ITWILL-JAVA/">1</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/tags/ITWILL-JAVA/page/5/">5</a></li><li><a class="pagination-link is-current" href="/tags/ITWILL-JAVA/page/6/">6</a></li><li><a class="pagination-link" href="/tags/ITWILL-JAVA/page/7/">7</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="" src="/img/avatar.png" alt="Sowon"></figure><p class="title is-size-4 is-block line-height-inherit">Sowon</p><p class="is-size-6 is-block">Welcome to my blog. I`m enjoying coding</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Busan</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">138</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">12</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">9</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/sowon-dev" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/sowon-dev"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://www.facebook.com/sowon.kim.39395"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://sowon-dev.github.io/"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://sowon-dev.github.io/"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="https://sowon-dev.github.io/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/Database/"><span class="level-start"><span class="level-item">Database</span></span><span class="level-end"><span class="level-item tag">17</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Django/"><span class="level-start"><span class="level-item">Django</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/HTML-CSS/"><span class="level-start"><span class="level-item">HTML&amp;CSS</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JAVA/"><span class="level-start"><span class="level-item">JAVA</span></span><span class="level-end"><span class="level-item tag">20</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JSP/"><span class="level-start"><span class="level-item">JSP</span></span><span class="level-end"><span class="level-item tag">11</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JavaScript/"><span class="level-start"><span class="level-item">JavaScript</span></span><span class="level-end"><span class="level-item tag">26</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Journal/"><span class="level-start"><span class="level-item">Journal</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Lectures-Seminars/"><span class="level-start"><span class="level-item">Lectures &amp; Seminars</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Python/"><span class="level-start"><span class="level-item">Python</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Version-control/"><span class="level-start"><span class="level-item">Version control</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%A0%9C%EC%A3%BC%EC%BD%94%EB%94%A9%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%BA%A0%ED%94%84-10%EA%B8%B0/"><span class="level-start"><span class="level-item">제주코딩베이스캠프 10기</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%BD%94%EB%93%9C%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%B8%A0-PRE35%EA%B8%B0/"><span class="level-start"><span class="level-item">코드스테이츠 PRE35기</span></span><span class="level-end"><span class="level-item tag">14</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">Recent</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2020-07-02T00:00:00.000Z">2020-07-02</time></p><p class="title is-6"><a class="link-muted" href="/2020/07/02/200702javai/">[ITWILL : JAVA]클래스 : 매개변수위치에 따른 차이(생성자 vs 메서드), private멤버변수 getter와 setter로 가져다쓰기</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JAVA/">JAVA</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-07-01T00:00:00.000Z">2020-07-01</time></p><p class="title is-6"><a class="link-muted" href="/2020/07/01/200702jspi/">[ITWILL : JSP] MYSQL 접속순서, DB명령어, 테이블명령어, 데이터명령어</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Database/">Database</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-07-01T00:00:00.000Z">2020-07-01</time></p><p class="title is-6"><a class="link-muted" href="/2020/07/01/200701javai/">[ITWILL : JAVA]클래스 : 생성자, new역할, this키워드용법</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JAVA/">JAVA</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-07-01T00:00:00.000Z">2020-07-01</time></p><p class="title is-6"><a class="link-muted" href="/2020/07/01/200701jspi2/">[ITWILL : JSP]MYSQL 설치, MYSQL환경변수설정, cmd에서 명령어 잘못입력해서 mysql못빠져나갈때</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Database/">Database</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-07-01T00:00:00.000Z">2020-07-01</time></p><p class="title is-6"><a class="link-muted" href="/2020/07/01/200701jspi/">[ITWILL : JSP]쿠키</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JSP/">JSP</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/07/"><span class="level-start"><span class="level-item">July 2020</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/06/"><span class="level-start"><span class="level-item">June 2020</span></span><span class="level-end"><span class="level-item tag">85</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/05/"><span class="level-start"><span class="level-item">May 2020</span></span><span class="level-end"><span class="level-item tag">19</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/04/"><span class="level-start"><span class="level-item">April 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/03/"><span class="level-start"><span class="level-item">March 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/10/"><span class="level-start"><span class="level-item">October 2019</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/09/"><span class="level-start"><span class="level-item">September 2019</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/08/"><span class="level-start"><span class="level-item">August 2019</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/07/"><span class="level-start"><span class="level-item">July 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/HTML-CSS/"><span class="tag">HTML&amp;CSS</span><span class="tag is-grey-lightest">19</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ITWILL-JAVA/"><span class="tag">ITWILL(JAVA)</span><span class="tag is-grey-lightest">65</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Journal/"><span class="tag">Journal</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Oracle/"><span class="tag">Oracle</span><span class="tag is-grey-lightest">13</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Review/"><span class="tag">Review</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/TIL/"><span class="tag">TIL</span><span class="tag is-grey-lightest">133</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Web-Game/"><span class="tag">Web Game</span><span class="tag is-grey-lightest">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9/"><span class="tag">생활코딩</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%EA%B0%9C%EB%B0%9C/"><span class="tag">패스트캠퍼스(파이썬웹개발)</span><span class="tag is-grey-lightest">36</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a><p class="size-small"><span>&copy; 2020 Sowon</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+</div></article></div><nav class="pagination is-centered mt-4" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/tags/ITWILL-JAVA/page/5/">Previous</a></div><div class="pagination-next"><a href="/tags/ITWILL-JAVA/page/7/">Next</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/tags/ITWILL-JAVA/">1</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/tags/ITWILL-JAVA/page/5/">5</a></li><li><a class="pagination-link is-current" href="/tags/ITWILL-JAVA/page/6/">6</a></li><li><a class="pagination-link" href="/tags/ITWILL-JAVA/page/7/">7</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="" src="/img/avatar.png" alt="Sowon"></figure><p class="title is-size-4 is-block line-height-inherit">Sowon</p><p class="is-size-6 is-block">Welcome to my blog. I`m enjoying coding</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Busan</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">139</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">12</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">9</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/sowon-dev" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/sowon-dev"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://www.facebook.com/sowon.kim.39395"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://sowon-dev.github.io/"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://sowon-dev.github.io/"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="https://sowon-dev.github.io/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/Database/"><span class="level-start"><span class="level-item">Database</span></span><span class="level-end"><span class="level-item tag">18</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Django/"><span class="level-start"><span class="level-item">Django</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/HTML-CSS/"><span class="level-start"><span class="level-item">HTML&amp;CSS</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JAVA/"><span class="level-start"><span class="level-item">JAVA</span></span><span class="level-end"><span class="level-item tag">20</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JSP/"><span class="level-start"><span class="level-item">JSP</span></span><span class="level-end"><span class="level-item tag">11</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JavaScript/"><span class="level-start"><span class="level-item">JavaScript</span></span><span class="level-end"><span class="level-item tag">26</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Journal/"><span class="level-start"><span class="level-item">Journal</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Lectures-Seminars/"><span class="level-start"><span class="level-item">Lectures &amp; Seminars</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Python/"><span class="level-start"><span class="level-item">Python</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Version-control/"><span class="level-start"><span class="level-item">Version control</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%A0%9C%EC%A3%BC%EC%BD%94%EB%94%A9%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%BA%A0%ED%94%84-10%EA%B8%B0/"><span class="level-start"><span class="level-item">제주코딩베이스캠프 10기</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%BD%94%EB%93%9C%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%B8%A0-PRE35%EA%B8%B0/"><span class="level-start"><span class="level-item">코드스테이츠 PRE35기</span></span><span class="level-end"><span class="level-item tag">14</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">Recent</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2020-07-02T00:00:00.000Z">2020-07-02</time></p><p class="title is-6"><a class="link-muted" href="/2020/07/02/200702jspi2/">[ITWILL : JSP] MySQL 한글깨짐현상 두가지 해결방법 : cmd와 Workbench, 이클립스와 MYSQL연결</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Database/">Database</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-07-02T00:00:00.000Z">2020-07-02</time></p><p class="title is-6"><a class="link-muted" href="/2020/07/02/200702javai/">[ITWILL : JAVA]클래스 : 매개변수위치에 따른 차이(생성자 vs 메서드), private멤버변수 getter와 setter로 가져다쓰기</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JAVA/">JAVA</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-07-02T00:00:00.000Z">2020-07-02</time></p><p class="title is-6"><a class="link-muted" href="/2020/07/02/200702jspi/">[ITWILL : JSP] MYSQL 접속순서, DB명령어, 테이블명령어, 데이터명령어</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Database/">Database</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-07-01T00:00:00.000Z">2020-07-01</time></p><p class="title is-6"><a class="link-muted" href="/2020/07/01/200701jspi2/">[ITWILL : JSP]MYSQL 설치, MYSQL환경변수설정, cmd에서 명령어 잘못입력해서 mysql못빠져나갈때</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Database/">Database</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-07-01T00:00:00.000Z">2020-07-01</time></p><p class="title is-6"><a class="link-muted" href="/2020/07/01/200701jspi/">[ITWILL : JSP]쿠키</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JSP/">JSP</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/07/"><span class="level-start"><span class="level-item">July 2020</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/06/"><span class="level-start"><span class="level-item">June 2020</span></span><span class="level-end"><span class="level-item tag">85</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/05/"><span class="level-start"><span class="level-item">May 2020</span></span><span class="level-end"><span class="level-item tag">19</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/04/"><span class="level-start"><span class="level-item">April 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/03/"><span class="level-start"><span class="level-item">March 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/10/"><span class="level-start"><span class="level-item">October 2019</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/09/"><span class="level-start"><span class="level-item">September 2019</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/08/"><span class="level-start"><span class="level-item">August 2019</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/07/"><span class="level-start"><span class="level-item">July 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/HTML-CSS/"><span class="tag">HTML&amp;CSS</span><span class="tag is-grey-lightest">19</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ITWILL-JAVA/"><span class="tag">ITWILL(JAVA)</span><span class="tag is-grey-lightest">66</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Journal/"><span class="tag">Journal</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Oracle/"><span class="tag">Oracle</span><span class="tag is-grey-lightest">13</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Review/"><span class="tag">Review</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/TIL/"><span class="tag">TIL</span><span class="tag is-grey-lightest">134</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Web-Game/"><span class="tag">Web Game</span><span class="tag is-grey-lightest">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9/"><span class="tag">생활코딩</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%EA%B0%9C%EB%B0%9C/"><span class="tag">패스트캠퍼스(파이썬웹개발)</span><span class="tag is-grey-lightest">36</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a><p class="size-small"><span>&copy; 2020 Sowon</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
             site: {
                 url: 'https://github.com/sowon-dev',
                 external_link: {"enable":true,"exclude":[]}
