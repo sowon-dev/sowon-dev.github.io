@@ -126,6 +126,126 @@
 <h2 id="기본클래스-이외에-자바-구성요소1"><a href="#기본클래스-이외에-자바-구성요소1" class="headerlink" title="기본클래스 이외에 자바 구성요소1"></a>기본클래스 이외에 자바 구성요소1</h2><ol>
 <li><a href="https://sowon-dev.github.io/2020/07/15/200715javai/">기본클래스 이외에 자바 구성요소1 : 추상클래스, 인터페이스</a></li>
 </ol>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-07-17T00:00:00.000Z" title="2020-07-17T00:00:00.000Z">2020-07-17</time><span class="level-item"><a class="link-muted" href="/categories/HTML-CSS/">HTML&amp;CSS</a></span><span class="level-item">4 minutes read (About 652 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/07/17/200717webi2/">[ITWILL : WEB]폰트속성, text속성</a></h1><div class="content"><h3 id="ITWILL학원-9강-WEB-HTML-CSS-BY-김영희"><a href="#ITWILL학원-9강-WEB-HTML-CSS-BY-김영희" class="headerlink" title="ITWILL학원 : 9강 WEB(HTML, CSS) BY 김영희"></a>ITWILL학원 : 9강 WEB(HTML, CSS) BY 김영희</h3><h2 id="1-font속성-폰트속성"><a href="#1-font속성-폰트속성" class="headerlink" title="1. font속성(폰트속성)"></a>1. font속성(폰트속성)</h2><p>속성은 크게 두가지 그룹이 있다</p>
+<ul>
+<li>font</li>
+<li>text</li>
+</ul>
+<p>그 중 폰트속성 먼저 알아보면 아래와 같다.</p>
+<table>
+<thead>
+<tr>
+<th align="center">font 속성종류</th>
+<th align="center">특징</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">font-size</td>
+<td align="center">글자 크기</td>
+</tr>
+<tr>
+<td align="center">font-weight</td>
+<td align="center">글자 두께</td>
+</tr>
+<tr>
+<td align="center">font-style</td>
+<td align="center">글자 기울기</td>
+</tr>
+<tr>
+<td align="center">font-family</td>
+<td align="center">글자(서체) 지정</td>
+</tr>
+</tbody></table>
+<h2 id="1-1-font-size"><a href="#1-1-font-size" class="headerlink" title="1-1. font-size"></a>1-1. font-size</h2><p>다양한 단위가 있다.<br>실무에서 주로 쓰이는 단위는 px, pt(포인트)이다.</p>
+<p><img src="https://www.mediavine.com/wp-content/uploads/2018/08/font-size-chart.png" alt="https://www.mediavine.com/increase-font-size-and-increase-seo-rpm-along-with-it/"></p>
+<p><a href="http://pxtoem.com/">참고링크 : 폰트사이즈변환</a></p>
+<h2 id="1-2-font-family"><a href="#1-2-font-family" class="headerlink" title="1-2. font-family"></a>1-2. font-family</h2><p>한글 본문은 고민하지말고 맑은 고딕으로 쓰면 된다. </p>
+<ul>
+<li>기본폰트 :<br>기본글꼴종류는 크게 세 가지로 나뉜다</li>
+</ul>
+<ol>
+<li>Sans-serif 고딕형 : sans의 의미는 without이다. 글자의 끝이 딱 떨어지는 느낌, <strong>가독성이 제일 좋음</strong></li>
+<li>Serif : 끝에 장식이 있는 클래식한 느낌</li>
+<li>Monospace : 고정글꼴. width가 same한 글꼴이다.<br>글꼴이름을 넣을때는 쌍따옴표를 넣고 글꼴종류를 적을때는 쌍따옴표를 적으면 안된다.</li>
+</ol>
+<p><a href="https://www.w3schools.com/css/css_font.asp">참고링크 : w3schol</a></p>
+<ul>
+<li><a href="https://sowon-dev.github.io/2020/06/16/200616python/">웹폰트</a> :<br>폰트패밀리로 기본폰트를 지정해주었을 때, 만약 사용자의 컴퓨터에 해당 폰트가 없다면 폰트 적용이 아예 안된다.<br>이를 예방하기위해 웹폰트를 사용할 수 있다. 사용자가 굳이 다운로드하지않더라고 웹폰트가 적용된 채로 홈페이지를 볼 수 있다.<ul>
+<li>웹폰트는 무료도 있고 유료도 있지만 제일 유명한 구글폰트는 무료이다.</li>
+<li><a href="https://fonts.google.com/">구글웹폰트</a></li>
+<li><a href="https://googlefonts.github.io/korean/">구글웹폰트깃허브 : 한글 </a></li>
+<li><a href="https://noonnu.cc/">눈누 : 한글폰트로 유로뿐만 아니라 무료상업용웹폰트도 쉽게 찾을 수 있다.</a></li>
+</ul>
+</li>
+</ul>
+<p>웹폰트 사용법은 간단하다. </p>
+<ol>
+<li>해당 웹폰트의 html의 link태그를 복사하여 head태그 사이에 붙여넣기.</li>
+<li>해당 웹폰트의 css코드를 복사하여 css페이지에 붙여넣기. </li>
+</ol>
+<h2 id="2-text속성"><a href="#2-text속성" class="headerlink" title="2. text속성"></a>2. text속성</h2><p>속성은 크게 두가지 그룹이 있다</p>
+<ul>
+<li>font</li>
+<li>text</li>
+</ul>
+<p>그 중 텍스트속성에 알아보면 아래와 같다.</p>
+<table>
+<thead>
+<tr>
+<th align="center">text 속성종류</th>
+<th align="center">특징</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">text-align</td>
+<td align="center">글자 정렬</td>
+</tr>
+<tr>
+<td align="center">text-decoration</td>
+<td align="center">링크속성에서 밑줄없앨때 사용</td>
+</tr>
+<tr>
+<td align="center">text-indent</td>
+<td align="center">글자 들여쓰기</td>
+</tr>
+<tr>
+<td align="center">text-transform</td>
+<td align="center">영문글자의 대소문자 지정</td>
+</tr>
+<tr>
+<td align="center">text-shadow</td>
+<td align="center">글자 그림자효과</td>
+</tr>
+</tbody></table>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-07-17T00:00:00.000Z" title="2020-07-17T00:00:00.000Z">2020-07-17</time><span class="level-item"><a class="link-muted" href="/categories/HTML-CSS/">HTML&amp;CSS</a></span><span class="level-item">2 minutes read (About 367 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/07/17/200717webi/">[ITWILL : WEB]더미텍스트/이미지만들기(Lorem Ipsum/placeholder), 기본선택자 종류 및 우선순위, 섹션요소</a></h1><div class="content"><h3 id="ITWILL학원-9강-WEB-HTML-CSS-BY-김영희"><a href="#ITWILL학원-9강-WEB-HTML-CSS-BY-김영희" class="headerlink" title="ITWILL학원 : 9강 WEB(HTML, CSS) BY 김영희"></a>ITWILL학원 : 9강 WEB(HTML, CSS) BY 김영희</h3><h2 id="1-더미데이터-만들기"><a href="#1-더미데이터-만들기" class="headerlink" title="1. 더미데이터 만들기"></a>1. 더미데이터 만들기</h2><h2 id="1-1-Lorem-Ipsum-로렘입숨-더미텍스트만들기"><a href="#1-1-Lorem-Ipsum-로렘입숨-더미텍스트만들기" class="headerlink" title="1-1. Lorem Ipsum 로렘입숨 : 더미텍스트만들기"></a>1-1. Lorem Ipsum 로렘입숨 : 더미텍스트만들기</h2><ul>
+<li>줄여서 립숨, lipsum</li>
+<li>임의의 텍스트를 넣어서 HTML구조와 CSS 디자인을 보고싶을때 자주 사용</li>
+<li>vscode에서는 lorem검색하고 tab치면 자동완성</li>
+<li>이클립스(Eclipse)는 아래 사이트에서 원하는 모양대로 설정뒤에 복붙하면 된다</li>
+</ul>
+<p><a href="https://www.lipsum.com/">참고링크 : 입숨</a></p>
+<h2 id="1-2-placeholder-더미이미지만들기"><a href="#1-2-placeholder-더미이미지만들기" class="headerlink" title="1-2. placeholder : 더미이미지만들기"></a>1-2. placeholder : 더미이미지만들기</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"http://via.placeholder.com/가로길이x세로길이/바탕색코드/글자색코드?text=이미지안글자"</span> /&gt;</span></span><br><span class="line">//예시</span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"http://via.placeholder.com/400x600/000000/ffffff?text=400x600"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><a href="https://placeholder.com/">참고링크 : placeholder</a></p>
+<h2 id="2-기본-선택자-종류-및-우선순위"><a href="#2-기본-선택자-종류-및-우선순위" class="headerlink" title="2. 기본 선택자 종류 및 우선순위"></a>2. 기본 선택자 종류 및 우선순위</h2><p>선택자는 기본선택자와 가상선택자가 있다 그 중 기본선택자를 보자.</p>
+<ul>
+<li>기본선택자종류</li>
+</ul>
+<p><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile26.uf.tistory.com%2Fimage%2F21238943531033A62A45F6" alt=""></p>
+<ul>
+<li>선택자 우선순위<br>기본적으로 가까울수록 우선순위가 높다.<br>아래 이미지로 대략적으로 확인할 수 있고 위의 이미지처럼 계산할 수 있다<br>계산해주는 사이트도 있다</li>
+</ul>
+<p><img src="http://www.standardista.com/wp-content/uploads/2012/01/specifishity.gif" alt="CSS Specifishity"></p>
+<p><a href="https://specificity.keegan.st/">참고링크 : css 선택자 우선순위 계산사이트</a></p>
+<ul>
+<li>주요 가상선택자종류</li>
+</ul>
+<p><img src="https://kookyungmin.github.io/image/CSS_image/css_image_08.png" alt=""></p>
+<h2 id="3-섹션요소"><a href="#3-섹션요소" class="headerlink" title="3. 섹션요소"></a>3. 섹션요소</h2><p>홈페이지 용도별 태그명이 다르다.</p>
+<ul>
+<li>BODY, HEADER, NAV, SECTION, ARTICLE, MAIN, ASIDE, FOOTER</li>
+</ul>
+<p><img src="https://t1.daumcdn.net/cfile/tistory/261BFE435539390B1B" alt="https://webdir.tistory.com/310"></p>
 </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-07-17T00:00:00.000Z" title="2020-07-17T00:00:00.000Z">2020-07-17</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">6 minutes read (About 967 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/07/17/200717dbi/">[ITWILL : DB]트랜잭션(Transaction), 치환변수, save명령어, 리소스부족에러발생시</a></h1><div class="content"><h3 id="ITWILL학원-14강-Database-BY-정지윤강사"><a href="#ITWILL학원-14강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 14강 Database BY 정지윤강사"></a>ITWILL학원 : 14강 Database BY 정지윤강사</h3><h2 id="1-트랜잭션-Transaction"><a href="#1-트랜잭션-Transaction" class="headerlink" title="1. 트랜잭션(Transaction)"></a>1. 트랜잭션(Transaction)</h2><ul>
 <li>아주 중요한 개념</li>
 <li>하나의 논리적인 작업단위</li>
@@ -559,147 +679,7 @@
 </li>
 <li>자원해제</li>
 </ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">deleteMember</span><span class="params">(String id, String pw)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> result = -<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">try</span> &#123;</span><br><span class="line">		<span class="comment">//7-1. DB연결메서드 불러오기</span></span><br><span class="line">		con = getCon();</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//7-2. SQL &amp; pstmt 생성</span></span><br><span class="line">		sql = <span class="string">"select pw from itwill_member where id=?"</span>;</span><br><span class="line">		pstmt = con.prepareStatement(sql);</span><br><span class="line">		pstmt.setString(<span class="number">1</span>, id);</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//7-3. 실행 -&gt; rs저장</span></span><br><span class="line">		rs = pstmt.executeQuery();</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//7-4. 데이터처리 : DB에 있는 회원인 경우 삭제, 아닌 경우 에러</span></span><br><span class="line">		<span class="keyword">if</span>(rs.next())&#123;</span><br><span class="line">			<span class="keyword">if</span>(pw.equals(rs.getString(<span class="string">"pw"</span>)))&#123;</span><br><span class="line">			</span><br><span class="line">				<span class="comment">//7-4-1. SQL 구문작성 &amp; pstmt 생성</span></span><br><span class="line">				sql = <span class="string">"delete from itwill_member where id=?"</span>;</span><br><span class="line">				pstmt = con.prepareStatement(sql);</span><br><span class="line">				pstmt.setString(<span class="number">1</span>, id);</span><br><span class="line">				pstmt.executeUpdate();</span><br><span class="line">				result = <span class="number">1</span>;</span><br><span class="line">				System.out.println(<span class="string">"회원삭제성공-아디일치,비번일치"</span>);</span><br><span class="line">			&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">				result = <span class="number">0</span>;</span><br><span class="line">				System.out.println(<span class="string">"회원삭제실패-아디일치,비번불일치"</span>);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			result = -<span class="number">1</span>;</span><br><span class="line">			System.out.println(<span class="string">"회원삭제실패-아이디불일치"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">		e.printStackTrace();</span><br><span class="line">		<span class="comment">//7-5. 자원해제</span></span><br><span class="line">	&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">		closeDB();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> result;		</span><br><span class="line">&#125;<span class="comment">//delete닫힘</span></span><br></pre></td></tr></table></figure></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-07-15T00:00:00.000Z" title="2020-07-15T00:00:00.000Z">2020-07-15</time><span class="level-item"><a class="link-muted" href="/categories/Lectures-Seminars/">Lectures &amp; Seminars</a></span><span class="level-item">11 minutes read (About 1667 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/07/15/200715webina/">7월 우아한테크세미나 : 주니어개발자로 성장하는 우아한 방법들</a></h1><div class="content"><h2 id="1-소개"><a href="#1-소개" class="headerlink" title="1. 소개"></a>1. 소개</h2><p><img src="https://scontent-ssn1-1.xx.fbcdn.net/v/t1.0-9/s960x960/106796231_2631621483745107_805113812012511039_o.jpg?_nc_cat=105&_nc_sid=8024bb&_nc_ohc=5Rmn5Z-ZqO8AX8l-H9j&_nc_ht=scontent-ssn1-1.xx&_nc_tp=7&oh=45ccb14f51e006e3d650801a9557317c&oe=5F34752E" alt=""></p>
-<h2 id="1-1-프론트엔드-개발자가-되기-위한-10가지-방법-by-윤지수"><a href="#1-1-프론트엔드-개발자가-되기-위한-10가지-방법-by-윤지수" class="headerlink" title="1-1.  프론트엔드 개발자가 되기 위한 10가지 방법 by 윤지수"></a>1-1.  프론트엔드 개발자가 되기 위한 10가지 방법 by 윤지수</h2><blockquote>
-<p>강연소개<br>웹프론트엔드 개발자 채용 수요가 꾸준히 증가 중입니다.<br>하지만 여전히 기업에서는 괜찮은 웹 프론트엔드 개발자가 없다고 아우성입니다.<br>기업이 원하는 인재상과 개발자를 준비하는 사람들 간에는 어떤 차이가 있는걸까요?<br>2020년 현재, 웹프론트엔드 개발자가 되기 위해서 준비해야할 것 10가지를 알아봅니다.</p>
-</blockquote>
-<h2 id="1-2-우아한테크캠프에서-공부하는-법-by-정호영"><a href="#1-2-우아한테크캠프에서-공부하는-법-by-정호영" class="headerlink" title="1-2. 우아한테크캠프에서 공부하는 법 by 정호영"></a>1-2. 우아한테크캠프에서 공부하는 법 by 정호영</h2><blockquote>
-<p>강연소개<br>요즘 우아한 테크캠프가 여름의 열기보다 더 뜨겁게 진행중입니다.<br>많은 개발자 지망생 분들이 오고 싶어하는 우아한테크캠프에서는 무엇을 어떻게 배우고 있을까요?<br>그리고 테크캠프에 아쉽게 합류 못하신 분들과 준비중인 분들을 위한 팁도 살짝 알려드립니다.</p>
-</blockquote>
-<h2 id="2-중요포인트"><a href="#2-중요포인트" class="headerlink" title="2. 중요포인트"></a>2. 중요포인트</h2><ol>
-<li><p>깃헙 이슈/프로젝트로 일감 만들어서 관리하기</p>
-</li>
-<li><p>PR보내기</p>
-</li>
-<li><p>코드리뷰</p>
-</li>
-<li><p>깃브런치 전략 </p>
-</li>
-<li><p>주변에 사람이 없다면? 커뮤니티를 활용해서 사람들과 함께하기</p>
-</li>
-<li><p>자료구조와 알고리즘 중요 = 기초체력임.</p>
-</li>
-</ol>
-<ul>
-<li>시간재고 코드푸는 거 연습</li>
-<li>한 문제를 다양한 방법으로 푸는 연습</li>
-<li>다른 사람 코드보는 거</li>
-<li>쉬운 문제를 여러번 풀어서 지속가능한 공부를 하기</li>
-</ul>
-<ol start="7">
-<li>네트워크 중에서 HTTP는 필수다!</li>
-</ol>
-<ul>
-<li>HTTP중심으로 알아야한다 :HTTP 기본기 추천도서 : ​모두의 네트워크, 그림 HTTP, HTTP 완벽 가이드</li>
-<li>개인적으로 그림으로 쉽게 배우는 HTTP 라는 책으로 빠르게 한 번 훝고 HTTP 완벽 가이드 같은 두꺼운책으로 넘어가는게 좋은거 같아요</li>
-<li>개발자도구의 네트워크탭의 항목을 모조리 다 이해하려고 노력해야한다.</li>
-<li>서비스업체는 모든 키워드를 알아야한다.</li>
-</ul>
-<ol start="8">
-<li><p>NODE.JS를 중심으로 웹애플리케이션 서버와 연동하는 것 필수</p>
-</li>
-<li><p>SSR을 위한 서버를 운영해야한다면? 에 답을 공부해보기</p>
-</li>
-<li><p>조금 더 욕심내자면 DATABASE, OS, 클라우드(AWS)등의 지식</p>
-</li>
-<li><p>Component 기반 개발이 표준이 된 세상 : html css js를 따로 개발하기보다 함께 개발해야 하는 시대.</p>
-</li>
-<li><p>주니어는 양보다 질이다. 기억에 남은 면접자는 하나를 깊게 판 면접자가 기억에 남는다.</p>
-</li>
-<li><p>프레임워크 </p>
-</li>
-<li><p>코딩테스트는 프로그래머스 레벨 3까지 풀어보시고 백준에서 골드 3이하 문제 풀어보면 도움이 된다</p>
-</li>
-<li><p>바닐라js로 프레임워크 흉내내는거 도전해보기</p>
-</li>
-<li><p>피드백받을 수 있는 방법 찾아보기 : 커뮤니티, 세미나 나가서 멘토를  찾아라.</p>
-</li>
-<li><p>좋은 회사기준 : 그 회사의 채용공고를 이전것들까지 찾아보면 됨. 면접에서 내가 털리면 좋은 회사</p>
-</li>
-<li><p>웹은 SOP, 쿠키,세션,https 도 중요한 키워드이다!</p>
-</li>
-</ol>
-<h2 id="3-포트폴리오-프로젝트-아이디어"><a href="#3-포트폴리오-프로젝트-아이디어" class="headerlink" title="3. 포트폴리오/프로젝트 아이디어"></a>3. 포트폴리오/프로젝트 아이디어</h2><ol>
-<li>바닐라JS에서 웹펙 바벨 연동가능</li>
-<li>포트폴리오는 깃헙소스코드를 주로본다. 화면구현에 올인하지말것.</li>
-<li>프로젝트주제는 크게 상관없고 자신이 무엇을 했는지 중요</li>
-<li>자신이 사용하는 사이트에서 불편했던 걸 개선해보는 경험이 오히려 더 중요하다</li>
-</ol>
-<h2 id="4-면접팁"><a href="#4-면접팁" class="headerlink" title="4. 면접팁"></a>4. 면접팁</h2><ol>
-<li>프로토타입설명 : 상속틀징</li>
-<li>const와 let의 차이 설명</li>
-<li>현업에서 가장 큰 이슈는 협엽, 협업에서 일어난 의사소통문제를 어떻게 해결했는지는 무조건 물어본다</li>
-</ol>
-<h2 id="5-답변듣고싶었던-질문들"><a href="#5-답변듣고싶었던-질문들" class="headerlink" title="5. 답변듣고싶었던 질문들"></a>5. 답변듣고싶었던 질문들</h2><ol>
-<li><p>프로젝트를 구현 시 필요한 프레임워크를 선택하는 기준이 궁금합니다. 각 프로젝트 성향마다 알맞는 프레임워크가 있는데 그 프레임워크를 선택하실때 프로토타입을 제작해보시나요? 일정이 촉박하다면 어떻게 선택하시나요? </p>
-<ul>
-<li>예시 : (ex리덕스, 몹엑스) 비슷한 라이브러리가 존재할 시 깃허브 별 개수로 정하기 등등</li>
-</ul>
-</li>
-<li><p>코드리뷰 도입 시 자존심이 강한 동료분들이 있을수도 있고 계급으로 인해 의견을 제시하기 힘든 경우가 있을거라 생각합니다. 이러한 상황을 겪어보셨다면 어떻게 해결하셨는지 궁금합니다.</p>
-</li>
-<li><p>프론트 엔드 포폴 만들려면 nodejs로 curd부터 만들어야 붙일 수 있지 않나요? 결국에 그렇다면 풀스택 공부해야 포트폴리오 제작 할 수 있는거 아닌가요?<br>포폴정도의 정적 페이지면 프론트 빌드하고 S3 정적 페이지 서비스 이용하시면 서버 없어도 괜찮았습니다.</p>
-</li>
-</ol>
-<h2 id="6-후기"><a href="#6-후기" class="headerlink" title="6. 후기"></a>6. 후기</h2><p>연사님 두분 다 어쩜 그렇게 말씀을 재미있게 하시는 지 강연하는 두시간내내 빵빵터지며 재미있게 들었다.<br>역시 중요키워드는 의사소통이다.<br>그리고 IT업계는 변화의 속도가 빠른데 거기서 적응하는 것도 중요하다.</p>
-<p>우아한테크캠프같은 경우 이번년에 도전했는데 아쉽지않게(?) 떨어졌다.<br>도전을 했으니 실패가 있는 거겠지.<br>도전하지않았으면 실패도 없었을거라는 마음가짐으로 가볍게 털고 다시 공부를 시작했다.</p>
-<p>강연을 들으면서 토이프로젝트에 대해 많이 생각해보게되었고 좋은 리프레시시간이었다.</p>
-<p>그런데 강연에서 말해준 중요한 것들이 이렇게나 많고 해야할 것들도 이렇게나 많으면 결국 프론트앤드니 백앤드니한 경계는 사라지고 풀스택개발자가 되어야만 한다는 느김이 들었다.ㅋㅋㅋㅋㅋ<br>열심히하자!</p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-07-15T00:00:00.000Z" title="2020-07-15T00:00:00.000Z">2020-07-15</time><span class="level-item"><a class="link-muted" href="/categories/JAVA/">JAVA</a></span><span class="level-item">6 minutes read (About 895 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/07/15/200715javai/">[ITWILL : JAVA]기본클래스 이외에 자바 구성요소1 : 추상클래스, 인터페이스</a></h1><div class="content"><h3 id="ITWILL학원-17강-JAVA-BY-윤미영강사"><a href="#ITWILL학원-17강-JAVA-BY-윤미영강사" class="headerlink" title="ITWILL학원 : 17강 JAVA BY 윤미영강사"></a>ITWILL학원 : 17강 JAVA BY 윤미영강사</h3><h2 id="1-추상클래스-Abstract-Class"><a href="#1-추상클래스-Abstract-Class" class="headerlink" title="1. 추상클래스(Abstract Class)"></a>1. 추상클래스(Abstract Class)</h2><ul>
-<li>슈퍼클래스에서 메서드의 선언부까지는 작성가능하지만 구현부는 어떻게 될지 확정되지 않아 작성하기 어려울때 사용</li>
-<li>서브클래스들에서 어차피 재정의해서 사용하기 때문에 슈퍼클래스에서 아직 작성할 수 없는 메서드에 대해 선언부에 abstract를 추가 작성하고 구현부를 세미콜론(;)으로 대체한다.</li>
-<li>이를 abstract method design pattern 프로그래밍기법이라고 한다.</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> 메서드이름();</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>추상클래스도 클래스이기에 클래스 구성요소(멤버변수, 메서드, 생성자)를 다 갖춰야하고 그 중 abstract메서드를 가지는 클래스를 말한다. </li>
-<li>참조변수로 사용가능</li>
-<li>객체생성 불가능 : 구현부가 없어서 호출될 수 없기때문에 즉 메서드가 미완성</li>
-<li>미완성을 어떻게 완성시킬까?<ul>
-<li>재정의! 상속관계의 &#64;override해줘야한다.</li>
-<li>반드시 재정의해줘야한다.</li>
-<li>재정의를 통해 서브클래스를 객체생성해서 사용할 수 있다.</li>
-</ul>
-</li>
-<li>장점 : 재사용성 향상</li>
-</ul>
-<p><a href="https://sungwoon.tistory.com/58">참고링크 : 추상 클래스 및 추상 메서드(abstract class and abstract method)</a></p>
-<h2 id="2-인터페이스"><a href="#2-인터페이스" class="headerlink" title="2. 인터페이스"></a>2. 인터페이스</h2><ul>
-<li>두 시스템 간에 만나는 접점이라는 의미.</li>
-<li>모든 메서드가 abstract메서드인 클래스를 인터페이스라고 한다.</li>
-<li>자주 사용하는 인터페이스 : GUI(Graphic User Interface).</li>
-<li>인터페이스이름의 첫글자는 대문자.</li>
-<li>인터페이스는 클래스가 아니라서 클래스와 구성요소의 차이가 있다.</li>
-<li>객체생성 불가능 : abstract메서드가 있어서, 즉 메서드가 미완성</li>
-<li>미완성을 어떻게 완성시킬까?<ul>
-<li>재구현! 클래스의 재구현을 통해서 객체생성할 수 있다.</li>
-</ul>
-</li>
-</ul>
-<h2 id="2-1-인터페이스와-클래스-차이점"><a href="#2-1-인터페이스와-클래스-차이점" class="headerlink" title="2-1. 인터페이스와 클래스 차이점"></a>2-1. 인터페이스와 클래스 차이점</h2><ol>
-<li>인터페이스와 클래스는 정의법과 구성요소의 차이가 있다.</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//클래스 정의법</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span></span>&#123;</span><br><span class="line">	멤버변수</span><br><span class="line">	메서드</span><br><span class="line">	생성자</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//인터페이스 정의법</span></span><br><span class="line"><span class="class"><span class="keyword">interface</span> <span class="title">Interf</span> </span>&#123;</span><br><span class="line">	상수</span><br><span class="line">	<span class="keyword">abstract</span>메서드</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>인터페이스 : 다중상속가능 vs 클래스 : 다중상속 불가능</li>
-</ol>
-<h2 id="2-2-구현-implements"><a href="#2-2-구현-implements" class="headerlink" title="2-2. 구현(implements)"></a>2-2. 구현(implements)</h2><ul>
-<li>클래스의 구현을 통해서 재구현할 수 있다. 키워드는 implements 사용!</li>
-<li>abstract 예약어 생략가능. 따라서 abstract 예약어 안써도 다 생략되어있다고 생각하면됨</li>
-<li>왜냐면, 인터페이스안에는 일반변수와 일반메서드 사용할 수 없기 때문에</li>
-<li>인터페이스의 모든 abstract method를 재구현하기 위해서 단축키 <code>alt + shift + s</code>를 통해 <code>Override/implements method</code>를 클릭한 뒤 abstract method를 tick해서 재구현해준다.</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//구현 키워드는 implements</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">interA</span> <span class="keyword">implements</span> <span class="title">Interf</span></span>&#123;</span><br><span class="line">	<span class="comment">//인터페이스의 모든 abstract method를 재구현해야함.	</span></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-3-인터페이스의-필요성"><a href="#2-3-인터페이스의-필요성" class="headerlink" title="2-3. 인터페이스의 필요성"></a>2-3. 인터페이스의 필요성</h2><p>만들어놓은 라이브러리를 사용하기 위해 인터페이스를 시용한다.</p>
-<ul>
-<li>구현의 강제로 표준화</li>
-<li>인터페이스를 통해 간접적인 클래스 사용으로 손쉬운 모듈교체지원</li>
-<li>서로 상속의 관계가 없는 클래스들에게 인터페이스를 통한 관계 부여로 다형성 확장</li>
-<li>모듈 간 독립적 프로그래밍으로 개발 시간 단축</li>
-</ul>
-</div></article></div><nav class="pagination is-centered mt-4" role="navigation" aria-label="pagination"><div class="pagination-previous is-invisible is-hidden-mobile"><a href="/page/0/">Previous</a></div><div class="pagination-next"><a href="/page/2/">Next</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link is-current" href="/">1</a></li><li><a class="pagination-link" href="/page/2/">2</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/18/">18</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="" src="/img/avatar.png" alt="Sowon"></figure><p class="title is-size-4 is-block line-height-inherit">Sowon</p><p class="is-size-6 is-block">Welcome to my blog. I`m enjoying coding</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Busan</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">174</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">12</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">11</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/sowon-dev" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/sowon-dev"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://www.facebook.com/sowon.kim.39395"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://sowon-dev.github.io/"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="/null"><i></i></a></div></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/Database/"><span class="level-start"><span class="level-item">Database</span></span><span class="level-end"><span class="level-item tag">25</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Django/"><span class="level-start"><span class="level-item">Django</span></span><span class="level-end"><span class="level-item tag">10</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/HTML-CSS/"><span class="level-start"><span class="level-item">HTML&amp;CSS</span></span><span class="level-end"><span class="level-item tag">19</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JAVA/"><span class="level-start"><span class="level-item">JAVA</span></span><span class="level-end"><span class="level-item tag">25</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JSP/"><span class="level-start"><span class="level-item">JSP</span></span><span class="level-end"><span class="level-item tag">28</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JavaScript/"><span class="level-start"><span class="level-item">JavaScript</span></span><span class="level-end"><span class="level-item tag">26</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Journal/"><span class="level-start"><span class="level-item">Journal</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Lectures-Seminars/"><span class="level-start"><span class="level-item">Lectures &amp; Seminars</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Python/"><span class="level-start"><span class="level-item">Python</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Version-control/"><span class="level-start"><span class="level-item">Version control</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%A0%9C%EC%A3%BC%EC%BD%94%EB%94%A9%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%BA%A0%ED%94%84-10%EA%B8%B0/"><span class="level-start"><span class="level-item">제주코딩베이스캠프 10기</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%BD%94%EB%93%9C%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%B8%A0-PRE35%EA%B8%B0/"><span class="level-start"><span class="level-item">코드스테이츠 PRE35기</span></span><span class="level-end"><span class="level-item tag">14</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">Recent</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2020-11-17T00:00:00.000Z">2020-11-17</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/17/jspList/">[ITWILL : JSP] JSP전체목록List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JSP/">JSP</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-11-16T00:00:00.000Z">2020-11-16</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/16/DBList/">[ITWILL : DB] DB전체목록List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Database/">Database</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-11-16T00:00:00.000Z">2020-11-16</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/16/javaList/">[ITWILL : JAVA] JAVA전체목록List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JAVA/">JAVA</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-07-17T00:00:00.000Z">2020-07-17</time></p><p class="title is-6"><a class="link-muted" href="/2020/07/17/200717dbi/">[ITWILL : DB]트랜잭션(Transaction), 치환변수, save명령어, 리소스부족에러발생시</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Database/">Database</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-07-16T00:00:00.000Z">2020-07-16</time></p><p class="title is-6"><a class="link-muted" href="/2020/07/16/200716jspi2/">[ITWILL : JSP]Collections Framwork(Set계열, List계열,Map계열)</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JSP/">JSP</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/11/"><span class="level-start"><span class="level-item">November 2020</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/07/"><span class="level-start"><span class="level-item">July 2020</span></span><span class="level-end"><span class="level-item tag">38</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/06/"><span class="level-start"><span class="level-item">June 2020</span></span><span class="level-end"><span class="level-item tag">85</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/05/"><span class="level-start"><span class="level-item">May 2020</span></span><span class="level-end"><span class="level-item tag">19</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/04/"><span class="level-start"><span class="level-item">April 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/03/"><span class="level-start"><span class="level-item">March 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/10/"><span class="level-start"><span class="level-item">October 2019</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/09/"><span class="level-start"><span class="level-item">September 2019</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/08/"><span class="level-start"><span class="level-item">August 2019</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/07/"><span class="level-start"><span class="level-item">July 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/HTML-CSS/"><span class="tag">HTML&amp;CSS</span><span class="tag is-grey-lightest">22</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ITWILL-JAVA/"><span class="tag">ITWILL(JAVA)</span><span class="tag is-grey-lightest">98</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Journal/"><span class="tag">Journal</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/List/"><span class="tag">List</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/MySQL/"><span class="tag">MySQL</span><span class="tag is-grey-lightest">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Oracle/"><span class="tag">Oracle</span><span class="tag is-grey-lightest">20</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Review/"><span class="tag">Review</span><span class="tag is-grey-lightest">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/TIL/"><span class="tag">TIL</span><span class="tag is-grey-lightest">167</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Web-Game/"><span class="tag">Web Game</span><span class="tag is-grey-lightest">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9/"><span class="tag">생활코딩</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%EA%B0%9C%EB%B0%9C/"><span class="tag">패스트캠퍼스(파이썬웹개발)</span><span class="tag is-grey-lightest">37</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a><p class="size-small"><span>&copy; 2020 Sowon</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">deleteMember</span><span class="params">(String id, String pw)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> result = -<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">try</span> &#123;</span><br><span class="line">		<span class="comment">//7-1. DB연결메서드 불러오기</span></span><br><span class="line">		con = getCon();</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//7-2. SQL &amp; pstmt 생성</span></span><br><span class="line">		sql = <span class="string">"select pw from itwill_member where id=?"</span>;</span><br><span class="line">		pstmt = con.prepareStatement(sql);</span><br><span class="line">		pstmt.setString(<span class="number">1</span>, id);</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//7-3. 실행 -&gt; rs저장</span></span><br><span class="line">		rs = pstmt.executeQuery();</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//7-4. 데이터처리 : DB에 있는 회원인 경우 삭제, 아닌 경우 에러</span></span><br><span class="line">		<span class="keyword">if</span>(rs.next())&#123;</span><br><span class="line">			<span class="keyword">if</span>(pw.equals(rs.getString(<span class="string">"pw"</span>)))&#123;</span><br><span class="line">			</span><br><span class="line">				<span class="comment">//7-4-1. SQL 구문작성 &amp; pstmt 생성</span></span><br><span class="line">				sql = <span class="string">"delete from itwill_member where id=?"</span>;</span><br><span class="line">				pstmt = con.prepareStatement(sql);</span><br><span class="line">				pstmt.setString(<span class="number">1</span>, id);</span><br><span class="line">				pstmt.executeUpdate();</span><br><span class="line">				result = <span class="number">1</span>;</span><br><span class="line">				System.out.println(<span class="string">"회원삭제성공-아디일치,비번일치"</span>);</span><br><span class="line">			&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">				result = <span class="number">0</span>;</span><br><span class="line">				System.out.println(<span class="string">"회원삭제실패-아디일치,비번불일치"</span>);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			result = -<span class="number">1</span>;</span><br><span class="line">			System.out.println(<span class="string">"회원삭제실패-아이디불일치"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">		e.printStackTrace();</span><br><span class="line">		<span class="comment">//7-5. 자원해제</span></span><br><span class="line">	&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">		closeDB();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> result;		</span><br><span class="line">&#125;<span class="comment">//delete닫힘</span></span><br></pre></td></tr></table></figure></div></article></div><nav class="pagination is-centered mt-4" role="navigation" aria-label="pagination"><div class="pagination-previous is-invisible is-hidden-mobile"><a href="/page/0/">Previous</a></div><div class="pagination-next"><a href="/page/2/">Next</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link is-current" href="/">1</a></li><li><a class="pagination-link" href="/page/2/">2</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/18/">18</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="" src="/img/avatar.png" alt="Sowon"></figure><p class="title is-size-4 is-block line-height-inherit">Sowon</p><p class="is-size-6 is-block">Welcome to my blog. I`m enjoying coding</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Busan</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">176</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">12</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">11</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/sowon-dev" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/sowon-dev"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://www.facebook.com/sowon.kim.39395"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://sowon-dev.github.io/"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="/null"><i></i></a></div></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/Database/"><span class="level-start"><span class="level-item">Database</span></span><span class="level-end"><span class="level-item tag">25</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Django/"><span class="level-start"><span class="level-item">Django</span></span><span class="level-end"><span class="level-item tag">10</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/HTML-CSS/"><span class="level-start"><span class="level-item">HTML&amp;CSS</span></span><span class="level-end"><span class="level-item tag">21</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JAVA/"><span class="level-start"><span class="level-item">JAVA</span></span><span class="level-end"><span class="level-item tag">25</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JSP/"><span class="level-start"><span class="level-item">JSP</span></span><span class="level-end"><span class="level-item tag">28</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JavaScript/"><span class="level-start"><span class="level-item">JavaScript</span></span><span class="level-end"><span class="level-item tag">26</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Journal/"><span class="level-start"><span class="level-item">Journal</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Lectures-Seminars/"><span class="level-start"><span class="level-item">Lectures &amp; Seminars</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Python/"><span class="level-start"><span class="level-item">Python</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Version-control/"><span class="level-start"><span class="level-item">Version control</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%A0%9C%EC%A3%BC%EC%BD%94%EB%94%A9%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%BA%A0%ED%94%84-10%EA%B8%B0/"><span class="level-start"><span class="level-item">제주코딩베이스캠프 10기</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%BD%94%EB%93%9C%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%B8%A0-PRE35%EA%B8%B0/"><span class="level-start"><span class="level-item">코드스테이츠 PRE35기</span></span><span class="level-end"><span class="level-item tag">14</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">Recent</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2020-11-17T00:00:00.000Z">2020-11-17</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/17/jspList/">[ITWILL : JSP] JSP전체목록List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JSP/">JSP</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-11-16T00:00:00.000Z">2020-11-16</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/16/DBList/">[ITWILL : DB] DB전체목록List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Database/">Database</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-11-16T00:00:00.000Z">2020-11-16</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/16/javaList/">[ITWILL : JAVA] JAVA전체목록List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JAVA/">JAVA</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-07-17T00:00:00.000Z">2020-07-17</time></p><p class="title is-6"><a class="link-muted" href="/2020/07/17/200717webi2/">[ITWILL : WEB]폰트속성, text속성</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/HTML-CSS/">HTML&amp;CSS</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-07-17T00:00:00.000Z">2020-07-17</time></p><p class="title is-6"><a class="link-muted" href="/2020/07/17/200717webi/">[ITWILL : WEB]더미텍스트/이미지만들기(Lorem Ipsum/placeholder), 기본선택자 종류 및 우선순위, 섹션요소</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/HTML-CSS/">HTML&amp;CSS</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/11/"><span class="level-start"><span class="level-item">November 2020</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/07/"><span class="level-start"><span class="level-item">July 2020</span></span><span class="level-end"><span class="level-item tag">40</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/06/"><span class="level-start"><span class="level-item">June 2020</span></span><span class="level-end"><span class="level-item tag">85</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/05/"><span class="level-start"><span class="level-item">May 2020</span></span><span class="level-end"><span class="level-item tag">19</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/04/"><span class="level-start"><span class="level-item">April 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/03/"><span class="level-start"><span class="level-item">March 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/10/"><span class="level-start"><span class="level-item">October 2019</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/09/"><span class="level-start"><span class="level-item">September 2019</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/08/"><span class="level-start"><span class="level-item">August 2019</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/07/"><span class="level-start"><span class="level-item">July 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/HTML-CSS/"><span class="tag">HTML&amp;CSS</span><span class="tag is-grey-lightest">24</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ITWILL-JAVA/"><span class="tag">ITWILL(JAVA)</span><span class="tag is-grey-lightest">100</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Journal/"><span class="tag">Journal</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/List/"><span class="tag">List</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/MySQL/"><span class="tag">MySQL</span><span class="tag is-grey-lightest">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Oracle/"><span class="tag">Oracle</span><span class="tag is-grey-lightest">20</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Review/"><span class="tag">Review</span><span class="tag is-grey-lightest">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/TIL/"><span class="tag">TIL</span><span class="tag is-grey-lightest">169</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Web-Game/"><span class="tag">Web Game</span><span class="tag is-grey-lightest">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9/"><span class="tag">생활코딩</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%EA%B0%9C%EB%B0%9C/"><span class="tag">패스트캠퍼스(파이썬웹개발)</span><span class="tag is-grey-lightest">37</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a><p class="size-small"><span>&copy; 2020 Sowon</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
             site: {
                 url: 'https://github.com/sowon-dev',
                 external_link: {"enable":true,"exclude":[]}
