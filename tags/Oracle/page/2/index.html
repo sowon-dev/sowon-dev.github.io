@@ -503,7 +503,7 @@
 </li>
 </ul>
 <p><a href="http://www.gurubee.net/lecture/1008">시스템권한 링크</a></p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-08T00:00:00.000Z" title="2020-06-08T00:00:00.000Z">2020-06-08</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">14 minutes read (About 2160 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/08/200608dbi/">[ITWILL : DB]제약조건문법(컬럼레벨/테이블레벨), 제약조건 5가지, 버퍼에 있는 자주 사용할 쿼리구문을 저장하는 방법</a></h1><div class="content"><h3 id="ITWILL학원-4강-Database-BY-정지윤강사"><a href="#ITWILL학원-4강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 4강 Database BY 정지윤강사"></a>ITWILL학원 : 4강 Database BY 정지윤강사</h3><h2 id="1-제약조건명-생성시-문법-2가지"><a href="#1-제약조건명-생성시-문법-2가지" class="headerlink" title="1. 제약조건명 생성시 문법 2가지"></a>1. 제약조건명 생성시 문법 2가지</h2><p>제약조건명 생성시 oracle에서 권장하는 이름작성 방법이 두가지(컬럼레벨문법과 테이블레벨문법)가 있다.</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-08T00:00:00.000Z" title="2020-06-08T00:00:00.000Z">2020-06-08</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">15 minutes read (About 2297 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/08/200608dbi/">[ITWILL : DB]제약조건문법(컬럼레벨/테이블레벨), 제약조건 5가지, 버퍼에 있는 자주 사용할 쿼리구문을 저장하는 방법</a></h1><div class="content"><h3 id="ITWILL학원-4강-Database-BY-정지윤강사"><a href="#ITWILL학원-4강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 4강 Database BY 정지윤강사"></a>ITWILL학원 : 4강 Database BY 정지윤강사</h3><h2 id="1-제약조건명-생성시-문법-2가지"><a href="#1-제약조건명-생성시-문법-2가지" class="headerlink" title="1. 제약조건명 생성시 문법 2가지"></a>1. 제약조건명 생성시 문법 2가지</h2><p>제약조건명 생성시 oracle에서 권장하는 이름작성 방법이 두가지(컬럼레벨문법과 테이블레벨문법)가 있다.</p>
 <h2 id="1-1-Column-level-문법"><a href="#1-1-Column-level-문법" class="headerlink" title="1-1. Column-level 문법"></a>1-1. Column-level 문법</h2><ul>
 <li><p>Not Null 제약조건사용시 column-level문법으로 작성해야한다! </p>
 </li>
@@ -511,18 +511,18 @@
 </li>
 <li><p>기본형 : <code>테이블명약자_컬럼명약자_제약조건유형약자</code></p>
 </li>
-<li><p>예시 :</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">create table employee </span><br><span class="line">(employee_id number(6) constraint emp_emp_id_pk privary key,</span><br><span class="line">first_name varchar2(20));</span><br></pre></td></tr></table></figure>
-
+<li><p>예시 :<br>제약조건 2개 이상 작성하고 싶다면 스페이스누르고 constraint 적은 뒤 다시 제약조건을 적으면 된다.</p>
 </li>
 </ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">create table title_copy</span><br><span class="line">( copy_id number(10),</span><br><span class="line">title_id number(10) CONSTRAINT tc_tid_fk REFERENCES title(title_id),</span><br><span class="line">rating VARCHAR2(4) CONSTRAINT tc_ra_nn not null </span><br><span class="line">  CONSTRAINT tc_ra_ck check (rating <span class="keyword">in</span> (<span class="string">'G'</span>, <span class="string">'PG'</span>, <span class="string">'R'</span>, <span class="string">'NC17'</span>, <span class="string">'NR'</span>));</span><br></pre></td></tr></table></figure>
+
 <h2 id="1-2-Table-level-문법"><a href="#1-2-Table-level-문법" class="headerlink" title="1-2. Table-level 문법"></a>1-2. Table-level 문법</h2><ul>
 <li><p>기본형 : <code>테이블명약자_컬럼명약자_제약조건유형약자(컬럼명)</code></p>
 </li>
-<li><p>예시 :</p>
+<li><p>예시 :<br>PK를 두 컬럼에 하려면 테이블레벨문법으로 작성해야한다.</p>
 </li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">create table employee </span><br><span class="line">(employee_id number(6),</span><br><span class="line">first_name varchar2(20),</span><br><span class="line">constraint emp_emp_id_pk_ privary key(employee_id));</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">create table title</span><br><span class="line">( copy_id number(10),</span><br><span class="line">title_id number(10) constraint t_tid_nn not null,</span><br><span class="line">constraint t_id_pk primary key (copy_id, title_id));</span><br></pre></td></tr></table></figure>
 
 
 <h2 id="2-제약조건-5가지"><a href="#2-제약조건-5가지" class="headerlink" title="2. 제약조건 5가지"></a>2. 제약조건 5가지</h2><p><img src="https://player.slidesplayer.org/61/11291485/slides/slide_13.jpg" alt="https://slidesplayer.org/slide/11291485/"></p>
@@ -546,16 +546,20 @@
 
 <h2 id="2-3-Primary-key-PK"><a href="#2-3-Primary-key-PK" class="headerlink" title="2-3. Primary key (PK)"></a>2-3. Primary key (PK)</h2><ul>
 <li>Not null과 Unique성격을 동시에 가진다.</li>
-<li>테이블안의 여러컬럼에 선언 불가. <strong>테이블당 한 컬럼에만 사용가능</strong></li>
+<li>테이블안의 한번만 선언 가능. <ul>
+<li><strong>테이블에서 선언시 한 번에 여러 컬럼에 선언하면 됨</strong></li>
+<li>나중에 다른 테이블과 join시 여러 컬럼의 조합값으로 join됨</li>
+</ul>
+</li>
 <li>어떤 컬럼을 Primary key 조건을 걸면 좋을까? <ul>
 <li>개인의 선택이지만 지극히 개인정보는 선택하면 안된다</li>
 <li>예를들어 사원테이블에서 사원주민번호를 Primary key를 설정하면 주민번호가 대표key이므로 이곳 저곳에 데이터가 불려다니게 되므로 정보유출이 될 수 있다. (보안에 취약) </li>
 <li>따라서 사원 주민번호보단 사원번호를 Primary key를 설정하는 것이 좋다</li>
 </ul>
 </li>
-<li>예시1 : </li>
+<li>예시1 :<br>copy_id, title_id의 조합값에 pk를 걸 수 있다.</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">create table test3</span><br><span class="line">(id number(10) CONSTRAINT t3_id_pk primary key,</span><br><span class="line">email VARCHAR2(20),</span><br><span class="line">start_date date,</span><br><span class="line">CONSTRAINT t3_email_uk unique(email));</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">create table title</span><br><span class="line">( copy_id number(10),</span><br><span class="line">title_id number(10) constraint t_tid_nn not null,</span><br><span class="line">constraint t_id_pk primary key (copy_id, title_id));</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>예시2 :</li>
