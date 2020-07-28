@@ -250,7 +250,7 @@
 </ul>
 <p><img src="https://t1.daumcdn.net/cfile/tistory/9971A9375A7917410A" alt="https://superkong1.tistory.com/21"></p>
 <p><img src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F250CA349564EF54607" alt="https://oraclejavastudy.tistory.com/entry/%EC%98%A4%EB%9D%BC%ED%81%B4%EA%B3%B5%EB%B6%80-484-DELETE-DROP-TRUNCATE%EC%9D%98-%EB%B9%84%EA%B5%90"></p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-07-21T00:00:00.000Z" title="2020-07-21T00:00:00.000Z">2020-07-21</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">12 minutes read (About 1831 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/07/21/200721dbi/">[ITWILL : DB]데이터정의어DDL : table 생성 table 복사, varchar2와 varchar와 char비교</a></h1><div class="content"><h3 id="ITWILL학원-15강-Database-BY-정지윤강사"><a href="#ITWILL학원-15강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 15강 Database BY 정지윤강사"></a>ITWILL학원 : 15강 Database BY 정지윤강사</h3><h2 id="1-Table-생성"><a href="#1-Table-생성" class="headerlink" title="1. Table 생성"></a>1. Table 생성</h2><p>테이블 생성시 규칙이 있다.</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-07-21T00:00:00.000Z" title="2020-07-21T00:00:00.000Z">2020-07-21</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">13 minutes read (About 1954 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/07/21/200721dbi/">[ITWILL : DB]데이터정의어DDL : table 생성 table 복사, varchar2와 varchar와 char비교</a></h1><div class="content"><h3 id="ITWILL학원-15강-Database-BY-정지윤강사"><a href="#ITWILL학원-15강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 15강 Database BY 정지윤강사"></a>ITWILL학원 : 15강 Database BY 정지윤강사</h3><h2 id="1-Table-생성"><a href="#1-Table-생성" class="headerlink" title="1. Table 생성"></a>1. Table 생성</h2><p>테이블 생성시 규칙이 있다.</p>
 <h2 id="1-1-테이블이름-작성규칙"><a href="#1-1-테이블이름-작성규칙" class="headerlink" title="1-1. 테이블이름 작성규칙"></a>1-1. 테이블이름 작성규칙</h2><ul>
 <li>이름시작시 : 반드시 문자로 시작 (숫자,특수문자로 시작할수없음)</li>
 <li>30byte까지만 작성가능</li>
@@ -297,9 +297,16 @@
 <h2 id="1-4-옵션-default값-제약조건"><a href="#1-4-옵션-default값-제약조건" class="headerlink" title="1-4. 옵션 : default값, 제약조건"></a>1-4. 옵션 : default값, 제약조건</h2><ul>
 <li>테이블생성시 필수가 아님.</li>
 <li>default값이 선언되어있는 폴더는 insert나 update시 null값이 아닌 자동으로 기본값이 입력된다.</li>
-<li>예시</li>
+<li>컬럼마다 차이가 있지만 보통 컬럼명과 제약조건 사이에 작성한다</li>
+<li>디폴트값작성위치에 따라 오류가 나타날 수 있다.</li>
+<li>예시 : </li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">create table dept</span><br><span class="line">(deptno number(2), dname varchar2(14), loc varchar2(13), </span><br><span class="line"> create_date date default sysdate);</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">create table dept</span><br><span class="line">(deptno number(2), dname varchar2(14), loc varchar2(13), </span><br><span class="line">join_date date CONSTRAINT mk_jd_nn not null  default sysdate);</span><br><span class="line"></span><br><span class="line">//출력값</span><br><span class="line">ORA-00907: 누락된 우괄호 - <span class="string">"missing right parenthesis"</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>이때 디폴트값을 제약조건앞에 위치하게 하면 에러가 해결된다</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">create table dept</span><br><span class="line">(deptno number(2), dname varchar2(14), loc varchar2(13), </span><br><span class="line">join_date date default sysdate CONSTRAINT mk_jd_nn not null);</span><br><span class="line"></span><br><span class="line">//출력값</span><br><span class="line">테이블생성완료</span><br></pre></td></tr></table></figure>
 
 <h2 id="1-5-테이블생성-및-테이블복사-명령어"><a href="#1-5-테이블생성-및-테이블복사-명령어" class="headerlink" title="1-5. 테이블생성 및 테이블복사 명령어"></a>1-5. 테이블생성 및 테이블복사 명령어</h2><ol>
 <li>테이블생성</li>
