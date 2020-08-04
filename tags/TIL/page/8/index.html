@@ -1,5 +1,301 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.0"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Tag: TIL - 야망찬 개발자의 블로그</title><meta property="og:type" content="blog"><meta property="og:title" content="야망찬 개발자의 블로그"><meta property="og:url" content="https://github.com/sowon-dev"><meta property="og:site_name" content="야망찬 개발자의 블로그"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://github.com/img/og_image.png"><meta property="article:author" content="Sowon"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://github.com/sowon-dev"},"headline":"야망찬 개발자의 블로그","image":["https://github.com/img/og_image.png"],"author":{"@type":"Person","name":"Sowon"},"description":""}</script><link rel="icon" href="/img/star.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">Tags</a></li><li class="is-active"><a href="#" aria-current="page">TIL</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-07-02T00:00:00.000Z" title="2020-07-02T00:00:00.000Z">2020-07-02</time><span class="level-item"><a class="link-muted" href="/categories/JAVA/">JAVA</a></span><span class="level-item">4 minutes read (About 630 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/07/02/200702javai/">[ITWILL : JAVA]클래스 : 매개변수위치에 따른 차이(생성자 vs 메서드), private멤버변수 getter와 setter로 가져다쓰기</a></h1><div class="content"><h3 id="ITWILL학원-13강-JAVA-BY-윤미영강사"><a href="#ITWILL학원-13강-JAVA-BY-윤미영강사" class="headerlink" title="ITWILL학원 : 13강 JAVA BY 윤미영강사"></a>ITWILL학원 : 13강 JAVA BY 윤미영강사</h3><h2 id="1-매개변수위치에-따른-차이"><a href="#1-매개변수위치에-따른-차이" class="headerlink" title="1. 매개변수위치에 따른 차이"></a>1. 매개변수위치에 따른 차이</h2><p>클래스 Book은 책제목과, 저자, 가격을 출력해준다.</p>
+<html lang="en"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.0"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Tag: TIL - 야망찬 개발자의 블로그</title><meta property="og:type" content="blog"><meta property="og:title" content="야망찬 개발자의 블로그"><meta property="og:url" content="https://github.com/sowon-dev"><meta property="og:site_name" content="야망찬 개발자의 블로그"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://github.com/img/og_image.png"><meta property="article:author" content="Sowon"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://github.com/sowon-dev"},"headline":"야망찬 개발자의 블로그","image":["https://github.com/img/og_image.png"],"author":{"@type":"Person","name":"Sowon"},"description":""}</script><link rel="icon" href="/img/star.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">Tags</a></li><li class="is-active"><a href="#" aria-current="page">TIL</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-07-03T00:00:00.000Z" title="2020-07-03T00:00:00.000Z">2020-07-03</time><span class="level-item"><a class="link-muted" href="/categories/JSP/">JSP</a></span><span class="level-item">7 minutes read (About 1074 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/07/03/200703jspi2/">[ITWILL : JSP]JDBC활용 - JAVA에서 DB 정보 지우기 2가지방법</a></h1><div class="content"><h3 id="ITWILL학원-19강-JSP기초-BY-정규태강사"><a href="#ITWILL학원-19강-JSP기초-BY-정규태강사" class="headerlink" title="ITWILL학원 : 19강 JSP기초 BY 정규태강사"></a>ITWILL학원 : 19강 JSP기초 BY 정규태강사</h3><h2 id="JDBC"><a href="#JDBC" class="headerlink" title="JDBC"></a>JDBC</h2><ol>
+<li><a href="https://sowon-dev.github.io/2020/07/03/200703jspi/">JDBC활용 - import쓰는 이유, form페이지로 받은 데이터를 DB에 insert하는 방법</a></li>
+<li><a href="https://sowon-dev.github.io/2020/07/03/200703jspi2/">JDBC활용 - JAVA에서 DB 정보 지우기 2가지방법</a></li>
+<li><a href="https://sowon-dev.github.io/2020/07/06/200706jspi/">JDBC활용 - DB에서 고객정보를 불러와서 HTML테이블에 담기</a></li>
+<li><a href="https://sowon-dev.github.io/2020/07/06/200706jspi2/">JDBC활용 - TIMESTAMP주의점, JDBC에서 데이터처리</a></li>
+<li><a href="https://sowon-dev.github.io/2020/07/07/200707jspi/">JDBC활용 - 회원정보수정페이지만들기</a></li>
+<li><a href="https://sowon-dev.github.io/2020/07/08/200708jspi/">JDBC활용 - 회원목록출력하는데 관리자는 빼고 출력하기, 자바 에러 두종류</a></li>
+</ol>
+<h2 id="JAVA에서-DB-정보-지우기"><a href="#JAVA에서-DB-정보-지우기" class="headerlink" title="JAVA에서 DB 정보 지우기"></a>JAVA에서 DB 정보 지우기</h2><p>이름과 주민번호의 입력값이 DB데이터와 일치하면 회원탈퇴를 진행하는 코드를 만들어보자.</p>
+<h2 id="1-사용자가-작성할-form페이지만들기"><a href="#1-사용자가-작성할-form페이지만들기" class="headerlink" title="1. 사용자가 작성할 form페이지만들기"></a>1. 사용자가 작성할 form페이지만들기</h2><p>먼저 이름과 주민번호를 사용자로부터 입력받을 수 있는 <code>deleteForm.jsp</code>파일을 만든다</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">fieldset</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">legend</span>&gt;</span>회원정보수정<span class="tag">&lt;/<span class="name">legend</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"deletePro.jsp"</span> <span class="attr">method</span>=<span class="string">"post"</span> <span class="attr">name</span>=<span class="string">"fr"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">h3</span>&gt;</span>본인확인정보<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">		이름 <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"name"</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">		주민번호 <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"jumin1"</span>&gt;</span> - <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">name</span>=<span class="string">"jumin2"</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"탈퇴하기"</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">fieldset</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="2-사용자가-작성한-데이터를-불러와서-DB에-연결하기"><a href="#2-사용자가-작성한-데이터를-불러와서-DB에-연결하기" class="headerlink" title="2. 사용자가 작성한 데이터를 불러와서 DB에 연결하기"></a>2. 사용자가 작성한 데이터를 불러와서 DB에 연결하기</h2><ul>
+<li><p><code>deletePro.jsp</code>에서 사용자데이터를 불러와서 DB데이터와 확인 후 탈퇴를 처리하는 코드를 작성하면 아래와 같다.</p>
+</li>
+<li><p>순서는 아래와 같다</p>
+<ol>
+<li>사용할 변수를 먼저 가져오기</li>
+<li>DB연결하기</li>
+<li>SQL쿼리작성하기</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">%</span>//<span class="attr">1.</span> 변수가져오기</span></span><br><span class="line"><span class="tag"><span class="attr">request.setCharacterEncoding</span>("<span class="attr">UTF-8</span>");</span></span><br><span class="line"><span class="tag"><span class="attr">String</span> <span class="attr">name</span> = <span class="string">request.getParameter(</span>"<span class="attr">name</span>");</span></span><br><span class="line"><span class="tag"><span class="attr">String</span> <span class="attr">jumin</span> = <span class="string">request.getParameter(</span>"<span class="attr">jumin1</span>")+"<span class="attr">-</span>"+<span class="attr">request.getParameter</span>("<span class="attr">jumin2</span>");</span></span><br><span class="line"><span class="tag">%&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">%</span> </span></span><br><span class="line"><span class="tag">//<span class="attr">2.DB</span>연결</span></span><br><span class="line"><span class="tag"><span class="attr">final</span> <span class="attr">String</span> <span class="attr">DRIVER</span> = <span class="string">"com.mysql.jdbc.Driver"</span>;</span></span><br><span class="line"><span class="tag"><span class="attr">final</span> <span class="attr">String</span> <span class="attr">DBURL</span> = <span class="string">"jdbc:mysql://localhost:3306/jspdb"</span>;</span></span><br><span class="line"><span class="tag"><span class="attr">final</span> <span class="attr">String</span> <span class="attr">DBID</span> = <span class="string">"root"</span>;</span></span><br><span class="line"><span class="tag"><span class="attr">final</span> <span class="attr">String</span> <span class="attr">DBPW</span> = <span class="string">"1234"</span>;</span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">Class.forName</span>(<span class="attr">DRIVER</span>);</span></span><br><span class="line"><span class="tag"><span class="attr">Connection</span> <span class="attr">con</span> = <span class="string">DriverManager.getConnection(DBURL,</span> <span class="attr">DBID</span>, <span class="attr">DBPW</span>);</span></span><br><span class="line"><span class="tag">%&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="3-sql작성-amp-pstmt객체생성"><a href="#3-sql작성-amp-pstmt객체생성" class="headerlink" title="3. sql작성 &amp; pstmt객체생성"></a>3. sql작성 &amp; pstmt객체생성</h2><p>이때 두가지 방법이 있다.</p>
+<h2 id="3-1-바로-delete하기"><a href="#3-1-바로-delete하기" class="headerlink" title="3-1. 바로 delete하기"></a>3-1. 바로 delete하기</h2><ul>
+<li><p><code>pstmt.executeUpdate();</code>는 return값이 int이므로 int형 변수에 넣은 뒤 if조건문을 통해 진행여부를 html페이지에서 보여줄 수 있다.</p>
+</li>
+<li><p>사용자입력값이 DB데이터와 일치하면 </p>
+<ul>
+<li>이클립스 console창에 <code>실행완료(수정완료) : 1</code> 출력</li>
+<li>html파일에서는 이름과 함께 <code>정상적으로 탈퇴되었습니다</code>라는 문구 출력된다.</li>
+</ul>
+</li>
+<li><p>사용자입력값이 DB데이터와 불일치하면 </p>
+<ul>
+<li>이클립스 console창에 <code>실행완료(수정실패) : 0</code> 출력</li>
+<li>html파일에서는 <code>탈퇴실패</code> 문구 출력된다.</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">%</span></span></span><br><span class="line"><span class="tag">//<span class="attr">3.</span> <span class="attr">sql</span>작성 &amp; <span class="attr">pstmt</span>객체생성</span></span><br><span class="line"><span class="tag"><span class="attr">String</span> <span class="attr">sql</span> = <span class="string">"delete from itwill_member where name=? &amp;&amp; jumin=?"</span>;</span></span><br><span class="line"><span class="tag"><span class="attr">PreparedStatement</span> <span class="attr">pstmt</span> = <span class="string">con.prepareStatement(sql);</span></span></span><br><span class="line"><span class="tag"><span class="attr">pstmt.setString</span>(<span class="attr">1</span>, <span class="attr">name</span>);</span></span><br><span class="line"><span class="tag"><span class="attr">pstmt.setString</span>(<span class="attr">2</span>, <span class="attr">jumin</span>);</span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">int</span> <span class="attr">val</span> = <span class="string">pstmt.executeUpdate();</span></span></span><br><span class="line"><span class="tag"><span class="attr">if</span>(<span class="attr">val</span> &gt;</span> 0)&#123;</span><br><span class="line">	System.out.println("실행완료(수정완료) : "+ val);</span><br><span class="line">	%&gt;<span class="tag">&lt;<span class="name">%=name</span> %&gt;</span>님, 정상적으로 탈퇴되었습니다.<span class="tag">&lt;<span class="name">%</span></span></span><br><span class="line"><span class="tag">&#125;<span class="attr">else</span>&#123;</span></span><br><span class="line"><span class="tag">	<span class="attr">System.out.println</span>("실행완료(수정실패) <span class="attr">:</span> "+ <span class="attr">val</span>);</span></span><br><span class="line"><span class="tag">	%&gt;</span>탈퇴실패<span class="tag">&lt;<span class="name">%</span></span></span><br><span class="line"><span class="tag">&#125;</span></span><br><span class="line"><span class="tag">%&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="3-2-select-후-delete하기"><a href="#3-2-select-후-delete하기" class="headerlink" title="3-2. select 후 delete하기"></a>3-2. select 후 delete하기</h2><ul>
+<li><p><code>pstmt.executeUpdate();</code>는 return값이 int이므로 int형 변수에 넣은 뒤 if조건문을 통해 진행여부를 html페이지에서 보여줄 수 있다.</p>
+</li>
+<li><p>사용자입력값이 DB데이터와 일치하는지 select로 확인후 일치하면</p>
+<ul>
+<li>delete구문으로 데이터 삭제</li>
+</ul>
+</li>
+<li><p>사용자입력값이 DB데이터와 일치하는지 select로 확인후 불일치하면 </p>
+<ul>
+<li>삭제동작없이 이전페이지로 이동</li>
+</ul>
+</li>
+</ul>
+<p>DB에서 delete은 매우 신중한 작업이다.<br>따라서 정확한 데이터를 찾아 정확하게 처리해야하기때문에 전자보단 후자를 사용해야한다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">%</span> //<span class="attr">3.</span> <span class="attr">sql</span>작성 &amp; <span class="attr">pstmt</span>객체생성</span></span><br><span class="line"><span class="tag"><span class="attr">String</span> <span class="attr">sql</span> = <span class="string">"select name jumin from itwill_member where name=?"</span>;</span></span><br><span class="line"><span class="tag"><span class="attr">PreparedStatement</span> <span class="attr">pstmt</span> = <span class="string">con.prepareStatement(sql);</span></span></span><br><span class="line"><span class="tag"><span class="attr">pstmt.setString</span>(<span class="attr">1</span>, <span class="attr">name</span>);</span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">ResultSet</span> <span class="attr">rs</span> = <span class="string">pstmt.executeQuery();</span></span></span><br><span class="line"><span class="tag"><span class="attr">if</span>(<span class="attr">rs.next</span>())&#123; //레코드셋에서 커서를 옮겨서 데이터가 있을 때 실행하겠다<span class="attr">.</span></span></span><br><span class="line"><span class="tag">	//이름과 주민번호가 있는 회원의 정보가 존재한다 =&gt;</span>삭제</span><br><span class="line">	if(jumin.equals(rs.getString("jumin")))&#123;</span><br><span class="line">		sql = "delete from itwill_member where name=?";</span><br><span class="line">		pstmt = con.prepareStatement(sql);</span><br><span class="line">		pstmt.setString(1, name);</span><br><span class="line">		pstmt.execute();</span><br><span class="line">		System.out.println("회원삭제완료");</span><br><span class="line">	&#125;else&#123; //이름은 있지만 주민번호가 다른 경우 =&gt;삭제동작없이 이전페이지로 이동</span><br><span class="line">		%&gt;</span><br><span class="line">		<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="actionscript">			alert(<span class="string">"주민번호 오류"</span>)</span></span><br><span class="line"><span class="actionscript">			history.back(); <span class="comment">//뒤로가기.</span></span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">%</span></span></span><br><span class="line"><span class="tag">	&#125;</span></span><br><span class="line"><span class="tag">&#125;<span class="attr">else</span>&#123;</span></span><br><span class="line"><span class="tag">	//이름에 해당하는 주민번호가 존재하지않음 =&gt;</span> 즉,비회원이므로 삭제동작없이 이전페이지로 이동</span><br><span class="line">	%&gt;</span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="actionscript">		alert(<span class="string">"이름 오류"</span>)</span></span><br><span class="line"><span class="actionscript">		history.back(); <span class="comment">//뒤로가기.</span></span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">%</span></span></span><br><span class="line"><span class="tag">&#125;</span></span><br><span class="line"><span class="tag">%&gt;</span></span><br></pre></td></tr></table></figure></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-07-02T00:00:00.000Z" title="2020-07-02T00:00:00.000Z">2020-07-02</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">5 minutes read (About 807 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/07/02/200702jspi/">[ITWILL : JSP] MYSQL 접속순서, DB명령어, 테이블명령어, 데이터명령어</a></h1><div class="content"><h3 id="ITWILL학원-18강-JSP기초-BY-정규태강사"><a href="#ITWILL학원-18강-JSP기초-BY-정규태강사" class="headerlink" title="ITWILL학원 : 18강 JSP기초 BY 정규태강사"></a>ITWILL학원 : 18강 JSP기초 BY 정규태강사</h3><h2 id="MySQL기초"><a href="#MySQL기초" class="headerlink" title="MySQL기초"></a>MySQL기초</h2><ol>
+<li><a href="https://sowon-dev.github.io/2020/07/01/200701jspi2/">MYSQL 설치, MYSQL환경변수설정, cmd에서 명령어 잘못입력해서 mysql못빠져나갈때</a></li>
+<li><a href="https://sowon-dev.github.io/2020/07/02/200702jspi/">MYSQL 접속순서, DB명령어, 테이블명령어, 데이터명령어</a></li>
+<li><a href="https://sowon-dev.github.io/2020/07/02/200702jspi2/">MySQL 한글깨짐현상 두가지 해결방법 : cmd와 Workbench, 이클립스와 MYSQL연결</a></li>
+</ol>
+<h2 id="1-MYSQL-순서"><a href="#1-MYSQL-순서" class="headerlink" title="1. MYSQL 순서"></a>1. MYSQL 순서</h2><ol>
+<li>cmd에서 <code>mysql -u [id] -p</code> 입력</li>
+<li>비번입력</li>
+<li>MySQL로그인</li>
+<li>use jspdb</li>
+<li>show tables;</li>
+</ol>
+<p>만약 DB가 켜져있지않다는 에러가 난다면 파일탐색기에서 <code>서비스</code>검색한 후 MySQL을 찾아 더블클릭하고 시작버튼을 누르고 다시 cmd에서 명령어를 입력하면 된다.</p>
+<p><img src="/img/20200702jsp.PNG" alt=""></p>
+<h2 id="2-DB명령어-DB목록조회-DB생성-DB삭제-DB사용"><a href="#2-DB명령어-DB목록조회-DB생성-DB삭제-DB사용" class="headerlink" title="2. DB명령어 : DB목록조회, DB생성, DB삭제, DB사용"></a>2. DB명령어 : DB목록조회, DB생성, DB삭제, DB사용</h2><table>
+<thead>
+<tr>
+<th align="center">기능</th>
+<th align="center">명령어</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">목록조회</td>
+<td align="center">show databases;</td>
+</tr>
+<tr>
+<td align="center">DB 생성</td>
+<td align="center">create database 디비이름;</td>
+</tr>
+<tr>
+<td align="center">DB 삭제</td>
+<td align="center">drop database 디비이름;</td>
+</tr>
+<tr>
+<td align="center">DB 사용</td>
+<td align="center">use 디비이름;</td>
+</tr>
+</tbody></table>
+<ol>
+<li>DB생성</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ mysql&gt; create database jspdb;</span><br><span class="line">Query OK, 1 row affected (0.01 sec)</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>DB 목록조회</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">$ mysql&gt; show databases;</span><br><span class="line">+--------------------+</span><br><span class="line">| Database           |</span><br><span class="line">+--------------------+</span><br><span class="line">| information_schema |</span><br><span class="line">| jspdb              |</span><br><span class="line">| mysql              |</span><br><span class="line">| performance_schema |</span><br><span class="line">| sakila             |</span><br><span class="line">| test               |</span><br><span class="line">| world              |</span><br><span class="line">+--------------------+</span><br><span class="line">7 rows in set (0.00 sec)</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>DB 사용</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$ mysql&gt; use jspdb;</span><br><span class="line">Database changed</span><br><span class="line">mysql&gt; show databases;</span><br><span class="line">+--------------------+</span><br><span class="line">| Database           |</span><br><span class="line">+--------------------+</span><br><span class="line">| information_schema |</span><br><span class="line">| jspdb              |</span><br><span class="line">| mysql              |</span><br><span class="line">| performance_schema |</span><br><span class="line">| sakila             |</span><br><span class="line">| test               |</span><br><span class="line">| world              |</span><br><span class="line">+--------------------+</span><br><span class="line">7 rows in set (0.00 sec)</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>DB삭제</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$ mysql&gt; drop database jspdb;</span><br><span class="line">Query OK, 0 rows affected (0.10 sec)</span><br><span class="line"></span><br><span class="line">$ mysql&gt; show databases;</span><br><span class="line">+--------------------+</span><br><span class="line">| Database           |</span><br><span class="line">+--------------------+</span><br><span class="line">| information_schema |</span><br><span class="line">| mysql              |</span><br><span class="line">| performance_schema |</span><br><span class="line">| sakila             |</span><br><span class="line">| test               |</span><br><span class="line">| world              |</span><br><span class="line">+--------------------+</span><br><span class="line">6 rows in set (0.00 sec)</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-테이블명령어-테이블생성-테이블조회-테이블삭제-테이블구조확인"><a href="#3-테이블명령어-테이블생성-테이블조회-테이블삭제-테이블구조확인" class="headerlink" title="3. 테이블명령어 : 테이블생성, 테이블조회, 테이블삭제, 테이블구조확인"></a>3. 테이블명령어 : 테이블생성, 테이블조회, 테이블삭제, 테이블구조확인</h2><table>
+<thead>
+<tr>
+<th align="center">기능</th>
+<th align="left">명령어</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">테이블생성</td>
+<td align="left">create table 테이블이름 (필드명1 데이터타입 제약조건, 필드명2 데이터타입 제약조건, …);</td>
+</tr>
+<tr>
+<td align="center">테이블삭제</td>
+<td align="left">drop table 테이블이름;</td>
+</tr>
+<tr>
+<td align="center">테이블전체조회</td>
+<td align="left">show tables;</td>
+</tr>
+<tr>
+<td align="center">테이블구조확인</td>
+<td align="left">desc 테이블이름;</td>
+</tr>
+</tbody></table>
+<ol>
+<li>테이블생성</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; create table test (idx int);</span><br><span class="line">Query OK, 0 rows affected (0.16 sec)</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>테이블전체조회</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; show tables;</span><br><span class="line">+-----------------+</span><br><span class="line">| Tables_in_jspdb |</span><br><span class="line">+-----------------+</span><br><span class="line">| test            |</span><br><span class="line">+-----------------+</span><br><span class="line">1 row in set (0.01 sec)</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>테이블구조확인</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; desc test;</span><br><span class="line">+-------+---------+------+-----+---------+-------+</span><br><span class="line">| Field | Type    | Null | Key | Default | Extra |</span><br><span class="line">+-------+---------+------+-----+---------+-------+</span><br><span class="line">| idx   | int(11) | YES  |     | NULL    |       |</span><br><span class="line">+-------+---------+------+-----+---------+-------+</span><br><span class="line">1 row in set (0.02 sec)</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>테이블삭제</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">drop table test;</span><br><span class="line">Query OK, 0 rows affected (0.09 sec)</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="3-1-DB에-따른-데이터타입-차이점"><a href="#3-1-DB에-따른-데이터타입-차이점" class="headerlink" title="3-1. DB에 따른 데이터타입 차이점"></a>3-1. DB에 따른 데이터타입 차이점</h2><table>
+<thead>
+<tr>
+<th align="center">데이터타입</th>
+<th align="center">오라클</th>
+<th align="center">MySQL</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">문자형</td>
+<td align="center">varchar2</td>
+<td align="center">varchar</td>
+</tr>
+<tr>
+<td align="center">정수형</td>
+<td align="center">number</td>
+<td align="center">int</td>
+</tr>
+<tr>
+<td align="center">실수형</td>
+<td align="center"></td>
+<td align="center">double</td>
+</tr>
+</tbody></table>
+<h2 id="4-데이터명령어-입력-출력-검색-삭제-수정"><a href="#4-데이터명령어-입력-출력-검색-삭제-수정" class="headerlink" title="4. 데이터명령어 : 입력, 출력(검색), 삭제, 수정"></a>4. 데이터명령어 : 입력, 출력(검색), 삭제, 수정</h2><ul>
+<li>여기서 중괄호는 생략가능을 나타낸다.</li>
+<li>데이터입력에서 필드명 생략가능<ul>
+<li>필드명 사용한 경우 : 지정한 필드에만 값 추가 가능</li>
+<li>필드명 사용 안한경우 : 모든 필드에 순서대로 값을 입력해야함.</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">기능</th>
+<th align="left">명령어</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">데이터 전체출력(검색)</td>
+<td align="left">select * form 테이블명;</td>
+</tr>
+<tr>
+<td align="center">데이터 출력(검색)</td>
+<td align="left">select 컬럼명 {where 조건} form 테이블명;</td>
+</tr>
+<tr>
+<td align="center">데이터 입력</td>
+<td align="left">insert into 테이블명 {(필드명1, …)} values(값1, …);</td>
+</tr>
+<tr>
+<td align="center">데이터 전체삭제</td>
+<td align="left">delete from 테이블명</td>
+</tr>
+<tr>
+<td align="center">데이터 일부분삭제</td>
+<td align="left">delete from 테이블명 {where 조건}</td>
+</tr>
+<tr>
+<td align="center">데이터 전체수정</td>
+<td align="left">update 테이블명 set 컬럼명1 = 값, 컬럼명2 = 값, …;</td>
+</tr>
+<tr>
+<td align="center">데이터 해당 조건만 수정</td>
+<td align="left">update 테이블명 set 컬럼명1 = 값, 컬럼명2 = 값, …where 조건;</td>
+</tr>
+</tbody></table>
+<h2 id="5-내장함수"><a href="#5-내장함수" class="headerlink" title="5. 내장함수"></a>5. 내장함수</h2><table>
+<thead>
+<tr>
+<th align="center">기능</th>
+<th align="center">명령어</th>
+<th align="left">사용법</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">현재시간자동입력</td>
+<td align="center">now()</td>
+<td align="left">insert into 테이블명 {(필드명1, …)} values(now(), …);</td>
+</tr>
+</tbody></table>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-07-02T00:00:00.000Z" title="2020-07-02T00:00:00.000Z">2020-07-02</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">5 minutes read (About 742 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/07/02/200702jspi2/">[ITWILL : JSP] MySQL 한글깨짐현상 두가지 해결방법 : cmd와 Workbench, 이클립스와 MYSQL연결</a></h1><div class="content"><h3 id="ITWILL학원-18강-JSP기초-BY-정규태강사"><a href="#ITWILL학원-18강-JSP기초-BY-정규태강사" class="headerlink" title="ITWILL학원 : 18강 JSP기초 BY 정규태강사"></a>ITWILL학원 : 18강 JSP기초 BY 정규태강사</h3><h2 id="MySQL기초"><a href="#MySQL기초" class="headerlink" title="MySQL기초"></a>MySQL기초</h2><ol>
+<li><a href="https://sowon-dev.github.io/2020/07/01/200701jspi2/">MYSQL 설치, MYSQL환경변수설정, cmd에서 명령어 잘못입력해서 mysql못빠져나갈때</a></li>
+<li><a href="https://sowon-dev.github.io/2020/07/02/200702jspi/">MYSQL 접속순서, DB명령어, 테이블명령어, 데이터명령어</a></li>
+<li><a href="https://sowon-dev.github.io/2020/07/02/200702jspi2/">MySQL 한글깨짐현상 두가지 해결방법 : cmd와 Workbench, 이클립스와 MYSQL연결</a></li>
+</ol>
+<h2 id="1-cmd로-한글깨짐현상-해결하기"><a href="#1-cmd로-한글깨짐현상-해결하기" class="headerlink" title="1. cmd로 한글깨짐현상 해결하기"></a>1. cmd로 한글깨짐현상 해결하기</h2><h2 id="1-1-mysql-유저-접속"><a href="#1-1-mysql-유저-접속" class="headerlink" title="1-1. mysql 유저 접속"></a>1-1. mysql 유저 접속</h2><p>아래 명령어를 입력하고 엔터를 치면 password를 입력창이 뜬다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mysql -u [id] -p</span><br></pre></td></tr></table></figure>
+
+<p><code>status</code> 명령어를 날리면 현재 DB상태확인가능하다.<br>빨간 부분을 보면 UTF-8이 아니다. 이럴 경우 한글이 깨질수있으므로 utf-8로 설정해줘야한다.</p>
+<p><img src="/img/20200701jsp6-2.PNG" alt=""></p>
+<ol>
+<li>아래 주소 <code>C:\ProgramData\MySQL\MySQL Server 5.6</code> 에서 my.ini파일을 열어준다</li>
+<li>ctrl+F로 <code>[mysqld]</code>를 찾는다.</li>
+<li>[mysqld]을 지우고 그 위에 아래 내용을 쓴다.</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[mysql]</span><br><span class="line">default-character-set&#x3D;utf8</span><br><span class="line"></span><br><span class="line">[mysqld]</span><br><span class="line">collation-server &#x3D; utf8_unicode_ci</span><br><span class="line">character-set-server &#x3D; utf8</span><br><span class="line">skip-character-set-client-handshake</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>설정된 값이 실행되려면 MYSQL를 재부팅하면 된다.<br>정상적으로 utf-8로 뜨는 것을 확인할 수 있다.</li>
+</ol>
+<p><img src="/img/20200701jsp7.PNG" alt=""></p>
+<h2 id="2-Workbench로-한글깨짐현상-해결하기"><a href="#2-Workbench로-한글깨짐현상-해결하기" class="headerlink" title="2. Workbench로 한글깨짐현상 해결하기"></a>2. Workbench로 한글깨짐현상 해결하기</h2><ol>
+<li>DB 한글설정<br>제일 상위 DB에 마우스를 가져다되면 2개의 아이콘이 오른편에 생긴다.<br>그 중 가장 오른쪽인 몽키스패너를 클릭한다.<br><code>Charset/Collation</code>탭에서 utf8과 utf8_bin으로 지정 후 apploy를 눌러준다</li>
+</ol>
+<p><img src="/img/20200702jsp3.PNG" alt=""></p>
+<ol start="2">
+<li>이미 생성된 테이블 한글설정<br>모든 컬럼에 utf8과 utf8_bin으로 지정 후 apploy를 눌러준다.</li>
+</ol>
+<p><img src="/img/20200702jsp2.PNG" alt=""></p>
+<h2 id="3-이클립스와-MYSQL연결"><a href="#3-이클립스와-MYSQL연결" class="headerlink" title="3. 이클립스와 MYSQL연결"></a>3. 이클립스와 MYSQL연결</h2><p>라이브러리를 사용해서 MYSQL에 접근할 수 있다.<br>이클립스와 MYSQL연결을 위해 툴 설치가 필요하다.</p>
+<p><a href="https://dev.mysql.com/downloads/">MYSQL 다운로드</a>에서 <code>Connector/J</code>를 클릭한다.</p>
+<p><img src="/img/20200702jsp4.PNG" alt=""></p>
+<p>ZIP파일로 다운로드 후 압출을 푼 뒤  <code>mysql-connector-java-5.1.49-bin.jar</code>파일을 이클립스에 복붙한다</p>
+<p><img src="/img/20200702jsp5.PNG" alt=""></p>
+<h2 id="3-1-이클립스에서-MYSQL불러오기"><a href="#3-1-이클립스에서-MYSQL불러오기" class="headerlink" title="3-1. 이클립스에서 MYSQL불러오기"></a>3-1. 이클립스에서 MYSQL불러오기</h2><ol>
+<li><p>드라이버를 로드 : Class.sforName(“com.mysql.jdbc.Driver”)</p>
+</li>
+<li><p>DB연결<br>DriverManager.getConnection(url, user, password)이고 파라미터가 3개이다.</p>
+</li>
+</ol>
+<ul>
+<li>파라미터 자세히 : DriverManager.getConnection(“jdbc:mysql://localhost:포트번호/DB이름”, user, password) </li>
+</ul>
+<ol start="3">
+<li>import = java.sql.Connection</li>
+</ol>
+<ul>
+<li>보라색동그라미 의미 : Interface</li>
+<li>java.sql로 클릭하면 자동 import생성</li>
+</ul>
+<p><img src="/img/20200703jsp.PNG" alt=""></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">%@page</span> <span class="attr">import</span>=<span class="string">"java.sql.Connection"</span>%&gt;</span> //자동import</span><br><span class="line"></span><br><span class="line">//1단계 드라이버를 로드</span><br><span class="line">Class.forName("com.mysql.jdbc.Driver");</span><br><span class="line">System.out.println("드라이버 로드성공");</span><br><span class="line"></span><br><span class="line">//2단계 DB연결</span><br><span class="line">Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jspdb", "root", "1234");</span><br><span class="line">System.out.println("DB연결성공");</span><br><span class="line">%&gt;</span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>연결성공 <span class="tag">&lt;<span class="name">%=con</span> %&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"></span><br><span class="line">//출력값 : 연결성공 com.mysql.jdbc.JDBC4Connection@4edd8384</span><br><span class="line">	골뱅이 앞은 객체주소 -&gt; 만약 null이 나오면 객체가 생성되지않았다는 의미.</span><br><span class="line">	골뱅이 뒤는 객체 캐쉬번호.</span><br></pre></td></tr></table></figure>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-07-02T00:00:00.000Z" title="2020-07-02T00:00:00.000Z">2020-07-02</time><span class="level-item"><a class="link-muted" href="/categories/JAVA/">JAVA</a></span><span class="level-item">4 minutes read (About 630 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/07/02/200702javai/">[ITWILL : JAVA]클래스 : 매개변수위치에 따른 차이(생성자 vs 메서드), private멤버변수 getter와 setter로 가져다쓰기</a></h1><div class="content"><h3 id="ITWILL학원-13강-JAVA-BY-윤미영강사"><a href="#ITWILL학원-13강-JAVA-BY-윤미영강사" class="headerlink" title="ITWILL학원 : 13강 JAVA BY 윤미영강사"></a>ITWILL학원 : 13강 JAVA BY 윤미영강사</h3><h2 id="1-매개변수위치에-따른-차이"><a href="#1-매개변수위치에-따른-차이" class="headerlink" title="1. 매개변수위치에 따른 차이"></a>1. 매개변수위치에 따른 차이</h2><p>클래스 Book은 책제목과, 저자, 가격을 출력해준다.</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Book</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> String title;</span><br><span class="line">	<span class="keyword">private</span> String author;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> price;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Book</span><span class="params">(String t, String a, <span class="keyword">int</span> p)</span></span>&#123;</span><br><span class="line">		title = t;</span><br><span class="line">		author = a;</span><br><span class="line">		price = p;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">showInfo</span><span class="params">(String title, String author, <span class="keyword">int</span> price )</span></span>&#123;</span><br><span class="line">	System.out.printf(<span class="string">"책 제목 : %s, 저자 : %s, 가격 : %,d%n"</span>, title, author, price);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">showInfo</span><span class="params">()</span></span>&#123;</span><br><span class="line">		System.out.printf(<span class="string">"책 제목 : %s, 저자 : %s, 가격 : %d%n"</span>, title, author, price);</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
 
 <p>클래스 TestBook 이라는 새로운 클래스파일을 만들고 메인메서드를 실행해보자.</p>
@@ -71,86 +367,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Book</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> String title;</span><br><span class="line">	<span class="keyword">private</span> String author;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> price;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Book</span><span class="params">(String t, String a, <span class="keyword">int</span> p)</span></span>&#123;</span><br><span class="line">	title = t;</span><br><span class="line">	author = a;</span><br><span class="line">	price = p;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">showInfo</span><span class="params">()</span></span>&#123;</span><br><span class="line">	System.out.printf(<span class="string">"책 제목 : %s, 저자 : %s, 가격 : %d%n"</span>, title, author, price);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function">String <span class="title">getTitle</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="keyword">return</span> title;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function">String <span class="title">getAuthor</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="keyword">return</span> author;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">int</span> <span class="title">getPrice</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="keyword">return</span> price;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">setTitle</span><span class="params">(String title)</span></span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.title = title; <span class="comment">//매개변수명과 멤버변수명이 같을때 this를 통해 멤버변수를 지정해줄수있다.</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">setAuthor</span><span class="params">(String a)</span></span>&#123;</span><br><span class="line">		author = a; <span class="comment">//매개변수명과 멤버변수명이 다른경우 그냥 쓰면 된다.</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">setPrice</span><span class="params">(<span class="keyword">int</span> p)</span></span>&#123;</span><br><span class="line">		price = p;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>매개변수명과 멤버변수명이 같을때 this를 통해 멤버변수를 지정해줄수있다.</p>
 <p>실행하는 메인메서드파일은 아래와 같다.</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Book book1 = <span class="keyword">new</span> Book(<span class="string">"운동하는여자"</span>, <span class="string">"양민영"</span>, <span class="number">25000</span>);</span><br><span class="line">System.out.println(book1.getTitle());</span><br><span class="line">book1.setPrice(<span class="number">20000</span>);</span><br><span class="line">System.out.println(book1.setPrice());</span><br><span class="line"></span><br><span class="line"><span class="comment">//출력값</span></span><br><span class="line">운동하는여자</span><br><span class="line"><span class="number">20000</span></span><br></pre></td></tr></table></figure></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-07-01T00:00:00.000Z" title="2020-07-01T00:00:00.000Z">2020-07-01</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">6 minutes read (About 901 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/07/01/200701jspi2/">[ITWILL : JSP]MYSQL 설치, MYSQL환경변수설정, cmd에서 명령어 잘못입력해서 mysql못빠져나갈때</a></h1><div class="content"><h3 id="ITWILL학원-17강-JSP기초-BY-정규태강사"><a href="#ITWILL학원-17강-JSP기초-BY-정규태강사" class="headerlink" title="ITWILL학원 : 17강 JSP기초 BY 정규태강사"></a>ITWILL학원 : 17강 JSP기초 BY 정규태강사</h3><h2 id="MySQL기초"><a href="#MySQL기초" class="headerlink" title="MySQL기초"></a>MySQL기초</h2><ol>
-<li><a href="https://sowon-dev.github.io/2020/07/01/200701jspi2/">MYSQL 설치, MYSQL환경변수설정, cmd에서 명령어 잘못입력해서 mysql못빠져나갈때</a></li>
-<li><a href="https://sowon-dev.github.io/2020/07/02/200702jspi/">MYSQL 접속순서, DB명령어, 테이블명령어, 데이터명령어</a></li>
-<li><a href="https://sowon-dev.github.io/2020/07/02/200702jspi2/">MySQL 한글깨짐현상 두가지 해결방법 : cmd와 Workbench, 이클립스와 MYSQL연결</a></li>
-</ol>
-<h2 id="1-MYSQL-설치-p372"><a href="#1-MYSQL-설치-p372" class="headerlink" title="1. MYSQL 설치 (p372~)"></a>1. MYSQL 설치 (p372~)</h2><ol>
-<li><p><a href="https://www.mysql.com/downloads/">MYSQL 다운로드</a>에 접속</p>
-</li>
-<li><p>아래 이미지의 <code>MYSQL Community(GPL) Downloads</code>를 클릭 </p>
-</li>
-</ol>
-<p><img src="/img/20200701jsp2.PNG" alt=""></p>
-<ol start="3">
-<li><code>MYSQL Installer for Windows</code> 다운로드 </li>
-</ol>
-<p><img src="/img/20200701jsp2-1.PNG" alt=""></p>
-<ol start="4">
-<li>full package version 다운르도</li>
-</ol>
-<p><img src="/img/20200701jsp2-2.PNG" alt=""></p>
-<ol start="5">
-<li><code>No thanks, just start my download</code> 클릭</li>
-</ol>
-<p><img src="/img/20200701jsp2-3.PNG" alt=""></p>
-<ol start="6">
-<li><code>Check Requirements</code> 탭에서 <code>excute</code>를 클릭하기<br>각각 설치가 완료되면 체크박스가 tick되어진다.<br>꼭 설치되어있어야하는 것은 SERVER와 WORKBENCH이다.<br>설치가 완료되면 NEXT버튼으로 바뀌게되고 클릭하면된다</li>
-</ol>
-<p><img src="/img/20200701jsp2-4.PNG" alt=""></p>
-<ol start="7">
-<li><code>Installation</code> 탭에서 <code>excute</code>를 클릭하기<br>각각 설치가 완료되면 Status가 Complete로 바뀌게 된다<br>꼭 설치되어야하는 것은 SERVER와 WORKBENCH, NOTIFIER이다.<br>설치가 완료되면 NEXT버튼으로 바뀌게되고 클릭하면된다.</li>
-</ol>
-<p><img src="/img/20200701jsp2-5.PNG" alt=""></p>
-<p>포트번호 : 3306 기억하고 NEXT</p>
-<ol start="8">
-<li><code>Account and Roles</code>탭에서 Root계정 비밀번호 설정 후 Add user하기<br>Root계정의 비밀번호를 설정 후 절대 잊어버리면 안된다.<br>혹시 잊어버리면… MYSQL지우고 다시 까는 수밖에 없다고 한다.<br>그래도 찾아보면 방법이 있지않을까?</li>
-</ol>
-<p><img src="/img/20200701jsp2-6.PNG" alt=""></p>
-<p>Add User클릭 후 아래 설정 후 OK 클릭하기</p>
-<ul>
-<li>User Name : 맘대로</li>
-<li>Host : &lt;All Hosts(%)&gt;선택</li>
-<li>Role : DB admin (혹시 다른 거원하면 선택하면 됨)</li>
-</ul>
-<p><img src="/img/20200701jsp2-7.PNG" alt=""></p>
-<ol start="9">
-<li><code>Windows Service</code>탭에서 <code>Start the MySQL Server at System Startup</code> tick 해제하기<br>윈도우를 시작할때마다 서버를 킬지 물어보는 체크박스이다.</li>
-</ol>
-<p><img src="/img/20200701jsp2-8.PNG" alt=""></p>
-<ol start="10">
-<li><code>Apply Configuration</code>탭에서 틱완료되었는지 확인 후 Finish를 클릭한다.</li>
-</ol>
-<p><img src="/img/20200701jsp2-9.PNG" alt=""></p>
-<ol start="11">
-<li><code>Connect To Server</code>탭에서  Root계정의 비밀번호를 입력하면 status가 변경된다.</li>
-</ol>
-<p>기존 running status에서</p>
-<p><img src="/img/20200701jsp2-10.PNG" alt=""></p>
-<p>connection succeeded로 변경성공</p>
-<p><img src="/img/20200701jsp2-11.PNG" alt=""></p>
-<ol start="12">
-<li><code>Installation Complete</code>탭에서 <code>start MySQL workbanch after Setup</code> 틱을 해제한 뒤 finish를 클릭한다</li>
-</ol>
-<p><img src="/img/20200701jsp2-12.PNG" alt=""></p>
-<h2 id="2-MySQL-사용방법-두가지"><a href="#2-MySQL-사용방법-두가지" class="headerlink" title="2. MySQL 사용방법 두가지."></a>2. MySQL 사용방법 두가지.</h2><h2 id="2-1-mysql-커맨드-실행"><a href="#2-1-mysql-커맨드-실행" class="headerlink" title="2-1. mysql 커맨드 실행"></a>2-1. mysql 커맨드 실행</h2><p>다운로드한 파일들 중에 <code>MySQL Command Line Client</code>를 실행시킨 뒤 비밀번호 1234 입력한다.<br>비밀번호가 일치하면 <code>mysql&gt;</code>옆에 쿼리구문을 작성할 수 있다.</p>
-<p><img src="/img/20200701jsp2-13.PNG" alt=""></p>
-<h2 id="2-2-mysql-workbanch실행"><a href="#2-2-mysql-workbanch실행" class="headerlink" title="2-2. mysql workbanch실행"></a>2-2. mysql workbanch실행</h2><p>다운로드한 파일들 중에 <code>MySQL Workbanch</code>를 실행시킨 뒤 비밀번호를 입력한다.</p>
-<p><img src="/img/20200701jsp3.PNG" alt=""></p>
-<h2 id="3-환경변수설정"><a href="#3-환경변수설정" class="headerlink" title="3. 환경변수설정"></a>3. 환경변수설정</h2><p>아래 이미지처럼 MySQL 다운로드한 경로의 bin파일 경로를 환경변수에 추가한다</p>
-<p><img src="/img/20200701jsp4.PNG" alt=""></p>
-<p>환경변수설정완료했다면 cmd창 종료 -&gt; cmd 다시 시작한 뒤 제대로 다운도르 되었는지 아래 쿼리로 확인한다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mysql</span><br></pre></td></tr></table></figure>
-
-<p>아래 이미지처럼 나오면 설치가 정상적으로 되었다는 의미이다.</p>
-<p><img src="/img/20200701jsp5.PNG" alt=""></p>
-<h2 id="3-cmd에서-명령어-잘못입력해서-mysql못빠져나갈때"><a href="#3-cmd에서-명령어-잘못입력해서-mysql못빠져나갈때" class="headerlink" title="3. cmd에서 명령어 잘못입력해서 mysql못빠져나갈때"></a>3. cmd에서 명령어 잘못입력해서 mysql못빠져나갈때</h2><p>잘못 명령어를 입력해서 mysql못나갈경우 <code>\c</code>를 입력하면 된다<br>한참 헤맨 증거…ㅋㅋㅋㅋㅋ</p>
-<p><img src="/img/20200701jsp6.PNG" alt=""></p>
-<h2 id="3-1-mysql-유저-접속"><a href="#3-1-mysql-유저-접속" class="headerlink" title="3-1. mysql 유저 접속"></a>3-1. mysql 유저 접속</h2><p>아래 명령어를 입력하고 엔터를 치면 password를 입력창이 뜬다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mysql -u [id] -p</span><br></pre></td></tr></table></figure>
-<p>유저 로그인 성공!</p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-07-01T00:00:00.000Z" title="2020-07-01T00:00:00.000Z">2020-07-01</time><span class="level-item"><a class="link-muted" href="/categories/JAVA/">JAVA</a></span><span class="level-item">10 minutes read (About 1521 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/07/01/200701javai/">[ITWILL : JAVA]클래스 : 생성자, new역할, this키워드용법</a></h1><div class="content"><h3 id="ITWILL학원-12강-JAVA-BY-윤미영강사"><a href="#ITWILL학원-12강-JAVA-BY-윤미영강사" class="headerlink" title="ITWILL학원 : 12강 JAVA BY 윤미영강사"></a>ITWILL학원 : 12강 JAVA BY 윤미영강사</h3><h2 id="1-생성자"><a href="#1-생성자" class="headerlink" title="1. 생성자"></a>1. <a href="https://sowon-dev.github.io/2020/06/29/200629jspi2/">생성자</a></h2><ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Book book1 = <span class="keyword">new</span> Book(<span class="string">"운동하는여자"</span>, <span class="string">"양민영"</span>, <span class="number">25000</span>);</span><br><span class="line">System.out.println(book1.getTitle());</span><br><span class="line">book1.setPrice(<span class="number">20000</span>);</span><br><span class="line">System.out.println(book1.setPrice());</span><br><span class="line"></span><br><span class="line"><span class="comment">//출력값</span></span><br><span class="line">운동하는여자</span><br><span class="line"><span class="number">20000</span></span><br></pre></td></tr></table></figure></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-07-01T00:00:00.000Z" title="2020-07-01T00:00:00.000Z">2020-07-01</time><span class="level-item"><a class="link-muted" href="/categories/JAVA/">JAVA</a></span><span class="level-item">10 minutes read (About 1521 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/07/01/200701javai/">[ITWILL : JAVA]클래스 : 생성자, new역할, this키워드용법</a></h1><div class="content"><h3 id="ITWILL학원-12강-JAVA-BY-윤미영강사"><a href="#ITWILL학원-12강-JAVA-BY-윤미영강사" class="headerlink" title="ITWILL학원 : 12강 JAVA BY 윤미영강사"></a>ITWILL학원 : 12강 JAVA BY 윤미영강사</h3><h2 id="1-생성자"><a href="#1-생성자" class="headerlink" title="1. 생성자"></a>1. <a href="https://sowon-dev.github.io/2020/06/29/200629jspi2/">생성자</a></h2><ul>
 <li><p>생성자란 객체를 생성할 때 호출하는 메서드 비슷한 것을 말함.</p>
 </li>
 <li><p>주로 일반 멤버변수의 초기화나 객체를 생성할때 실행하는 작업을 정리한다.</p>
@@ -234,6 +451,85 @@
 <li>생성자오버로딩하는 이유 : 다른 생성자를 호출해서 중복코드를 제거.<br>이때 다른 생성자를 호출하는 키워드가 this이다.</li>
 </ul>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">OverloadConstructorPerson</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	String name = <span class="string">"한사장"</span>;</span><br><span class="line">	<span class="keyword">int</span> age = <span class="number">90</span>;</span><br><span class="line">	<span class="keyword">boolean</span> isHugry = <span class="keyword">false</span>;</span><br><span class="line">	</span><br><span class="line">	OverloadConstructorPerson(String name, <span class="keyword">int</span> age, <span class="keyword">boolean</span> isHungry)&#123;</span><br><span class="line">		<span class="comment">//아래 3줄의 중복코드가 발생함.</span></span><br><span class="line">		<span class="keyword">this</span>.name = name;</span><br><span class="line">		<span class="keyword">this</span>.age = age;</span><br><span class="line">		<span class="keyword">this</span>.isHugry = <span class="keyword">false</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	OverloadConstructorPerson(String name, <span class="keyword">int</span> age)&#123;</span><br><span class="line">		<span class="comment">//this()용법사용</span></span><br><span class="line">		<span class="keyword">this</span>(name, age, <span class="keyword">false</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	OverloadConstructorPerson(String name)&#123;</span><br><span class="line">		<span class="comment">//this()용법사용</span></span><br><span class="line">		<span class="keyword">this</span>(name, <span class="number">0</span>, <span class="keyword">false</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	OverloadConstructorPerson()&#123;</span><br><span class="line">		<span class="comment">//아무 코드도 없으면 기존 멤버변수값이 출력된다.</span></span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		OverloadConstructorPerson p1 = <span class="keyword">new</span> OverloadConstructorPerson(<span class="string">"하지"</span>, <span class="number">77</span>);</span><br><span class="line">		System.out.printf(<span class="string">"이름 : %s, 나이 : %d%n"</span>, p1.name, p1.age);</span><br><span class="line">		</span><br><span class="line">		OverloadConstructorPerson p2 = <span class="keyword">new</span> OverloadConstructorPerson(<span class="string">"뽀니"</span>);</span><br><span class="line">		System.out.printf(<span class="string">"이름 : %s, 나이 : %d%n"</span>, p2.name, p2.age);</span><br><span class="line">		</span><br><span class="line">		OverloadConstructorPerson p3 = <span class="keyword">new</span> OverloadConstructorPerson();</span><br><span class="line">		System.out.printf(<span class="string">"이름 : %s, 나이 : %d%n"</span>, p3.name, p3.age);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//출력값</span></span><br><span class="line">이름 : 하지, 나이 : <span class="number">77</span></span><br><span class="line">이름 : 뽀니, 나이 : <span class="number">0</span></span><br><span class="line">이름 : 한사장, 나이 : <span class="number">90</span></span><br></pre></td></tr></table></figure>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-07-01T00:00:00.000Z" title="2020-07-01T00:00:00.000Z">2020-07-01</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">6 minutes read (About 901 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/07/01/200701jspi2/">[ITWILL : JSP]MYSQL 설치, MYSQL환경변수설정, cmd에서 명령어 잘못입력해서 mysql못빠져나갈때</a></h1><div class="content"><h3 id="ITWILL학원-17강-JSP기초-BY-정규태강사"><a href="#ITWILL학원-17강-JSP기초-BY-정규태강사" class="headerlink" title="ITWILL학원 : 17강 JSP기초 BY 정규태강사"></a>ITWILL학원 : 17강 JSP기초 BY 정규태강사</h3><h2 id="MySQL기초"><a href="#MySQL기초" class="headerlink" title="MySQL기초"></a>MySQL기초</h2><ol>
+<li><a href="https://sowon-dev.github.io/2020/07/01/200701jspi2/">MYSQL 설치, MYSQL환경변수설정, cmd에서 명령어 잘못입력해서 mysql못빠져나갈때</a></li>
+<li><a href="https://sowon-dev.github.io/2020/07/02/200702jspi/">MYSQL 접속순서, DB명령어, 테이블명령어, 데이터명령어</a></li>
+<li><a href="https://sowon-dev.github.io/2020/07/02/200702jspi2/">MySQL 한글깨짐현상 두가지 해결방법 : cmd와 Workbench, 이클립스와 MYSQL연결</a></li>
+</ol>
+<h2 id="1-MYSQL-설치-p372"><a href="#1-MYSQL-설치-p372" class="headerlink" title="1. MYSQL 설치 (p372~)"></a>1. MYSQL 설치 (p372~)</h2><ol>
+<li><p><a href="https://www.mysql.com/downloads/">MYSQL 다운로드</a>에 접속</p>
+</li>
+<li><p>아래 이미지의 <code>MYSQL Community(GPL) Downloads</code>를 클릭 </p>
+</li>
+</ol>
+<p><img src="/img/20200701jsp2.PNG" alt=""></p>
+<ol start="3">
+<li><code>MYSQL Installer for Windows</code> 다운로드 </li>
+</ol>
+<p><img src="/img/20200701jsp2-1.PNG" alt=""></p>
+<ol start="4">
+<li>full package version 다운르도</li>
+</ol>
+<p><img src="/img/20200701jsp2-2.PNG" alt=""></p>
+<ol start="5">
+<li><code>No thanks, just start my download</code> 클릭</li>
+</ol>
+<p><img src="/img/20200701jsp2-3.PNG" alt=""></p>
+<ol start="6">
+<li><code>Check Requirements</code> 탭에서 <code>excute</code>를 클릭하기<br>각각 설치가 완료되면 체크박스가 tick되어진다.<br>꼭 설치되어있어야하는 것은 SERVER와 WORKBENCH이다.<br>설치가 완료되면 NEXT버튼으로 바뀌게되고 클릭하면된다</li>
+</ol>
+<p><img src="/img/20200701jsp2-4.PNG" alt=""></p>
+<ol start="7">
+<li><code>Installation</code> 탭에서 <code>excute</code>를 클릭하기<br>각각 설치가 완료되면 Status가 Complete로 바뀌게 된다<br>꼭 설치되어야하는 것은 SERVER와 WORKBENCH, NOTIFIER이다.<br>설치가 완료되면 NEXT버튼으로 바뀌게되고 클릭하면된다.</li>
+</ol>
+<p><img src="/img/20200701jsp2-5.PNG" alt=""></p>
+<p>포트번호 : 3306 기억하고 NEXT</p>
+<ol start="8">
+<li><code>Account and Roles</code>탭에서 Root계정 비밀번호 설정 후 Add user하기<br>Root계정의 비밀번호를 설정 후 절대 잊어버리면 안된다.<br>혹시 잊어버리면… MYSQL지우고 다시 까는 수밖에 없다고 한다.<br>그래도 찾아보면 방법이 있지않을까?</li>
+</ol>
+<p><img src="/img/20200701jsp2-6.PNG" alt=""></p>
+<p>Add User클릭 후 아래 설정 후 OK 클릭하기</p>
+<ul>
+<li>User Name : 맘대로</li>
+<li>Host : &lt;All Hosts(%)&gt;선택</li>
+<li>Role : DB admin (혹시 다른 거원하면 선택하면 됨)</li>
+</ul>
+<p><img src="/img/20200701jsp2-7.PNG" alt=""></p>
+<ol start="9">
+<li><code>Windows Service</code>탭에서 <code>Start the MySQL Server at System Startup</code> tick 해제하기<br>윈도우를 시작할때마다 서버를 킬지 물어보는 체크박스이다.</li>
+</ol>
+<p><img src="/img/20200701jsp2-8.PNG" alt=""></p>
+<ol start="10">
+<li><code>Apply Configuration</code>탭에서 틱완료되었는지 확인 후 Finish를 클릭한다.</li>
+</ol>
+<p><img src="/img/20200701jsp2-9.PNG" alt=""></p>
+<ol start="11">
+<li><code>Connect To Server</code>탭에서  Root계정의 비밀번호를 입력하면 status가 변경된다.</li>
+</ol>
+<p>기존 running status에서</p>
+<p><img src="/img/20200701jsp2-10.PNG" alt=""></p>
+<p>connection succeeded로 변경성공</p>
+<p><img src="/img/20200701jsp2-11.PNG" alt=""></p>
+<ol start="12">
+<li><code>Installation Complete</code>탭에서 <code>start MySQL workbanch after Setup</code> 틱을 해제한 뒤 finish를 클릭한다</li>
+</ol>
+<p><img src="/img/20200701jsp2-12.PNG" alt=""></p>
+<h2 id="2-MySQL-사용방법-두가지"><a href="#2-MySQL-사용방법-두가지" class="headerlink" title="2. MySQL 사용방법 두가지."></a>2. MySQL 사용방법 두가지.</h2><h2 id="2-1-mysql-커맨드-실행"><a href="#2-1-mysql-커맨드-실행" class="headerlink" title="2-1. mysql 커맨드 실행"></a>2-1. mysql 커맨드 실행</h2><p>다운로드한 파일들 중에 <code>MySQL Command Line Client</code>를 실행시킨 뒤 비밀번호 1234 입력한다.<br>비밀번호가 일치하면 <code>mysql&gt;</code>옆에 쿼리구문을 작성할 수 있다.</p>
+<p><img src="/img/20200701jsp2-13.PNG" alt=""></p>
+<h2 id="2-2-mysql-workbanch실행"><a href="#2-2-mysql-workbanch실행" class="headerlink" title="2-2. mysql workbanch실행"></a>2-2. mysql workbanch실행</h2><p>다운로드한 파일들 중에 <code>MySQL Workbanch</code>를 실행시킨 뒤 비밀번호를 입력한다.</p>
+<p><img src="/img/20200701jsp3.PNG" alt=""></p>
+<h2 id="3-환경변수설정"><a href="#3-환경변수설정" class="headerlink" title="3. 환경변수설정"></a>3. 환경변수설정</h2><p>아래 이미지처럼 MySQL 다운로드한 경로의 bin파일 경로를 환경변수에 추가한다</p>
+<p><img src="/img/20200701jsp4.PNG" alt=""></p>
+<p>환경변수설정완료했다면 cmd창 종료 -&gt; cmd 다시 시작한 뒤 제대로 다운도르 되었는지 아래 쿼리로 확인한다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mysql</span><br></pre></td></tr></table></figure>
+
+<p>아래 이미지처럼 나오면 설치가 정상적으로 되었다는 의미이다.</p>
+<p><img src="/img/20200701jsp5.PNG" alt=""></p>
+<h2 id="3-cmd에서-명령어-잘못입력해서-mysql못빠져나갈때"><a href="#3-cmd에서-명령어-잘못입력해서-mysql못빠져나갈때" class="headerlink" title="3. cmd에서 명령어 잘못입력해서 mysql못빠져나갈때"></a>3. cmd에서 명령어 잘못입력해서 mysql못빠져나갈때</h2><p>잘못 명령어를 입력해서 mysql못나갈경우 <code>\c</code>를 입력하면 된다<br>한참 헤맨 증거…ㅋㅋㅋㅋㅋ</p>
+<p><img src="/img/20200701jsp6.PNG" alt=""></p>
+<h2 id="3-1-mysql-유저-접속"><a href="#3-1-mysql-유저-접속" class="headerlink" title="3-1. mysql 유저 접속"></a>3-1. mysql 유저 접속</h2><p>아래 명령어를 입력하고 엔터를 치면 password를 입력창이 뜬다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mysql -u [id] -p</span><br></pre></td></tr></table></figure>
+<p>유저 로그인 성공!</p>
 </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-07-01T00:00:00.000Z" title="2020-07-01T00:00:00.000Z">2020-07-01</time><span class="level-item"><a class="link-muted" href="/categories/JSP/">JSP</a></span><span class="level-item">10 minutes read (About 1546 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/07/01/200701jspi/">[ITWILL : JSP]쿠키(Cookie)</a></h1><div class="content"><h3 id="ITWILL학원-17강-JSP기초-BY-정규태강사"><a href="#ITWILL학원-17강-JSP기초-BY-정규태강사" class="headerlink" title="ITWILL학원 : 17강 JSP기초 BY 정규태강사"></a>ITWILL학원 : 17강 JSP기초 BY 정규태강사</h3><h2 id="1-쿠키-Cookie-p279"><a href="#1-쿠키-Cookie-p279" class="headerlink" title="1. 쿠키 Cookie (p279~)"></a>1. 쿠키 Cookie (p279~)</h2><ul>
 <li><p>클라이언트쪽에서 저장되어 관리되는 정보.</p>
 <ul>
@@ -365,145 +661,7 @@
 <p>employees테이블의 department_id갯수를 구하는 쿼리구문이다.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ select count(distinct department_id)</span><br><span class="line">$ from employees</span><br></pre></td></tr></table></figure>
 
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-30T00:00:00.000Z" title="2020-06-30T00:00:00.000Z">2020-06-30</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">3 minutes read (About 500 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/30/200630dbi2/">[ITWILL : DB] 단일행함수 : 숫자함수, 날짜함수</a></h1><div class="content"><h3 id="ITWILL학원-10강-Database-BY-정지윤강사"><a href="#ITWILL학원-10강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 10강 Database BY 정지윤강사"></a>ITWILL학원 : 10강 Database BY 정지윤강사</h3><p>SQL함수에는 두가지 유형이 있다.</p>
-<ol>
-<li>단일행함수 : 행당 하나의 결과 반환</li>
-<li>여러행함수 : 행 집합당 하나의 결과 반환</li>
-</ol>
-<p>이 중 단일행함수에 대해 알아보자.</p>
-<h2 id="단일행함수종류"><a href="#단일행함수종류" class="headerlink" title="단일행함수종류"></a>단일행함수종류</h2><p>단일행함수는 총 5가지이다.</p>
-<ol>
-<li><a href="https://sowon-dev.github.io/2020/06/30/200630dbi/">문자함수</a></li>
-<li><a href="https://sowon-dev.github.io/2020/06/30/200630dbi2/">숫자함수</a></li>
-<li><a href="https://sowon-dev.github.io/2020/06/30/200630dbi2/">날짜함수</a></li>
-<li><a href="https://sowon-dev.github.io/2020/06/30/200630dbi3/">변환함수</a></li>
-<li><a href="https://sowon-dev.github.io/2020/06/30/200630dbi3/">일반함수</a></li>
-</ol>
-<h2 id="1-숫자함수"><a href="#1-숫자함수" class="headerlink" title="1. 숫자함수"></a>1. 숫자함수</h2><p>실무에서는 반올림, 버림을 자주 사용한다.<br>실무에서 올림은 잘 사용하지않는다.<br>mod함수는 홀수짝수 구분할때 주로 사용한다.</p>
-<p><img src="https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http%3A%2F%2Fcfile28.uf.tistory.com%2Fimage%2F2575E54F560BB83208BAA5" alt="https://oraclejavastudy.tistory.com/m/787?category=544330"></p>
-<h2 id="1-1-dual-듀얼-테이블"><a href="#1-1-dual-듀얼-테이블" class="headerlink" title="1-1. dual(듀얼) 테이블"></a>1-1. dual(듀얼) 테이블</h2><p>select는 출력쿼리이다.<br> 12&#42;123 이라는 간단한 산술결과값을 출력하고 싶다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ select 12*123 as value;</span><br><span class="line"></span><br><span class="line">//반환값에러 : FROM keyword not found</span><br></pre></td></tr></table></figure>
-<p>반환값에러가 나왔다.<br>select와 from은 항상 함께 해야한다.<br>테이블에서 정보를 빼낼 필요가 없지만 from키워드가 있어야하니까 가지고 있는 아무테이블명을 적을 수 있다.<br>단순한 산술결과나 함수결과를 출력할때는 from에 아무테이블명을 적어버리면 테이블의 row갯수만큼 반복 출력된다. 만약 그 아무테이블의 row가 12만개면 출력값이 12만번 반복된다.</p>
-<p>따라서 이런 상황에서 쓸 수 있는 행 하나짜리 테이블이 있다. 바로 dual(듀얼)이다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ select 12*123 as value</span><br><span class="line">$ from dual;</span><br><span class="line"></span><br><span class="line">//반환값 : 1476</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="1-2-0의-자릿수"><a href="#1-2-0의-자릿수" class="headerlink" title="1-2. 0의 자릿수"></a>1-2. 0의 자릿수</h2><p><img src="https://thebook.io/img/006977/100.jpg" alt="https://thebook.io/006977/ch04/02/02/01/"></p>
-<p>일의 자리는 0으로 나타내며 생략도 가능하다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ select round(45.923,2), round(45.923,0), round(45.923), round(45.923,-1)</span><br><span class="line">$ from dual;</span><br><span class="line"></span><br><span class="line">//반환값 : 45.92,  46,   46,   50</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="2-날짜함수"><a href="#2-날짜함수" class="headerlink" title="2. 날짜함수"></a>2. 날짜함수</h2><p><img src="https://image2.slideserve.com/5057776/slide29-l.jpg" alt="https://www.slideserve.com/mave/06-sql"></p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-30T00:00:00.000Z" title="2020-06-30T00:00:00.000Z">2020-06-30</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">8 minutes read (About 1149 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/30/200630dbi/">[ITWILL : DB] 단일행함수 : 문자함수</a></h1><div class="content"><h3 id="ITWILL학원-10강-Database-BY-정지윤강사"><a href="#ITWILL학원-10강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 10강 Database BY 정지윤강사"></a>ITWILL학원 : 10강 Database BY 정지윤강사</h3><p>SQL함수에는 두가지 유형이 있다.</p>
-<ol>
-<li>단일행함수 : 행당 하나의 결과 반환</li>
-<li>여러행함수 : 행 집합당 하나의 결과 반환</li>
-</ol>
-<p>이 중 단일행함수에 대해 알아보자.</p>
-<h2 id="단일행함수종류"><a href="#단일행함수종류" class="headerlink" title="단일행함수종류"></a>단일행함수종류</h2><p>단일행함수는 총 5가지이다.</p>
-<ol>
-<li><a href="https://sowon-dev.github.io/2020/06/30/200630dbi/">문자함수</a></li>
-<li><a href="https://sowon-dev.github.io/2020/06/30/200630dbi2/">숫자함수</a></li>
-<li><a href="https://sowon-dev.github.io/2020/06/30/200630dbi2/">날짜함수</a></li>
-<li><a href="https://sowon-dev.github.io/2020/06/30/200630dbi3/">변환함수</a></li>
-<li><a href="https://sowon-dev.github.io/2020/06/30/200630dbi3/">일반함수</a></li>
-</ol>
-<p><img src="https://slidesplayer.org/slide/14385477/89/images/3/%EB%8B%A8%EC%9D%BC%ED%96%89+%ED%95%A8%EC%88%98+%EB%8B%A8%EC%9D%BC%ED%96%89+%ED%95%A8%EC%88%98+%EB%8B%A8%EC%9D%BC%ED%96%89+%ED%95%A8%EC%88%98%EC%9D%98+%EC%A2%85%EB%A5%98+%EB%8D%B0%EC%9D%B4%ED%84%B0+%EA%B0%92%EC%9D%84+%EC%A1%B0%EC%9E%91%ED%95%98%EB%8A%94%EB%8D%B0+%EC%A3%BC%EB%A1%9C+%EC%82%AC%EC%9A%A9.jpg" alt=""></p>
-<h2 id="1-문자함수"><a href="#1-문자함수" class="headerlink" title="1. 문자함수"></a>1. 문자함수</h2><p>문자함수는 크게 변환함수와 문자 조작 함수로 나누어진다.</p>
-<p><img src="http://thumbnail.egloos.net/600x0/http://pds22.egloos.com/pds/201107/12/53/d0103653_4e1c449e13952.png" alt="http://egloos.zum.com/pqowieuryt/v/18776"></p>
-<h3 id="1-대소문자-변환함수"><a href="#1-대소문자-변환함수" class="headerlink" title="1. 대소문자 변환함수"></a>1. 대소문자 변환함수</h3><p>변환함수는 총 3가지가 있다.<br>대소문자를 변환한다.</p>
-<table>
-<thead>
-<tr>
-<th align="center">기능</th>
-<th align="center">결과</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">LOWER(‘SQL Course’)</td>
-<td align="center">sql course</td>
-</tr>
-<tr>
-<td align="center">UPPER(‘SQL Course’)</td>
-<td align="center">SQL COURSE</td>
-</tr>
-<tr>
-<td align="center">INITCAP(‘SQL Course’)</td>
-<td align="center">Sql Course</td>
-</tr>
-</tbody></table>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ select_id, last_name</span><br><span class="line">$ from employees</span><br><span class="line">$ lower(last_name) = <span class="string">'higgins'</span>;</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-문자조작함수"><a href="#2-문자조작함수" class="headerlink" title="2. 문자조작함수"></a>2. 문자조작함수</h3><p><img src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F21492E365603D0992F" alt="https://oraclejavastudy.tistory.com/entry/%EC%98%A4%EB%9D%BC%ED%81%B4%EA%B3%B5%EB%B6%80-218-%EB%AC%B8%EC%9E%90%EC%A1%B0%EC%9E%91-%ED%95%A8%EC%88%98"></p>
-<ol>
-<li>concat(expr1, expr2)<br>concat은 인수를 2개밖에 못 받는다.<br>만약 2개초과로 쓰고싶다면 concat을 중첩해서 사용해야한다.</li>
-</ol>
-<p>예를 들어 last_name과 first_name을 합쳐서 full_name을 만들고싶다<br>concat이용한 구문과 연결연산자 이용한 구문의 출력값은 같다.<br>차이점은 concatl은 인수2개만 가능하고 연결연산자는 원하는만큼의 인수를 사용할 수 있다</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//concat이용한 구문</span><br><span class="line">$ select concat(last_name, first_name) as full_name</span><br><span class="line">$ from employees;</span><br><span class="line"></span><br><span class="line">//연결연산자(||) 이용한 구문</span><br><span class="line">$ select last_name || first_name as full_name</span><br><span class="line">$ from employees;</span><br></pre></td></tr></table></figure>
-
-<p>이때 last_name과 first_name 사이에 공백 한칸을 넣고싶다<br>그래서 처음에는 아래 코드를 작성했다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ select concat(last_name, <span class="string">' '</span>, first_name) as full_name</span><br><span class="line">$ from employees;</span><br><span class="line"></span><br><span class="line">//반환값에러 : invalid number of arguments</span><br></pre></td></tr></table></figure>
-
-<p>위 코드처럼 했더니 <code>invalid number of arguments</code>에러가 떴다.<br>즉, concat은 인수를 2개밖에 못 받기때문에 3개를 쓰려면 <code>중첩</code>해야한다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//concat 중첩하기</span><br><span class="line">$ select concat(concat(last_name, <span class="string">' '</span>), first_name) as full_name</span><br><span class="line">$ from employees;</span><br></pre></td></tr></table></figure>
-
-
-<ol start="2">
-<li>substr(expr1, expr2, expr3)<br>문자열의 일부분을 반환해주는 함수이다.</li>
-</ol>
-<ul>
-<li>expr1 : 반환할 문자열</li>
-<li>expr2 : 시작위치<ul>
-<li>음수인 경우 뒤에서 시작위치 ex)-1이면 뒤에서 첫번째글자</li>
-</ul>
-</li>
-<li>expr3 : 반환할 문자갯수<ul>
-<li>방향은 항상 왼쪽에서 오른쪽으로 문자갯수만큼 반환한다</li>
-<li>생략가능 : 생략되면 시작위치에서 끝까지 반환</li>
-</ul>
-</li>
-</ul>
-<p>주로 주민번호(770123-2123456)를 반환할때 사용한다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ select substr(770123-2123456, 1, 6)</span><br><span class="line">//반환값 : 770123</span><br><span class="line"></span><br><span class="line">$ select substr(<span class="string">'Kochhar, -3, 2)</span></span><br><span class="line"><span class="string">//반환값 : ha</span></span><br></pre></td></tr></table></figure>
-
-
-<ol start="3">
-<li>instr(expr1, expr2)<br>문자열(expr1)로 부터 특정 문자(expr2)의 첫번째 위치값을 반환해주는 함수이다.</li>
-</ol>
-<p>아래 문자열에는 o가 2개가 있다. 5번째와 7번째에 있는데 어느 값을 반환해줄까?<br>instr는 <strong>첫번째 위치값</strong>만 반환해준다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ select isnt(<span class="string">'HelloWorld'</span>, <span class="string">'o'</span>)</span><br><span class="line"></span><br><span class="line">//반환값 : 5</span><br></pre></td></tr></table></figure>
-
-
-<ol start="4">
-<li>lpad(expr1, expr2, expr3) 와 rpad(expr1, expr2, expr3)<br>오른쪽 정렬/왼쪽 정렬 해주는 함수</li>
-</ol>
-<ul>
-<li>expr1 : 반환할 문자열</li>
-<li>expr2 : 전체자리수</li>
-<li>expr3 : 남는 공간을 채울 문자 <ul>
-<li>공백을 주면 오른쪽/왼쪽정렬을 표현할 수 있어 유용하다.</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//lpad 오른쪽정렬</span><br><span class="line">$ select lpad(last_name, 20, <span class="string">' '</span>)</span><br><span class="line"></span><br><span class="line">//반환값 : 오른쪽정렬</span><br></pre></td></tr></table></figure>
-
-
-<ol start="5">
-<li>trim(expr1 from expr2)<br>문자열(expr2)로부터 특정 문자(expr1)가 접두어나 접미어에 있다면 삭제(절단)해주는 함수이다.</li>
-</ol>
-<p>(ex1) trim(‘H’ from ‘HHelloHWHorldHHH’) =&gt; elloHWHorld</p>
-<p>한자리 숫자를 출력하려고 할때 01,02,03 등등으로 출력된다.<br>이때 0을 빼고 한자리만 출력할때 주로 사용한다.</p>
-<ol start="6">
-<li>length(expr1)<br>문자열의 길이를 반환해주는 함수이다.</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ select length(<span class="string">'HelloWorld'</span>)</span><br><span class="line"></span><br><span class="line">//반환값 : 10</span><br></pre></td></tr></table></figure>
-
-
-<ol start="7">
-<li>replace(expr1, expr2, expr3)<br>문자열(expr1)로 부터 특정 문자(expr2)를 다른 문자(expr3)로 교체해주는 함수이다.</li>
-</ol>
-<p>DB에 폰번호가 .로 저장되어있을때 우리가 보기 편하게 -로 바꿔줄수있다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//기존데이터 : 010.1234.5678</span><br><span class="line">$ select last_name, replace(phone_number, <span class="string">'.'</span>, <span class="string">'-'</span>) as mobile</span><br><span class="line">$ from employees</span><br><span class="line"></span><br><span class="line">//replace후 반환 : 010-1234-5678</span><br></pre></td></tr></table></figure></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-30T00:00:00.000Z" title="2020-06-30T00:00:00.000Z">2020-06-30</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">7 minutes read (About 1116 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/30/200630dbi3/">[ITWILL : DB] 단일행함수 : 변환함수, 일반함수</a></h1><div class="content"><h3 id="ITWILL학원-10강-Database-BY-정지윤강사"><a href="#ITWILL학원-10강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 10강 Database BY 정지윤강사"></a>ITWILL학원 : 10강 Database BY 정지윤강사</h3><p>SQL함수에는 두가지 유형이 있다.</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-30T00:00:00.000Z" title="2020-06-30T00:00:00.000Z">2020-06-30</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">7 minutes read (About 1116 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/30/200630dbi3/">[ITWILL : DB] 단일행함수 : 변환함수, 일반함수</a></h1><div class="content"><h3 id="ITWILL학원-10강-Database-BY-정지윤강사"><a href="#ITWILL학원-10강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 10강 Database BY 정지윤강사"></a>ITWILL학원 : 10강 Database BY 정지윤강사</h3><p>SQL함수에는 두가지 유형이 있다.</p>
 <ol>
 <li>단일행함수 : 행당 하나의 결과 반환</li>
 <li>여러행함수 : 행 집합당 하나의 결과 반환</li>
@@ -598,131 +756,36 @@
 <ol start="2">
 <li>강사님 코드<br>to_char로 null이 나올때마다 문자열No Commission로 대체했다</li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ SELECT last_name, NVL(TO_CHAR(commission_pct), <span class="string">'No Commission'</span>) COMM</span><br><span class="line">$ FROM employees;</span><br></pre></td></tr></table></figure></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-29T00:00:00.000Z" title="2020-06-29T00:00:00.000Z">2020-06-29</time><span class="level-item"><a class="link-muted" href="/categories/JSP/">JSP</a></span><span class="level-item">5 minutes read (About 728 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/29/200629jspi2/">[ITWILL : JSP] ==과 str.equals(str2) 차이, 객체와 클래스</a></h1><div class="content"><h3 id="ITWILL학원-16강-JSP기초-BY-정규태강사"><a href="#ITWILL학원-16강-JSP기초-BY-정규태강사" class="headerlink" title="ITWILL학원 : 16강 JSP기초 BY 정규태강사"></a>ITWILL학원 : 16강 JSP기초 BY 정규태강사</h3><h2 id="1-과-str-equals-str2-차이점"><a href="#1-과-str-equals-str2-차이점" class="headerlink" title="1. ==과 str.equals(str2) 차이점"></a>1. ==과 str.equals(str2) 차이점</h2><p>두가지는 공통적으로 비교연산을 하지만 차이점이 존재한다.<br>String타입을 비교할때는 equals()를 사용해야한다.</p>
-<ul>
-<li><p>&#61;&#61; : 두개의 문자열 객체가 완전히 같은지 비교(주소비교)</p>
-<ul>
-<li>메모리 주소를 비교(동일한 객체인지) </li>
-<li>stack 메모리에 있는 주소를 비교</li>
-<li>기본형데이터타입을 비교할때 사용한다</li>
-</ul>
-</li>
-<li><p>str.equals(str2) : 두 개의 문자열 객체의 문자 데이터값이 같은지 비교</p>
-<ul>
-<li>대상의 내용을 비교</li>
-<li>heap</li>
-<li>모든 참조형데이터타입에 사용하는 것은 아니고 참조형데이터타입중에 string타입 비교시에만 사용 가능하다.</li>
-<li>다른 참조형데이터타입을 비교하는 방법은 상속을 배운뒤 알게된다.</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//일치여부확인(==이용)</span></span><br><span class="line"><span class="keyword">if</span> (id == DBID &amp;&amp; pw == DBPW)&#123;</span><br><span class="line">	 %&gt; &lt;%=id%&gt; 님 환영합니다! &lt;%</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">	 %&gt; 잘못입력하셨습니다.&lt;%</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//일치여부확인(equals이용)</span></span><br><span class="line"><span class="keyword">if</span> (id.equals(DBID) &amp;&amp; pw.equals(DBPW))&#123;</span><br><span class="line">	 %&gt; &lt;%=id%&gt; 님 환영합니다! &lt;%</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">	 %&gt; 잘못입력하셨습니다.&lt;%</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://ifuwanna.tistory.com/3">참고링크 : java equals 차이점</a></p>
-<h2 id="2-객체와-클래스"><a href="#2-객체와-클래스" class="headerlink" title="2. 객체와 클래스"></a>2. 객체와 클래스</h2><ul>
-<li>객체 : 모든 대상,기능들이다.</li>
-</ul>
-<p>-&gt;객체를 프로그램에 포함하기위해서는 내가 필요한 기능만 뽑는 즉, 추상화과정이 필요하다.</p>
-<ul>
-<li>클래스 : 추상화된 객체를 코드로 표현한 형태</li>
-</ul>
-<p>흔히 이를 붕어빵만들기에 비유하곤 한다.</p>
-<p>클래스  -  객체  =&gt;  인스턴스화(객체화)<br>붕어빵틀 - 붕어빵  =&gt; 가열동작</p>
-<p>하지만 붕어빵틀과 붕어빵만 있으면 붕어빵을 만들수있을까?<br>가열동작이 없으면 붕어빵은 만들어지지않는다<br>이 가열동작은 인스턴스화(객체화, 메모리에 올린다)라고 생각하면 쉽다.<br>이때 new연산자를 이용한다. -&gt; new를 하면 메모리에 올라간다.</p>
-<h2 id="3-클래스"><a href="#3-클래스" class="headerlink" title="3. 클래스"></a>3. 클래스</h2><h3 id="1-클래스와-객체는-같다"><a href="#1-클래스와-객체는-같다" class="headerlink" title="1. 클래스와 객체는 같다?"></a>1. 클래스와 객체는 같다?</h3><p>NOPE! 다르다!</p>
-<h3 id="2-클래스의-구성요소"><a href="#2-클래스의-구성요소" class="headerlink" title="2. 클래스의 구성요소"></a>2. 클래스의 구성요소</h3><ol>
-<li>생성자 : 멤버 변수를 초기화</li>
-<li>멤버 변수 : 객체의 속성</li>
-<li>멤버 메서드 : 객체의 동작(기능)</li>
-</ol>
-<p><img src="https://i.ytimg.com/vi/w_xMK1ygPjo/maxresdefault.jpg" alt=""></p>
-<p>왼쪽처럼 기본데이터형의 변수를 선언하면 stack메모리에 올라간다.<br>오른쪽처럼 클래스를 선언하면 stack에는 a라는 변수가 생성되고 heap에는 new Test()라는 객체가 생성된다. </p>
-<h3 id="3-클래스예시"><a href="#3-클래스예시" class="headerlink" title="3. 클래스예시"></a>3. 클래스예시</h3><p>휴대폰이라는 객체가 있다고 생객해보자</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ SELECT last_name, NVL(TO_CHAR(commission_pct), <span class="string">'No Commission'</span>) COMM</span><br><span class="line">$ FROM employees;</span><br></pre></td></tr></table></figure></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-30T00:00:00.000Z" title="2020-06-30T00:00:00.000Z">2020-06-30</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">3 minutes read (About 500 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/30/200630dbi2/">[ITWILL : DB] 단일행함수 : 숫자함수, 날짜함수</a></h1><div class="content"><h3 id="ITWILL학원-10강-Database-BY-정지윤강사"><a href="#ITWILL학원-10강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 10강 Database BY 정지윤강사"></a>ITWILL학원 : 10강 Database BY 정지윤강사</h3><p>SQL함수에는 두가지 유형이 있다.</p>
 <ol>
-<li>속성 : model, price, color …등등</li>
-<li>기능 : on/off(), tell(), sendMSG() …등등</li>
+<li>단일행함수 : 행당 하나의 결과 반환</li>
+<li>여러행함수 : 행 집합당 하나의 결과 반환</li>
 </ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Phone</span> </span>&#123;</span><br><span class="line">	<span class="number">1</span>. 속성</span><br><span class="line">		model</span><br><span class="line">		price</span><br><span class="line">		color ...등등</span><br><span class="line">		</span><br><span class="line">	<span class="number">2</span>. 기능</span><br><span class="line">		on/off()</span><br><span class="line">		tell()</span><br><span class="line">		sendMSG() ...등등</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">new</span> Phone(); <span class="comment">//클래스선언이 되고 이는 heap메모리에 저장된다.</span></span><br></pre></td></tr></table></figure></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-29T00:00:00.000Z" title="2020-06-29T00:00:00.000Z">2020-06-29</time><span class="level-item"><a class="link-muted" href="/categories/JSP/">JSP</a></span><span class="level-item">11 minutes read (About 1606 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/29/200629jspi/">[ITWILL : JSP] 세션(Session)</a></h1><div class="content"><h3 id="ITWILL학원-16강-JSP기초-BY-정규태강사"><a href="#ITWILL학원-16강-JSP기초-BY-정규태강사" class="headerlink" title="ITWILL학원 : 16강 JSP기초 BY 정규태강사"></a>ITWILL학원 : 16강 JSP기초 BY 정규태강사</h3><h2 id="1-세션-session-p270"><a href="#1-세션-session-p270" class="headerlink" title="1. 세션 session(p270~)"></a>1. 세션 session(p270~)</h2><p>세션이 없는 http 프로토콜의 요청처리흐름 아래와 같다.</p>
-<p><img src="https://t1.daumcdn.net/cfile/tistory/99F5EB4E5A2E586E33" alt="세션기능이 적용안된 http 프로토콜의 요청처리흐름"></p>
-<p>세션을 이해하기 위해서는 http 프로토콜의 특성을 알아둬야한다.<br>http프로토콜의 특성은 연결되면 요청/응답을 한 뒤에 바로 연결이 종료된다.<br>클라이언트와 서버의 연결 정보를 유지하기위해 연결이 끊어지지않도록 유지할 수 있게 하는 것이 세션이다.<br>즉 세션은 클라이언트와 서버 간의 접속을 유지시켜주는 역할을 한다.</p>
-<ul>
-<li>세션 : 서버쪽에서 웹컨테이너의 상태를 유지하기 위해서 정보를 저장하는 객체(방법)<br>웹브라우저당 1개의 세션 정보를 생성해서 사용한다.<br>웹 서버는 각각의 브라우저로 부터 요청을 받아서 응답할때 특별한 식별자(seessionID)를 가지고 응답한다.</li>
-</ul>
-<p><img src="https://t1.daumcdn.net/cfile/tistory/99D7AA485A2E5A0A2F" alt="세션기능이 적용된 http 프로토콜의 요청처리흐름"> </p>
-<p>위와 같은 이미지를 <a href="https://t1.daumcdn.net/cfile/tistory/99CD294E5B96798D04">시퀀스 다이어그램</a>이라고 부른다</p>
-<h2 id="2-세션-사용방법-세션-객체-생성-JSP내장객체-gt-값을-저장-gt-저장된-값을-확인"><a href="#2-세션-사용방법-세션-객체-생성-JSP내장객체-gt-값을-저장-gt-저장된-값을-확인" class="headerlink" title="2. 세션 사용방법 : 세션 객체 생성(JSP내장객체) -&gt; 값을 저장 -&gt; 저장된 값을 확인"></a>2. 세션 사용방법 : 세션 객체 생성(JSP내장객체) -&gt; 값을 저장 -&gt; 저장된 값을 확인</h2><p>기본적으로 객체는 객체생성해서 사용해야하지만 세션은 JSP에서 내장함수이다.</p>
-<h3 id="1-세션생성"><a href="#1-세션생성" class="headerlink" title="1. 세션생성"></a>1. 세션생성</h3><p>세션영역에 해당 속성을 저장하는 것이 세션 객체이다.<br>세션정보를 생성하는 코드이다</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">session.setAttribute(&quot;이름&quot;, 값);</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-세션정보-가져오기"><a href="#2-세션정보-가져오기" class="headerlink" title="2. 세션정보 가져오기"></a>2. 세션정보 가져오기</h3><p>세션 영역에 있는 속성값을 가져오는 코드이다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">session.getAttribute(&quot;이름&quot;)</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-세션정보-삭제하기"><a href="#3-세션정보-삭제하기" class="headerlink" title="3. 세션정보 삭제하기"></a>3. 세션정보 삭제하기</h3><p>세션정보를 삭제하는 코드이다.<br>해당 코드는 특성 대상값을 삭제한다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">session.removeAttribute(&quot;이름&quot;)</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-세션유지시간-설정하고-반환하기"><a href="#4-세션유지시간-설정하고-반환하기" class="headerlink" title="4. 세션유지시간 설정하고 반환하기"></a>4. 세션유지시간 설정하고 반환하기</h3><p>세션의 유지 시간을 설정하는데 사용되는 코드이다. 초 단위로 인자 값을 설정할 수 있다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">session.setMaxInactiveInterval(1000);</span><br></pre></td></tr></table></figure>
-
-<p>아래 코드는 세션의 유지 시간을 반환하는 역할을 한다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">session.getMaxInactiveInterval();</span><br></pre></td></tr></table></figure>
-
-<h3 id="5-세션정보-초기화하기"><a href="#5-세션정보-초기화하기" class="headerlink" title="5. 세션정보 초기화하기"></a>5. 세션정보 초기화하기</h3><p>이 코드는 세션의 모든 속성을 제거하는 역할을 한다. </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sesssion.invalidate();</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="6-삭제와-초기화의-차이"><a href="#6-삭제와-초기화의-차이" class="headerlink" title="6. 삭제와 초기화의 차이"></a>6. 삭제와 초기화의 차이</h3><p>** invalidate와 removeAttribute의 차이 **</p>
-<p>invalidate() 메소드는 세션의 모든 속성 값을 제거하기 떄문에 removeAttribute()메소드를 사용할 때 처럼 각 속성 값들을 하나씩 제거할 필요가 없다.<br>invalidate() 메소드는 모든 속성을 제거하기 때문에 세션 유지 시간이 지났을 때 세션이 초기화되는 것과 같은 효과를 가져온다.</p>
-<p>초기화가 되지않는다면 서버입장에서는 세션정보를 계속 가지고있게되어 부담이 되고 또한 보안상의 문제가 있다.<br>따라서 일반적으로 삭제보다는 초기화를 많이 사용한다.<br>주로 로그아웃기능시 사용한다.</p>
-<h3 id="7-세션값-테스트"><a href="#7-세션값-테스트" class="headerlink" title="7. 세션값 테스트"></a>7. 세션값 테스트</h3><p>기존 사용하던 브라우저 다 종료한 후 실행해야 정확히 세션테스트를 할 수 있다.</p>
-<ul>
-<li>브라우저당 세션 1개이므로 크롬에서 세션을 생성했다고 익스엣지에 똑같은 세션이 생성되어있지않다.</li>
-</ul>
-<p>이제 <code>세션값 생성</code>버튼을 누르면 세션을 생성하고 <code>세션값 삭제</code>버튼을 누르면 세션값이 삭제되며 <code>세션값 초기화</code>를 누리면 세션값이 초기화되는 기능을 구현해보자</p>
+<p>이 중 단일행함수에 대해 알아보자.</p>
+<h2 id="단일행함수종류"><a href="#단일행함수종류" class="headerlink" title="단일행함수종류"></a>단일행함수종류</h2><p>단일행함수는 총 5가지이다.</p>
 <ol>
-<li>sessionTest.jsp 페이지생성</li>
+<li><a href="https://sowon-dev.github.io/2020/06/30/200630dbi/">문자함수</a></li>
+<li><a href="https://sowon-dev.github.io/2020/06/30/200630dbi2/">숫자함수</a></li>
+<li><a href="https://sowon-dev.github.io/2020/06/30/200630dbi2/">날짜함수</a></li>
+<li><a href="https://sowon-dev.github.io/2020/06/30/200630dbi3/">변환함수</a></li>
+<li><a href="https://sowon-dev.github.io/2020/06/30/200630dbi3/">일반함수</a></li>
 </ol>
-<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;%</span><br><span class="line">String value = (String)session.getAttribute(<span class="string">"value"</span>); </span><br><span class="line"><span class="comment">//session.getAttribute()는 object테이터타입이기에 명시적형변환으로 (String)을 해줘야한다.</span></span><br><span class="line"><span class="keyword">if</span> ( value == <span class="keyword">null</span>)&#123;</span><br><span class="line">	value = <span class="string">"세션값 없음!"</span>;	<span class="comment">// 기본 반환타입인 null에서 세션값 없음으로 표현변경</span></span><br><span class="line">&#125;</span><br><span class="line">%&gt;</span><br><span class="line"></span><br><span class="line">&lt;h1&gt;세션 값 : &lt;%= value %&gt;&lt;/h1&gt;</span><br><span class="line">&lt;h1&gt;세션 값(이름) : &lt;%= session.getAttribute("name") %&gt;&lt;/h1&gt;</span><br><span class="line">&lt;input type=<span class="string">"button"</span> value=<span class="string">"세션값 생성"</span> onclick=<span class="string">"location.href='sessionSet.jsp'"</span>&gt;</span><br><span class="line">&lt;input type=<span class="string">"button"</span> value=<span class="string">"세션값 삭제"</span> onclick=<span class="string">"location.href='sessionDel.jsp'"</span>&gt;</span><br><span class="line">&lt;input type=<span class="string">"button"</span> value=<span class="string">"세션값 초기화"</span> onclick=<span class="string">"location.href='sessionInvalidate.jsp'"</span>&gt;</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>sessionSet.jsp 페이지생성<br>세션은 여러개 생성가능하다<br>여기서는 value와 name 총 2개의 세션을 만들었다.</li>
-</ol>
-<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;%</span><br><span class="line"><span class="comment">//세션 값 생성</span></span><br><span class="line"> session.setAttribute(<span class="string">"value"</span>, <span class="string">"세션값 있음~"</span>);</span><br><span class="line"> session.setAttribute(<span class="string">"name"</span>, <span class="string">"홍길동"</span>);</span><br><span class="line">%&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	alert(<span class="string">"세션값 생성 완료!"</span>)</span><br><span class="line">	location.href=<span class="string">"sessionTest.jsp"</span></span><br></pre></td></tr></table></figure>
-
-<p>위는 자바스크립트코드를 사용했고 response객체사용를 사용할 수 있다.</p>
-<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;%</span><br><span class="line"><span class="comment">//세션 값 생성</span></span><br><span class="line"> session.setAttribute(<span class="string">"value"</span>, <span class="string">"세션값 있음~"</span>);</span><br><span class="line"> session.setAttribute(<span class="string">"name"</span>, <span class="string">"홍길동"</span>);</span><br><span class="line"> response.sendRedirect(<span class="string">"sessionTest.jsp"</span>);</span><br><span class="line">%&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="1-숫자함수"><a href="#1-숫자함수" class="headerlink" title="1. 숫자함수"></a>1. 숫자함수</h2><p>실무에서는 반올림, 버림을 자주 사용한다.<br>실무에서 올림은 잘 사용하지않는다.<br>mod함수는 홀수짝수 구분할때 주로 사용한다.</p>
+<p><img src="https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http%3A%2F%2Fcfile28.uf.tistory.com%2Fimage%2F2575E54F560BB83208BAA5" alt="https://oraclejavastudy.tistory.com/m/787?category=544330"></p>
+<h2 id="1-1-dual-듀얼-테이블"><a href="#1-1-dual-듀얼-테이블" class="headerlink" title="1-1. dual(듀얼) 테이블"></a>1-1. dual(듀얼) 테이블</h2><p>select는 출력쿼리이다.<br> 12&#42;123 이라는 간단한 산술결과값을 출력하고 싶다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ select 12*123 as value;</span><br><span class="line"></span><br><span class="line">//반환값에러 : FROM keyword not found</span><br></pre></td></tr></table></figure>
+<p>반환값에러가 나왔다.<br>select와 from은 항상 함께 해야한다.<br>테이블에서 정보를 빼낼 필요가 없지만 from키워드가 있어야하니까 가지고 있는 아무테이블명을 적을 수 있다.<br>단순한 산술결과나 함수결과를 출력할때는 from에 아무테이블명을 적어버리면 테이블의 row갯수만큼 반복 출력된다. 만약 그 아무테이블의 row가 12만개면 출력값이 12만번 반복된다.</p>
+<p>따라서 이런 상황에서 쓸 수 있는 행 하나짜리 테이블이 있다. 바로 dual(듀얼)이다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ select 12*123 as value</span><br><span class="line">$ from dual;</span><br><span class="line"></span><br><span class="line">//반환값 : 1476</span><br></pre></td></tr></table></figure>
 
 
-<ol start="3">
-<li><p>sessionDel.jsp 페이지생성<br>sessionSet과 마찬가지로 처리하는 데에 2가지 방법이 있다.<br>자바스크립트를 사용하거나 response를 사용하거나이다. 이 둘의 차이점은 전혀없다.<br>편한거 사용하면 된다.</p>
-</li>
-<li><p>자바스크립트 코드사용</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;%</span><br><span class="line"><span class="comment">//세션 값 삭제</span></span><br><span class="line"> session.removeAttribute(<span class="string">"value"</span>);</span><br><span class="line">%&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	alert(<span class="string">"세션값 삭제 완료!"</span>)</span><br><span class="line">	location.href=<span class="string">"sessionTest.jsp"</span></span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>response객체사용</p>
-</li>
-</ol>
-<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;%</span><br><span class="line">session.removeAttribute(<span class="string">"value"</span>);</span><br><span class="line">response.sendRedirect(<span class="string">"sessionTest.jsp"</span>);</span><br><span class="line">%&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="1-2-0의-자릿수"><a href="#1-2-0의-자릿수" class="headerlink" title="1-2. 0의 자릿수"></a>1-2. 0의 자릿수</h2><p><img src="https://thebook.io/img/006977/100.jpg" alt="https://thebook.io/006977/ch04/02/02/01/"></p>
+<p>일의 자리는 0으로 나타내며 생략도 가능하다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ select round(45.923,2), round(45.923,0), round(45.923), round(45.923,-1)</span><br><span class="line">$ from dual;</span><br><span class="line"></span><br><span class="line">//반환값 : 45.92,  46,   46,   50</span><br></pre></td></tr></table></figure>
 
 
-<ol start="4">
-<li>sessionInvalidate 페이지생성<br>세션에 있는 모든 정보를 없앨수있다.</li>
-</ol>
-<p>처리시 2가지 방법이있다.<br>자바스크립트를 사용하거나 response를 사용하거나이다. 이 둘의 차이점은 전혀없다.<br>편한거 사용하면 된다.</p>
-<ol>
-<li>자바스크립트코드사용</li>
-</ol>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;%session.invalidate();%&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	alert(<span class="string">"세션값 초기화 완료!"</span>)</span><br><span class="line">    location.href=<span class="string">"sessionTest.jsp"</span>;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>response객체사용</li>
-</ol>
-<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;%</span><br><span class="line">session.invalidate();</span><br><span class="line">response.sendRedirect(<span class="string">"sessionTest.jsp"</span>);</span><br><span class="line">%&gt;</span><br></pre></td></tr></table></figure>
-
-
-<p>기존 브라우저를 다 종료 후 sessionTest를 열면 세션값은 null인 것을 확인할 수 있다.<br>세션값 생성 버튼을 클릭하면 sessionSet페이지로 이동 후 alert창이 뜨고 다시 sessionTest로 돌아오게된다.<br>그러면 화면에는 <code>세션값 있음~</code>과 <code>홍길동</code>이 출력된다!</p>
-<p>이제 <code>세션값 삭제</code> 버튼을 눌러보면 모든 값이 다 사라져야하지만<br><code>세션값 없음!</code>과 <code>홍길동</code>이 출력된다. 세션값을 삭제했지만 null이 아닌 여전히 홍길동이 계속 출력된다.</p>
-<p>이럴때 <code>세션값 초기화</code> 버튼을 사용하면 <code>세션값 없음!</code>과 <code>null</code>이 출력된다<br>초기화버튼을 통해 모든 세션의 정보를 지울 수 있다.</p>
-</div></article></div><nav class="pagination is-centered mt-4" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/tags/TIL/page/7/">Previous</a></div><div class="pagination-next"><a href="/tags/TIL/page/9/">Next</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/tags/TIL/">1</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/tags/TIL/page/7/">7</a></li><li><a class="pagination-link is-current" href="/tags/TIL/page/8/">8</a></li><li><a class="pagination-link" href="/tags/TIL/page/9/">9</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/tags/TIL/page/21/">21</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="" src="/img/avatar.png" alt="Sowon"></figure><p class="title is-size-4 is-block line-height-inherit">Sowon</p><p class="is-size-6 is-block">Welcome to my blog. I`m enjoying coding</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Busan</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">212</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">13</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">12</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/sowon-dev" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/sowon-dev"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://www.facebook.com/sowon.kim.39395"><i class="fab fa-facebook"></i></a></div></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/Database/"><span class="level-start"><span class="level-item">Database</span></span><span class="level-end"><span class="level-item tag">31</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Django/"><span class="level-start"><span class="level-item">Django</span></span><span class="level-end"><span class="level-item tag">10</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/HTML-CSS/"><span class="level-start"><span class="level-item">HTML&amp;CSS</span></span><span class="level-end"><span class="level-item tag">24</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JAVA/"><span class="level-start"><span class="level-item">JAVA</span></span><span class="level-end"><span class="level-item tag">35</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JSP/"><span class="level-start"><span class="level-item">JSP</span></span><span class="level-end"><span class="level-item tag">42</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JavaScript/"><span class="level-start"><span class="level-item">JavaScript</span></span><span class="level-end"><span class="level-item tag">26</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Journal/"><span class="level-start"><span class="level-item">Journal</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Lectures-Seminars/"><span class="level-start"><span class="level-item">Lectures &amp; Seminars</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Python/"><span class="level-start"><span class="level-item">Python</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Version-control/"><span class="level-start"><span class="level-item">Version control</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EC%BB%A8%ED%8A%B8%EB%A6%AC%EB%B7%B0%ED%86%A42020/"><span class="level-start"><span class="level-item">오픈소스컨트리뷰톤2020</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%A0%9C%EC%A3%BC%EC%BD%94%EB%94%A9%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%BA%A0%ED%94%84-10%EA%B8%B0/"><span class="level-start"><span class="level-item">제주코딩베이스캠프 10기</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%BD%94%EB%93%9C%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%B8%A0-PRE35%EA%B8%B0/"><span class="level-start"><span class="level-item">코드스테이츠 PRE35기</span></span><span class="level-end"><span class="level-item tag">14</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">Recent</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2020-11-17T00:00:00.000Z">2020-11-17</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/17/jspList/">[ITWILL : JSP] JSP전체목록List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JSP/">JSP</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-11-16T00:00:00.000Z">2020-11-16</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/16/javaList/">[ITWILL : JAVA] JAVA전체목록List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JAVA/">JAVA</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-11-16T00:00:00.000Z">2020-11-16</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/16/DBList/">[ITWILL : DB] DB전체목록List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Database/">Database</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-08-03T00:00:00.000Z">2020-08-03</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/03/200803jspi/">[ITWILL : JSP]홈페이지만들기4 : 게시판글쓰기구현</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JSP/">JSP</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-08-03T00:00:00.000Z">2020-08-03</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/03/200803javai/">[ITWILL : JAVA] 람다식을 이용한 함수형 프로그래밍2 : 메서드</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JAVA/">JAVA</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/11/"><span class="level-start"><span class="level-item">November 2020</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/08/"><span class="level-start"><span class="level-item">August 2020</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/07/"><span class="level-start"><span class="level-item">July 2020</span></span><span class="level-end"><span class="level-item tag">71</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/06/"><span class="level-start"><span class="level-item">June 2020</span></span><span class="level-end"><span class="level-item tag">85</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/05/"><span class="level-start"><span class="level-item">May 2020</span></span><span class="level-end"><span class="level-item tag">19</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/04/"><span class="level-start"><span class="level-item">April 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/03/"><span class="level-start"><span class="level-item">March 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/10/"><span class="level-start"><span class="level-item">October 2019</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/09/"><span class="level-start"><span class="level-item">September 2019</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/08/"><span class="level-start"><span class="level-item">August 2019</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/07/"><span class="level-start"><span class="level-item">July 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/GIT/"><span class="tag">GIT</span><span class="tag is-grey-lightest">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/HTML-CSS/"><span class="tag">HTML&amp;CSS</span><span class="tag is-grey-lightest">27</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ITWILL-JAVA/"><span class="tag">ITWILL(JAVA)</span><span class="tag is-grey-lightest">133</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Journal/"><span class="tag">Journal</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/List/"><span class="tag">List</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/MySQL/"><span class="tag">MySQL</span><span class="tag is-grey-lightest">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Oracle/"><span class="tag">Oracle</span><span class="tag is-grey-lightest">26</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Review/"><span class="tag">Review</span><span class="tag is-grey-lightest">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/TIL/"><span class="tag">TIL</span><span class="tag is-grey-lightest">202</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Web-Game/"><span class="tag">Web Game</span><span class="tag is-grey-lightest">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9/"><span class="tag">생활코딩</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%EA%B0%9C%EB%B0%9C/"><span class="tag">패스트캠퍼스(파이썬웹개발)</span><span class="tag is-grey-lightest">37</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a><p class="size-small"><span>&copy; 2020 Sowon</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+<h2 id="2-날짜함수"><a href="#2-날짜함수" class="headerlink" title="2. 날짜함수"></a>2. 날짜함수</h2><p><img src="https://image2.slideserve.com/5057776/slide29-l.jpg" alt="https://www.slideserve.com/mave/06-sql"></p>
+</div></article></div><nav class="pagination is-centered mt-4" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/tags/TIL/page/7/">Previous</a></div><div class="pagination-next"><a href="/tags/TIL/page/9/">Next</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/tags/TIL/">1</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/tags/TIL/page/7/">7</a></li><li><a class="pagination-link is-current" href="/tags/TIL/page/8/">8</a></li><li><a class="pagination-link" href="/tags/TIL/page/9/">9</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/tags/TIL/page/21/">21</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="" src="/img/avatar.png" alt="Sowon"></figure><p class="title is-size-4 is-block line-height-inherit">Sowon</p><p class="is-size-6 is-block">Welcome to my blog. I`m enjoying coding</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Busan</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">215</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">13</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">12</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/sowon-dev" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/sowon-dev"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://www.facebook.com/sowon.kim.39395"><i class="fab fa-facebook"></i></a></div></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/Database/"><span class="level-start"><span class="level-item">Database</span></span><span class="level-end"><span class="level-item tag">31</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Django/"><span class="level-start"><span class="level-item">Django</span></span><span class="level-end"><span class="level-item tag">10</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/HTML-CSS/"><span class="level-start"><span class="level-item">HTML&amp;CSS</span></span><span class="level-end"><span class="level-item tag">24</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JAVA/"><span class="level-start"><span class="level-item">JAVA</span></span><span class="level-end"><span class="level-item tag">35</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JSP/"><span class="level-start"><span class="level-item">JSP</span></span><span class="level-end"><span class="level-item tag">45</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JavaScript/"><span class="level-start"><span class="level-item">JavaScript</span></span><span class="level-end"><span class="level-item tag">26</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Journal/"><span class="level-start"><span class="level-item">Journal</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Lectures-Seminars/"><span class="level-start"><span class="level-item">Lectures &amp; Seminars</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Python/"><span class="level-start"><span class="level-item">Python</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Version-control/"><span class="level-start"><span class="level-item">Version control</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EC%BB%A8%ED%8A%B8%EB%A6%AC%EB%B7%B0%ED%86%A42020/"><span class="level-start"><span class="level-item">오픈소스컨트리뷰톤2020</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%A0%9C%EC%A3%BC%EC%BD%94%EB%94%A9%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%BA%A0%ED%94%84-10%EA%B8%B0/"><span class="level-start"><span class="level-item">제주코딩베이스캠프 10기</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%BD%94%EB%93%9C%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%B8%A0-PRE35%EA%B8%B0/"><span class="level-start"><span class="level-item">코드스테이츠 PRE35기</span></span><span class="level-end"><span class="level-item tag">14</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">Recent</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2020-11-17T00:00:00.000Z">2020-11-17</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/17/jspList/">[ITWILL : JSP] JSP전체목록List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JSP/">JSP</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-11-16T00:00:00.000Z">2020-11-16</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/16/javaList/">[ITWILL : JAVA] JAVA전체목록List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JAVA/">JAVA</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-11-16T00:00:00.000Z">2020-11-16</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/16/DBList/">[ITWILL : DB] DB전체목록List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Database/">Database</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-08-04T00:00:00.000Z">2020-08-04</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/04/200804jspi3/">[ITWILL : JSP]JQuery</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JSP/">JSP</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-08-04T00:00:00.000Z">2020-08-04</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/04/200804jspi2/">[ITWILL : JSP]JQuery 설정 및 선택자</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JSP/">JSP</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/11/"><span class="level-start"><span class="level-item">November 2020</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/08/"><span class="level-start"><span class="level-item">August 2020</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/07/"><span class="level-start"><span class="level-item">July 2020</span></span><span class="level-end"><span class="level-item tag">71</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/06/"><span class="level-start"><span class="level-item">June 2020</span></span><span class="level-end"><span class="level-item tag">85</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/05/"><span class="level-start"><span class="level-item">May 2020</span></span><span class="level-end"><span class="level-item tag">19</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/04/"><span class="level-start"><span class="level-item">April 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/03/"><span class="level-start"><span class="level-item">March 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/10/"><span class="level-start"><span class="level-item">October 2019</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/09/"><span class="level-start"><span class="level-item">September 2019</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/08/"><span class="level-start"><span class="level-item">August 2019</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/07/"><span class="level-start"><span class="level-item">July 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/GIT/"><span class="tag">GIT</span><span class="tag is-grey-lightest">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/HTML-CSS/"><span class="tag">HTML&amp;CSS</span><span class="tag is-grey-lightest">27</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ITWILL-JAVA/"><span class="tag">ITWILL(JAVA)</span><span class="tag is-grey-lightest">136</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Journal/"><span class="tag">Journal</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/List/"><span class="tag">List</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/MySQL/"><span class="tag">MySQL</span><span class="tag is-grey-lightest">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Oracle/"><span class="tag">Oracle</span><span class="tag is-grey-lightest">26</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Review/"><span class="tag">Review</span><span class="tag is-grey-lightest">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/TIL/"><span class="tag">TIL</span><span class="tag is-grey-lightest">205</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Web-Game/"><span class="tag">Web Game</span><span class="tag is-grey-lightest">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9/"><span class="tag">생활코딩</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%EA%B0%9C%EB%B0%9C/"><span class="tag">패스트캠퍼스(파이썬웹개발)</span><span class="tag is-grey-lightest">37</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a><p class="size-small"><span>&copy; 2020 Sowon</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
             site: {
                 url: 'https://github.com/sowon-dev',
                 external_link: {"enable":true,"exclude":[]}
