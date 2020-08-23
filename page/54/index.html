@@ -1,161 +1,192 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.0"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>야망찬 개발자의 블로그</title><meta property="og:type" content="blog"><meta property="og:title" content="야망찬 개발자의 블로그"><meta property="og:url" content="https://github.com/sowon-dev"><meta property="og:site_name" content="야망찬 개발자의 블로그"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://github.com/img/og_image.png"><meta property="article:author" content="Sowon"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://github.com/sowon-dev"},"headline":"야망찬 개발자의 블로그","image":["https://github.com/img/og_image.png"],"author":{"@type":"Person","name":"Sowon"},"description":""}</script><link rel="icon" href="/img/star.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-19T00:00:00.000Z" title="2020-06-19T00:00:00.000Z">2020-06-19</time><span class="level-item"><a class="link-muted" href="/categories/Version-control/">Version control</a></span><span class="level-item">7 minutes read (About 1116 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/19/200619python/">[패스트캠퍼스python] git 버전관리</a></h1><div class="content"><h3 id="파이썬-인강-자기계발-챌린지-26회차-미션"><a href="#파이썬-인강-자기계발-챌린지-26회차-미션" class="headerlink" title="파이썬 인강 자기계발 챌린지 26회차 미션"></a>파이썬 인강 자기계발 챌린지 26회차 미션</h3><h2 id="1-git-버전관리"><a href="#1-git-버전관리" class="headerlink" title="1. git 버전관리"></a>1. git 버전관리</h2><p>버전관리는 필수이다.<br>버전관리를 이용하면 아래 두가지 장점이 있다.<br>표준처럼 사용되고 있는 버전관리 프로그램에는 git이 있다.</p>
-<ol>
-<li>어떤 부분이 변경되었는지 변경전후의 소스코드를 비교하여 볼 수 있다.</li>
+<html lang="en"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.0"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>야망찬 개발자의 블로그</title><meta property="og:type" content="blog"><meta property="og:title" content="야망찬 개발자의 블로그"><meta property="og:url" content="https://github.com/sowon-dev"><meta property="og:site_name" content="야망찬 개발자의 블로그"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://github.com/img/og_image.png"><meta property="article:author" content="Sowon"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://github.com/sowon-dev"},"headline":"야망찬 개발자의 블로그","image":["https://github.com/img/og_image.png"],"author":{"@type":"Person","name":"Sowon"},"description":""}</script><link rel="icon" href="/img/star.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-24T00:00:00.000Z" title="2020-06-24T00:00:00.000Z">2020-06-24</time><span class="level-item"><a class="link-muted" href="/categories/JSP/">JSP</a></span><span class="level-item">4 minutes read (About 668 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/24/200624jspi2/">[ITWILL : JSP]영역객체scope</a></h1><div class="content"><h3 id="ITWILL학원-14강-JSP기초-BY-정규태강사"><a href="#ITWILL학원-14강-JSP기초-BY-정규태강사" class="headerlink" title="ITWILL학원 : 14강 JSP기초 BY 정규태강사"></a>ITWILL학원 : 14강 JSP기초 BY 정규태강사</h3><p>참고로 교재는 p209부터임.</p>
+<h2 id="1-영역객체-scope"><a href="#1-영역객체-scope" class="headerlink" title="1. 영역객체(scope)"></a>1. 영역객체(scope)</h2><p>영역 객체(Scope) ,  속성(Attribute)</p>
+<p>내장객체 (8+1)중에서 해당 유효한 범위안에서 데이터를 서로 공유할수있는 객체<br>이때, 그 공유되는 범위를 ‘영역(Scope)’라고한다. 그때의 공유되는 값 ‘속성(Attribute)’라고한다.</p>
+<table>
+<thead>
+<tr>
+<th align="center">영역</th>
+<th align="center">영역처리 객체</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">page</td>
+<td align="center">pageContext</td>
+</tr>
+<tr>
+<td align="center">request</td>
+<td align="center">request</td>
+</tr>
+<tr>
+<td align="center">session</td>
+<td align="center">session</td>
+</tr>
+<tr>
+<td align="center">application</td>
+<td align="center">application</td>
+</tr>
+</tbody></table>
+<p>왼쪽의 영역을 처리하기 위해서는 오른쪽의 객체를 사용해야한다.<br>내장객체 8가지 중에서 위의 4가지들은 서로 데이터를 공유할 수 있다.<br>page에서 application으로 영역이 내려올수록 영역의 범위/크기가 커진다.</p>
+<h3 id="1-page-영역-해당-페이지가-클라이언트에-정보를-제공하는-동안"><a href="#1-page-영역-해당-페이지가-클라이언트에-정보를-제공하는-동안" class="headerlink" title="1. page 영역 : 해당 페이지가 클라이언트에 정보를 제공하는 동안"></a>1. page 영역 : 해당 페이지가 클라이언트에 정보를 제공하는 동안</h3><p>해당 페이지가 클라이언트에 정보를 제공하는 동안 페이지 영역이라는 공간에서 데이터를 주고받을 수 있다.</p>
+<ul>
+<li><p>pageContext 객체사용가능 : JSP페이지 정보를 저장하는 객체</p>
+</li>
+<li><p>사용 : 다른 내장객체를 호출하거나, 페이지흐름제어하거나, 에러데이터 처리할 때 주로 사용한다</p>
+</li>
+</ul>
+<h3 id="2-request-영역-클라이언트-요청이-처리되는-동안"><a href="#2-request-영역-클라이언트-요청이-처리되는-동안" class="headerlink" title="2. request 영역 : 클라이언트 요청이 처리되는 동안"></a>2. request 영역 : 클라이언트 요청이 처리되는 동안</h3><p>여러개의 페이지를 이동할때 정보를 저장해서 사용<br>page 영역과 request영역 차이<br>request영역은 주소창에 주소를 치는 동안의 영역이다.</p>
+<ul>
+<li><p>request 객체사용가능 : 페이지 요청시 정보를 처리하는 객체</p>
+</li>
+<li><p>사용 : 페이지 이동시 주로 사용한다.</p>
+</li>
+</ul>
+<h3 id="3-session-영역-세션이-유지되는-동안-브라우저당-세션-1개씩-생성이되고-기본값은-30분"><a href="#3-session-영역-세션이-유지되는-동안-브라우저당-세션-1개씩-생성이되고-기본값은-30분" class="headerlink" title="3. session 영역 : 세션이 유지되는 동안 (브라우저당 세션 1개씩 생성이되고 기본값은 30분)"></a>3. <a href="https://sowon-dev.github.io/2020/06/29/200629jspi/">session</a> 영역 : 세션이 유지되는 동안 (브라우저당 세션 1개씩 생성이되고 기본값은 30분)</h3><p>예를 들어 크롬창을 키는 순간부터 30분동안 세션에 정보가 저장된다.</p>
+<ul>
+<li><p>session 객체사용가능 : 하나의 웹 브라우저가 정보를 유지하기위한 시간동안 사용되는 객체</p>
+</li>
+<li><p>사용 : 사용자인증처리에서 주로 사용한다. </p>
+</li>
+</ul>
+<h3 id="4-application-영역-웹-애플리케이션이-실행되고있는-동안"><a href="#4-application-영역-웹-애플리케이션이-실행되고있는-동안" class="headerlink" title="4. application 영역 : 웹 애플리케이션이 실행되고있는 동안"></a>4. application 영역 : 웹 애플리케이션이 실행되고있는 동안</h3><p>즉 서버가 실행중일때의 영역이다.<br>서버의 설정정보나 자원에 대한 정보, 애플리케이션실행시 발생하는 이벤트정보등이 저장된다.<br>4가지영역중 가장 큰 영역이다</p>
+<ul>
+<li><p>application 객체사용가능 : 웹 애플리케이션의 Context 정보를 처리객체</p>
+</li>
+<li><p>사용 : 홈페이지 방문자수 카운트 등에 주로 사용한다.</p>
+</li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-23T00:00:00.000Z" title="2020-06-23T00:00:00.000Z">2020-06-23</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">9 minutes read (About 1417 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/23/200623dbi/">[ITWILL : DB]Select 구문을 사용한 데이터 검색, null VS 0 VS 공백, Distinct</a></h1><div class="content"><h3 id="ITWILL학원-8강-Database-BY-정지윤강사"><a href="#ITWILL학원-8강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 8강 Database BY 정지윤강사"></a>ITWILL학원 : 8강 Database BY 정지윤강사</h3><h2 id="1-Select-구문을-사용한-데이터-검색"><a href="#1-Select-구문을-사용한-데이터-검색" class="headerlink" title="1. Select 구문을 사용한 데이터 검색"></a>1. Select 구문을 사용한 데이터 검색</h2><h3 id="1-테이블-구조조회"><a href="#1-테이블-구조조회" class="headerlink" title="1. 테이블 구조조회"></a>1. 테이블 구조조회</h3><p><code>describe 테이블명</code>이지만 실무에선 줄여서  <code>desc 테이블명</code> 명령어를 사용한다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; desc 테이블명</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-테이블로부터-데이터검색"><a href="#2-테이블로부터-데이터검색" class="headerlink" title="2. 테이블로부터 데이터검색"></a>2. 테이블로부터 데이터검색</h3><ol>
+<li>아스타(&#42;)<br>별표(&#42;)라고 <code>아스타</code> 읽는다<br>테이블명에 모든 컬럼을 출력해달라는 의미이다.<br>그때 출력되는 순서는 기본 컬럼이 출력되는 순서이다.</li>
 </ol>
-<p><img src="/img/python06191.png" alt=""></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; select *</span><br><span class="line">SQL&gt; from 테이블명</span><br></pre></td></tr></table></figure>
+
 <ol start="2">
-<li>시간의 순서대로 변경한 내용을 확인할 수 있다.<ul>
-<li>특정코드를 누가 수정했는지 사용자가 적혀있어서 바로 확인할 수 있다</li>
-</ul>
-</li>
+<li>컬럼사이즈조절<br>컬럼사이즈를 조절하고싶다면 아래 명령어를 입력하면된다.<br>사이즈를 줄이는 건 세션단위로만 지속된다.</li>
 </ol>
-<p><img src="/img/python06192.png" alt=""></p>
-<h2 id="2-git관리영역-세가지"><a href="#2-git관리영역-세가지" class="headerlink" title="2. git관리영역 세가지"></a>2. git관리영역 세가지</h2><ol>
-<li><p>작업디렉토리 Working directory : 현재 편집중인 파일이 저장되는 영역.</p>
-</li>
-<li><p>임시구역 Staging area : 저장소에 저장할 변경사항을 임시적으로 보관하는 영역.</p>
-</li>
-<li><p>저장소 Repository : 지금까지의 모든 변경된 작업내역이 영구히 저장되는 영역.</p>
-</li>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; col 사이즈조절할컬럼명 format a원하는사이즈</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;예시</span><br><span class="line">SQL&gt; col department_name format a20</span><br></pre></td></tr></table></figure>
+
+<p>사이즈를 줄이는 건 쉽게 가능하지만 사이즈를 늘리는건 안된다.<br>따라서 사이즈를 너무 많이 줄여서 #이 엄청 뜬 경우 sql프로그램을 종료 후 재실행해야하면 원래 사이즈로 돌아간다.</p>
+<p>아래 exit쿼리는 sql만 종료할 뿐 db를 종료하는 것이 아니다.<br>sql만 종료하고 다시 유저로 로그인하면 간단하게 끝!</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; exit</span><br><span class="line">SQL&gt; conn 유저명&#x2F;비번</span><br><span class="line">SQL&gt; col 사이즈조절할컬럼명 format a원하는사이즈</span><br></pre></td></tr></table></figure>
+
+<p>원하는 순서대로 컬럼을 출력하고 싶다면 아래와같이 쿼리구문을 날리면된다.<br>기본 순서가 바뀌는 것이 아니라 내가 display하고싶은 순서대로 화면에 출력만해주는 것이다.</p>
+<ol start="3">
+<li>산술식<br>쿼리구문에는 산술식이 가능하다. 산술식은 사칙연산만 가능하다.<br>테이블 employees에서 2가지 컬럼(last_name, salary)과 산술식이 들어간 컬럼 1개(12*(salary+100)))를 출력하는 코드는 아래와 같다.</li>
 </ol>
-<p><img src="/img/python06193.png" alt=""></p>
-<p>저장되는 순서는 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; select last_name, salary, 12*(salary+100)</span><br><span class="line">SQL&gt; from employees</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="2-null값"><a href="#2-null값" class="headerlink" title="2. null값"></a>2. null값</h2><p>null은 사용할 수 없는 값, 알려지지 않은 값, 할당받지 못한 값, 모르는 값, 아직 정의되지 않은 값이다.<br>null은 0과 공백과는 다른 특수한 값으로 모든 데이터타입에 사용가능하다.</p>
 <ol>
-<li><p>소스코드를 편집 후 </p>
-</li>
-<li><p>git add ‘경로’ 명령어로 임시구역에 보관한 뒤</p>
-</li>
-<li><p>git commit 명령어로 repository에 저장한다.</p>
-</li>
+<li>null VS 0 VS 공백</li>
 </ol>
-<h2 id="3-vs-code로-git-commit하는-방법"><a href="#3-vs-code로-git-commit하는-방법" class="headerlink" title="3. vs code로 git commit하는 방법"></a>3. vs code로 git commit하는 방법</h2><ol>
-<li><p>소스코드를 저장한다.</p>
-</li>
-<li><p>git init 명령어 또는 vs code의 source control에서 저장한 소스코드를 불러와서 git과 소스코드를 연결한다. changes 아래에 변경된 소스코드가 보이지않는 경우 소스코드파일명을 검색해서 연결하면 된다.</p>
-</li>
-<li><p>stage change 혹은 +버튼을 눌러서 임시구역에 보관한다.</p>
-</li>
-<li><p>ctrl+enter로 repository에 저장한다.</p>
-</li>
-</ol>
-<p>즉, 소스코드를 변경한 뒤 commit을 하고 싶다면<br><code>일단 소스코드를 변경한 뒤 저장을 누른다. -&gt; vs code의 stage change 혹은 +버튼을 누른다. -&gt; 커밋메모를 입력한 뒤 ctrl + enter를 누른다.</code><br>위의 세단계가 기본중의 기본이다.</p>
-<p>여기서 commit이란 두가지의 의미가 있다.</p>
 <ul>
-<li><p>스테이징영역의 변경사항을 레포지토리에 저장하는 행위</p>
+<li><p>null은 알려지지 않은 값이고 모든 데이터타입에 사용가능.</p>
 </li>
-<li><p>변경사항을 묶어주는 단위 : commit을 변경사항이 있을때마다 할 수 있고 또는 모든 변경사항을 다 해준뒤 한번에 commit할수도있다.</p>
+<li><p>숫자 0(zero)는 숫자데이터타입의 한 종류</p>
+</li>
+<li><p>공백은 캐릭터데이터타입의 한 종류</p>
 </li>
 </ul>
-<h2 id="4-vs-code의-확장프로그램extensions-다운"><a href="#4-vs-code의-확장프로그램extensions-다운" class="headerlink" title="4. vs code의 확장프로그램extensions 다운"></a>4. vs code의 확장프로그램extensions 다운</h2><p>효율적인 git버전관리를 위해서 vs code의 익스텐션에서 아래 두가지익스텐션을 다운로드한다.</p>
+<p>숫자 0와 null은 구분이 가능하다<br>어떻게?<br>desc 명령어를 통해서!</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; desc 테이블명</span><br></pre></td></tr></table></figure>
+
+<p>위의 명령어로 출력되는 테이블의 TYPE에 NUMBER인 경우 0의 값일것이다.</p>
+<p>그렇다면 공백과 NULL은 어떻게 구분할까?<br>desc 명령어를 통해서는 구분할수가없고, 구분할 수 있는 함수가 존재한다.</p>
+<p>결국 desc명령어를 통해 null과 숫자데이터타입은 구분이 가능하지만 null과 공백데이터타입은 육안으로 구분하기힘들다.</p>
+<ol start="2">
+<li>null은 사칙연산을 해도 null이 된다.<br>null때문에 계산이 잘 안되는 경우가 왕왕있다.<br>계산할때만이라도 null값을 0으로 넣어서 계산하는 함수가 존재한다.</li>
+</ol>
+<h2 id="3-제목명을-보기좋게-display하기"><a href="#3-제목명을-보기좋게-display하기" class="headerlink" title="3. 제목명을 보기좋게 display하기"></a>3. 제목명을 보기좋게 display하기</h2><h3 id="1-alias-엘리아스-별칭"><a href="#1-alias-엘리아스-별칭" class="headerlink" title="1. alias (엘리아스) 별칭"></a>1. alias (엘리아스) 별칭</h3><p>칼럼명에 별칭(alias 엘리아스)을 넣어 데이터를 출력할 수 있다.</p>
 <ol>
-<li><p>GitLens : 소스코드옆에 바로 누가 언제 변경했는 지 알려주는 프로그램</p>
+<li>칼럼명 as alias</li>
+<li>칼럼명 alias</li>
+<li>칼럼명 (as) “Alias” : 대소문자구분, 공백포함, 특수문자 포함을 원하는 경우 as생략가능!</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; select last_name as name, salary*12 &quot;Annual Salary&quot;</span><br><span class="line">SQL&gt; from employees;</span><br></pre></td></tr></table></figure>
+
+<p>엘리아스를 사용하면 엘리아스명으로 format을 새로 지정해줘야한다.<br>위에 별칭을 줬던 두 컬럼의 사이즈를 format해보자.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; col name format a20</span><br><span class="line">SQL&gt; col &quot;Annual Salary&quot; format a20</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-연산자-사용"><a href="#2-연산자-사용" class="headerlink" title="2. || 연산자 사용"></a>2. <code>||</code> 연산자 사용</h3><p>두개의 컬럼을 하나로 합쳐서 출력하면서 직원이름과 job id를 매칭시켜서 출력하고싶다면 <code>||</code>연산자를 사용하면 된다. 그리고 두 컬럼사이를 구분하기 위해 리터럴 값은 ‘ is a ‘ 를 넣어준다.<br>리터럴값이 뭘까? 아래에 설명글을 보자.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; select last_name || &#39; is a &#39; || job_id</span><br><span class="line">SQL&gt; as &quot;Employees Details&quot;</span><br><span class="line">SQL&gt; from employees;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-리터럴"><a href="#3-리터럴" class="headerlink" title="3. 리터럴"></a>3. 리터럴</h3><p>리터럴값 : 명령어, 테이블명, 컬럼명, 엘리아스, 키워드는 아닌데 쿼리구문에 포함된 일반 문자,숫자,날짜 값!</p>
+<p>숫자 리터럴값은 그냥적어도 되지만 문자나 날짜 리터럴값은 작은따음표(‘’)로 묶어서 작성해야한다.</p>
+<p>실제 문법은 큰따옴표(“”)는 안되고 작은따옴표만 가능하지만 요즘에는 사용 프로그램에 따라 큰따옴표도 자동적으로 작은따옴표료 인식하기도한다.</p>
+<h2 id="4-Distinct"><a href="#4-Distinct" class="headerlink" title="4. Distinct"></a>4. Distinct</h2><p>중복된 값을 자동으로 제거해 주고 한번만 display해주는 키워드</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; select distinct department_id</span><br><span class="line">SQL&gt; from employees;</span><br></pre></td></tr></table></figure>
+
+<p>예를들어 employees 테이블에 사원들의 department_id가 총 몇개인지 궁금하다.<br>이럴때 distinct 키워드를 쓰지않고 출력하게된다면 모든 사원의 department_id가 사원수만큼 출력된다.</p>
+<ul>
+<li>1번부서</li>
+<li>2번부서</li>
+<li>1번부서</li>
+<li>1번부서</li>
+<li>5번부서</li>
+<li>5번부서</li>
+<li>6번부서</li>
+<li>총 7row</li>
+</ul>
+<p>이때 distinct 키워드를 사용하면 중복값을 제거하고 출력할수있다</p>
+<ul>
+<li>1번부서</li>
+<li>2번부서</li>
+<li>5번부서</li>
+<li>6번부서</li>
+<li>총 4row</li>
+</ul>
+<p>이를 통해 department_id의 총 갯수파악이 쉬워진다.</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-23T00:00:00.000Z" title="2020-06-23T00:00:00.000Z">2020-06-23</time><span class="level-item"><a class="link-muted" href="/categories/Django/">Django</a></span><span class="level-item">9 minutes read (About 1279 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/23/200623python/">[패스트캠퍼스python] DB에 만든 app 연결, admin페이지 출력 문자열 한글로 변경</a></h1><div class="content"><h3 id="파이썬-인강-자기계발-챌린지-30회차-미션"><a href="#파이썬-인강-자기계발-챌린지-30회차-미션" class="headerlink" title="파이썬 인강 자기계발 챌린지 30회차 미션"></a>파이썬 인강 자기계발 챌린지 30회차 미션</h3><p>만들어놓은 DB에 내가 만든 앱 연결해보자.<br>이는 admin.py를 이용해서 진행해야한다.</p>
+<h2 id="1-admin-py-작성"><a href="#1-admin-py-작성" class="headerlink" title="1. admin.py 작성"></a>1. admin.py 작성</h2><p>데이터를 추가,수정한 뒤 migrate를 한 상태에서 상위 앱폴더에서 <code>admin.py</code>폴더를 찾는다.<br>그리고 migrate한 models안에 있는 내용을 import해온다.<br>pass는 아무것도 안하겠다는 의미이다.<br>그 뒤 아래와 같이 빈 클래스를 만들어 admin에 두가지(Fcuser, FcuserAdmin) 다 등록(register)한다.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.contrib <span class="keyword">import</span> admin</span><br><span class="line"><span class="keyword">from</span> .models <span class="keyword">import</span> Fcuser</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">FcuserAdmin</span><span class="params">(admin.ModelAdmin)</span>:</span></span><br><span class="line">    <span class="keyword">pass</span> </span><br><span class="line"></span><br><span class="line">admin.site.register(Fcuser, FcuserAdmin)</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-python3-manage-py-runserver"><a href="#2-python3-manage-py-runserver" class="headerlink" title="2. python3 manage.py runserver"></a>2. python3 manage.py runserver</h2><ol>
+<li>명령어입력<br>잘 반영되었는지 runserver명령어롤 틍해 실행해보자.<br>터미널에 아래 코드들이 출력되고 그 중 <code>http://127.0.0.1:8000/</code>를 ctrl를 누른상태에서 click하면 바로 인터넷창이 오픈된다.</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">(fcdjango_venv) C:\경로\fc_community&gt;python manage.py runserver</span><br><span class="line">Watching for file changes with StatReloader</span><br><span class="line">Performing system checks...</span><br><span class="line"></span><br><span class="line">System check identified no issues (0 silenced).</span><br><span class="line">June 21, 2020 - 14:47:46</span><br><span class="line">Django version 3.0.7, using settings &#39;fc_community.settings&#39;</span><br><span class="line">Starting development server at http:&#x2F;&#x2F;127.0.0.1:8000&#x2F;</span><br><span class="line">Quit the server with CTRL-BREAK.</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>주소창에 admin/ 추가입력 후 enter.<br>인터넷창이 오픈되면 주소뒤에 <code>admin/</code>을 붙여준다.<br>그러면 장고에서 기본적으로 제공하는 site가 출력되면서 로그인페이지가 나타난다.<br>아직 첫 아이디를 만들지 않았으므로 인터넷창을 닫아주고 터미널창에 <code>ctrl+c</code> 명령어를 입력하여 돌아가던 server를 멈춰준다.</li>
+</ol>
+<h2 id="3-python3-manage-py-createsuperuser"><a href="#3-python3-manage-py-createsuperuser" class="headerlink" title="3. python3 manage.py createsuperuser"></a>3. python3 manage.py createsuperuser</h2><ol>
+<li><p>manage.py명령어를 통해 첫 user를 생성한다.<br>자동적으로 아이디와 이메일주소, 비번과 비번확인 총 4단계의 입력과정을 거치면 드디어 생성!!</p>
 </li>
-<li><p>Git History : 지금까지 commit된 히스토리를 보여주면서 언제 누가 고쳤는 지 알려주는 프로그램</p>
+<li><p>다시<code>python3 manage.py runserver</code>를 통해 <code>http://127.0.0.1:8000/admin/</code>으로 들어가서 방금 생성한 아이디와 비번으로 로그인을 한다.<br>그러면 아래와 같이 사이트가 뾰로롱 생성된다.</p>
 </li>
 </ol>
-<h2 id="5-Git-History-extension-사용방법"><a href="#5-Git-History-extension-사용방법" class="headerlink" title="5. Git History extension 사용방법"></a>5. Git History extension 사용방법</h2><p>vs code의 Source Control에서 ctrl + shift + p 를 누른 뒤 git view history를 검색한다.</p>
-<p>commit의 history가 최신순으로 나타나게된다</p>
-<p>확인하고싶은 commit을 누른뒤 Compare against previous version을 클릭하면 commit전의 소스코드와 commit후의 소스코드를 비교하여 보기편하게 알려준다.</p>
-<p><img src="/img/python06194.png" alt=""></p>
-<h2 id="6-위의-사항을-git-bash로-하기"><a href="#6-위의-사항을-git-bash로-하기" class="headerlink" title="6. 위의 사항을 git bash로 하기"></a>6. 위의 사항을 git bash로 하기</h2><p><img src="/img/python06195.png" alt=""></p>
-<ol>
-<li><p>먼저 git bash를 열어주고 소스코드가 있는 주소로 이동한다.</p>
-</li>
-<li><p>git status : commit이 되지 않은 변경사항을 확인한다</p>
-</li>
-<li><p>git add 소스코드파일명 : 변경한 소스코드파일명을 add해준다. 이 명령어로는 잘 진행되었는지 진행사항체크하기가 어렵기때문에 다시 스테이터스를 확인해줘야한다.</p>
-</li>
-<li><p>git status : commit이 완료되었는지 확인한다.</p>
-</li>
-<li><p>git commit -m “메모내용입력” : commit명령어를 통해 스테이징영역에 보관해둔 소스코드를 레포지토리에 저장한다. -m “메모내용입력”은 생략가능하나 앞으로의 history관리를 위해 간단한 변경사항내용을 적어주면 좋다.</p>
-</li>
+<p><img src="/img/python06231.PNG" alt=""></p>
+<p>파란색띠가 app을 나타내며</p>
+<ul>
+<li>Authentication and Authorization 은 장고에서 제공하는 기본 앱이고</li>
+<li>내가 만들었던 fcuser앱이 정상적을 출력되고 그 아래에 만들었던 Fcusers모델이 잘 등록되어있는 것을 확인할 수 있다.</li>
+</ul>
+<ol start="3">
+<li>add를 누른뒤 사용자명과 비밀번호를 입력하면 아래 이미지처럼 <code>Fcuser object(1)</code>가 생성되고 그 안에 추가로 만든 사용자명과 비밀번호를 확인할 수 있다.</li>
 </ol>
-<h2 id="7-git-원격-자동저장설정하기"><a href="#7-git-원격-자동저장설정하기" class="headerlink" title="7. git 원격 자동저장설정하기"></a>7. git 원격 자동저장설정하기</h2><ol>
-<li><p>vs code의 Source Control에서 ctrl + shift + p 를 누른 뒤 git add remote를 클릭한다</p>
-</li>
-<li><p>원격저장할 레포지토리 주소를 붙여넣는다.</p>
-</li>
-<li><p>이름은 origin입력한다.</p>
-</li>
-<li><p>점점점(…)을 클릭하여 push를 해준다</p>
-</li>
-<li><p>참고로, 역으로 웹 레포지토리에서 수정한 내용을 vs code로 받아보고싶을때는 ctrl + shift + p를 누른뒤 git pull을 입력하면 된다</p>
-</li>
-</ol>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-19T00:00:00.000Z" title="2020-06-19T00:00:00.000Z">2020-06-19</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">3 minutes read (About 511 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/19/200619dbi/">[ITWILL : DB]CUI환경 VS GUI환경, 리눅스명령어자세히, vi단축키</a></h1><div class="content"><h3 id="ITWILL학원-7강-Database-BY-정지윤강사"><a href="#ITWILL학원-7강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 7강 Database BY 정지윤강사"></a>ITWILL학원 : 7강 Database BY 정지윤강사</h3><p>응용SW기초기술활용<br>제 1장 운영체제 기초 활용</p>
-<h2 id="1-CUI환경-VS-GUI환경"><a href="#1-CUI환경-VS-GUI환경" class="headerlink" title="1. CUI환경 VS GUI환경"></a>1. CUI환경 VS GUI환경</h2><h4 id="1-GUI-Graphic-User-Interface"><a href="#1-GUI-Graphic-User-Interface" class="headerlink" title="1. GUI(Graphic User Interface)"></a>1. GUI(Graphic User Interface)</h4><p>문자가 아닌 그래픽 위주로 이루어진 방식을 말하며 현재의 우리가 쓰고있는 환경을 말한다.<br>운영체제에서 작업할때 명령어 대신 아이콘을 더블클릭하여 사용하는 등 그래픽으로 데이터를 처리하는 환경이다.</p>
-<h4 id="2-CUI-Character-User-Interface"><a href="#2-CUI-Character-User-Interface" class="headerlink" title="2. CUI(Character User Interface)"></a>2. CUI(Character User Interface)</h4><p>문자로 이루어진 화면을 말한다. Dos환경일때 그래픽이 아닌 명령어(문자)로 처리하는 환경이다. </p>
-<p>그렇다면 CUI환경에서 문서를 어떻게 작성하고 저장할까?<br><strong>VI편집기(브이아이에디터)를 사용하면된다.</strong></p>
-<h2 id="2-VI-에디터"><a href="#2-VI-에디터" class="headerlink" title="2. VI 에디터"></a>2. VI 에디터</h2><p>VI편집기는 다른 에디터와 다르게 모드형 편집기이고 총 3가지모드로 구성되어있다.</p>
-<ul>
-<li>명령모드</li>
-<li>입력모드</li>
-<li>ex명령모드</li>
-</ul>
-<p><img src="https://t1.daumcdn.net/cfile/tistory/99F021445BE41A3C1F?download" alt="VI편집기 주요 단축키1"></p>
-<p><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile26.uf.tistory.com%2Fimage%2F99E7C9505BE41B8727B5AA" alt="VI편집기 주요 단축키2"></p>
-<p>명령모드에서 편집모드로 가기 - i<br>편집모드종료 후 명령모드 esc<br>편집모드에서 저장하기 :w<br>편집모드에서 저장하고 나가기 - :wp<br>편집모드에서 저장하지 않고 나가기 - :p!</p>
-<h2 id="3-리눅스명령어"><a href="#3-리눅스명령어" class="headerlink" title="3. 리눅스명령어"></a>3. 리눅스명령어</h2><ol>
-<li><p>명령어 잘못 실행시켰을때 : <code>ctrl+z</code>를 누르면 stop이 된다.</p>
-</li>
-<li><p>폴더복사할때 : 다른 경로로 동일한파일명을 복사하고싶을때는 새로운 파일명을 점(.)을 찍어주면 원본과 동일한 이름으로 복사된다</p>
-</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$] cp 복사하고싶은파일명.txt 복사할경로&#x2F;.</span><br></pre></td></tr></table></figure>
+<p><img src="/img/python06232.PNG" alt=""></p>
+<p>이렇듯 장고는 데이터베이스를 건들이지않아도 웹페이지에서 데이터베이스를 쉽게 다룰 수 있어 정말 편리하다.<br>조금 아쉬운 점이 있다면 유저명이 <code>Fcuser object(1)</code> 이렇게 생성되어서 어떤 유저인지 한눈에 확인하기 어렵다. 이를 바꿔주는 설정을 해보자.</p>
+<h2 id="4-DB웹상-유저명-보기-쉽게-변경"><a href="#4-DB웹상-유저명-보기-쉽게-변경" class="headerlink" title="4. DB웹상 유저명 보기 쉽게 변경"></a>4. DB웹상 유저명 보기 쉽게 변경</h2><p>파이썬에는 기본 문자열을 반환해주는 언더바 두개로 감싼 내장함수( <strong>str</strong> )를 가지고 있다.<br>이를 이용하여 문자열을 원하는대로 바꿀수있다.<br>fcuser앱 아래의 models.py에서 class 안에 아래 코드를 추가해주면된다.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">__str__</span><span class="params">(self)</span>:</span> </span><br><span class="line">	<span class="keyword">return</span> self().username</span><br></pre></td></tr></table></figure>
 
-<p>이밖에도 리눅스 명령어는 아래 링크에 잘 정리되어있다.</p>
-<p><a href="https://coding-factory.tistory.com/504">리눅스 명령어</a></p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-18T00:00:00.000Z" title="2020-06-18T00:00:00.000Z">2020-06-18</time><span class="level-item"><a class="link-muted" href="/categories/JAVA/">JAVA</a></span><span class="level-item">4 minutes read (About 613 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/18/200618javai/">[ITWILL : JAVA]자바포맷스트링, Random 숫자 뽑기, 상황별 반복문 추천(for, while, do~while)</a></h1><div class="content"><h3 id="ITWILL학원-8강-JAVA-BY-윤미영강사"><a href="#ITWILL학원-8강-JAVA-BY-윤미영강사" class="headerlink" title="ITWILL학원 : 8강 JAVA BY 윤미영강사"></a>ITWILL학원 : 8강 JAVA BY 윤미영강사</h3><h2 id="1-JAVA-format-string"><a href="#1-JAVA-format-string" class="headerlink" title="1. JAVA format string"></a>1. JAVA format string</h2><p>자바 format string은 System.out.printf(“”,)를 이용하여 나타낸다.</p>
-<p><img src="https://mblogthumb-phinf.pstatic.net/20120425_139/javaking75_1335330584881T29CF_PNG/2012-04-25_140919.png?type=w800" alt="자바 포맷 스트링"></p>
-<p>주요한 변환코드는 아래와 같다.</p>
-<p><img src="https://player.slidesplayer.org/61/11298590/slides/slide_4.jpg" alt="주요 포맷스트링"></p>
-<p>포맷스트링으로 자릿수도 표현할 수 있다.</p>
-<p><img src="https://docsplayer.org/docs-images/86/94720409/images/15-2.jpg" alt="포맷스트링 자릿수 표현1"></p>
-<p><img src="https://dojang.io/pluginfile.php/13716/mod_page/content/5/024009.png" alt="포맷스트링 자릿수 표현2"></p>
-<h2 id="2-Random-숫자-뽑기"><a href="#2-Random-숫자-뽑기" class="headerlink" title="2. Random 숫자 뽑기"></a>2. Random 숫자 뽑기</h2><ul>
-<li><p>Random 라이브러리 : 무작위 숫자를 생성하기 위해 Random 객체를 사용해야하기때문에 import해야한다.</p>
-</li>
-<li><p>null : 아무 값이 없다. 예약어이고 실제 값은 맨 뒤에 위치해있다.</p>
-<ul>
-<li>실무에선 null보단 “”로 String을 초기화시켜준다.</li>
-<li>왜냐하면 보통 DB에서 데이터를 가져와서 사용하는 경우가 많은데 null로 초기화해버리면 생각하지 못한 에러가 발생할 수 있기때문이다.</li>
-</ul>
-</li>
-<li><p>nextlnt(n); : 매서드로 0 &#126; (n-1)사이의 무작위 정수를 생성한다.</p>
-</li>
-</ul>
-<p>아래 코드는 0부터 99중에 랜덤숫자를 뽑아서 50이상이면 큰수로 출력하고 그 이하면 작은수로 출력한다.</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Random;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">	String result = <span class="keyword">null</span>;</span><br><span class="line">	Random myRandom = <span class="keyword">new</span> Random();</span><br><span class="line"></span><br><span class="line">	System.out.println(<span class="string">"----- 큰수 작은수체크"</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">int</span> num1 = myRandom.nextInt(<span class="number">100</span>); <span class="comment">//0 &amp;#126; 99사이의 정수</span></span><br><span class="line">	<span class="keyword">if</span>(num1 &gt;= <span class="number">50</span>)&#123;</span><br><span class="line">		result =<span class="string">"큰 수"</span>;</span><br><span class="line">	&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">		result =<span class="string">"작은 수"</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	System.out.printf(<span class="string">"%d는 %s이다.%n"</span>, num1, result);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/img/python06233.PNG" alt=""></p>
+<h2 id="5-DB웹상-다양한-유저정보-출력"><a href="#5-DB웹상-다양한-유저정보-출력" class="headerlink" title="5. DB웹상 다양한 유저정보 출력"></a>5. DB웹상 다양한 유저정보 출력</h2><p>원하는대로 <code>Fcuser object(1)</code>에서 유저명으로 변경되었다.<br>하지만 뭔가 좀 아쉽다.<br>더 많은 정보들이 한눈에 보였으면 좋겠다. 이럴때 해줄 수 있는 방법이 있다.<br>fcuser앱 아래의 admin.py에서 class 안에 아래 코드를 추가해주면된다.<br>password말고도 다양한 내용을 추가입력하면 아래 이미지처럼 한눈에 보기좋게 출력된다. </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">FcuserAdmin</span><span class="params">(admin.ModelAdmin)</span>:</span></span><br><span class="line">    list_display = (<span class="string">'username'</span>, <span class="string">'password'</span>) <span class="comment">#튜플로 만듬</span></span><br></pre></td></tr></table></figure>
 
+<p>유저명 위의 카테고리설명줄도 FCUSER -&gt; 사용자명, 비밀번호로 변경된 것을 확인할 수 있다.<br>이는 처음 클래스를 만들때 <code>verbose_name=&quot;비밀번호&quot;</code>속성을 추가했기 때문이다.</p>
+<p><img src="/img/python06234.PNG" alt=""></p>
+<h2 id="6-admin페이지-출력-문자열-변경"><a href="#6-admin페이지-출력-문자열-변경" class="headerlink" title="6. admin페이지 출력 문자열 변경"></a>6. admin페이지 출력 문자열 변경</h2><p>admin page에서 만든 fcuser앱의 하위의 fcusers도 변경해보자.<br>fcuser였는데 s가 붙은 이유는 기본적으로 장고에서는 복수형태로 자동변환해서 출력해주기때문이다.</p>
+<p><img src="/img/python06231.PNG" alt=""></p>
+<p>fcusers가 뭘 뜻하는지 알기 쉽게 한글명으로 변경하려면 fcuser앱 아래의 models.py에서 class안의 <code>class Meta:</code>에서 <code>verbose_name</code>을 속성을 주면 된다.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Meta</span>:</span></span><br><span class="line">	db_table = <span class="string">"fastcampus_fcuser"</span></span><br><span class="line">	verbose_name = <span class="string">"패스트캠퍼스 사용자"</span></span><br><span class="line">	verbose_name_plural = <span class="string">"패스트캠퍼스 사용자"</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="2-상황별-반복문-추천"><a href="#2-상황별-반복문-추천" class="headerlink" title="2. 상황별 반복문 추천"></a>2. 상황별 반복문 추천</h2><p>반복문은 크게 3가지 종류가 있다.<br>for 문, while 문, do ~ while문!</p>
-<p>상화별로 추천하는 반복문이 있다.</p>
-<ul>
-<li><p>for 문 : 반복해야하는 횟수가 지정될 경우 유리</p>
-<ul>
-<li>ex) 10번 먹으세요</li>
-<li><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(초기화;조건식;증감식)&#123;</span><br><span class="line">	조건식이 <span class="literal">true</span>일때 실행할 문장</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-<li><p>while 문 : 반복횟수보다는 상황에 의한 반복을 정의할 경우 유리</p>
-<ul>
-<li>ex) 다 먹으세요</li>
-<li><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(조건식)&#123;</span><br><span class="line">	조건식이 <span class="keyword">true</span>일 경우 실행할 문장</span><br><span class="line">	증감식;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-<li><p>do ~ while문 : while작업 중 최소 한 번은 실행해야 할 작업이 있는 경우 유리</p>
-<ul>
-<li>ex) 한 번 먹어보고 맛있으면 다 먹으세요, 홈페이지의 메뉴 (꼭 한번은 실행되어져야하기때문에)</li>
-<li><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">초기화;</span><br><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">	조건식이 <span class="keyword">true</span>일때 실행할 문장</span><br><span class="line">	증감식;</span><br><span class="line">&#125; <span class="keyword">while</span>(조건식);</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-</li>
-</ul>
-</div></article></div><nav class="pagination is-centered mt-4" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/page/53/">Previous</a></div><div class="pagination-next"><a href="/page/55/">Next</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/">1</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/53/">53</a></li><li><a class="pagination-link is-current" href="/page/54/">54</a></li><li><a class="pagination-link" href="/page/55/">55</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/87/">87</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="" src="/img/avatar.png" alt="Sowon"></figure><p class="title is-size-4 is-block line-height-inherit">Sowon</p><p class="is-size-6 is-block">Welcome to my blog. I`m enjoying coding</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Busan</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">259</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">13</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">12</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/sowon-dev" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/sowon-dev"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://www.facebook.com/sowon.kim.39395"><i class="fab fa-facebook"></i></a></div></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/Database/"><span class="level-start"><span class="level-item">Database</span></span><span class="level-end"><span class="level-item tag">34</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Django/"><span class="level-start"><span class="level-item">Django</span></span><span class="level-end"><span class="level-item tag">10</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/HTML-CSS/"><span class="level-start"><span class="level-item">HTML&amp;CSS</span></span><span class="level-end"><span class="level-item tag">24</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JAVA/"><span class="level-start"><span class="level-item">JAVA</span></span><span class="level-end"><span class="level-item tag">49</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JSP/"><span class="level-start"><span class="level-item">JSP</span></span><span class="level-end"><span class="level-item tag">66</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JavaScript/"><span class="level-start"><span class="level-item">JavaScript</span></span><span class="level-end"><span class="level-item tag">26</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Journal/"><span class="level-start"><span class="level-item">Journal</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Lectures-Seminars/"><span class="level-start"><span class="level-item">Lectures &amp; Seminars</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Python/"><span class="level-start"><span class="level-item">Python</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Version-control/"><span class="level-start"><span class="level-item">Version control</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EC%BB%A8%ED%8A%B8%EB%A6%AC%EB%B7%B0%ED%86%A42020/"><span class="level-start"><span class="level-item">오픈소스컨트리뷰톤2020</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%A0%9C%EC%A3%BC%EC%BD%94%EB%94%A9%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%BA%A0%ED%94%84-10%EA%B8%B0/"><span class="level-start"><span class="level-item">제주코딩베이스캠프 10기</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%BD%94%EB%93%9C%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%B8%A0-PRE35%EA%B8%B0/"><span class="level-start"><span class="level-item">코드스테이츠 PRE35기</span></span><span class="level-end"><span class="level-item tag">14</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">Recent</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2020-11-17T00:00:00.000Z">2020-11-17</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/17/jspList/">[ITWILL : JSP] JSP전체목록List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JSP/">JSP</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-11-16T00:00:00.000Z">2020-11-16</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/16/javaList/">[ITWILL : JAVA] JAVA전체목록List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JAVA/">JAVA</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-11-16T00:00:00.000Z">2020-11-16</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/16/DBList/">[ITWILL : DB] DB전체목록List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Database/">Database</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-08-23T00:00:00.000Z">2020-08-23</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/23/200823git/">삭제한 옛날 branch 살리기</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Version-control/">Version control</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-08-23T00:00:00.000Z">2020-08-23</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/23/200823git2/">git reflog 기초</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Version-control/">Version control</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/11/"><span class="level-start"><span class="level-item">November 2020</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/08/"><span class="level-start"><span class="level-item">August 2020</span></span><span class="level-end"><span class="level-item tag">52</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/07/"><span class="level-start"><span class="level-item">July 2020</span></span><span class="level-end"><span class="level-item tag">71</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/06/"><span class="level-start"><span class="level-item">June 2020</span></span><span class="level-end"><span class="level-item tag">85</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/05/"><span class="level-start"><span class="level-item">May 2020</span></span><span class="level-end"><span class="level-item tag">19</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/04/"><span class="level-start"><span class="level-item">April 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/03/"><span class="level-start"><span class="level-item">March 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/10/"><span class="level-start"><span class="level-item">October 2019</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/09/"><span class="level-start"><span class="level-item">September 2019</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/08/"><span class="level-start"><span class="level-item">August 2019</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/07/"><span class="level-start"><span class="level-item">July 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/GIT/"><span class="tag">GIT</span><span class="tag is-grey-lightest">11</span></a></div><div class="control"><a class="tags has-addons" href="/tags/HTML-CSS/"><span class="tag">HTML&amp;CSS</span><span class="tag is-grey-lightest">27</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ITWILL-JAVA/"><span class="tag">ITWILL(JAVA)</span><span class="tag is-grey-lightest">173</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Journal/"><span class="tag">Journal</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/List/"><span class="tag">List</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/MySQL/"><span class="tag">MySQL</span><span class="tag is-grey-lightest">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Oracle/"><span class="tag">Oracle</span><span class="tag is-grey-lightest">29</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Review/"><span class="tag">Review</span><span class="tag is-grey-lightest">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/TIL/"><span class="tag">TIL</span><span class="tag is-grey-lightest">249</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Web-Game/"><span class="tag">Web Game</span><span class="tag is-grey-lightest">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9/"><span class="tag">생활코딩</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%EA%B0%9C%EB%B0%9C/"><span class="tag">패스트캠퍼스(파이썬웹개발)</span><span class="tag is-grey-lightest">37</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a><p class="size-small"><span>&copy; 2020 Sowon</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+<p>위에서 말했듯이 장고에서 자동적으로 복수형을 기입하기 때문에 <code>verbose_name_plural</code>입력하지 않는 경우 아래 이미지와 같이 <code>패스크캠퍼스 사용자s</code>라는 한국어에서 듣도보도 못한 문법으로 출력된다ㅋㅋㅋㅋㅋ</p>
+<p><img src="/img/python06235.PNG" alt=""></p>
+</div></article></div><nav class="pagination is-centered mt-4" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/page/53/">Previous</a></div><div class="pagination-next"><a href="/page/55/">Next</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/">1</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/53/">53</a></li><li><a class="pagination-link is-current" href="/page/54/">54</a></li><li><a class="pagination-link" href="/page/55/">55</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/91/">91</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="" src="/img/avatar.png" alt="Sowon"></figure><p class="title is-size-4 is-block line-height-inherit">Sowon</p><p class="is-size-6 is-block">Welcome to my blog. I`m enjoying coding</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Busan</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">271</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">13</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">12</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/sowon-dev" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/sowon-dev"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://www.facebook.com/sowon.kim.39395"><i class="fab fa-facebook"></i></a></div></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/Database/"><span class="level-start"><span class="level-item">Database</span></span><span class="level-end"><span class="level-item tag">34</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Django/"><span class="level-start"><span class="level-item">Django</span></span><span class="level-end"><span class="level-item tag">10</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/HTML-CSS/"><span class="level-start"><span class="level-item">HTML&amp;CSS</span></span><span class="level-end"><span class="level-item tag">24</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JAVA/"><span class="level-start"><span class="level-item">JAVA</span></span><span class="level-end"><span class="level-item tag">49</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JSP/"><span class="level-start"><span class="level-item">JSP</span></span><span class="level-end"><span class="level-item tag">66</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JavaScript/"><span class="level-start"><span class="level-item">JavaScript</span></span><span class="level-end"><span class="level-item tag">26</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Journal/"><span class="level-start"><span class="level-item">Journal</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Lectures-Seminars/"><span class="level-start"><span class="level-item">Lectures &amp; Seminars</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Python/"><span class="level-start"><span class="level-item">Python</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Version-control/"><span class="level-start"><span class="level-item">Version control</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EC%BB%A8%ED%8A%B8%EB%A6%AC%EB%B7%B0%ED%86%A42020/"><span class="level-start"><span class="level-item">오픈소스컨트리뷰톤2020</span></span><span class="level-end"><span class="level-item tag">17</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%A0%9C%EC%A3%BC%EC%BD%94%EB%94%A9%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%BA%A0%ED%94%84-10%EA%B8%B0/"><span class="level-start"><span class="level-item">제주코딩베이스캠프 10기</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%BD%94%EB%93%9C%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%B8%A0-PRE35%EA%B8%B0/"><span class="level-start"><span class="level-item">코드스테이츠 PRE35기</span></span><span class="level-end"><span class="level-item tag">14</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">Recent</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2020-11-17T00:00:00.000Z">2020-11-17</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/17/jspList/">[ITWILL : JSP] JSP전체목록List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JSP/">JSP</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-11-16T00:00:00.000Z">2020-11-16</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/16/DBList/">[ITWILL : DB] DB전체목록List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Database/">Database</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-11-16T00:00:00.000Z">2020-11-16</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/16/javaList/">[ITWILL : JAVA] JAVA전체목록List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JAVA/">JAVA</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-09-12T00:00:00.000Z">2020-09-12</time></p><p class="title is-6"><a class="link-muted" href="/2020/09/12/opensourceList/">[오픈소스컨트리뷰톤2020] Git List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EC%BB%A8%ED%8A%B8%EB%A6%AC%EB%B7%B0%ED%86%A42020/">오픈소스컨트리뷰톤2020</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-09-11T00:00:00.000Z">2020-09-11</time></p><p class="title is-6"><a class="link-muted" href="/2020/09/11/200911opensource/">오픈소스컨트리뷰톤 온라인미팅 중 현직꿀팁 모음집</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EC%BB%A8%ED%8A%B8%EB%A6%AC%EB%B7%B0%ED%86%A42020/">오픈소스컨트리뷰톤2020</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/11/"><span class="level-start"><span class="level-item">November 2020</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/09/"><span class="level-start"><span class="level-item">September 2020</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/08/"><span class="level-start"><span class="level-item">August 2020</span></span><span class="level-end"><span class="level-item tag">57</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/07/"><span class="level-start"><span class="level-item">July 2020</span></span><span class="level-end"><span class="level-item tag">76</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/06/"><span class="level-start"><span class="level-item">June 2020</span></span><span class="level-end"><span class="level-item tag">85</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/05/"><span class="level-start"><span class="level-item">May 2020</span></span><span class="level-end"><span class="level-item tag">19</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/04/"><span class="level-start"><span class="level-item">April 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/03/"><span class="level-start"><span class="level-item">March 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/10/"><span class="level-start"><span class="level-item">October 2019</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/09/"><span class="level-start"><span class="level-item">September 2019</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/08/"><span class="level-start"><span class="level-item">August 2019</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/07/"><span class="level-start"><span class="level-item">July 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/GIT/"><span class="tag">GIT</span><span class="tag is-grey-lightest">22</span></a></div><div class="control"><a class="tags has-addons" href="/tags/HTML-CSS/"><span class="tag">HTML&amp;CSS</span><span class="tag is-grey-lightest">27</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ITWILL-JAVA/"><span class="tag">ITWILL(JAVA)</span><span class="tag is-grey-lightest">173</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Journal/"><span class="tag">Journal</span><span class="tag is-grey-lightest">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/List/"><span class="tag">List</span><span class="tag is-grey-lightest">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/MySQL/"><span class="tag">MySQL</span><span class="tag is-grey-lightest">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Oracle/"><span class="tag">Oracle</span><span class="tag is-grey-lightest">29</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Review/"><span class="tag">Review</span><span class="tag is-grey-lightest">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/TIL/"><span class="tag">TIL</span><span class="tag is-grey-lightest">259</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Web-Game/"><span class="tag">Web Game</span><span class="tag is-grey-lightest">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9/"><span class="tag">생활코딩</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%EA%B0%9C%EB%B0%9C/"><span class="tag">패스트캠퍼스(파이썬웹개발)</span><span class="tag is-grey-lightest">37</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a><p class="size-small"><span>&copy; 2020 Sowon</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
             site: {
                 url: 'https://github.com/sowon-dev',
                 external_link: {"enable":true,"exclude":[]}

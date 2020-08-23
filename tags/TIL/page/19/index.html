@@ -1,5 +1,455 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.0"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Tag: TIL - 야망찬 개발자의 블로그</title><meta property="og:type" content="blog"><meta property="og:title" content="야망찬 개발자의 블로그"><meta property="og:url" content="https://github.com/sowon-dev"><meta property="og:site_name" content="야망찬 개발자의 블로그"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://github.com/img/og_image.png"><meta property="article:author" content="Sowon"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://github.com/sowon-dev"},"headline":"야망찬 개발자의 블로그","image":["https://github.com/img/og_image.png"],"author":{"@type":"Person","name":"Sowon"},"description":""}</script><link rel="icon" href="/img/star.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">Tags</a></li><li class="is-active"><a href="#" aria-current="page">TIL</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-11T00:00:00.000Z" title="2020-06-11T00:00:00.000Z">2020-06-11</time><span class="level-item"><a class="link-muted" href="/categories/JavaScript/">JavaScript</a></span><span class="level-item">11 minutes read (About 1719 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/11/200611jspi/">ITWILL : 무한반복문, 보조제어(break와continue)문, 익명함수, 재귀함수, 지역변수를 전역에서 사용하는 방법, 내장함수</a></h1><div class="content"><h3 id="ITWILL학원-7강-JS기초-BY-정규태강사"><a href="#ITWILL학원-7강-JS기초-BY-정규태강사" class="headerlink" title="ITWILL학원 : 7강 JS기초 BY 정규태강사"></a>ITWILL학원 : 7강 JS기초 BY 정규태강사</h3><h2 id="1-무한반복문"><a href="#1-무한반복문" class="headerlink" title="1. 무한반복문"></a>1. 무한반복문</h2><p>반복문이 무한으로 실행되는 반복문.<br>문제의 해결이 언제 끝날지 모르는 경우에 주로 사용.</p>
+<html lang="en"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.0"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Tag: TIL - 야망찬 개발자의 블로그</title><meta property="og:type" content="blog"><meta property="og:title" content="야망찬 개발자의 블로그"><meta property="og:url" content="https://github.com/sowon-dev"><meta property="og:site_name" content="야망찬 개발자의 블로그"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://github.com/img/og_image.png"><meta property="article:author" content="Sowon"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://github.com/sowon-dev"},"headline":"야망찬 개발자의 블로그","image":["https://github.com/img/og_image.png"],"author":{"@type":"Person","name":"Sowon"},"description":""}</script><link rel="icon" href="/img/star.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">Tags</a></li><li class="is-active"><a href="#" aria-current="page">TIL</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-15T00:00:00.000Z" title="2020-06-15T00:00:00.000Z">2020-06-15</time><span class="level-item"><a class="link-muted" href="/categories/HTML-CSS/">HTML&amp;CSS</a></span><span class="level-item">9 minutes read (About 1373 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/15/200615python/">[패스트캠퍼스python] Django 홈페이지 실습: max-width와 min-width속성, margin과 padding의 단축속성</a></h1><div class="content"><h3 id="파이썬-인강-자기계발-챌린지-22회차-미션"><a href="#파이썬-인강-자기계발-챌린지-22회차-미션" class="headerlink" title="파이썬 인강 자기계발 챌린지 22회차 미션"></a>파이썬 인강 자기계발 챌린지 22회차 미션</h3><p>이때까지 배운 HTML와 CSS를 가지고 Django 사이트를 만들어보는 실습을 해보자.<br><a href="https://www.djangoproject.com/">참고링크 : Django</a></p>
+<h2 id="1-전체-페이지-레이아웃잡고-마크업하기"><a href="#1-전체-페이지-레이아웃잡고-마크업하기" class="headerlink" title="1. 전체 페이지 레이아웃잡고 마크업하기"></a>1. 전체 페이지 레이아웃잡고 마크업하기</h2><p>먼저 홈페이지를 보고 레이아웃을 잡고 미리 스케치하는 것이 좋다.<br>그래야 안 헷갈리고 필요한 태그들만 사용하여 깔끔한 마크업이 가능하기때문이다.</p>
+<p>지난 포스팅에서 Django홈페이지 전체를 스케치한 이미지이다.</p>
+<p><img src="/img/python06142.png" alt=""></p>
+<p>전체 홈페이지를 가장 큰 세가지부분으로 나눈다</p>
+<ol>
+<li>Header</li>
+<li>main</li>
+<li>footer</li>
+</ol>
+<p>그 뒤로 안에 있는 요소들을 스케치한 뒤 그대로 마크업하면 된다!<br>간단한 작업처럼 보이지만 깔끔하게 잘 만들기 여건 어려운 것이 아니다.<br>나도 강사님처럼 척보면 척하고 짜임새있게 짜고 싶다.</p>
+<h2 id="2-Header-전체구상"><a href="#2-Header-전체구상" class="headerlink" title="2. Header 전체구상"></a>2. Header 전체구상</h2><p>먼저 첫번째 큰 부분인 Header부분이다.<br>안을 보면 logo와 navigator로 나눌 수 있다.<br>logo안은 이미지태크와 링크를 넣어 이미지를 누를때마다 홈으로 돌아가게끔 구현할 것이다.<br>navigator는 ul태그로 만들어서 li태그에 a태그를 넣어 li태그를 누를때 관련 페이지로 이동할 수 있도록 구현할 것이다.</p>
+<ol>
+<li><p>logo</p>
+<ul>
+<li>logo<ul>
+<li>img + link to home</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>navigator</p>
+<ul>
+<li>list<ul>
+<li>li + link to overview page</li>
+<li>li + link to download page</li>
+<li>li + link to documentation page</li>
+<li>li + link to news page</li>
+<li>li + link to community page</li>
+<li>li + link to code page</li>
+<li>li + link to issues page</li>
+<li>li + link to about page</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p><img src="/img/python06151.png" alt=""></p>
+<p>스케치를 보고 그대로 html를 작성해주면 좋다.<br>위의 이미지처럼 class 이름까지 지정해서 하면 훨씬 편하고 빠르게 마크업할수있다.</p>
+<p> li태그와 a태그는 묶어서 총 8번 작성해야한다.<br> 이때 효율적으로 코드를 작성할 수 있는 방법이 있다.</p>
+ <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> (li&gt;a)*8</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> // 출력값은</span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>li태그 안에 a태그를 만들고 전체를 곱하기 8번해서 총 8개의 태그를 만들게 된다.<br>참~ 쉽죠?</p>
+<h2 id="3-max-width-속성과-min-width속성"><a href="#3-max-width-속성과-min-width속성" class="headerlink" title="3. max-width 속성과 min-width속성"></a>3. max-width 속성과 min-width속성</h2><p>브라우저의 크기를 조절할때, 브라우저가 일정한 크기에 도달할 경우 더이상 콘텐츠의 크기도 같이 줄어들거나 늘어나지 않는다.<br>이러한 속성을 max-width와 min-width라고 한다.</p>
+<p>브라우저 전체 넓이가 1060px이 되면 더 이상 줄어들지 않도록 지정하고 1400px이 되면 더 이상 늘어나지않도록 지정해보자.</p>
+<p>이를 위해서 먼저 생각해야할 것이 어느 부분에 max-width와 min-width를 적용시킬 것인 가이다.</p>
+<p>브라우저 전체 넓이가 일정크기보다 작아지면 <strong>모든 요소들이 다</strong> 작아지다가 멈춰야하므로 body에 min-width를 주면 된다.</p>
+<p>반면 브라우저 전체 넓이가 일정크기보다 커지면 header는 크기와 상관없이 양옆에 컬러가 계속 칠해져있어야하므로 container를 주어 container태그안에 max-width속성을 적용하여 디자인을 유지할 수 있다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">body&#123;</span><br><span class="line">    min-width: 1060px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.container&#123;</span><br><span class="line">    max-width: 1400px;</span><br><span class="line">    margin: 0 auto 0 auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-margin과-padding의-단축속성"><a href="#4-margin과-padding의-단축속성" class="headerlink" title="4. margin과 padding의 단축속성"></a>4. margin과 padding의 단축속성</h2><p>margin과 padding값을 주는 데는 총 4가지 단축 방법이 있다.</p>
+<ol>
+<li><p>{ margin: 0 auto 0 auto}<br>이렇게 4개가 나열되어 있는 경우의 순서는 top right botton left순이다.</p>
+</li>
+<li><p>{ margin: 0 auto 10px }<br>이렇게 3개 값이 나열되어 있는 경우에는 순서가 첫번째값은 top, 두번째 값은 left와 right 그리고 마지막 값은 bottom이다</p>
+</li>
+</ol>
+<p>즉 { margin: 0 auto 10px } 는 { margin: 0 auto 10px auto} 와 동일한 값을 가진다.</p>
+<ol start="3">
+<li>{ margin: 0 auto }<br>이렇게 2개가 나열되어 있는 경우의 순서는 첫번째값은 top botton에 적용 두번째 값은 left와 right에 적용된다.</li>
+</ol>
+<p>즉 { margin: 0 auto } 는 { margin: 0 auto 0 auto} 와 동일한 값을 가진다.</p>
+<ol start="4">
+<li>{ margin: 10px }<br>이렇게 1개 값만 있는 경우는 어디에 값이 적용될까?<br>정답은 모든 곳에 적용된다.<br>다시말해 10px이 top right botton left에 각각 적용된다.</li>
+</ol>
+<p>즉 { margin: 10px } 는 { margin: 10px 10px 10px 10px } 와 동일한 값을 가진다.</p>
+<h2 id="5-display-inline-block"><a href="#5-display-inline-block" class="headerlink" title="5. display: inline-block;"></a>5. display: inline-block;</h2><p>display속성에 inline-block을 넣어보자.</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.nav</span>&#123;</span><br><span class="line">    <span class="attribute">text-align</span>: right;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.list-items</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: inline-block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>아래 이미지를 순서대로 본다면 1번에는 적용되지 않은 순수한 모습에서<br>위의 코드를 적용한 후 3번을 본다면 예쁘게 오른쪽으로 카테고리가 일렬로 배열되어 있는 것을 확인할 수 있다.</p>
+<p><img src="/img/python06152.png" alt=""></p>
+<h2 id="6-position-absolute-와-relative-적용"><a href="#6-position-absolute-와-relative-적용" class="headerlink" title="6. position: absolute; 와 relative; 적용"></a>6. position: absolute; 와 relative; 적용</h2><p>가장 헷갈리는 position속성을 적용하기 전후를 비교해보자.</p>
+<p><code>position : relative;</code>로는 어떠한 값도 바꿀 수 없다.<br>그 밑에 꼭 top, bottom, left, right의 값을 통해 어디를 얼만큼 이동할 것인지 정할 수 있다.</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">    <span class="attribute">max-width</span>: <span class="number">1400px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: red;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0</span> <span class="number">20px</span>;</span><br><span class="line">    position: relative; //normal flow의 속성에 변화가 있는 것이 아니기때문에 화면에 출력될때 변화가 없다</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.logo</span>&#123;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>1번은 위의 태그를 적용하기 전의 모습이고 container클래스에  position: relative;를 적용하고 logo클래스에 position: absolute;를 적용을 하면 아래 이미지의 3번으로 화면에 출력된다.</p>
+<p><img src="/img/python06153.png" alt=""></p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-15T00:00:00.000Z" title="2020-06-15T00:00:00.000Z">2020-06-15</time><span class="level-item"><a class="link-muted" href="/categories/JavaScript/">JavaScript</a></span><span class="level-item">3 minutes read (About 423 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/15/200615me/">정규식을 이용한 전화번호 형식변환</a></h1><div class="content"><h3 id="숫자를-전화번호-형식으로-변환"><a href="#숫자를-전화번호-형식으로-변환" class="headerlink" title="숫자를 전화번호 형식으로 변환"></a>숫자를 전화번호 형식으로 변환</h3><p>숫자를 받은 후 그 숫자를 전화번호형식으로 변화시키고 싶다.<br>if else문을 사용해서 나타낼 수 있겠지만 엄청 길었다.<br>검색해보니 정규식을 이용한 깔끔한 코드를 찾았다</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">phoneformat</span>(<span class="params">num</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">return</span> num.replace(<span class="regexp">/(^02.&#123;0&#125;|^01.&#123;1&#125;|^[0-9]&#123;3&#125;)([0-9]*)([0-9]&#123;4&#125;)/</span>, <span class="string">"$1-$2-$3"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>코드를 설명하자면 뒤에서 설명하는 게 편하다.</p>
+<ol>
+<li>“$1-$2-$3”</li>
+</ol>
+<p>이 부분은 $1과 $2 그리고 $3를 하이픈(-)으로 연결했다.<br>그렇다면 $1과 $2, $3는 뭘까?<br>앞에 괄호와 연결된다 콤마(,)앞에 식을 자세히보면 (/()()()/,”$1-$2-$3”); 이렇게 볼 수 있다.<br>괄호안의 연산된 값이 순서대로 $1, $2, $3에 대입된다고 보면 된다.</p>
+<ol start="2">
+<li>([0-9]{4})</li>
+</ol>
+<p>뒤의 괄호부터 차근차근 풀어보자<br>0에서부터 9까지의 숫자중에 4개의 숫자를 가지겠다는 의미이다</p>
+<ol start="3">
+<li>([0-9] &#42; )</li>
+</ol>
+<p>0에서부터 9까지의 숫자중에 모든 남는 숫자를 가지겠다는 의미이다<br>여기서 남는 숫자란, 총 11자리중에 앞에서 3자리, 뒤에서 4자리를 가져간다면 그 나머지숫자은 4개를 가져가겠다는 의미이다.</p>
+<ol start="4">
+<li>(^02.{0}|^01.{1}|^[0-9]{3})<br>^은 정규식을 시작한다는 의미이다.</li>
+<li>{0} 는 02로 시작할경우, .{0}는 문자하나를 출력하겠다는 의미이고 뒤에 오는 숫자를 쓰지않고 02만 출력된다<br>|는 or연산자역할이다.<br>^01.{1}는 01로 시작할경우, .{1}는 01 이후로 오는 1자리까지 숫자를 출력하겠다는 의미이고 여기서는 01x가 된다.<br>[0-9]{3}는 0부터 9까지 숫자중에서 입력된 3가지 숫자를 가지겠다는 의미이다.</li>
+</ol>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-14T00:00:00.000Z" title="2020-06-14T00:00:00.000Z">2020-06-14</time><span class="level-item"><a class="link-muted" href="/categories/HTML-CSS/">HTML&amp;CSS</a></span><span class="level-item">8 minutes read (About 1143 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/14/200614python/">[패스트캠퍼스python] Reset보단 normalize, 기본 box-sizing, 홈페이지 기본 레이아웃(hero-section), 가상클래스 (hover, active, focus 등)</a></h1><div class="content"><h3 id="파이썬-인강-자기계발-챌린지-21회차-미션"><a href="#파이썬-인강-자기계발-챌린지-21회차-미션" class="headerlink" title="파이썬 인강 자기계발 챌린지 21회차 미션"></a>파이썬 인강 자기계발 챌린지 21회차 미션</h3><h2 id="1-Reset보단-normalize"><a href="#1-Reset보단-normalize" class="headerlink" title="1. Reset보단 normalize"></a>1. Reset보단 normalize</h2><p>기본값으로 설정된 css가 레이아웃을 잡을때 불편함을 초래하기도 한다.<br>이에 reset을 시켜주는 코드들이 생겨났다.<br>하지만 reset코드들은 오래된 것들이 많아 요즘 유용하게 쓰이는 기본값까지 초기화시켜버리기떼문에 효율적이지 못하다.</p>
+<p>따라서 최근에는 <a href="https://necolas.github.io/normalize.css/">normalize</a>를 더 많이 사용한다.</p>
+<p>Normalize.css 파일에 들어가서 다운로드를 누르면 css 파일이 나오고 해당 파일 코드를 전체복사하여 내 프로젝트에 normalize.css로 새로운 파일을 만들어 전체붙여넣기해준다.<br>normalize.css안에는 주석으로 해당 코드들이 어떤 역할을 하는지 자세하게 알려주어 필요한 코드만 사용할 수 있고 필요하지 않는 코드들은 삭제하기만 하면 된다.</p>
+<p><img src="/img/python06141.png" alt=""></p>
+<h2 id="2-기본-box-sizing-잡기"><a href="#2-기본-box-sizing-잡기" class="headerlink" title="2. 기본 box-sizing 잡기"></a>2. 기본 box-sizing 잡기</h2><p>레이아웃의 에러를 최소화하기 위해서는 box-sizing을 border-box로 하는 것이 좋다.<br>여기서 <code>*</code>는 모든 영역에 적용한다는 뜻이다.<br><code>*::before</code>와 <code>*::atfer</code>는 숨은 영역을 뜻한다.</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">*, </span><br><span class="line">*<span class="selector-pseudo">::before</span>,</span><br><span class="line">*<span class="selector-pseudo">::atfer</span> &#123;</span><br><span class="line">	<span class="attribute">box-sizing </span>: border-box;</span><br><span class="line">&#125;</span><br><span class="line"> <span class="selector-tag">box-sizing</span>을 <span class="selector-tag">border-box</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="3-레이아웃짜기-hero-section"><a href="#3-레이아웃짜기-hero-section" class="headerlink" title="3. 레이아웃짜기 hero-section"></a>3. 레이아웃짜기 hero-section</h2><p>웹페이지를 구성할 레이아웃을 짜본적이 없어서 혼자서 웹페이지를 만들때 수정을 엄청 많이 하게 된다.<br>그래서 다른 사람은 어떻게 짜는 지 궁금했는데 강사가 자신이 왜 이렇게 레이아웃을 짜게 되었는지 설명을 해줘서 좋았다.</p>
+<p>hero-section을 처음 듣게되었는데 이는 해당 웹페이지가 중요시하는 콘텐츠를 먼저 배치하고 링크를 걸어두는 것이다.</p>
+<p>아래 이미지는 강사님이 장고사이트의 레이아웃을 분석한 것이다.</p>
+<p><img src="/img/python06142.png" alt=""></p>
+<h2 id="4-Pseudo-class-가상클래스-hover-active-focus-등"><a href="#4-Pseudo-class-가상클래스-hover-active-focus-등" class="headerlink" title="4. Pseudo-class 가상클래스 (hover, active, focus 등 )"></a>4. Pseudo-class 가상클래스 (hover, active, focus 등 )</h2><p>가상클래스를 사용하여 마우스가 올라가있거나, 활성화되어있거나, 키보드로 선택되었을 때 css요소를 적용할 수 있다.<br>예를 들면 아래 태그는 a태그에 마우스가 올라가있거나, 활성화되어있거나, 키보드로 선택되었을때 배경색상 변경하는 코드이다.</p>
+<ul>
+<li>hover : 마우스가 올라가 있는 경우</li>
+<li>active : 활성화되어 있는 경우</li>
+<li>focus : 키보드로 선택되어있는 경우</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span> : <span class="selector-tag">hover</span>,</span><br><span class="line"><span class="selector-tag">a</span> : <span class="selector-tag">active</span>, </span><br><span class="line"><span class="selector-tag">a</span> : <span class="selector-tag">focus</span> &#123;</span><br><span class="line"><span class="comment">/* a 요소에 </span></span><br><span class="line"><span class="comment">background-color : orange;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="5-Pseudo-Element-가상요소"><a href="#5-Pseudo-Element-가상요소" class="headerlink" title="5. Pseudo Element 가상요소"></a>5. Pseudo Element 가상요소</h2><p>없는 태그를 css로 넣어줄수도 있다.<br>아래는 h2태그에 가상의 태그인 <code>&gt;</code>를 넣는 태그이다.<br>가상태그는 html에서 드래그를 하려고해도 드래그가 되지 않는다.<br>말그대로 가상태그이기 때문이다.</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h2</span> <span class="selector-pseudo">::before</span>&#123;</span><br><span class="line">	<span class="attribute">content </span>: <span class="string">" &gt; "</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>아래 이미지는 h2태그에 가상의 태그인 손가락이모티콘을 표현했다.</p>
+<p><img src="/img/python06143.png" alt=""></p>
+<h2 id="6-Cascading-캐스캐이딩"><a href="#6-Cascading-캐스캐이딩" class="headerlink" title="6. Cascading 캐스캐이딩"></a>6. Cascading 캐스캐이딩</h2><p>캐스캐이딩은 폭포라는 의미를 가지고 있다.<br>웹페이지의 디자인이 아래 3가지 디자인과 결합할 수 있기때문에 그 결과값이 내가 예상한대로 나오지 않을 수 있다.</p>
+<ul>
+<li>웹브라우저의 기본 디자인</li>
+<li>브라우저 사용자의 디자인</li>
+<li>그리고 웹페이지 저자의 디자인</li>
+</ul>
+<p>따라서 선택자 구체성 점수를 매겨서 우선순위를 잘 파악하고 있어야한다.</p>
+<h2 id="7-선택자-구체성-점수"><a href="#7-선택자-구체성-점수" class="headerlink" title="7. 선택자 구체성 점수"></a>7. 선택자 구체성 점수</h2><p>선택자와 요소에 따라 아래와 같이 다른 값을 매기고 이를 더해주면 어느 것이 더 우선순위인지 확인 할 수 있다.</p>
+<ul>
+<li>HTML태그의 style속성 사용 : 1000점</li>
+<li>ID선택자 : 100점</li>
+<li>CLASS선택자와 가상클래스 : 10점</li>
+<li>TAG선택자와 가상요소 : 1점</li>
+</ul>
+<p>사용한 태그가 위의 4분류중 어디에 속하는 지 잘 모르겠는 경우에는 <a href="https://specificity.keegan.st/">구체성 계산기</a>에 접속하여 궁금한 태그를 복사 붙여넣기하면 된다.<br>계산기가 자동적으로 사용된 아래 세가지</p>
+<ul>
+<li>ID선택자 갯수</li>
+<li>CLASS선택자와 가상클래스 갯수</li>
+<li>TAG선택자와 가상요소 갯수</li>
+</ul>
+<p>를 알려준다 그걸 기준으로 위의 점수표와 함께 계산하면 된다.</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-13T00:00:00.000Z" title="2020-06-13T00:00:00.000Z">2020-06-13</time><span class="level-item"><a class="link-muted" href="/categories/HTML-CSS/">HTML&amp;CSS</a></span><span class="level-item">6 minutes read (About 890 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/13/200613python/">[패스트캠퍼스python] float, position, css선택자 우선순위</a></h1><div class="content"><h3 id="파이썬-인강-자기계발-챌린지-20회차-미션"><a href="#파이썬-인강-자기계발-챌린지-20회차-미션" class="headerlink" title="파이썬 인강 자기계발 챌린지 20회차 미션"></a>파이썬 인강 자기계발 챌린지 20회차 미션</h3><p>nomal flow에서 벗어나 복잡한 방식의 레이아웃을 하는 방법에 대해 알아보자.<br>크게 두가지 속성으로 사용할 수 있다.</p>
+<ul>
+<li><p>float</p>
+</li>
+<li><p>position</p>
+</li>
+</ul>
+<h2 id="1-float"><a href="#1-float" class="headerlink" title="1. float"></a>1. float</h2><p>float로는 정교한 레이아웃을 작성할 수 있다.<br>float는 이름그대로 띄우는, 뭔가 떠있는 배치이다.</p>
+<p>먼저 비교를 위해 아무것도 적용안된 레이아웃을 보자.<br>일반적인 단락을 나눈 줄글의 형태이다.<br>가로로 나눠진 단락을 세로로 나누고싶을때 float가 유용하다.</p>
+<p><img src="/img/python06131.png" alt=""></p>
+<p>이제 float는 left와 right로 줄 수 있는데 아래 이미지는 <code>float : left;</code>로 적용한 모습이다.<br>아래 이미지에서 알 수 있듯이 해당 태그가 왼쪽으로 띄어지고 밑에 배치되었던 줄글이 태그옆으로 옮겨지면서 자연스럽게 흘러내려가는 형태를 취하고 있다</p>
+<p><img src="/img/python06132.png" alt=""></p>
+<p>여기서 footer가 조금 아쉽다.<br>column 3개에만 <code>float : 30%;</code>씩 적용해주었는데 10%가 남다보니 footer의 위치가 어색하게 되어버렸다.<br>따라서 column들만 float left로 주고 footer는 하단에 배치하고싶다면 아래와 같이 <code>clear : both;</code> 속성을 넣어주면 된다.</p>
+<p>clear는 left, right, both 의 값을 선택할 수 있고 해당 사이드에 float정렬을 취소한다.<br>따라서 현재상황에서는 <code>clear : left;</code> 또는 <code>clear : both;</code> 로 같은 결과값을 출력할 수 있다.</p>
+<p><img src="/img/python06133.png" alt=""></p>
+<p>짜잔- 세상 깔끔하다!</p>
+<h2 id="2-position"><a href="#2-position" class="headerlink" title="2. position"></a>2. position</h2><ol>
+<li>static</li>
+</ol>
+<p>postion 속성의 default 값이다.<br>HTML 태그 순서에 따라 화면에 출력된다.</p>
+<ol start="2">
+<li>relative</li>
+</ol>
+<p>원래 위치를 기준으로 상대적인 위치를 지정해줄 수 있다.</p>
+<p><code>position : relative;</code>로는 어떠한 값도 바꿀 수 없다.<br>그 밑에 꼭 top, bottom, left, right의 값을 통해 어디를 얼만큼 이동할 것인지 정할 수 있다.<br>여기서 중요한 점은 태그의 원래 위치는 변하지 않는다는 것이다. 없어지지 않고 기억되어져 있다.</p>
+<p><img src="/img/python06134.png" alt=""></p>
+<p>하트의 위치에서 top과 left에 100씩 값을 주어서 하트가 글 위로 오게되었다.<br>여기서 쉽게 헷갈릴 수 있는 점이 있다.<br>바로 하트가 top과 left로 100씩 움직이는 것이 아니라, top과 left에 100씩 빈 공간을 준다고 생각하면 된다.<br>빈 공간만큼 원래 태그는 밀려나게된다.</p>
+<ol start="3">
+<li>absolute</li>
+</ol>
+<p>relative와 비슷하지만 차이점이 있다면 relative는 원래 태그자리를 빈공간으로 유지하는데 반해, absolute 원래 태그자리를 없애버리고 상대적인 위치에 위치한다.<br>absolute는 상위태그를 기준으로 상대적인 위치를 정한다.</p>
+<p><img src="/img/python06135.png" alt=""></p>
+<ol start="4">
+<li>fixed</li>
+</ol>
+<p>absolute와 상대적인 위치를 가진다는 것은 비슷하지만 상위태그기준이 아닌 veiwport(웹페이지가 보이는 화면)을 기준으로 뷰포인트의 특정 위치에 태그를 고정한다. 따라서 스크롤을 내려도 태그는 같은 위치에 고정되어있다.</p>
+<h2 id="3-css선택자-우선순위"><a href="#3-css선택자-우선순위" class="headerlink" title="3. css선택자 우선순위"></a>3. css선택자 우선순위</h2><p>선택자는 총 3종류가 있다.</p>
+<p>id선택자 &gt; class선택자 &gt; tag선택자</p>
+<p>만약 id와 tag에 둘다 css값이 적용되어 있으면 id클래스가 우선이므로 tag값에 덮어씌어져서 id 클래스값이 출력되게 된다.</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-12T00:00:00.000Z" title="2020-06-12T00:00:00.000Z">2020-06-12</time><span class="level-item"><a class="link-muted" href="/categories/HTML-CSS/">HTML&amp;CSS</a></span><span class="level-item">8 minutes read (About 1264 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/12/200612python/">[패스트캠퍼스python] font-size, font-family, font color</a></h1><div class="content"><h3 id="파이썬-인강-자기계발-챌린지-19회차-미션"><a href="#파이썬-인강-자기계발-챌린지-19회차-미션" class="headerlink" title="파이썬 인강 자기계발 챌린지 19회차 미션"></a>파이썬 인강 자기계발 챌린지 19회차 미션</h3><h2 id="1-font-size"><a href="#1-font-size" class="headerlink" title="1. font-size"></a>1. font-size</h2><p>폰트 사이즈를 지정하는데 크게 가지방식이 있다.<br>직접 수치를 입력하는 방식과 상위요소 기준 상대적수치를 적용하는 방식 그리고 상속값을 적용하는 방식이다.</p>
+<p><img src="/img/python06121.png" alt=""></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">font-size : 15px; //직접 입력.</span><br><span class="line">font-size : 1.5rem; //상위요소 기준 상대적 수치.</span><br><span class="line">font-size : inherit; //상속값 위의 태그의 폰트사이즈를 그대로 받는다.</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="em과-rem의-차이"><a href="#em과-rem의-차이" class="headerlink" title="em과 rem의 차이?"></a>em과 rem의 차이?</h3><p>css다루다보면 em과 rem을 접하게 된다.<br>나는 항상 px이나 %단위로 직접 수치를 입력하여 지정하였는데 em, rem을 사용하면 상대적인 수치가 자동적으로 정해져서 훨씬 디자인이 깔끔하고 통일성있어보이기도 한다.<br>그렇다면 em과 rem의 차이는 무엇일까?<br>둘 다 수치를 직접적으로 입력하는 방식이 아니다.</p>
+<ul>
+<li>em : 상위요소의 크기에 비례.</li>
+<li>rem : 최상위 요소의 크기 즉, html 요소 크기에 비례.</li>
+<li>참고로 html 요소 크기의 기본값은 웹브라우저 설정에서 정한 크기이며 보통 16px이다.</li>
+</ul>
+<p>결국 둘의 차이점은 최상위요소의 크기인지 상위요소의 크기인지의 차이다.<br>언뜻 읽으면 큰 차이가 없을 것 같지만 만약 em의 상위요소가 또 다른 상위요소에 상속을 받았다면 원하는 크기로 지정이 어려울 수 있다. 왜냐면 em은 상속의 영향을 받기 때문이다.</p>
+<p>따라서 rem을 쓰는 것을 더 추천한다. 다만 rem을 쓰면 사용자가 커스터마이징해놓은 사이즈를 무시해버려서 사용자의 가독성을 오히려 떨어뜨릴수있다.</p>
+<p>따라서 적절한 곳에 em과 rem을 쓰는 것이 좋다</p>
+<p>그럼 언제 rem과 em을 써야할까?</p>
+<p><a href="https://webdesign.tutsplus.com/ko/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984">참고링크 : 종합 안내: Rem 그리고 Em, 언제 써야 할까</a></p>
+<ul>
+<li>em 단위는 최상위 요소에 지정된 폰트 크기 말고, 다른 특정 요소의 폰트 크기에 따라 그 크기가 변해야 하는 곳에 사용하십시오.</li>
+<li>rem 단위는 em 단위를 쓸 필요가 없고, 또 브라우저의 폰트 크기 설정에 따라 그 크기가 변해야 하는 곳에 사용하십시오.</li>
+<li>폰트 크기 지정을 비롯해서 꼭 em 단위를 써야 하는 곳이 아니라면 rem 단위를 사용하십시오.</li>
+<li>media queries에도 rem 단위를 쓰세요.</li>
+<li>다중 칼럼 레이아웃의 너비에는 em 혹은 rem을 쓰진 마십시오 - 대신 %를 쓰세요.</li>
+<li>만약에 크기가 변할 경우 해당 요소의 레이아웃이 깨지는 걸 막을 수 없다면 em과 rem 모두 쓰지 마세요.</li>
+</ul>
+<h2 id="2-font-family"><a href="#2-font-family" class="headerlink" title="2. font-family"></a>2. font-family</h2><p>폰트패밀리는 글꼴집합이다.<br>만약에 폰트를 하나를 지정했다고 생각해보자.<br>이용자가 해당 폰트가 없으면 폰트를 기본값으로 표시되어진다.</p>
+<ul>
+<li>serif는 바탕체계열</li>
+<li>Sans-serif는 고딕체계열</li>
+<li>Cursive는 필기체계열</li>
+<li>monospace는 가로 폭이 동일한 글꼴</li>
+</ul>
+<p>아래는 폰트패밀리예시이다</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"><span class="attribute">font-family </span>: Arial, Georgia, Times, <span class="string">"Times New Roman"</span>, serif</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>위에서 말했듯이 이용자의 컴퓨터에 지정한 폰트가 설정되어 있지 않으면 기본값으로 표시된다.<br>이러한 경우에는 아예 <strong>웹 폰트</strong>를 사용하면, 이용자의 컴퓨터에 설치되지 않은 글꼴을 사용할 수 있다.</p>
+<p>웹폰트 사용 방법은 html에서 link태그로 삽입하면된다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"https://fonts.googleapis.com/css?family=Indie+Flower|Londrina+Outline|Open+Sans+Condensed:300"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">  <span class="selector-id">#font1</span>&#123;</span></span><br><span class="line">	font-family: 'Open Sans Condensed', sans-serif;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="css">  <span class="selector-id">#font2</span>&#123;</span></span><br><span class="line">	font-family: 'Indie Flower', cursive;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><a href="https://opentutorials.org/course/2418/13372">참고링크 : 웹폰트 생활코딩</a></p>
+<h2 id="3-font-한꺼번에-적용"><a href="#3-font-한꺼번에-적용" class="headerlink" title="3. font 한꺼번에 적용"></a>3. font 한꺼번에 적용</h2><p>위에서 사용했던 폰트스타일이외에도 다양한 폰트스타일을 한 줄 코드로 작성할 수 있다<br>중요한 점은 아래 순서대로 작성해야 제대로 적용이 된다</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">font</span> : 폰트스타일 폰트웨이트 폰트사이즈 폰트패밀리</span><br></pre></td></tr></table></figure>
+
+<p>적용된 예시는 아래와 같다<br>표시를 한 순서대로 </p>
+<ul>
+<li>1번에는 폰트스타일</li>
+<li>2번에는 폰트웨이트</li>
+<li>3번에는 폰트사이즈</li>
+<li>4번에는 폰트패밀리</li>
+</ul>
+<p><img src="/img/python06122.png" alt=""></p>
+<h2 id="4-font-color"><a href="#4-font-color" class="headerlink" title="4. font color"></a>4. font color</h2><p>폰트 컬러지정은 그냥 color적어주면 된다</p>
+<ul>
+<li>rgba(0,0,0) : 숫자가 작을수록 어두운 색을 띈다 = 검정색 = #000000</li>
+<li>rgba(255,255,255) : 숫자가 높을수록 밝은 색을 띈다 = 흰색 = #ffffff </li>
+</ul>
+<p>폰트의 투명도도 조절할 수 있다.<br>rgba색상코드에서 마지막에 0에서 1사이의 숫자를 정해주면 된다</p>
+<ul>
+<li>0 : 완전투명</li>
+<li>0.5 : 절반만 투명</li>
+<li>1 : 불투명</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">color</span> : <span class="selector-tag">rgba</span>(0,0,0, 0<span class="selector-class">.5</span>)</span><br><span class="line">// 검정색컬러에 절반만 투명</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/python06123.png" alt=""></p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-12T00:00:00.000Z" title="2020-06-12T00:00:00.000Z">2020-06-12</time><span class="level-item"><a class="link-muted" href="/categories/JavaScript/">JavaScript</a></span><span class="level-item">5 minutes read (About 720 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/12/200612jspi2/">ITWILL : Date객체 자세히, 디데이구하는 함수</a></h1><div class="content"><h3 id="ITWILL학원-8강-JS기초-BY-정규태강사"><a href="#ITWILL학원-8강-JS기초-BY-정규태강사" class="headerlink" title="ITWILL학원 : 8강 JS기초 BY 정규태강사"></a>ITWILL학원 : 8강 JS기초 BY 정규태강사</h3><h2 id="1-Date객체"><a href="#1-Date객체" class="headerlink" title="1. Date객체"></a>1. Date객체</h2><p>Date 객체의 특징</p>
+<ul>
+<li>년,월,일 지정해서 객체를 사용</li>
+<li>0부터 11까지를 1월부터 12월로 나타낸다. </li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//참고로 today는 2020년 6월 12일이다.</span></span><br><span class="line"><span class="keyword">let</span> today = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line"><span class="built_in">document</span>.write(today+<span class="string">"&lt;br&gt;"</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> day = <span class="keyword">new</span> <span class="built_in">Date</span>(<span class="number">2020</span>,<span class="number">0</span>,<span class="number">1</span>); <span class="comment">//month숫자를 0에서부터 세기때문에 1월1일은 0,1이 되어야함 </span></span><br><span class="line"><span class="built_in">document</span>.write(day+<span class="string">"&lt;br&gt;"</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> day1 = <span class="keyword">new</span> <span class="built_in">Date</span>(<span class="number">2020</span>,<span class="number">1</span>,<span class="number">1</span>); <span class="comment">//2월1일</span></span><br><span class="line"><span class="built_in">document</span>.write(day1+<span class="string">"&lt;br&gt;"</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> day2 = <span class="keyword">new</span> <span class="built_in">Date</span>(<span class="number">2020</span>,<span class="number">0</span>,<span class="number">1</span>,<span class="number">11</span>,<span class="number">30</span>,<span class="number">5</span>); <span class="comment">//년,월,일,시,분,초 지정해서 객체사용가능</span></span><br><span class="line"><span class="built_in">document</span>.write(day2+<span class="string">"&lt;br&gt;"</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> day3 = <span class="keyword">new</span> <span class="built_in">Date</span>(<span class="number">2020</span>,<span class="number">0</span>,<span class="number">1</span>,<span class="number">11</span>,<span class="number">61</span>,<span class="number">5</span>); <span class="comment">//분에 61분을 적으면 자동으로 1시간이 올라감</span></span><br><span class="line"><span class="built_in">document</span>.write(day3+<span class="string">"&lt;br&gt;"</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> day4 = <span class="keyword">new</span> <span class="built_in">Date</span>(<span class="string">"2020/1/1"</span>) <span class="comment">//년,월,일만 가능. 시분초불가. 월을 나타낼때 0부터가 아니라 1부터 시작</span></span><br><span class="line"><span class="built_in">document</span>.write(day4+<span class="string">"&lt;br&gt;"</span>) </span><br><span class="line"></span><br><span class="line"><span class="comment">// 출력값 순서대로</span></span><br><span class="line">Fri Jun <span class="number">12</span> <span class="number">2020</span> <span class="number">11</span>:<span class="number">14</span>:<span class="number">44</span> GMT+<span class="number">0900</span> (대한민국 표준시)</span><br><span class="line">Wed Jan <span class="number">01</span> <span class="number">2020</span> <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> GMT+<span class="number">0900</span> (대한민국 표준시)</span><br><span class="line">Sat Feb <span class="number">01</span> <span class="number">2020</span> <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> GMT+<span class="number">0900</span> (대한민국 표준시)</span><br><span class="line">Wed Jan <span class="number">01</span> <span class="number">2020</span> <span class="number">11</span>:<span class="number">30</span>:<span class="number">05</span> GMT+<span class="number">0900</span> (대한민국 표준시)</span><br><span class="line">Wed Jan <span class="number">01</span> <span class="number">2020</span> <span class="number">12</span>:<span class="number">01</span>:<span class="number">05</span> GMT+<span class="number">0900</span> (대한민국 표준시)</span><br><span class="line">Wed Jan <span class="number">01</span> <span class="number">2020</span> <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> GMT+<span class="number">0900</span> (대한민국 표준시)</span><br></pre></td></tr></table></figure>
+
+<p>변수에 저장한 date객체를 가져와서 사용해보자<br>요일출력하는 getDay()의 경우 0(일)부터 6(토)까지를 나타낸다.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//참고로 today는 2020년 6월 12일이다.</span></span><br><span class="line"><span class="keyword">let</span> today = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line"></span><br><span class="line"><span class="built_in">document</span>.write(today.getFullYear() +<span class="string">"&lt;br&gt;"</span>) <span class="comment">//년출력 year말고 fullyear써야함</span></span><br><span class="line"><span class="built_in">document</span>.write(today.getMonth() +<span class="string">"&lt;br&gt;"</span>)  <span class="comment">//월출력 (0부터 11까지)</span></span><br><span class="line"><span class="built_in">document</span>.write((today.getMonth()+<span class="number">1</span>) +<span class="string">"&lt;br&gt;"</span>) <span class="comment">//알아보기쉽게 1을 추가해서 사용</span></span><br><span class="line"><span class="built_in">document</span>.write(today.getDate() +<span class="string">"&lt;br&gt;"</span>) <span class="comment">//일출력</span></span><br><span class="line"><span class="built_in">document</span>.write(today.getDay() +<span class="string">"&lt;br&gt;"</span>) <span class="comment">//요일출력</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 출력값 순서대로</span></span><br><span class="line"><span class="number">2020</span></span><br><span class="line"><span class="number">5</span></span><br><span class="line"><span class="number">6</span></span><br><span class="line"><span class="number">12</span></span><br><span class="line"><span class="number">5</span></span><br></pre></td></tr></table></figure>
+
+<p>숫자로 들어온 요일을 글자로는 어떻게 바꿀수있을까?<br>여러가지 방법이 있다</p>
+<ol>
+<li>Array의 index 활용<br>요일이 숫자로만 출력되어 아쉬운 경우에는 변수에 넣어 index를 이용하여 아래처럼 금요일 이렇게 출력되게 할수있다</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> today = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line"><span class="keyword">let</span> week = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="string">'일'</span>, <span class="string">'월'</span>, <span class="string">'화'</span>, <span class="string">'수'</span>, <span class="string">'목'</span>, <span class="string">'금'</span>, <span class="string">'토'</span>)</span><br><span class="line"><span class="built_in">document</span>.write(week[today.getDay()] + <span class="string">"요일 &lt;br&gt;"</span>)</span><br></pre></td></tr></table></figure>
+
+
+<ol start="2">
+<li>제어문사용 (if나 switch)<br>if나 switch를 통해 일일히 조건을 걸어 나열할수있다<br>if는 많이 써보았으니 switch를 써보자</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">function <span class="title">getToDay</span><span class="params">(day)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">switch</span> (day)&#123;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">0</span> : </span><br><span class="line">		document.write(<span class="string">'일요일'</span>)</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">1</span> : </span><br><span class="line">		document.write(<span class="string">'월요일'</span>)</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">2</span> : </span><br><span class="line">		document.write(<span class="string">'화요일'</span>)</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">3</span> : </span><br><span class="line">		document.write(<span class="string">'수요일'</span>)</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">4</span> : </span><br><span class="line">		document.write(<span class="string">'목요일'</span>)</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">5</span> : </span><br><span class="line">		document.write(<span class="string">'금요일'</span>)</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">6</span> : </span><br><span class="line">		document.write(<span class="string">'토요일'</span>)</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">getToDay(today.getDay())</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="2-디데이-계산하는-함수-구하기"><a href="#2-디데이-계산하는-함수-구하기" class="headerlink" title="2. 디데이 계산하는 함수 구하기"></a>2. 디데이 계산하는 함수 구하기</h2><p>Date()객체를 활용하여 디데이를 계산한느 함수를 구해보자<br>Date()객체에서는 사칙연산이 적용되는데 단위가 밀리초로 출력된다</p>
+<ul>
+<li>밀리초 = 1/1000초</li>
+<li>1초 = 1000msc</li>
+<li>1분 = 60 * 1000</li>
+<li>1시간 = 60 * 60 * 1000 </li>
+<li>하루 = 24 * 60 * 60 * 1000</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">calculator</span>(<span class="params">year, month, day</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">let</span> today = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">	<span class="keyword">let</span> lastday1 = <span class="keyword">new</span> <span class="built_in">Date</span>(year,(month<span class="number">-1</span>),day) <span class="comment">//컴터는 0월부터계산하니까 사용자입력값에서 1을 빼줌</span></span><br><span class="line">	<span class="built_in">console</span>.log(lastday1)</span><br><span class="line">	<span class="keyword">let</span> result =  (lastday1 - today) / (<span class="number">24</span> * <span class="number">60</span> * <span class="number">60</span> * <span class="number">1000</span>);</span><br><span class="line">	<span class="built_in">document</span>.write(<span class="built_in">Math</span>.ceil(result) + <span class="string">"일 남았습니다 &lt;br&gt;"</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">calculator(<span class="number">2020</span>,<span class="number">12</span>,<span class="number">31</span>); <span class="comment">//202일 남았습니다</span></span><br><span class="line">calculator(<span class="number">2020</span>,<span class="number">06</span>,<span class="number">14</span>); <span class="comment">//2일 남았습니다</span></span><br></pre></td></tr></table></figure></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-12T00:00:00.000Z" title="2020-06-12T00:00:00.000Z">2020-06-12</time><span class="level-item"><a class="link-muted" href="/categories/JavaScript/">JavaScript</a></span><span class="level-item">6 minutes read (About 957 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/12/200612jspi/">ITWILL : Object객체 전체개념, tv채널객체함수, new를 쓰고 안쓰고의 차이</a></h1><div class="content"><h3 id="ITWILL학원-8강-JS기초-BY-정규태강사"><a href="#ITWILL학원-8강-JS기초-BY-정규태강사" class="headerlink" title="ITWILL학원 : 8강 JS기초 BY 정규태강사"></a>ITWILL학원 : 8강 JS기초 BY 정규태강사</h3><h2 id="1-객체-Object"><a href="#1-객체-Object" class="headerlink" title="1.객체 Object"></a>1.객체 Object</h2><ol>
+<li>정의</li>
+</ol>
+<p>자바스크립트는 객체기반의 언어<br>객체는 기능, 속성을 포함하고 있는 것<br>추상화된 객체를 사용할때 속성은 변수를 사용해서 표현하고 기능은 함수(매서드)를 사용해서 표현한다<br>자바스트립트에서는 객체를 직접 만들어쓰지않고 만들어진 객체를 활용한다<br>하지만 자바는 자주 직접 만들어서 사용한다</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let phone = <span class="keyword">new</span> Object();  <span class="comment">//여기서 phone은 참조변수</span></span><br><span class="line">phone.모델명 = <span class="string">"아이폰"</span></span><br><span class="line">phone.on(); <span class="comment">//전원켜는 기능 실행</span></span><br></pre></td></tr></table></figure>
+
+<p>위의 phone을 참조변수라고 한다</p>
+<ol start="2">
+<li>객체종류</li>
+</ol>
+<ul>
+<li>내장객체<ul>
+<li>자바스크립트엔진에 포함되어있는 객체</li>
+<li><a href="https://sowon-dev.github.io/2020/06/15/200615jspi2/">String : 문자를 처리하는 객체</a></li>
+<li><a href="https://sowon-dev.github.io/2020/06/12/200612jspi2/">Date : 날짜를 처리하는 객체</a></li>
+<li><a href="https://sowon-dev.github.io/2020/06/15/200615jspi/">Array : 배열을 처리하는 객체</a></li>
+<li>Math : 수학을 처리하는 객체</li>
+<li>등등</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="https://sowon-dev.github.io/2020/06/15/200615jspi3/">브라우저 객체모델(BOM : Browser Object Model)</a><ul>
+<li>브라우저에 계층적으로 내장되어 있는 객체</li>
+<li>즉 단계가 있는 객체</li>
+<li><a href="https://sowon-dev.github.io/2020/06/15/200615jspi3/">window</a></li>
+<li><a href="(https://sowon-dev.github.io/2020/06/17/200617jspi/)">screen</a></li>
+<li><a href="https://sowon-dev.github.io/2020/06/16/200616jspi2/">location</a></li>
+<li><a href="https://sowon-dev.github.io/2020/06/17/200617jspi/">history</a></li>
+<li><a href="https://sowon-dev.github.io/2020/06/17/200617jspi/">navigator</a></li>
+<li><a href="https://sowon-dev.github.io/2020/06/16/200616jspi/">document</a></li>
+<li>등등</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="https://sowon-dev.github.io/2020/06/17/200617jspi2/">문서 객체 모델(DOM : Document Object Model)</a><ul>
+<li>HTML 테그의 문서구조 + CSS</li>
+<li>IE8이하의 버전에서 호환성이 떨어지기에 잘 안쓰게 된다 -&gt; 대신 jQuery문서객체모델을 사용</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-내장객체"><a href="#2-내장객체" class="headerlink" title="2. 내장객체"></a>2. 내장객체</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">let 참조변수 = <span class="keyword">new</span> 생성변수();</span><br></pre></td></tr></table></figure>
+
+<p>new : 객체(instance)를 생성하는 연산자이다 -&gt; 메모리에 올려서 사용할 수 있도록 준비</p>
+<h2 id="3-tv-채널up-down-함수만들기"><a href="#3-tv-채널up-down-함수만들기" class="headerlink" title="3. tv 채널up/down 함수만들기"></a>3. tv 채널up/down 함수만들기</h2><p>tv 채널 up과 down이 되는 함수를 만들어보자<br>채널은 1부터 500까지 있다.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">chUp</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(tv.ch &gt;= <span class="number">1</span> &amp;&amp; tv.ch &lt; <span class="number">500</span>)&#123;</span><br><span class="line">		tv.ch ++;</span><br><span class="line">		<span class="built_in">document</span>.write(<span class="string">"현재 채널 번호는 "</span> + tv.ch  + <span class="string">"번 입니다 &lt;br&gt;"</span>)</span><br><span class="line">	&#125;<span class="keyword">else</span> <span class="keyword">if</span>(tv.ch == <span class="number">500</span>)&#123;</span><br><span class="line">		tv.ch = <span class="number">1</span>;</span><br><span class="line">		<span class="built_in">document</span>.write(<span class="string">"현재 채널 번호는 "</span> + tv.ch  + <span class="string">"번 입니다 &lt;br&gt;"</span>)</span><br><span class="line">	&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">		tv.ch += <span class="number">1</span>;</span><br><span class="line">		<span class="built_in">document</span>.write(<span class="string">"현재 채널 번호는 "</span> + tv.ch  + <span class="string">"번 입니다 &lt;br&gt;"</span>)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>실행시마다 채널이 다운되는 함수는 아래와 같다</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">chDown</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(tv.ch == <span class="number">0</span>)&#123;</span><br><span class="line">		tv.ch = <span class="number">500</span>;</span><br><span class="line">		<span class="built_in">document</span>.write(<span class="string">"현재 채널 번호는 "</span> + tv.ch + <span class="string">"번 입니다 &lt;br&gt;"</span>)</span><br><span class="line">	&#125;<span class="keyword">else</span> <span class="keyword">if</span>(tv.ch == <span class="number">1</span>)&#123;</span><br><span class="line">		tv.ch = <span class="number">500</span></span><br><span class="line">		<span class="built_in">document</span>.write(<span class="string">"현재 채널 번호는 "</span> + tv.ch + <span class="string">"번 입니다 &lt;br&gt;"</span>)</span><br><span class="line">	&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">		tv.ch -= <span class="number">1</span>;</span><br><span class="line">		<span class="built_in">document</span>.write(<span class="string">"현재 채널 번호는 "</span> + tv.ch + <span class="string">"번 입니다 &lt;br&gt;"</span>)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>tv.ch가 499일때 두 함수를 호출해보면</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">chUp() <span class="comment">// 499 -up-&gt; 500</span></span><br><span class="line">chUp() <span class="comment">//500 -up-&gt;501 -&gt;1</span></span><br><span class="line">chUp() <span class="comment">//1 -up-&gt;2</span></span><br><span class="line">chDown() <span class="comment">// 2 -down-&gt;1</span></span><br><span class="line">chDown() <span class="comment">// 1 -down-&gt;500</span></span><br><span class="line">chDown()  <span class="comment">// 500 -down-&gt;499</span></span><br><span class="line">chDown()  <span class="comment">// 500 -down-&gt;499</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="4-new-를-쓰고-안쓰고의-차이"><a href="#4-new-를-쓰고-안쓰고의-차이" class="headerlink" title="4. new 를 쓰고 안쓰고의 차이"></a>4. new 를 쓰고 안쓰고의 차이</h2><p>new 연산자는 생성자함수이다.<br>생성자란 객체를 생성할때 초기화하는 것이다.</p>
+<p>new를 쓰고 안쓰고의 차이가 뭘까? =&gt; 사용법의 차이가 있다(변수에 담아서 사용유무)</p>
+<ol>
+<li><p>객체를 생성할때 new 연산(생성자함수)를 해야하는 객체</p>
+<ul>
+<li>날짜객체 : Date()</li>
+<li>변수를 생성해서 객체를 담아서 사용<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> day = <span class="keyword">new</span> <span class="built_in">Date</span>(); <span class="comment">//변수에 담아서 사용</span></span><br><span class="line"></span><br><span class="line">day.속성 <span class="comment">//이렇게 사용해야함</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>new연산 없이 사용가능한 객체</p>
+<ul>
+<li><p>수학 : Math 객체 =&gt; Math.floor(버림), Math.round(반올림), Math.ceil(올림), Math.max(여러값비교해서 최대값), Math.min(여러값비교해서 최소값), Math.abs(절대값), Math.random(0부터 1사이에 있는 실수를 랜덤하게 출력)</p>
+<ul>
+<li>가장 자주 사용하는 것은 random이다</li>
+<li>Math.floor(Math.random() <code>*</code>10)로 0부터 10까지의 랜덤양수를 출력한다</li>
+</ul>
+</li>
+<li><p>숫자 : Number 객체</p>
+</li>
+<li><p>문자 : String 객체</p>
+</li>
+<li><p>배열 : Array 객체</p>
+</li>
+<li><p>바로 사용가능</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.floor(); <span class="comment">//변수에 담지않아도 바로 사용가능</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ol>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-12T00:00:00.000Z" title="2020-06-12T00:00:00.000Z">2020-06-12</time><span class="level-item"><a class="link-muted" href="/categories/HTML-CSS/">HTML&amp;CSS</a></span><span class="level-item">2 minutes read (About 322 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/12/200612webi/">[ITWILL : WEB]테이블 칸 합치기</a></h1><div class="content"><h3 id="ITWILL학원-3강-WEB-HTML-CSS-BY-김영희"><a href="#ITWILL학원-3강-WEB-HTML-CSS-BY-김영희" class="headerlink" title="ITWILL학원 : 3강 WEB(HTML, CSS) BY 김영희"></a>ITWILL학원 : 3강 WEB(HTML, CSS) BY 김영희</h3><h2 id="테이블-칸-합치기"><a href="#테이블-칸-합치기" class="headerlink" title="테이블 칸 합치기"></a>테이블 칸 합치기</h2><ul>
+<li>colspan = “n” : 세로방향으로 합치는 속성</li>
+<li>rowspan = “n” : 가로방향으로 합치는 속성</li>
+</ul>
+<p>칸합치는 속성은 항상 th나 td에서 이루어지지 tr에서는 절대 사용하지않는다!</p>
+<p>rowspan을 생각할때는 빨래줄(tr)에 빨래(td나th)가 걸려있다고 생각하면 편하다<br>기준을 몇번째 tr인지 확인한 뒤 빨래줄에 빨래를 걸면 아래로 내려오듯이 td가 내려와있다고 생각하면 된다. </p>
+<table>
+    <tr>
+        <th colspan="2">칸 합치는 속성</th>
+    </tr>
+    <tr>
+        <th>가로방향</th>
+        <th>세로방향</th>
+    </tr>
+    <tr>
+        <td>colspan="n"</td>
+        <td>rowspan="n"</td>
+    </tr>
+    <tr>
+        <td colspan="2">n개의 칸을 하나로 합치는 속성</td>
+    </tr>
+</table>
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;table&gt;</span><br><span class="line">	&lt;tr&gt;</span><br><span class="line">		&lt;th colspan&#x3D;&quot;2&quot;&gt;칸 합치는 속성&lt;&#x2F;th&gt;</span><br><span class="line">	&lt;&#x2F;tr&gt;</span><br><span class="line">	&lt;tr&gt;</span><br><span class="line">		&lt;th&gt;가로방향&lt;&#x2F;th&gt;</span><br><span class="line">		&lt;th&gt;세로방향&lt;&#x2F;th&gt;</span><br><span class="line">	&lt;&#x2F;tr&gt;</span><br><span class="line">	&lt;tr&gt;</span><br><span class="line">		&lt;td&gt;colspan&#x3D;&quot;n&quot;&lt;&#x2F;td&gt;</span><br><span class="line">		&lt;td&gt;rowspan&#x3D;&quot;n&quot;&lt;&#x2F;td&gt;</span><br><span class="line">	&lt;&#x2F;tr&gt;</span><br><span class="line">	&lt;tr&gt;</span><br><span class="line">		&lt;td colspan&#x3D;&quot;2&quot;&gt;n개의 칸을 하나로 합치는 속성&lt;&#x2F;td&gt;</span><br><span class="line">	&lt;&#x2F;tr&gt;</span><br><span class="line">&lt;&#x2F;table&gt;</span><br></pre></td></tr></table></figure>
+
+<p>가로방향 합치기와 세로방향합치기가 동시에 나오는 예시는 아래와 같다<br>rowspan을 위에서 말했던 빨래감예시를 들어 설명해보면, 첫 번째 tr의 빨래줄의 마지막 td에 아래 빨래감이 3개가 걸려야한다.(즉 3칸을 합친다)<br>따라서 첫번째 tr의 두번째 td에 rowspan=”3”를 해준다</p>
+<p><img src="/img/20200612.PNG" alt=""></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;table&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td colspan&#x3D;&quot;2&quot;&gt;a&lt;&#x2F;td&gt;</span><br><span class="line">        &lt;td rowspan&#x3D;&quot;3&quot;&gt;b&lt;&#x2F;td&gt;</span><br><span class="line">    &lt;&#x2F;tr&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;c&lt;&#x2F;td&gt;</span><br><span class="line">        &lt;td rowspan&#x3D;&quot;2&quot;&gt;d&lt;&#x2F;td&gt;</span><br><span class="line">    &lt;&#x2F;tr&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;e&lt;&#x2F;td&gt;</span><br><span class="line">    &lt;&#x2F;tr&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td colspan&#x3D;&quot;3&quot;&gt;f&lt;&#x2F;td&gt;</span><br><span class="line">    &lt;&#x2F;tr&gt;</span><br><span class="line">&lt;&#x2F;table&gt;</span><br></pre></td></tr></table></figure></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-11T00:00:00.000Z" title="2020-06-11T00:00:00.000Z">2020-06-11</time><span class="level-item"><a class="link-muted" href="/categories/HTML-CSS/">HTML&amp;CSS</a></span><span class="level-item">7 minutes read (About 1069 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/11/200611python/">[패스트캠퍼스python] HTML 정의태그 dl, dt, dd 태그, code 태그, block VS inline VS inline-block</a></h1><div class="content"><h3 id="파이썬-인강-자기계발-챌린지-18회차-미션"><a href="#파이썬-인강-자기계발-챌린지-18회차-미션" class="headerlink" title="파이썬 인강 자기계발 챌린지 18회차 미션"></a>파이썬 인강 자기계발 챌린지 18회차 미션</h3><p>HTML은 자주 공부했기때문에 약간 지루했지만…. 여전히 내가 몰랐던 내용이 있어서 해당 부분을 정리하고자한다.<br>알고있는 내용들은 이번 기회에 아예 외워버려야겠다.</p>
+<p><img src="/img/python06110.png" alt=""></p>
+<h2 id="1-정의태그-dl-dt-dd-태그"><a href="#1-정의태그-dl-dt-dd-태그" class="headerlink" title="1. 정의태그 dl, dt, dd 태그"></a>1. 정의태그 dl, dt, dd 태그</h2><p>어떠한 정의를 내리고 싶을 때 dl, dt, dd 태그를 사용한다.<br>자동으로 들여쓰기가  40px이 되어있다. 이때문에 들여쓰기의 거리를 조절하고 싶으면 text-indent나 margin-left, padding-left 속성값을 변경하면 된다.</p>
+<ul>
+<li><p>dl : definition list의 약자이다. 내부에 2개의 태그(dt, dd)를 포함하며 dt는 생략가능하지만 dd는 꼭 포함되어야한다.</p>
+</li>
+<li><p>dt : definition term의 약자이며 정의하고싶은 용어의 제목을 나타낸다</p>
+</li>
+<li><p>dd : definition description의 약자이며 용어의 내용을 나타내며 dl안에 필수로 들어가야한다.</p>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">dt</span>&gt;</span>정의하고싶은 용어의 제목<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">dd</span>&gt;</span>정의할 내용<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>아래 이미지는 왼쪽은 코드, 오른쪽은 그 코드출력값을 나타낸다.<br>1번 부분처럼 dl dt, dd를 단순하게 활용할 수 있다.</p>
+<p><img src="/img/python06111.png" alt=""></p>
+<p>실제 포털사이트에서 이용하는 예시도 아래 링크에서 찾을 수 있다.<br>스크린리더이용자를 위해 dl dt dd태그를 남용해서는 안되겠다.<br>모두에게 공정한 정보를 제공할 수 있는 사이트를 만들고싶다.</p>
+<p><a href="https://aoa.gitbook.io/skymimo/aoa-2019/tip/dl-dt-dd-.">참고링크 : dl dt dd 태그예시와  dl dt dd 태그를 남용하지마세요</a></p>
+<h2 id="2-code-태그"><a href="#2-code-태그" class="headerlink" title="2. code 태그"></a>2. code 태그</h2><p>코드태그는 컴퓨터 코드(code)의 일부분을 나타내주는 코드이다. 그래서 컴퓨터나 프로그래밍코드일부를 그대로 표시하고자할때 유용하다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>다음은 자바 코드의 일부분입니다. <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">code</span>&gt;</span>System.out.println("헬로자바"); <span class="tag">&lt;/<span class="name">code</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>위의 이미지에서 2번부분을 보면 code태그안에서 html태그를 표현하고싶을때, 여전히 꺽쇠는 표현이 되지 않는다. 그래서 왼쪽꺽쇠(<code>&lt;</code>)의 유니코드인 <code>&amp;lt;</code>를 사용했고<br>오른쪽꺽쇠인(<code>&gt;</code>)의 유니코드인 <code>&amp;gt;</code>를 사용했다.</p>
+<p>나는 마크다운으로 블로그를 작성하는데 항상 code표현을 백틱으로 이용해왔다. code태그 알아두면 html에서 유용하게 쓸 수 있다.</p>
+<h2 id="3-block요소와-inline요소-그리고-inline-block요소의-차이"><a href="#3-block요소와-inline요소-그리고-inline-block요소의-차이" class="headerlink" title="3. block요소와 inline요소 그리고 inline-block요소의 차이"></a>3. block요소와 inline요소 그리고 inline-block요소의 차이</h2><ul>
+<li>block 요소<ul>
+<li>줄바꿈이 이루어진다.</li>
+<li>기본적으로 가로폭 전체의 넓이를 가지는 직사각형 형태가 된다.</li>
+<li>width, height, padding, margin 등을 적용 가능.</li>
+<li>text-align이 적용 불가능.</li>
+<li>vertical-align이 적용 불가능.</li>
+<li>예시 : article, dd, div, dl, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hr, noscript, ol, p, pre, section, table, ul 등등</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line"><span class="attribute">display </span>: inline</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>inline 요소<ul>
+<li>줄바꿈이 이루어지지않는다.</li>
+<li>기본적으로 콘텐츠가 끝나는 지점까지의 길이를 가진다.</li>
+<li>width, height, margin, padding-top, padding-bottom 적용 불가능.</li>
+<li>height 대신 line-height로 높이조절가능. 대신 span태그에서는 불가능.</li>
+<li>text-align 사용 가능</li>
+<li>예시 : a, b, br, button, code, em, i, img, input, kbd, label, map, object, q, samp, small, script, select, span, strong, sub, sup, textarea, tt, var</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line"><span class="attribute">display </span>: inline</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/python06112.png" alt=""></p>
+<ul>
+<li><p>inline-block<br>위의 블럭과 인라인을 합친 것이라고 생각하면 되지만 그 특징이 조금 차이난다</p>
+<ul>
+<li>width, height 적용 가능</li>
+<li>margin, padding-top, padding-bottom 적용 가능</li>
+<li>line-height 적용 가능</li>
+<li>inline-block 끼리 공백 생성됨 -&gt; 상위 div에 { font-size: 0; } 를 적용하면 해결가능.</li>
+<li>inline-block 끼리 높이 불일치될수있음 -&gt; vertical-align 값 적용하면 해결가능. </li>
+</ul>
+</li>
+</ul>
+<p><img src="http://4.bp.blogspot.com/-TiwOixlooJk/U4UyEnv_XpI/AAAAAAAACFs/NuuLz2IvoZ4/s1600/css-display-block-vs-inline-block.png" alt="Inline vs. Block vs. Inline-Block: CSS"></p>
+<p><img src="http://hong.adfeel.info/wp-content/uploads/2017/10/%EC%9D%B8%EB%9D%BC%EC%9D%B8%EA%B3%BC-%EB%B8%94%EB%A1%9D%EC%9D%98-%EC%B0%A8%EC%9D%B4.jpg" alt="http://hong.adfeel.info/frontend/659/attachment/%EC%9D%B8%EB%9D%BC%EC%9D%B8%EA%B3%BC-%EB%B8%94%EB%A1%9D%EC%9D%98-%EC%B0%A8%EC%9D%B4/"></p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-11T00:00:00.000Z" title="2020-06-11T00:00:00.000Z">2020-06-11</time><span class="level-item"><a class="link-muted" href="/categories/JavaScript/">JavaScript</a></span><span class="level-item">11 minutes read (About 1719 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/11/200611jspi/">ITWILL : 무한반복문, 보조제어(break와continue)문, 익명함수, 재귀함수, 지역변수를 전역에서 사용하는 방법, 내장함수</a></h1><div class="content"><h3 id="ITWILL학원-7강-JS기초-BY-정규태강사"><a href="#ITWILL학원-7강-JS기초-BY-정규태강사" class="headerlink" title="ITWILL학원 : 7강 JS기초 BY 정규태강사"></a>ITWILL학원 : 7강 JS기초 BY 정규태강사</h3><h2 id="1-무한반복문"><a href="#1-무한반복문" class="headerlink" title="1. 무한반복문"></a>1. 무한반복문</h2><p>반복문이 무한으로 실행되는 반복문.<br>문제의 해결이 언제 끝날지 모르는 경우에 주로 사용.</p>
 <p>예를 들어,사용자가 정답을 맞출때까지 실행하는 퀴즈프로그램을 만들었다고 생각해보자<br>-&gt; 사용자가 언제 정답을 맞출수있을지 알수있을까?<br>-&gt; 모른다. 따라서 계속해서 실행을 하고 있어야한다<br>-&gt; 이때 무한반복문 사용<br>-&gt; 답을 맞추면 끝나야하기때문에 보조제어문이 필요하다</p>
 <ul>
 <li>실제예시 : 스마트폰의 지문인식</li>
@@ -89,721 +539,7 @@
 <li>parseInt() =&gt; 문자데이터를 정수데이터로 변경</li>
 <li>parseFloat() =&gt; 문자데이터를 실수데이터로 변경</li>
 </ul>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-10T00:00:00.000Z" title="2020-06-10T00:00:00.000Z">2020-06-10</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">4 minutes read (About 628 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/10/200610dbi/">[ITWILL : DB]select as from where, order by, 동일유저 동시접속 가능, 트랜잭션 commit과 rollback</a></h1><div class="content"><h3 id="ITWILL학원-5강-Database-BY-정지윤강사"><a href="#ITWILL학원-5강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 5강 Database BY 정지윤강사"></a>ITWILL학원 : 5강 Database BY 정지윤강사</h3><h2 id="1-SQL-select-as-from-where"><a href="#1-SQL-select-as-from-where" class="headerlink" title="1. SQL select as from where"></a>1. SQL select as from where</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">select 컬럼명, 컬럼명, 컬럼명</span><br><span class="line">from 컬럼이 있는 테이블명</span><br><span class="line">where 좌변  &#x3D; 우변</span><br><span class="line">	(컬럼명) (리터럴값)</span><br></pre></td></tr></table></figure>
-
-
-<p>예를 들면 아래와 같다<br>employees 테이블의 연봉 3000이하의 사원명을 출력하고싶다</p>
-<p><img src="/img/200610dbid1.PNG" alt=""></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select last_name, salary</span><br><span class="line">from employees</span><br><span class="line">where salary &lt;&#x3D; 3000;</span><br></pre></td></tr></table></figure>
-
-
-<p>또 as를 사용하면 원하는 컬럼명으로 임시적으로 바꾸어 출력이 가능하다<br>아래 예시는 위의 예시에서 <code>as how_much</code>만 추가해준것이다</p>
-<p><img src="/img/200610dbid2.PNG" alt=""></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select last_name, salary as how_much</span><br><span class="line">from employees</span><br><span class="line">where salary &lt;&#x3D; 3000;</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-동일유저-동시접속-가능"><a href="#2-동일유저-동시접속-가능" class="headerlink" title="2. 동일유저 동시접속 가능"></a>2. 동일유저 동시접속 가능</h2><p>회사마다 다르지만 개발자마다 각각 유저를 쓸수있고 한 유저를 다 같이 사용할 수 있다<br>그 이유는 한 유저아이디를 가지고 동시접속이 가능하기때문이다</p>
-<blockquote>
-<p>그렇다면 동시접속했는데 동일한 데이터를 동시에 commit을 날리면 그 데이터는 어떻게 되는가?<br>같은 행에 대해서는 동시작업이 안된다. 커밋,업데이트, 딜리트를 날려도 아예 실행이 안된다.<br>예시로 두사람이 employee_id =100을 접속했다. 그리고 한 사람이 데이터 수정후 커밋을 날려도 커밋이 아예 실행되지 않는다<br>반면, 한사람은 employee_id =100을 그리고 다른 한사람은 employee_id =101을 접속했으면 각자 수정이 가능하다</p>
-</blockquote>
-<p>아래 이미지처럼 1번이 먼저 데이터를 수정한 터미널창이다.<br>2번은 동일 유저로 접속한 터미널창이다. 2번 터미널창에서는 데이터 중 department_id의 전체 데이터가 ####으로 나타나서 아예 읽기조차 되지않는다</p>
-<p><img src="/img/200610dbid4.PNG" alt=""></p>
-<h2 id="3-트랜잭션-commit과-rollback"><a href="#3-트랜잭션-commit과-rollback" class="headerlink" title="3. 트랜잭션 commit과 rollback"></a>3. 트랜잭션 commit과 rollback</h2><p>DML 명령어 후에는 임시값으로 보여진다.<br>이를 커밋하거나 롤백을 해서 임시값을 저장할지 안할지 결정해야한다.</p>
-<ul>
-<li>COMMIT은 임시저장값을 저장한다. COMMIT후에는 낙장불입, 다시 되돌릴수없다</li>
-<li>ROLLBACK은 임시저장값을 이전의 원래 값으로 되돌아간다. </li>
-</ul>
-<h2 id="4-system-권한-부여"><a href="#4-system-권한-부여" class="headerlink" title="4. system 권한 부여"></a>4. system 권한 부여</h2><ul>
-<li>session : 데이터 베이스를 연결할 수 있는 권한<ul>
-<li>다른 권한을 다 주고 이 권한만 revoke한다면 결국 모든 데이터를 사용하지못하게된다.</li>
-</ul>
-</li>
-</ul>
-<p><a href="http://www.gurubee.net/lecture/1008">시스템권한 링크</a></p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-10T00:00:00.000Z" title="2020-06-10T00:00:00.000Z">2020-06-10</time><span class="level-item"><a class="link-muted" href="/categories/HTML-CSS/">HTML&amp;CSS</a></span><span class="level-item">9 minutes read (About 1394 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/10/200610python/">[패스트캠퍼스python] Web 기초 (프론트엔드 VS 백엔드, Codepen, MDN, devdocs, 크롬검색꿀팁)</a></h1><div class="content"><h3 id="파이썬-인강-Web-기초-프론트엔드-VS-백엔드-Codepen-MDN-devdocs-크롬검색꿀팁"><a href="#파이썬-인강-Web-기초-프론트엔드-VS-백엔드-Codepen-MDN-devdocs-크롬검색꿀팁" class="headerlink" title="파이썬 인강 : Web 기초 (프론트엔드 VS 백엔드, Codepen, MDN, devdocs, 크롬검색꿀팁)"></a>파이썬 인강 : Web 기초 (프론트엔드 VS 백엔드, Codepen, MDN, devdocs, 크롬검색꿀팁)</h3><h2 id="1-프론트엔드-Front‑end-VS-백엔드-Back-end"><a href="#1-프론트엔드-Front‑end-VS-백엔드-Back-end" class="headerlink" title="1. 프론트엔드 (Front‑end) VS 백엔드 (Back-end)"></a>1. 프론트엔드 (Front‑end) VS 백엔드 (Back-end)</h2><p>가장 많이 들었던 프론트엔드와 백엔드 그 차이점은 무엇일까?</p>
-<p>간단한 도식표로 쉽게 확인할 수 있다.</p>
-<p><img src="/img/python06101.png" alt=""></p>
-<ol>
-<li>프론트엔드 (Front‑end)<br>파란색영역으로 HTML, CSS, Javascript를 주로 다룬다.<br>사용자와 웹브라우저사이에서 입력과 출력을 주로 담당하며 가독성이나 사용성을 높여 사용자가 편리하게 이용할 수 있도록 해야한다.</li>
-</ol>
-<ol start="2">
-<li>백엔드 (Back-end)<br>주황색영역으로 웹브라우저요청에 웹서버와 데이터베이스를 통해서 응답해준다.</li>
-</ol>
-<ul>
-<li>OS(operating system 운영체제) : windows, linux, unix, mac, ios, android 등등</li>
-<li>DB(DataBase 데이터베이스) : oracle, mysql, mongoDB, mssql 등등</li>
-<li>Framework(프레임워크) : spring, flast/Django 등등</li>
-<li>프로그래밍 언어 : java, php, python 등등</li>
-</ul>
-<ol start="3">
-<li>풀스택 (Full-stack)<br>하지만 요즘은 점점 경계가 모호해지고 있는 추세이다.<br>따라서 프론트엔드와 백엔드를 모두 포함하여 풀스택 (Full-stack)이라고 부르기도 한다.</li>
-</ol>
-<hr>
-<p>실습을 하기 앞서 강사님이 여러 좋은 사이트를 알려주었다</p>
-<h2 id="2-Codepen-코드펜"><a href="#2-Codepen-코드펜" class="headerlink" title="2. Codepen 코드펜"></a>2. Codepen 코드펜</h2><p>프론트엔드를 위해 굳이 에디터를 다운로드하지않아도 웹상에서도 쉽게 다룰 수 있다.<br>바로 codepen에서 HTML과 CSS, Javascript가 가능하다.<br>가입하지 않아도 바로 쓸 수 있는 장점이 있다.</p>
-<p>원래 알고있던 사이트이다.<br>다른 개발자들이 만들어 놓은 멋진 그리고 화려한 코드를 볼 수만 있는 줄 알았다.<br>그런데 인강에서 코드 수정도 가능하다길래 직접 들어가보니 완전 신세계!!!<br>코드를 수정할 수 있다는 것을 처음 알았다. 좋은 프론트엔드 공부자료가 될 것이다.</p>
-<p><a href="https://codepen.io/topics/">Codepen Topics</a></p>
-<p>특히 codepen에 topic에는 Vue나 React를 이용해서 만든 멋진 코드들도 볼 수 있다.<br>보는 재미가 쏠쏠해서 시간가는 줄도 몰랐다.<br>특히 슉슉 날아다니는 디자인을 보면 감탄밖에 나오지 않았다.<br>정말 멋있다 사람들……<br>나도 언젠가 그러한 코드를 공유할 수 있는 실력있는 개발자가 되고싶다. </p>
-<h2 id="3-MDN-the-Mozilla-Developer-Network"><a href="#3-MDN-the-Mozilla-Developer-Network" class="headerlink" title="3. MDN(the Mozilla Developer Network)"></a>3. MDN(the Mozilla Developer Network)</h2><p>개발자들의 교과서라고 불리는 <a href="https://developer.mozilla.org/en-US/">MDN</a>이다<br>MDN은 FIREFOX를 운영하는 회사에서 만들었다고 한다.<br>사이트에 접속해서 technologies를 클릭하면 다양한 언어들이 있다.<br>이 중에 관심있는 언어를 클릭하고 궁금한 내용을 검색하면 쫘라락- 관련정보들이 엄청난 양으로 쏟아져나온다.<br>차근차근 주워먹기만 하면 끝!<br>물론 주워먹는 일이 힘들지만…..</p>
-<h2 id="4-Devdocs"><a href="#4-Devdocs" class="headerlink" title="4. Devdocs"></a>4. Devdocs</h2><p><a href="https://devdocs.io/">데브독스</a>는 위의 MDN을 가독성있게, 즉 보기쉽고 빠르게 찾을 수 있다.<br>UI가 MDN보다 훨씬 깔끔하고 쉬워서 깜짝 놀랬다.<br>이렇게 좋은 사이트가 있었다니!!! 왜 다들 MDN만 추천해줬던 것인가…<br>이젠 MDN보단 DEVDOCS를 더 잘 이용할 것같다.</p>
-<p>데드독스의 또 한가지 장점은 원하는 언어만을 설정해서 검색할 수 있다는 점이다.<br>데브독스의 검색창 옆에 점3개아이콘을 클릭하면 Preferences가 나온다<br>여기에 수많은 언어들과 툴들이 있고 이 중 관심있는 것들만 틱해주고 저장해주면 앞으로 검색시에 내가 원하는 정보만 쏙쏙 쉽게 찾을 수 있다.</p>
-<p><img src="/img/python06102.png" alt=""></p>
-<p>위의 이미지처럼 체크박스에 체크를 해주면 된다. 완전 꿀팁!!<br>이렇게 수많은 언어들이 있다니 세상 놀람다.</p>
-<h2 id="5-Can-I-use"><a href="#5-Can-I-use" class="headerlink" title="5. Can I use _?"></a>5. Can I use _?</h2><p><a href="https://caniuse.com/">Can I use</a>는 사용하고자 하는 기술이 어떤 운영체제나 기반에서 제대로 작동하는 지를 알려주는 사이트이다.<br>이 사이트가 중요한 이유는 프로그램을 만들고 배포하기 전에 상용이 가능한 지를 확인해야하기때문에 꼭 알아야한다.<br>열심히 만든 프로그램이 제대로 작동 안하면 얼마나 속상할지… 절레절레</p>
-<p><img src="/img/python06103.png" alt=""></p>
-<p>위의 예시처럼 sticky라는 기술은 구글에서 검색한 모습이다<br>붉은 색이 많을수록 지원 안되는 곳이 많으니 대체가능한 기술이 있는지 체크해야한다.</p>
-<p>처음 본 사이트인 줄 알고 즐겨찾기 추가 버튼을 눌렀는데…<br>아니 이미 저장되어 있는 사이트였다.<br>띠용?!?!?!?!?!</p>
-<p>그말인 즉슨 좋은 사이트라서 즐겨찾기해놓고 한 번도 안 들어갔나보다…허허;;</p>
-<h2 id="6-크롬-검색-꿀팁"><a href="#6-크롬-검색-꿀팁" class="headerlink" title="6.크롬 검색 꿀팁"></a>6.크롬 검색 꿀팁</h2><p>덤으로 크롬검색꿀팁을 알게되었다</p>
-<p><img src="/img/python06104.png" alt=""></p>
-<p>크롬에서 settings에 들어가서 search를 검색하여 Manage search engines을 클릭한다<br>default값으로는 google을 해놓으면 되고 Other search engines에 위의 세 사이트를 추가한다</p>
-<p>크롬 검색창에 추가한 키워드를 입력후 tab을 치면 해당사이트내에서 검색결과를 바로 확인할 수 있다.</p>
-<p>와… 대박!</p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-10T00:00:00.000Z" title="2020-06-10T00:00:00.000Z">2020-06-10</time><span class="level-item"><a class="link-muted" href="/categories/JAVA/">JAVA</a></span><span class="level-item">4 minutes read (About 556 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/10/200610javai/">[ITWILL : JAVA]기본 반복문암기, String인지 체크(typeof), N개의 양수를 받아 최대값 출력, char와 String의 차이점 산술연산자</a></h1><div class="content"><h3 id="ITWILL학원-5강-JAVA-BY-윤미영강사"><a href="#ITWILL학원-5강-JAVA-BY-윤미영강사" class="headerlink" title="ITWILL학원 : 5강 JAVA BY 윤미영강사"></a>ITWILL학원 : 5강 JAVA BY 윤미영강사</h3><h2 id="1-기본-반복문암기"><a href="#1-기본-반복문암기" class="headerlink" title="1. 기본 반복문암기"></a>1. 기본 반복문암기</h2><ol>
-<li>1~10까지 나열하기</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=<span class="number">10</span>; i++)&#123;</span><br><span class="line">	System.out.print(i);</span><br><span class="line">&#125; <span class="comment">//12345678910</span></span><br></pre></td></tr></table></figure>
-
-
-<ol start="2">
-<li>누적합구하기</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;=<span class="number">10</span>; i++)&#123;</span><br><span class="line">	sum+=i</span><br><span class="line">&#125; </span><br><span class="line">System.out.println(sum) <span class="comment">//55</span></span><br></pre></td></tr></table></figure>
-
-
-<ol start="3">
-<li>카운트세기<br>자주 사용하는 카운트 세기 반복문</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=<span class="number">10</span>; i++)&#123;</span><br><span class="line">	count+=<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line">System.out.println(count); <span class="comment">//10</span></span><br></pre></td></tr></table></figure>
-
-
-<h2 id="2-자바에서의-String인지-체크-typeof"><a href="#2-자바에서의-String인지-체크-typeof" class="headerlink" title="2. 자바에서의 String인지 체크(typeof)"></a>2. 자바에서의 String인지 체크(typeof)</h2><p>자바에서는 typeof는 없고 각 데이터별로 체크할 수 있는 방법이 있다</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. 사용자로부터 입력받아오자</span></span><br><span class="line">String [] str = <span class="keyword">new</span> String[<span class="number">3</span>];</span><br><span class="line">Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;str.length; i++)&#123;</span><br><span class="line">	str[i] = sc.next();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2. 사용자가 입력한 데이터가 string인지 체크</span></span><br><span class="line"></span><br><span class="line">String s = Arrays.toString(str);</span><br><span class="line"><span class="keyword">if</span>( s <span class="keyword">instanceof</span> String) &#123;</span><br><span class="line">	System.out.println(<span class="string">'참'</span>);</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">	System.out.println(<span class="string">"거짓"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="3-N개의-양수를-받아-최대값-출력"><a href="#3-N개의-양수를-받아-최대값-출력" class="headerlink" title="3. N개의 양수를 받아 최대값 출력"></a>3. N개의 양수를 받아 최대값 출력</h2><p>scanner로 사용자로부터 양수 n개를 받아 그 중 최대값을 화면에 출력해보자<br>기본적으로 양수 n개를 받는 코드를 작성하면 아래와 같다</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">System.out.println(<span class="string">"양수 5개를 입력하세요"</span>);</span><br><span class="line"><span class="keyword">int</span> [] num = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;num.length; i++)&#123; <span class="comment">//1. 숫자 5개 입력받기</span></span><br><span class="line">	num[i] = sc.nextInt();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;num.length; i++)&#123; <span class="comment">//2. 양수인지 체크(정수전체에서 max를 구하고싶다면 이부분을 없애면된다)</span></span><br><span class="line">	<span class="keyword">if</span>( num[i] &gt; <span class="number">0</span>)&#123;</span><br><span class="line">		System.out.print(num[i]+ <span class="string">" "</span>);</span><br><span class="line">	&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">		System.out.print(<span class="string">"양수아님 "</span>);</span><br><span class="line">	&#125;	</span><br><span class="line">&#125;System.out.println();</span><br></pre></td></tr></table></figure>
-
-<p>이제 두가지 방법으로 최대값을 구해보자</p>
-<ol>
-<li>첫번째 방법 : 삼항연산자 사용</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> max = num[<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>( <span class="keyword">int</span> i = <span class="number">1</span>;  i &lt; num.length; i++) &#123; <span class="comment">//최대값구하기</span></span><br><span class="line">	max = num[i] &gt; max ? num[i] : max;</span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line">System.out.println(<span class="string">"최대값은 : "</span>+ max);</span><br></pre></td></tr></table></figure>
-
-
-<ol start="2">
-<li>두번재 방법 : if문 사용<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> max = num[<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;num.length; i++)&#123;</span><br><span class="line">	<span class="keyword">if</span>(max &gt; num[i])&#123;</span><br><span class="line">		max = max;</span><br><span class="line">	&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">		max = num[i];</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">System.out.println(<span class="string">"최대값은 : "</span>+ max);</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<p>위의 코드를 자세히보자. 리팩토링할 부분이 보인다.<br>max가 가장 큰 수 인 경우 굳이 동일값(max = max;)을 대입할 필요가 없다 </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> max = num[<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;num.length; i++)&#123;</span><br><span class="line">	<span class="keyword">if</span>(max &lt; num[i])&#123;</span><br><span class="line">		max = num[i];</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">System.out.println(<span class="string">"최대값은 : "</span>+ max);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 위의 식을 간단하게 &#123;&#125; 중괄호를 생략할 수 있다</span></span><br><span class="line"><span class="comment">// 중괄호생략은 블록안의 내용이 한줄일때 생략가능하다</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;num.length; i++)&#123;</span><br><span class="line">	<span class="keyword">if</span>(max &lt; num[i]) max = num[i];</span><br><span class="line">&#125;</span><br><span class="line">System.out.println(<span class="string">"최대값은 : "</span>+ max);</span><br></pre></td></tr></table></figure>
-
-<p>중괄호를 생략하니 세상 간단간단해보인다</p>
-<h2 id="4-char와-String의-차이점-산술연산자"><a href="#4-char와-String의-차이점-산술연산자" class="headerlink" title="4. char와 String의 차이점 산술연산자"></a>4. char와 String의 차이점 산술연산자</h2><p>char는 연결연산자가 사용이 안된다.<br>String이 어느 한 변수 이상에 있는 경우에는 연결연산자가 사용이 된다.<br>캐릭터에서 연결연산자를 사용하고싶으면 변수들 사이에 “”를 입력해줘야한다.</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> c1= <span class="string">'a'</span>, c2= <span class="string">'b'</span>;</span><br><span class="line">System.out.println(a + b); <span class="comment">//195</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">String c1= <span class="string">'a'</span>, c2= <span class="string">'b'</span>;</span><br><span class="line">System.out.println(a + b); <span class="comment">//ab</span></span><br></pre></td></tr></table></figure>
-
-<p>만약 char를 ab로 나타내고 싶다면 변수들 사이에 “”해주면 된다</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> c1= <span class="string">'a'</span>, c2= <span class="string">'b'</span>;</span><br><span class="line">System.out.println(a +<span class="string">""</span>+ b); <span class="comment">//ab</span></span><br></pre></td></tr></table></figure></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-09T00:00:00.000Z" title="2020-06-09T00:00:00.000Z">2020-06-09</time><span class="level-item"><a class="link-muted" href="/categories/HTML-CSS/">HTML&amp;CSS</a></span><span class="level-item">8 minutes read (About 1130 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/09/200609python/">[패스트캠퍼스python] Web 기초 (클라이언트 VS 서버, 웹프로그래밍, HTTP, 크롬 개발자도구)</a></h1><div class="content"><h3 id="파이썬-인강-Web-기초-클라이언트-VS-서버-웹프로그래밍-HTTP-크롬-개발자도구"><a href="#파이썬-인강-Web-기초-클라이언트-VS-서버-웹프로그래밍-HTTP-크롬-개발자도구" class="headerlink" title="파이썬 인강 : Web 기초 (클라이언트 VS 서버, 웹프로그래밍, HTTP, 크롬 개발자도구)"></a>파이썬 인강 : Web 기초 (클라이언트 VS 서버, 웹프로그래밍, HTTP, 크롬 개발자도구)</h3><p>15회차까지는 파이썬 기초를 배웠다.<br>이번에는 web기초를 후루룩 배워보자<br>자주 접했지만 아직 암기까진 못한 웹기초!<br>이번엔 기초를 탄탄히 쌓아서 다시 보는 일이 없었으면 좋겠다 ㅋㅋㅋㅋㅋ</p>
-<p><img src="/img/python06092.png" alt=""></p>
-<h2 id="1-클라이언트-client-VS-서버-server"><a href="#1-클라이언트-client-VS-서버-server" class="headerlink" title="1. 클라이언트 (client) VS 서버 (server)"></a>1. 클라이언트 (client) VS 서버 (server)</h2><p>클라이언트와 서버, 이 둘은 절대적인 개념이 아니라 상대적인 개념이다.<br>웹 브라우저가 설치된 컴퓨터에서 다른 컴퓨터에 요청을 하는 클라이언트이면서도 또다른 웹 브라우저에 요청을 받는 서버컴퓨터일 수 도 있다.</p>
-<p><img src="/img/python06091.png" alt=""></p>
-<ol>
-<li>클라이언트 : 요청을 보내는 주체</li>
-</ol>
-<ul>
-<li>크롬, 사파리, 엣지 파이어폭스 등과 같은 웹브라우저</li>
-<li>데스크톱 앱 혹은 모바일 앱</li>
-<li>다른 서버에 요청을 보내는 서버</li>
-<li>개발자가 개발한 별도의 소프트웨어</li>
-<li>등등등</li>
-</ul>
-<ol start="2">
-<li>서버 : 네트워크를 통해 클라이언트에 정보 혹은 제공하는 프로그램 또는 컴퓨터</li>
-</ol>
-<ul>
-<li>웹 페이지, 웹 사이트, 앱 등을 저장한 컴퓨터</li>
-<li>웹 서버 애플리케이션을 통해 만들어진 애플리케이션</li>
-<li>등등등</li>
-</ul>
-<p>이번 강의에서 배울 파이썬기반의 프레임워크인 Flask와 Django로 만들어진 어플리케이션이 서버역할을 수행할 수 도 있다.<br>이처럼 요즘에는 웹 프레임워크를 이용하여 웹 서버를 개발한다.</p>
-<h2 id="2-웹프로그래밍-Web-Programming"><a href="#2-웹프로그래밍-Web-Programming" class="headerlink" title="2. 웹프로그래밍 (Web Programming)"></a>2. 웹프로그래밍 (Web Programming)</h2><p>웹 프로그래밍이란 HTTP로 통신하는 클라이언트와 서버를 개발하는 것을 말한다.</p>
-<p>클라이언트와 서버는 앞에서 배웠는데 HTTP 프로토콜은 무엇일까?</p>
-<h2 id="3-HTTP-HyperText-Transfer-Protocol"><a href="#3-HTTP-HyperText-Transfer-Protocol" class="headerlink" title="3. HTTP (HyperText Transfer Protocol)"></a>3. HTTP (HyperText Transfer Protocol)</h2><p>HTTP(HyperText Transfer Protocol)란 웹서버와 클라이언트 즉, 브라우저가 인터넷에서 서로 테이터를 주고 받기 위한 약속체계이다.</p>
-<p>그럼 실질적으로 HTTP 요청과 HTTP 응답에 대해 자세히 알아보자</p>
-<p><img src="/img/python06093.png" alt=""></p>
-<ol>
-<li>HTTP 요청</li>
-</ol>
-<ul>
-<li>매서드 Method <ul>
-<li>실제 서버가 수행해야하는 동작들이다.<ul>
-<li>get : 정보를 가져오기</li>
-<li>post : 정보를 올리기</li>
-<li>delete : 삭제하기</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>URL주소</li>
-<li>헤더 Header<ul>
-<li>브라우저 정보</li>
-<li>언어</li>
-<li>등등 여러정보가 포함된다.</li>
-</ul>
-</li>
-<li>본문 body<ul>
-<li>있을 수도 있고 없을 수도 있다.</li>
-<li>페이스북으로 예를 들자면, 아이디나 패스워드 입력창이나 새글내용등이 본문에 해당된다.</li>
-</ul>
-</li>
-</ul>
-<ol start="2">
-<li>HTTP 응답</li>
-</ol>
-<ul>
-<li><p>상태코드</p>
-<ul>
-<li>요청의 성공여부가 가장 먼저 표시된다.</li>
-<li>예시</li>
-<li>200은 성공했다는 의미이다.</li>
-<li>404 Not Found …는 실패했다는 의미이다.</li>
-</ul>
-</li>
-<li><p>헤더 Header</p>
-</li>
-<li><p>본문 body</p>
-<ul>
-<li>HTML(Hypertext Markup Language)코드등의 파일</li>
-<li>에러가 났다면 생략될 수 있다.</li>
-</ul>
-</li>
-</ul>
-<h2 id="4-크롬-개발자도구-chrome-developer-tools"><a href="#4-크롬-개발자도구-chrome-developer-tools" class="headerlink" title="4. 크롬 개발자도구 (chrome developer tools)"></a>4. 크롬 개발자도구 (chrome developer tools)</h2><p><img src="/img/python06093.png" alt=""></p>
-<p>위의 이미지에서 볼수있듯이 크롬 개발자도구로 많은 것들을 할 수 있다</p>
-<ol>
-<li><p>Elements<br>엘리먼트탭에서는 각 요소에 대해 알수있으며, 속성값을 다르게 입력하는 등 간단하게 일시수정도 가능하다.<br>일시수정이라서 영영 저장되거나 보존되는 것이 아닌 그냥 임시적으로 수정가능하다.</p>
-</li>
-<li><p>Console<br>콘솔탭에서는 자바스크립트 (javascript)를 다룰 수 있다.</p>
-</li>
-<li><p>Sources<br>소스탭에서는 현재 웹페이지가 가지는 모든 소스코드들중 공개된 코드들을 마음껏 볼 수 있다.</p>
-</li>
-<li><p>Network<br>네트워크탭은 페이지를 로딩하는데 필요한 네트워크작업에 대한 결과를 시간순으로 표시해준다.<br>이를 통해서 웹서버와 주고받는 실제 데이터 모습을 볼 수 있다. </p>
-</li>
-</ol>
-<ul>
-<li>위의 이미지 오른쪽 하단부분에 Method를 확인 할수있다. 위에서 배웠던 get과 post매서드를 확인할 수 있다.</li>
-<li>위에서 status를 확인할 수 있다 200으로 성공이 되었음을 의미한다.</li>
-<li>type에서도 해당 웹사이트가 불러온 데이터의 타입이 gif 이미지파일인지, script파일인지 아니면 text/html파일인지 등등을 확인할 수 있다.</li>
-</ul>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-09T00:00:00.000Z" title="2020-06-09T00:00:00.000Z">2020-06-09</time><span class="level-item"><a class="link-muted" href="/categories/JavaScript/">JavaScript</a></span><span class="level-item">10 minutes read (About 1488 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/09/200609jspi/">ITWILL : 반복문 for 순서 자세히, 개발자 도구로 디버깅, 기본 반복문암기, for문과 if문의 자리바꿈에 따른 변화, 반복문의 전위연산 VS 후위연산, do while문</a></h1><div class="content"><h3 id="ITWILL학원-6강-JS기초-BY-정규태강사"><a href="#ITWILL학원-6강-JS기초-BY-정규태강사" class="headerlink" title="ITWILL학원 : 6강 JS기초 BY 정규태강사"></a>ITWILL학원 : 6강 JS기초 BY 정규태강사</h3><h2 id="1-반복문-for"><a href="#1-반복문-for" class="headerlink" title="1. 반복문 : for"></a>1. 반복문 : for</h2><p>반복문의 기본식은 아래와 같다</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(초기식; 조건식; 증감식)&#123;</span><br><span class="line">	반복문장</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>if나 for 문은 중괄호{} 없이도 반복이 된다. 하지만 세미콜론;전까지의 한줄만 반복한다 </p>
-<h4 id="1-반복문의-순서는"><a href="#1-반복문의-순서는" class="headerlink" title="1. 반복문의 순서는"></a>1. 반복문의 순서는</h4><ol>
-<li><p>초기식</p>
-</li>
-<li><p>조건식</p>
-</li>
-<li><p>반복문장</p>
-</li>
-<li><p>증감식</p>
-</li>
-<li><p>조건식</p>
-</li>
-<li><p>반복문장</p>
-</li>
-<li><p>증감식</p>
-</li>
-<li><p>위의 3가지 반복</p>
-</li>
-<li><p>조건식 (조건이 충족된 경우)</p>
-</li>
-<li><p>반복문 종료</p>
-</li>
-</ol>
-<h4 id="2-개발자-도구를-이용하여-간단한-디버깅을-할-수-있다"><a href="#2-개발자-도구를-이용하여-간단한-디버깅을-할-수-있다" class="headerlink" title="2. 개발자 도구를 이용하여 간단한 디버깅을 할 수 있다"></a>2. 개발자 도구를 이용하여 간단한 디버깅을 할 수 있다</h4><p><img src="/img/200609jspi0.PNG" alt=""></p>
-<ol>
-<li>Sources탭에서 디버깅원하는 소스코드파일을 클릭 후 디버깅원한느 코드의 줄번호 앞부분 클릭 -&gt; 빨간 점으로 표시됨</li>
-<li>Block기준으로 변수의 값이 변화 확인 가능</li>
-<li>4번에 보이는 회색점을 클릭하면 빨간색점으로 변경됨 -&gt; 점마다 break point가 걸려 순서를 세세하게 볼 수 있음</li>
-<li>옅은 파란 블럭이 이동하면서 코드 실행순서를 가시적으롭 보여줌</li>
-<li>디버깅이 끝났으면 꼭 줄번호 옆의 빨간색점을 체크해제해줘야 디버깅 모드가 중단된다</li>
-</ol>
-<h4 id="3-기본-반복문암기"><a href="#3-기본-반복문암기" class="headerlink" title="3. 기본 반복문암기"></a>3. 기본 반복문암기</h4><p>기본적인 반복문은 암기해서 바로바로 쓰는 것이 좋다</p>
-<ol>
-<li>몇씩 증감하는 반복문</li>
-</ol>
-<p>1~10까지 짝수만 출력하는 반복문을 생각하자마자 나는 if조건이 들어간 for문을 생각했다</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>; i&lt;=<span class="number">10</span>; i++)&#123;</span><br><span class="line">	<span class="keyword">if</span>(i%<span class="number">2</span> !==<span class="number">0</span>)&#123;</span><br><span class="line">		<span class="built_in">document</span>.write(<span class="string">' '</span>+i);</span><br><span class="line">	&#125;</span><br><span class="line">&#125; <span class="comment">// 1 3 5 7 9</span></span><br></pre></td></tr></table></figure>
-
-<p>강사님이 보더니만 결과값은 일치하지만 효율을 위해서 간단한건 조건문이 안들어간 반복문으로 나타내는 것이 좋다고했다.</p>
-<p>음 그렇군! 오케이 접수!</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">1</span>; i&lt;=<span class="number">10</span>; i+=<span class="number">2</span>)&#123;</span><br><span class="line">	<span class="built_in">document</span>.write(<span class="string">' '</span>+i)</span><br><span class="line">&#125; <span class="comment">// 1 3 5 7 9</span></span><br></pre></td></tr></table></figure>
-
-<p>for문안의 증감식을 변경하여 몇씩 증감한다고 하면 주로 위의 코드를 이용하면 된다!</p>
-<ol start="2">
-<li>누적합 </li>
-</ol>
-<p>정말 많이봐서 이제 익숙하다 </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> sum = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>; i&lt;=<span class="number">10</span>; i++)&#123;</span><br><span class="line">	sum+=i</span><br><span class="line">&#125; </span><br><span class="line"><span class="built_in">document</span>.write(sum) <span class="comment">//55</span></span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>카운트</li>
-</ol>
-<p>횟수를 셀 때 자주 사용한다</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> count = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">1</span>; i&lt;=<span class="number">10</span>; i++)&#123;</span><br><span class="line">	count+=<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">document</span>.write(count); <span class="comment">//10</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="2-for문과-if문의-자리바꿈에-따른-변화"><a href="#2-for문과-if문의-자리바꿈에-따른-변화" class="headerlink" title="2. for문과 if문의 자리바꿈에 따른 변화"></a>2. for문과 if문의 자리바꿈에 따른 변화</h2><p>사용자가 입력하는 숫자의 구구단을 출력하는 예시를 보자</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> num = prompt(<span class="string">'구구단 숫자를 입력하세요'</span>); </span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">1</span>; i&lt;=<span class="number">9</span>; i++)&#123;</span><br><span class="line">	<span class="keyword">if</span>(num &gt; <span class="number">0</span>)&#123;</span><br><span class="line">		<span class="built_in">document</span>.write(num + <span class="string">' * '</span>+ i +<span class="string">' = '</span>+ (num*i)+ <span class="string">'&lt;br&gt;'</span>)</span><br><span class="line">	&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">		alert(<span class="string">'잘못입력했습니다 1~9까지 숫자중에 입력하세요'</span>)</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>위에서 num을 0이하로 입력했다면 alert창 띄우고 다시 숫자를 입력하도록 하게 하고싶었다. 근데 이 로직으로는 감이 잡히지않았다.<br>고민하다가 if와 for문의 자리를 바꿨다.<br>자리만 바꿨을 뿐인데 reload가 가능해서 굳이 새로고침하지않아도 다시 num을 입력할 수 있어 편하다</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> num = prompt(<span class="string">'구구단 숫자를 입력하세요'</span>); </span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(num&gt;<span class="number">0</span>)&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>; i&lt;=<span class="number">9</span>; i++)&#123;</span><br><span class="line">		<span class="built_in">document</span>.write(num + <span class="string">' * '</span>+ i +<span class="string">' = '</span>+ (num*i)+ <span class="string">'&lt;br&gt;'</span>)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">	alert(<span class="string">'잘못입력했습니다 1~9까지 숫자중에 입력하세요'</span>)</span><br><span class="line">	location.reload();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="3-반복문-While"><a href="#3-반복문-While" class="headerlink" title="3. 반복문 : While"></a>3. 반복문 : While</h2><p>반복문 while의 기본식은 아래와 같다</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">초기식;</span><br><span class="line"><span class="keyword">while</span>(조건식)&#123;</span><br><span class="line">	반복할문장;</span><br><span class="line">	증감식;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>증감식을 <strong><code>꼭</code></strong> 적어줘야 무한실행이 되지 않는다!</p>
-<h4 id="1-전위연산-VS-후위연산"><a href="#1-전위연산-VS-후위연산" class="headerlink" title="1. 전위연산 VS 후위연산"></a>1. 전위연산 VS 후위연산</h4><p>전위연산과 후위연산은 잘 비교해야한다</p>
-<ol>
-<li>전위연산<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> i=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">while</span>(i++ &lt;=<span class="number">4</span>)&#123;</span><br><span class="line">	<span class="built_in">document</span>.write(i+<span class="string">", "</span>)</span><br><span class="line">&#125; <span class="comment">// 2, 3, 4, 5</span></span><br></pre></td></tr></table></figure>
-<ol>
-<li>i = 1 -&gt; 조건식 : 참 -&gt; i++ -&gt; write : 2</li>
-<li>i = 2 -&gt; 조건식 : 참 -&gt; i++ -&gt;  write : 3</li>
-<li>i = 3 -&gt; 조건식 : 참 -&gt; i++ -&gt;  write : 4</li>
-<li>i = 4 -&gt; 조건식 : 참 -&gt; i++ -&gt;  write : 5</li>
-<li>i = 5 -&gt; 조건식 : 거짓 -&gt; 종료</li>
-</ol>
-</li>
-</ol>
-<ol start="2">
-<li>후위연산<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> i=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">while</span>(++i &lt;=<span class="number">4</span>)&#123;</span><br><span class="line">	<span class="built_in">document</span>.write(i+<span class="string">", "</span>)</span><br><span class="line">&#125; <span class="comment">// 2, 3, 4,</span></span><br></pre></td></tr></table></figure>
-<ol>
-<li>i = 1 -&gt; ++1 라서 2 -&gt; 조건식 : 참 -&gt; write : 2</li>
-<li>i = 2 -&gt; ++1 라서 3 -&gt; 조건식 : 참 -&gt; write : 3</li>
-<li>i = 3 -&gt; ++1 라서 4 -&gt; 조건식 : 참 -&gt; write : 4</li>
-<li>i = 4 -&gt; ++1 라서 5 -&gt; 조건식 : 거짓 -&gt; 종료</li>
-</ol>
-</li>
-</ol>
-<h4 id="2-do-while-문"><a href="#2-do-while-문" class="headerlink" title="2. do-while()문"></a>2. do-while()문</h4><p>조건 비교하기 전에 한 번 실행후 조건을 비교한다</p>
-<p>기본형태이다</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">초기식;</span><br><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">	반복문장;</span><br><span class="line">	증감식;</span><br><span class="line">&#125;<span class="keyword">while</span>(조건식)</span><br></pre></td></tr></table></figure>
-
-<p>초기식과 증감식 없더라도 확인가능하다<br>아래는 예시이다</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> i = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">	<span class="built_in">document</span>.write(i+<span class="string">" "</span>);</span><br><span class="line">	i++;</span><br><span class="line">&#125;<span class="keyword">while</span>(i&lt;=<span class="number">10</span>);</span><br><span class="line"><span class="comment">// 1 2 3 4 5 6 7 8 9 10</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="3-구구단-세로로-나타내기"><a href="#3-구구단-세로로-나타내기" class="headerlink" title="3. 구구단 세로로 나타내기"></a>3. 구구단 세로로 나타내기</h3><p>구구단을 가로가 아닌 세로로 나타내보자<br>세로로 만들려면 일단 가로로 먼저 만들수있어야한다</p>
-<ol>
-<li>구구단 가로출력<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> dan=<span class="number">2</span>; dan&lt;=<span class="number">9</span>; dan++)&#123;</span><br><span class="line">	<span class="built_in">document</span>.write(<span class="string">'&lt;br&gt;'</span>)</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">let</span> num=<span class="number">1</span>; num&lt;=<span class="number">9</span>; num++)&#123;</span><br><span class="line">		<span class="built_in">document</span>.write(dan+<span class="string">'*'</span>+num+<span class="string">'='</span>+(dan*num)+<span class="string">' '</span>)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<p>가로출력의 첫번째 반복은 dan이 고정이고 num이 1부터 9까지 변화한다<br>세로출력의 첫번째 반복은 num이 고정이고 dan이 2부터 9까지 변화한다</p>
-<p>이 두 사실을 가지고 변수와 숫자를 적절히 바꾸어주면 된다</p>
-<ol start="2">
-<li>구구단 세로출력</li>
-</ol>
-<p>for문과 이중for문으로 만든 코드이다</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">2</span>; i&lt;=<span class="number">9</span>; i++)&#123;</span><br><span class="line">	<span class="built_in">document</span>.write(<span class="string">'    &lt;'</span> + i +<span class="string">'단&gt;  '</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> dan=<span class="number">1</span>; dan&lt;=<span class="number">9</span>; dan++)&#123;</span><br><span class="line">	<span class="built_in">document</span>.write(<span class="string">'&lt;br&gt;'</span>) </span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">let</span> num=<span class="number">2</span>; num&lt;=<span class="number">9</span>; num++)&#123;</span><br><span class="line">		<span class="built_in">document</span>.write(num+<span class="string">'*'</span>+dan+<span class="string">'=   '</span>+(dan*num)+<span class="string">', '</span>)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>아래 이미지파일을 보면 왼쪽이 출력값이고 오른쪽이 소스코드이다</p>
-<p><img src="/img/200609jspi1.PNG" alt=""></p>
-<p>이중for문 하나로 만들 순 없을까?</p>
-<p>당연히 만들수있다! if를 이용하면 된다!</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">for</span>(let num=<span class="number">0</span>; num&lt;=<span class="number">9</span>; num++)&#123;	</span><br><span class="line">	<span class="keyword">for</span>(let dan=<span class="number">2</span>; dan&lt;=<span class="number">9</span>; dan++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(num == <span class="number">0</span>)&#123;</span><br><span class="line">			document.write(<span class="string">'    &lt;'</span> + dan +<span class="string">'단&gt;  '</span>)</span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			document.write(dan+<span class="string">'*'</span>+num+<span class="string">'=   '</span>+(dan*num)+<span class="string">', '</span>)</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	document.write(<span class="string">'&lt;br&gt;'</span>) </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="4-반복문으로-테이블만들기"><a href="#4-반복문으로-테이블만들기" class="headerlink" title="4. 반복문으로 테이블만들기"></a>4. 반복문으로 테이블만들기</h3><p>테이블만드는 방법도 다양하다</p>
-<p>테이블은 행x열(4x3)이고 각 칸안에는 1~12까지의 수를 넣은 테이블을 만들어보자</p>
-<ol>
-<li><p>이중 for문 사용</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> tageOpen=<span class="string">"&lt;table border='1'&gt;"</span></span><br><span class="line"><span class="keyword">let</span> tageClose=<span class="string">"&lt;/table&gt;"</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">document</span>.write(tageOpen)</span><br><span class="line"><span class="keyword">let</span> count = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> tr=<span class="number">1</span>; tr&lt;=<span class="number">4</span>; tr++)&#123;</span><br><span class="line">	<span class="built_in">document</span>.write(<span class="string">'&lt;tr&gt;'</span>)</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">let</span> td=<span class="number">1</span>; td&lt;=<span class="number">3</span>; td++)&#123;</span><br><span class="line">		<span class="built_in">document</span>.write(<span class="string">'&lt;td&gt;'</span> + (count+=<span class="number">1</span>) + <span class="string">"&lt;/td&gt;"</span>)</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">document</span>.write(<span class="string">'&lt;/tr&gt;'</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">document</span>.write(tageClose)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>tag로 테이블만들기</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> tageOpen=<span class="string">"&lt;table border='1'&gt;"</span></span><br><span class="line"><span class="keyword">let</span> tageClose=<span class="string">"&lt;/table&gt;"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> trtdtag;</span><br><span class="line"><span class="keyword">let</span> count1 = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">let</span> i=<span class="number">1</span>; i&lt;=<span class="number">4</span>; i++)&#123;	</span><br><span class="line">		trtdtag += <span class="string">"&lt;tr&gt;"</span>;</span><br><span class="line">		trtdtag += <span class="string">"&lt;td&gt;"</span> + (count1+=<span class="number">1</span>) + <span class="string">"&lt;/td&gt;"</span>;</span><br><span class="line">		trtdtag += <span class="string">"&lt;td&gt;"</span> + (count1+=<span class="number">1</span>) + <span class="string">"&lt;/td&gt;"</span>;</span><br><span class="line">		trtdtag += <span class="string">"&lt;td&gt;"</span> + (count1+=<span class="number">1</span>) + <span class="string">"&lt;/td&gt;"</span>;</span><br><span class="line">		trtdtag += <span class="string">"&lt;/tr&gt;"</span></span><br><span class="line">	&#125;</span><br><span class="line"><span class="built_in">document</span>.write(tageOpen + trtdtag + tageClose )</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<p>아래와 동일 테이블이 만들어진다.</p>
-<table border="1">
-    <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>5</td>
-        <td>6</td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>8</td>
-        <td>9</td>
-    </tr>
-    <tr>
-        <td>10</td>
-        <td>11</td>
-        <td>12</td>
-    </tr>
-</table> 
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-08T00:00:00.000Z" title="2020-06-08T00:00:00.000Z">2020-06-08</time><span class="level-item"><a class="link-muted" href="/categories/JAVA/">JAVA</a></span><span class="level-item">8 minutes read (About 1191 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/08/200608javai/">[ITWILL : JAVA]Method, 변수와 상수, 배열 Array, new키워드</a></h1><div class="content"><h3 id="ITWILL학원-4강-JAVA-BY-윤미영강사"><a href="#ITWILL학원-4강-JAVA-BY-윤미영강사" class="headerlink" title="ITWILL학원 : 4강 JAVA BY 윤미영강사"></a>ITWILL학원 : 4강 JAVA BY 윤미영강사</h3><h2 id="1-Method"><a href="#1-Method" class="headerlink" title="1. Method"></a>1. Method</h2><p>괄호가 있으면 다 메서드라고 부른다<br>매서드는 항상 Class라는 주인이 있어야 한다.</p>
-<p>다른 사람이 만들어 놓은 매서드를 사용할 수 있다. = 라이브러리라고 부른다 </p>
-<p>예시</p>
-<ul>
-<li>main() : 메인매서드</li>
-<li>println() : OutputStream이라는 라이브러리안에 정의되어있는 매서드</li>
-<li>Scanner sc = new Scanner(System.in) sc.next(); InputStream 라이브러리에 정의되어 있는 next()매서드</li>
-</ul>
-<h2 id="2-변수와-상수"><a href="#2-변수와-상수" class="headerlink" title="2. 변수와 상수"></a>2. 변수와 상수</h2><ol>
-<li><p>변수<br>변하는 값.<br>값을 저장할 수 있는 메모리 위치.<br>변수를 사용하기위해서는 항상 변수선언을 데이터타입과 함께 먼저 해줘야한다.</p>
-</li>
-<li><p>상수<br>변하지 않는 하나의 값<br>앞에 final이 붙는다</p>
-</li>
-</ol>
-<ul>
-<li>예시 PI : 3.141592…</li>
-<li>사용법 : final double PI = 3.141592;</li>
-</ul>
-<h2 id="3-배열-Array"><a href="#3-배열-Array" class="headerlink" title="3. 배열 Array"></a>3. 배열 Array</h2><p>배열이란 쉽게말해 여러개의 변수를 한꺼번에 선언하는 것이다<br>변수를 선언한다는 것은 메모리에 a변수가 생성이 된다는 의미이다.<br>배열에서는 변수갯수를 선언할 수 있다 -&gt; <code>int [] ar = new int[10]</code>는 메모리에 10개의 정수 변수 생성된다는 의미이다</p>
-<p>여기서 주의할 점은 ar1의 데이터타입은 int가 아님을 명심하자!<br>int[]의미는 int를 관리한느 배열타입이지 int타입이 아니다.<br>ar1의 데이터타입은 기본형에 포함되지않는 참조형의 데이터타입이다.</p>
-<p>배열객체를 생성하기 위해서는 new키워드와 함께 어떤 데이터를 몇개나 저장할지에 대한 정보가 필요하다.<br>그렇다면 <strong>new키워드</strong>란 무엇일까?<br>아래 잘 설명한 블로그가 있어서 가져왔다.<br><a href="https://blog.naver.com/sooftware/221362423977">참고링크 : 자바 변수들의 메모리 구조,new 키워드</a></p>
-<p>배열변수선언에는 두가지 방법이 있다</p>
-<h2 id="3-1-첫번째-배열선언-방법"><a href="#3-1-첫번째-배열선언-방법" class="headerlink" title="3-1. 첫번째 배열선언 방법"></a>3-1. 첫번째 배열선언 방법</h2><p>배열생성과 배열갯수만 선언하는 방법이다<br><code>int [] ar1 = new int[3]</code>로 배열과 배열갯수를 한꺼번에 선언. 초기화는 안됨!</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> [] ar1;  <span class="comment">//배열생성 : 메모리에 a변수 생성</span></span><br><span class="line"></span><br><span class="line">ar1 = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">3</span>];  <span class="comment">//배열갯수선언. 메모리에 3개의 정수 변수 생성. 값을 넣어주지않기때문에 초기화는 아니다</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 1번과 2번을 합쳐서 한줄로 많이 쓴다</span></span><br><span class="line"><span class="keyword">int</span> [] ar1 = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">3</span>]; <span class="comment">// 초기화하지 않은 배열은 기본적으로 0의 값을 가진다</span></span><br><span class="line">	ar1[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">	ar1[<span class="number">1</span>] = <span class="number">0</span>;</span><br><span class="line">	ar1[<span class="number">2</span>] = <span class="number">0</span>;</span><br><span class="line">	</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;ar1.length; i++)&#123;</span><br><span class="line">	System.out.print(ar1[i]);</span><br><span class="line">&#125; <span class="comment">//000</span></span><br></pre></td></tr></table></figure>
-
-<p>데이터형마다 기본값이 다르다<br>기본데이터형이 아닌 참조데이터형인 경우 기본값이 다르다</p>
-<ul>
-<li>기본데이터형의 기본값은 데이터형에 따라 다르다<ul>
-<li>int 는 0</li>
-<li>double은 0</li>
-<li>char는 ‘’(빈칸)</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> [] chs = <span class="keyword">new</span> <span class="keyword">char</span>[<span class="number">2</span>];</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;chs.length; i++)&#123;</span><br><span class="line">		System.out.println(chs[i]);	</span><br><span class="line">	&#125; <span class="comment">//00 - 유니코드 -&gt; ''''(빈칸2개)</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>참조데이터형의 기본값은 null (자바언어의 예약어이고 실제 값이 없다는 의미이다)<ul>
-<li>string은 null</li>
-</ul>
-</li>
-</ul>
-<ol>
-<li>String형</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">String [] str = <span class="keyword">new</span> String[<span class="number">3</span>];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;str.length; i++)&#123;</span><br><span class="line">	System.out.print(str[i]);</span><br><span class="line">&#125; <span class="comment">// nullnullnull</span></span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>참조형<br>기본적으로 같은 타입을 한 배열에 넣을 수 있다.</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Person[] p = &#123;<span class="keyword">new</span> Person, <span class="keyword">new</span> Person&#125;;</span><br><span class="line"></span><br><span class="line">SpiderMan[] sp = &#123;<span class="keyword">new</span> SpiderMan, <span class="keyword">new</span> SpiderMan&#125;;</span><br><span class="line"></span><br><span class="line">AquaMan[] aq = &#123;<span class="keyword">new</span> AquaMan, <span class="keyword">new</span> AquaMan&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>타입이 다른 참조형데이터를 하나의 배열에 넣을 순 없을까?<br><a href="https://sowon-dev.github.io/2020/07/08/200708javai/">다형성</a>을 이용하면 가능하다.<br>상속관계인 경우에만 타입이 다른 참조형데이터를 하나의 배열에 묶을 수 있다. </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Person[] p = &#123;<span class="keyword">new</span> Person. <span class="keyword">new</span> Person&#125;</span><br><span class="line"></span><br><span class="line">Dobject d = <span class="keyword">new</span> Dobject[<span class="number">3</span>];</span><br><span class="line">d[<span class="number">0</span>] = <span class="keyword">new</span> Line();</span><br><span class="line">d[<span class="number">1</span>] = <span class="keyword">new</span> Circle();</span><br><span class="line">d[<span class="number">2</span>] = <span class="keyword">new</span> Reat();</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="3-2-두번째-배열선언-방법"><a href="#3-2-두번째-배열선언-방법" class="headerlink" title="3-2. 두번째 배열선언 방법"></a>3-2. 두번째 배열선언 방법</h2><p>배열생성과 초기화를 한꺼번에 선언하는 방법이다</p>
-<p><code>int [] ar2 = {10, 20, 30}</code></p>
-<p>여기서는 new int[5]를 하지않아도 된다 왜냐면 위의 코드 자체에 변수갯수선언이 포함되어있다<br>이 방법은 테스트용으로 주로 사용할뿐 실무는 new int[]형태로 사용한다</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> [] ar2 = &#123;<span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>&#125;; <span class="comment">//배열생성과 초기화 한꺼번에!</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;ar2.length; j++)&#123;</span><br><span class="line">	System.out.println(ar2[j]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-<ol start="3">
-<li>위의 두 방법의 차이점<br>일반적으로는 new int[]형태를 더 많이 쓰인다<br>왜냐하면 보통 다른 파일이나 데이터베이스의 내용을 가져오기 때문에 변수갯수가 정해져있다.<br>배열을 사용하려면 항상 크기를 미리 알아야한다.<br>만약 배열의 크기를 모른다면 쓸 수 있는 가장 큰 수를 적어주면되지만 대신 메모리를 많이 잡아먹는다.<br>그래서 사용하는 것이 Collection(컬렉션)이다</li>
-</ol>
-<ul>
-<li>Collection 컬렉션 : <ul>
-<li>참조형데이터형태</li>
-<li>배열과 같은 역할을 하지만 크기를 모를때 사용</li>
-<li>정적 메모리 할당이 아닌 동적 메모리 할당이 되어서 필요한 만큼 공간을 계속 추가할수있다</li>
-<li><a href="https://www.crocus.co.kr/1553">컬렉션참고링크</a></li>
-</ul>
-</li>
-</ul>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-08T00:00:00.000Z" title="2020-06-08T00:00:00.000Z">2020-06-08</time><span class="level-item"><a class="link-muted" href="/categories/Python/">Python</a></span><span class="level-item">5 minutes read (About 690 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/08/200608python/">[패스트캠퍼스python] 테이블 데이터의 수정 및 삭제</a></h1><div class="content"><h3 id="파이썬-인강-테이블-데이터의-수정-및-삭제"><a href="#파이썬-인강-테이블-데이터의-수정-및-삭제" class="headerlink" title="파이썬 인강 : 테이블 데이터의 수정 및 삭제"></a>파이썬 인강 : 테이블 데이터의 수정 및 삭제</h3><p><img src="/img/python06081.png" alt=""></p>
-<p>데이터베이스 다루기의 기본 명령어 CRUD를 알아야한다</p>
-<ul>
-<li>C : Create</li>
-<li>R : Retrieve 조회</li>
-<li>U : Update 수정</li>
-<li>D : Delete</li>
-</ul>
-<h2 id="1-데이터베이스-사용-기본-3가지-명령어"><a href="#1-데이터베이스-사용-기본-3가지-명령어" class="headerlink" title="1. 데이터베이스 사용 기본 3가지 명령어"></a>1. 데이터베이스 사용 기본 3가지 명령어</h2><p>데이터베이스를 사용할때 기본이 되는 3가지 명령어가 있다</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. SQLITE 불러오기</span></span><br><span class="line"><span class="keyword">import</span> sqlite3</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. DB생성(파일)</span></span><br><span class="line">conn = sqlite3.connect(<span class="string">'C:/Users/ratia/Documents/코딩/Fastcampus Python/Python/db/database.db'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. Cursor연결</span></span><br><span class="line">c = conn.cursor()</span><br></pre></td></tr></table></figure>
-
-<p>무엇을 하든지 위의 3가지는 기본으로 깔고 시작해야한다</p>
-<h2 id="2-데이터-수정"><a href="#2-데이터-수정" class="headerlink" title="2. 데이터 수정"></a>2. 데이터 수정</h2><p>데이터 수정 명령어에는 크게 3가지가 있다<br>다양한 방법으로 1번로우의 username을 kim에서 seo로 바꾸어보자</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 데이터 수정1</span></span><br><span class="line">c.execute(<span class="string">"UPDATE users SET username = ? WHERE id = ?"</span>, (<span class="string">'seo'</span>, <span class="number">1</span>))</span><br><span class="line">conn.commit()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 데이터 수정2 : 딕셔너리형태로 수정</span></span><br><span class="line">c.execute(<span class="string">"UPDATE users SET username = :name WHERE id = :id"</span>, &#123;<span class="string">"name"</span>: <span class="string">'seo'</span>, <span class="string">'id'</span>: <span class="number">1</span>&#125;)</span><br><span class="line">conn.commit()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. 데이터 수정3 : 스트링포맷로 수정</span></span><br><span class="line">c.execute(<span class="string">"UPDATE users SET username = '%s' WHERE id = '%s'"</span> % (<span class="string">'seo'</span>, <span class="number">1</span>))</span><br><span class="line">conn.commit()</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="3-DB-Browser-for-SQLite를-이용한-데이터-수정"><a href="#3-DB-Browser-for-SQLite를-이용한-데이터-수정" class="headerlink" title="3. DB Browser for SQLite를 이용한 데이터 수정"></a>3. DB Browser for SQLite를 이용한 데이터 수정</h2><p>DB Browser for SQLite를 이용해서 손쉽게 데이터를 수정할수도있다<br>아래 이미지에서 1번 로우의 username을 seo에서 so로 바꾸어보자</p>
-<ol>
-<li>먼저 데이터보기탭에서 username을 더블클릭한 뒤 오른편 인풋창에 so로 바꿔준 후 적용을 클릭한다</li>
-</ol>
-<p><img src="img/python06082.png" alt=""></p>
-<ol start="2">
-<li><p>까먹지말고 꼭 SQL실행탭에서 commit을 입력 후 run버튼을 누른다</p>
-</li>
-<li><p>아래 터미널에 질의가 성공적으로 실행되었다는 안내메세지가 나타나면 끝!</p>
-</li>
-</ol>
-<p><img src="img/python06083.png" alt=""></p>
-<ol start="4">
-<li>수정이 잘되었는지 확인을 위해 아래 명령어를 출력하면 수정이 잘되었음을 확인할 수 있다</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 수정한 로우만 확인</span></span><br><span class="line">c.execute(<span class="string">"SELECT * FROM users WHERE id= :Id"</span>, &#123;<span class="string">"Id"</span>: <span class="number">1</span>&#125;)</span><br><span class="line">print(<span class="string">'수정 잘 되었는 감?'</span>, c.fetchone())</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 수정한 로우포함 전체 데이터확인</span></span><br><span class="line"><span class="keyword">for</span> user <span class="keyword">in</span> c.execute(<span class="string">'SELECT * FROM users'</span>):</span><br><span class="line">    print(user)</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="4-데이터-삭제"><a href="#4-데이터-삭제" class="headerlink" title="4. 데이터 삭제"></a>4. 데이터 삭제</h2><p>데이터 삭제에도 다양한 방법이 있다</p>
-<ol>
-<li>한 줄 데이터삭제 방법<br>먼저 한줄데이터를 삭제해보자<br>다음 세가지는 2번째 줄 전체를 삭제하는 명령어이다</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. Row Delete1 #튜플형식</span></span><br><span class="line">c.execute(<span class="string">"DELETE FROM users WHERE id = ?"</span>, (<span class="number">2</span>,))</span><br><span class="line">conn.commit()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. Row Delete2 #딕셔너리형식</span></span><br><span class="line">c.execute(<span class="string">"DELETE FROM users WHERE id = :id"</span>, &#123;<span class="string">'id'</span>: <span class="number">2</span>&#125;)</span><br><span class="line">conn.commit()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. Row Delete3 #스트링포맷</span></span><br><span class="line">c.execute(<span class="string">"DELETE FROM users WHERE id = '%s'"</span> % <span class="number">2</span>)</span><br><span class="line">conn.commit()</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>테이블 전체 데이터 삭제<br>이번에는 테이블 전체를 삭제해보자<br>간단한 명령어지만 위험하니… 신중히 사용하자 ㅋㅋㅋㅋㅋ</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"users db deleted : "</span>, conn.execute(<span class="string">"delete from users"</span>).rowcount, <span class="string">"rows"</span>)</span><br></pre></td></tr></table></figure>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-08T00:00:00.000Z" title="2020-06-08T00:00:00.000Z">2020-06-08</time><span class="level-item"><a class="link-muted" href="/categories/Database/">Database</a></span><span class="level-item">16 minutes read (About 2409 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/08/200608dbi/">[ITWILL : DB]제약조건문법(컬럼레벨/테이블레벨), 제약조건 5가지, 버퍼에 있는 자주 사용할 쿼리구문을 저장하는 방법</a></h1><div class="content"><h3 id="ITWILL학원-4강-Database-BY-정지윤강사"><a href="#ITWILL학원-4강-Database-BY-정지윤강사" class="headerlink" title="ITWILL학원 : 4강 Database BY 정지윤강사"></a>ITWILL학원 : 4강 Database BY 정지윤강사</h3><h2 id="1-제약조건명-생성시-문법-2가지"><a href="#1-제약조건명-생성시-문법-2가지" class="headerlink" title="1. 제약조건명 생성시 문법 2가지"></a>1. 제약조건명 생성시 문법 2가지</h2><p>제약조건명 생성시 oracle에서 권장하는 이름작성 방법이 두가지(컬럼레벨문법과 테이블레벨문법)가 있다.</p>
-<h2 id="1-1-Column-level-문법"><a href="#1-1-Column-level-문법" class="headerlink" title="1-1. Column-level 문법"></a>1-1. Column-level 문법</h2><ul>
-<li><p>Not Null 제약조건사용시 column-level문법으로 작성해야한다! </p>
-</li>
-<li><p>나머지 4종류의 제약조건은 레벨문법 둘 중 하나만 쓰면 된다</p>
-</li>
-<li><p>기본형 : <code>테이블명약자_컬럼명약자_제약조건유형약자</code></p>
-</li>
-<li><p>예시 :<br>제약조건 2개 이상 작성하고 싶다면 스페이스누르고 constraint 적은 뒤 다시 제약조건을 적으면 된다.</p>
-</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">create table title_copy</span><br><span class="line">( copy_id number(10),</span><br><span class="line">title_id number(10) CONSTRAINT tc_tid_fk REFERENCES title(title_id),</span><br><span class="line">rating VARCHAR2(4) CONSTRAINT tc_ra_nn not null </span><br><span class="line">  CONSTRAINT tc_ra_ck check (rating <span class="keyword">in</span> (<span class="string">'G'</span>, <span class="string">'PG'</span>, <span class="string">'R'</span>, <span class="string">'NC17'</span>, <span class="string">'NR'</span>));</span><br></pre></td></tr></table></figure>
-
-<h2 id="1-2-Table-level-문법"><a href="#1-2-Table-level-문법" class="headerlink" title="1-2. Table-level 문법"></a>1-2. Table-level 문법</h2><ul>
-<li><p>기본형 : <code>테이블명약자_컬럼명약자_제약조건유형약자(컬럼명)</code></p>
-</li>
-<li><p>예시 :<br>PK를 두 컬럼에 하려면 테이블레벨문법으로 작성해야한다.</p>
-</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">create table title</span><br><span class="line">( copy_id number(10),</span><br><span class="line">title_id number(10) constraint t_tid_nn not null,</span><br><span class="line">constraint t_id_pk primary key (copy_id, title_id));</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="2-제약조건-5가지"><a href="#2-제약조건-5가지" class="headerlink" title="2. 제약조건 5가지"></a>2. 제약조건 5가지</h2><p><img src="https://player.slidesplayer.org/61/11291485/slides/slide_13.jpg" alt="https://slidesplayer.org/slide/11291485/"></p>
-<h2 id="2-1-Not-null-NN"><a href="#2-1-Not-null-NN" class="headerlink" title="2-1. Not null (NN)"></a>2-1. Not null (NN)</h2><ul>
-<li>컬럼레벨문법만 가능</li>
-<li>빈 값(null값)이 컬럼에 삽입될 수 없다.</li>
-<li>테이블안의 여러컬럼에 선언 가능</li>
-<li>예를들어, 회원가입테이블에서 이름과 전화번호가 필수인 경우 Not Null 제약조건을 걸어서 필수사항을 꼭 기입하도록 하는 조건이다</li>
-<li>주로 사용하는 약자 nn</li>
-<li>예시 :</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">create table test1</span><br><span class="line">(id number(10) constraint t1_id_nn not null,</span><br><span class="line">name varchar2(30) constraint t1_name_nn not null,</span><br><span class="line">email varchar2(20),</span><br><span class="line">start_date date);</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-2-Unique-UK"><a href="#2-2-Unique-UK" class="headerlink" title="2-2. Unique (UK)"></a>2-2. Unique (UK)</h2><ul>
-<li>고유한 값만 가능하다. (중복불가)</li>
-<li>테이블안의 여러컬럼에 선언 가능</li>
-<li>예시 :</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">create table test2</span><br><span class="line">(id number(10) CONSTRAINT t2_id_nn not null CONSTRAINT t2_id_uk unique,</span><br><span class="line">email VARCHAR2(20),</span><br><span class="line">start_date date,</span><br><span class="line">CONSTRAINT t2_email_uk unique(email));</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="2-3-Primary-key-PK"><a href="#2-3-Primary-key-PK" class="headerlink" title="2-3. Primary key (PK)"></a>2-3. Primary key (PK)</h2><ul>
-<li>Not null과 Unique성격을 동시에 가진다.</li>
-<li>테이블안의 한번만 선언 가능. <ul>
-<li><strong>테이블에서 선언시 한 번에 여러 컬럼에 선언하면 됨</strong></li>
-<li>나중에 다른 테이블과 join시 여러 컬럼의 조합값으로 join됨</li>
-</ul>
-</li>
-<li>어떤 컬럼을 Primary key 조건을 걸면 좋을까? <ul>
-<li>개인의 선택이지만 지극히 개인정보는 선택하면 안된다</li>
-<li>예를들어 사원테이블에서 사원주민번호를 Primary key를 설정하면 주민번호가 대표key이므로 이곳 저곳에 데이터가 불려다니게 되므로 정보유출이 될 수 있다. (보안에 취약) </li>
-<li>따라서 사원 주민번호보단 사원번호를 Primary key를 설정하는 것이 좋다</li>
-</ul>
-</li>
-<li>예시1 :<br>copy_id, title_id의 조합값에 pk를 걸 수 있다.</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">create table title</span><br><span class="line">( copy_id number(10),</span><br><span class="line">title_id number(10) constraint t_tid_nn not null,</span><br><span class="line">constraint t_id_pk primary key (copy_id, title_id));</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>예시2 :</li>
-</ul>
-<p><img src="/img/200608dbi.PNG" alt=""></p>
-<h2 id="2-4-Foreign-Key-FK"><a href="#2-4-Foreign-Key-FK" class="headerlink" title="2-4. Foreign Key (FK)"></a>2-4. Foreign Key (FK)</h2><ul>
-<li><p>자기 자신 테이블이나 다른 테이블의 특정 컬럼(PK, UK)를 참조하는 제약조건</p>
-</li>
-<li><p>아무컬럼이나 참조할 수 있는 것은 아니고 PK조건이나 UK조건이 있는 컬럼만 FK로 참조할 수 있다</p>
-</li>
-<li><p>FK가 지정되어있으면 해당컬럼이 자식컬럼이 되고 참조한 PK이나 UK조건컬럼이 모부컬럼이 된다. </p>
-</li>
-<li><p>테이블안의 여러컬럼에 선언 가능</p>
-</li>
-<li><p>자식컬럼이 있는한 모부컬럼은 삭제되지않는다. </p>
-</li>
-<li><p>모부컬럼에 있는 내용만 자식컬럼에 들어올 수 있다. BUT null</p>
-</li>
-<li><p>유일하게 모부컬럼에 없는 null은 자식컬럼에 허용한다</p>
-<ul>
-<li>null이란 zero도 아니고 공백도 아닌 특수한 값으로 아직 정의되지않은 값을 의미한다.</li>
-<li>모부컬럼에 없는 null이 자식컬럼에 들어올 수 있다</li>
-</ul>
-</li>
-<li><p>컬럼레벨 FK 예시 :</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">create table test4</span><br><span class="line">(id number(10) CONSTRAINT t3_id_pk primary key,</span><br><span class="line">email VARCHAR2(20),</span><br><span class="line">department_id number(10) CONSTRAINT t4_dept_fkdept_fk references departments(department_id));</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>테이블레벨 FK 예시 :</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">create table test4</span><br><span class="line">(id number(10) CONSTRAINT t3_id_pk primary key,</span><br><span class="line">email VARCHAR2(20),</span><br><span class="line">department_id number(10), </span><br><span class="line">CONSTRAINT t4_dept_fk FOREIGN KEY (department_id) references departments(department_id));</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="2-5-Check-CK"><a href="#2-5-Check-CK" class="headerlink" title="2-5. Check (CK)"></a>2-5. Check (CK)</h2><ul>
-<li>해당 컬럼이 만족해야하는 조건들을 자유자재로 지정하는 제약 조건</li>
-<li>테이블안에 여러컬럼에 선언 가능</li>
-<li>컬럼레벨로 선언했을때와 테이블레벨로 선언했을때의 차이가 없는 유일한 제약조건이다</li>
-<li>예시1 : 컬럼레벨과 테이블레벨 차이점 예시<br>Salary라는 컬럼은 급여데이터이기때문에 CHECK (salary &gt; 0)으로 제약조건을 걸수있다.</li>
-<li>컬럼레벨 :</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">salary number(2), ... constraint emp_salary_min CHECK (salary &gt; 0), ...</span><br><span class="line">```	</span><br><span class="line"></span><br><span class="line">- 테이블레벨 : </span><br><span class="line">위와 비교해서 알 수 있듯이 다른 제약조건들과 달리 두 레벨의 차이점이 없는 것이 특징이다 </span><br><span class="line"></span><br><span class="line">```bash</span><br><span class="line">salary number(2), ... constraint emp_salary_min CHECK (salary &gt; 0), ...</span><br><span class="line">```	</span><br><span class="line">	- </span><br><span class="line">- 예시2 : 길이조건</span><br><span class="line"></span><br><span class="line">```bash</span><br><span class="line">주민번호 varchar2(13) constraint 000 check (length(주민번호) = 13), ...</span><br><span class="line">```	</span><br><span class="line"></span><br><span class="line">- 예시3 : 성별조건</span><br><span class="line">아래 두 문장은 동일한 결과값을 가진다.</span><br><span class="line"></span><br><span class="line">```bash</span><br><span class="line">성별 varchar2(10) constraint 000 check (성별 = <span class="string">'여'</span> or 성별 = <span class="string">'남'</span> ), ...</span><br><span class="line">성별 varchar2(10) constraint 000 check (성별 <span class="keyword">in</span> (<span class="string">'여'</span>,<span class="string">'남'</span>)), ...</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-6-제약조건-전체-예시"><a href="#2-6-제약조건-전체-예시" class="headerlink" title="2-6. 제약조건 전체 예시"></a>2-6. 제약조건 전체 예시</h2><p>위에서 배운 제약조건들을 다 넣은 예시룰 보자</p>
-<p><img src="/img/200608dbi2.PNG" alt=""></p>
-<ol>
-<li>사원번호는 주로 PK제약조건을 사용하기때문에 PK제약조건을 사용했다</li>
-<li>이름에 공백에 있으면 안되므로 NN제약조건을 사용했다</li>
-<li>number(8,2)는 전체 데이터는 8byte이고 소수점 둘째자리까지 나타낸다는 의미이다</li>
-<li>CHECK제약조건을 사용하여 급여는 0보다 커야한다는 제약을 걸었다</li>
-<li>내 테이블안의 FK제약조건을 사용했다<ul>
-<li>모부칼럼 : employees1 테이블의 employee_id 칼럼    </li>
-<li>자식칼럼 : employees1 테이블의 manager_id 칼럼    </li>
-</ul>
-</li>
-<li>다른 테이블을 가져와서 FK제약조건을 사용했다<ul>
-<li>모부컬럼 : departments 테이블의 department_id 칼럼</li>
-<li>자식컬럼 : employees1 테이블의 department_id 칼럼</li>
-</ul>
-</li>
-</ol>
-<h2 id="2-7-제약조건-확인하는-방법"><a href="#2-7-제약조건-확인하는-방법" class="headerlink" title="2-7. 제약조건 확인하는 방법"></a>2-7. 제약조건 확인하는 방법</h2><p>DB사전에서 찾아보면 테이블에 선언된 제약조건을 확인할 수 있다</p>
-<p><img src="/img/200608dbi3.PNG" alt=""></p>
-<ol>
-<li><p>select 명령어를 통해 제약조건_이름과 제약조건_타입, C가 not null인지 checnk조건인지 서치, 래퍼런스가있으면 그이름 가져오기</p>
-</li>
-<li><p>from user_constraints 은 DB사전안에 제약조건을 확인할 수 있는 곳이다</p>
-</li>
-<li><p>where table_name = 테이블명을 적어줘야하는데 아무명이나 들어갈 수 있도록 <code>&amp;tablename</code>으로 설정한다 -&gt; 추후 sql쿼리문을 저장하기 위해서</p>
-</li>
-<li><p>테이블명을 항상 <strong>대문자</strong>로 적어야한다</p>
-</li>
-<li><p>데이터가 출력되었으나 보기 좋게 출력되지 않았다. 데이터를 가독성있게 작성해보자</p>
-</li>
-<li><p>not null과 check는 둘다 C라고 뜬다 따라서 search를 꼭 입력해줘야 그 뒤의 결과값으로 두가지가 구분 가능하다.search_condition으로 C가 not null조건인지 check조건인지 알수있다.</p>
-</li>
-</ol>
-<p><img src="/img/200608dbi4.PNG" alt=""></p>
-<ol start="7">
-<li><p>col 원하는컬럼이름 format a원하는크기 : col은 컬럼의 약어로 col이 나타나는 형식을 바꿔서 가독성을 높이는 명령어이다</p>
-<ul>
-<li>컬럼포맷</li>
-<li>여기서 col은 끝에 ;(세미콜론)을 넣지않았다. 이건 시스템언어이기때문이다</li>
-<li>컬럼아래의 점선의 한 점이 1byte라고 생각하면 된다 따라서 글씨크기는 보통 a20해주면 깔끔</li>
-</ul>
-</li>
-<li><p>enter value for tabkename: 테이블명은 항상 <strong>대문자</strong>로 적어준다</p>
-</li>
-<li><p>짜잔- 가독성있게 데이터가 잘 출력되었다.</p>
-</li>
-</ol>
-<h2 id="2-8-제약조건을-확인하는-쿼리만들기"><a href="#2-8-제약조건을-확인하는-쿼리만들기" class="headerlink" title="2-8. 제약조건을 확인하는 쿼리만들기"></a>2-8. 제약조건을 확인하는 쿼리만들기</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">col column_name format a15</span><br><span class="line">col constraint_name format a15</span><br><span class="line">col r_constraint_name format a20</span><br><span class="line">select a.column_name, a.constraint_name, b.constraint_type, b.search_condition, b.r_constraint_name</span><br><span class="line">from user_constraints b join user_cons_columns a</span><br><span class="line">on a.constraint_name &#x3D; b.constraint_name</span><br><span class="line">where lower(a.table_name) &#x3D; lower(&#39;&amp;table_name&#39;)</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-버퍼에-있는-자주-사용할-쿼리구문을-저장하는-방법"><a href="#3-버퍼에-있는-자주-사용할-쿼리구문을-저장하는-방법" class="headerlink" title="3. 버퍼에 있는 자주 사용할 쿼리구문을 저장하는 방법"></a>3. 버퍼에 있는 자주 사용할 쿼리구문을 저장하는 방법</h2><ul>
-<li>버퍼에 있는 쿼리구문이 앞으로 자주 사용될 것같다는 판단이 들면 버퍼가 덮어씌어지기전에 따로 저장해놓으면 된다</li>
-<li>쿼리구문이 들어가 있는 파일을 저장하려면 무조건 확장자는 .sql로 저장해야한다</li>
-</ul>
-<p><img src="/img/200608dbi5.PNG" alt=""></p>
-<ol>
-<li><p>현재 버퍼의 쿼리구문 확인</p>
-<ul>
-<li>현재 버퍼에 어떤 퀴리구문이 남아있는지 확인하는 명령어는 <code>l</code>이다.</li>
-<li>버퍼로 들어가지않고도(ed) 버퍼에 남은 마지막 퀴리구문이 뭔지 확인하는 명령어이다. -&gt; <code>l</code>에서 빠져나오려면 / + enter 하면 된다.</li>
-</ul>
-</li>
-<li><p>쿼리구문 저장하기</p>
-<ul>
-<li>명령어는 <code>save 저장경로/저장하고픈 파일명.sql</code> 이다</li>
-<li>home 안에 있는 oracle에 cons.sql이라고 저장해보려면 아래의 문구를 쓰면 된다.<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">save /home/oracle/cons.sql</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-<li><p>저장한 쿼리파일 실행하기</p>
-<ul>
-<li>명령어는 <code>@/저장경로/저장하고픈 파일명.sql</code></li>
-<li>위에 저장했더 경로의 파일을 그대로 불러오면된다<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@/home/oracle/cons.sql</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-<li><p>테이블이름 입력에 확인하고싶은 테이블이름을 무조건 <strong>대문자</strong>로 입력한다<br>아래 5번에 제약조건쿼리구문이 실행된 것을 확인할 수 있다.</p>
-</li>
-</ol>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-07T00:00:00.000Z" title="2020-06-07T00:00:00.000Z">2020-06-07</time><span class="level-item"><a class="link-muted" href="/categories/Python/">Python</a></span><span class="level-item">9 minutes read (About 1361 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/07/200607python/">[패스트캠퍼스python] 데이터베이스 연동(SQLite)</a></h1><div class="content"><h3 id="파이썬-인강-데이터베이스-연동-SQLite"><a href="#파이썬-인강-데이터베이스-연동-SQLite" class="headerlink" title="파이썬 인강 :  데이터베이스 연동(SQLite)"></a>파이썬 인강 :  데이터베이스 연동(SQLite)</h3><h2 id="1-커서의-위치"><a href="#1-커서의-위치" class="headerlink" title="1. 커서의 위치"></a>1. 커서의 위치</h2><p>데이터베이스는 커서의 위치가 중요하다<br>데이터를 불러오고 난 다음에 커서는 해당 데이터 뒤에 위치하기때문이다</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1개 로우 선택</span></span><br><span class="line">print(<span class="string">'One -&gt; \n'</span>, c.fetchone())</span><br><span class="line"></span><br><span class="line"><span class="comment"># 지정 로우 선택 : size위의 숫자로 로우 갯수를 선택</span></span><br><span class="line">print(<span class="string">'Three -&gt; \n'</span>, c.fetchmany(size=<span class="number">3</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 전체 로우 선택</span></span><br><span class="line">print(<span class="string">'All -&gt; \n'</span>, c.fetchall())</span><br></pre></td></tr></table></figure>
-
-<p>위의 명령어를 활용한 예시는 아래 이미지와 같다</p>
-<p><img src="/img/python06071.png" alt=""></p>
-<p>터미널에서 볼 수 있듯이 1개 로우 명령어 뒤라서 커서는 1번 로우를 지난 2번로우 앞에 있다<br>그리고 size=3인 로우를 출력하니 2,3,4번 로우가 터미널에 출력되었음을 알 수 있다</p>
-<p>위의 상태에서 전체 로우 print(‘All -&gt; \n’, c.fetchall()) 명령어를 입력하면 어떻게 될까?<br>커서는 지금 4번로우 뒤에 위치해있기때문에 마지막 로우인 5번 데이터만 출력된다</p>
-<p>만약 위의 상태에서 print(‘All -&gt; \n’, c.fetchall())를 한번 더 호출하면 어떻게 될까?<br>커서의 위치는 마지막 로우인 5번 뒤에 있다. 따라서 호출해도 [] 빈리스트만 터미널에 출력된다.</p>
-<p>그렇다면 처음 1번 로우를 호출하고 싶을때는 어떻게 할 수 있을까?<br>바로 순회하면 된다</p>
-<h2 id="2-순회"><a href="#2-순회" class="headerlink" title="2. 순회"></a>2. 순회</h2><p>순회에는 3가지방법이 있다.</p>
-<ol>
-<li><p>순회 : 변수선언 후 for in  반복문 사용<br>데이터조회 명령어 c.execute(‘SELECT * FROM users’) 뒤에 실행해야 출력된다</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rows = c.fetchall()</span><br><span class="line"><span class="keyword">for</span> row <span class="keyword">in</span> rows:</span><br><span class="line">    print(<span class="string">'retrieve1  &gt;'</span>, row)  <span class="comment"># 조회 없음</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>순회 : 변수선언 없이 for in 반복문 바로 사용<br>데이터조회 명령어 c.execute(‘SELECT * FROM users’) 뒤에 실행해야 출력된다<br>간편하기때문에 제일많이 사용된다</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> row <span class="keyword">in</span> c.fetchall():</span><br><span class="line">    print(<span class="string">'retrieve2 &gt;'</span>, row)  <span class="comment"># 조회 없음</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>순회<br>execute(“SELECT * FROM users)는 users에 있는 전체 데이터를 조회하는 명령어이다 따라서 fetchall() 명령어와 동일한 결과값을 가진다.<br>데이터조회 명령어 c.execute(‘SELECT * FROM users’) 까지 포함된 명령어로 데이터조회명령어가 따로 필요없다<br>코드가 길어져서 가독성이 떨어지는 지는 단점이 있다.<br>“ORDER BY id desc” 명령어를 넣어주면 역순출력이 된다</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> row <span class="keyword">in</span> c.execute(<span class="string">"SELECT * FROM users ORDER BY id desc"</span>):</span><br><span class="line">    print(<span class="string">'retrieve3 &gt; '</span>, row)</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<p>순회1번과 순회2번은 함께 쓰일수없기때문에<br>순회2번과 순회3번의 출력값을 아래 이미지와 같다</p>
-<p><img src="/img/python06072.png" alt=""></p>
-<h2 id="3-WHERE-Retrieve"><a href="#3-WHERE-Retrieve" class="headerlink" title="3.  WHERE Retrieve"></a>3.  WHERE Retrieve</h2><p>6가지 방법이 있고 핵심이므로 꼭 다 알고 있어야한다.</p>
-<ol>
-<li><p>WHERE Retrieve1<br>튜플형태로 3번로우인 Lee를 출력<br>fetchone()에서 3번 로우 하나만 불러왔기때문에 그 다음 명령어로 fetchall()로 전체를 불러와도 [] 빈 리스트만 출력된다</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">param1 = (<span class="number">3</span>,) </span><br><span class="line">c.execute(<span class="string">'SELECT * FROM users WHERE id=?'</span>, param1)</span><br><span class="line">print(<span class="string">'param1'</span>, c.fetchone())</span><br><span class="line">print(<span class="string">'param1'</span>, c.fetchall())</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>WHERE Retrieve2<br>튜플형태로 1번로우인 Kim을 출력<br>%s :문자열형, %d:정수형,  %f: 실수형<br>fetchone()에서 1번 로우 하나만 불러왔기때문에 그 다음 명령어로 fetchall()로 전체를 불러와도 [] 빈 리스트만 출력된다</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">param2 = <span class="number">1</span></span><br><span class="line">c.execute(<span class="string">"SELECT * FROM users WHERE id='%s'"</span> % param2) </span><br><span class="line">print(<span class="string">'param2'</span>, c.fetchone())</span><br><span class="line">print(<span class="string">'param2'</span>, c.fetchall())</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>WHERE Retrieve3<br>이번엔 딕셔너리형태로 1번 로우출력<br>id= 뒤에 <code>:Id</code>를 넣어준뒤 컴마찍고  딕셔너리형태로 {“Id”: 1} 첫번째로우를 호출하면 된다</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">c.execute(<span class="string">"SELECT * FROM users WHERE id= :Id"</span>, &#123;<span class="string">"Id"</span>: <span class="number">1</span>&#125;)</span><br><span class="line">print(<span class="string">'param3'</span>, c.fetchone())</span><br><span class="line">print(<span class="string">'param3'</span>, c.fetchall())</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>WHERE Retrieve4<br>리스트형태로 파라미터 2개를 받아서 1번로우와 4번로우 출력<br>파라미터 여러가지를 가져오려면 IN(?,?)로 넣으면 된다<br>이젠 한개가 아니니까 fetchone()은 쓸 수 없고 fetchall()로 출력하면 된다</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">param4 = (<span class="number">1</span>, <span class="number">4</span>)</span><br><span class="line">c.execute(<span class="string">'SELECT * FROM users WHERE id IN(?,?)'</span>, param4)</span><br><span class="line">print(<span class="string">'param4'</span>, c.fetchall())</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>WHERE Retrieve5<br>위와 똑같은 결과값이지만 다르게 표현할 수 있다 물음표대신 정수값($d)을 넣어주면 된다<br>간단하기때문에 많이 사용한다</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">c.execute(<span class="string">"SELECT * FROM users WHERE id In('%d','%d')"</span> % (<span class="number">1</span>, <span class="number">4</span>))</span><br><span class="line">print(<span class="string">'param5'</span>, c.fetchall())</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>WHERE Retrieve6<br>딕셔너리형태로 1번과 4번로우 출력<br>OR 사용</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">c.execute(<span class="string">"SELECT * FROM users WHERE id= :id1 OR id= :id2"</span>, &#123;<span class="string">"id1"</span>: <span class="number">1</span>, <span class="string">"id2"</span>: <span class="number">4</span>&#125;)</span><br><span class="line">print(<span class="string">'param6'</span>, c.fetchall())</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<p>지금까지 id를 이용했지만 username, date등을 이용해서도 출력할수있다</p>
-<h2 id="4-Dump-출력"><a href="#4-Dump-출력" class="headerlink" title="4. Dump 출력"></a>4. Dump 출력</h2><p>데이터베이스 백업 시 중요하다<br>아래 명령어를 실행하면 새로운 dump.sql이라는 파일이 형성되고 그 안에 작성한 데이터테이블이 백업된다.<br>이를 활용하여 sql에 붙여넣으면 다른 컴퓨터나 환경에서도 데이터사용가능하다<br>실무에서 흔히 ‘덤프떠와’ 라고 말한다.</p>
-<p>with문을 사용하면 자동으로 close()를 해줘서 편리하다</p>
-<ul>
-<li>with open() as f: 를 실행했으므로 f.close()가 자동으로 되었고</li>
-<li>with conn: 을 실행했으므로 conn.close()가 자동으로 되었다</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> conn: </span><br><span class="line">    <span class="keyword">with</span> open(<span class="string">'본인이 원하는 경로/dump.sql'</span>, <span class="string">'w'</span>) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="keyword">for</span> line <span class="keyword">in</span> conn.iterdump():</span><br><span class="line">            f.write(<span class="string">'%s\n'</span> % line)</span><br><span class="line">        print(<span class="string">'Dump Print Complete.'</span>)</span><br></pre></td></tr></table></figure>
-
-<p>위의 코드를 실행시키면 출력값은 아래 이미지와 같다.</p>
-<p><img src="/img/python06073.png" alt=""></p>
-</div></article></div><nav class="pagination is-centered mt-4" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/tags/TIL/page/18/">Previous</a></div><div class="pagination-next"><a href="/tags/TIL/page/20/">Next</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/tags/TIL/">1</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/tags/TIL/page/18/">18</a></li><li><a class="pagination-link is-current" href="/tags/TIL/page/19/">19</a></li><li><a class="pagination-link" href="/tags/TIL/page/20/">20</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/tags/TIL/page/25/">25</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="" src="/img/avatar.png" alt="Sowon"></figure><p class="title is-size-4 is-block line-height-inherit">Sowon</p><p class="is-size-6 is-block">Welcome to my blog. I`m enjoying coding</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Busan</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">259</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">13</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">12</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/sowon-dev" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/sowon-dev"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://www.facebook.com/sowon.kim.39395"><i class="fab fa-facebook"></i></a></div></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/Database/"><span class="level-start"><span class="level-item">Database</span></span><span class="level-end"><span class="level-item tag">34</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Django/"><span class="level-start"><span class="level-item">Django</span></span><span class="level-end"><span class="level-item tag">10</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/HTML-CSS/"><span class="level-start"><span class="level-item">HTML&amp;CSS</span></span><span class="level-end"><span class="level-item tag">24</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JAVA/"><span class="level-start"><span class="level-item">JAVA</span></span><span class="level-end"><span class="level-item tag">49</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JSP/"><span class="level-start"><span class="level-item">JSP</span></span><span class="level-end"><span class="level-item tag">66</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JavaScript/"><span class="level-start"><span class="level-item">JavaScript</span></span><span class="level-end"><span class="level-item tag">26</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Journal/"><span class="level-start"><span class="level-item">Journal</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Lectures-Seminars/"><span class="level-start"><span class="level-item">Lectures &amp; Seminars</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Python/"><span class="level-start"><span class="level-item">Python</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Version-control/"><span class="level-start"><span class="level-item">Version control</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EC%BB%A8%ED%8A%B8%EB%A6%AC%EB%B7%B0%ED%86%A42020/"><span class="level-start"><span class="level-item">오픈소스컨트리뷰톤2020</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%A0%9C%EC%A3%BC%EC%BD%94%EB%94%A9%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%BA%A0%ED%94%84-10%EA%B8%B0/"><span class="level-start"><span class="level-item">제주코딩베이스캠프 10기</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%BD%94%EB%93%9C%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%B8%A0-PRE35%EA%B8%B0/"><span class="level-start"><span class="level-item">코드스테이츠 PRE35기</span></span><span class="level-end"><span class="level-item tag">14</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">Recent</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2020-11-17T00:00:00.000Z">2020-11-17</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/17/jspList/">[ITWILL : JSP] JSP전체목록List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JSP/">JSP</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-11-16T00:00:00.000Z">2020-11-16</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/16/javaList/">[ITWILL : JAVA] JAVA전체목록List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JAVA/">JAVA</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-11-16T00:00:00.000Z">2020-11-16</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/16/DBList/">[ITWILL : DB] DB전체목록List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Database/">Database</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-08-23T00:00:00.000Z">2020-08-23</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/23/200823git/">삭제한 옛날 branch 살리기</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Version-control/">Version control</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-08-23T00:00:00.000Z">2020-08-23</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/23/200823git2/">git reflog 기초</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Version-control/">Version control</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/11/"><span class="level-start"><span class="level-item">November 2020</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/08/"><span class="level-start"><span class="level-item">August 2020</span></span><span class="level-end"><span class="level-item tag">52</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/07/"><span class="level-start"><span class="level-item">July 2020</span></span><span class="level-end"><span class="level-item tag">71</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/06/"><span class="level-start"><span class="level-item">June 2020</span></span><span class="level-end"><span class="level-item tag">85</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/05/"><span class="level-start"><span class="level-item">May 2020</span></span><span class="level-end"><span class="level-item tag">19</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/04/"><span class="level-start"><span class="level-item">April 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/03/"><span class="level-start"><span class="level-item">March 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/10/"><span class="level-start"><span class="level-item">October 2019</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/09/"><span class="level-start"><span class="level-item">September 2019</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/08/"><span class="level-start"><span class="level-item">August 2019</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/07/"><span class="level-start"><span class="level-item">July 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/GIT/"><span class="tag">GIT</span><span class="tag is-grey-lightest">11</span></a></div><div class="control"><a class="tags has-addons" href="/tags/HTML-CSS/"><span class="tag">HTML&amp;CSS</span><span class="tag is-grey-lightest">27</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ITWILL-JAVA/"><span class="tag">ITWILL(JAVA)</span><span class="tag is-grey-lightest">173</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Journal/"><span class="tag">Journal</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/List/"><span class="tag">List</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/MySQL/"><span class="tag">MySQL</span><span class="tag is-grey-lightest">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Oracle/"><span class="tag">Oracle</span><span class="tag is-grey-lightest">29</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Review/"><span class="tag">Review</span><span class="tag is-grey-lightest">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/TIL/"><span class="tag">TIL</span><span class="tag is-grey-lightest">249</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Web-Game/"><span class="tag">Web Game</span><span class="tag is-grey-lightest">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9/"><span class="tag">생활코딩</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%EA%B0%9C%EB%B0%9C/"><span class="tag">패스트캠퍼스(파이썬웹개발)</span><span class="tag is-grey-lightest">37</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a><p class="size-small"><span>&copy; 2020 Sowon</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+</div></article></div><nav class="pagination is-centered mt-4" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/tags/TIL/page/18/">Previous</a></div><div class="pagination-next"><a href="/tags/TIL/page/20/">Next</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/tags/TIL/">1</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/tags/TIL/page/18/">18</a></li><li><a class="pagination-link is-current" href="/tags/TIL/page/19/">19</a></li><li><a class="pagination-link" href="/tags/TIL/page/20/">20</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/tags/TIL/page/26/">26</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="" src="/img/avatar.png" alt="Sowon"></figure><p class="title is-size-4 is-block line-height-inherit">Sowon</p><p class="is-size-6 is-block">Welcome to my blog. I`m enjoying coding</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Busan</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">271</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">13</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">12</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/sowon-dev" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/sowon-dev"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://www.facebook.com/sowon.kim.39395"><i class="fab fa-facebook"></i></a></div></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/Database/"><span class="level-start"><span class="level-item">Database</span></span><span class="level-end"><span class="level-item tag">34</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Django/"><span class="level-start"><span class="level-item">Django</span></span><span class="level-end"><span class="level-item tag">10</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/HTML-CSS/"><span class="level-start"><span class="level-item">HTML&amp;CSS</span></span><span class="level-end"><span class="level-item tag">24</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JAVA/"><span class="level-start"><span class="level-item">JAVA</span></span><span class="level-end"><span class="level-item tag">49</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JSP/"><span class="level-start"><span class="level-item">JSP</span></span><span class="level-end"><span class="level-item tag">66</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/JavaScript/"><span class="level-start"><span class="level-item">JavaScript</span></span><span class="level-end"><span class="level-item tag">26</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Journal/"><span class="level-start"><span class="level-item">Journal</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Lectures-Seminars/"><span class="level-start"><span class="level-item">Lectures &amp; Seminars</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Python/"><span class="level-start"><span class="level-item">Python</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Version-control/"><span class="level-start"><span class="level-item">Version control</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EC%BB%A8%ED%8A%B8%EB%A6%AC%EB%B7%B0%ED%86%A42020/"><span class="level-start"><span class="level-item">오픈소스컨트리뷰톤2020</span></span><span class="level-end"><span class="level-item tag">17</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%A0%9C%EC%A3%BC%EC%BD%94%EB%94%A9%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%BA%A0%ED%94%84-10%EA%B8%B0/"><span class="level-start"><span class="level-item">제주코딩베이스캠프 10기</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%BD%94%EB%93%9C%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%B8%A0-PRE35%EA%B8%B0/"><span class="level-start"><span class="level-item">코드스테이츠 PRE35기</span></span><span class="level-end"><span class="level-item tag">14</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">Recent</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2020-11-17T00:00:00.000Z">2020-11-17</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/17/jspList/">[ITWILL : JSP] JSP전체목록List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JSP/">JSP</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-11-16T00:00:00.000Z">2020-11-16</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/16/DBList/">[ITWILL : DB] DB전체목록List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Database/">Database</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-11-16T00:00:00.000Z">2020-11-16</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/16/javaList/">[ITWILL : JAVA] JAVA전체목록List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/JAVA/">JAVA</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-09-12T00:00:00.000Z">2020-09-12</time></p><p class="title is-6"><a class="link-muted" href="/2020/09/12/opensourceList/">[오픈소스컨트리뷰톤2020] Git List</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EC%BB%A8%ED%8A%B8%EB%A6%AC%EB%B7%B0%ED%86%A42020/">오픈소스컨트리뷰톤2020</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-09-11T00:00:00.000Z">2020-09-11</time></p><p class="title is-6"><a class="link-muted" href="/2020/09/11/200911opensource/">오픈소스컨트리뷰톤 온라인미팅 중 현직꿀팁 모음집</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EC%BB%A8%ED%8A%B8%EB%A6%AC%EB%B7%B0%ED%86%A42020/">오픈소스컨트리뷰톤2020</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/11/"><span class="level-start"><span class="level-item">November 2020</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/09/"><span class="level-start"><span class="level-item">September 2020</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/08/"><span class="level-start"><span class="level-item">August 2020</span></span><span class="level-end"><span class="level-item tag">57</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/07/"><span class="level-start"><span class="level-item">July 2020</span></span><span class="level-end"><span class="level-item tag">76</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/06/"><span class="level-start"><span class="level-item">June 2020</span></span><span class="level-end"><span class="level-item tag">85</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/05/"><span class="level-start"><span class="level-item">May 2020</span></span><span class="level-end"><span class="level-item tag">19</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/04/"><span class="level-start"><span class="level-item">April 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/03/"><span class="level-start"><span class="level-item">March 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/10/"><span class="level-start"><span class="level-item">October 2019</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/09/"><span class="level-start"><span class="level-item">September 2019</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/08/"><span class="level-start"><span class="level-item">August 2019</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/07/"><span class="level-start"><span class="level-item">July 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/GIT/"><span class="tag">GIT</span><span class="tag is-grey-lightest">22</span></a></div><div class="control"><a class="tags has-addons" href="/tags/HTML-CSS/"><span class="tag">HTML&amp;CSS</span><span class="tag is-grey-lightest">27</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ITWILL-JAVA/"><span class="tag">ITWILL(JAVA)</span><span class="tag is-grey-lightest">173</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Journal/"><span class="tag">Journal</span><span class="tag is-grey-lightest">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/List/"><span class="tag">List</span><span class="tag is-grey-lightest">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/MySQL/"><span class="tag">MySQL</span><span class="tag is-grey-lightest">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Oracle/"><span class="tag">Oracle</span><span class="tag is-grey-lightest">29</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Review/"><span class="tag">Review</span><span class="tag is-grey-lightest">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/TIL/"><span class="tag">TIL</span><span class="tag is-grey-lightest">259</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Web-Game/"><span class="tag">Web Game</span><span class="tag is-grey-lightest">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9/"><span class="tag">생활코딩</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%EA%B0%9C%EB%B0%9C/"><span class="tag">패스트캠퍼스(파이썬웹개발)</span><span class="tag is-grey-lightest">37</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/hope.svg" alt="야망찬 개발자의 블로그" height="28"></a><p class="size-small"><span>&copy; 2020 Sowon</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sowon-dev/sowon-dev.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
             site: {
                 url: 'https://github.com/sowon-dev',
                 external_link: {"enable":true,"exclude":[]}
