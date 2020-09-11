@@ -1,4 +1,4 @@
-## 🍀How are you?
+## 🍀Who are you?
 이행시소개
 - 소 : 소유하고싶은 능력의 개발자
 - 원 : 원하는 걸 얻는 방법을 아는 사람
@@ -26,8 +26,6 @@ Here is my favorite quotes that 100% represents me :
 
 ## 🍀How to get to know you?
 
-배움을 즐기며 책을 사랑하는 개발자의 블로그에 놀러오세요!
+배움을 즐기며 책을 사랑하는 [저의 블로그](https://sowon-dev.github.io/)에 놀러오세요!
 
-Please check out my devlog as below : 
-
-[sowon-dev의 devlog](https://sowon-dev.github.io/)
+Please check out [my devlog](https://sowon-dev.github.io/)!
