@@ -3,84 +3,84 @@
 
 
     <url>
-        <loc>https://github.com/sowon-dev/tags/GIT/</loc>
+        <loc>https://sowon-dev.github.io/tags/Oracle/</loc>
+        <lastmod>2020-09-13T16:07:12.557Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/ITWILL-JAVA/</loc>
+        <lastmod>2020-09-13T16:07:12.557Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/TIL/</loc>
+        <lastmod>2020-09-13T16:07:12.557Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/MySQL/</loc>
+        <lastmod>2020-09-13T16:00:30.858Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/GIT/</loc>
         <lastmod>2020-09-13T09:03:49.699Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://github.com/sowon-dev/tags/TIL/</loc>
-        <lastmod>2020-09-13T09:03:49.699Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://github.com/sowon-dev/tags/List/</loc>
+        <loc>https://sowon-dev.github.io/tags/List/</loc>
         <lastmod>2020-09-13T08:47:08.212Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://github.com/sowon-dev/tags/Journal/</loc>
+        <loc>https://sowon-dev.github.io/tags/Journal/</loc>
         <lastmod>2020-09-13T08:41:25.670Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://github.com/sowon-dev/tags/Oracle/</loc>
-        <lastmod>2020-09-11T04:51:20.571Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://github.com/sowon-dev/tags/ITWILL-JAVA/</loc>
-        <lastmod>2020-09-11T04:51:20.571Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://github.com/sowon-dev/tags/HTML-CSS/</loc>
+        <loc>https://sowon-dev.github.io/tags/HTML-CSS/</loc>
         <lastmod>2020-09-02T02:44:59.547Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://github.com/sowon-dev/tags/Review/</loc>
+        <loc>https://sowon-dev.github.io/tags/Review/</loc>
         <lastmod>2020-09-02T02:43:03.033Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://github.com/sowon-dev/tags/Web-Game/</loc>
+        <loc>https://sowon-dev.github.io/tags/Web-Game/</loc>
         <lastmod>2020-08-05T23:57:59.356Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://github.com/sowon-dev/tags/%25ED%258C%25A8%25EC%258A%25A4%25ED%258A%25B8%25EC%25BA%25A0%25ED%258D%25BC%25EC%258A%25A4-%25ED%258C%258C%25EC%259D%25B4%25EC%258D%25AC%25EC%259B%25B9%25EA%25B0%259C%25EB%25B0%259C/</loc>
+        <loc>https://sowon-dev.github.io/tags/%25ED%258C%25A8%25EC%258A%25A4%25ED%258A%25B8%25EC%25BA%25A0%25ED%258D%25BC%25EC%258A%25A4-%25ED%258C%258C%25EC%259D%25B4%25EC%258D%25AC%25EC%259B%25B9%25EA%25B0%259C%25EB%25B0%259C/</loc>
         <lastmod>2020-07-24T08:14:29.107Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://github.com/sowon-dev/tags/MySQL/</loc>
-        <lastmod>2020-07-17T01:46:50.847Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://github.com/sowon-dev/tags/%25EC%2583%259D%25ED%2599%259C%25EC%25BD%2594%25EB%2594%25A9/</loc>
+        <loc>https://sowon-dev.github.io/tags/%25EC%2583%259D%25ED%2599%259C%25EC%25BD%2594%25EB%2594%25A9/</loc>
         <lastmod>2020-06-17T01:23:46.379Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
