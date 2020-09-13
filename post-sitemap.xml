@@ -8,6 +8,110 @@
     </url>
 
     <url>
+        <loc>https://github.com/sowon-dev/2020/08/01/200801opensource/</loc>
+        <lastmod>2020-09-13T09:03:49.699Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://github.com/sowon-dev/2020/07/25/200725opensource/</loc>
+        <lastmod>2020-09-13T09:03:06.779Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://github.com/sowon-dev/2020/07/18/200718opensource6/</loc>
+        <lastmod>2020-09-13T08:59:24.771Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://github.com/sowon-dev/2020/07/18/200718opensource5/</loc>
+        <lastmod>2020-09-13T08:58:57.668Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://github.com/sowon-dev/2020/07/18/200718opensource4/</loc>
+        <lastmod>2020-09-13T08:58:10.224Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://github.com/sowon-dev/2020/07/18/200718opensource3/</loc>
+        <lastmod>2020-09-13T08:56:15.918Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://github.com/sowon-dev/2020/07/18/200718opensource2/</loc>
+        <lastmod>2020-09-13T08:55:59.391Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://github.com/sowon-dev/2020/07/18/200718opensource/</loc>
+        <lastmod>2020-09-13T08:55:35.947Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://github.com/sowon-dev/2020/09/12/200912opensource/</loc>
+        <lastmod>2020-09-13T08:51:39.519Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://github.com/sowon-dev/2020/08/08/200808opensource/</loc>
+        <lastmod>2020-09-13T08:49:31.954Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://github.com/sowon-dev/2020/09/14/200914opensource/</loc>
+        <lastmod>2020-09-13T08:48:59.230Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://github.com/sowon-dev/2020/09/14/opensourceList/</loc>
+        <lastmod>2020-09-13T08:47:08.212Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://github.com/sowon-dev/2020/07/15/200715journal/</loc>
+        <lastmod>2020-09-13T08:41:25.670Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://github.com/sowon-dev/2020/11/16/DBList/</loc>
         <lastmod>2020-09-11T04:51:20.571Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -184,14 +288,6 @@
     </url>
 
     <url>
-        <loc>https://github.com/sowon-dev/2020/07/15/200715journal/</loc>
-        <lastmod>2020-09-07T08:27:56.268Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://github.com/sowon-dev/2020/09/07/200907jspi3/</loc>
         <lastmod>2020-09-07T07:51:31.667Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -272,22 +368,6 @@
     </url>
 
     <url>
-        <loc>https://github.com/sowon-dev/2020/09/11/200911opensource/</loc>
-        <lastmod>2020-09-02T03:46:28.132Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://github.com/sowon-dev/2020/09/12/opensourceList/</loc>
-        <lastmod>2020-09-02T03:43:35.455Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://github.com/sowon-dev/2020/08/03/200803jspi/</loc>
         <lastmod>2020-09-02T03:43:04.092Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -306,14 +386,6 @@
     <url>
         <loc>https://github.com/sowon-dev/2020/08/03/200803javai/</loc>
         <lastmod>2020-09-02T03:38:07.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://github.com/sowon-dev/2020/08/01/200801opensource/</loc>
-        <lastmod>2020-09-02T03:36:45.847Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -394,14 +466,6 @@
     <url>
         <loc>https://github.com/sowon-dev/2020/08/07/200807jspi2/</loc>
         <lastmod>2020-09-02T03:11:32.332Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://github.com/sowon-dev/2020/08/08/200808opensource/</loc>
-        <lastmod>2020-09-02T03:09:02.787Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -850,62 +914,6 @@
     <url>
         <loc>https://github.com/sowon-dev/2020/06/30/200630dbi/</loc>
         <lastmod>2020-08-25T02:27:03.068Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://github.com/sowon-dev/2020/07/18/200718opensource6/</loc>
-        <lastmod>2020-08-23T15:20:35.756Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://github.com/sowon-dev/2020/07/25/200725opensource/</loc>
-        <lastmod>2020-08-23T15:18:52.893Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://github.com/sowon-dev/2020/07/18/200718opensource4/</loc>
-        <lastmod>2020-08-23T13:38:47.905Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://github.com/sowon-dev/2020/07/18/200718opensource2/</loc>
-        <lastmod>2020-08-23T13:14:49.500Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://github.com/sowon-dev/2020/07/18/200718opensource5/</loc>
-        <lastmod>2020-08-23T13:09:30.371Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://github.com/sowon-dev/2020/07/18/200718opensource3/</loc>
-        <lastmod>2020-08-23T13:03:27.718Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://github.com/sowon-dev/2020/07/18/200718opensource/</loc>
-        <lastmod>2020-08-23T12:59:29.316Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
