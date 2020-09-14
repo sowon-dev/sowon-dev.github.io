@@ -3,29 +3,36 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/Oracle/</loc>
+        <lastmod>2020-09-14T07:29:19.657Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/ITWILL-JAVA/</loc>
-        <lastmod>2020-09-14T02:15:00.295Z</lastmod>
+        <lastmod>2020-09-14T07:29:19.657Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/tags/TIL/</loc>
-        <lastmod>2020-09-14T02:15:00.295Z</lastmod>
+        <lastmod>2020-09-14T07:29:19.657Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/tags/Oracle/</loc>
-        <lastmod>2020-09-14T02:10:39.050Z</lastmod>
+        <loc>https://sowon-dev.github.io/tags/List/</loc>
+        <lastmod>2020-09-14T06:53:09.722Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/tags/HTML-CSS/</loc>
-        <lastmod>2020-09-14T01:47:48.710Z</lastmod>
+        <lastmod>2020-09-14T03:20:22.630Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -40,13 +47,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/GIT/</loc>
         <lastmod>2020-09-13T09:03:49.699Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/List/</loc>
-        <lastmod>2020-09-13T08:47:08.212Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
