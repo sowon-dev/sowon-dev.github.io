@@ -639,84 +639,9 @@
 <p>출력값의 차이를 보자<br>인스턴스멤버변수인 name의 경우 홍길동, 이순신 각각 잘 출력되었지만<br>클래스멤버변수인 a의 경우 p1.a =100;이라고 선언해도 탑다운방식으로 출력문전에 200으로 바뀌었으므로 둘다 200으로 출력된다. </p>
 <h3 id="4-3-전역변수"><a href="#4-3-전역변수" class="headerlink" title="4-3. 전역변수"></a>4-3. 전역변수</h3><p>변수를 공부하다가 생각난 변수가 있는데 바로 전역변수이다.<br>자바에는 전역변수가 없나생각했는데 nope!!<br>자바에서는 클래스를 기준으로 사용하므로 클래스안에 있는 멤버변수가 전역변수이다!<br>클래스<br>즉 멤버변수 = 전역변수 = 필드변수라고도한다</p>
 <p><img src="https://postfiles.pstatic.net/MjAxNzAzMTJfMjU0/MDAxNDg5Mjk4MjgwOTA1.aPJo2aLP_De0o48RnQqyyRvS0Ei-ZQGM9ocC9McDM8Eg.jJxPYikYWgZkASW2rz9c9m_xvojBopQ2chTjuVc24fAg.JPEG.heartflow89/image_9287258691489298256538.jpg?type=w773" alt=""></p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-25T00:00:00.000Z" title="2020-06-25T00:00:00.000Z">2020-06-25</time><span class="level-item"><a class="link-muted" href="/categories/JAVA/">JAVA</a></span><span class="level-item">6 minutes read (About 934 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/25/200625javai2/">[ITWILL : JAVA]클래스 : 메서드, 객체생성(객체화 = 인스턴스화), 오버로딩(overloading)</a></h1><div class="content"><h3 id="ITWILL학원-11강-JAVA-BY-윤미영강사"><a href="#ITWILL학원-11강-JAVA-BY-윤미영강사" class="headerlink" title="ITWILL학원 : 11강 JAVA BY 윤미영강사"></a>ITWILL학원 : 11강 JAVA BY 윤미영강사</h3><h2 id="1-메서드"><a href="#1-메서드" class="headerlink" title="1. 메서드"></a>1. 메서드</h2><ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-25T00:00:00.000Z" title="2020-06-25T00:00:00.000Z">2020-06-25</time><span class="level-item"><a class="link-muted" href="/categories/JAVA/">JAVA</a></span><span class="level-item">6 minutes read (About 924 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/25/200625javai2/">클래스 : 메서드, 객체생성(객체화 = 인스턴스화), 오버로딩(overloading)</a></h1><div class="content"><h2 id="메서드"><a href="#메서드" class="headerlink" title="메서드"></a>메서드</h2><ul>
 <li>메서드란 어떤 작업을 수행하는 명령문(코드)의 집합을 표현한다.<br>다른 언어에서는 함수라고도 부른다.</li>
-<li>메서드를 작성하는 이유 :<ul>
-<li>반복적으로 사용되는 코드의 중복을 방지.</li>
-<li>코드양을 줄여주어 유지 보수성을 향상하기 위함.</li>
-</ul>
-</li>
-<li>main메서드 : system소속으로 실행을 담당하는 특별한 메서드이다.</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="left">메서드종류</th>
-<th align="center">생김새</th>
-<th align="center">특징</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">main메서드</td>
-<td align="center">public static voide main(String[] args){ }</td>
-<td align="center">system소속, 실행을 담당.</td>
-</tr>
-<tr>
-<td align="left">void형 메서드</td>
-<td align="center">void 메서드명(){ }</td>
-<td align="center">return값 없음. 변수에 담아서 사용X, 호출만 가능.</td>
-</tr>
-<tr>
-<td align="left">return형 메서드</td>
-<td align="center">리턴데이터타입 메서드명(){ }</td>
-<td align="center">return값이 있기에 리턴데이터타입작성필수, 변수에 담아서 사용가능.</td>
-</tr>
-</tbody></table>
-<ol>
-<li>메서드의 형태<br>매개변수는 호출시에만 메모리에 할당받고 메서드실행이 끝나는 순간 매개변수는 사라진다.<br>매서드는 return값이 없으면 void를 붙여준다.</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">제한자&#x2F;리턴_타입 메서드명(타입 변수명, 타입 변수명, ...)&#123;</span><br><span class="line"> 실행코드</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-<ol start="2">
-<li>void 메서드 예시<br>void는 return값이 없는 메서드이다<br>return이 없기때문에  system.out,print(person())에서 사용할 수 없고 변수에 담아서 사용할 수 없다.<br>오직 호출만가능하다.</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">public class Person &#123;</span><br><span class="line">	void eat(String food)&#123; &#x2F;&#x2F;String food는 매개변수라고 부른다</span><br><span class="line">		System.out.println(food + &quot;먹었다&quot;)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">Person p &#x3D; new Pesron();</span><br><span class="line"></span><br><span class="line">p.eat(&quot;바나나&quot;); &#x2F;&#x2F;바나나먹었다</span><br><span class="line">p.eat(&quot;딸기&quot;); &#x2F;&#x2F;딸기먹었다</span><br><span class="line">p.eat(1); &#x2F;&#x2F;타입에러</span><br><span class="line">p.eat(&quot;1&quot;); &#x2F;&#x2F;&#39;먹었다</span><br></pre></td></tr></table></figure>
-
-
-<ol start="3">
-<li>리턴타입이있는 메서드 예시<br>return값이 있는 메서드는 리턴타입을 적어주면된다</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">public class Person &#123;</span><br><span class="line">	String name &#x3D; &#39;민지&#39;;</span><br><span class="line">	int age &#x3D; &#39;77&#39;;</span><br><span class="line">	</span><br><span class="line">	String infoPrint()&#123; &#x2F;&#x2F;String타입을 리턴값으로 가지는 메서드이다.</span><br><span class="line">		return name +&quot;는  &quot;+ age;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125; </span><br><span class="line">Person p1 &#x3D; new Pesron();</span><br><span class="line">System.out.println(p1.infoPrint()); &#x2F;&#x2F; 민지는 77</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="2-메서드-오버로딩-Method-overloading"><a href="#2-메서드-오버로딩-Method-overloading" class="headerlink" title="2. 메서드 오버로딩(Method overloading)"></a>2. 메서드 오버로딩(Method overloading)</h2><ul>
-<li><p>동일한 기능을 수행하는 메서드를 매개변수를 달리하여 추가로 작성하는 것을 의미.</p>
-</li>
-<li><p>데이터타입이 다른 매개변수에 따라 메서드를 여러개 정의하는 것을 말한다.</p>
-</li>
-<li><p>메서드오버로딩방법 : 동일한 이름의 메서드에 파라미터의 개수 또는 파라미터의 타입을 다르게 작성하면 된다.</p>
-</li>
-<li><p>오버로딩 사용하는 이유 : 재사용성을 높이기 위해서.</p>
-</li>
-<li><p>오버로딩과 오버라이딩은 차이가 있으니 용어에 주의하자</p>
-<ul>
-<li>오버로딩(Overloading) : 같은 이름의 메서드 여러개를 가지면서 매개변수의 유형과 개수가 다르도록 하는 기술</li>
-<li>오버라이딩(Overriding) : 상속관계일때 사용. 상위 클래스가 가지고 있는 메서드를 하위 클래스가 재정의해서 사용</li>
-</ul>
-</li>
-<li><p>메서드뿐만 아니라 생성자도 오버로딩이 가능하다.</p>
-<ul>
-<li>생성자 오버로딩 : 파라미터를 다르게 해서 여러 개의 생성자를 정의하는 것</li>
-</ul>
-</li>
-</ul>
-<h2 id="3-객체-인스턴스"><a href="#3-객체-인스턴스" class="headerlink" title="3. 객체(인스턴스)"></a>3. 객체(인스턴스)</h2><p>클래스가 붕어빵틀이라면 객체는 붕어빵 그 자체이다.<br>배열과 마찬가지로 객체도 선언 후에 생성을 해야 사용할수있다.<br>객체생성을 하지않으면 <strong>메모리</strong>에 올가가지않기에 사용할수가없다. 따라서 객체생성을 꼭해야한다.</p>
-<p>객체생성</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">객체명 변수명 &#x3D; new 클래스명(); &#x2F;&#x2F;객채생성</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://blog.naver.com/star7sss/221482506499">참고링크 : 클래스와 인스턴스</a></p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-24T00:00:00.000Z" title="2020-06-24T00:00:00.000Z">2020-06-24</time><span class="level-item"><a class="link-muted" href="/categories/JAVA/">JAVA</a></span><span class="level-item">9 minutes read (About 1385 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/24/200624javai/">[ITWILL : JAVA]배열과 함께쓰는 메서드</a></h1><div class="content"><h3 id="ITWILL학원-10강-JAVA-BY-윤미영강사"><a href="#ITWILL학원-10강-JAVA-BY-윤미영강사" class="headerlink" title="ITWILL학원 : 10강 JAVA BY 윤미영강사"></a>ITWILL학원 : 10강 JAVA BY 윤미영강사</h3><h2 id="1-for-each문"><a href="#1-for-each문" class="headerlink" title="1. for each문"></a>1. for each문</h2><p>향상된 for문인 for each문은 기존 for문과 비교해서 초기값과 증감식을 사용하지 않으며 배열이 가지고 있는 요소들을 특정 변수로 바로 할당해서 사용할 수 있게한다</p>
+<li>메서드를 작성하는 이유 :</div><a class="article-more button is-small size-small" href="/2020/06/25/200625javai2/#more">Read More</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-24T00:00:00.000Z" title="2020-06-24T00:00:00.000Z">2020-06-24</time><span class="level-item"><a class="link-muted" href="/categories/JAVA/">JAVA</a></span><span class="level-item">9 minutes read (About 1385 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/24/200624javai/">[ITWILL : JAVA]배열과 함께쓰는 메서드</a></h1><div class="content"><h3 id="ITWILL학원-10강-JAVA-BY-윤미영강사"><a href="#ITWILL학원-10강-JAVA-BY-윤미영강사" class="headerlink" title="ITWILL학원 : 10강 JAVA BY 윤미영강사"></a>ITWILL학원 : 10강 JAVA BY 윤미영강사</h3><h2 id="1-for-each문"><a href="#1-for-each문" class="headerlink" title="1. for each문"></a>1. for each문</h2><p>향상된 for문인 for each문은 기존 for문과 비교해서 초기값과 증감식을 사용하지 않으며 배열이 가지고 있는 요소들을 특정 변수로 바로 할당해서 사용할 수 있게한다</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(데이터타입 변수명 : 반복할 배열명/컬렉션)&#123;</span><br><span class="line">	<span class="comment">//반복할 문장</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>이 반복문은 내부적으로 배열의 인덱스 0번부터 배열의 길이만큼을 반복한다.</p>
 <ul>

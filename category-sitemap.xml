@@ -8,15 +8,22 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/categories/%25EC%2598%25A4%25ED%2594%2588%25EC%2586%258C%25EC%258A%25A4%25EC%25BB%25A8%25ED%258A%25B8%25EB%25A6%25AC%25EB%25B7%25B0%25ED%2586%25A42020/</loc>
-        <lastmod>2020-09-17T02:26:24.510Z</lastmod>
+        <loc>https://sowon-dev.github.io/categories/JSP/</loc>
+        <lastmod>2020-09-17T08:20:37.322Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/categories/JSP/</loc>
-        <lastmod>2020-09-17T02:07:04.050Z</lastmod>
+        <loc>https://sowon-dev.github.io/categories/JAVA/</loc>
+        <lastmod>2020-09-17T07:28:43.308Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/%25EC%2598%25A4%25ED%2594%2588%25EC%2586%258C%25EC%258A%25A4%25EC%25BB%25A8%25ED%258A%25B8%25EB%25A6%25AC%25EB%25B7%25B0%25ED%2586%25A42020/</loc>
+        <lastmod>2020-09-17T02:26:24.510Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -59,13 +66,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/Journal/</loc>
         <lastmod>2020-09-13T08:41:25.670Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/JAVA/</loc>
-        <lastmod>2020-09-10T08:16:37.105Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

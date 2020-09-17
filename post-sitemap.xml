@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2020/09/17/200917jspi/</loc>
+        <lastmod>2020-09-17T08:20:37.322Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/06/25/200625javai2/</loc>
+        <lastmod>2020-09-17T07:28:43.308Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2020/08/01/200801opensource/</loc>
         <lastmod>2020-09-17T02:26:24.510Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -58,14 +74,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/09/16/200916jspi/</loc>
         <lastmod>2020-09-17T02:07:04.050Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/09/17/200917jspi/</loc>
-        <lastmod>2020-09-17T02:05:38.024Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1714,14 +1722,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/06/25/200625javai/</loc>
         <lastmod>2020-07-09T02:43:11.631Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/06/25/200625javai2/</loc>
-        <lastmod>2020-07-08T07:43:26.071Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
