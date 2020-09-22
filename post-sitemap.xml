@@ -8,8 +8,64 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2020/09/22/200922journal/</loc>
+        <lastmod>2020-09-22T03:37:09.673Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/11/17/jspList/</loc>
+        <lastmod>2020-09-22T03:35:22.165Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/09/22/200922jspi2/</loc>
+        <lastmod>2020-09-22T03:33:44.208Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/07/15/200715journal/</loc>
+        <lastmod>2020-09-22T03:32:38.820Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/09/22/200922jspi/</loc>
+        <lastmod>2020-09-22T02:34:16.425Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/08/19/200819jspi2/</loc>
+        <lastmod>2020-09-22T02:07:42.072Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/08/19/200819jspi3/</loc>
+        <lastmod>2020-09-22T02:01:20.447Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2020/09/21/200921opemsource/</loc>
-        <lastmod>2020-09-21T13:22:15.447Z</lastmod>
+        <lastmod>2020-09-22T01:12:49.962Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -178,14 +234,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/09/01/jspForm/</loc>
         <lastmod>2020-09-17T00:11:57.028Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/11/17/jspList/</loc>
-        <lastmod>2020-09-17T00:11:07.549Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -602,14 +650,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/09/14/200914opensource/</loc>
         <lastmod>2020-09-13T08:48:59.230Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/07/15/200715journal/</loc>
-        <lastmod>2020-09-13T08:41:25.670Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1114,22 +1154,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/08/19/200819jspi4/</loc>
         <lastmod>2020-09-02T02:33:38.775Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/08/19/200819jspi3/</loc>
-        <lastmod>2020-09-02T02:33:05.776Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/08/19/200819jspi2/</loc>
-        <lastmod>2020-09-02T02:32:49.248Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
