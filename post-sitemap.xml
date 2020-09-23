@@ -8,6 +8,46 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2020/09/23/200923and-2/</loc>
+        <lastmod>2020-09-23T04:01:37.711Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/09/23/200923and-1/</loc>
+        <lastmod>2020-09-23T02:58:16.457Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/09/23/200923and/</loc>
+        <lastmod>2020-09-23T01:36:35.335Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/09/09/200909and/</loc>
+        <lastmod>2020-09-23T00:50:38.407Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/09/10/200910and/</loc>
+        <lastmod>2020-09-23T00:46:59.351Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2020/09/22/200922dbi2/</loc>
         <lastmod>2020-09-22T08:24:28.184Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -266,14 +306,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/09/15/200915jspi4/</loc>
         <lastmod>2020-09-17T00:01:08.040Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/09/10/200910and/</loc>
-        <lastmod>2020-09-16T03:27:49.569Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -698,14 +730,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/09/10/200910jspi/</loc>
         <lastmod>2020-09-10T05:34:58.677Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/09/09/200909and/</loc>
-        <lastmod>2020-09-10T03:56:02.965Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

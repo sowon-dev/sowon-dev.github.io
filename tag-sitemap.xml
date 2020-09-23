@@ -3,21 +3,21 @@
 
 
     <url>
-        <loc>https://sowon-dev.github.io/tags/Oracle/</loc>
-        <lastmod>2020-09-22T08:24:28.184Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/tags/ITWILL-JAVA/</loc>
-        <lastmod>2020-09-22T08:24:28.184Z</lastmod>
+        <lastmod>2020-09-23T04:01:37.711Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/tags/TIL/</loc>
+        <lastmod>2020-09-23T04:01:37.711Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/Oracle/</loc>
         <lastmod>2020-09-22T08:24:28.184Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

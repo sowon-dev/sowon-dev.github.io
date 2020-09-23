@@ -8,6 +8,13 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/Android/</loc>
+        <lastmod>2020-09-23T04:01:37.711Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/Database/Oracle/</loc>
         <lastmod>2020-09-22T08:24:28.184Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -45,13 +52,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/JAVA/</loc>
         <lastmod>2020-09-17T07:28:43.308Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Android/</loc>
-        <lastmod>2020-09-16T03:27:49.569Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
