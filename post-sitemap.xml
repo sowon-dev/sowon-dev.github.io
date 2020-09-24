@@ -8,6 +8,30 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2020/09/24/androidList/</loc>
+        <lastmod>2020-09-24T01:40:39.123Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/09/24/200924and/</loc>
+        <lastmod>2020-09-24T00:42:52.353Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/09/23/200923and-1/</loc>
+        <lastmod>2020-09-24T00:22:58.868Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2020/09/21/200921opemsource/</loc>
         <lastmod>2020-09-23T12:49:29.903Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -90,14 +114,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/09/23/200923and-2/</loc>
         <lastmod>2020-09-23T04:01:37.711Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/09/23/200923and-1/</loc>
-        <lastmod>2020-09-23T02:58:16.457Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
