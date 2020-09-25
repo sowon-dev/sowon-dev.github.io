@@ -9,7 +9,23 @@
 
     <url>
         <loc>https://sowon-dev.github.io/2020/11/17/jspList/</loc>
-        <lastmod>2020-09-24T08:18:14.478Z</lastmod>
+        <lastmod>2020-09-25T02:29:41.869Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/09/25/200925jspi/</loc>
+        <lastmod>2020-09-25T02:12:14.501Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/09/24/200924jspi/</loc>
+        <lastmod>2020-09-25T01:54:38.132Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +33,7 @@
 
     <url>
         <loc>https://sowon-dev.github.io/2020/09/23/200923jspi-3/</loc>
-        <lastmod>2020-09-24T08:16:43.141Z</lastmod>
+        <lastmod>2020-09-25T00:48:44.673Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -58,14 +74,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/09/01/jspForm/</loc>
         <lastmod>2020-09-24T05:06:15.145Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/09/24/200924jspi/</loc>
-        <lastmod>2020-09-24T04:58:40.521Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
