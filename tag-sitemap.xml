@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/CodeUp100/</loc>
+        <lastmod>2020-09-29T17:08:08.887Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/ITWILL-JAVA/</loc>
         <lastmod>2020-09-29T02:52:24.855Z</lastmod>
         <changefreq>weekly</changefreq>
