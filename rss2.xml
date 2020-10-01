@@ -102,6 +102,29 @@
     </item>
     
     <item>
+      <title>(JAVA 자바)실수 1개 입력받아 그대로 출력하기</title>
+      <link>https://sowon-dev.github.io/2020/10/01/201002al/</link>
+      <guid>https://sowon-dev.github.io/2020/10/01/201002al/</guid>
+      <pubDate>Thu, 01 Oct 2020 06:19:34 GMT</pubDate>
+      
+      <description>&lt;p&gt;##&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>##</p><a id="more"></a><p><br><br><br></p><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Algorithm/">Algorithm</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/CodeUp100/">CodeUp100</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2020/10/01/201002al/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>인텔리제이 윈도우 단축키</title>
       <link>https://sowon-dev.github.io/2020/09/30/201001journal/</link>
       <guid>https://sowon-dev.github.io/2020/09/30/201001journal/</guid>
@@ -127,10 +150,10 @@
     </item>
     
     <item>
-      <title>시간 입력받아 그대로 출력하기</title>
+      <title>(JAVA 자바)시간 입력받아 그대로 출력하기</title>
       <link>https://sowon-dev.github.io/2020/09/29/200930al-2/</link>
       <guid>https://sowon-dev.github.io/2020/09/29/200930al-2/</guid>
-      <pubDate>Tue, 29 Sep 2020 17:06:15 GMT</pubDate>
+      <pubDate>Tue, 29 Sep 2020 08:06:15 GMT</pubDate>
       
       <description>&lt;h2 id=&quot;문제-기초-입출력-시간-입력받아-그대로-출력하기&quot;&gt;&lt;a href=&quot;#문제-기초-입출력-시간-입력받아-그대로-출력하기&quot; class=&quot;headerlink&quot; title=&quot;문제 : [기초-입출력] 시간 입력받아 그대로 출력하기&quot;&gt;&lt;/a&gt;문제 : [기초-입출력] 시간 입력받아 그대로 출력하기&lt;/h2&gt;&lt;p&gt;시(hour)와 분(minute)이 “:” 으로 구분된 형식에 맞추어 시간이 입력될 때, 그대로 출력하는 연습을 해보자.&lt;/p&gt;</description>
       
@@ -150,10 +173,10 @@
     </item>
     
     <item>
-      <title>실수 1개 입력받아 그대로 출력하기</title>
+      <title>(JAVA 자바)실수 1개 입력받아 그대로 출력하기</title>
       <link>https://sowon-dev.github.io/2020/09/29/200930al/</link>
       <guid>https://sowon-dev.github.io/2020/09/29/200930al/</guid>
-      <pubDate>Tue, 29 Sep 2020 17:05:01 GMT</pubDate>
+      <pubDate>Tue, 29 Sep 2020 08:05:01 GMT</pubDate>
       
       <description>&lt;h2 id=&quot;문제-기초-입출력-실수-1개-입력받아-그대로-출력하기&quot;&gt;&lt;a href=&quot;#문제-기초-입출력-실수-1개-입력받아-그대로-출력하기&quot; class=&quot;headerlink&quot; title=&quot;문제 : [기초-입출력] 실수 1개 입력받아 그대로 출력하기&quot;&gt;&lt;/a&gt;문제 : [기초-입출력] 실수 1개 입력받아 그대로 출력하기&lt;/h2&gt;&lt;p&gt;실수형(float)로 변수를 선언하고 그 변수에 실수값을 저장한 후&lt;br&gt;저장되어 있는 실수값을 출력해보자.&lt;/p&gt;</description>
       
@@ -173,10 +196,10 @@
     </item>
     
     <item>
-      <title>문자 1개 입력받아 그대로 출력하기</title>
+      <title>(JAVA 자바)문자 1개 입력받아 그대로 출력하기</title>
       <link>https://sowon-dev.github.io/2020/09/29/200930al-1/</link>
       <guid>https://sowon-dev.github.io/2020/09/29/200930al-1/</guid>
-      <pubDate>Tue, 29 Sep 2020 17:00:20 GMT</pubDate>
+      <pubDate>Tue, 29 Sep 2020 08:00:20 GMT</pubDate>
       
       <description>&lt;h2 id=&quot;문제-기초-입출력-문자-1개-입력받아-그대로-출력하기&quot;&gt;&lt;a href=&quot;#문제-기초-입출력-문자-1개-입력받아-그대로-출력하기&quot; class=&quot;headerlink&quot; title=&quot;문제 : [기초-입출력] 문자 1개 입력받아 그대로 출력하기&quot;&gt;&lt;/a&gt;문제 : [기초-입출력] 문자 1개 입력받아 그대로 출력하기&lt;/h2&gt;&lt;p&gt;문자형(char)으로 변수를 하나 선언하고, 변수에 문자를 저장한 후 변수에 저장되어 있는 문자를 그대로 출력해보자.&lt;/p&gt;</description>
       
@@ -518,32 +541,6 @@
       
       
       <comments>https://sowon-dev.github.io/2020/09/23/200923and-1/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>레이아웃종류 및 레이아웃 안에서 자주 사용되는 속성</title>
-      <link>https://sowon-dev.github.io/2020/09/23/200923and/</link>
-      <guid>https://sowon-dev.github.io/2020/09/23/200923and/</guid>
-      <pubDate>Wed, 23 Sep 2020 00:39:17 GMT</pubDate>
-      
-      <description>&lt;h2 id=&quot;레이아웃의-종류&quot;&gt;&lt;a href=&quot;#레이아웃의-종류&quot; class=&quot;headerlink&quot; title=&quot;레이아웃의 종류&quot;&gt;&lt;/a&gt;레이아웃의 종류&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;레이아웃은 ViewGroup 클래스로부터 상속된다.</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="레이아웃의-종류"><a href="#레이아웃의-종류" class="headerlink" title="레이아웃의 종류"></a>레이아웃의 종류</h2><ul><li>레이아웃은 ViewGroup 클래스로부터 상속된다.<a id="more"></a></li></ul><p><img src="https://t1.daumcdn.net/cfile/tistory/261CF539579846111B" alt="https://recipes4dev.tistory.com/66"><br><img src="https://blog.kakaocdn.net/dn/2xTLo/btqxpzXOzVq/VxJceLjv9wCtl2NyIgCDH0/img.png" alt="https://coding-restaurant.tistory.com/86"></p><h3 id="리니어-LinearLayout-선형-레이아웃"><a href="#리니어-LinearLayout-선형-레이아웃" class="headerlink" title="리니어 (LinearLayout) : 선형 레이아웃"></a>리니어 (LinearLayout) : 선형 레이아웃</h3><ul><li>가장 많이 사용.</li><li>왼쪽 위부터 아래쪽 또는 오른쪽으로 차례로 배치</li></ul><h3 id="렐러티브-관계적-레이아웃"><a href="#렐러티브-관계적-레이아웃" class="headerlink" title="렐러티브 : 관계적 레이아웃."></a>렐러티브 : 관계적 레이아웃.</h3><ul><li>위젯 자신이 속한 레이아웃의 상하좌우 위치를 지정하거나 다른 위젯으로부터 상대적인 위치를 지정</li><li>상대적인 위치로 배치<ul><li>상대적 기준 : 부모(레이아웃) 또는 뷰</li></ul></li></ul><p><img src="https://t1.daumcdn.net/cfile/tistory/277FD442591293FD1A" alt="https://recipes4dev.tistory.com/126"><br><img src="https://t1.daumcdn.net/cfile/tistory/227C763E591293FD18" alt="https://recipes4dev.tistory.com/126"></p><h3 id="테이블"><a href="#테이블" class="headerlink" title="테이블"></a>테이블</h3><ul><li>span 기능이 없다. </li><li>위젯을 행과 열의 개수를 지정한 테이블 형태로 배열.</li></ul><h3 id="그리드"><a href="#그리드" class="headerlink" title="그리드"></a>그리드</h3><ul><li>웹(html)의 테이블 개념과 가깝다. </li><li>테이블레이아웃과 비슷하지만 행 또는 열을 확장하여 다양하게 배치가능</li></ul><h3 id="프레임"><a href="#프레임" class="headerlink" title="프레임"></a>프레임</h3><ul><li>왼쪽 위에 일률적으로 겹쳐 배치하여 중복되어 보이는 효과가능. </li><li>여러개의 위젯을 배치한 후 상황에 따라서 필요한 위젯을 보이는 방식에 주로 활용</li></ul><p><br><br><br></p><h2 id="레이아웃-안에서-자주-사용되는-속성"><a href="#레이아웃-안에서-자주-사용되는-속성" class="headerlink" title="레이아웃 안에서 자주 사용되는 속성"></a>레이아웃 안에서 자주 사용되는 속성</h2><h3 id="orientation-배치할-위젯의-방향-설정"><a href="#orientation-배치할-위젯의-방향-설정" class="headerlink" title="orientation : 배치할 위젯의 방향 설정."></a>orientation : 배치할 위젯의 방향 설정.</h3><ul><li>수직(Vertical) / 수평(Horiwontal) 중 하나 선택.</li><li>수직(Vertical) : 레이아웃에 포함된 위젯이 수직방향인 위에서 아래로 차곡차곡 쌓인다.</li><li>수평(Horiwontal) : 위젯이 많은 경우 화면이 넘어가면서 자동으로 보이지않음</li></ul><p><br><br><br></p><h3 id="gravity-위치-정렬"><a href="#gravity-위치-정렬" class="headerlink" title="gravity : 위치 정렬"></a>gravity : 위치 정렬</h3><ul><li>자신에게 포함된 자식(주로 위젯)을 어디에 위치 시킬지 결정. </li><li>left / right / center / top / bottom등 가능</li><li>right||bottom 는 오른쪽 아래에 정렬한다는 의미.</li></ul><p><br><br><br></p><h3 id="layout-gravity-위치-정렬"><a href="#layout-gravity-위치-정렬" class="headerlink" title="layout_gravity : 위치 정렬"></a>layout_gravity : 위치 정렬</h3><ul><li>자신의 위치를 부모(주로 레이아웃)의 어디쯤에 위치시킬지를 결정. </li><li>그래서 보통 gravity는 레이아웃에 layout_gravity는 위젯에 지정한다.</li></ul><p><br><br><br></p><h3 id="padding-위젯의-여백"><a href="#padding-위젯의-여백" class="headerlink" title="padding : 위젯의 여백"></a>padding : 위젯의 여백</h3><p><br><br><br></p><h3 id="layout-weight-공간의-가중값"><a href="#layout-weight-공간의-가중값" class="headerlink" title="layout_weight : 공간의 가중값"></a>layout_weight : 공간의 가중값</h3><ul><li>여러 레이아웃이 중복될 때 각 레이아웃이 전체 화면에서 차지하는 공간의 가중 값.</li><li>중복레이아웃을 사용할 경우 각 레이아웃의 크기를 지정해야한다. 레이아웃을 화면 전체에 채워야하기 때문에 dp, px등의 단위보단 전체화면에 대한 비율(%)인 layout_weight을 사용해야한다.</li></ul><p><img src="/img/200923layoutweight.PNG" alt="https://youtu.be/fSIFpquL4Vc?t=7"></p><p><br><br><br></p><h3 id="baselineAligned-크기가-다른-위젯들을-보기-좋게-정렬"><a href="#baselineAligned-크기가-다른-위젯들을-보기-좋게-정렬" class="headerlink" title="baselineAligned : 크기가 다른 위젯들을 보기 좋게 정렬."></a>baselineAligned : 크기가 다른 위젯들을 보기 좋게 정렬.</h3><ul><li>true(디폴트) / false</li></ul><p><img src="https://blog.kakaocdn.net/dn/AArEK/btqxqJFVD6C/Vrm0f2YiMwFwglJEn4GtAk/img.png" alt="https://coding-restaurant.tistory.com/86"></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><p><a href="https://coding-restaurant.tistory.com/86">코딩맛집</a><br><a href="https://recipes4dev.tistory.com/">개발자를 위한 레시피</a></p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Android/">Android</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/TIL/">TIL</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/ITWILL-JAVA/">ITWILL(JAVA)</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2020/09/23/200923and/#disqus_thread</comments>
       
     </item>
     
