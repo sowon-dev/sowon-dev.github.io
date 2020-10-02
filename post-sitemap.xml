@@ -8,16 +8,32 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2020/09/30/201001journal/</loc>
-        <lastmod>2020-10-01T15:42:58.580Z</lastmod>
+        <loc>https://sowon-dev.github.io/2020/10/01/200929opensource/</loc>
+        <lastmod>2020-10-02T14:36:05.341Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2020/10/01/201002al/</loc>
-        <lastmod>2020-10-01T15:20:54.883Z</lastmod>
+        <loc>https://sowon-dev.github.io/2020/10/02/201002team/</loc>
+        <lastmod>2020-10-02T10:01:15.242Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/08/25/200826girlsInTech/</loc>
+        <lastmod>2020-10-02T10:00:55.862Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/09/30/201001journal/</loc>
+        <lastmod>2020-10-01T15:42:58.580Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1242,14 +1258,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/08/28/200828cssPosition/</loc>
         <lastmod>2020-09-02T02:44:59.547Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/08/26/200826girlsInTech/</loc>
-        <lastmod>2020-09-02T02:43:03.033Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

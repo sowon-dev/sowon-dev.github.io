@@ -102,25 +102,52 @@
     </item>
     
     <item>
-      <title>(JAVA 자바)실수 1개 입력받아 그대로 출력하기</title>
-      <link>https://sowon-dev.github.io/2020/10/01/201002al/</link>
-      <guid>https://sowon-dev.github.io/2020/10/01/201002al/</guid>
-      <pubDate>Thu, 01 Oct 2020 06:19:34 GMT</pubDate>
+      <title>[국비교육 IT팀프로젝트]1.팀플주제구상</title>
+      <link>https://sowon-dev.github.io/2020/10/02/201002team/</link>
+      <guid>https://sowon-dev.github.io/2020/10/02/201002team/</guid>
+      <pubDate>Fri, 02 Oct 2020 00:26:31 GMT</pubDate>
       
-      <description>&lt;p&gt;##&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>##</p><a id="more"></a><p><br><br><br></p><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content:encoded>
+      <description>&lt;h2 id=&quot;팀프로젝트&quot;&gt;&lt;a href=&quot;#팀프로젝트&quot; class=&quot;headerlink&quot; title=&quot;팀프로젝트&quot;&gt;&lt;/a&gt;팀프로젝트&lt;/h2&gt;&lt;p&gt;학원에서 다음주부터 팀프로젝트를 진행한다고 한다. 팀프로젝트는 개인프로젝트와 달리 굉장히 신경써야 할 부분이 많다.&lt;br&gt;그걸 어떻게 아느냐고?&lt;br&gt;나는 경영학도로서 대학 4년을 내내 수강했던 거의 모든 강의에서 팀 프로젝트 했기때문에 이런 사람, 저런 사람 그리고 &lt;a href=&quot;https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&amp;qna_seq=153673&quot;&gt;볼 꼴, 못 볼 꼴&lt;/a&gt;을 다봤다. &lt;/p&gt;</description>
       
       
-      <category domain="https://sowon-dev.github.io/categories/Algorithm/">Algorithm</category>
+      
+      <content:encoded><![CDATA[<h2 id="팀프로젝트"><a href="#팀프로젝트" class="headerlink" title="팀프로젝트"></a>팀프로젝트</h2><p>학원에서 다음주부터 팀프로젝트를 진행한다고 한다. 팀프로젝트는 개인프로젝트와 달리 굉장히 신경써야 할 부분이 많다.<br>그걸 어떻게 아느냐고?<br>나는 경영학도로서 대학 4년을 내내 수강했던 거의 모든 강의에서 팀 프로젝트 했기때문에 이런 사람, 저런 사람 그리고 <a href="https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&qna_seq=153673">볼 꼴, 못 볼 꼴</a>을 다봤다. </p><a id="more"></a><p>따라서 팀프로젝트에는 자신있다!<br>지치질 않을 자신!<br>좋든 안 좋든 이 모든 경험이 직장생활에서 좋은 거름이 되어줄 것이라 믿어 의심치않는다.<br>전 직장에서도 그 거름으로 탄탄히 성장했기 때문이다.<br>이번에도 잘해보자!</p><p><br><br><br></p><h2 id="조편성"><a href="#조편성" class="headerlink" title="조편성"></a>조편성</h2><p>조 구성은 학원에서 진행해준다고 한다.<br>내가 직접 하고 싶었는데 수준에 맞춰(?) 고루 팀원을 구성한다고 한다.<br>학원 수강기간내내 찜해둔 몇몇 친구들과 함께 하고싶었는데… 쳇-<br>나처럼 열정가득한 사람들과 함께 했으면 좋겠다.<br>팀프로젝트가 개인프로젝트로 변질되기도 하는데 이번에는 모두가 다 잘 참여하여 좋은 결과를 가져갔으면 좋겠다.<br>팀플을 하면 갠플과 다른 배울 점이 있으니까!</p><p><br><br><br></p><h2 id="팀프로젝트주제"><a href="#팀프로젝트주제" class="headerlink" title="팀프로젝트주제"></a>팀프로젝트주제</h2><p>팀 구성이 결정되면 팀프로젝트 주제를 선정해야한다. 스스로 준비없이 가면 첫 팀플회의는 폭망이란 걸 잘 알고있다.<br>따라서 나라도 주제를 몇가지 준비해가서 첫 회의에서 삭막한 침묵속에 있고 싶지않다.<br>첫회의때의 내 목표는 주제선정완료와 업무배분까지 끝내고 싶다.<br>내가 생각한 팀프로젝트 주제는 레퍼런스가 많은 주제를 골랐다.<br>그 이유는 학원의 우리반의 수준이 그리 높진 않기 때문에 레퍼런스가 많아야 팀원들이 포기하지않고 끝까지 함께 갈 수 있다.</p><ol><li>패션 쇼핑몰</li><li>인강사이트(결제포함)</li><li>예매사이트(영화, 숙박)</li></ol><p><br><br><br></p><h2 id="팀협업도구"><a href="#팀협업도구" class="headerlink" title="팀협업도구"></a>팀협업도구</h2><p>팀 협업도구를 꽤 오랫동안 찾아보았다. 실무에서 사용하는 협업툴을 미리 써보고싶기때문이다.<br>현재 학원에서 깃헙을 아는 사람들이 거의 없어서 (강사님이 깃헙 사용해보았는지 물어봐서 거수를 했는데 나만 손들었다…) 브랜치를 나눠서 따로 백업하는 방향으로 진행해야 할 것 같다.<br>지난번 <a href="https://sowon-dev.github.io/2020/09/21/200921opemsource/#%EC%A7%80%EB%9D%BC">프론트앤드 직무멘토링때 들었던 지라</a>를 사용해보고싶어졌다.<br>혼자서 조금 테스트 해봤는데 이전에 개인프로젝트할때 적용해보았던 <a href="https://sowon-dev.github.io/2020/08/26/200826girlsInTech/#%F0%9F%8D%80-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%98%91%EC%97%85%EB%8F%84%EA%B5%AC">Azure DevOps</a>와 비슷했다.<br>이러한 협업툴이 필요한 이유는 한 눈에 내가 뭘 해야하고 뭘 했는지 탁탁 보이기때문이다.<br>개인프로젝트때에도 큰 효과가 있었는테 팀플이면 그 효과가 더욱더 클 것이다.</p><ul><li>깃헙 : 백업</li><li>지라 : 커뮤니케이션</li></ul>]]></content:encoded>
       
       
-      <category domain="https://sowon-dev.github.io/tags/CodeUp100/">CodeUp100</category>
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/Team-Project/">Team Project</category>
       
       
-      <comments>https://sowon-dev.github.io/2020/10/01/201002al/#disqus_thread</comments>
+      <category domain="https://sowon-dev.github.io/tags/Journal/">Journal</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2020/10/02/201002team/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>오픈소스컨트리뷰톤2020 수상후기</title>
+      <link>https://sowon-dev.github.io/2020/10/01/200929opensource/</link>
+      <guid>https://sowon-dev.github.io/2020/10/01/200929opensource/</guid>
+      <pubDate>Thu, 01 Oct 2020 23:37:06 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;장려상-수상&quot;&gt;&lt;a href=&quot;#장려상-수상&quot; class=&quot;headerlink&quot; title=&quot;장려상 수상!&quot;&gt;&lt;/a&gt;장려상 수상!&lt;/h2&gt;&lt;p&gt;내가 참여한 모던자바스크립트 프로젝트가 장려상을 수상했다!&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="장려상-수상"><a href="#장려상-수상" class="headerlink" title="장려상 수상!"></a>장려상 수상!</h2><p>내가 참여한 모던자바스크립트 프로젝트가 장려상을 수상했다!</p><a id="more"></a><p><img src="https://www.oss.kr/storage/app/public/thumbnails/21/39/spill_800x800_ee77335ae2f3ada2ef06ba731852ae2b96cd2f54.jpg" alt="출처 : https://www.oss.kr/contributhon_notice/show/bf01f047-eb8e-429a-a986-3560bf6d691e?page=1"></p><p><br><br><br></p><h2 id="스터디-레포지토리-운영-후기"><a href="#스터디-레포지토리-운영-후기" class="headerlink" title="스터디 레포지토리 운영 후기"></a>스터디 레포지토리 운영 후기</h2><p><a href="https://ko.javascript.info/">모던 자바스크립트 튜토리얼</a>자료가 정말 좋아서 완독을 목표로 같이 스터디할 분들을 모집했다.<br>줌회의를 통해 목표와 공부방법설정을 진행하였다.<br>이걸 기록해놓으면 좋겠다는 생각에 레포지토리를 생성해서 활용하자고 제안하였고 스터디원분들이 다 좋다고 하셔서 말을 꺼낸 내가 운영하게 되었다!<br>한 명과의 레포관리만 해보았지 이렇게 여러명에서 사용하게 될 레포를 관리하는 건 처음이라 신났다.<br>깃허브 레포에서 사용하지못했던 많은 기능이 있었기에 이참에 열심히 활용해봐야겠야겠다고 생각했다.</p><ol><li>레포생성하기</li><li>스터디원 contributors 추가하기</li><li>첫 회의때 이야기 나누었던 부분을 리드미작성하기</li><li>위키활용하기<ul><li>위키를 활용하기 위해 어떤 정보를 작성할까 고민했다. 그러다 회의록을 작성하면 좋겠다는 생각이 들었다. 사정이 있어 지난번스터디에 참석못한 스터디원들에게도 정보를 공유해서 스터디에 참석하게끔 만들었다.</li><li>어떤 사람이 참석했는지 출석부를 만들면 좋겠다고 생각했는데 스터디를 참석하기 위해선 퀴즈를 제출해야했기에 퀴즈를 기준으로 퀴즈모음을 만들면좋겠다는 생각이 들었다. 그래서 퀴즈리스트를 만들어서 퀴즈와 풀이도 함께 링크를 걸어 한눈에 파악할 수 있도록하고 더불어 출석체크까지 겸했다.</li></ul></li></ol><p>그렇게 탄생한 <a href="https://github.com/sowon-dev/modernJsStudy">모던JS스터디레포</a>!<br>한 달동안 운영하면서 깃헙의 재미에 푹 빠져버렸다.</p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EC%BB%A8%ED%8A%B8%EB%A6%AC%EB%B7%B0%ED%86%A42020/">오픈소스컨트리뷰톤2020</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Review/">Review</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/Journal/">Journal</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2020/10/01/200929opensource/#disqus_thread</comments>
       
     </item>
     
@@ -513,34 +540,6 @@
       
       
       <comments>https://sowon-dev.github.io/2020/09/23/200923and-2/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>고급위젯(아날로그시계,디지털시계,크로노미터,타임피커,데이트피커,캘린더뷰,자동완성텍스트뷰와 멀티자동완성텍스트뷰)</title>
-      <link>https://sowon-dev.github.io/2020/09/23/200923and-1/</link>
-      <guid>https://sowon-dev.github.io/2020/09/23/200923and-1/</guid>
-      <pubDate>Wed, 23 Sep 2020 02:15:09 GMT</pubDate>
-      
-      <description>&lt;h2 id=&quot;아날로그시계와-디지털시계&quot;&gt;&lt;a href=&quot;#아날로그시계와-디지털시계&quot; class=&quot;headerlink&quot; title=&quot;아날로그시계와 디지털시계&quot;&gt;&lt;/a&gt;아날로그시계와 디지털시계&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;화면에 시간을 표시하는 위젯&lt;/li&gt;
-&lt;li&gt;둘 다 view클래스 상속 =&amp;gt; background속성 설정가능&lt;ul&gt;
-&lt;li&gt;DigitalClock은 추가로 textColor속성 설정가능</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="아날로그시계와-디지털시계"><a href="#아날로그시계와-디지털시계" class="headerlink" title="아날로그시계와 디지털시계"></a>아날로그시계와 디지털시계</h2><ul><li>화면에 시간을 표시하는 위젯</li><li>둘 다 view클래스 상속 =&gt; background속성 설정가능<ul><li>DigitalClock은 추가로 textColor속성 설정가능<a id="more"></a></li></ul></li><li>참고로 텍스트시계는 Digital Clock과 동일하지만 API level 17에서 deprecated. </li></ul><p><img src="https://abhiandroid-8fb4.kxcdn.com/ui/wp-content/uploads/2016/03/Analog-Clock-Digital-Clock-And-Text-Clock-Android.jpg" alt="https://abhiandroid.com/ui/analogclock-digitalclock-textclock"></p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">//아날로그시계</span><br><span class="line"><span class="tag">&lt;<span class="name">AnalogClock</span></span></span><br><span class="line"><span class="tag"><span class="attr">android:id</span>=<span class="string">"@+id/simpleAnalogClock"</span></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//디지털시계</span><br><span class="line"><span class="tag">&lt;<span class="name">DigitalClock</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:id</span>=<span class="string">"@+id/simpleDigitalClock"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span> /&gt;</span></span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="크로노미터"><a href="#크로노미터" class="headerlink" title="크로노미터"></a>크로노미터</h2><ul><li>Chronometer는 타이머형식의 위젯</li><li>시간을 측정할때 많이 사용</li><li>메서드 : start(), stop(), reset()있고 각각 크로노미터를 시작, 정지, 초기화한다.</li><li>foramt속성 : <code>%s</code>는 <code>분:초</code> 또는 <code>시:분:초</code>형식으로 출력</li></ul><p><img src="https://abhiandroid.com/ui/wp-content/uploads/2016/03/Chronometer-Example-Android.gif" alt="https://abhiandroid.com/ui/chronometer"></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line"><span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">setContentView(R.layout.activity_main);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 변수생성</span></span><br><span class="line">simpleChronometer = (Chronometer) findViewById(R.id.simpleChronometer);</span><br><span class="line">start = (Button) findViewById(R.id.startButton);</span><br><span class="line">stop = (Button) findViewById(R.id.stopButton);</span><br><span class="line">restart = (Button) findViewById(R.id.restartButton);</span><br><span class="line">setFormat = (Button) findViewById(R.id.setFormat);</span><br><span class="line">clearFormat = (Button) findViewById(R.id.clearFormat);</span><br><span class="line"></span><br><span class="line"><span class="comment">//크로노미터 시작 메서드</span></span><br><span class="line">start.setOnClickListener(<span class="keyword">new</span> View.OnClickListener() &#123;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View v)</span> </span>&#123;</span><br><span class="line">simpleChronometer.start();</span><br><span class="line">&#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//크로노미터 정지 메서드</span></span><br><span class="line">stop.setOnClickListener(<span class="keyword">new</span> View.OnClickListener() &#123;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View v)</span> </span>&#123;</span><br><span class="line">simpleChronometer.stop();</span><br><span class="line">&#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//크로노미터 재시작 메서드</span></span><br><span class="line">restart.setOnClickListener(<span class="keyword">new</span> View.OnClickListener() &#123;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View v)</span> </span>&#123;</span><br><span class="line">simpleChronometer.setBase(SystemClock.elapsedRealtime());</span><br><span class="line">&#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//크로노미터 포맷형식 설정 메서드</span></span><br><span class="line">setFormat.setOnClickListener(<span class="keyword">new</span> View.OnClickListener() &#123;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View v)</span> </span>&#123;</span><br><span class="line">simpleChronometer.setFormat(<span class="string">"시간측정 : %s"</span>);</span><br><span class="line">&#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//크로노미터 포맷형식 초기화 메서드</span></span><br><span class="line">clearFormat.setOnClickListener(<span class="keyword">new</span> View.OnClickListener() &#123;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View v)</span> </span>&#123;</span><br><span class="line">simpleChronometer.setFormat(<span class="keyword">null</span>);</span><br><span class="line">&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="타임피커-데이트피커-캘린더뷰"><a href="#타임피커-데이트피커-캘린더뷰" class="headerlink" title="타임피커, 데이트피커, 캘린더뷰"></a>타임피커, 데이트피커, 캘린더뷰</h2><ul><li>TimePicker</li></ul><p><img src="https://abhiandroid-8fb4.kxcdn.com/ui/wp-content/uploads/2016/03/TimePicker-in-Android.jpg" alt="https://abhiandroid.com/ui/timepicker"></p><ul><li>DatePicker</li></ul><p><img src="https://abhiandroid-8fb4.kxcdn.com/ui/wp-content/uploads/2016/03/DatePicker-in-Android.jpg" alt="https://abhiandroid.com/ui/datepicker"></p><ul><li>CalendarView</li></ul><p><img src="https://abhiandroid-8fb4.kxcdn.com/ui/wp-content/uploads/2016/05/Calendar-View-in-Android.jpg" alt="https://abhiandroid.com/ui/calendarview"></p><p><br><br><br></p><h2 id="자동완성텍스트뷰와-멀티자동완성텍스트뷰-p250"><a href="#자동완성텍스트뷰와-멀티자동완성텍스트뷰-p250" class="headerlink" title="자동완성텍스트뷰와 멀티자동완성텍스트뷰 p250"></a>자동완성텍스트뷰와 멀티자동완성텍스트뷰 p250</h2><ul><li>둘 다 EditText를 상속받는다.</li><li>자동완성단어는 주로 java 코드에서 배열로 설정하며 <a href="">setAdapter()</a>메소드를 이용한다.</li></ul><ul><li>AutoCompleteTextView<ul><li>단어 1개가 자동완성된다</li></ul></li></ul><p><img src="https://abhiandroid.com/ui/wp-content/uploads/2016/02/AutoCompleteTextView-in-Android.jpg" alt="https://abhiandroid.com/ui/autocompletetextview"></p><ul><li>MultiAutoCompleteTextView<ul><li>쉼표(,)로 구분하여 여러 개 단어가 자동 완성된다. </li></ul></li></ul><p><img src="https://abhiandroid-8fb4.kxcdn.com/ui/wp-content/uploads/2016/04/MultiAutoCompleteTextView-in-Android.jpg" alt="https://abhiandroid.com/ui/multiautocompletetextview"></p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Android/">Android</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/TIL/">TIL</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/ITWILL-JAVA/">ITWILL(JAVA)</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2020/09/23/200923and-1/#disqus_thread</comments>
       
     </item>
     
