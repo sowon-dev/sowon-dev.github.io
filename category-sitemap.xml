@@ -8,29 +8,43 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/Spring/</loc>
+        <lastmod>2020-10-03T14:14:49.238Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/%25EC%2598%25A4%25ED%2594%2588%25EC%2586%258C%25EC%258A%25A4%25EC%25BB%25A8%25ED%258A%25B8%25EB%25A6%25AC%25EB%25B7%25B0%25ED%2586%25A42020/</loc>
-        <lastmod>2020-10-03T08:03:45.755Z</lastmod>
+        <lastmod>2020-10-03T10:23:19.272Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/categories/Journal/Team-Project/</loc>
-        <lastmod>2020-10-03T07:54:53.540Z</lastmod>
+        <lastmod>2020-10-03T10:22:52.228Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/categories/Journal/</loc>
-        <lastmod>2020-10-03T07:54:53.540Z</lastmod>
+        <lastmod>2020-10-03T10:22:52.228Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/categories/Lectures-Seminars/</loc>
-        <lastmod>2020-10-02T10:00:55.862Z</lastmod>
+        <lastmod>2020-10-03T09:31:03.850Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/HTML-CSS/</loc>
+        <lastmod>2020-10-03T09:20:21.969Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -80,13 +94,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/JAVA/</loc>
         <lastmod>2020-09-17T07:28:43.308Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/HTML-CSS/</loc>
-        <lastmod>2020-09-14T03:20:22.630Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
