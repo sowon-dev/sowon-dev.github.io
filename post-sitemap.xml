@@ -8,16 +8,24 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2020/10/01/200929opensource/</loc>
-        <lastmod>2020-10-02T15:46:17.138Z</lastmod>
+        <loc>https://sowon-dev.github.io/2020/10/02/201002team/</loc>
+        <lastmod>2020-10-03T07:54:53.540Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2020/10/02/201002team/</loc>
-        <lastmod>2020-10-02T10:01:15.242Z</lastmod>
+        <loc>https://sowon-dev.github.io/2020/10/01/200929opensource/</loc>
+        <lastmod>2020-10-03T07:04:30.187Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/09/21/200921opemsource/</loc>
+        <lastmod>2020-10-03T06:54:36.270Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -250,14 +258,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/09/14/opensourceList/</loc>
         <lastmod>2020-09-24T03:18:20.185Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/09/21/200921opemsource/</loc>
-        <lastmod>2020-09-23T12:49:29.903Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
