@@ -8,15 +8,36 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
-        <lastmod>2020-10-04T08:15:09.117Z</lastmod>
+        <loc>https://sowon-dev.github.io/categories/JSP/</loc>
+        <lastmod>2020-10-05T03:28:26.180Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/JAVA/</loc>
+        <lastmod>2020-10-05T03:27:35.840Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/JavaScript/</loc>
+        <lastmod>2020-10-05T02:57:38.210Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/categories/Spring/</loc>
-        <lastmod>2020-10-03T14:14:49.238Z</lastmod>
+        <lastmod>2020-10-05T01:03:18.017Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
+        <lastmod>2020-10-04T08:15:09.117Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -73,27 +94,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/Android/</loc>
         <lastmod>2020-09-28T05:00:33.990Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/JSP/</loc>
-        <lastmod>2020-09-25T02:29:41.869Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/JavaScript/</loc>
-        <lastmod>2020-09-24T08:14:05.822Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/JAVA/</loc>
-        <lastmod>2020-09-17T07:28:43.308Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
