@@ -8,16 +8,32 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2020/10/03/201003spring-1/</loc>
-        <lastmod>2020-10-05T08:39:28.882Z</lastmod>
+        <loc>https://sowon-dev.github.io/2020/10/04/201005jspPrefixVSPostfix/</loc>
+        <lastmod>2020-10-05T13:02:09.775Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2020/10/04/201005jspPrefixVSPostfix/</loc>
-        <lastmod>2020-10-05T07:47:23.379Z</lastmod>
+        <loc>https://sowon-dev.github.io/2020/10/04/201005jspRedirectVSForwarding/</loc>
+        <lastmod>2020-10-05T12:53:25.014Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/10/04/201005jspGetVSPost/</loc>
+        <lastmod>2020-10-05T12:51:53.268Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/10/03/201003spring-1/</loc>
+        <lastmod>2020-10-05T08:39:28.882Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -64,24 +80,8 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2020/10/04/201005jspRedirectVSForwarding/</loc>
-        <lastmod>2020-10-05T03:28:26.180Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/2020/07/07/200708javai/</loc>
         <lastmod>2020-10-05T03:27:35.840Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/10/04/201005jspGetVSPost/</loc>
-        <lastmod>2020-10-05T03:15:32.987Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
