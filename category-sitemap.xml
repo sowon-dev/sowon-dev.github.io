@@ -8,15 +8,29 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/categories/JSP/</loc>
-        <lastmod>2020-10-05T03:28:26.180Z</lastmod>
+        <loc>https://sowon-dev.github.io/categories/Spring/</loc>
+        <lastmod>2020-10-05T08:38:27.195Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/categories/JAVA/</loc>
-        <lastmod>2020-10-05T03:27:35.840Z</lastmod>
+        <lastmod>2020-10-05T07:47:23.379Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/JSP/</loc>
+        <lastmod>2020-10-05T06:14:35.838Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Lectures-Seminars/</loc>
+        <lastmod>2020-10-05T05:09:01.215Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -24,20 +38,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/JavaScript/</loc>
         <lastmod>2020-10-05T02:57:38.210Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Spring/</loc>
-        <lastmod>2020-10-05T01:03:18.017Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
-        <lastmod>2020-10-04T08:15:09.117Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -57,8 +57,8 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/categories/Lectures-Seminars/</loc>
-        <lastmod>2020-10-03T09:31:03.850Z</lastmod>
+        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
+        <lastmod>2020-10-03T10:22:52.228Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
