@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2020/10/05/201006java/</loc>
+        <lastmod>2020-10-06T15:35:13.794Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/09/30/201001intelliJkey/</loc>
+        <lastmod>2020-10-06T15:22:12.545Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2020/09/20/200921dbi/</loc>
         <lastmod>2020-10-06T07:03:01.638Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -42,14 +58,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/09/29/200930al-1/</loc>
         <lastmod>2020-10-06T06:32:14.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/10/05/201006java/</loc>
-        <lastmod>2020-10-06T06:17:56.096Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -322,14 +330,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/08/25/200826girlsInTech/</loc>
         <lastmod>2020-10-02T10:00:55.862Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/09/30/201001journal/</loc>
-        <lastmod>2020-10-01T15:42:58.580Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

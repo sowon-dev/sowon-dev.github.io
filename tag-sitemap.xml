@@ -3,6 +3,27 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/TIL/</loc>
+        <lastmod>2020-10-06T15:35:13.794Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/IntelliJ/</loc>
+        <lastmod>2020-10-06T15:22:12.545Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/Journal/</loc>
+        <lastmod>2020-10-06T15:22:12.545Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/Oracle/</loc>
         <lastmod>2020-10-06T07:03:01.638Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -11,13 +32,6 @@
 
     <url>
         <loc>https://sowon-dev.github.io/tags/ITWILL-JAVA/</loc>
-        <lastmod>2020-10-06T07:03:01.638Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/TIL/</loc>
         <lastmod>2020-10-06T07:03:01.638Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -45,13 +59,6 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/tags/Journal/</loc>
-        <lastmod>2020-10-06T01:43:42.842Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/tags/Review/</loc>
         <lastmod>2020-10-05T05:09:01.215Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -61,13 +68,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/GIT/</loc>
         <lastmod>2020-10-02T10:00:55.862Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/IntelliJ/</loc>
-        <lastmod>2020-10-01T15:42:58.580Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

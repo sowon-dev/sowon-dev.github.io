@@ -152,7 +152,7 @@
     </item>
     
     <item>
-      <title>[이슈해결]Exception in thread </title>
+      <title>[이슈해결]Exception in thread java.lang.ArrayIndexOutOfBoundsException: 점(.)사용시 에러 해결방법</title>
       <link>https://sowon-dev.github.io/2020/10/05/201006java/</link>
       <guid>https://sowon-dev.github.io/2020/10/05/201006java/</guid>
       <pubDate>Mon, 05 Oct 2020 20:54:42 GMT</pubDate>
