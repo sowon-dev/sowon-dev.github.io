@@ -43,18 +43,17 @@
     
     <item>
       <title>[ITWILL : Android] Android전체목록List</title>
-      <link>https://sowon-dev.github.io/2020/11/16/androidList/</link>
-      <guid>https://sowon-dev.github.io/2020/11/16/androidList/</guid>
-      <pubDate>Mon, 16 Nov 2020 00:43:20 GMT</pubDate>
+      <link>https://sowon-dev.github.io/2020/11/15/androidList/</link>
+      <guid>https://sowon-dev.github.io/2020/11/15/androidList/</guid>
+      <pubDate>Sun, 15 Nov 2020 15:43:20 GMT</pubDate>
       
       <description>&lt;h2 id=&quot;🍫안드로이드기초&quot;&gt;&lt;a href=&quot;#🍫안드로이드기초&quot; class=&quot;headerlink&quot; title=&quot;🍫안드로이드기초&quot;&gt;&lt;/a&gt;🍫안드로이드기초&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;https://sowon-dev.github.io/2020/09/09/200909and/&quot;&gt;안드로이드 다운로드, 기본개념, 프로젝트 기본순서, 액티비티생명주기, 로그캣&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://sowon-dev.github.io/2020/09/28/200928and//&quot;&gt;안드로이드 4대 컴포넌트&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</description>
+&lt;li&gt;&lt;a href=&quot;https://sowon-dev.github.io/2020/09/28/200928and/&quot;&gt;안드로이드 4대 컴포넌트&lt;/a&gt;</description>
       
       
       
-      <content:encoded><![CDATA[<h2 id="🍫안드로이드기초"><a href="#🍫안드로이드기초" class="headerlink" title="🍫안드로이드기초"></a>🍫안드로이드기초</h2><ol><li><a href="https://sowon-dev.github.io/2020/09/09/200909and/">안드로이드 다운로드, 기본개념, 프로젝트 기본순서, 액티비티생명주기, 로그캣</a></li><li><a href="https://sowon-dev.github.io/2020/09/28/200928and//">안드로이드 4대 컴포넌트</a></li></ol><a id="more"></a><h2 id="🍫화면구성"><a href="#🍫화면구성" class="headerlink" title="🍫화면구성"></a>🍫화면구성</h2><ol><li><a href="https://sowon-dev.github.io/2020/09/10/200910and/">안드로이드 컴파운드버튼, 이미지넣기</a></li><li><a href="https://sowon-dev.github.io/2020/09/23/200923and/">레이아웃종류 및 레이아웃 안에서 자주 사용되는 속성</a></li><li><a href="https://sowon-dev.github.io/2020/09/23/200923and-1/">고급위젯</a></li><li><a href="https://sowon-dev.github.io/2020/09/23/200923and-2/">옵션메뉴, 컨텍스트메뉴, 토스트</a></li></ol><h2 id="🍫기능"><a href="#🍫기능" class="headerlink" title="🍫기능"></a>🍫기능</h2><ol><li><a href="https://sowon-dev.github.io/2020/09/24/200924and/">안드로이드 파일처리</a></li></ol>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="🍫안드로이드기초"><a href="#🍫안드로이드기초" class="headerlink" title="🍫안드로이드기초"></a>🍫안드로이드기초</h2><ol><li><a href="https://sowon-dev.github.io/2020/09/09/200909and/">안드로이드 다운로드, 기본개념, 프로젝트 기본순서, 액티비티생명주기, 로그캣</a></li><li><a href="https://sowon-dev.github.io/2020/09/28/200928and/">안드로이드 4대 컴포넌트</a><a id="more"></a></li></ol><h2 id="🍫화면구성"><a href="#🍫화면구성" class="headerlink" title="🍫화면구성"></a>🍫화면구성</h2><ol><li><a href="https://sowon-dev.github.io/2020/09/10/200910and/">컴파운드버튼(체크박스,라디오버튼,스위치,토글버튼) 한눈에 비교하기</a></li><li><a href="https://sowon-dev.github.io/2020/09/23/200923and/">레이아웃종류 및 레이아웃 안에서 자주 사용되는 속성</a></li><li><a href="https://sowon-dev.github.io/2020/09/23/200923and-1/">고급위젯: 아날로그시계,디지털시계,크로노미터,타임피커,데이트피커,캘린더뷰,자동완성텍스트뷰와 멀티자동완성텍스트뷰</a></li><li><a href="https://sowon-dev.github.io/2020/09/23/200923and-2/">옵션메뉴, 컨텍스트메뉴, 토스트</a></li></ol><h2 id="🍫기능"><a href="#🍫기능" class="headerlink" title="🍫기능"></a>🍫기능</h2><ol><li><a href="https://sowon-dev.github.io/2020/09/24/200924and/">안드로이드 파일처리</a></li><li><a href="https://sowon-dev.github.io/2020/10/07/201007and/">이미지파일 넣기</a></li></ol>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/Android/">Android</category>
@@ -65,7 +64,7 @@
       <category domain="https://sowon-dev.github.io/tags/List/">List</category>
       
       
-      <comments>https://sowon-dev.github.io/2020/11/16/androidList/#disqus_thread</comments>
+      <comments>https://sowon-dev.github.io/2020/11/15/androidList/#disqus_thread</comments>
       
     </item>
     
@@ -102,7 +101,58 @@
     </item>
     
     <item>
-      <title>[자바JAVA]실수 1개 입력받아 부분별로 출력하기</title>
+      <title>[자바JAVA]1034 : [기초-출력변환] 8진 정수 1개 입력받아 10진수로 출력하기(설명)</title>
+      <link>https://sowon-dev.github.io/2020/10/06/201007al-c1034/</link>
+      <guid>https://sowon-dev.github.io/2020/10/06/201007al-c1034/</guid>
+      <pubDate>Tue, 06 Oct 2020 17:12:40 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;문제-1034-기초-출력변환-8진-정수-1개-입력받아-10진수로-출력하기-설명&quot;&gt;&lt;a href=&quot;#문제-1034-기초-출력변환-8진-정수-1개-입력받아-10진수로-출력하기-설명&quot; class=&quot;headerlink&quot; title=&quot;문제 1034 : [기초-출력변환] 8진 정수 1개 입력받아 10진수로 출력하기(설명)&quot;&gt;&lt;/a&gt;문제 1034 : [기초-출력변환] 8진 정수 1개 입력받아 10진수로 출력하기(설명)&lt;/h2&gt;&lt;p&gt;8진수로 입력된 정수 1개를 10진수로 바꾸어 출력해보자.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="문제-1034-기초-출력변환-8진-정수-1개-입력받아-10진수로-출력하기-설명"><a href="#문제-1034-기초-출력변환-8진-정수-1개-입력받아-10진수로-출력하기-설명" class="headerlink" title="문제 1034 : [기초-출력변환] 8진 정수 1개 입력받아 10진수로 출력하기(설명)"></a>문제 1034 : [기초-출력변환] 8진 정수 1개 입력받아 10진수로 출력하기(설명)</h2><p>8진수로 입력된 정수 1개를 10진수로 바꾸어 출력해보자.</p><a id="more"></a><ul><li>입력예시<br>8진 정수 1개가 입력된다.</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">13</span></span><br></pre></td></tr></table></figure><ul><li>출력예시<br>10진수로 바꾸어 출력한다.</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">11</span></span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="코드"><a href="#코드" class="headerlink" title="코드"></a>코드</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">Scanner sc =  <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">String s = sc.next();</span><br><span class="line">sc.close();</span><br><span class="line"></span><br><span class="line"><span class="comment">//String을 8진수로 변경</span></span><br><span class="line"><span class="keyword">int</span> octal = Integer.parseInt(s, <span class="number">8</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//8진수를 10진수로 출력</span></span><br><span class="line">System.out.printf(<span class="string">"%d"</span>, octal);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="배운-지식"><a href="#배운-지식" class="headerlink" title="배운 지식"></a>배운 지식</h2><p>2진수, 8진수 16진수를 Scanner로 받으려면 String 데이터타입으로 지정해야한다.<br>그 후 원하는 타입에 맞춰서 </p><ul><li>2진수 : <code>Integer.parseInt(num, 2);</code></li><li>8진수 : <code>Integer.parseInt(num, 8);</code></li><li>16진수 : <code>Integer.parseInt(num, 16);</code></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Algorithm/">Algorithm</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Codeup100/">Codeup100</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2020/10/06/201007al-c1034/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>[안드로이드]이미지파일 넣기</title>
+      <link>https://sowon-dev.github.io/2020/10/06/201007and/</link>
+      <guid>https://sowon-dev.github.io/2020/10/06/201007and/</guid>
+      <pubDate>Tue, 06 Oct 2020 15:13:01 GMT</pubDate>
+      
+      <description>&lt;h1 id=&quot;이미지파일-넣기&quot;&gt;&lt;a href=&quot;#이미지파일-넣기&quot; class=&quot;headerlink&quot; title=&quot;이미지파일 넣기&quot;&gt;&lt;/a&gt;이미지파일 넣기&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;안드로이드에서 가장 빠르게 처리할 수 있는 이미지파일확장자 : png&lt;/li&gt;
+&lt;li&gt;이미지를 사용하려면 그림 파일을 [res]-[drawable]폴더에 미리 복사해놓아야한다.&lt;/li&gt;
+&lt;li&gt;이미지파일은 res폴더 하위 drawable폴더 안에 복사·붙여넣기한 뒤 ImageView태그로 불러올 수 있다.</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h1 id="이미지파일-넣기"><a href="#이미지파일-넣기" class="headerlink" title="이미지파일 넣기"></a>이미지파일 넣기</h1><ul><li>안드로이드에서 가장 빠르게 처리할 수 있는 이미지파일확장자 : png</li><li>이미지를 사용하려면 그림 파일을 [res]-[drawable]폴더에 미리 복사해놓아야한다.</li><li>이미지파일은 res폴더 하위 drawable폴더 안에 복사·붙여넣기한 뒤 ImageView태그로 불러올 수 있다.<a id="more"></a></li><li><code>@</code>의미는 참조이다.<ul><li>예를 들어 <code>android:src=&quot;@drawable/이미지파일명&quot;</code>인 경우 drawable을 참조해서 그 안의 이미지파일명을 불러와달라는 의미이다.</li></ul></li><li>이미지뷰와 이미지버튼의 xml속성<ul><li>src : 이미지 경로</li><li>maxHeight/maxWidth : 이미지 크기 지정</li><li>scaleType : 이미지 확대/축소방식 결정</li></ul></li></ul><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ImageView</span></span></span><br><span class="line"><span class="tag"><span class="attr">android:id</span>=<span class="string">"@+id/imageView"</span></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag"><span class="attr">android:src</span>=<span class="string">"@drawable/이미지파일명"</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Android/">Android</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/TIL/">TIL</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/ITWILL-JAVA/">ITWILL(JAVA)</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2020/10/06/201007and/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>[자바JAVA]1023 : [기초-입출력] 실수 1개 입력받아 부분별로 출력하기</title>
       <link>https://sowon-dev.github.io/2020/10/05/201006al/</link>
       <guid>https://sowon-dev.github.io/2020/10/05/201006al/</guid>
       <pubDate>Mon, 05 Oct 2020 21:35:07 GMT</pubDate>
@@ -111,7 +161,7 @@
       
       
       
-      <content:encoded><![CDATA[<h2 id="문제-1023-기초-입출력-실수-1개-입력받아-부분별로-출력하기"><a href="#문제-1023-기초-입출력-실수-1개-입력받아-부분별로-출력하기" class="headerlink" title="문제 1023 : [기초-입출력] 실수 1개 입력받아 부분별로 출력하기"></a>문제 1023 : [기초-입출력] 실수 1개 입력받아 부분별로 출력하기</h2><p>실수 1개를 입력받아 정수 부분과 실수 부분으로 나누어 출력한다. 만약 실수 부분이 0으로 시작하지 않는다면(예를 들어 1.000009) scanf(“%d.%d”, &amp;a, &amp;b)도 하나의 방법이 될 수 있다.</p><a id="more"></a><ul><li><p>입력 :<br>실수 1개가 입력된다.<br>(단, 입력값은 절댓값이 10000을 넘지 않으며, 소수점 이하 자릿수는 최대 6자리까지이고<br>0이 아닌 숫자로 시작한다.)</p></li><li><p>출력 :<br>첫 번째 줄에 정수 부분을, 두 번째 줄에 실수 부분을 출력한다.</p></li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//입력예시</span></span><br><span class="line"><span class="number">1.414213</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//출력예시</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">414213</span></span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="방법1-split-사용"><a href="#방법1-split-사용" class="headerlink" title="방법1 : split()사용"></a>방법1 : split()사용</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">c1023</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">String f = sc.next();</span><br><span class="line"></span><br><span class="line">String[] ff = f.split(<span class="string">"\\."</span>);</span><br><span class="line"></span><br><span class="line">String int1 = ff[<span class="number">0</span>];  </span><br><span class="line">String int2 = ff[<span class="number">1</span>];  </span><br><span class="line"></span><br><span class="line">System.out.println(int1);</span><br><span class="line">System.out.println(int2);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="방법2-StringTokenizer사용"><a href="#방법2-StringTokenizer사용" class="headerlink" title="방법2 : StringTokenizer사용"></a>방법2 : StringTokenizer사용</h2><p>StringTokenizer는 단 한 개의 구분자만을 사용할 수 있으므로 복잡한 구분자를 사용해야 할 때는<br>Scanner 나 split을 사용해야 한다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">String s = sc.next();</span><br><span class="line"></span><br><span class="line"><span class="comment">//StringTokenizer 사용</span></span><br><span class="line">StringTokenizer st = <span class="keyword">new</span> StringTokenizer(s,<span class="string">"."</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (st.hasMoreElements()) &#123;</span><br><span class="line">System.out.println(st.nextToken());</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="문제-1023-기초-입출력-실수-1개-입력받아-부분별로-출력하기"><a href="#문제-1023-기초-입출력-실수-1개-입력받아-부분별로-출력하기" class="headerlink" title="문제 1023 : [기초-입출력] 실수 1개 입력받아 부분별로 출력하기"></a>문제 1023 : [기초-입출력] 실수 1개 입력받아 부분별로 출력하기</h2><p>실수 1개를 입력받아 정수 부분과 실수 부분으로 나누어 출력한다. 만약 실수 부분이 0으로 시작하지 않는다면(예를 들어 1.000009) scanf(“%d.%d”, &amp;a, &amp;b)도 하나의 방법이 될 수 있다.</p><a id="more"></a><ul><li><p>입력 :<br>실수 1개가 입력된다.<br>(단, 입력값은 절댓값이 10000을 넘지 않으며, 소수점 이하 자릿수는 최대 6자리까지이고<br>0이 아닌 숫자로 시작한다.)</p></li><li><p>출력 :<br>첫 번째 줄에 정수 부분을, 두 번째 줄에 실수 부분을 출력한다.</p></li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//입력예시</span></span><br><span class="line"><span class="number">1.414213</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//출력예시</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">414213</span></span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="방법1-split-사용"><a href="#방법1-split-사용" class="headerlink" title="방법1 : split()사용"></a>방법1 : split()사용</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">c1023</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">String f = sc.next();</span><br><span class="line"></span><br><span class="line">String[] ff = f.split(<span class="string">"\\."</span>);</span><br><span class="line"></span><br><span class="line">String int1 = ff[<span class="number">0</span>];  </span><br><span class="line">String int2 = ff[<span class="number">1</span>];  </span><br><span class="line"></span><br><span class="line">System.out.println(int1);</span><br><span class="line">System.out.println(int2);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="방법2-StringTokenizer사용"><a href="#방법2-StringTokenizer사용" class="headerlink" title="방법2 : StringTokenizer사용"></a>방법2 : StringTokenizer사용</h2><p>StringTokenizer는 단 한 개의 구분자만을 사용할 수 있으므로 복잡한 구분자를 사용해야 할 때는<br>Scanner 나 split을 사용해야 한다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">String s = sc.next();</span><br><span class="line"></span><br><span class="line"><span class="comment">//StringTokenizer 사용</span></span><br><span class="line">StringTokenizer st = <span class="keyword">new</span> StringTokenizer(s,<span class="string">"."</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (st.hasMoreElements()) &#123;</span><br><span class="line">System.out.println(st.nextToken());</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/Algorithm/">Algorithm</category>
@@ -488,56 +538,6 @@
       
       
       <comments>https://sowon-dev.github.io/2020/10/03/201003spring/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[국비교육 IT팀프로젝트]1.팀플주제구상(feat.입문자를 위한 팀협업도구추천)</title>
-      <link>https://sowon-dev.github.io/2020/10/02/201002team/</link>
-      <guid>https://sowon-dev.github.io/2020/10/02/201002team/</guid>
-      <pubDate>Fri, 02 Oct 2020 00:26:31 GMT</pubDate>
-      
-      <description>&lt;h2 id=&quot;팀프로젝트&quot;&gt;&lt;a href=&quot;#팀프로젝트&quot; class=&quot;headerlink&quot; title=&quot;팀프로젝트&quot;&gt;&lt;/a&gt;팀프로젝트&lt;/h2&gt;&lt;p&gt;학원에서 다음주부터 팀프로젝트를 진행한다고 한다. 팀프로젝트는 개인프로젝트와 달리 굉장히 신경써야 할 부분이 많다.&lt;br&gt;그걸 어떻게 아느냐고?&lt;br&gt;나는 경영학도로서 대학 4년을 내내 수강했던 거의 모든 강의에서 팀 프로젝트 했기때문에 이런 사람, 저런 사람 그리고 &lt;a href=&quot;https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&amp;qna_seq=153673&quot;&gt;볼 꼴, 못 볼 꼴&lt;/a&gt;을 다봤다. &lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="팀프로젝트"><a href="#팀프로젝트" class="headerlink" title="팀프로젝트"></a>팀프로젝트</h2><p>학원에서 다음주부터 팀프로젝트를 진행한다고 한다. 팀프로젝트는 개인프로젝트와 달리 굉장히 신경써야 할 부분이 많다.<br>그걸 어떻게 아느냐고?<br>나는 경영학도로서 대학 4년을 내내 수강했던 거의 모든 강의에서 팀 프로젝트 했기때문에 이런 사람, 저런 사람 그리고 <a href="https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&qna_seq=153673">볼 꼴, 못 볼 꼴</a>을 다봤다. </p><a id="more"></a><p>따라서 팀프로젝트에는 자신있다!<br>지치질 않을 자신!<br>좋든 안 좋든 이 모든 경험이 직장생활에서 좋은 거름이 되어줄 것이라 믿어 의심치않는다.<br>전 직장에서도 그 거름으로 탄탄히 성장했기 때문이다.<br>이번에도 잘해보자!</p><p><br><br><br></p><h2 id="조편성"><a href="#조편성" class="headerlink" title="조편성"></a>조편성</h2><p>조 구성은 학원에서 진행해준다고 한다.<br>내가 직접 하고 싶었는데 수준에 맞춰(?) 고루 팀원을 구성한다고 한다.<br>학원 수강기간내내 찜해둔 몇몇 친구들과 함께 하고싶었는데… 쳇-<br>나처럼 열정가득한 사람들과 함께 했으면 좋겠다.<br>팀프로젝트가 개인프로젝트로 변질되기도 하는데 이번에는 팀원 다 잘 참여하여 모두 좋은 결과를 가져갔으면 좋겠다.<br>팀플을 하면 갠플과 다른 배울 점이 있으니까!</p><p><br><br><br></p><h2 id="팀프로젝트주제"><a href="#팀프로젝트주제" class="headerlink" title="팀프로젝트주제"></a>팀프로젝트주제</h2><p>아직 팀도 구성이 안되었지만 나는 팀플주제를 고민하고있다.<br>준비없는 첫 회의는 폭망의 지름길이다.<br>나라도 주제를 몇가지 준비해서 침묵을 깨고 성공적인 팀플을 해보려고한다.<br>내 목표는 첫 회의때 주제선정완료와 업무배분까지 끝내고 싶다. 간절🙏</p><p>팀프로젝트 주제로는 레퍼런스가 많은 주제가 좋다.<br>왜냐하면 찾아볼 수 있는 레퍼런스가 많아야 팀원들이 포기하지않고 끝까지 함께 나아갈 수 있기때문이다.</p><ul><li>주제<ol><li>패션 쇼핑몰</li><li>인강사이트(결제포함)</li><li>예매사이트(영화, 숙박)</li></ol></li></ul><p><br><br><br></p><h2 id="팀협업도구"><a href="#팀협업도구" class="headerlink" title="팀협업도구"></a>팀협업도구</h2><p>팀 협업도구를 꽤 오랫동안 찾아보았다.<br>Trello, 잔디, 지라, 깃헙 등등 다양한 팀협업도구들이 존재했다.<br>난 실무에서 사용하는 협업툴을 미리 써보고싶다.<br>지난번 <a href="https://sowon-dev.github.io/2020/09/21/200921opemsource/#%EC%A7%80%EB%9D%BC">프론트앤드 직무멘토링때 들었던 지라</a>를 사용해보고싶어졌다.<br>혼자서 조금 테스트 해봤는데 이전에 개인프로젝트할때 적용해보았던 <a href="https://sowon-dev.github.io/2020/08/26/200826girlsInTech/#%F0%9F%8D%80-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%98%91%EC%97%85%EB%8F%84%EA%B5%AC">Azure DevOps</a>와 비슷했다.<br>이러한 협업툴이 필요한 이유는 한 눈에 내가 뭘 해야하고 뭘 했는지 탁탁 보이기때문이다.<br>개인프로젝트때에도 큰 효과가 있었는테 팀플이면 그 효과가 더욱더 클 것이다.</p><p>현재 학원에서 깃헙을 아는 사람들도 거의 없어서 (강사님이 깃헙 사용해보았는지 물어봐서 거수를 했는데 나만 손들었다…) 브랜치를 나눠서 내가 체크하고 merge하는 식으로 진행해야 할 것 같다. 꼬이면 답도 없기때문에…</p><ul><li>깃헙 : 백업</li><li><del>지라 : 커뮤니케이션</del></li></ul><p><br><br><br></p><h2 id="커뮤니케이션-툴과-관련하여-멘토님의-조언"><a href="#커뮤니케이션-툴과-관련하여-멘토님의-조언" class="headerlink" title="커뮤니케이션 툴과 관련하여 멘토님의 조언"></a>커뮤니케이션 툴과 관련하여 멘토님의 조언</h2><p>컨트리뷰톤때 만난 멘토님께서 내 블로그글을 보시더니 좋은 팀협업도구와 팀협업에 관해 몇가지 조언을 해주셨다.<br>멘토님은 그저 빛…☀️<br>난 참 운도 좋고 인복이 많은 것 같다.🤗</p><p>나도 팀원들이 깃헙도 처음인데 지라도 쓰자고하면 혼돈일까봐 고민했던 부분인데 어떻게 그 부분을 정확히 캐치해내시고 입문자에게 딱 맞는 간단한 협업툴을 소개해주셨다.<br>천사인게 틀림없어…☀️아멘</p><blockquote><p>레파지토리에 프로젝트라는 곳이 있는데 지라처럼 칸반 형식으로 프로젝트 관리를 할 수 있어요. 여기서 만들고 바로 이슈로 등록도 가능하고요, <a href="https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd/related?hl=ko">젠허브</a>라고 크롬 확장 플러그인으로 제공하는게 있는데 프로젝트보다 조금 더 많은 기능을 제공해요.<br>지라는 너무 오버스펙이 될 수도 있어서 첨언 드린건데 다행이네요<br>생각보다 지라가 쓰기 더 까다로울 수 있어서 좀 더 라이트한 버전의 뭔가를 쓰는게 좋을거 같아요. 트렐로, 노션에이나 깃헙 모두 이슈에 코멘트를 단다던가 할 수 있어요.<br>출처 : 멘토님의 경험</p></blockquote><p>또 멘토님이 팀플에서 활용했던 Commit &amp; PR &amp; Branch Rule를 레퍼런스로 알려주셨다.<br>협업에 대해 자세하게 배울 수 있는 유익한 시간이었다.<br>특히 커밋룰은 간과하기 쉬운데 세부사항을 알 수 있어 정말 좋았다.</p><p><br><br><br></p><h3 id="Github의-Projects-사용기"><a href="#Github의-Projects-사용기" class="headerlink" title="Github의 Projects 사용기"></a>Github의 Projects 사용기</h3><p>저런 형식을 뭐라고 부르는 지 몰랐는데 칸반형식이라고 부르는 구나. 또 하나 배웠다.</p><p><img src="https://kanbanize.com/wp-content/uploads/website-images/kanban-resources/Kanban_board_elements.png" alt="한글인줄알았지만 영어로 Kanban board"></p><p>배운 건 바로 써먹어봐야지!<br>팀원들에게 추천을 하려면 내가 먼저 잘 알아야하므로 알려주신 내용 <a href="https://github.com/sowon-dev/AlgorithmStudy_Java/projects/1">바로 내 레포에 적용</a>해보았다.</p><p><img src="/img/201003githubProjects.PNG" alt="To do list 형식으로 적용한 모습"></p><p>완벽해!<br>Simple is the BEST!!!👍</p><p><br><br><br></p><h2 id="ZenHub-사용기"><a href="#ZenHub-사용기" class="headerlink" title="ZenHub 사용기"></a>ZenHub 사용기</h2><p>말씀해주신 ZenHub도 적용해보았다.<br>ZenHub는 로드맵과 리포트기능이 아주 매력적이다.</p><ul><li>매력포인트<ul><li>리포트기능</li><li>DATE를 설정가능한 로드맵기능</li><li>ZenHub크롬확장자를 다운로드 하지않았다면 Zenhub탭이 다른 사용자에게는 보이지않는다. ZenHub유저끼리는 보인다!</li></ul></li></ul><p><img src="/img/201003zenhub1.PNG" alt="칸반기능"><br><img src="/img/201003zenhub2.PNG" alt="로드맵기능"></p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
-      
-      <category domain="https://sowon-dev.github.io/categories/Journal/Team-Project/">Team Project</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/Journal/">Journal</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2020/10/02/201002team/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>오픈소스컨트리뷰톤2020 수상후기</title>
-      <link>https://sowon-dev.github.io/2020/10/01/200929opensource/</link>
-      <guid>https://sowon-dev.github.io/2020/10/01/200929opensource/</guid>
-      <pubDate>Thu, 01 Oct 2020 23:37:06 GMT</pubDate>
-      
-      <description>&lt;h2 id=&quot;오픈소스컨트리뷰톤2020-멘티-참여후기&quot;&gt;&lt;a href=&quot;#오픈소스컨트리뷰톤2020-멘티-참여후기&quot; class=&quot;headerlink&quot; title=&quot;오픈소스컨트리뷰톤2020 멘티 참여후기&quot;&gt;&lt;/a&gt;오픈소스컨트리뷰톤2020 멘티 참여후기&lt;/h2&gt;&lt;p&gt;내가 참여한 &lt;strong&gt;모던자바스크립트 프로젝트&lt;/strong&gt;가 장려상을 수상했다!👑&lt;br&gt;참여하는 것만으로도 영광이었는데 이렇게 상까지 받게되니 정말 기쁘다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="오픈소스컨트리뷰톤2020-멘티-참여후기"><a href="#오픈소스컨트리뷰톤2020-멘티-참여후기" class="headerlink" title="오픈소스컨트리뷰톤2020 멘티 참여후기"></a>오픈소스컨트리뷰톤2020 멘티 참여후기</h2><p>내가 참여한 <strong>모던자바스크립트 프로젝트</strong>가 장려상을 수상했다!👑<br>참여하는 것만으로도 영광이었는데 이렇게 상까지 받게되니 정말 기쁘다.</p><a id="more"></a><p>그동안 배운 것들은 정리해보았다.</p><ol><li>컨트리뷰톤기간동안 진행된 모든 회의에 참여하여 깃과 깃허브사용법등 깊이있는 버전관리지식과 오픈소스생태계 지식을 얻을 수 있었다.</li><li>다양한 분야의 컨트리뷰터분들이 유용한 현직자 팁을 매회의때마다 공유해주셨다. 책에서는 배울 수 없는 살아있는 지식을 많이 습득할 수 있었다.</li><li>평일 아침마다 진행되는 스터디에 참여하여 자극을 받고 유익했던 스터디내용을 공유할 수 있었다.</li><li>매주 화요일 저녁에 진행되는 스터디에 참여하여 직접 퀴즈를 내봄으로써 모던자바스크립트에 대한 깊이 있는 지식을 쌓는 것은 물론 <a href="https://github.com/sowon-dev/modernJsStudy">저장소를 직접 운영</a>해보았다.</li><li>🌟좋은 사람들을 많이 만났다.🌟</li></ol><p><img src="https://www.oss.kr/storage/app/public/thumbnails/21/39/spill_800x800_ee77335ae2f3ada2ef06ba731852ae2b96cd2f54.jpg" alt="출처 : https://www.oss.kr/contributhon_notice/show/bf01f047-eb8e-429a-a986-3560bf6d691e?page=1"></p><p><br><br><br></p><h2 id="스터디-레포지토리-운영-후기"><a href="#스터디-레포지토리-운영-후기" class="headerlink" title="스터디 레포지토리 운영 후기"></a>스터디 레포지토리 운영 후기</h2><p><a href="https://ko.javascript.info/">모던 자바스크립트 튜토리얼</a>자료가 정말 좋아서 완독을 목표로 오픈소스컨트리뷰톤기간동안 같이 스터디할 분들을 모집했다.<br>Zoom회의를 통해 목표와 공부방법설정을 진행하였다.<br>이걸 기록해놓으면 좋겠다는 생각에 레포지토리를 생성해서 활용하자고 제안하였고 스터디원분들이 다 좋다고 하셔서 말을 꺼낸 내가 운영하게 되었다!<br>한 명과의 레포관리만 해보았지 이렇게 여러명에서 사용하게 될 레포를 관리하는 건 처음이라 신났다.<br>깃허브 레포에서 사용하지못했던 많은 기능이 있었기에 이참에 열심히 활용해봐야겠야겠다고 생각했다.</p><ol><li>레포생성하기</li><li>스터디원 contributors로 추가하기</li><li>첫 회의때 이야기 나누었던 부분을 리드미작성하기<br><img src="/img/201003readme.PNG" alt="리드미"></li><li>위키활용하기<ul><li>위키를 활용하기 위해 어떤 정보를 작성할까 고민했다. 그러다 회의록을 작성하면 좋겠다는 생각이 들었다. 사정이 있어 지난 스터디에 참석 못 한 스터디원들에게도 위키를 통해 정보를 공유하여 다음 스터디참석에 원활하게끔 만들 수 있을 것 같았다.</li><li>어떤 사람이 참석했는지 출석부를 만들면 좋겠다고 생각했는데 우리 스터디 규정중에 퀴즈제출을 활용하면 좋겠다는 생각이 들었다. 더불어 퀴즈를 기준으로 퀴즈 모음을 만들어 한 눈에 퀴즈와 풀이를 볼 수 있게끔 하고싶었다. 그래서 퀴즈리스트를 만들어서 제출자 아이디와 퀴즈, 풀이를 함께 링크를 걸어 한 눈에 파악할 수 있도록하고 출석체크까지 겸 했다.</li></ul></li><li>이슈템플릿 만들기<ul><li>퀴즈나 전반적인 스터디 질문에 대비하여 이슈템플릿도 만들어보았다. 질문은 다 줌미팅에서 해결했기에 결과적으로는 아무도 사용하지 않았지만ㅋㅋㅋ<br><img src="/img/201003issuetemplete.PNG" alt="이슈템플릿"></li></ul></li></ol><p>그렇게 탄생한 <a href="https://github.com/sowon-dev/modernJsStudy">모던JS스터디레포</a>!<br>한 달동안 직접 담당하여 운영해보니 깃헙의 매력에 푹 빠져버렸다.<br>이렇게 숨은 기능이 많을 줄이야!<br>다음에도 꼭 컨트리뷰톤에 참여하고싶다.<br>내가 직접 멘토가 되는 그날이 오기를 소망해본다!</p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EC%BB%A8%ED%8A%B8%EB%A6%AC%EB%B7%B0%ED%86%A42020/">오픈소스컨트리뷰톤2020</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/Review/">Review</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/Journal/">Journal</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2020/10/01/200929opensource/#disqus_thread</comments>
       
     </item>
     
