@@ -101,6 +101,52 @@
     </item>
     
     <item>
+      <title>[자바JAVA]1041 : [기초-산술연산] 문자 1개 입력받아 다음 문자 출력하기(설명)</title>
+      <link>https://sowon-dev.github.io/2020/10/07/201008al-c1041/</link>
+      <guid>https://sowon-dev.github.io/2020/10/07/201008al-c1041/</guid>
+      <pubDate>Wed, 07 Oct 2020 18:17:16 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;문제-1041-기초-산술연산-문자-1개-입력받아-다음-문자-출력하기-설명&quot;&gt;&lt;a href=&quot;#문제-1041-기초-산술연산-문자-1개-입력받아-다음-문자-출력하기-설명&quot; class=&quot;headerlink&quot; title=&quot;문제 1041 : [기초-산술연산] 문자 1개 입력받아 다음 문자 출력하기(설명)&quot;&gt;&lt;/a&gt;문제 1041 : [기초-산술연산] 문자 1개 입력받아 다음 문자 출력하기(설명)&lt;/h2&gt;&lt;p&gt;영문자 1개를 입력받아 그 다음 문자를 출력해보자.&lt;br&gt;영문자 ‘A’의 다음 문자는 ‘B’이고, 영문자 ‘0’의 다음 문자는 ‘1’이다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="문제-1041-기초-산술연산-문자-1개-입력받아-다음-문자-출력하기-설명"><a href="#문제-1041-기초-산술연산-문자-1개-입력받아-다음-문자-출력하기-설명" class="headerlink" title="문제 1041 : [기초-산술연산] 문자 1개 입력받아 다음 문자 출력하기(설명)"></a>문제 1041 : [기초-산술연산] 문자 1개 입력받아 다음 문자 출력하기(설명)</h2><p>영문자 1개를 입력받아 그 다음 문자를 출력해보자.<br>영문자 ‘A’의 다음 문자는 ‘B’이고, 영문자 ‘0’의 다음 문자는 ‘1’이다.</p><a id="more"></a><p>참고<br>숫자는 수를 표현하는 문자로서 ‘0’ 은 문자 그 자체를 의미하고, 0은 값을 의미한다.</p><p>힌트<br>아스키문자표에서 ‘A’는 10진수 65로 저장되고 ‘B’는 10진수 66으로 저장된다.<br>따라서 문자도 값으로 덧셈을 할 수 있다.</p><ul><li>입력예시<br>영문자 1개가 입력된다.</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a</span><br></pre></td></tr></table></figure><ul><li>출력예시 </li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">b</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="첫번째-코드"><a href="#첫번째-코드" class="headerlink" title="첫번째 코드"></a>첫번째 코드</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">Scanner sc =  <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">String s = sc.next();</span><br><span class="line">sc.close();</span><br><span class="line"></span><br><span class="line"><span class="comment">//String -&gt; char</span></span><br><span class="line"><span class="keyword">char</span> c = s.charAt(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//char+1</span></span><br><span class="line"><span class="keyword">int</span> i = c+<span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//char로 출력</span></span><br><span class="line">System.out.printf(<span class="string">"%s"</span>, (<span class="keyword">char</span>)i);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="두번째-코드"><a href="#두번째-코드" class="headerlink" title="두번째 코드"></a>두번째 코드</h2><p>위의 코드보다 더 간결하게 나타낼 수 있다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="keyword">char</span> a = sc.nextLine().charAt(<span class="number">0</span>);</span><br><span class="line">        System.out.printf(<span class="string">"%c"</span>, a+<span class="number">1</span>);</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="배운-지식"><a href="#배운-지식" class="headerlink" title="배운 지식"></a>배운 지식</h2><p>꼭 기억하자</p><ul><li>char를 Scanner로 받을땐 <code>sc.nextLine().charAt(0);</code>로 받으면 String이 아닌 Char형태로 바로 받을 수 있다.</li><li>char를 printf로 출력할때 <code>&quot;%s&quot;</code>가 아니라 <code>&quot;%c&quot;</code>로 출력하면 된다.</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Algorithm/">Algorithm</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Codeup100/">Codeup100</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2020/10/07/201008al-c1041/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>[스프링SPRING] STS 단축키 추가하기(스프링 이클립스 단축키), System.out.printf()단축키</title>
+      <link>https://sowon-dev.github.io/2020/10/07/201008stsAddShortcuts/</link>
+      <guid>https://sowon-dev.github.io/2020/10/07/201008stsAddShortcuts/</guid>
+      <pubDate>Wed, 07 Oct 2020 17:47:32 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;STS-단축키-추가하기&quot;&gt;&lt;a href=&quot;#STS-단축키-추가하기&quot; class=&quot;headerlink&quot; title=&quot;STS 단축키 추가하기&quot;&gt;&lt;/a&gt;STS 단축키 추가하기&lt;/h2&gt;&lt;p&gt;Spring Tool Suite 4(STS)는 이클립스환경이다. 이클립스와 동일하게 단축키도 이용가능한 줄 알았다.&lt;br&gt;&lt;code&gt;sout&lt;/code&gt; + Ctrl + Space를 통해서 &lt;code&gt;System.out.println()&lt;/code&gt;을 이용하려고 했는데 단축키가 적용되지않았다.&lt;br&gt;&lt;code&gt;sysout&lt;/code&gt; 매번 입력하기는 너&amp;#126;&amp;#126;&amp;#126;&amp;#126;무 귀찮기때문에 구글링하여 직접 단축키를 추가해보았다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="STS-단축키-추가하기"><a href="#STS-단축키-추가하기" class="headerlink" title="STS 단축키 추가하기"></a>STS 단축키 추가하기</h2><p>Spring Tool Suite 4(STS)는 이클립스환경이다. 이클립스와 동일하게 단축키도 이용가능한 줄 알았다.<br><code>sout</code> + Ctrl + Space를 통해서 <code>System.out.println()</code>을 이용하려고 했는데 단축키가 적용되지않았다.<br><code>sysout</code> 매번 입력하기는 너&#126;&#126;&#126;&#126;무 귀찮기때문에 구글링하여 직접 단축키를 추가해보았다.</p><a id="more"></a><p>이클립스도 STS와 별반 다르지않게 단축키를 추가할 수 있다.</p><p><img src="/img/201008stsAddShortcuts.PNG" alt=""></p><p><br><br><br></p><h2 id="1-Window-gt-Preferences-클릭-gt-Templates검색"><a href="#1-Window-gt-Preferences-클릭-gt-Templates검색" class="headerlink" title="1. Window &gt; Preferences 클릭 &gt; Templates검색"></a>1. Window &gt; Preferences 클릭 &gt; Templates검색</h2><h2 id="2-Java-Editor하위의-Templates-클릭-사진-속-1번-참조"><a href="#2-Java-Editor하위의-Templates-클릭-사진-속-1번-참조" class="headerlink" title="2. Java-Editor하위의 Templates 클릭(사진 속 1번 참조)"></a>2. Java-Editor하위의 Templates 클릭(사진 속 1번 참조)</h2><ul><li>여기서 내장되어있는 단축키를 확인할 수 있다.</li><li>기존 단축키 수정도 가능하고 새로운 단축키 추가도 가능하다</li></ul><h2 id="3-New버튼클릭-사진-속-2번-참조"><a href="#3-New버튼클릭-사진-속-2번-참조" class="headerlink" title="3. New버튼클릭(사진 속 2번 참조)"></a>3. New버튼클릭(사진 속 2번 참조)</h2><h2 id="4-Edit-Template에-단축키-추가-사진-속-3번-참조"><a href="#4-Edit-Template에-단축키-추가-사진-속-3번-참조" class="headerlink" title="4. Edit Template에 단축키 추가(사진 속 3번 참조)"></a>4. Edit Template에 단축키 추가(사진 속 3번 참조)</h2><ul><li>Name : 원하는 단축키</li><li>Context : Java statements 설정</li><li>Description : 단축키 설명 입력</li><li>Pattern : 단축키 입력시 원하는 동작 추가</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Pattern예시</span></span><br><span class="line">System.out.println($&#123;word_selection&#125;$&#123;&#125;);$&#123;cursor&#125;</span><br></pre></td></tr></table></figure><p>나는 두가지를 단축키로 추가하였다.</p><ul><li><code>System.out.println()</code>를 <code>sout</code>으로 단축키 추가 지정</li><li><code>System.out.printf()</code>를 <code>souf</code>로 단축키 추가 지정</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//`System.out.println()`를 `sout`으로 단축키 추가 지정시 Pattern예시</span></span><br><span class="line">System.out.println($&#123;word_selection&#125;$&#123;&#125;);$&#123;cursor&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//`System.out.printf()`를 `souf`로 단축키 추가 지정시 Pattern예시</span></span><br><span class="line">System.out.printf($&#123;word_selection&#125;$&#123;&#125;);$&#123;cursor&#125;</span><br></pre></td></tr></table></figure><h2 id="5-OK클릭-gt-Apply-and-Close-클릭-사진-속-4번-참조"><a href="#5-OK클릭-gt-Apply-and-Close-클릭-사진-속-4번-참조" class="headerlink" title="5. OK클릭 &gt; Apply and Close 클릭(사진 속 4번 참조)"></a>5. OK클릭 &gt; Apply and Close 클릭(사진 속 4번 참조)</h2><ul><li>단축키가 잘 되는 지 확인한다.</li><li>완-벽!</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/TIL/">TIL</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2020/10/07/201008stsAddShortcuts/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>[스프링SPRING]스프링 MVC패턴</title>
       <link>https://sowon-dev.github.io/2020/10/07/201008spring/</link>
       <guid>https://sowon-dev.github.io/2020/10/07/201008spring/</guid>
@@ -129,7 +175,7 @@
     </item>
     
     <item>
-      <title>[스프링SPRING]스프링(STS)설치, MAVEN REPOSITORY</title>
+      <title>[스프링SPRING]스프링(STS)설치, 스프링MVC프로젝트만들기, MAVEN REPOSITORY, STS단축키 추가하기</title>
       <link>https://sowon-dev.github.io/2020/10/06/201007spring-1/</link>
       <guid>https://sowon-dev.github.io/2020/10/06/201007spring-1/</guid>
       <pubDate>Tue, 06 Oct 2020 21:56:08 GMT</pubDate>
@@ -493,60 +539,6 @@
       
       
       <comments>https://sowon-dev.github.io/2020/10/04/201005jspGetVSPost/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[JSP] 프로세스(Process)와 스레드(Thread)의 차이, 웹서버(WEB SERVER)와 웹어플리케이션서버(WAS)의 차이</title>
-      <link>https://sowon-dev.github.io/2020/10/04/201005jspProcessVSThreadNWebServerVSWAS/</link>
-      <guid>https://sowon-dev.github.io/2020/10/04/201005jspProcessVSThreadNWebServerVSWAS/</guid>
-      <pubDate>Sun, 04 Oct 2020 17:20:56 GMT</pubDate>
-      
-      <description>&lt;h2 id=&quot;프로세스-VS-스레드&quot;&gt;&lt;a href=&quot;#프로세스-VS-스레드&quot; class=&quot;headerlink&quot; title=&quot;프로세스 VS 스레드&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://sowon-dev.github.io/2020/08/20/200820javai/#%EA%B0%9C%EB%85%90-%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC&quot;&gt;프로세스 VS 스레드&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;프로세스 : 주기억장치에 로드된 상태의 프로그램(실행되고 있는 프로그램)&lt;ul&gt;
-&lt;li&gt;작업관리자의 백그라운드프로세스가 많을수록 컴터속도가 느려짐</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="프로세스-VS-스레드"><a href="#프로세스-VS-스레드" class="headerlink" title="프로세스 VS 스레드"></a><a href="https://sowon-dev.github.io/2020/08/20/200820javai/#%EA%B0%9C%EB%85%90-%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC">프로세스 VS 스레드</a></h2><ul><li>프로세스 : 주기억장치에 로드된 상태의 프로그램(실행되고 있는 프로그램)<ul><li>작업관리자의 백그라운드프로세스가 많을수록 컴터속도가 느려짐<a id="more"></a></li><li>설치된 애플리케이션을 실행하게되면 운영체제(OS)로부더 메모리의 일정영역을 할당받고 CPU와 HDD를 이용해서 동작하는 것</li></ul></li><li>스레드(Thread) : 프로세스 동작의 최소 단위. 모든 프로세스는 하나 이상의 스레드로 구성</li></ul><p><br><br><br></p><h2 id="웹서버-WEB-SERVER-VS-웹어플리케이션서버-WAS-Web-Application-Server"><a href="#웹서버-WEB-SERVER-VS-웹어플리케이션서버-WAS-Web-Application-Server" class="headerlink" title="웹서버(WEB SERVER) VS 웹어플리케이션서버(WAS, Web Application Server)"></a>웹서버(WEB SERVER) VS 웹어플리케이션서버(WAS, Web Application Server)</h2><ul><li>웹서버 : DB사용 불가능<ul><li>클라이언트측 정적데이터</li><li>웹 브라우저 클라이언트로부터 HTTP 요청을 받아 정적인 컨텐츠(.html .jpeg .css 등)를 제공하는 컴퓨터 프로그램</li><li>Web Server의 예 : Apache Server, Nginx, IIS(Windows 전용 Web 서버) 등</li></ul></li><li>WAS : DB사용 가능<ul><li>서버측 동적데이터 사용</li><li>DB 조회나 다양한 로직 처리를 요구하는 동적인 컨텐츠를 제공하기 위해 만들어진 Application Server</li><li>WAS의 예 : Ex) Tomcat, JBoss, Jeus, Web Sphere 등</li></ul></li><li>참고 : <a href="https://gmlwjd9405.github.io/2018/10/27/webserver-vs-was.html">https://gmlwjd9405.github.io/2018/10/27/webserver-vs-was.html</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/JSP/">JSP</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/TIL/">TIL</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/ITWILL-JAVA/">ITWILL(JAVA)</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2020/10/04/201005jspProcessVSThreadNWebServerVSWAS/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[JSP] 세션(Session)와 쿠키(Cookie)의 차이</title>
-      <link>https://sowon-dev.github.io/2020/10/04/201005jspSessionVSCookie/</link>
-      <guid>https://sowon-dev.github.io/2020/10/04/201005jspSessionVSCookie/</guid>
-      <pubDate>Sun, 04 Oct 2020 15:02:53 GMT</pubDate>
-      
-      <description>&lt;h2 id=&quot;세션-vs-쿠키&quot;&gt;&lt;a href=&quot;#세션-vs-쿠키&quot; class=&quot;headerlink&quot; title=&quot;세션 vs 쿠키&quot;&gt;&lt;/a&gt;세션 vs 쿠키&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;공통점 : 데이터 저장&lt;/li&gt;
-&lt;li&gt;차이점</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="세션-vs-쿠키"><a href="#세션-vs-쿠키" class="headerlink" title="세션 vs 쿠키"></a>세션 vs 쿠키</h2><ul><li>공통점 : 데이터 저장</li><li>차이점  <a id="more"></a><ul><li><a href="https://sowon-dev.github.io/2020/06/29/200629jspi/">세션</a> : 정보를 서버에 저장<ul><li>서버가 종료되면 사라짐</li><li>브라우저별로 하나씩 생성</li><li>정확한 데이터를 사용</li></ul></li><li><a href="https://sowon-dev.github.io/2020/07/01/200701jspi/">쿠키</a> : 정보를 클라이언트에 저장(사용자PC의 하드디스크에 저장)<ul><li>서버가 종료되면 안 살아짐</li><li>쿠기 사용기간이후 사라짐</li><li>쿠기 삭제할 수 있음</li><li>사용자의 PC가 바이러스로 인해서 파일이 손상될 가능성이 큼</li></ul></li></ul></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/JSP/">JSP</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/TIL/">TIL</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/ITWILL-JAVA/">ITWILL(JAVA)</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2020/10/04/201005jspSessionVSCookie/#disqus_thread</comments>
       
     </item>
     
