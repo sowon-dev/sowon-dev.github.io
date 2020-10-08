@@ -101,7 +101,35 @@
     </item>
     
     <item>
-      <title>[스프링SPRING]스프링(STS)설치, 메이븐 레파지토리</title>
+      <title>[스프링SPRING]스프링 MVC패턴</title>
+      <link>https://sowon-dev.github.io/2020/10/07/201008spring/</link>
+      <guid>https://sowon-dev.github.io/2020/10/07/201008spring/</guid>
+      <pubDate>Wed, 07 Oct 2020 16:14:00 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;Spring-MVC-프로젝트-생성하는-두가지-방법&quot;&gt;&lt;a href=&quot;#Spring-MVC-프로젝트-생성하는-두가지-방법&quot; class=&quot;headerlink&quot; title=&quot;Spring MVC 프로젝트 생성하는 두가지 방법&quot;&gt;&lt;/a&gt;Spring MVC 프로젝트 생성하는 두가지 방법&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;Spring Legacy Project&lt;ul&gt;
+&lt;li&gt;WAS-tomcat 경험과 model2 경험 필요&lt;/li&gt;
+&lt;li&gt;상대적으로 설정하는 것이 어렵다.</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="Spring-MVC-프로젝트-생성하는-두가지-방법"><a href="#Spring-MVC-프로젝트-생성하는-두가지-방법" class="headerlink" title="Spring MVC 프로젝트 생성하는 두가지 방법"></a>Spring MVC 프로젝트 생성하는 두가지 방법</h2><ol><li>Spring Legacy Project<ul><li>WAS-tomcat 경험과 model2 경험 필요</li><li>상대적으로 설정하는 것이 어렵다.<a id="more"></a></li><li>실무에서 기존 프로젝트를 이해하기 쉽다 (실무에서 주로 사용하기때문에)</li><li>모든 버전의 스프링을 사용가능</li><li>단점 : 리소스가 많이 필요하다.</li></ul></li><li>Spring Starter Project(Spring Boot)<ul><li>최대한 간결하게 실행, 배포하기 위한 방법</li><li>WAS없이 실행가능</li><li>최근 유행 &gt; 빠르게 처리가능하기에 간단한 테스트용으로 자주 사용</li><li>단점 : jsp뷰 별도의 설정 필요</li></ul></li></ol><p><br><br><br></p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/TIL/">TIL</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/ITWILL-JAVA/">ITWILL(JAVA)</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2020/10/07/201008spring/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>[스프링SPRING]스프링(STS)설치, MAVEN REPOSITORY</title>
       <link>https://sowon-dev.github.io/2020/10/06/201007spring-1/</link>
       <guid>https://sowon-dev.github.io/2020/10/06/201007spring-1/</guid>
       <pubDate>Tue, 06 Oct 2020 21:56:08 GMT</pubDate>
@@ -111,7 +139,7 @@
       
       
       
-      <content:encoded><![CDATA[<h2 id="스프링-설치"><a href="#스프링-설치" class="headerlink" title="스프링 설치"></a>스프링 설치</h2><ol><li><a href="https://spring.io/tools">스프링 공식 사이트</a>에서 project탭 클릭 &gt; Spring Tool 4 클릭<a id="more"></a><img src="/img/201007spring.PNG" alt=""></li><li>스프링설치후 exe파일을 실행</li><li>workspace생성 후 Lanch</li><li>Help &gt; Marketplace &gt; sts 검색 후 Spring Tools 3 Add-On for Spring Tools 4를 설치한다<br><img src="/img/201007spring2.PNG" alt=""></li><li>restart하고 나면 Create a project &gt; Spring Legacy Project &gt; Spring MVC project 클릭</li><li>project name 작성하고 next클릭 &gt; the top-level pacakge 을 지정<ul><li>보통 회사도메인주소 뒤부터 작성 ex)com.test</li></ul></li><li>설치와 프로젝트 생성까지 끝!</li></ol><p><br><br><br></p><h2 id="기본설정"><a href="#기본설정" class="headerlink" title="기본설정"></a>기본설정</h2><p>Preferences에서 아래 내용을 설정해준다</p><ol><li>General show heap status 틱하기</li><li>General &gt; Appearance &gt; Colors and Fonts &gt; basic &gt;Text Font 더블클릭 &gt; 폰트크기지정 </li><li>General &gt; Web Browser &gt; Use external web browser 틱 &gt; chrome 틱하기</li><li>Web의 CSS Files, HTML Files, JSP Files을 각각 Encoding UTF-8로 설정 </li></ol><p><a href="https://mvnrepository.com/"></a></p><p><br><br><br></p><h2 id="메이븐-레파지토리"><a href="#메이븐-레파지토리" class="headerlink" title="메이븐 레파지토리"></a>메이븐 레파지토리</h2><ul><li><a href="https://mvnrepository.com/">메이븐 공식 레파지토리 사이트</a>에 접속한 뒤 검색해서 원하는 것을 클릭한 후 코드를 복사해서 <code>pom.xml</code>의 test주석부분의 <code>&lt;dependencies&gt;</code>태그 안에 붙여넣기하면 된다</li><li>검색한 뒤 어떤 버전을 쓸지 모르겠다면? Usages가 가장 많은 것을 받으면 된다.</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="스프링-설치"><a href="#스프링-설치" class="headerlink" title="스프링 설치"></a>스프링 설치</h2><ol><li><a href="https://spring.io/tools">스프링 공식 사이트</a>에서 project탭 클릭 &gt; Spring Tool 4 클릭<a id="more"></a><img src="/img/201007spring.PNG" alt=""></li><li>스프링설치후 exe파일을 실행</li><li>workspace생성 후 Lanch</li><li>Help &gt; Marketplace &gt; sts 검색 후 Spring Tools 3 Add-On for Spring Tools 4를 설치한다<br><img src="/img/201007spring2.PNG" alt=""></li><li>restart하고 나면 Create a project &gt; Spring Legacy Project &gt; Spring MVC project 클릭</li><li>project name 작성하고 next클릭 &gt; the top-level pacakge 을 지정<ul><li>보통 회사도메인주소 뒤부터 작성 ex)com.test</li></ul></li><li>설치와 프로젝트 생성까지 끝!</li></ol><p><br><br><br></p><h2 id="기본설정"><a href="#기본설정" class="headerlink" title="기본설정"></a>기본설정</h2><p>Preferences에서 아래 내용을 설정해준다</p><ol><li>General show heap status 틱하기</li><li>General &gt; Appearance &gt; Colors and Fonts &gt; basic &gt;Text Font 더블클릭 &gt; 폰트크기지정 </li><li>General &gt; Web Browser &gt; Use external web browser 틱 &gt; chrome 틱하기</li><li>Web의 CSS Files, HTML Files, JSP Files을 각각 Encoding UTF-8로 설정 </li></ol><p><a href="https://mvnrepository.com/"></a></p><p><br><br><br></p><h2 id="메이븐-레파지토리-MAVEN-REPOSITORY"><a href="#메이븐-레파지토리-MAVEN-REPOSITORY" class="headerlink" title="메이븐 레파지토리(MAVEN REPOSITORY)"></a>메이븐 레파지토리(MAVEN REPOSITORY)</h2><ul><li><a href="https://mvnrepository.com/">메이븐 공식 레파지토리 사이트</a>에 접속한 뒤 검색해서 원하는 것을 클릭한 후 코드를 복사해서 <code>pom.xml</code>의 test주석부분의 <code>&lt;dependencies&gt;</code>태그 안에 붙여넣기하면 된다</li><li>검색한 뒤 어떤 버전을 쓸지 모르겠다면? Usages가 가장 많은 것을 받으면 된다.</li></ul>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
@@ -519,31 +547,6 @@
       
       
       <comments>https://sowon-dev.github.io/2020/10/04/201005jspSessionVSCookie/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Amazon 개발자가 말해주는 해외취업 웨비나 후기</title>
-      <link>https://sowon-dev.github.io/2020/10/03/201004amazon/</link>
-      <guid>https://sowon-dev.github.io/2020/10/03/201004amazon/</guid>
-      <pubDate>Sat, 03 Oct 2020 22:02:23 GMT</pubDate>
-      
-      <description>&lt;h2 id=&quot;Amazon개발자가-말해주는-해외취업&quot;&gt;&lt;a href=&quot;#Amazon개발자가-말해주는-해외취업&quot; class=&quot;headerlink&quot; title=&quot;Amazon개발자가 말해주는 해외취업&quot;&gt;&lt;/a&gt;Amazon개발자가 말해주는 해외취업&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;내용 : 아마존 현직 개발자가 알려주는 해외 취업, 그리고 아마존이 일하는 방식.&lt;br&gt;강사 : 민창현&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="Amazon개발자가-말해주는-해외취업"><a href="#Amazon개발자가-말해주는-해외취업" class="headerlink" title="Amazon개발자가 말해주는 해외취업"></a>Amazon개발자가 말해주는 해외취업</h2><blockquote><p>내용 : 아마존 현직 개발자가 알려주는 해외 취업, 그리고 아마존이 일하는 방식.<br>강사 : 민창현</p></blockquote><a id="more"></a><div id="fb-root"></div><script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v8.0" nonce="6bbmUCtO"></script><div class="fb-post" data-href="https://www.facebook.com/hojun.lee.521/posts/3270478516403695" data-show-text="true" data-width=""><blockquote cite="https://www.facebook.com/hojun.lee.521/posts/3270478516403695" class="fb-xfbml-parse-ignore"><p>아마존에서 근무를 하고 있으신 창현님께서 아마존의 일하는 방식과 해외 취업에 대해 설명해주신다고 해서 행사를 하나 열었습니다.</p>게시: <a href="#" role="button">Hojun  Lee</a>&nbsp;<a href="https://www.facebook.com/hojun.lee.521/posts/3270478516403695">2020년 9월 28일 월요일</a></blockquote></div><p><br><br><br></p><h2 id="서류"><a href="#서류" class="headerlink" title="서류"></a>서류</h2><ul><li>링크드인</li><li><strong>내부 직원 리퍼럴 통해서 지원</strong>👍</li><li>회사 직접 지원</li></ul><p><br><br><br></p><h3 id="왜-서류-통과가-안되었을까"><a href="#왜-서류-통과가-안되었을까" class="headerlink" title="왜 서류 통과가 안되었을까?"></a>왜 서류 통과가 안되었을까?</h3><ul><li>외국인을 뽑기 싫어서(비자문제, 비용문제)</li><li>지원자가 너무 많아서 내부 직원 리퍼럴로 1차 스크리닝<ul><li>🌟TIP 인맥을 찾거나 무작정 연락해서 리퍼럴 부탁하기</li><li>인맥 추천할때 진짜 지인인지 어디서 만난 지인인지 구분하는 카테고리가 있기때문에 리퍼럴하는 것이 부담스럽지않다. 따라서 어떤 행사에서 만난 사람이라도 리퍼럴 부탁해 볼 것!</li></ul></li></ul><p><br><br><br></p><h2 id="면접"><a href="#면접" class="headerlink" title="면접"></a>면접</h2><ol><li>전화면접 보통 1시간내외 <ul><li>하루 일정 중 몇시간 코딩하는지 나머지 시간은 뭐하는지</li><li>🌟TIP 중간중간에 내가 제대로 질문을 이해하고 답하고 있는지 면접관과 함께 체크하기 Does it make sense to you?</li></ul></li><li>실시간 코딩<ul><li>비교적 간단한 알고리즘 문제</li></ul></li><li>On-site interview 또는 online interview<ul><li>4번&#126;5번 정도 1:1로 면접 진행 (1시간내외)</li><li>알고리즘 2 &#126; 3회면접, 시스템디자인 1 &#126; 2회, 인성면접 1회등</li><li>아마존의 경우 LP면접이 매우 중요.</li><li>On-site interview의 경우, 화이트보드세션</li><li>online interview의 경우, 온라인 화이트보드 툴으로 시스템다이어그램 그려서 work flow설명하거나 실시간 코딩협업 툴 등 사용해서 설명해야함</li></ul></li></ol><p><br><br><br></p><h2 id="Hiring-Event"><a href="#Hiring-Event" class="headerlink" title="Hiring Event"></a>Hiring Event</h2><ul><li>아마존에서 주로 많이 시행하는 대규모 채용 이벤트</li><li>주로 경력 개발자를 채용하기 위한 이벤트<ul><li>신입의 경우 보통 현지 대학 졸업자들을 대상으로 진행</li></ul></li><li>비교적 빠른 채용 프로세스(보통 1&#126;2달만에 채용됨)</li><li>프로세스 : 서류 -&gt; 온라인 코딩 테스트 -&gt; 전화 면접 -&gt; On-site interview</li><li>경쟁률은 1:8정도임</li></ul><p><br><br><br></p><h2 id="다들-개발-엄청-잘-하나요"><a href="#다들-개발-엄청-잘-하나요" class="headerlink" title="다들 개발 엄청 잘 하나요?"></a>다들 개발 엄청 잘 하나요?</h2><blockquote><p>내가 못해서 떨어진 것이 아니라 내가 운이 없어서, 지금 뽑는 팀에 부합하지 않아서 떨어진 것일 뿐입니다. 절대 겁먹지마세요<br><strong>지원해서</strong> 면접 본 사람 중에 잘 맞는 사람을 뽑는 것입니다.</p></blockquote><p>지원하지않으면 luck안에 발도 들이지 못한다. 경력을 쌓아야겠다</p><p><br><br><br></p><h2 id="다들-영어-엄청-잘하나요"><a href="#다들-영어-엄청-잘하나요" class="headerlink" title="다들 영어 엄청 잘하나요?"></a>다들 영어 엄청 잘하나요?</h2><blockquote><p>영어실력에 대한 판단은 면접관이 하는 것이니 미리 걱정하지마세요. 사실 합격하면 그때가 문제입니다.<br>출퇴근시간을 이용하여 스탠드업 미팅을 혼자 영어로 꾸준히 연습해보세요.<br>개발자가 아닌 사람에게 본인의 업무를 영어로 이야기를 해보세요. 자신이 개발한 기능 예를 들어 Merge sort를 영어로 설명하는 것을 연습해보세요<br>내 프로젝트를 정리해보세요. 면접에서는 자신의 프로젝트에서 개선할 점이라든지 다시 돌아가면 어떻게 하겠다는 등에 관한 내용을 물어보기도 한답니다.</p></blockquote><p><br><br><br></p><h2 id="코딩테스트"><a href="#코딩테스트" class="headerlink" title="코딩테스트"></a>코딩테스트</h2><ul><li>Leetcode 100개이상 풀기</li><li>Dynamic programming은 잘 안 물어본다.</li><li>Tree, Stack, Limked List부터 구현해보기<ul><li>🌟TIP LRU cache는 빈출문제이니 꼭 마스터하기</li></ul></li><li>STL의 API를 못 외워도 좋지만 API를 정의할 수 있어야한다.<ul><li>🌟TIP 존재하는 API인지 아닌지 상관없이 스스로 이런 INPUT을 가진 API입니다라고 가정을 세워서 코딩테스트를 진행하기</li></ul></li></ul><blockquote><p>코딩테스트하는 동안 내가 지금 뭘 하는 지 먼저 말하고 의도적으로 코딩 중에 말하면서 푸세요. 면접관과 계속 대화를 해야 면접관이 도와줄 수 있습니다.<br>모르겠으면 빠르게 힌트를 요구하세요. 면접관과 대화를 통해서 코딩테스트 문제를 풀어내가는 과정이 중요합니다.<br>답을 알더라도 내가 생각하는 것이 맞는 지 물어봐서 확신을 얻어내세요.<br>마음대로 가정하지 말고 입력과 출력을 확실히 확인하세요. 예를 들어 데이터타입이 String, float등 다양하게 들어올 수 있는데 무조건 INT이다라고 생각하는 등. 면접관에게 처리할 데이터의 양을 무조건 물어보고 검증하세요.<br>머리나 말로 코드를 설명하지말고 주석으로 디버깅 과정을 보여주세요<br>면접툴을 미리 사용해볼 수 있으면 꼭 사용해보세요. 화이트보드에 직접 코드를 적는 경험을 꼭 연습해보세요.</p></blockquote><p><br><br><br></p><h2 id="시스템디자인-면접인-경우"><a href="#시스템디자인-면접인-경우" class="headerlink" title="시스템디자인 면접인 경우"></a>시스템디자인 면접인 경우</h2><blockquote><p>자신이 지금 기획자와 회의에 들어와서 기획안을 한문장 듣고 시스템을 상상해서 설명한다고 생각하세요.<br>면접관에게 반복적으로 질문하면서 입력과 출력을 적어보고 문제를 제대로 이해했는지 질문하세요. 그리고 답변을 마칠때 꼭 <strong>“이정도면 말씀하신 내용을 다 만족할까요? 혹시 추가적으로 고려해야 할 사항이 있을가요?”</strong>라고 물어보면서 마무리하세요. 이런 <strong>피드백 로그</strong>를 만드는 것이 굉장히 중요합니다.<br>동그라미하나라도 그리세요. 그리고 이것이 서비스입니다라고 시작해도 될 정도로 무조건 답변할 수 있는 질문이니 포기하지마세요</p></blockquote><p><br><br><br></p><h2 id="많이-쓰는-미국-비자"><a href="#많이-쓰는-미국-비자" class="headerlink" title="많이 쓰는 미국 비자"></a>많이 쓰는 미국 비자</h2><ul><li>H1B : 일반 취업 비자, 1년에 1번 석박사의 경우 2번 가능<ul><li>석박사 아니면 받기 엄청 어려움. 취업확정이 난 상태에서 지원할 수 있음.</li><li>이직 가능</li></ul></li><li>L1B : 해외 주재원 비자<ul><li>동일 회사 해외 지사에서 1년 이상 근무시 지원가능. 따라서 이직 불가.</li><li>미국비자를 받을 수 있는 가장 최선의 방법</li><li>🌟TIP 가장 추천하는 방법</li></ul></li><li>OPT : 미국내 대학(원) 졸업시 발급하는 임시 취업 비자</li><li>Green card : 영주권</li></ul><blockquote><p>만약 미국 비자가 없다면 캐나다, 유럽, 싱가폴, 일본으로 가세요… 1년&#126;2년있다가 internal transfer로 옮기면 더 쉽다.<br>테그직종에서 캐나다 영주권은 미국 영주권보다 쉽게 나오기도 하니 미국 영주권이 목표가 아니라면 다른 나라도 알아봐도 좋습니다.<br>회사 짤리면 비자가 취소되는 경우가 대부분입니다. </p></blockquote><p><br><br><br></p><h2 id="급여수준과-보상"><a href="#급여수준과-보상" class="headerlink" title="급여수준과 보상"></a>급여수준과 보상</h2><ul><li>TC의 구성요소<ul><li>기본급</li><li>사이닝 보너스</li><li>RSU : 주식</li><li>캐시 보너스</li></ul></li><li>보통 5&#126;10년차 한국 개발자가 미국에 왔을 때 대기업 기준 TC 18&#126;20만불 정도로 시작(아마존 기준)</li></ul><blockquote><p>부자가 될 줄 알았지만… 주거비와 생활비용이 은근 비싸서 그냥 중산층정도입니다.<br>3년동안 야근은 한 달정도하고 주말에 일한 건 5번 이하인 것 같아요.<br>최초 계약시점이후로 TC가 잘 안 올라가기때문에 승진이나 이직을 고려해야합니다. 입사시 무조건 카운터 오퍼가 있어야 연봉협상이 가능합니다.</p></blockquote><ul><li>카운트 오퍼 : 다른 회사에서 이정도 연봉으로 받았다는 걸 알리고 자신의 연봉을 올리는 것</li></ul><p><br><br><br></p><h2 id="한국에서-어느정도-경력을-쌓아야할까요"><a href="#한국에서-어느정도-경력을-쌓아야할까요" class="headerlink" title="한국에서 어느정도 경력을 쌓아야할까요?"></a>한국에서 어느정도 경력을 쌓아야할까요?</h2><blockquote><p>한국에서 3년차 이상정도면 그 이후부터는 주니어를 벗어나려고 노력하면서 해외취업 도전하시는 것이 좋을 것같습니다.<br>프로젝트를 처음부터 끝까지 디자인할 수 있을 것 같을때 도전해보실만 합니다.<br>아마존 하이어링이벤트가 최고의 기회라고 생각합니다. 면접비용, 이사비용 다 서포팅해줍니다.</p></blockquote>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Lectures-Seminars/">Lectures &amp; Seminars</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/Review/">Review</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2020/10/03/201004amazon/#disqus_thread</comments>
       
     </item>
     
