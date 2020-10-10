@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2020/09/30/201001intelliJkey/</loc>
+        <lastmod>2020-10-10T02:05:36.723Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2020/10/07/201008spring/</loc>
         <lastmod>2020-10-08T08:23:05.377Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -178,14 +186,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/10/05/201006java/</loc>
         <lastmod>2020-10-06T15:35:13.794Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/09/30/201001intelliJkey/</loc>
-        <lastmod>2020-10-06T15:22:12.545Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
