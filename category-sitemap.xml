@@ -9,14 +9,28 @@
 
     <url>
         <loc>https://sowon-dev.github.io/categories/Spring/</loc>
-        <lastmod>2020-10-13T04:05:33.733Z</lastmod>
+        <lastmod>2020-10-13T06:33:23.561Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/categories/JSP/</loc>
-        <lastmod>2020-10-13T00:11:56.534Z</lastmod>
+        <lastmod>2020-10-13T06:08:57.613Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Database/Oracle/</loc>
+        <lastmod>2020-10-13T06:05:30.646Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Database/</loc>
+        <lastmod>2020-10-13T06:05:30.646Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -45,20 +59,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/JAVA/</loc>
         <lastmod>2020-10-06T15:35:13.794Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Database/Oracle/</loc>
-        <lastmod>2020-10-06T07:03:01.638Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Database/</loc>
-        <lastmod>2020-10-06T07:03:01.638Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
