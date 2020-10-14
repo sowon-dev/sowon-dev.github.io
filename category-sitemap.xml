@@ -8,8 +8,36 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/Spring/</loc>
+        <lastmod>2020-10-14T07:41:28.170Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Database/Oracle/</loc>
+        <lastmod>2020-10-14T07:38:24.738Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Database/</loc>
+        <lastmod>2020-10-14T07:38:24.738Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/Algorithm/</loc>
-        <lastmod>2020-10-14T03:35:27.065Z</lastmod>
+        <lastmod>2020-10-14T07:38:00.086Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/JSP/</loc>
+        <lastmod>2020-10-14T05:28:43.049Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -24,34 +52,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/Journal/</loc>
         <lastmod>2020-10-14T03:13:36.141Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Database/Oracle/</loc>
-        <lastmod>2020-10-14T02:26:24.134Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Database/</loc>
-        <lastmod>2020-10-14T02:26:24.134Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Spring/</loc>
-        <lastmod>2020-10-13T06:33:23.561Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/JSP/</loc>
-        <lastmod>2020-10-13T06:08:57.613Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
