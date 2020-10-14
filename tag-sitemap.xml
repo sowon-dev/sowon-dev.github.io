@@ -3,22 +3,43 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/Codeup100/</loc>
+        <lastmod>2020-10-14T02:21:27.282Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/List/</loc>
+        <lastmod>2020-10-14T02:21:08.938Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/Oracle/</loc>
-        <lastmod>2020-10-13T08:40:37.006Z</lastmod>
+        <lastmod>2020-10-14T02:21:08.938Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/tags/ITWILL-JAVA/</loc>
-        <lastmod>2020-10-13T08:40:37.006Z</lastmod>
+        <lastmod>2020-10-14T02:21:08.938Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/tags/TIL/</loc>
-        <lastmod>2020-10-13T08:40:37.006Z</lastmod>
+        <lastmod>2020-10-14T02:18:44.096Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/Journal/</loc>
+        <lastmod>2020-10-14T02:15:49.389Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -31,35 +52,7 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/tags/List/</loc>
-        <lastmod>2020-10-13T06:08:57.613Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/Codeup100/</loc>
-        <lastmod>2020-10-12T14:14:51.442Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/CodeUp100/</loc>
-        <lastmod>2020-10-12T14:13:19.144Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/tags/IntelliJ/</loc>
-        <lastmod>2020-10-10T02:05:36.723Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/Journal/</loc>
         <lastmod>2020-10-10T02:05:36.723Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

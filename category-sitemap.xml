@@ -8,15 +8,36 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/Algorithm/</loc>
+        <lastmod>2020-10-14T02:21:27.282Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/Database/Oracle/</loc>
-        <lastmod>2020-10-13T08:40:37.006Z</lastmod>
+        <lastmod>2020-10-14T02:21:08.938Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/categories/Database/</loc>
-        <lastmod>2020-10-13T08:40:37.006Z</lastmod>
+        <lastmod>2020-10-14T02:21:08.938Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Journal/Team-Project/</loc>
+        <lastmod>2020-10-14T02:15:49.389Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
+        <lastmod>2020-10-14T02:15:49.389Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -31,20 +52,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/JSP/</loc>
         <lastmod>2020-10-13T06:08:57.613Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Algorithm/</loc>
-        <lastmod>2020-10-13T00:07:01.205Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
-        <lastmod>2020-10-10T02:05:36.723Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -80,13 +87,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/%25EC%2598%25A4%25ED%2594%2588%25EC%2586%258C%25EC%258A%25A4%25EC%25BB%25A8%25ED%258A%25B8%25EB%25A6%25AC%25EB%25B7%25B0%25ED%2586%25A42020/</loc>
         <lastmod>2020-10-03T10:23:19.272Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Journal/Team-Project/</loc>
-        <lastmod>2020-10-03T10:22:52.228Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
