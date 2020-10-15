@@ -8,8 +8,8 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2020/10/14/201015al-c1082/</loc>
-        <lastmod>2020-10-15T02:29:57.622Z</lastmod>
+        <loc>https://sowon-dev.github.io/2020/10/14/201015al-c1084/</loc>
+        <lastmod>2020-10-15T03:51:06.648Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +17,15 @@
 
     <url>
         <loc>https://sowon-dev.github.io/2020/11/16/algorithmList/</loc>
-        <lastmod>2020-10-15T02:29:11.493Z</lastmod>
+        <lastmod>2020-10-15T03:35:08.401Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/10/14/201015al-c1082/</loc>
+        <lastmod>2020-10-15T02:29:57.622Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
