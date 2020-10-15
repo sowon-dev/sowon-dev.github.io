@@ -54,7 +54,7 @@
       
       
       
-      <content:encoded><![CDATA[<h2 id="🌊코드업기초"><a href="#🌊코드업기초" class="headerlink" title="🌊코드업기초"></a>🌊코드업기초</h2><ol><li><a href="https://sowon-dev.github.io/2020/09/29/200930al-1/">1011 : 문자 한 개 입력받아 그대로 출력하기</a></li><li><a href="https://sowon-dev.github.io/2020/09/29/200930al/">1012 : 실수 한 개 입력받아 그대로 출력하기, float실수소수점 표현하기</a></li><li><a href="https://sowon-dev.github.io/2020/09/29/200930al-2/">1018 : 시간 입력받아 그대로 출력하기, next()와 nextLine()차이, parseInt, valueOf의 차이</a><a id="more"></a></li><li><a href="https://sowon-dev.github.io/2020/10/05/201006al/">1023 : 실수 1개 입력받아 부분별로 출력하기, split대신 StringTokenizer사용하기</a></li><li><a href="https://sowon-dev.github.io/2020/10/06/201007al-c1034/">1034 : 8진 정수 1개 입력받아 10진수로 출력하기(설명), Scanner로 2진수, 8진수 16진수 받기</a></li><li><a href="https://sowon-dev.github.io/2020/10/07/201008al-c1041/">1041 : 문자 1개 입력받아 다음 문자 출력하기(설명), Scanner로 char받기</a></li><li><a href="https://sowon-dev.github.io/2020/10/11/201012al-c1059/">1059 : 비트단위로 NOT 하여 출력하기(설명), Scanner로 2진수받기</a></li><li><a href="https://sowon-dev.github.io/2020/10/12/201012al-c1064/">1064 : 정수 3개 입력받아 가장 작은 수 출력하기(설명), 삼항연산자로 최소값찾기</a></li><li><a href="https://sowon-dev.github.io/2020/10/12/201012al-c1066/">1066 : 정수 3개 입력받아 짝/홀 출력하기(설명), Scanner 기본구분자, whitespace(화이트스페이스)뜻</a></li><li><a href="https://sowon-dev.github.io/2020/10/14/201014al-c1071/">1071 : [기초-반복실행구조] 0 입력될 때까지 무한 출력하기1, goto말고while문사용</a></li></ol>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="🌊코드업기초"><a href="#🌊코드업기초" class="headerlink" title="🌊코드업기초"></a>🌊코드업기초</h2><ol><li><a href="https://sowon-dev.github.io/2020/09/29/200930al-1/">1011 : 문자 한 개 입력받아 그대로 출력하기</a></li><li><a href="https://sowon-dev.github.io/2020/09/29/200930al/">1012 : 실수 한 개 입력받아 그대로 출력하기, float실수소수점 표현하기</a></li><li><a href="https://sowon-dev.github.io/2020/09/29/200930al-2/">1018 : 시간 입력받아 그대로 출력하기, next()와 nextLine()차이, parseInt, valueOf의 차이</a><a id="more"></a></li><li><a href="https://sowon-dev.github.io/2020/10/05/201006al/">1023 : 실수 1개 입력받아 부분별로 출력하기, split대신 StringTokenizer사용하기</a></li><li><a href="https://sowon-dev.github.io/2020/10/06/201007al-c1034/">1034 : 8진 정수 1개 입력받아 10진수로 출력하기(설명), Scanner로 2진수, 8진수 16진수 받기</a></li><li><a href="https://sowon-dev.github.io/2020/10/07/201008al-c1041/">1041 : 문자 1개 입력받아 다음 문자 출력하기(설명), Scanner로 char받기</a></li><li><a href="https://sowon-dev.github.io/2020/10/11/201012al-c1059/">1059 : 비트단위로 NOT 하여 출력하기(설명), Scanner로 2진수받기</a></li><li><a href="https://sowon-dev.github.io/2020/10/12/201012al-c1064/">1064 : 정수 3개 입력받아 가장 작은 수 출력하기(설명), 삼항연산자로 최소값찾기</a></li><li><a href="https://sowon-dev.github.io/2020/10/12/201012al-c1066/">1066 : 정수 3개 입력받아 짝/홀 출력하기(설명), Scanner 기본구분자, whitespace(화이트스페이스)뜻</a></li><li><a href="https://sowon-dev.github.io/2020/10/13/201014al-c1071/">1071 : 0 입력될 때까지 무한 출력하기1, goto말고while문사용</a></li><li><a href="https://sowon-dev.github.io/2020/10/15/201015al-c1071/">1082 : 16진수 구구단?</a></li></ol>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/Algorithm/">Algorithm</category>
@@ -123,6 +123,29 @@
       
       
       <comments>https://sowon-dev.github.io/2020/11/15/DBList/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>[자바JAVA]1082 : [기초-종합] 16진수 구구단?</title>
+      <link>https://sowon-dev.github.io/2020/10/14/201015al-c1082/</link>
+      <guid>https://sowon-dev.github.io/2020/10/14/201015al-c1082/</guid>
+      <pubDate>Wed, 14 Oct 2020 16:25:04 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;문제-1082-기초-종합-16진수-구구단&quot;&gt;&lt;a href=&quot;#문제-1082-기초-종합-16진수-구구단&quot; class=&quot;headerlink&quot; title=&quot;문제 1082 : [기초-종합] 16진수 구구단?&quot;&gt;&lt;/a&gt;문제 1082 : [기초-종합] 16진수 구구단?&lt;/h2&gt;&lt;p&gt;16진수(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F)를 배운 영일(01)이는 16진수끼리 곱하는 16진수 구구단?에 대해서 궁금해졌다.&lt;br&gt;A, B, C, D, E, F 중 하나가 입력될 때, 1부터 F까지 곱한 16진수 구구단의 내용을 출력해보자.&lt;br&gt;(단, A 부터 F 까지만 입력된다.)&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="문제-1082-기초-종합-16진수-구구단"><a href="#문제-1082-기초-종합-16진수-구구단" class="headerlink" title="문제 1082 : [기초-종합] 16진수 구구단?"></a>문제 1082 : [기초-종합] 16진수 구구단?</h2><p>16진수(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F)를 배운 영일(01)이는 16진수끼리 곱하는 16진수 구구단?에 대해서 궁금해졌다.<br>A, B, C, D, E, F 중 하나가 입력될 때, 1부터 F까지 곱한 16진수 구구단의 내용을 출력해보자.<br>(단, A 부터 F 까지만 입력된다.)</p><a id="more"></a><ul><li>입력예시<br>16진수로 한 자리 수가 입력된다.(단, A 부터 F 까지만 입력된다.)</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">B</span><br></pre></td></tr></table></figure><ul><li>출력예시<br>입력된 16진수에 1부터 F까지 순서대로 곱한, 16진수 구구단을 줄을 바꿔 출력한다.<br>계산 결과도 16진수로 출력해야 한다.</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">B*1&#x3D;B</span><br><span class="line">B*2&#x3D;16</span><br><span class="line">B*3&#x3D;21</span><br><span class="line">B*4&#x3D;2C</span><br><span class="line">B*5&#x3D;37</span><br><span class="line">B*6&#x3D;42</span><br><span class="line">B*7&#x3D;4D</span><br><span class="line">B*8&#x3D;58</span><br><span class="line">B*9&#x3D;63</span><br><span class="line">B*A&#x3D;6E</span><br><span class="line">B*B&#x3D;79</span><br><span class="line">B*C&#x3D;84</span><br><span class="line">B*D&#x3D;8F</span><br><span class="line">B*E&#x3D;9A</span><br><span class="line">B*F&#x3D;A5</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="코드"><a href="#코드" class="headerlink" title="코드"></a>코드</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">String input = sc.nextLine();</span><br><span class="line">sc.close();</span><br><span class="line"></span><br><span class="line"><span class="comment">//String에서 16진수로 변경</span></span><br><span class="line"><span class="keyword">int</span> b = Integer.valueOf(input, <span class="number">16</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//출력</span></span><br><span class="line">String s, ans;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="number">16</span>; i++) &#123;</span><br><span class="line">s = Integer.toHexString(i).toUpperCase();</span><br><span class="line">ans = Integer.toHexString(b * i).toUpperCase();</span><br><span class="line">System.out.println(input + <span class="string">"*"</span> + s + <span class="string">"="</span> + ans);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;<span class="comment">//end of main()</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="배운지식"><a href="#배운지식" class="headerlink" title="배운지식"></a>배운지식</h2><p>10진수를 16진수로 변환하는 방법을 도식화해서 나타낸 것이다.</p><p><img src="https://dojang.io/pluginfile.php/807/mod_page/content/16/unit85-1.png" alt="https://dojang.io/mod/page/view.php?id=743"></p><p>16진수는 1부터 16까지이므로 for문의 조건은 <code>F</code>가 아니라 <code>16</code>으로 설정해야한다.</p><ul><li><a href="https://sowon-dev.github.io/2020/10/06/201007al-c1034/#%EB%B0%B0%EC%9A%B4-%EC%A7%80%EC%8B%9D">진법변환 정리</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Algorithm/">Algorithm</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Codeup100/">Codeup100</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2020/10/14/201015al-c1082/#disqus_thread</comments>
       
     </item>
     
@@ -508,32 +531,6 @@
       
       
       <comments>https://sowon-dev.github.io/2020/10/07/201008spring/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[스프링SPRING]스프링(STS)설치 및 기본 설정</title>
-      <link>https://sowon-dev.github.io/2020/10/06/201007spring-1/</link>
-      <guid>https://sowon-dev.github.io/2020/10/06/201007spring-1/</guid>
-      <pubDate>Tue, 06 Oct 2020 21:56:08 GMT</pubDate>
-      
-      <description>&lt;h2 id=&quot;스프링-설치&quot;&gt;&lt;a href=&quot;#스프링-설치&quot; class=&quot;headerlink&quot; title=&quot;스프링 설치&quot;&gt;&lt;/a&gt;스프링 설치&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;https://spring.io/tools&quot;&gt;스프링 공식 사이트&lt;/a&gt;에서 project탭 클릭 &amp;gt; Spring Tool 4 클릭</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="스프링-설치"><a href="#스프링-설치" class="headerlink" title="스프링 설치"></a>스프링 설치</h2><ol><li><a href="https://spring.io/tools">스프링 공식 사이트</a>에서 project탭 클릭 &gt; Spring Tool 4 클릭<a id="more"></a><img src="/img/201007spring.PNG" alt=""></li><li>스프링설치후 exe파일을 실행</li><li>workspace생성 후 Lanch</li><li>Help &gt; Marketplace &gt; sts 검색 후 Spring Tools 3 Add-On for Spring Tools 4를 설치한다<br><img src="/img/201007spring2.PNG" alt=""></li><li>restart하고 나면 Create a project &gt; Spring Legacy Project &gt; Spring MVC project 클릭</li><li>project name 작성하고 next클릭 &gt; the top-level pacakge 을 지정<ul><li>보통 회사도메인주소 뒤부터 작성 ex)com.test</li></ul></li><li>설치와 프로젝트 생성까지 끝!</li></ol><p><br><br><br></p><h2 id="기본설정"><a href="#기본설정" class="headerlink" title="기본설정"></a>기본설정</h2><p>Preferences에서 아래 내용을 설정해준다</p><ol><li>General show heap status 틱하기</li><li>General &gt; Appearance &gt; Colors and Fonts &gt; basic &gt;Text Font 더블클릭 &gt; 폰트크기지정 </li><li>General &gt; Web Browser &gt; Use external web browser 틱 &gt; chrome 틱하기</li><li>Web의 CSS Files, HTML Files, JSP Files을 각각 Encoding UTF-8로 설정 </li></ol><p><br><br><br></p><h2 id="Mybatis-설치"><a href="#Mybatis-설치" class="headerlink" title="Mybatis 설치"></a>Mybatis 설치</h2><ul><li><a href="https://sowon-dev.github.io/2020/10/08/201008spring/#MyBatis-설치">스프링 MVC패턴 프로젝트, MAVEN REPOSITORY</a> 참고</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/TIL/">TIL</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/ITWILL-JAVA/">ITWILL(JAVA)</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2020/10/06/201007spring-1/#disqus_thread</comments>
       
     </item>
     
