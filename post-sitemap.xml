@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2020/10/15/201016dbi/</loc>
+        <lastmod>2020-10-16T06:22:14.741Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/11/15/DBList/</loc>
+        <lastmod>2020-10-16T06:18:28.861Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2020/10/14/201015al-c1084/</loc>
         <lastmod>2020-10-16T00:51:17.610Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -162,14 +178,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/10/13/201014al-c1071/</loc>
         <lastmod>2020-10-14T02:49:50.093Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/11/15/DBList/</loc>
-        <lastmod>2020-10-14T02:26:24.134Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
