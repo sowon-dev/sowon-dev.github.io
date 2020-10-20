@@ -127,6 +127,35 @@
     </item>
     
     <item>
+      <title>201020dbi</title>
+      <link>https://sowon-dev.github.io/2020/10/19/201020dbi/</link>
+      <guid>https://sowon-dev.github.io/2020/10/19/201020dbi/</guid>
+      <pubDate>Mon, 19 Oct 2020 20:15:19 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a></h2><a id="more"></a><p><br><br><br></p><h2 id="-1"><a href="#-1" class="headerlink" title=""></a></h2>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
+      
+      <category domain="https://sowon-dev.github.io/categories/Database/Oracle/">Oracle</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/TIL/">TIL</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/ITWILL-JAVA/">ITWILL(JAVA)</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/Oracle/">Oracle</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2020/10/19/201020dbi/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>[스프링SPRING] 메인페이지, 로그아웃</title>
       <link>https://sowon-dev.github.io/2020/10/19/201020spring/</link>
       <guid>https://sowon-dev.github.io/2020/10/19/201020spring/</guid>
@@ -509,37 +538,6 @@
       
       
       <comments>https://sowon-dev.github.io/2020/10/13/201014team/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[SQL퀴즈] substr과 TO_CHAR차이</title>
-      <link>https://sowon-dev.github.io/2020/10/12/201013dbi-q11-3/</link>
-      <guid>https://sowon-dev.github.io/2020/10/12/201013dbi-q11-3/</guid>
-      <pubDate>Mon, 12 Oct 2020 22:44:29 GMT</pubDate>
-      
-      <description>&lt;h2 id=&quot;문제&quot;&gt;&lt;a href=&quot;#문제&quot; class=&quot;headerlink&quot; title=&quot;문제&quot;&gt;&lt;/a&gt;문제&lt;/h2&gt;&lt;p&gt;employees 테이블로부터 각 월의 16일 이전에 채용된 사원을 모두 출력하는 쿼리구문을 작성하시오.&lt;br&gt;사용가능한 컬럼명 : hire_date, last_name&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h2><p>employees 테이블로부터 각 월의 16일 이전에 채용된 사원을 모두 출력하는 쿼리구문을 작성하시오.<br>사용가능한 컬럼명 : hire_date, last_name</p><a id="more"></a><p><br><br><br></p><h2 id="내코드"><a href="#내코드" class="headerlink" title="내코드"></a>내코드</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select last_name, hire_date</span><br><span class="line">from employees</span><br><span class="line"><span class="built_in">where</span> substr(hire_date, -2, 2) &lt; 16;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="강사님쿼리"><a href="#강사님쿼리" class="headerlink" title="강사님쿼리"></a>강사님쿼리</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT last_name, hire_date </span><br><span class="line">FROM employees </span><br><span class="line">WHERE TO_CHAR(hire_date, <span class="string">'DD'</span>) &lt; 16;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="배운지식"><a href="#배운지식" class="headerlink" title="배운지식"></a>배운지식</h2><p>날짜형식은 나라에 따라 달라진다. 우리나라는 년-월-일순이지만 미국은 보통 월-일-년순, 뉴질랜드는 보통 일-월-년이기도 하다. 이처럼 다양한 나라가 서로 다른 날짜형식을 사용한다.<br>내 코드처럼 substr를 사용하면 날짜형식이 변하는 순간 다시 index값을 찾아서 작성해야한다.</p><p>하지만 TO_CHAR를 사용하면 <code>DD</code>를 찾기때문에 날짜형식이 달라도 날짜만을 찾아서 쿼리를 진행할 수 있어 수월하다.</p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/Oracle/">Oracle</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/TIL/">TIL</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/ITWILL-JAVA/">ITWILL(JAVA)</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/Oracle/">Oracle</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/SQL%ED%80%B4%EC%A6%88/">SQL퀴즈</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2020/10/12/201013dbi-q11-3/#disqus_thread</comments>
       
     </item>
     
