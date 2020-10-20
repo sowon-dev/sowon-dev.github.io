@@ -9,7 +9,15 @@
 
     <url>
         <loc>https://sowon-dev.github.io/2020/10/19/201020dbi/</loc>
-        <lastmod>2020-10-20T05:15:52.415Z</lastmod>
+        <lastmod>2020-10-20T07:25:26.508Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/10/15/201016dbi/</loc>
+        <lastmod>2020-10-20T06:09:26.756Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -194,14 +202,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/09/29/200930al-2/</loc>
         <lastmod>2020-10-19T01:20:16.229Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/10/15/201016dbi/</loc>
-        <lastmod>2020-10-16T06:22:14.741Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
