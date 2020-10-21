@@ -8,6 +8,20 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/Journal/Team-Project/</loc>
+        <lastmod>2020-10-21T15:29:54.907Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
+        <lastmod>2020-10-21T15:29:54.907Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/Database/Oracle/</loc>
         <lastmod>2020-10-20T07:25:26.508Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -38,20 +52,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/Algorithm/</loc>
         <lastmod>2020-10-19T03:01:26.442Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Journal/Team-Project/</loc>
-        <lastmod>2020-10-14T03:13:36.141Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
-        <lastmod>2020-10-14T03:13:36.141Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
