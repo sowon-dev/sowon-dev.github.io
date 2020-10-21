@@ -127,6 +127,31 @@
     </item>
     
     <item>
+      <title>깃허브에서 프로젝트 STS로 내려받기, 특정 브랜치만 내려받기</title>
+      <link>https://sowon-dev.github.io/2020/10/21/201022git/</link>
+      <guid>https://sowon-dev.github.io/2020/10/21/201022git/</guid>
+      <pubDate>Wed, 21 Oct 2020 07:22:25 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;main브랜치&quot;&gt;&lt;a href=&quot;#main브랜치&quot; class=&quot;headerlink&quot; title=&quot;main브랜치&quot;&gt;&lt;/a&gt;main브랜치&lt;/h2&gt;&lt;p&gt;깃헙의 최근 업데이트 내용 중 가장 큰 변화는 main브랜치이다.&lt;br&gt;기존의 master브랜치의 의미 명확성에 대한 논의가 계속 있다가 깃헙이용자들이 가장 많이 사용하는 main브랜치를 default브랜치로 사용할 수 있게 되었다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="main브랜치"><a href="#main브랜치" class="headerlink" title="main브랜치"></a>main브랜치</h2><p>깃헙의 최근 업데이트 내용 중 가장 큰 변화는 main브랜치이다.<br>기존의 master브랜치의 의미 명확성에 대한 논의가 계속 있다가 깃헙이용자들이 가장 많이 사용하는 main브랜치를 default브랜치로 사용할 수 있게 되었다.</p><a id="more"></a><p>좋은 변화지만 덕분에 push했는데 merge가 안되서 곤욕을 치뤘다….</p><p><br><br><br></p><h2 id="깃허브-원격저장소에-있는-프로젝트를-내-로컬에-내려받기"><a href="#깃허브-원격저장소에-있는-프로젝트를-내-로컬에-내려받기" class="headerlink" title="깃허브 원격저장소에 있는 프로젝트를 내 로컬에 내려받기"></a>깃허브 원격저장소에 있는 프로젝트를 내 로컬에 내려받기</h2><p>원격저장소의 default branch는 main이다.</p><h3 id="1-팀레포지토리에서-code-lt-gt-탭의-code-초록버튼-클릭-gt-Clone"><a href="#1-팀레포지토리에서-code-lt-gt-탭의-code-초록버튼-클릭-gt-Clone" class="headerlink" title="1 팀레포지토리에서 code&lt;&gt;탭의 code 초록버튼 클릭 &gt; Clone"></a>1 팀레포지토리에서 <code>code&lt;&gt;</code>탭의 code 초록버튼 클릭 &gt; Clone</h3><h3 id="2-Spring-tool인-STS-클릭-gt-open-perspective-gt-git-gt-open"><a href="#2-Spring-tool인-STS-클릭-gt-open-perspective-gt-git-gt-open" class="headerlink" title="2 Spring tool인 STS 클릭 &gt; open perspective &gt; git &gt; open"></a>2 Spring tool인 STS 클릭 &gt; open perspective &gt; git &gt; open</h3><p><img src="/img/201022git.PNG" alt=""></p><h3 id="3-clone-a-git-repository-gt-URL-복사한-URL붙여넣기-gt-next-gt-복사하고싶은-branch-선택-gt-next"><a href="#3-clone-a-git-repository-gt-URL-복사한-URL붙여넣기-gt-next-gt-복사하고싶은-branch-선택-gt-next" class="headerlink" title="3 clone a git repository &gt; URL : 복사한 URL붙여넣기 &gt; next &gt; 복사하고싶은 branch 선택 &gt; next"></a>3 clone a git repository &gt; URL : 복사한 URL붙여넣기 &gt; next &gt; 복사하고싶은 branch 선택 &gt; next</h3><p><img src="/img/201022git2.PNG" alt=""></p><h3 id="4-Destination-설정-후-finish"><a href="#4-Destination-설정-후-finish" class="headerlink" title="4 Destination 설정 후 finish"></a>4 Destination 설정 후 finish</h3><ul><li>Directory : 내 컴퓨터에 저장하고 싶은 곳</li><li>initial branch : 초기 브랜치 master, main 등 선택 가능<br><img src="/img/201022git3.PNG" alt=""></li></ul><h3 id="5-perspective에서-java로-이동"><a href="#5-perspective에서-java로-이동" class="headerlink" title="5 perspective에서 java로 이동"></a>5 perspective에서 java로 이동</h3><ul><li>git아이콘의 왼쪽 아이콘이 java perspective이다.</li></ul><p><img src="/img/201022git.PNG" alt=""></p><h3 id="6-import-gt-projects-from-git-gt-next-gt-exising-local-repository-gt-next"><a href="#6-import-gt-projects-from-git-gt-next-gt-exising-local-repository-gt-next" class="headerlink" title="6 import &gt; projects from git &gt; next &gt; exising local repository &gt;next"></a>6 import &gt; projects from git &gt; next &gt; exising local repository &gt;next</h3><h3 id="7-방금-올린-깃레포명-클릭-gt-finish"><a href="#7-방금-올린-깃레포명-클릭-gt-finish" class="headerlink" title="7 방금 올린 깃레포명 클릭 &gt; finish"></a>7 방금 올린 깃레포명 클릭 &gt; finish</h3><h3 id="8-추가사항"><a href="#8-추가사항" class="headerlink" title="8 추가사항"></a>8 추가사항</h3><ul><li><a href="https://sowon-dev.github.io/2020/10/06/201007spring-1/#%EA%B8%B0%EB%B3%B8%EC%84%A4%EC%A0%95">STS 기본설정</a></li><li><a href="https://sowon-dev.github.io/2020/10/13/201014spring/">Spring MVC 패턴 기본 순서</a></li></ul><p><br><br><br></p><h2 id="깃허브-원격저장소에-있는-프로젝트를-내-로컬에-내려받기-1"><a href="#깃허브-원격저장소에-있는-프로젝트를-내-로컬에-내려받기-1" class="headerlink" title="깃허브 원격저장소에 있는 프로젝트를 내 로컬에 내려받기"></a>깃허브 원격저장소에 있는 프로젝트를 내 로컬에 내려받기</h2><p>만약 origin에 있는 main브랜치를 가져오고싶다면 아래와 같이 입력하면 된다.<br>아래 명령어는 로컬에 동일한 이름의 브랜치를 생성하면서 해당 브랜치로 바로 checkout된다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$&gt; git checkout -t origin&#x2F;main</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Version-control/">Version control</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/TIL/">TIL</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/GIT/">GIT</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2020/10/21/201022git/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>[국비교육 자바JAVA 팀프로젝트]3. 깃허브와 구글드라이브로 팀프로젝트하기2, 프로젝트일정, 팀장의 여러 시행착오</title>
       <link>https://sowon-dev.github.io/2020/10/21/201021team/</link>
       <guid>https://sowon-dev.github.io/2020/10/21/201021team/</guid>
@@ -518,29 +543,6 @@
       
       
       <comments>https://sowon-dev.github.io/2020/10/13/201014al-c1072/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[자바JAVA]1071 : [기초-반복실행구조] 0 입력될 때까지 무한 출력하기1(설명)</title>
-      <link>https://sowon-dev.github.io/2020/10/13/201014al-c1071/</link>
-      <guid>https://sowon-dev.github.io/2020/10/13/201014al-c1071/</guid>
-      <pubDate>Tue, 13 Oct 2020 17:41:13 GMT</pubDate>
-      
-      <description>&lt;h2 id=&quot;문제-1071-기초-반복실행구조-0-입력될-때까지-무한-출력하기1-설명&quot;&gt;&lt;a href=&quot;#문제-1071-기초-반복실행구조-0-입력될-때까지-무한-출력하기1-설명&quot; class=&quot;headerlink&quot; title=&quot;문제 1071 : [기초-반복실행구조] 0 입력될 때까지 무한 출력하기1(설명)&quot;&gt;&lt;/a&gt;문제 1071 : [기초-반복실행구조] 0 입력될 때까지 무한 출력하기1(설명)&lt;/h2&gt;&lt;p&gt;정수가 순서대로 입력된다. (-2147483648 부터 +2147483647까지, 단 개수는 알 수 없다.)&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="문제-1071-기초-반복실행구조-0-입력될-때까지-무한-출력하기1-설명"><a href="#문제-1071-기초-반복실행구조-0-입력될-때까지-무한-출력하기1-설명" class="headerlink" title="문제 1071 : [기초-반복실행구조] 0 입력될 때까지 무한 출력하기1(설명)"></a>문제 1071 : [기초-반복실행구조] 0 입력될 때까지 무한 출력하기1(설명)</h2><p>정수가 순서대로 입력된다. (-2147483648 부터 +2147483647까지, 단 개수는 알 수 없다.)</p><a id="more"></a><p>0이 아니면 입력된 정수를 출력하고, 0이 입력되면 출력을 중단해보자.<br>while( ), for( ), do while( ) 등의 반복문을 사용할 수 없다.</p><p>참고<br>goto 명령문을 사용하면 간단한 반복 실행을 만들 수 있다.<br>반복 실행 부분을 빠져나오기 위해(즉 무한 반복을 방지하기 위해)<br>반복 실행 되는 도중에 조건을 검사해야 한다.</p><p>goto 이름:<br>이 명령은 이름: 이 작성된 곳으로 프로그램의 실행 흐름을 바꾸어 준다.</p><p>“이름:” 과 같이 콜론(:)이 붙어있는 부분을 이름표(label, 레이블)라고 한다.<br>레이블은 특별한 선언 없이 사용할 수 있으며 언더바(_)나 영문자로 시작하면 된다.<br>레이블은 한 단어처럼 공백없이 모두 붙여 써야 한다.</p><p>switch( ) … case … : … break; 에서<br>case … : 도 일종의 레이블이라고 생각할 수 있다.</p><p>goto 레이블:<br>명령을 사용하면 반복되는 부분을 여러 개 자유롭게 만들 수 있다.</p><p>goto 명령은 반복 실행을 만들어낼 수 있는 가장 간단한 명령이지만,<br>복잡하게(스파게티 코드) 사용하는 경우, 이해가 어렵고 오류가 생기기 쉽다.</p><ul><li>입력예시<br>정수가 순서대로 입력된다. (-2147483648부터 +2147483647까지, 단 개수는 알 수 없다.)</li></ul><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">7 4 2 3 0 1 5 6 9 10 8</span><br></pre></td></tr></table></figure><ul><li>출력예시<br>입력된 정수를 줄을 바꿔 하나씩 출력하는데, 0이 입력되면 종료한다.<br>(0은 출력하지 않는다.)</li></ul><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">7</span><br><span class="line">4</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="코드"><a href="#코드" class="headerlink" title="코드"></a>코드</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">    <span class="keyword">int</span> nums;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(<span class="keyword">true</span>)&#123;</span><br><span class="line">      nums = sc.nextInt();</span><br><span class="line">      <span class="keyword">if</span>(nums == <span class="number">0</span>) <span class="keyword">break</span>; </span><br><span class="line">      System.out.println(nums);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="배운지식"><a href="#배운지식" class="headerlink" title="배운지식"></a>배운지식</h2><p>첫번째</p><blockquote><p>C언어나 C++과는 달리 자바에는 goto 문이 없습니다. 따라서 이렇게 반복문을 가리키는 이름(label)은 break 문이나 continue 문에만 사용될 수 있습니다.<br>출처 : <a href="http://tcpschool.com/java/java_control_etc">http://tcpschool.com/java/java_control_etc</a></p></blockquote><p>두번째</p><ul><li>갯수를 모르면 for반복문이 아니라 while반복문을 사용해야한다. 그리고 while반복문사용시 무한루프로 빠질 수 있으므로 나가는 조건을 꼭 확인한다.</li></ul><p><br><br><br></p><h2 id="다른-문제-풀이가-보고싶다면"><a href="#다른-문제-풀이가-보고싶다면" class="headerlink" title="다른 문제 풀이가 보고싶다면?"></a>다른 문제 풀이가 보고싶다면?</h2><ul><li><a href="https://github.com/sowon-dev/AlgorithmStudy_Java/tree/master/src/codeup100">모든 코드업100제 자바java 풀이 1089 </a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Algorithm/">Algorithm</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/Codeup100/">Codeup100</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2020/10/13/201014al-c1071/#disqus_thread</comments>
       
     </item>
     
