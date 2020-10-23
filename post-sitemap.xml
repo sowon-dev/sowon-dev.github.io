@@ -8,6 +8,62 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2020/08/25/200826dbi/</loc>
+        <lastmod>2020-10-23T02:31:32.753Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/08/27/200828dbi/</loc>
+        <lastmod>2020-10-23T02:31:23.373Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/08/30/200831dbi/</loc>
+        <lastmod>2020-10-23T02:31:19.321Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/08/31/200901dbi2/</loc>
+        <lastmod>2020-10-23T02:31:00.785Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/09/27/200928dbi/</loc>
+        <lastmod>2020-10-23T02:29:05.131Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/11/15/DBList/</loc>
+        <lastmod>2020-10-23T02:26:42.952Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/10/19/201020dbi/</loc>
+        <lastmod>2020-10-23T02:26:24.964Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2020/10/21/201022spring/</loc>
         <lastmod>2020-10-22T07:34:17.336Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -34,14 +90,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/10/02/201002team/</loc>
         <lastmod>2020-10-21T15:35:58.823Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/10/19/201020dbi/</loc>
-        <lastmod>2020-10-20T07:25:26.508Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -240,14 +288,6 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2020/11/15/DBList/</loc>
-        <lastmod>2020-10-16T06:18:28.861Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/2020/10/14/201015spring-1/</loc>
         <lastmod>2020-10-15T07:11:44.883Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -306,38 +346,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/10/13/201014team/</loc>
         <lastmod>2020-10-14T03:13:36.141Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/08/31/200901dbi2/</loc>
-        <lastmod>2020-10-13T06:04:42.329Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/08/30/200831dbi/</loc>
-        <lastmod>2020-10-13T06:04:36.217Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/08/27/200828dbi/</loc>
-        <lastmod>2020-10-13T06:04:32.729Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/08/25/200826dbi/</loc>
-        <lastmod>2020-10-13T06:04:24.673Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -482,14 +490,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/09/21/200922dbi/</loc>
         <lastmod>2020-10-06T05:04:10.604Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/09/27/200928dbi/</loc>
-        <lastmod>2020-10-06T04:58:41.921Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
