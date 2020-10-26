@@ -8,6 +8,54 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2020/10/06/201007spring-1/</loc>
+        <lastmod>2020-10-26T10:09:41.236Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/11/16/jspList/</loc>
+        <lastmod>2020-10-26T09:52:23.036Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/10/18/201019spring/</loc>
+        <lastmod>2020-10-26T07:37:02.939Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/10/25/201026spring/</loc>
+        <lastmod>2020-10-26T07:00:49.347Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/11/16/springForm/</loc>
+        <lastmod>2020-10-26T06:09:03.105Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/10/21/201022spring/</loc>
+        <lastmod>2020-10-26T06:02:14.681Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2020/10/25/201025womynconference/</loc>
         <lastmod>2020-10-25T15:46:45.972Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -80,14 +128,6 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2020/10/21/201022spring/</loc>
-        <lastmod>2020-10-22T07:34:17.336Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/2020/10/21/201022git/</loc>
         <lastmod>2020-10-21T16:51:16.169Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -136,24 +176,8 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2020/11/16/jspList/</loc>
-        <lastmod>2020-10-20T03:12:30.136Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/2020/10/12/201013spring/</loc>
         <lastmod>2020-10-20T01:30:27.691Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/10/18/201019spring/</loc>
-        <lastmod>2020-10-19T08:21:09.685Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -378,14 +402,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/09/30/201001intelliJkey/</loc>
         <lastmod>2020-10-10T02:05:36.723Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/10/06/201007spring-1/</loc>
-        <lastmod>2020-10-08T06:43:32.089Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
