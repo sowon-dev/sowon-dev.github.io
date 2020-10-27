@@ -8,16 +8,48 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2020/10/06/201007spring-1/</loc>
-        <lastmod>2020-10-26T10:09:41.236Z</lastmod>
+        <loc>https://sowon-dev.github.io/2020/11/16/jspList/</loc>
+        <lastmod>2020-10-27T01:50:25.193Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2020/11/16/jspList/</loc>
-        <lastmod>2020-10-26T09:52:23.036Z</lastmod>
+        <loc>https://sowon-dev.github.io/2020/10/26/201027spring-1/</loc>
+        <lastmod>2020-10-27T01:36:40.317Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/10/26/201027spring/</loc>
+        <lastmod>2020-10-27T01:15:30.417Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/10/11/201012spring/</loc>
+        <lastmod>2020-10-27T00:36:43.750Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/05/27/springForm/</loc>
+        <lastmod>2020-10-27T00:12:10.655Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/10/06/201007spring-1/</loc>
+        <lastmod>2020-10-26T10:09:41.236Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -34,14 +66,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/10/25/201026spring/</loc>
         <lastmod>2020-10-26T07:00:49.347Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/11/16/springForm/</loc>
-        <lastmod>2020-10-26T06:09:03.105Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -370,14 +394,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/10/12/201013dbi-q11-2/</loc>
         <lastmod>2020-10-14T07:38:16.034Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/10/11/201012spring/</loc>
-        <lastmod>2020-10-14T07:38:04.458Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
