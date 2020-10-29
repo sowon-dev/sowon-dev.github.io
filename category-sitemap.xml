@@ -8,6 +8,20 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/%25EC%25BD%2594%25EB%2593%259C%25EC%258A%25A4%25ED%2585%258C%25EC%259D%25B4%25EC%25B8%25A0-PRE35%25EA%25B8%25B0/</loc>
+        <lastmod>2020-10-29T14:08:11.355Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/%25EC%25A0%259C%25EC%25A3%25BC%25EC%25BD%2594%25EB%2594%25A9%25EB%25B2%25A0%25EC%259D%25B4%25EC%258A%25A4%25EC%25BA%25A0%25ED%2594%2584-10%25EA%25B8%25B0/</loc>
+        <lastmod>2020-10-29T14:04:15.754Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/Spring/</loc>
         <lastmod>2020-10-29T07:59:22.855Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -113,13 +127,6 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/categories/%25EC%25BD%2594%25EB%2593%259C%25EC%258A%25A4%25ED%2585%258C%25EC%259D%25B4%25EC%25B8%25A0-PRE35%25EA%25B8%25B0/</loc>
-        <lastmod>2020-07-22T14:27:44.027Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/categories/Django/</loc>
         <lastmod>2020-07-12T07:50:47.183Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -129,13 +136,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/Python/</loc>
         <lastmod>2020-06-17T01:22:51.283Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/%25EC%25A0%259C%25EC%25A3%25BC%25EC%25BD%2594%25EB%2594%25A9%25EB%25B2%25A0%25EC%259D%25B4%25EC%258A%25A4%25EC%25BA%25A0%25ED%2594%2584-10%25EA%25B8%25B0/</loc>
-        <lastmod>2020-06-16T15:06:57.599Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
