@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2020/10/30/201030googleloginapi/</loc>
+        <lastmod>2020-10-30T16:23:57.647Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/10/18/201019spring-2/</loc>
+        <lastmod>2020-10-30T15:59:40.840Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2020/06/29/200630dbi4/</loc>
         <lastmod>2020-10-30T00:42:20.871Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -298,14 +314,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/10/19/201020spring/</loc>
         <lastmod>2020-10-20T03:34:27.874Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/10/18/201019spring-2/</loc>
-        <lastmod>2020-10-20T03:27:15.594Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
