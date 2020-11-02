@@ -8,7 +8,39 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2020/10/31/20110findpw/</loc>
+        <loc>https://sowon-dev.github.io/2020/11/01/201102spring-1/</loc>
+        <lastmod>2020-11-02T08:40:18.012Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/11/01/201102spring/</loc>
+        <lastmod>2020-11-02T08:19:26.658Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/10/28/201029spring-1/</loc>
+        <lastmod>2020-11-02T07:06:57.484Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/10/28/201029spring/</loc>
+        <lastmod>2020-11-02T06:04:45.377Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/10/31/201101findpw/</loc>
         <lastmod>2020-10-31T17:10:32.318Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -146,22 +178,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2019/08/01/190802/</loc>
         <lastmod>2020-10-29T13:52:04.260Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/10/28/201029spring-1/</loc>
-        <lastmod>2020-10-29T07:59:22.855Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/10/28/201029spring/</loc>
-        <lastmod>2020-10-29T07:22:53.836Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
