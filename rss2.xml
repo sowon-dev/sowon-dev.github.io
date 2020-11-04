@@ -68,59 +68,6 @@
     </item>
     
     <item>
-      <title>201104spring</title>
-      <link>https://sowon-dev.github.io/2020/11/03/201104spring/</link>
-      <guid>https://sowon-dev.github.io/2020/11/03/201104spring/</guid>
-      <pubDate>Tue, 03 Nov 2020 20:00:44 GMT</pubDate>
-      
-      <description>&lt;h2 id=&quot;DB인경우-SQL퀴즈인경우&quot;&gt;&lt;a href=&quot;#DB인경우-SQL퀴즈인경우&quot; class=&quot;headerlink&quot; title=&quot;DB인경우 / SQL퀴즈인경우&quot;&gt;&lt;/a&gt;DB인경우 / SQL퀴즈인경우&lt;/h2&gt;&lt;p&gt;categories:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Database&lt;/li&gt;
-&lt;li&gt;Oracle&lt;br&gt;toc: true&lt;br&gt;tags:&lt;/li&gt;
-&lt;li&gt;TIL&lt;/li&gt;
-&lt;li&gt;ITWILL(JAVA)&lt;/li&gt;
-&lt;li&gt;Oracle&lt;/li&gt;
-&lt;li&gt;SQL퀴즈&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;안드로이드경우&quot;&gt;&lt;a href=&quot;#안드로이드경우&quot; class=&quot;headerlink&quot; title=&quot;안드로이드경우&quot;&gt;&lt;/a&gt;안드로이드경우&lt;/h2&gt;&lt;p&gt;categories: Android&lt;br&gt;toc: true&lt;br&gt;tags:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;TIL&lt;/li&gt;
-&lt;li&gt;ITWILL(JAVA)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;thumbnail: /img/20200701jsp6-2.PNG&lt;br&gt;thumbnail: http 주소 전체&lt;/p&gt;
-&lt;h2 id=&quot;저널&quot;&gt;&lt;a href=&quot;#저널&quot; class=&quot;headerlink&quot; title=&quot;저널&quot;&gt;&lt;/a&gt;저널&lt;/h2&gt;&lt;p&gt;categories: Journal&lt;br&gt;toc: true&lt;br&gt;tags:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Journal&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;팀플젝인경우&quot;&gt;&lt;a href=&quot;#팀플젝인경우&quot; class=&quot;headerlink&quot; title=&quot;팀플젝인경우&quot;&gt;&lt;/a&gt;팀플젝인경우&lt;/h2&gt;&lt;p&gt;categories: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Journal&lt;/li&gt;
-&lt;li&gt;Team Project&lt;br&gt;toc: true&lt;br&gt;tags:&lt;/li&gt;
-&lt;li&gt;Journal&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;알고리즘&quot;&gt;&lt;a href=&quot;#알고리즘&quot; class=&quot;headerlink&quot; title=&quot;알고리즘&quot;&gt;&lt;/a&gt;알고리즘&lt;/h2&gt;&lt;p&gt;categories: Algorithm&lt;br&gt;toc: true&lt;br&gt;tags:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Codeup100&lt;/li&gt;
-&lt;/ul&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="DB인경우-SQL퀴즈인경우"><a href="#DB인경우-SQL퀴즈인경우" class="headerlink" title="DB인경우 / SQL퀴즈인경우"></a>DB인경우 / SQL퀴즈인경우</h2><p>categories:</p><ul><li>Database</li><li>Oracle<br>toc: true<br>tags:</li><li>TIL</li><li>ITWILL(JAVA)</li><li>Oracle</li><li>SQL퀴즈</li></ul><h2 id="안드로이드경우"><a href="#안드로이드경우" class="headerlink" title="안드로이드경우"></a>안드로이드경우</h2><p>categories: Android<br>toc: true<br>tags:</p><ul><li>TIL</li><li>ITWILL(JAVA)</li></ul><p>thumbnail: /img/20200701jsp6-2.PNG<br>thumbnail: http 주소 전체</p><h2 id="저널"><a href="#저널" class="headerlink" title="저널"></a>저널</h2><p>categories: Journal<br>toc: true<br>tags:</p><ul><li>Journal</li></ul><h2 id="팀플젝인경우"><a href="#팀플젝인경우" class="headerlink" title="팀플젝인경우"></a>팀플젝인경우</h2><p>categories: </p><ul><li>Journal</li><li>Team Project<br>toc: true<br>tags:</li><li>Journal</li></ul><h2 id="알고리즘"><a href="#알고리즘" class="headerlink" title="알고리즘"></a>알고리즘</h2><p>categories: Algorithm<br>toc: true<br>tags:</p><ul><li>Codeup100</li></ul><a id="more"></a><p><br><br><br></p><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/TIL/">TIL</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/ITWILL-JAVA/">ITWILL(JAVA)</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2020/11/03/201104spring/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
       <title>[SQL]더미데이터 쉽게 쌓기</title>
       <link>https://sowon-dev.github.io/2020/11/02/201103db/</link>
       <guid>https://sowon-dev.github.io/2020/11/02/201103db/</guid>
@@ -579,6 +526,31 @@
       
       
       <comments>https://sowon-dev.github.io/2020/10/21/201022spring/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>깃허브에서 프로젝트 STS로 내려받기, 특정 브랜치만 내려받기</title>
+      <link>https://sowon-dev.github.io/2020/10/21/201022git/</link>
+      <guid>https://sowon-dev.github.io/2020/10/21/201022git/</guid>
+      <pubDate>Wed, 21 Oct 2020 07:22:25 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;main브랜치&quot;&gt;&lt;a href=&quot;#main브랜치&quot; class=&quot;headerlink&quot; title=&quot;main브랜치&quot;&gt;&lt;/a&gt;main브랜치&lt;/h2&gt;&lt;p&gt;깃헙의 최근 업데이트 내용 중 가장 큰 변화는 main브랜치이다.&lt;br&gt;기존의 master브랜치의 의미 명확성에 대한 논의가 계속 있다가 깃헙이용자들이 가장 많이 사용하는 main브랜치를 default브랜치로 사용할 수 있게 되었다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="main브랜치"><a href="#main브랜치" class="headerlink" title="main브랜치"></a>main브랜치</h2><p>깃헙의 최근 업데이트 내용 중 가장 큰 변화는 main브랜치이다.<br>기존의 master브랜치의 의미 명확성에 대한 논의가 계속 있다가 깃헙이용자들이 가장 많이 사용하는 main브랜치를 default브랜치로 사용할 수 있게 되었다.</p><a id="more"></a><p>좋은 변화지만 덕분에 push했는데 merge가 안되서 곤욕을 치뤘다….</p><p><br><br><br></p><h2 id="깃허브-원격저장소에-있는-프로젝트를-내-로컬에-내려받기"><a href="#깃허브-원격저장소에-있는-프로젝트를-내-로컬에-내려받기" class="headerlink" title="깃허브 원격저장소에 있는 프로젝트를 내 로컬에 내려받기"></a>깃허브 원격저장소에 있는 프로젝트를 내 로컬에 내려받기</h2><p>원격저장소의 default branch는 main이다.</p><h3 id="1-팀레포지토리에서-code-lt-gt-탭의-code-초록버튼-클릭-gt-Clone"><a href="#1-팀레포지토리에서-code-lt-gt-탭의-code-초록버튼-클릭-gt-Clone" class="headerlink" title="1 팀레포지토리에서 code&lt;&gt;탭의 code 초록버튼 클릭 &gt; Clone"></a>1 팀레포지토리에서 <code>code&lt;&gt;</code>탭의 code 초록버튼 클릭 &gt; Clone</h3><h3 id="2-Spring-tool인-STS-클릭-gt-open-perspective-gt-git-gt-open"><a href="#2-Spring-tool인-STS-클릭-gt-open-perspective-gt-git-gt-open" class="headerlink" title="2 Spring tool인 STS 클릭 &gt; open perspective &gt; git &gt; open"></a>2 Spring tool인 STS 클릭 &gt; open perspective &gt; git &gt; open</h3><p><img src="/img/201022git.PNG" alt=""></p><h3 id="3-clone-a-git-repository-gt-URL-복사한-URL붙여넣기-gt-next-gt-복사하고싶은-branch-선택-gt-next"><a href="#3-clone-a-git-repository-gt-URL-복사한-URL붙여넣기-gt-next-gt-복사하고싶은-branch-선택-gt-next" class="headerlink" title="3 clone a git repository &gt; URL : 복사한 URL붙여넣기 &gt; next &gt; 복사하고싶은 branch 선택 &gt; next"></a>3 clone a git repository &gt; URL : 복사한 URL붙여넣기 &gt; next &gt; 복사하고싶은 branch 선택 &gt; next</h3><p><img src="/img/201022git2.PNG" alt=""></p><h3 id="4-Destination-설정-후-finish"><a href="#4-Destination-설정-후-finish" class="headerlink" title="4 Destination 설정 후 finish"></a>4 Destination 설정 후 finish</h3><ul><li>Directory : 내 컴퓨터에 저장하고 싶은 곳</li><li>initial branch : 초기 브랜치 master, main 등 선택 가능<br><img src="/img/201022git3.PNG" alt=""></li></ul><h3 id="5-perspective에서-java로-이동"><a href="#5-perspective에서-java로-이동" class="headerlink" title="5 perspective에서 java로 이동"></a>5 perspective에서 java로 이동</h3><ul><li>git아이콘의 왼쪽 아이콘이 java perspective이다.</li></ul><p><img src="/img/201022git.PNG" alt=""></p><h3 id="6-import-gt-projects-from-git-gt-next-gt-exising-local-repository-gt-next"><a href="#6-import-gt-projects-from-git-gt-next-gt-exising-local-repository-gt-next" class="headerlink" title="6 import &gt; projects from git &gt; next &gt; exising local repository &gt;next"></a>6 import &gt; projects from git &gt; next &gt; exising local repository &gt;next</h3><h3 id="7-방금-올린-깃레포명-클릭-gt-finish"><a href="#7-방금-올린-깃레포명-클릭-gt-finish" class="headerlink" title="7 방금 올린 깃레포명 클릭 &gt; finish"></a>7 방금 올린 깃레포명 클릭 &gt; finish</h3><h3 id="8-추가사항"><a href="#8-추가사항" class="headerlink" title="8 추가사항"></a>8 추가사항</h3><ul><li><a href="https://sowon-dev.github.io/2020/10/06/201007spring-1/#%EA%B8%B0%EB%B3%B8%EC%84%A4%EC%A0%95">STS 기본설정</a></li><li><a href="https://sowon-dev.github.io/2020/10/13/201014spring/">Spring MVC 패턴 기본 순서</a></li></ul><p><br><br><br></p><h2 id="깃허브-원격저장소에-있는-프로젝트를-내-로컬에-내려받기-1"><a href="#깃허브-원격저장소에-있는-프로젝트를-내-로컬에-내려받기-1" class="headerlink" title="깃허브 원격저장소에 있는 프로젝트를 내 로컬에 내려받기"></a>깃허브 원격저장소에 있는 프로젝트를 내 로컬에 내려받기</h2><p>만약 origin에 있는 main브랜치를 가져오고싶다면 아래와 같이 입력하면 된다.<br>아래 명령어는 로컬에 동일한 이름의 브랜치를 생성하면서 해당 브랜치로 바로 checkout된다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$&gt; git checkout -t origin&#x2F;main</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Version-control/">Version control</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/TIL/">TIL</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/GIT/">GIT</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2020/10/21/201022git/#disqus_thread</comments>
       
     </item>
     
