@@ -68,6 +68,34 @@
     </item>
     
     <item>
+      <title>[국비교육 자바JAVA 팀프로젝트]4. 첫 기능통합과 아쉬웠던 점, 팀장의 결단</title>
+      <link>https://sowon-dev.github.io/2020/11/05/201105team/</link>
+      <guid>https://sowon-dev.github.io/2020/11/05/201105team/</guid>
+      <pubDate>Thu, 05 Nov 2020 06:04:35 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;첫-기능통합과-그-후&quot;&gt;&lt;a href=&quot;#첫-기능통합과-그-후&quot; class=&quot;headerlink&quot; title=&quot;첫 기능통합과 그 후&quot;&gt;&lt;/a&gt;첫 기능통합과 그 후&lt;/h2&gt;&lt;p&gt;첫 스프린트와 두번째 스프린트가 끝났다.&lt;br&gt;사실 이걸 스프</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="첫-기능통합과-그-후"><a href="#첫-기능통합과-그-후" class="headerlink" title="첫 기능통합과 그 후"></a>첫 기능통합과 그 후</h2><p>첫 스프린트와 두번째 스프린트가 끝났다.<br>사실 이걸 스프린트라고 부르는 줄은 몰랐고 개인적으로 다년간의 팀프로젝트를 경험한 결과 마감기한이 없으면 늘어지기 마련이라서 함께 마감기한을 정하자고 회의안건을 올렸고 팀원들과 동의하에 스프린트마감일을 정했다. 용어가 있나싶어 검색해봤더니 이러한 방식을 <a href="https://saemiweb.wordpress.com/2017/08/07/%EC%A7%81%EC%A0%91-%ED%95%B4%EB%B3%B8-%EA%B5%AC%EA%B8%80%EC%9D%98-%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4-%EA%B0%9C%EB%B0%9C%EB%B2%95-sprint-%ED%9B%84%EA%B8%B0/">스프린트 방법론</a>이라고 한다고 한다.<br>하나 배웠다!</p><p>첫 기능 통합을 했다. 통합은 팀장인 내가 전적으로 맡아서 진행했다.<br>아래와 같이 두가지 방식을 사용하여 기능통합을 했다.</p><ol><li>각 브랜치들을 메인브랜치로 머지.</li><li>충돌방지를 위해 공통설정파일과 공용파일들은 따로 소스코드를 받아서 직접 푸시.</li></ol><p>첫 기능통합 후 다음 계획은 팀원별 다음 기능개발이었다.<br>하.지.만. 소스코드 통합 후 기능 테스트부분에서 많은 아쉬움이 있었다. 통일되지 못한 CSS, 자잘한 오류들을 테스트할때마다 새롭게 발견했다.<br>혼자 통합 후 테스트를 하는데 시간이 꽤나 걸리는 일이었다. 이래서 기업들이 테스터 담당자를 뽑는 구나….</p><p>처음엔 혼자서 자잘한 오류를 해결해나갔다. 하지만 오류코드의 양이 많아지고 어떤 부분에서 어떠한 오류가 있는지 그리고 개선안까지 적다보니 혼자서 지쳐갔다. 특히 가독성이 좋지않은 소스코드들(심지어 주석하나도 없음…이건 팀플인데…왜 주석이 없죠?)도 있어서 정말 난감했다.</p><p>이때 첫번째로 든 해결책은 테스터 담당 팀원 배정이었다.<br>하지만 다시 한번 곰곰히 생각해보니 팀원 다같이 테스트하는 것이 낫다는 판단이 들었다.<br>이는 크게 2가지 이유때문이었다.</p><ol><li>테스터가 발견 못한 오류나 에러 발견 가능성 높음</li><li>다른 팀원이 어떤 기능을 어떻게 구현했는지 확인하여 프로젝트의 이해도 제고</li></ol><p><br><br><br></p><h2 id="팀원-다같이-테스트-결과는"><a href="#팀원-다같이-테스트-결과는" class="headerlink" title="팀원 다같이 테스트 결과는?"></a>팀원 다같이 테스트 결과는?</h2><p>먼저 첫 기능 통합한 main브랜치를 모든 팀원이 pull해서 기능테스트를 해달라고 요청했다.<br>그냥 하라고만 하면 다들 잘 안하니까 (후후 난 다 RGRG) 각자 아쉬운 점 2가지씩 생각해서 댓글을 달아달라고 덧붙였다.<br>그리고 예시로서 내가 통합시 생각해두었던 아쉬웠던 점 2가지와 개선방향을 먼저 작성했다.</p><p>그 결과!! 괜히 고민했다 싶을 정도로 다양한 아쉬운 점들이 나왔다. 다들 꼼꼼하게 테스트해주었고 개선점까지 적어주었다. 너무나 만족스러운 결과였다. 다양한 개선안을 보고 각 기능 담당자가 고도화를 하기로했다. 따로 정리해주지않아도 자신이 개발한 기능만 보면 되었기때문에 너무 편했다.<br>각 기능별 개선점을 따로 정리 할 시간이 필요없는 점도 정말 만족했다! </p><ul><li>좋았던 점<ol><li>8명의 의견이 모이니 나혼자서 찾지못했던 아쉬운 점을 발견하여 프로젝트 완성도를 높일 수 있었다.</li><li>테스터 혼자했다면 한두시간은 걸릴 일이였을텐데 팀원 다같이 해서 1시간안에 다양한 개선점이 나왔다.</li><li>게시글의 댓글형식으로 달다보니 따로 개선방향을 정리 할 필요없이 담당자가 자기가 해당하는 부분만 직접 찾아보면 된다.</li></ol></li><li>배운 점<ul><li>괜히 혼자 고민했다. 팀원들과 고민하면 이렇게 쉽게 해결될 것을! 함께하니 시간도 절약되었다. 또 하나 배웠다! 고민을 함께 나누면 해결점을 빨리 찾을 수 있다!</li><li>역시 예시가 중요하다. 개선방향까지 답을 끌어내고 싶어서 예시를 작성할때 개선방향까지 적은 점이 효과가 좋았다.</li></ul></li></ul><p><br><br><br></p><h2 id="스프린트-계획"><a href="#스프린트-계획" class="headerlink" title="스프린트 계획"></a>스프린트 계획</h2><table><thead><tr><th align="center">순차</th><th align="center">기간</th><th align="center">목표</th></tr></thead><tbody><tr><td align="center">첫번째 스프린트</td><td align="center">10월 21일부터 11월 1일까지 (11일)</td><td align="center">페어별 도메인단위 기능구현</td></tr><tr><td align="center">두번째 스프린트</td><td align="center">11월 2일부터 11월 4일까지 (2일)</td><td align="center">기능 테스트 후 기능고도화</td></tr><tr><td align="center">세번째 스프린트</td><td align="center">11월 4일부터 11월 11일까지 (7일)</td><td align="center">담당자별 도메인단위 기능구현</td></tr><tr><td align="center">네번째 스프린트</td><td align="center">11월 12일부터 11월 15일까지 (3일)</td><td align="center">기능 테스트 후 프로젝트고도화</td></tr></tbody></table><p><br><br><br></p><h2 id="첫-스프린트와-두-번째-스프린트가-나에게-남긴-것"><a href="#첫-스프린트와-두-번째-스프린트가-나에게-남긴-것" class="headerlink" title="첫 스프린트와 두 번째 스프린트가 나에게 남긴 것."></a>첫 스프린트와 두 번째 스프린트가 나에게 남긴 것.</h2><ul><li>선택과 집중을 배우기</li><li>모두가 나같지 않다. 마음비우자!</li><li>CSS 그만 건드리고 로직을 중점적으로 보자.</li><li>팀플에 에너지 몰빵말고 내 공부를 위한 에너지를 적절히 분배하자</li></ul><p><br><br><br></p><h2 id="윈윈게임을-좋아하는-팀장의-결단"><a href="#윈윈게임을-좋아하는-팀장의-결단" class="headerlink" title="윈윈게임을 좋아하는 팀장의 결단"></a>윈윈게임을 좋아하는 팀장의 결단</h2><p>내가 원하는 팀플은 <strong>모두가 원하는 것을 한가지씩 가져가는 팀플</strong>이다.<br>팀원분들 중 한 분이 자신은 앱개발쪽으로 생각하고 있다고 지나가는 말을 해주셨다.<br>지나가는 말이었지만 계속 머리속에 맴돌았다.<br>남은 짧은 기간동안 어떻게 해야 <code>윈윈</code> 할 수 있을까?<br>팀플젝을 안드로이드로 구현할 수 있는 방법은 없을까?</p><p>웹을 기준으로 DB에서 데이터를 끌어와서 앱에 뿌릴 수 있는지 먼저 검색해보았다.<br>현재 팀플젝은 Mysql DB를 사용하고 있는데 안드로이드는 내장 sqlplus를 주로 사용하고 mysql연결이 꽤나 복잡하다는 글이 많았다.<br>어떻게 해야하나… 모두가 하나씩 가져갔으면 좋겠는데…<br>안타까운 마음에 다양한 방법들을 찾아보면서도 한편으로는 프로젝트 발표일이 2주밖에 안남았는데 한 명이 빠지면 프로젝트완성도가 떨어지지 않을까하는 걱정도 들었다. </p><p>난 참 사람에 관심이 많아서 탈이야… 괜한 오지랖인가?!?!</p><p>학원에서 배운 안드로이드수업은 아주 기초적인 것이여서 우리가 어느 정도의 앱을 구현할 수 있는지가 감이 잡히지 않았다.고민하다가 담임강사님께 물어봐야지하며 잠들었다.<br>그리고 다음날 아침에 그 팀원을 강의실에서 만났다. 그래서 내가 가장 궁금했던 mysql DB를 안드로이드에 연동해서 화면에 출력할 수 있는지를 물어봤다.<br>그 팀원분은 가능하다고 했다.</p><p>그러자 내 마음에 확신이 들었다.<br><strong>‘좋았어. 내가 2인분한다.’</strong></p><p>그리고 어제내내 고민했던 내용을 그 팀원분에게 털어놓았다.<br>내가 생각하는 팀플과 지금 개발하시는 기능들은 제가 담당할테니 앱개발하시면 어떻겠냐고 물었다. 웹기능 전체 구현은 남은 시점에서 힘드니까 간단한 기능을 구현해주시면 좋을 것 같다는 말과 함께.<br>팀원분은 그럼 참 좋겠다고 답해주셨다.<br>그 답변을 듣자마자 내 입밖으로는 “그럼 그렇게 합시다!”가 튀어나왔다.<br>그리곤 이내 마음속으로 이렇게 되뇌였다.</p><p><strong>그래! 내가 1인 2인분을 해내면 돼! 난 할 수 있어! 할 수 있을…거야! 할 수 있다!</strong></p><p>이제 팀원분과도 이야기를 나눠야했다. 솔직하게 이야기를 했고 내가 책임지고(?) 2인분을 하겠다고 말씀드렸다.<br>신뢰가 나름 두터운 터라 팀원분들이 흔쾌히 동의해주었다.<br>괜한 오지랖이 되지 않도록 더 열심히 코딩해야겠다.</p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/Team-Project/">Team Project</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Journal/">Journal</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2020/11/05/201105team/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>[SQL]더미데이터 쉽게 쌓기</title>
       <link>https://sowon-dev.github.io/2020/11/02/201103db/</link>
       <guid>https://sowon-dev.github.io/2020/11/02/201103db/</guid>
@@ -413,7 +441,7 @@
       
       
       
-      <content:encoded><![CDATA[<h2 id="웨비나-소개"><a href="#웨비나-소개" class="headerlink" title="웨비나 소개"></a>웨비나 소개</h2><p><a href="https://event-us.kr/24530">스타트업 및 팀을 위한 Notion 활용 사례 공유 웨비나 링크</a></p><blockquote><p>웨비나 목적<br>COVID-19 사태로 인한 화상회의, 재택근무가 증가함에 따라 Notion을 통한 협업 사례 공유<br>스타트업 및 액셀러레이팅을 Notion 으로 진행한 사례 공유<br>팀 빌딩 및 초기 Notion 협업 대시 보드 세팅 및 운영 사례 공유</p></blockquote><a id="more"></a><blockquote><p>발표 내용<br>20:00 웨비나 소개 - 이해봄<br>20:10 노션으로 애자일 조직 만들기 - 오세용<br>20:40 창업가 커뮤니티 빌딩을 위한 노션 활용 사례- 김기태<br>21:10 노션을 통해 새로운 프로젝트 시작하고 운영하기 - 이해봄<br>21:40 Q&amp;A</p></blockquote><p><br><br><br></p><h2 id="노션으로-애자일-조직-만들기-오세용"><a href="#노션으로-애자일-조직-만들기-오세용" class="headerlink" title="노션으로 애자일 조직 만들기 - 오세용"></a>노션으로 애자일 조직 만들기 - 오세용</h2><p>내가 고민하는 부분을 이미 다 고민하고 조직에 적용까지 하신 연사님이었다.<br>너무나 재미있게 강연을 들었다.</p><h2 id="무료-협업도구"><a href="#무료-협업도구" class="headerlink" title="무료 협업도구"></a>무료 협업도구</h2><ul><li><a href="https://mattermost.com/">슬랙대신 매터모스터</a></li><li>노션</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="웨비나-소개"><a href="#웨비나-소개" class="headerlink" title="웨비나 소개"></a>웨비나 소개</h2><p><a href="https://event-us.kr/24530">스타트업 및 팀을 위한 Notion 활용 사례 공유 웨비나 링크</a></p><blockquote><p>웨비나 목적<br>COVID-19 사태로 인한 화상회의, 재택근무가 증가함에 따라 Notion을 통한 협업 사례 공유<br>스타트업 및 액셀러레이팅을 Notion 으로 진행한 사례 공유<br>팀 빌딩 및 초기 Notion 협업 대시 보드 세팅 및 운영 사례 공유</p></blockquote><a id="more"></a><blockquote><p>발표 내용<br>20:00 웨비나 소개 - 이해봄<br>20:10 노션으로 애자일 조직 만들기 - 오세용<br>20:40 창업가 커뮤니티 빌딩을 위한 노션 활용 사례- 김기태<br>21:10 노션을 통해 새로운 프로젝트 시작하고 운영하기 - 이해봄<br>21:40 Q&amp;A</p></blockquote><ul><li>노션으로 만든 <a href="https://www.notion.so/Haebom-d0f7bc57725e44c08aa52dda91bdf948">해봄님 소개페이지</a>의 퀄리티가 대박이었다. 도구를 잘 쓰는 사람들은 일을 효율적으로 잘 한다. 진짜 멋있다. 더불어 스타트업과 팀을 위한 노션 페이지를 공유해주시고 설명해주셨는데 그저 감탄했다. 노션 정말 못하는 게 없구나! 심지어 예쁘기까지하다. 노션에 욕심이 생긴다.</li></ul><p><br><br><br></p><h2 id="노션으로-애자일-조직-만들기-오세용"><a href="#노션으로-애자일-조직-만들기-오세용" class="headerlink" title="노션으로 애자일 조직 만들기 - 오세용"></a>노션으로 애자일 조직 만들기 - 오세용</h2><p>내가 고민하는 부분을 이미 다 고민하고 조직에 적용까지 하신 연사님이었다.<br>너무나 재미있게 강연을 들었다.<br>가장 공감했던 말은 팀에게 가장 좋은 협업도구는 유명한 도구가 아니라 팀에게 적합한 도구이다.<br>현재 팀프로젝트 팀장으로서 협업도구에 대해 한참 고민했었다. 그때는 현업에서 <code>슬랙</code>,<code>지라</code>나 <code>데브옵스</code>등 유명한 협업도구를 사용했기에 나도 미리 사용해보고싶었다. 이때 멘토님이 내 고민을 보시고 깃헙 projects를 추천해주셨다.<br>아주 탁월한 선택이었다.</p><ul><li><a href="https://sowon-dev.github.io/2020/10/02/201002team/">팀플주제구상(feat.입문자를 위한 팀협업도구추천)</a></li></ul><p><br><br><br></p><h2 id="무료-협업도구"><a href="#무료-협업도구" class="headerlink" title="무료 협업도구"></a>무료 협업도구</h2><ul><li><a href="https://mattermost.com/">슬랙대신 매터모스터</a></li><li>노션</li><li>구글드라이브</li></ul>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/Lectures-Seminars/">Lectures &amp; Seminars</category>
@@ -526,31 +554,6 @@
       
       
       <comments>https://sowon-dev.github.io/2020/10/21/201022spring/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>깃허브에서 프로젝트 STS로 내려받기, 특정 브랜치만 내려받기</title>
-      <link>https://sowon-dev.github.io/2020/10/21/201022git/</link>
-      <guid>https://sowon-dev.github.io/2020/10/21/201022git/</guid>
-      <pubDate>Wed, 21 Oct 2020 07:22:25 GMT</pubDate>
-      
-      <description>&lt;h2 id=&quot;main브랜치&quot;&gt;&lt;a href=&quot;#main브랜치&quot; class=&quot;headerlink&quot; title=&quot;main브랜치&quot;&gt;&lt;/a&gt;main브랜치&lt;/h2&gt;&lt;p&gt;깃헙의 최근 업데이트 내용 중 가장 큰 변화는 main브랜치이다.&lt;br&gt;기존의 master브랜치의 의미 명확성에 대한 논의가 계속 있다가 깃헙이용자들이 가장 많이 사용하는 main브랜치를 default브랜치로 사용할 수 있게 되었다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="main브랜치"><a href="#main브랜치" class="headerlink" title="main브랜치"></a>main브랜치</h2><p>깃헙의 최근 업데이트 내용 중 가장 큰 변화는 main브랜치이다.<br>기존의 master브랜치의 의미 명확성에 대한 논의가 계속 있다가 깃헙이용자들이 가장 많이 사용하는 main브랜치를 default브랜치로 사용할 수 있게 되었다.</p><a id="more"></a><p>좋은 변화지만 덕분에 push했는데 merge가 안되서 곤욕을 치뤘다….</p><p><br><br><br></p><h2 id="깃허브-원격저장소에-있는-프로젝트를-내-로컬에-내려받기"><a href="#깃허브-원격저장소에-있는-프로젝트를-내-로컬에-내려받기" class="headerlink" title="깃허브 원격저장소에 있는 프로젝트를 내 로컬에 내려받기"></a>깃허브 원격저장소에 있는 프로젝트를 내 로컬에 내려받기</h2><p>원격저장소의 default branch는 main이다.</p><h3 id="1-팀레포지토리에서-code-lt-gt-탭의-code-초록버튼-클릭-gt-Clone"><a href="#1-팀레포지토리에서-code-lt-gt-탭의-code-초록버튼-클릭-gt-Clone" class="headerlink" title="1 팀레포지토리에서 code&lt;&gt;탭의 code 초록버튼 클릭 &gt; Clone"></a>1 팀레포지토리에서 <code>code&lt;&gt;</code>탭의 code 초록버튼 클릭 &gt; Clone</h3><h3 id="2-Spring-tool인-STS-클릭-gt-open-perspective-gt-git-gt-open"><a href="#2-Spring-tool인-STS-클릭-gt-open-perspective-gt-git-gt-open" class="headerlink" title="2 Spring tool인 STS 클릭 &gt; open perspective &gt; git &gt; open"></a>2 Spring tool인 STS 클릭 &gt; open perspective &gt; git &gt; open</h3><p><img src="/img/201022git.PNG" alt=""></p><h3 id="3-clone-a-git-repository-gt-URL-복사한-URL붙여넣기-gt-next-gt-복사하고싶은-branch-선택-gt-next"><a href="#3-clone-a-git-repository-gt-URL-복사한-URL붙여넣기-gt-next-gt-복사하고싶은-branch-선택-gt-next" class="headerlink" title="3 clone a git repository &gt; URL : 복사한 URL붙여넣기 &gt; next &gt; 복사하고싶은 branch 선택 &gt; next"></a>3 clone a git repository &gt; URL : 복사한 URL붙여넣기 &gt; next &gt; 복사하고싶은 branch 선택 &gt; next</h3><p><img src="/img/201022git2.PNG" alt=""></p><h3 id="4-Destination-설정-후-finish"><a href="#4-Destination-설정-후-finish" class="headerlink" title="4 Destination 설정 후 finish"></a>4 Destination 설정 후 finish</h3><ul><li>Directory : 내 컴퓨터에 저장하고 싶은 곳</li><li>initial branch : 초기 브랜치 master, main 등 선택 가능<br><img src="/img/201022git3.PNG" alt=""></li></ul><h3 id="5-perspective에서-java로-이동"><a href="#5-perspective에서-java로-이동" class="headerlink" title="5 perspective에서 java로 이동"></a>5 perspective에서 java로 이동</h3><ul><li>git아이콘의 왼쪽 아이콘이 java perspective이다.</li></ul><p><img src="/img/201022git.PNG" alt=""></p><h3 id="6-import-gt-projects-from-git-gt-next-gt-exising-local-repository-gt-next"><a href="#6-import-gt-projects-from-git-gt-next-gt-exising-local-repository-gt-next" class="headerlink" title="6 import &gt; projects from git &gt; next &gt; exising local repository &gt;next"></a>6 import &gt; projects from git &gt; next &gt; exising local repository &gt;next</h3><h3 id="7-방금-올린-깃레포명-클릭-gt-finish"><a href="#7-방금-올린-깃레포명-클릭-gt-finish" class="headerlink" title="7 방금 올린 깃레포명 클릭 &gt; finish"></a>7 방금 올린 깃레포명 클릭 &gt; finish</h3><h3 id="8-추가사항"><a href="#8-추가사항" class="headerlink" title="8 추가사항"></a>8 추가사항</h3><ul><li><a href="https://sowon-dev.github.io/2020/10/06/201007spring-1/#%EA%B8%B0%EB%B3%B8%EC%84%A4%EC%A0%95">STS 기본설정</a></li><li><a href="https://sowon-dev.github.io/2020/10/13/201014spring/">Spring MVC 패턴 기본 순서</a></li></ul><p><br><br><br></p><h2 id="깃허브-원격저장소에-있는-프로젝트를-내-로컬에-내려받기-1"><a href="#깃허브-원격저장소에-있는-프로젝트를-내-로컬에-내려받기-1" class="headerlink" title="깃허브 원격저장소에 있는 프로젝트를 내 로컬에 내려받기"></a>깃허브 원격저장소에 있는 프로젝트를 내 로컬에 내려받기</h2><p>만약 origin에 있는 main브랜치를 가져오고싶다면 아래와 같이 입력하면 된다.<br>아래 명령어는 로컬에 동일한 이름의 브랜치를 생성하면서 해당 브랜치로 바로 checkout된다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$&gt; git checkout -t origin&#x2F;main</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Version-control/">Version control</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/TIL/">TIL</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/GIT/">GIT</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2020/10/21/201022git/#disqus_thread</comments>
       
     </item>
     

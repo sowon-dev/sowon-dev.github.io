@@ -8,8 +8,16 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2020/11/01/201102spring-1/</loc>
-        <lastmod>2020-11-04T08:16:30.193Z</lastmod>
+        <loc>https://sowon-dev.github.io/2020/11/05/201105team/</loc>
+        <lastmod>2020-11-05T16:32:12.144Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/10/13/201014team/</loc>
+        <lastmod>2020-11-05T15:06:44.754Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +25,15 @@
 
     <url>
         <loc>https://sowon-dev.github.io/2020/10/26/201103notion/</loc>
-        <lastmod>2020-11-04T07:35:45.127Z</lastmod>
+        <lastmod>2020-11-05T15:01:04.908Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/11/01/201102spring-1/</loc>
+        <lastmod>2020-11-04T08:16:30.193Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -554,14 +570,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/10/12/201013dbi-q11-2/</loc>
         <lastmod>2020-10-14T07:38:16.034Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/10/13/201014team/</loc>
-        <lastmod>2020-10-14T03:13:36.141Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
