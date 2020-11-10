@@ -3,22 +3,22 @@
 
 
     <url>
-        <loc>https://sowon-dev.github.io/tags/List/</loc>
-        <lastmod>2020-11-10T05:07:16.889Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/tags/ITWILL-JAVA/</loc>
-        <lastmod>2020-11-10T05:07:16.889Z</lastmod>
+        <lastmod>2020-11-10T05:16:51.110Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/tags/TIL/</loc>
-        <lastmod>2020-11-10T05:06:41.073Z</lastmod>
+        <lastmod>2020-11-10T05:16:51.110Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/List/</loc>
+        <lastmod>2020-11-10T05:07:16.889Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
