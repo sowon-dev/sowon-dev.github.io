@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2020/11/10/201111restapi/</loc>
+        <lastmod>2020-11-11T06:25:04.152Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2020/11/09/201110restapi/</loc>
-        <lastmod>2020-11-10T05:16:51.110Z</lastmod>
+        <lastmod>2020-11-11T05:07:21.639Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
