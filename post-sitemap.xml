@@ -8,16 +8,8 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2020/11/10/201111restapi/</loc>
-        <lastmod>2020-11-11T06:25:04.152Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/11/09/201110restapi/</loc>
-        <lastmod>2020-11-11T05:07:21.639Z</lastmod>
+        <loc>https://sowon-dev.github.io/2020/11/11/201112restapi/</loc>
+        <lastmod>2020-11-12T05:30:57.988Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -25,7 +17,23 @@
 
     <url>
         <loc>https://sowon-dev.github.io/2020/11/16/jspList/</loc>
-        <lastmod>2020-11-10T05:07:16.889Z</lastmod>
+        <lastmod>2020-11-12T05:30:37.260Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/11/10/201111restapi/</loc>
+        <lastmod>2020-11-12T05:07:04.999Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/11/09/201110restapi/</loc>
+        <lastmod>2020-11-12T05:07:02.882Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
