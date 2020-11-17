@@ -8,8 +8,24 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2020/11/16/201117itwillreview/</loc>
+        <lastmod>2020-11-17T07:40:59.406Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2020/11/11/201112restapi/</loc>
-        <lastmod>2020-11-12T05:47:54.334Z</lastmod>
+        <lastmod>2020-11-17T07:38:40.347Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/11/16/201117techbloglist/</loc>
+        <lastmod>2020-11-17T07:38:32.291Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
