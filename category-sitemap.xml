@@ -8,8 +8,15 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/Journal/Team-Project/</loc>
+        <lastmod>2020-11-18T16:23:21.476Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/Journal/</loc>
-        <lastmod>2020-11-17T07:40:59.406Z</lastmod>
+        <lastmod>2020-11-18T16:23:21.476Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -31,13 +38,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/%25EC%2598%25A4%25ED%2594%2588%25EC%2586%258C%25EC%258A%25A4%25EC%25BB%25A8%25ED%258A%25B8%25EB%25A6%25AC%25EB%25B7%25B0%25ED%2586%25A42020/</loc>
         <lastmod>2020-11-08T12:52:07.153Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Journal/Team-Project/</loc>
-        <lastmod>2020-11-05T16:48:00.450Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
