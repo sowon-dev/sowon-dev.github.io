@@ -4,7 +4,14 @@
 
     <url>
         <loc>https://sowon-dev.github.io/tags/List/</loc>
-        <lastmod>2020-11-21T08:05:50.536Z</lastmod>
+        <lastmod>2020-11-24T09:13:45.572Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/Journal/</loc>
+        <lastmod>2020-11-24T09:13:45.572Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -12,13 +19,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/Codeup100/</loc>
         <lastmod>2020-11-21T07:59:01.430Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/Journal/</loc>
-        <lastmod>2020-11-18T16:23:21.476Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
