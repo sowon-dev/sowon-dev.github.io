@@ -9,7 +9,7 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 07 Dec 2020 04:17:14 GMT</pubDate>
+    <pubDate>Mon, 07 Dec 2020 04:59:56 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -19,12 +19,12 @@
       <pubDate>Sun, 06 Dec 2020 19:11:56 GMT</pubDate>
       
       <description>&lt;h2 id=&quot;🗃️생활코딩-자료구조&quot;&gt;&lt;a href=&quot;#🗃️생활코딩-자료구조&quot; class=&quot;headerlink&quot; title=&quot;🗃️생활코딩 자료구조&quot;&gt;&lt;/a&gt;🗃️생활코딩 자료구조&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://sowon-dev.github.io/2020/12/06/201207dataStructure1/&quot;&gt;자료구조와 알고리즘 차이, 배열&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;</description>
       
       
       
-      <content:encoded><![CDATA[<h2 id="🗃️생활코딩-자료구조"><a href="#🗃️생활코딩-자료구조" class="headerlink" title="🗃️생활코딩 자료구조"></a>🗃️생활코딩 자료구조</h2><ol><li><a href=""></a></li></ol><a id="more"></a><h2 id="🗃️ITWILL자료구조"><a href="#🗃️ITWILL자료구조" class="headerlink" title="🗃️ITWILL자료구조"></a>🗃️ITWILL자료구조</h2><ol><li><a href="https://sowon-dev.github.io/2020/07/16/200716jspi2/">자료구조1 : Collections Framwork(Set계열, List계열)</a></li><li><a href="https://sowon-dev.github.io/2020/07/20/200720jspi/">자료구조2 : Stack클래스, Queue인터페이스, Map인터페이스</a></li></ol>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="🗃️생활코딩-자료구조"><a href="#🗃️생활코딩-자료구조" class="headerlink" title="🗃️생활코딩 자료구조"></a>🗃️생활코딩 자료구조</h2><ol><li><a href="https://sowon-dev.github.io/2020/12/06/201207dataStructure1/">자료구조와 알고리즘 차이, 배열</a></li></ol><a id="more"></a><h2 id="🗃️ITWILL자료구조"><a href="#🗃️ITWILL자료구조" class="headerlink" title="🗃️ITWILL자료구조"></a>🗃️ITWILL자료구조</h2><ol><li><a href="https://sowon-dev.github.io/2020/07/15/200716jspi2/">자료구조1 : Collections Framwork(Set계열, List계열)</a></li><li><a href="https://sowon-dev.github.io/2020/07/19/200720jspi/">자료구조2 : Stack클래스, Queue인터페이스, Map인터페이스</a></li></ol>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/Algorithm/">Algorithm</category>
@@ -40,16 +40,19 @@
     </item>
     
     <item>
-      <title>[자료구조DataStructure]자료구조와 알고리즘 차이</title>
+      <title>[자료구조DataStructure]자료구조와 알고리즘 차이, 배열</title>
       <link>https://sowon-dev.github.io/2020/12/06/201207dataStructure1/</link>
       <guid>https://sowon-dev.github.io/2020/12/06/201207dataStructure1/</guid>
       <pubDate>Sun, 06 Dec 2020 19:05:15 GMT</pubDate>
       
-      <description>&lt;h2 id=&quot;자료구조&quot;&gt;&lt;a href=&quot;#자료구조&quot; class=&quot;headerlink&quot; title=&quot;자료구조&quot;&gt;&lt;/a&gt;자료구조&lt;/h2&gt;</description>
+      <description>&lt;h2 id=&quot;자료구조와-알고리즘&quot;&gt;&lt;a href=&quot;#자료구조와-알고리즘&quot; class=&quot;headerlink&quot; title=&quot;자료구조와 알고리즘&quot;&gt;&lt;/a&gt;자료구조와 알고리즘&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;자료구조(data structure) : 데이터를 효율적으로 사용하기 틀이다. 이러한 효율성은 시간 복잡도(time complexity)와 공간 복잡도(space complexity) 기준으로 평가된다.&lt;ul&gt;
+&lt;li&gt;시간 복잡도란, 해당 자료구조의 시간 효율성의 척도이며 작을 수록 좋은 자료구조이다.&lt;/li&gt;
+&lt;li&gt;공간 복잡도란, 해당 자료구조의 공간 효율성의 척도이며 작을 수록 좋은 자료구조이다.</description>
       
       
       
-      <content:encoded><![CDATA[<h2 id="자료구조"><a href="#자료구조" class="headerlink" title="자료구조"></a>자료구조</h2><a id="more"></a><p><br><br><br></p><h2 id=""><a href="#" class="headerlink" title=""></a></h2><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://wayhome25.github.io/cs/2017/04/17/cs-18/">https://wayhome25.github.io/cs/2017/04/17/cs-18/</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="자료구조와-알고리즘"><a href="#자료구조와-알고리즘" class="headerlink" title="자료구조와 알고리즘"></a>자료구조와 알고리즘</h2><ul><li>자료구조(data structure) : 데이터를 효율적으로 사용하기 틀이다. 이러한 효율성은 시간 복잡도(time complexity)와 공간 복잡도(space complexity) 기준으로 평가된다.<ul><li>시간 복잡도란, 해당 자료구조의 시간 효율성의 척도이며 작을 수록 좋은 자료구조이다.</li><li>공간 복잡도란, 해당 자료구조의 공간 효율성의 척도이며 작을 수록 좋은 자료구조이다.<a id="more"></a></li></ul></li><li>알고리즘 : 어떤 값을 입력으로 받아 원하는 값으로 출력하는 잘 정의된 계산 과정이다. 알고리즘 효율성은 실험적 분석방법과 이론적 분석방법으로 분석가능하다. 이론적분석시 가장 대표적인 것이 빅오표기법이다.<ul><li>실험적 분석 : 직접 코드를 구현하는 분석방법으로 한계가 있기때문에 이론적 분석방법을 이용한다.</li><li>이론적 분석 : <a href="https://youtu.be/6Iq5iMCVsXA">빅오표기법</a></li></ul></li><li>자료구조와 알고리즘의 관계 : 효율적인 알고리즘을 만들기 위해 필요한 것이 자료구조이다.</li></ul><p><br><br><br></p><h2 id="배열"><a href="#배열" class="headerlink" title="배열"></a>배열</h2><ul><li>여러 데이터를 하나의 이름으로 그룹핑해서 관리하기 위해 사용하는 자료구조</li><li>배열의 구성 = element의 집합, element = index + value</li></ul><p><img src="https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/module/1335/2788.gif" alt="https://opentutorials.org/module/1335/8677"></p><ul><li>특징 : 크기가 정해져있다. 기능이 없다. <ul><li>작고 가볍고 단순하다. 즉 좋은 부품으로 사용할 수 있다.</li></ul></li></ul><p><br><br><br></p><h2 id="요약"><a href="#요약" class="headerlink" title="요약"></a>요약</h2><ul><li>자료구조 : 데이터를 효율적으로 조직하는 방법</li><li>알고리즘 : 문제를 해결하는 방법</li><li>자료구조와 알고리즘의 관계 : 효율적인 알고리즘을 만들기위해 자료구조가 필요하다.</li></ul><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://cloudstudying.kr/courses/23">https://cloudstudying.kr/courses/23</a></li><li><a href="https://wayhome25.github.io/cs/2017/04/17/cs-18/">https://wayhome25.github.io/cs/2017/04/17/cs-18/</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/Algorithm/">Algorithm</category>
