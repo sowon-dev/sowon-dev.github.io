@@ -8,6 +8,13 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/Lectures-Seminars/</loc>
+        <lastmod>2020-12-11T14:25:37.399Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/Android/</loc>
         <lastmod>2020-12-10T15:47:34.899Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -17,13 +24,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/HTML-CSS/</loc>
         <lastmod>2020-12-10T15:31:40.470Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Lectures-Seminars/</loc>
-        <lastmod>2020-12-10T11:36:24.631Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
