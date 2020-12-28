@@ -9,8 +9,36 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sun, 27 Dec 2020 09:58:47 GMT</pubDate>
+    <pubDate>Mon, 28 Dec 2020 02:57:58 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>SVN사용법과 git차이점</title>
+      <link>https://sowon-dev.github.io/2020/12/27/201228svn/</link>
+      <guid>https://sowon-dev.github.io/2020/12/27/201228svn/</guid>
+      <pubDate>Sun, 27 Dec 2020 17:07:03 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;형상관리-도구의-종류&quot;&gt;&lt;a href=&quot;#형상관리-도구의-종류&quot; class=&quot;headerlink&quot; title=&quot;형상관리 도구의 종류&quot;&gt;&lt;/a&gt;형상관리 도구의 종류&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Client/Server 타입 : Subversion(SVN), CVS, Perforce, ClearCase, TFS&lt;/li&gt;
+&lt;li&gt;분산저장소 타입 : Git, Mercurial, Bitkeeper, SVK, Darcs&lt;/li&gt;
+&lt;li&gt;Folder 공유 타입 : RCS, SCCS</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="형상관리-도구의-종류"><a href="#형상관리-도구의-종류" class="headerlink" title="형상관리 도구의 종류"></a>형상관리 도구의 종류</h2><ul><li>Client/Server 타입 : Subversion(SVN), CVS, Perforce, ClearCase, TFS</li><li>분산저장소 타입 : Git, Mercurial, Bitkeeper, SVK, Darcs</li><li>Folder 공유 타입 : RCS, SCCS<a id="more"></a></li></ul><p><br><br><br></p><h2 id="SVN-vs-GIT"><a href="#SVN-vs-GIT" class="headerlink" title="SVN vs GIT"></a>SVN vs GIT</h2><p><img src="https://qph.fs.quoracdn.net/main-qimg-e27a21806a30f7a4aae79edcd06d0785-c" alt=""></p><p>|비교|시스템|각 개발자만의 version history|한계|<br>|:—:|:—:|:—:|<br>|SVN|Centeralized Version Control System; CVCS; 중앙집중 버전관리|불가능|commit한 내용에 실수가 있을 시에 서버에(다른 개발자에게) 바로 영향을 미치게 된다. 중앙서버에 문제가 생기면 작업 불가능|<br>|GIT|Distributed Version Control System; DVCS; 분산 버전관리|가능|다양한 기능이 있기때문에 SVN보다 진입장벽이 높음|</p><p>둘 중 어느 것이 무조건 더 좋다는 건 없는 것 같다. 팀에 맞게 사용하면 된다.</p><p><br><br><br></p><h2 id="SVN-GUI-사용법"><a href="#SVN-GUI-사용법" class="headerlink" title="SVN GUI 사용법"></a>SVN GUI 사용법</h2><ul><li>회색 화살표 ▶ : local에서만 수정하고, 서버에서는 수정되지 않은 파일 <code>Commit</code>하면 된다.</li><li>파란 화살표 ◀ : local에서는 수정되지 않고, 서버에서만 수정된 파일 <code>Update</code>하면 된다.</li><li>빨간 화살표 ◀-▶ : local에서도 수정되었고, 서버에서도 수정된 파일 충돌 부분을 확인하면서 수정한다.</li></ul><p><br><br><br></p><h2 id="용어"><a href="#용어" class="headerlink" title="용어"></a>용어</h2><ul><li>Commit : 서버로 나의 로컬 소스 코드를 올린다.<ul><li>git와 다른 점 : git같은 경우, 팀원들이 각각의 branch를 따로 만들어 로컬 소스를 서버에서 관리할 수 있었지만 SVN은 마스터 하나만 있다</li></ul></li><li>Update : 서버 소스코드를 나의 로컬로 다운받는다.</li><li>Override and Commit… : 서버를 무시하고 로컬에 있는 파일을 서버에 덮어 쓴다. </li><li>Override and Update… : 로컬을 무시하고 서버에 있는 파일을 내 로컬로 덮어 쓴다.</li></ul><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://goddaehee.tistory.com/158">https://goddaehee.tistory.com/158</a></li><li><a href="https://www.dunebook.com/svn-vs-git-core-differences/">https://www.dunebook.com/svn-vs-git-core-differences/</a></li><li><a href="https://devcheon.tistory.com/2">https://devcheon.tistory.com/2</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Version-control/">Version control</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/TIL/">TIL</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/SVN/">SVN</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2020/12/27/201228svn/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[자바JAVA]1014 : [기초-입출력] 문자 2개 입력받아 순서 바꿔 출력하기(설명), Scanner vs BufferedReader 차이</title>
@@ -48,7 +76,7 @@
       
       
       
-      <content:encoded><![CDATA[<h2 id="🔑이클립스-단축키-정리표"><a href="#🔑이클립스-단축키-정리표" class="headerlink" title="🔑이클립스 단축키 정리표"></a>🔑이클립스 단축키 정리표</h2><a id="more"></a><table><thead><tr><th align="center">카테고리</th><th align="center">Action</th><th align="left">단축키</th></tr></thead><tbody><tr><td align="center">이동</td><td align="center">줄이동</td><td align="left">Alt + ↑↓</td></tr><tr><td align="center">검색</td><td align="center">프로젝트 내 파일명으로 찾아 열기</td><td align="left">ctrl + Shift + r</td></tr><tr><td align="center"></td><td align="center">전 범위에서 찾기</td><td align="left">ctrl + h</td></tr><tr><td align="center"></td><td align="center">현재 커서가 있는 소스에서 문자 검색</td><td align="left">ctrl + f</td></tr><tr><td align="center"></td><td align="center">원하는 문자 선택 후 해당 프로젝트 내에 해당 문자 검색</td><td align="left">Ctrl + Alt + g</td></tr><tr><td align="center">실행</td><td align="center">런</td><td align="left">ctrl + F11</td></tr><tr><td align="center">주석</td><td align="center">한 번 더 누르면 해지가능한 주석</td><td align="left">ctrl + shift + c</td></tr><tr><td align="center"></td><td align="center">한 번 더 누르면 해지불가능한 주석</td><td align="left">ctrl + shift + /</td></tr><tr><td align="center"></td><td align="center">주석된 블럭을 선택 후 주석 제거</td><td align="left">ctrl + shift + \</td></tr></tbody></table><p><br><br><br></p><h2 id="IntelliJ-VSCode-Eclipse-Visual-Studio-단축키-비교"><a href="#IntelliJ-VSCode-Eclipse-Visual-Studio-단축키-비교" class="headerlink" title="IntelliJ, VSCode, Eclipse, Visual Studio 단축키 비교"></a>IntelliJ, VSCode, Eclipse, Visual Studio 단축키 비교</h2><ul><li><a href="https://okdevtv.com/mib/intellij/shortcuts">https://okdevtv.com/mib/intellij/shortcuts</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="🔑이클립스-단축키-정리표"><a href="#🔑이클립스-단축키-정리표" class="headerlink" title="🔑이클립스 단축키 정리표"></a>🔑이클립스 단축키 정리표</h2><a id="more"></a><table><thead><tr><th align="center">카테고리</th><th align="center">Action</th><th align="left">단축키</th></tr></thead><tbody><tr><td align="center">이동</td><td align="center">줄이동</td><td align="left">Alt + ↑↓</td></tr><tr><td align="center">검색</td><td align="center">프로젝트 내 파일명으로 찾아 열기</td><td align="left">ctrl + Shift + r</td></tr><tr><td align="center"></td><td align="center">전 범위에서 찾기</td><td align="left">ctrl + h</td></tr><tr><td align="center"></td><td align="center">현재 커서가 있는 소스에서 문자 검색</td><td align="left">ctrl + f</td></tr><tr><td align="center"></td><td align="center">원하는 문자 선택 후 해당 프로젝트 내에 해당 문자 검색</td><td align="left">Ctrl + Alt + g</td></tr><tr><td align="center">실행</td><td align="center">런</td><td align="left">ctrl + F11</td></tr><tr><td align="center">주석</td><td align="center">한 번 더 누르면 해지가능한 주석</td><td align="left">ctrl + shift + c</td></tr><tr><td align="center"></td><td align="center">한 번 더 누르면 해지불가능한 주석</td><td align="left">ctrl + shift + /</td></tr><tr><td align="center"></td><td align="center">주석된 블럭을 선택 후 주석 제거</td><td align="left">ctrl + shift + \</td></tr><tr><td align="center">정렬</td><td align="center">자동 코드 정렬</td><td align="left">Ctrl + shift+ f</td></tr></tbody></table><p><br><br><br></p><h2 id="IntelliJ-VSCode-Eclipse-Visual-Studio-단축키-비교"><a href="#IntelliJ-VSCode-Eclipse-Visual-Studio-단축키-비교" class="headerlink" title="IntelliJ, VSCode, Eclipse, Visual Studio 단축키 비교"></a>IntelliJ, VSCode, Eclipse, Visual Studio 단축키 비교</h2><ul><li><a href="https://okdevtv.com/mib/intellij/shortcuts">https://okdevtv.com/mib/intellij/shortcuts</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
@@ -515,38 +543,6 @@
       
       
       <comments>https://sowon-dev.github.io/2020/11/16/jspList/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[REST API]페이지 전달방식</title>
-      <link>https://sowon-dev.github.io/2020/11/11/201112restapi/</link>
-      <guid>https://sowon-dev.github.io/2020/11/11/201112restapi/</guid>
-      <pubDate>Wed, 11 Nov 2020 20:07:32 GMT</pubDate>
-      
-      <description>&lt;h2 id=&quot;Rest-방식의-사용원칙&quot;&gt;&lt;a href=&quot;#Rest-방식의-사용원칙&quot; class=&quot;headerlink&quot; title=&quot;Rest 방식의 사용원칙&quot;&gt;&lt;/a&gt;Rest 방식의 사용원칙&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;URI가 원하는 리소스를 의미한다. (영어 복수형으로 주소를 사용)&lt;/li&gt;
-&lt;li&gt;URI에는 식별할 수 있는 데이터를 전달하는것이 일반적인 방법&lt;/li&gt;
-&lt;li&gt;예를들어 게시판 - CRUD 이라면 사용가능한 주소형태는 아래와 같다.&lt;ul&gt;
-&lt;li&gt;…/boards/123   =&amp;gt;  123번 글을 조회 &lt;/li&gt;
-&lt;li&gt;…/boards/123/replies/11 =&amp;gt; 123번글의 11번째 댓글 조회&lt;/li&gt;
-&lt;li&gt;…/boards/123/11  =&amp;gt; 123번글의 11번째 댓글 조회&lt;/li&gt;
-&lt;li&gt;…/boards/ =&amp;gt; 신규 글용 작성</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="Rest-방식의-사용원칙"><a href="#Rest-방식의-사용원칙" class="headerlink" title="Rest 방식의 사용원칙"></a>Rest 방식의 사용원칙</h2><ul><li>URI가 원하는 리소스를 의미한다. (영어 복수형으로 주소를 사용)</li><li>URI에는 식별할 수 있는 데이터를 전달하는것이 일반적인 방법</li><li>예를들어 게시판 - CRUD 이라면 사용가능한 주소형태는 아래와 같다.<ul><li>…/boards/123   =&gt;  123번 글을 조회 </li><li>…/boards/123/replies/11 =&gt; 123번글의 11번째 댓글 조회</li><li>…/boards/123/11  =&gt; 123번글의 11번째 댓글 조회</li><li>…/boards/ =&gt; 신규 글용 작성<a id="more"></a></li></ul></li></ul><p><br><br><br></p><h2 id="페이지-전달방식"><a href="#페이지-전달방식" class="headerlink" title="페이지 전달방식"></a>페이지 전달방식</h2><ul><li>[<code>/작업명/기본키 + 메서드 + 데이터</code>] 형태로 REST방식으로 페이지 전달하면 된다.</li></ul><table><thead><tr><th align="center">예시</th><th align="center">방식</th><th align="center">용도</th></tr></thead><tbody><tr><td align="center">…/boards/123</td><td align="center">GET</td><td align="center">자료 조회용</td></tr><tr><td align="center">…/boards/123</td><td align="center">DELETE</td><td align="center">자료 삭제용</td></tr><tr><td align="center">…/boards/, …/boards/new/</td><td align="center">POST</td><td align="center">신규 자료 작성용</td></tr><tr><td align="center">…/boards/123</td><td align="center">PUT</td><td align="center">자료 전체 수정용</td></tr><tr><td align="center">…/boards/123</td><td align="center">PATCH</td><td align="center">자료 일부 수정용</td></tr></tbody></table><p><img src="https://www.seobility.net/en/wiki/images/f/f1/Rest-API.png" alt="https://www.seobility.net/en/wiki/REST_API"></p><ul><li>크롬 웹 도구인 <a href="https://chrome.google.com/webstore/detail/arc-cookie-exchange/apcedakaoficjlofohhcmkkljehnmebp?utm_source=chrome-ntp-icon">ARC cookie exchange</a>를 사용하면 편하게 방식을 구분할 수 있다.</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/TIL/">TIL</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/ITWILL-JAVA/">ITWILL(JAVA)</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2020/11/11/201112restapi/#disqus_thread</comments>
       
     </item>
     
