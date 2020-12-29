@@ -3,14 +3,21 @@
 
 
     <url>
-        <loc>https://sowon-dev.github.io/tags/SVN/</loc>
-        <lastmod>2020-12-28T03:23:43.935Z</lastmod>
+        <loc>https://sowon-dev.github.io/tags/Oracle/</loc>
+        <lastmod>2020-12-29T04:35:48.884Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/tags/TIL/</loc>
+        <lastmod>2020-12-29T04:35:48.884Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/SVN/</loc>
         <lastmod>2020-12-28T03:23:43.935Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -96,13 +103,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/GIT/</loc>
         <lastmod>2020-11-08T12:52:07.153Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/Oracle/</loc>
-        <lastmod>2020-10-30T00:42:20.871Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
