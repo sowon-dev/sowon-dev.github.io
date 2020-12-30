@@ -8,6 +8,13 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/Server/</loc>
+        <lastmod>2020-12-30T06:38:47.093Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/Database/Oracle/</loc>
         <lastmod>2020-12-29T04:35:48.884Z</lastmod>
         <changefreq>weekly</changefreq>

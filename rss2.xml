@@ -9,8 +9,33 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Tue, 29 Dec 2020 04:35:48 GMT</pubDate>
+    <pubDate>Wed, 30 Dec 2020 06:38:47 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>톰캣서버 중복에러 관리자권한으로도 해결 안될 때 임시해결방법</title>
+      <link>https://sowon-dev.github.io/2020/12/29/201230taskkillerror/</link>
+      <guid>https://sowon-dev.github.io/2020/12/29/201230taskkillerror/</guid>
+      <pubDate>Tue, 29 Dec 2020 21:12:10 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;문제상황&quot;&gt;&lt;a href=&quot;#문제상황&quot; class=&quot;headerlink&quot; title=&quot;문제상황&quot;&gt;&lt;/a&gt;문제상황&lt;/h2&gt;&lt;p&gt;이클립스에서 톰캣 서버를 실행하던 중 80 port가 already in use라는 에러가 발생했다.&lt;br&gt;차분히 cmd를 열고 taskkill했는데 &lt;code&gt;오류 : 프로세스(PID 4)를 종료할 수 없습니다. 원인: 액세스가 거부되었습니다&lt;/code&gt;가 출력되었다.&lt;br&gt;관리자권한으로 다시 실행하여 taskkill했지만 여전히 동일하 오류 메세지가 출력되었다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="문제상황"><a href="#문제상황" class="headerlink" title="문제상황"></a>문제상황</h2><p>이클립스에서 톰캣 서버를 실행하던 중 80 port가 already in use라는 에러가 발생했다.<br>차분히 cmd를 열고 taskkill했는데 <code>오류 : 프로세스(PID 4)를 종료할 수 없습니다. 원인: 액세스가 거부되었습니다</code>가 출력되었다.<br>관리자권한으로 다시 실행하여 taskkill했지만 여전히 동일하 오류 메세지가 출력되었다.</p><a id="more"></a><p><img src="/img/201230taskkill2.PNG" alt="권리자권한으로 실행해도 동일한 에러가 발생"></p><p>아마 ISS(인터넷정보서비스)를 설치하면서 동일한 80포트를 사용했기때문에 톰캣서버와 충돌난 것 같다.<br>추측일뿐 정확한 원인은 지금까지도 찾아보고 있다…</p><p><br><br><br></p><h2 id="톰캣서버충돌시-해결방법"><a href="#톰캣서버충돌시-해결방법" class="headerlink" title="톰캣서버충돌시 해결방법"></a>톰캣서버충돌시 해결방법</h2><ol><li><code>명령프롬프트</code>를 연다.</li><li><code>netstat -ano</code>를 입력한다.</li><li>충돌된 포트를 찾은 뒤 PID를 기억한다.<ul><li>나의 경우 충돌된 포트가 80이므로 PID는 4이다.</li></ul></li></ol><p><img src="/img/201230taskkill1.PNG" alt=""></p><ol start="4"><li><code>taskkill /f /pid 4</code>를 입력한다.</li></ol><p><img src="/img/201230taskkill2.PNG" alt=""></p><ol start="5"><li>거부가 된 경우 관리자 권한으로 cmd를 실행한 뒤 위 방법을 재시도한다.<ul><li>cmd를 관리자 권한으로 실행하기 위해선 파일탐색기에 cmd입력한 뒤 앱에서 우클릭하여 관리자권한으로 실행할 수 있다.</li><li>보통 여기서 프로세스가 종료된다.</li><li>나처럼 권리자권한으로 실행했음에도 액세스 거부가 방생한 경우 아래 임시 방법을 사용할 수 있다. </li></ul></li></ol><p><br><br><br></p><h2 id="임시해결방법"><a href="#임시해결방법" class="headerlink" title="임시해결방법"></a>임시해결방법</h2><p><img src="/img/201230taskkill3.PNG" alt=""></p><p>톰캣 서버 HTTP 포트를 <code>80</code>에서 <code>8080</code>으로 변경해준뒤 테스트 실행시 URL에 <code>:8080</code>을 붙여주니 웹페이지가 정상적으로 출력되었다.<br>컨트롤러에 의해 알아서 맵핑이 되기때문에 즐겨찾기에 저장해놓은 뒤 프로젝트를 테스트하면 편하다.</p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Server/">Server</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/TIL/">TIL</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/Tomcat/">Tomcat</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2020/12/29/201230taskkillerror/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Oracle SQL</title>
@@ -513,34 +538,6 @@
       
       
       <comments>https://sowon-dev.github.io/2020/11/16/201117team/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>기술블로그 추천</title>
-      <link>https://sowon-dev.github.io/2020/11/16/201117techbloglist/</link>
-      <guid>https://sowon-dev.github.io/2020/11/16/201117techbloglist/</guid>
-      <pubDate>Mon, 16 Nov 2020 22:24:50 GMT</pubDate>
-      
-      <description>&lt;h2 id=&quot;추천하는-기술블로그&quot;&gt;&lt;a href=&quot;#추천하는-기술블로그&quot; class=&quot;headerlink&quot; title=&quot;추천하는 기술블로그&quot;&gt;&lt;/a&gt;추천하는 기술블로그&lt;/h2&gt;&lt;p&gt;11번가 OpenAPI &lt;a href=&quot;https://openapi.11st.co.kr/openapi/OpenApiFrontMain.tmall&quot;&gt;https://openapi.11st.co.kr/openapi/OpenApiFrontMain.tmall&lt;/a&gt;&lt;br&gt;
-가비아 : &lt;a href=&quot;https://blog.naver.com/gabianow(그룹웨어&quot;&gt;https://blog.naver.com/gabianow(그룹웨어&lt;/a&gt;)&lt;br&gt;
-네이버 밴드 : &lt;a href=&quot;https://developers.band.us/&quot;&gt;https://developers.band.us/&lt;/a&gt;&lt;br&gt;
-네이버 D2 : &lt;a href=&quot;https://d2.naver.com/home&quot;&gt;https://d2.naver.com/home&lt;/a&gt;&lt;br&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="추천하는-기술블로그"><a href="#추천하는-기술블로그" class="headerlink" title="추천하는 기술블로그"></a>추천하는 기술블로그</h2><p>11번가 OpenAPI <a href="https://openapi.11st.co.kr/openapi/OpenApiFrontMain.tmall">https://openapi.11st.co.kr/openapi/OpenApiFrontMain.tmall</a><br>가비아 : <a href="https://blog.naver.com/gabianow(그룹웨어">https://blog.naver.com/gabianow(그룹웨어</a>)<br>네이버 밴드 : <a href="https://developers.band.us/">https://developers.band.us/</a><br>네이버 D2 : <a href="https://d2.naver.com/home">https://d2.naver.com/home</a><br><a id="more"></a>NBP : <a href="https://blog.naver.com/n_cloudplatform(네이버">https://blog.naver.com/n_cloudplatform(네이버</a> 클라우드)<br> 아임포트 : <a href="https://www.iamport.kr/pricing">https://www.iamport.kr/pricing</a> (pg사 연동 ,문자보내기) 당근마켓 : <a href="https://medium.com/daangn">https://medium.com/daangn</a><br> 드라마앤컴퍼니 : <a href="https://blog.dramancompany.com/">https://blog.dramancompany.com/</a><br> (리멤버 앱)<br> 라인 : <a href="https://engineering.linecorp.com/ko/blog/">https://engineering.linecorp.com/ko/blog/</a> <a href="https://engineering.linecorp.com/ja/(일본">https://engineering.linecorp.com/ja/(일본</a>)<br> 메가존 : <a href="https://megazone.tistory.com/">https://megazone.tistory.com/</a><br> 빌드업웍스 <a href="https://blog.naver.com/buw00882">https://blog.naver.com/buw00882</a><br> 알리바바 <a href="https://github.com/alibaba">https://github.com/alibaba</a><br> 우아한 형제들 <a href="https://woowabros.github.io/">https://woowabros.github.io/</a><br> 이노그리드 <a href="http://www.innogrid.com/">http://www.innogrid.com/</a> <a href="https://blog.naver.com/innogrid">https://blog.naver.com/innogrid</a> (클라우드)<br> 카카오 <a href="https://www.kakaocorp.com/">https://www.kakaocorp.com/</a><br> 카카오기술블로그 <a href="https://tech.kakao.com/">https://tech.kakao.com/</a><br> 카카오 TV <a href="https://tv.kakao.com/channel/2743187/video">https://tv.kakao.com/channel/2743187/video</a><br> 쿠팡 <a href="https://medium.com/coupang-tech">https://medium.com/coupang-tech</a><br> LG CNS <a href="https://blog.lgcns.com/">https://blog.lgcns.com/</a><br> SK 플래닛 <a href="https://skpblog.tistory.com/">https://skpblog.tistory.com/</a><br> <a href="https://www.skplanet.com/main">https://www.skplanet.com/main</a><br> 한국 데이터 산업 진흥원 <a href="https://www.kdata.or.kr/">https://www.kdata.or.kr/</a></p><p> 레진 기술블로그 <a href="https://tech.lezhin.com/">https://tech.lezhin.com/</a><br> Mozilla <a href="http://hacks.mozilla.or.kr/">http://hacks.mozilla.or.kr/</a><br> 마켓 컬리 <a href="https://helloworld.kurly.com/">https://helloworld.kurly.com/</a></p><p> Airbnb <a href="https://medium.com/airbnb-engineering">https://medium.com/airbnb-engineering</a><br> Netflix <a href="https://netflixtechblog.com/">https://netflixtechblog.com/</a><br> facebook <a href="https://engineering.fb.com/">https://engineering.fb.com/</a><br> Spoqa(도도포인트) <a href="https://spoqa.github.io/jobs/">https://spoqa.github.io/jobs/</a></p><p> google <a href="https://developers.googleblog.com/">https://developers.googleblog.com/</a></p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/Journal/">Journal</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/ITWILL-JAVA/">ITWILL(JAVA)</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2020/11/16/201117techbloglist/#disqus_thread</comments>
       
     </item>
     
