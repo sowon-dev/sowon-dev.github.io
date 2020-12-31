@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Wed, 30 Dec 2020 06:38:47 GMT</pubDate>
+    <pubDate>Thu, 31 Dec 2020 05:11:00 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>portdiff</title>
+      <link>https://sowon-dev.github.io/2020/12/30/201231portdiff/</link>
+      <guid>https://sowon-dev.github.io/2020/12/30/201231portdiff/</guid>
+      <pubDate>Wed, 30 Dec 2020 19:31:06 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;port-443과-80의-차이-port란&quot;&gt;&lt;a href=&quot;#port-443과-80의-차이-port란&quot; class=&quot;headerlink&quot; title=&quot;port 443과 80의 차이, port란?&quot;&gt;&lt;/a&gt;port 443과 80의 차이, port란?&lt;/h2&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="port-443과-80의-차이-port란"><a href="#port-443과-80의-차이-port란" class="headerlink" title="port 443과 80의 차이, port란?"></a>port 443과 80의 차이, port란?</h2><a id="more"></a><p><br><br><br></p><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Lectures-Seminars/">Lectures &amp; Seminars</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Review/">Review</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2020/12/30/201231portdiff/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>톰캣서버 중복에러 관리자권한으로도 해결 안될 때 임시해결방법</title>
@@ -22,7 +45,7 @@
       
       
       
-      <content:encoded><![CDATA[<h2 id="문제상황"><a href="#문제상황" class="headerlink" title="문제상황"></a>문제상황</h2><p>이클립스에서 톰캣 서버를 실행하던 중 80 port가 already in use라는 에러가 발생했다.<br>차분히 cmd를 열고 taskkill했는데 <code>오류 : 프로세스(PID 4)를 종료할 수 없습니다. 원인: 액세스가 거부되었습니다</code>가 출력되었다.<br>관리자권한으로 다시 실행하여 taskkill했지만 여전히 동일하 오류 메세지가 출력되었다.</p><a id="more"></a><p><img src="/img/201230taskkill2.PNG" alt="권리자권한으로 실행해도 동일한 에러가 발생"></p><p>아마 ISS(인터넷정보서비스)를 설치하면서 동일한 80포트를 사용했기때문에 톰캣서버와 충돌난 것 같다.<br>추측일뿐 정확한 원인은 지금까지도 찾아보고 있다…</p><p><br><br><br></p><h2 id="톰캣서버충돌시-해결방법"><a href="#톰캣서버충돌시-해결방법" class="headerlink" title="톰캣서버충돌시 해결방법"></a>톰캣서버충돌시 해결방법</h2><ol><li><code>명령프롬프트</code>를 연다.</li><li><code>netstat -ano</code>를 입력한다.</li><li>충돌된 포트를 찾은 뒤 PID를 기억한다.<ul><li>나의 경우 충돌된 포트가 80이므로 PID는 4이다.</li></ul></li></ol><p><img src="/img/201230taskkill1.PNG" alt=""></p><ol start="4"><li><code>taskkill /f /pid 4</code>를 입력한다.</li></ol><p><img src="/img/201230taskkill2.PNG" alt=""></p><ol start="5"><li>거부가 된 경우 관리자 권한으로 cmd를 실행한 뒤 위 방법을 재시도한다.<ul><li>cmd를 관리자 권한으로 실행하기 위해선 파일탐색기에 cmd입력한 뒤 앱에서 우클릭하여 관리자권한으로 실행할 수 있다.</li><li>보통 여기서 프로세스가 종료된다.</li><li>나처럼 권리자권한으로 실행했음에도 액세스 거부가 방생한 경우 아래 임시 방법을 사용할 수 있다. </li></ul></li></ol><p><br><br><br></p><h2 id="임시해결방법"><a href="#임시해결방법" class="headerlink" title="임시해결방법"></a>임시해결방법</h2><p><img src="/img/201230taskkill3.PNG" alt=""></p><p>톰캣 서버 HTTP 포트를 <code>80</code>에서 <code>8080</code>으로 변경해준뒤 테스트 실행시 URL에 <code>:8080</code>을 붙여주니 웹페이지가 정상적으로 출력되었다.<br>컨트롤러에 의해 알아서 맵핑이 되기때문에 즐겨찾기에 저장해놓은 뒤 프로젝트를 테스트하면 편하다.</p>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="문제상황"><a href="#문제상황" class="headerlink" title="문제상황"></a>문제상황</h2><p>이클립스에서 톰캣 서버를 실행하던 중 80 port가 already in use라는 에러가 발생했다.<br>차분히 cmd를 열고 taskkill했는데 <code>오류 : 프로세스(PID 4)를 종료할 수 없습니다. 원인: 액세스가 거부되었습니다</code>가 출력되었다.<br>관리자권한으로 다시 실행하여 taskkill했지만 여전히 동일하 오류 메세지가 출력되었다.</p><a id="more"></a><p><img src="/img/201230taskkill2.PNG" alt="권리자권한으로 실행해도 동일한 에러가 발생"></p><p>아마 ISS(인터넷정보서비스)를 설치하면서 동일한 80포트를 사용했기때문에 톰캣서버와 충돌난 것 같다.<br>추측일뿐 정확한 원인은 지금까지도 찾아보고 있다…</p><p><br><br><br></p><h2 id="톰캣서버충돌시-해결방법"><a href="#톰캣서버충돌시-해결방법" class="headerlink" title="톰캣서버충돌시 해결방법"></a>톰캣서버충돌시 해결방법</h2><ol><li><code>명령프롬프트</code>를 연다.</li><li><code>netstat -ano</code>를 입력한다.</li><li>충돌된 포트를 찾은 뒤 PID를 기억한다.<ul><li>나의 경우 충돌된 포트가 80이므로 PID는 4이다.</li></ul></li></ol><p><img src="/img/201230taskkill1.PNG" alt=""></p><ol start="4"><li><code>taskkill /f /pid 4</code>를 입력한다.</li></ol><p><img src="/img/201230taskkill2.PNG" alt=""></p><ol start="5"><li>거부가 된 경우 관리자 권한으로 cmd를 실행한 뒤 위 방법을 재시도한다.<ul><li>cmd를 관리자 권한으로 실행하기 위해선 파일탐색기에 cmd입력한 뒤 앱에서 우클릭하여 관리자권한으로 실행할 수 있다.</li><li>보통 여기서 프로세스가 종료된다.</li><li>나처럼 권리자권한으로 실행했음에도 액세스 거부가 방생한 경우 아래 임시 방법을 사용할 수 있다. </li></ul></li></ol><p><br><br><br></p><h2 id="임시해결방법"><a href="#임시해결방법" class="headerlink" title="임시해결방법"></a>임시해결방법</h2><p><img src="/img/201230taskkill3.PNG" alt=""></p><p>톰캣 서버 HTTP 포트를 <code>80</code>에서 <code>8080</code>으로 변경해준뒤 테스트 실행시 URL에 <code>:8080</code>을 붙여주니 웹페이지가 정상적으로 출력되었다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;예시</span><br><span class="line">www.test.com&#x2F;home&#x2F;main</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;8080추가</span><br><span class="line">www.test.com&#x2F;home&#x2F;main:8080</span><br></pre></td></tr></table></figure><p>컨트롤러에 의해 알아서 맵핑이 되기때문에 즐겨찾기에 저장해놓은 뒤 프로젝트를 테스트하면 편하다.</p>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/Server/">Server</category>
@@ -513,31 +536,6 @@
       
       
       <comments>https://sowon-dev.github.io/2020/11/19/algorithmList/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[국비교육 자바JAVA 팀프로젝트]5. 팀플발표후기와 팀 프로젝트가 나에게 남긴 것</title>
-      <link>https://sowon-dev.github.io/2020/11/16/201117team/</link>
-      <guid>https://sowon-dev.github.io/2020/11/16/201117team/</guid>
-      <pubDate>Mon, 16 Nov 2020 22:39:33 GMT</pubDate>
-      
-      <description>&lt;h2 id=&quot;팀플의-끝은-웹호스팅&quot;&gt;&lt;a href=&quot;#팀플의-끝은-웹호스팅&quot; class=&quot;headerlink&quot; title=&quot;팀플의 끝은 웹호스팅&quot;&gt;&lt;/a&gt;팀플의 끝은 웹호스팅&lt;/h2&gt;&lt;p&gt;완성한 팀 프로젝트를 cafe24 호스팅을 했다. 학원에서 호스팅서버는 6개월 정도 제공된다고 했다.&lt;br&gt;그 안에 취직이 되었으면 좋겠다!&lt;br&gt;처음 호스팅해보는 거라 시간이 오래걸릴 거라 예상했는데 역시나 오래 걸렸다.&lt;br&gt;웹 호스팅을 하면서 4시간 걸려서 MySQL연동하고 war파일 제대로 연동하고 올렸다니 짜잔-?!?!&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="팀플의-끝은-웹호스팅"><a href="#팀플의-끝은-웹호스팅" class="headerlink" title="팀플의 끝은 웹호스팅"></a>팀플의 끝은 웹호스팅</h2><p>완성한 팀 프로젝트를 cafe24 호스팅을 했다. 학원에서 호스팅서버는 6개월 정도 제공된다고 했다.<br>그 안에 취직이 되었으면 좋겠다!<br>처음 호스팅해보는 거라 시간이 오래걸릴 거라 예상했는데 역시나 오래 걸렸다.<br>웹 호스팅을 하면서 4시간 걸려서 MySQL연동하고 war파일 제대로 연동하고 올렸다니 짜잔-?!?!</p><a id="more"></a><p>섬네일이 엑박으로 뜨는 에러가 발생했다.<br>섬네일이 엑박이 뜨는 이유는 경로설정에서 문제가 있었다. <code>server.xml</code>안에 코드를 썼는데 그걸 그대로 웹서버에 올리니 웹서버가 제대로 작동하지 않았다.<br>강사님께 도움을 요청했지만 아직 해결하지 못했다. 차근차근 해결해야지. <strong>성공할 때까지 하면 성공한다!</strong></p><p><br><br><br></p><h2 id="팀프로젝트-PPT의-완성"><a href="#팀프로젝트-PPT의-완성" class="headerlink" title="팀프로젝트 PPT의 완성"></a>팀프로젝트 PPT의 완성</h2><p>PPT구성을 어떻게 하면 좋을까 고민하다가 아래와 같이 틀을 잡았다.<br>우리 팀은 웹사이트뿐만 아니라 안드로이드 앱도 만들었기 때문에 웹 시연과 앱 발표를 함께 진행했다.</p><ul><li>팀 프로젝트 발표자료 구성<ol><li>프로젝트 개요</li><li>기술 스택</li><li>웹사이트 설명과 시연</li><li>모바일 앱 시연과 설명</li><li>질의응답</li></ol></li></ul><p>팀 프로젝트 발표자료는 틀을 먼저 만든 뒤 팀원 각자 힘 준 기능들을 최대 4장까지 만들어달라고 요청했다.<br>총 팀원이 8명으로 많다 보니 중구난방이 될까 봐 예시 먼저 작성해서 공유했다.</p><ul><li>팀 프로젝트 발표자료 작성 진행 방법<ul><li>발표구성을 잡고 PPT 컨셉을 잡음</li><li>예시 슬라이드 하나를 만들어서 공유</li><li>디자인이 들어간 빈 슬라이드를 10개 정도 만들어서 안에 내용만 채우면 되도록 공유</li><li>글씨체, 색상 통일 요청</li><li>마감 기한을 정함 (기한을 4일로 넉넉히 작성할 수 있도록 했다.)</li></ul></li></ul><p>위와 같이 진행한 덕분에 팀원들 각자의 스타일이 들어있지만, 통일감도 있는 멋진 PPT를 만들 수 있었다.<br>발표는 각자 구현한 기능을 발표할지 한 명이 발표할지 고민했었는데 아무도 발표하고 싶어 하지 않아서 내가 발표하기로 했다.<br>아무래도 내가 짠 코드가 아니다 보니 제대로 전달할 수 있을지에 대한 고민이 있었다. 이를 해결하기 위해 그들이 작성한 코드와 PPT슬라이드를 제대로 전달하기 위해서 정말 많이 정독했다.</p><p><br><br><br></p><h2 id="발표-당일"><a href="#발표-당일" class="headerlink" title="발표 당일"></a>발표 당일</h2><p>발표 1시간 전까지 PR을 계속 받고 머지를 진행했다. 어찌나 바쁘던지 로컬호스트에서 발표하기로 강사님께 양해를 구하고 원활한 발표를 위해 사전 세팅을 진행했다.<br>그 와중에 cafe24에 어떻게든 섬네일 기능을 고치려고 바둥바둥 노력했다.<br>정말 정신없이 바빴다 ㅋㅋㅋㅋ</p><p>강사님이 발표는 1시간 정도 주어지지만 보통 40분 정도 끝난다고 했다.<br>하지만…<br>웹 시연뿐만 아니라 앱 시연이 들어가서 그런 걸까? 1시간 꽉 채워서 발표했다.<br>질의응답에 많은 질문을 기대했는데 생각보다 많지 않아 아쉬웠다.</p><p>우리 팀은 나와 앱 개발 담당한 팀원 총 2명이 발표를 진행하였고 발표가 끝난 후 각 기능을 구현한 팀원들이 질의를 받고 응답했다. 발표 후 아쉬웠던 점이 있다. 시연 시 몇몇 기능을 누락했다. 특히 내가 공들여 구현한 댓글기능 시연을 완전히 잊어버렸다 ㅋㅋㅋ 후 연습 많이 했는데 실수를 해서 아쉬웠다. </p><p>다른 팀은 각자 구현한 기능 슬라이드 발표 후 해당 기능만 시연하는 형식으로 진행했다. 이 방법이 살짝 아쉬웠던 점은 팀프로젝트의 기능들은 유기적으로 연결되어있는데 기능담당자가 자신이 담당한 기능만 발표하다 보니 유기적인 연결을 볼 수 없었다. 하지만 장점은 나처럼 까먹지 않고… 모든 기능을 빠짐없이 시연할 수 있다는 점이었다!</p><p><br><br><br></p><h2 id="팀프로젝트가-나에게-남긴-것"><a href="#팀프로젝트가-나에게-남긴-것" class="headerlink" title="팀프로젝트가 나에게 남긴 것"></a>팀프로젝트가 나에게 남긴 것</h2><ol><li>협업능력 UP!<br>알고 있었지만 나는 역시 <strong>원격 협업</strong>에 능한 사람이었다. 대면하지 않더라도 여러 <strong>협업 툴</strong>을 통해 긴밀하게 팀원들과 연결되어있음을 느낄 수 있었다. 이번 협업 툴의 선택은 정말 만족스러웠다. 뿌-듯<br>다음 팀플이 있다면 깃헙의 issue와 projects를 연결하여 이용하고 싶다.<br>또한 최근 사랑에 빠진 노션을 이용해보고 싶다.<br>카카오톡으로 이야기를 하다 보니 각 기능에 대한 이야기는 해당 담당자끼리 또 다른 톡방을 만들게 되고 그러다 보니 공유가 원활하지 않고 또한 여러 톡방이 생겨 복잡해져 버렸다.<br>슬랙이나 issue, 노션을 사용하여 이러한 복잡함을 해결할 수 있기때문에 다음번에는 꼭 이용해보고싶다.</li><li>코드읽는 능력 UP!<br>팀원들이 구현 중 도움이 필요할 때 도와준 적이 있다. 다양한 팀원들을 도와주다 보니 다양한 스타일의 코드와 주석을 접하게 되어서 코드를 읽는 능력이 많이 향상되었다. 신입으로 입사를 해도 다른 개발자가 쓴 코드와 주석을 읽는 시간이 더 많을 텐데 미리 경험할 수 있는 값진 시간이었다.</li><li>팀원을 믿는 능력 UP!<br>성격이 완벽주의적인 면이 있어서 내 파트가 아닌데도 스스로 개선점을 찾아 고생해서 혼자서 수정하곤 한다.<br>이번에도 역시나 기능 통합시 몇몇 부분을 고치고 있는 나를 발견해버렸다. 그러다보니 자꾸 지쳐갔다…..<br>팀플에서 팀장이 지치면 안되기 때문에 팀원을 믿기위한 장치를 고안했다.<br>기능 테스트를 모든 팀원들에게 요청하고 각 기능 담당자가 팀원들의 테스트 결과를 보고 스스로 고칠 수 있도록 유도했다.<br>이를 통해서 팀원을 믿고 의지하는 능력이 향상되었다.</li><li>마음수련 능력 UP!<br>모두가 다 그렇지만 인생사 계획대로 되는 일이 많지 않다.<br>팀플도 마찬가지이다. 각자의 사정으로 계획에 차질이 생기고 마감기한은 다가오고 숨이 막히는 기분이었다.<br>특히 계획을 성실히 지켜준 팀원들에게 미안했다.<br>그런 마음이 들 때마다 나는 되뇌었다.</li></ol><p>‘괜찮아. 모두 그들의 방식으로 최선을 다하고 있는 거야.’<br>‘완성되지 않아도 괜찮아.’</p><p>완성되어야만 한다고 강력히 생각하면서도 말이라도 입밖으로 내어봤다.ㅋㅋㅋㅋㅋ<br>다름을 인정하려고 노력하고 이번엔 꽤 성공적이었다.<br>팀플은 여전히 어렵지만 나는 이번 팀플을 통해 더 나은 내가 되었다.<br>성장하는 느낌을 받는 건 항상 좋은 일이다.<br>앞으로도 더 성장하는 내가 되고 싶다.</p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
-      
-      <category domain="https://sowon-dev.github.io/categories/Journal/Team-Project/">Team Project</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/Journal/">Journal</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2020/11/16/201117team/#disqus_thread</comments>
       
     </item>
     
