@@ -3,8 +3,8 @@
 
 
     <url>
-        <loc>https://sowon-dev.github.io/tags/Review/</loc>
-        <lastmod>2020-12-31T05:11:00.048Z</lastmod>
+        <loc>https://sowon-dev.github.io/tags/port/</loc>
+        <lastmod>2021-01-04T01:17:16.157Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -75,6 +75,13 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/ITWILL-JAVA/</loc>
         <lastmod>2020-12-24T06:37:59.600Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/Review/</loc>
+        <lastmod>2020-12-11T14:25:37.399Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

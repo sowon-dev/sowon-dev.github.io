@@ -9,26 +9,28 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Thu, 31 Dec 2020 05:11:00 GMT</pubDate>
+    <pubDate>Mon, 04 Jan 2021 01:17:16 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>portdiff</title>
+      <title>포트(port)란? HTTP port 80과 HTTPS 443의 차이</title>
       <link>https://sowon-dev.github.io/2020/12/30/201231portdiff/</link>
       <guid>https://sowon-dev.github.io/2020/12/30/201231portdiff/</guid>
       <pubDate>Wed, 30 Dec 2020 19:31:06 GMT</pubDate>
       
-      <description>&lt;h2 id=&quot;port-443과-80의-차이-port란&quot;&gt;&lt;a href=&quot;#port-443과-80의-차이-port란&quot; class=&quot;headerlink&quot; title=&quot;port 443과 80의 차이, port란?&quot;&gt;&lt;/a&gt;port 443과 80의 차이, port란?&lt;/h2&gt;</description>
+      <description>&lt;h2 id=&quot;port-443과-80의-차이&quot;&gt;&lt;a href=&quot;#port-443과-80의-차이&quot; class=&quot;headerlink&quot; title=&quot;port 443과 80의 차이&quot;&gt;&lt;/a&gt;port 443과 80의 차이&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;http의 기본 포트: 80.&lt;/li&gt;
+&lt;li&gt;https의 기본 포트: 443.</description>
       
       
       
-      <content:encoded><![CDATA[<h2 id="port-443과-80의-차이-port란"><a href="#port-443과-80의-차이-port란" class="headerlink" title="port 443과 80의 차이, port란?"></a>port 443과 80의 차이, port란?</h2><a id="more"></a><p><br><br><br></p><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="port-443과-80의-차이"><a href="#port-443과-80의-차이" class="headerlink" title="port 443과 80의 차이"></a>port 443과 80의 차이</h2><ul><li>http의 기본 포트: 80.</li><li>https의 기본 포트: 443.<a id="more"></a></li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">http 프로토콜</span><br><span class="line">http:&#x2F;&#x2F;www.google.com - http 프로토콜. 구글이 망하지만 않는다면 잘 접속된다.</span><br><span class="line">http:&#x2F;&#x2F;www.google.com:80 - 80 포트를 명시했다. 잘 접속된다.</span><br><span class="line">http:&#x2F;&#x2F;www.google.com:81 - 81 포트를 명시했다. 목적이 다른 포트이므로 접속이 안 된다.</span><br><span class="line"></span><br><span class="line">https 프로토콜</span><br><span class="line">https:&#x2F;&#x2F;www.google.com - https 프로토콜. 잘 접속된다.</span><br><span class="line">https:&#x2F;&#x2F;www.google.com:443 - 443 포트를 명시했다. 잘 접속된다.</span><br><span class="line">https:&#x2F;&#x2F;www.google.com:444 - 444 포트를 명시했다. 목적이 다른 포트이므로 접속이 안 된다.</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="port란"><a href="#port란" class="headerlink" title="port란"></a>port란</h2><p>포트(port)는 “논리적인 접속장소”이며, 특히 인터넷 프로토콜인 TCP/IP를 사용할 때에는<br>클라이언트 프로그램이 네트워크 상의 특정 서버 프로그램을 지정하는 방법으로 사용된다.</p><p>네트워크 상에서 통신을 할 때 IP를 토대로 해당 서버가 있는 컴퓨터에 접근한다.</p><p>그런데 대부분의 경우 하나의 컴퓨터에는 여러 개의 서버가 실행될 수 있다.</p><p>컴퓨터에 여러 개의 서버가 실행되고 있다면, 어느 서버에 접속해야 하는지 컴퓨터에게 알려주어야 한다.</p><p>이때 사용되는 것이 포트 번호이다.</p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://johngrib.github.io/wiki/why-http-80-https-443/">https://johngrib.github.io/wiki/why-http-80-https-443/</a></li><li><a href="https://study-recording.tistory.com/13">https://study-recording.tistory.com/13</a></li></ul>]]></content:encoded>
       
       
-      <category domain="https://sowon-dev.github.io/categories/Lectures-Seminars/">Lectures &amp; Seminars</category>
+      <category domain="https://sowon-dev.github.io/categories/Network/">Network</category>
       
       
-      <category domain="https://sowon-dev.github.io/tags/Review/">Review</category>
+      <category domain="https://sowon-dev.github.io/tags/port/">port</category>
       
       
       <comments>https://sowon-dev.github.io/2020/12/30/201231portdiff/#disqus_thread</comments>
