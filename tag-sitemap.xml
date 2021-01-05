@@ -3,29 +3,29 @@
 
 
     <url>
-        <loc>https://sowon-dev.github.io/tags/port/</loc>
-        <lastmod>2021-01-04T01:27:00.986Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/Tomcat/</loc>
-        <lastmod>2020-12-31T04:31:36.391Z</lastmod>
+        <loc>https://sowon-dev.github.io/tags/Oracle/</loc>
+        <lastmod>2021-01-05T14:30:16.045Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/tags/TIL/</loc>
-        <lastmod>2020-12-31T04:31:36.391Z</lastmod>
+        <lastmod>2021-01-05T14:30:16.045Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/tags/Oracle/</loc>
-        <lastmod>2020-12-29T04:35:48.884Z</lastmod>
+        <loc>https://sowon-dev.github.io/tags/Tomcat/</loc>
+        <lastmod>2021-01-05T14:29:56.029Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/port/</loc>
+        <lastmod>2021-01-04T01:27:00.986Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
