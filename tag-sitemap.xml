@@ -3,8 +3,22 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/Leetcode/</loc>
+        <lastmod>2021-01-10T07:46:29.345Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/ITWILL-JAVA/</loc>
+        <lastmod>2021-01-10T07:13:11.858Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/TIL/</loc>
-        <lastmod>2021-01-06T14:48:32.354Z</lastmod>
+        <lastmod>2021-01-10T07:13:11.858Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -73,13 +87,6 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/tags/ITWILL-JAVA/</loc>
-        <lastmod>2020-12-24T06:37:59.600Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/tags/Review/</loc>
         <lastmod>2020-12-11T14:25:37.399Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -103,13 +110,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/%25EC%2583%259D%25ED%2599%259C%25EC%25BD%2594%25EB%2594%25A9/</loc>
         <lastmod>2020-12-07T05:09:56.339Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/Leetcode/</loc>
-        <lastmod>2020-12-07T04:04:44.008Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
