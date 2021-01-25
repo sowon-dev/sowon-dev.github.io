@@ -9,8 +9,33 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sat, 23 Jan 2021 12:23:40 GMT</pubDate>
+    <pubDate>Mon, 25 Jan 2021 01:38:17 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[오류일지]Error creating bean with name 에러 해결</title>
+      <link>https://sowon-dev.github.io/2021/01/24/210425lombokerror/</link>
+      <guid>https://sowon-dev.github.io/2021/01/24/210425lombokerror/</guid>
+      <pubDate>Sun, 24 Jan 2021 16:16:02 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;Error-creating-bean-with-name-“SiteMenuContentServiceImpl”&quot;&gt;&lt;a href=&quot;#Error-creating-bean-with-name-“SiteMenuContentServiceImpl”&quot; class=&quot;headerlink&quot; title=&quot;Error creating bean with name “SiteMenuContentServiceImpl”&quot;&gt;&lt;/a&gt;Error creating bean with name “SiteMenuContentServiceImpl”&lt;/h2&gt;&lt;p&gt;프로젝트를 세팅하는 중에 &lt;code&gt;Error creating bean with name &amp;quot;SiteMenuContentServiceImpl&amp;quot;&lt;/code&gt;에러를 만났다.&lt;br&gt;ServiceImpl.java파일의 빈 생성이 왜 안될까?&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="Error-creating-bean-with-name-“SiteMenuContentServiceImpl”"><a href="#Error-creating-bean-with-name-“SiteMenuContentServiceImpl”" class="headerlink" title="Error creating bean with name “SiteMenuContentServiceImpl”"></a>Error creating bean with name “SiteMenuContentServiceImpl”</h2><p>프로젝트를 세팅하는 중에 <code>Error creating bean with name &quot;SiteMenuContentServiceImpl&quot;</code>에러를 만났다.<br>ServiceImpl.java파일의 빈 생성이 왜 안될까?</p><a id="more"></a><p><br><br><br></p><h2 id="원인-찾기"><a href="#원인-찾기" class="headerlink" title="원인 찾기"></a>원인 찾기</h2><ol><li><code>SiteMenuContentServiceImpl.java</code> 파일로 이동한다.<br>파일을 열어보니 lombok이 제대로 연결되어있지 않은채 빨간줄이 나타나있었다.<br>나의 경우 lombok에러였고 대게 servlet-context.xml에 오류가 있는 경우 발생하는 에러이므로 <a href="https://needneo.tistory.com/10">servlet-context.xml에서 컴포넌트 추가를 통해 해결가능하다.</a></li></ol><p><br><br><br></p><h2 id="해결순서"><a href="#해결순서" class="headerlink" title="해결순서"></a>해결순서</h2><h2 id="1-pom-xml에-lombok이-추가-되어-있는지-확인"><a href="#1-pom-xml에-lombok이-추가-되어-있는지-확인" class="headerlink" title="1. pom.xml에 lombok이 추가 되어 있는지 확인"></a>1. <code>pom.xml</code>에 lombok이 추가 되어 있는지 확인</h2><p>나의 경우 잘 추가되어있었다.</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.projectlombok<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>lombok<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">version</span>&gt;</span>1.18.6<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">scope</span>&gt;</span>provided<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure><h2 id="2-lombok-jar-설치"><a href="#2-lombok-jar-설치" class="headerlink" title="2. lombok.jar 설치"></a>2. lombok.jar 설치</h2><ul><li><a href="https://projectlombok.org/download">projectlombok 사이트</a>에서 lombok을 다운로드해준 뒤 사용하는 IDE(이클립스, STS등등)경로를 지정하여 INSTALL을 해준다.</li><li><a href="https://blog.naver.com/10hsb04/221659315804">이미 다운로드 되어있는 lombok 위치 찾고 설치하는 방법</a></li></ul><p>나의 경우 이미 다운로드 되어있었다.</p><h2 id="3-eclipse-ini파일에-lombok을-추가해준다"><a href="#3-eclipse-ini파일에-lombok을-추가해준다" class="headerlink" title="3. eclipse.ini파일에 lombok을 추가해준다."></a>3. <code>eclipse.ini</code>파일에 lombok을 추가해준다.</h2><ul><li><code>eclipse.ini</code>파일의 위치는 이클립스 설치한 폴더 안에 있다. 예시 : <code>C:\Users\eclipse-jee-2020-06-R-win32-x86_64\eclipse</code></li><li><code>eclipse.ini</code>에 아래 두 줄을 추가해준다</li></ul><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-javaagent:lombok.jar</span><br><span class="line">-Xbootclasspath/a:lombok.jar</span><br></pre></td></tr></table></figure><h2 id="4-IDE-이클립스-STS등-을-재시작한다"><a href="#4-IDE-이클립스-STS등-을-재시작한다" class="headerlink" title="4. IDE(이클립스, STS등)을 재시작한다."></a>4. IDE(이클립스, STS등)을 재시작한다.</h2><h2 id="5-다시-어노테이션-쓰기"><a href="#5-다시-어노테이션-쓰기" class="headerlink" title="5. 다시 어노테이션 쓰기."></a>5. 다시 어노테이션 쓰기.</h2><p>4단계까지 했는데도 오류가 발생한다면 <code>@Data</code>, <code>@Getter</code>, <code>@Setter</code>등의 어노테이션을 지웠다가 다시 적어본다.</p><p>이렇게 나는 문제를 해결했다!</p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Eclipse/">Eclipse</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%A5%98%EC%9D%BC%EC%A7%80/">오류일지</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2021/01/24/210425lombokerror/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>웹접근성</title>
@@ -91,7 +116,7 @@
       
       
       
-      <content:encoded><![CDATA[<h2 id="slick-slider-라이브러리"><a href="#slick-slider-라이브러리" class="headerlink" title="slick slider 라이브러리"></a><a href="http://kenwheeler.github.io/slick/">slick slider 라이브러리</a></h2><p>슬라이드배너기능을 구현하기위해 슬릭 라이브러리를 사용했다.<br>slick slider는 jQuery 기반으로 만들어진 라이브러리이다. 따라서 jQuery가 필요하다.<br>슬라이더 라이브러리는 다양하지만 슬릭 슬라이더 라이브러리의 홈페이지가 가장 친절하다.</p><a id="more"></a><p>라이브러리를 사용하기 위해서 스크립트와 css를 연결해줘야한다.<br>홈페이지에서 <code>Downliad Now</code>를 통해서 ZIP파일로 다운로드한 뒤 프로젝트에 넣어도 좋고 아래 jsDelivr CDN를 이용해도 좋다.<br>아래 코드를 프로젝트에 붙여넣기만 하면 바로 사용가능하다.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">CSS</span><br><span class="line"></span><br><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> type=<span class="string">"text/css"</span> href=<span class="string">"//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"</span>/&gt;</span><br><span class="line"></span><br><span class="line">JS</span><br><span class="line"></span><br><span class="line">&lt;script type=<span class="string">"text/javascript"</span> src=<span class="string">"//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"</span>&gt;&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="문제상황"><a href="#문제상황" class="headerlink" title="문제상황"></a>문제상황</h2><p>CSS와 JS headerSet에 적용시켰으나 slick.css가 제대로 적용되지않았다.<br>슬릭의 클래스명이 자동으로 적용되어야한다.</p><ul><li>적용되지 않은 모습<br><img src="/img/210115slickBad.PNG" alt="정상작동되지 않는 모습"></li></ul><p><br><br><br></p><h2 id="해결방법"><a href="#해결방법" class="headerlink" title="해결방법"></a>해결방법</h2><p>CS는 우선순위가 있다. 이 순서는 외워야한다.</p><blockquote><ol><li>기본적으로 뒤에 나오는 css가 우선순위가 높습니다. </li><li>!important &gt; inline style attribute &gt; id &gt; class, 다른 attribute, 수도클래스(:first-child같은 것) &gt; tag element, 수도엘레먼트(::before같은 것) 순으로 우선순위가 높습니다.</li><li>우선순위가 같다면 개수가 많은 css가 우선순위가 높습니다.<br>출처 : <a href="https://www.zerocho.com/category/CSS/post/588cb95ca63e64132496a5d5">ZeroCho 블로그</a></li></ol></blockquote><ul><li>잘 적용된 모습<br><img src="/img/210115slickGood.PNG" alt="정상작동"></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="slick-slider-라이브러리"><a href="#slick-slider-라이브러리" class="headerlink" title="slick slider 라이브러리"></a><a href="http://kenwheeler.github.io/slick/">slick slider 라이브러리</a></h2><p>슬라이드배너기능을 구현하기위해 슬릭 라이브러리를 사용했다.<br>slick slider는 jQuery 기반으로 만들어진 라이브러리이다. 따라서 jQuery가 필요하다.<br>슬라이더 라이브러리는 다양하지만 슬릭 슬라이더 라이브러리의 홈페이지가 가장 친절하다.</p><a id="more"></a><p>라이브러리를 사용하기 위해서 스크립트와 css를 연결해줘야한다.<br>홈페이지에서 <code>Downliad Now</code>를 통해서 ZIP파일로 다운로드한 뒤 프로젝트에 넣어도 좋고 아래 jsDelivr CDN를 이용해도 좋다.<br>아래 코드를 프로젝트에 붙여넣기만 하면 바로 사용가능하다.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">CSS</span><br><span class="line"></span><br><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> type=<span class="string">"text/css"</span> href=<span class="string">"//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"</span>/&gt;</span><br><span class="line"></span><br><span class="line">JS</span><br><span class="line"></span><br><span class="line">&lt;script type=<span class="string">"text/javascript"</span> src=<span class="string">"//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"</span>&gt;&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="문제상황"><a href="#문제상황" class="headerlink" title="문제상황"></a>문제상황</h2><p>CSS와 JS headerSet에 적용시켰으나 slick.css가 제대로 적용되지않았다.<br>슬릭의 클래스명이 자동으로 적용되어야한다.</p><ul><li>적용되지 않은 모습<br><img src="/img/210115slickBad.PNG" alt="정상작동되지 않는 모습"></li></ul><p><br><br><br></p><h2 id="해결방법"><a href="#해결방법" class="headerlink" title="해결방법"></a>해결방법</h2><p>CSS는 우선순위가 있다. 이 순서는 외워야한다.</p><blockquote><ol><li>기본적으로 뒤에 나오는 css가 우선순위가 높습니다. </li><li>!important &gt; inline style attribute &gt; id &gt; class, 다른 attribute, 수도클래스(:first-child같은 것) &gt; tag element, 수도엘레먼트(::before같은 것) 순으로 우선순위가 높습니다.</li><li>우선순위가 같다면 개수가 많은 css가 우선순위가 높습니다.<br>출처 : <a href="https://www.zerocho.com/category/CSS/post/588cb95ca63e64132496a5d5">ZeroCho 블로그</a></li></ol></blockquote><ul><li>잘 적용된 모습<br><img src="/img/210115slickGood.PNG" alt="정상작동"></li></ul>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
@@ -492,34 +517,6 @@
       
       
       <comments>https://sowon-dev.github.io/2020/12/03/201204LibraryVSFramework/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>기획시 유용한 사이트 모음</title>
-      <link>https://sowon-dev.github.io/2020/12/03/freeToolListForPM/</link>
-      <guid>https://sowon-dev.github.io/2020/12/03/freeToolListForPM/</guid>
-      <pubDate>Thu, 03 Dec 2020 22:30:25 GMT</pubDate>
-      
-      <description>&lt;h2 id=&quot;서비스-기획-및-협업툴&quot;&gt;&lt;a href=&quot;#서비스-기획-및-협업툴&quot; class=&quot;headerlink&quot; title=&quot;서비스 기획 및 협업툴&quot;&gt;&lt;/a&gt;서비스 기획 및 협업툴&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://sowon-dev.github.io/2020/08/26/200826girlsInTech/#🍀-프로젝트-협업도구&quot;&gt;Azure DevOps&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://trello.com/&quot;&gt;http://trello.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.notion.so/&quot;&gt;https://www.notion.so/&lt;/a&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="서비스-기획-및-협업툴"><a href="#서비스-기획-및-협업툴" class="headerlink" title="서비스 기획 및 협업툴"></a>서비스 기획 및 협업툴</h2><ul><li><a href="https://sowon-dev.github.io/2020/08/26/200826girlsInTech/#🍀-프로젝트-협업도구">Azure DevOps</a></li><li><a href="http://trello.com/">http://trello.com/</a></li><li><a href="https://www.notion.so/">https://www.notion.so/</a><a id="more"></a></li></ul><p><br><br><br></p><h2 id="기타-무료-이북"><a href="#기타-무료-이북" class="headerlink" title="기타 : 무료 이북"></a>기타 : 무료 이북</h2><ul><li><a href="https://wikidocs.net/">WikiDocs</a></li><li><a href="https://wikidocs.net/book/550">예제로 배우는 ORACLE 11g 온라인 책</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/Journal/">Journal</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/List/">List</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2020/12/03/freeToolListForPM/#disqus_thread</comments>
       
     </item>
     

@@ -8,22 +8,22 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/categories/Algorithm/</loc>
-        <lastmod>2021-01-24T04:06:55.241Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/categories/Journal/</loc>
-        <lastmod>2021-01-23T12:23:40.126Z</lastmod>
+        <lastmod>2021-01-25T01:38:17.081Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/categories/JavaScript/</loc>
-        <lastmod>2021-01-15T02:35:30.573Z</lastmod>
+        <lastmod>2021-01-25T01:16:20.688Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Algorithm/</loc>
+        <lastmod>2021-01-24T04:06:55.241Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
