@@ -4,14 +4,21 @@
 
     <url>
         <loc>https://sowon-dev.github.io/tags/%25EC%2598%25A4%25EB%25A5%2598%25EC%259D%25BC%25EC%25A7%2580/</loc>
-        <lastmod>2021-01-25T10:13:34.076Z</lastmod>
+        <lastmod>2021-01-25T12:58:18.621Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/SVN/</loc>
+        <lastmod>2021-01-25T12:58:18.621Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/tags/Eclipse/</loc>
-        <lastmod>2021-01-25T10:13:34.076Z</lastmod>
+        <lastmod>2021-01-25T12:58:18.621Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -75,13 +82,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/port/</loc>
         <lastmod>2021-01-04T01:27:00.986Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/SVN/</loc>
-        <lastmod>2020-12-28T03:23:43.935Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

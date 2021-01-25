@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2021/01/25/210125findSVNpw/</loc>
+        <lastmod>2021-01-25T12:58:18.621Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2021/01/25/210125fileDownloadError/</loc>
-        <lastmod>2021-01-25T10:13:34.076Z</lastmod>
+        <lastmod>2021-01-25T12:37:00.839Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +25,7 @@
 
     <url>
         <loc>https://sowon-dev.github.io/2021/01/24/210125lombokerror/</loc>
-        <lastmod>2021-01-25T01:38:17.081Z</lastmod>
+        <lastmod>2021-01-25T12:35:51.021Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
