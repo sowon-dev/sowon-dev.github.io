@@ -9,13 +9,39 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 25 Jan 2021 01:38:17 GMT</pubDate>
+    <pubDate>Mon, 25 Jan 2021 10:13:34 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
+      <title>[오류일지]PatternSyntaxException 오류 해결</title>
+      <link>https://sowon-dev.github.io/2021/01/25/210125fileDownloadError/</link>
+      <guid>https://sowon-dev.github.io/2021/01/25/210125fileDownloadError/</guid>
+      <pubDate>Mon, 25 Jan 2021 00:51:04 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;문제상황&quot;&gt;&lt;a href=&quot;#문제상황&quot; class=&quot;headerlink&quot; title=&quot;문제상황&quot;&gt;&lt;/a&gt;문제상황&lt;/h2&gt;&lt;p&gt;파일 다운로드 클릭시 아래와 같은 콘솔에러가 발생했다.&lt;/p&gt;
+&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;java.util.regex.PatternSyntaxException: Unexpected internal error near index 1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="문제상황"><a href="#문제상황" class="headerlink" title="문제상황"></a>문제상황</h2><p>파일 다운로드 클릭시 아래와 같은 콘솔에러가 발생했다.</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">java.util.regex.PatternSyntaxException: Unexpected internal error near index 1</span><br><span class="line">\</span><br></pre></td></tr></table></figure><a id="more"></a><p><br><br><br></p><h2 id="해결순서"><a href="#해결순서" class="headerlink" title="해결순서"></a>해결순서</h2><ol><li>파일을 업로드한 위치에 파일이 있는지 확인하기<br>나는 아래의 파일에 다운로드 할 파일 원본이 있는지 확인해본다.</li></ol><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D:\\workspace\\프로젝트명\\webapp\\upload</span><br></pre></td></tr></table></figure><ol start="2"><li><code>FileController.java</code>로 가서 해당 Mapping부분을 확인하기<br>아래 Mapping 부분을 체크해본다</li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping</span>(value = <span class="string">"/downloadn"</span>, method = RequestMethod.GET)</span><br><span class="line"><span class="meta">@AuthMapping</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">downloadDo</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ol start="3"><li>코드수정하기<br>문자열을 다루는 메서드를 사용할 때는 <code>\</code>를 주의해야한다.<br>plit의 인자로 들어가는 String 토큰이 regex 정규식이기 때문에 이스케이프 문자를 사용해야한다.</li></ol><ul><li><code>\</code>이라면 <code>\\</code>로 사용해야한다.<br>자세한 내용은 <a href="https://mytory.net/archives/285">여기 split 메서드 사용시 실수하기 쉬운 것</a>를 참고하자.</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//수정전</span></span><br><span class="line"><span class="keyword">if</span>(savename != <span class="keyword">null</span> &amp;&amp; !<span class="string">""</span>.equals(savename)) &#123;</span><br><span class="line">savename = savename.replaceAll(<span class="string">"/"</span>, <span class="string">""</span>);</span><br><span class="line">savename = savename.replaceAll(<span class="string">"\\"</span>, <span class="string">""</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span>(realname != <span class="keyword">null</span> &amp;&amp; !<span class="string">""</span>.equals(realname)) &#123;</span><br><span class="line">realname = realname.replaceAll(<span class="string">"/"</span>, <span class="string">""</span>);</span><br><span class="line">realname = realname.replaceAll(<span class="string">"\\"</span>, <span class="string">""</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//수정후</span></span><br><span class="line"><span class="keyword">if</span>(savename != <span class="keyword">null</span> &amp;&amp; !<span class="string">""</span>.equals(savename)) &#123;</span><br><span class="line">savename = savename.replaceAll(<span class="string">"/"</span>, <span class="string">""</span>);</span><br><span class="line">savename = savename.replaceAll(<span class="string">"\\\\"</span>, <span class="string">"\\"</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span>(realname != <span class="keyword">null</span> &amp;&amp; !<span class="string">""</span>.equals(realname)) &#123;</span><br><span class="line">realname = realname.replaceAll(<span class="string">"/"</span>, <span class="string">""</span>);</span><br><span class="line">realname = realname.replaceAll(<span class="string">"\\\\"</span>, <span class="string">"\\"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ol start="3"><li>위 방법으로 해결안된다면 파일 경로 자체의 문제일 수 있다.<br><code>local.properties</code>에서 <code>file.base.path</code>를 확인해본다.<br>파일이 저장된 곳이랑 일치하는 지 확인한다.<br>나의 경우 달랐기때문에 1번의 경로와 일치시켜주었다.</li></ol><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">file.base.path=D:\\workspace\\프로젝트명\\webapp\\upload</span><br></pre></td></tr></table></figure><p>해결!</p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Eclipse/">Eclipse</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%A5%98%EC%9D%BC%EC%A7%80/">오류일지</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2021/01/25/210125fileDownloadError/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>[오류일지]Error creating bean with name 에러 해결</title>
-      <link>https://sowon-dev.github.io/2021/01/24/210425lombokerror/</link>
-      <guid>https://sowon-dev.github.io/2021/01/24/210425lombokerror/</guid>
+      <link>https://sowon-dev.github.io/2021/01/24/210125lombokerror/</link>
+      <guid>https://sowon-dev.github.io/2021/01/24/210125lombokerror/</guid>
       <pubDate>Sun, 24 Jan 2021 16:16:02 GMT</pubDate>
       
       <description>&lt;h2 id=&quot;Error-creating-bean-with-name-“SiteMenuContentServiceImpl”&quot;&gt;&lt;a href=&quot;#Error-creating-bean-with-name-“SiteMenuContentServiceImpl”&quot; class=&quot;headerlink&quot; title=&quot;Error creating bean with name “SiteMenuContentServiceImpl”&quot;&gt;&lt;/a&gt;Error creating bean with name “SiteMenuContentServiceImpl”&lt;/h2&gt;&lt;p&gt;프로젝트를 세팅하는 중에 &lt;code&gt;Error creating bean with name &amp;quot;SiteMenuContentServiceImpl&amp;quot;&lt;/code&gt;에러를 만났다.&lt;br&gt;ServiceImpl.java파일의 빈 생성이 왜 안될까?&lt;/p&gt;</description>
@@ -33,7 +59,7 @@
       <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%A5%98%EC%9D%BC%EC%A7%80/">오류일지</category>
       
       
-      <comments>https://sowon-dev.github.io/2021/01/24/210425lombokerror/#disqus_thread</comments>
+      <comments>https://sowon-dev.github.io/2021/01/24/210125lombokerror/#disqus_thread</comments>
       
     </item>
     
@@ -479,44 +505,6 @@
       
       
       <comments>https://sowon-dev.github.io/2020/12/04/201205devOpsandCICD/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Framework VS Library 프레임워크와 라이브러리의 차이</title>
-      <link>https://sowon-dev.github.io/2020/12/03/201204LibraryVSFramework/</link>
-      <guid>https://sowon-dev.github.io/2020/12/03/201204LibraryVSFramework/</guid>
-      <pubDate>Thu, 03 Dec 2020 23:44:14 GMT</pubDate>
-      
-      <description>&lt;h2 id=&quot;프레임워크와-라이브러리-차이점&quot;&gt;&lt;a href=&quot;#프레임워크와-라이브러리-차이점&quot; class=&quot;headerlink&quot; title=&quot;프레임워크와 라이브러리 차이점&quot;&gt;&lt;/a&gt;프레임워크와 라이브러리 차이점&lt;/h2&gt;&lt;p&gt;실행주체에 있어 차이점이 있다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;라이브러리 : &lt;strong&gt;I&lt;/strong&gt; call 라이브러리&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;내가 필요할 때마다 라이브러리를 실행시킬수있다.&lt;/li&gt;
-&lt;li&gt;내가 원하는 대로 수정이 가능하다.&lt;/li&gt;
-&lt;li&gt;비유하자면 Ikea(아이키아)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;프레임워크 : &lt;strong&gt;Framework&lt;/strong&gt; calls 내가 작성한 코드&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;프레임워크가 내가 작성할 코드를 실행시킨다.&lt;/li&gt;
-&lt;li&gt;프레임워크의 규칙을 잘 따라야지만 내 코드가 정상 작동한다.&lt;/li&gt;
-&lt;li&gt;비유하자면 모델하우스</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="프레임워크와-라이브러리-차이점"><a href="#프레임워크와-라이브러리-차이점" class="headerlink" title="프레임워크와 라이브러리 차이점"></a>프레임워크와 라이브러리 차이점</h2><p>실행주체에 있어 차이점이 있다.</p><ul><li><p>라이브러리 : <strong>I</strong> call 라이브러리</p><ul><li>내가 필요할 때마다 라이브러리를 실행시킬수있다.</li><li>내가 원하는 대로 수정이 가능하다.</li><li>비유하자면 Ikea(아이키아)</li></ul></li><li><p>프레임워크 : <strong>Framework</strong> calls 내가 작성한 코드</p><ul><li>프레임워크가 내가 작성할 코드를 실행시킨다.</li><li>프레임워크의 규칙을 잘 따라야지만 내 코드가 정상 작동한다.</li><li>비유하자면 모델하우스<a id="more"></a></li></ul></li><li><p>공통점 : 프레임워크와 라이브러리 모두 누군가가 자주 발생하는 문제들을 해결하거나  더 좋은 코드를 위해 미리 만들어 둔 코드이다. </p></li></ul><blockquote><p>In summary<br>Frameworks and libraries are both code written by someone else that helps you perform some common tasks in a less verbose way.<br>A framework inverts the control of the program. It tells the developer what they need. A library doesn’t. The programmer calls the library where and when they need it.<br>The degree of freedom a library or framework gives the developer will dictate how “opinionated” it is.<br>By <a href="https://www.freecodecamp.org/news/the-difference-between-a-framework-and-a-library-bd133054023f/">The Difference Between a Framework and a Library By freecodecamp</a></p></blockquote><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><p>라이브러리? 프레임워크? 차이점 아직도 모름? 5분 순삭. BY 노마드코더</p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/t9ccIykXTCM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li><li><p><a href="https://www.freecodecamp.org/news/the-difference-between-a-framework-and-a-library-bd133054023f/">The Difference Between a Framework and a Library By freecodecamp</a></p></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/TIL/">TIL</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/Journal/">Journal</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2020/12/03/201204LibraryVSFramework/#disqus_thread</comments>
       
     </item>
     
