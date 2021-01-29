@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2021/01/28/210129PaginationInReverseOrder/</loc>
+        <lastmod>2021-01-29T06:50:28.397Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/12/28/201229oracleSQL/</loc>
+        <lastmod>2021-01-29T04:56:59.732Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2021/01/25/210125findSVNpw/</loc>
         <lastmod>2021-01-25T13:06:51.660Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -114,14 +130,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/08/09/200810javai2/</loc>
         <lastmod>2021-01-10T07:13:11.858Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/12/28/201229oracleSQL/</loc>
-        <lastmod>2021-01-05T14:30:16.045Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
