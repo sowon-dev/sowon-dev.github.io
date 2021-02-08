@@ -3,22 +3,43 @@
 
 
     <url>
-        <loc>https://sowon-dev.github.io/tags/Facebook/</loc>
-        <lastmod>2021-02-01T03:34:10.034Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/tags/%25EC%2598%25A4%25EB%25A5%2598%25EC%259D%25BC%25EC%25A7%2580/</loc>
-        <lastmod>2021-01-29T11:57:10.655Z</lastmod>
+        <lastmod>2021-02-08T04:23:14.687Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/tags/TIL/</loc>
-        <lastmod>2021-01-29T11:57:10.655Z</lastmod>
+        <loc>https://sowon-dev.github.io/tags/Eclipse/</loc>
+        <lastmod>2021-02-05T05:21:03.188Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/Journal/</loc>
+        <lastmod>2021-02-05T05:21:03.188Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/STS/</loc>
+        <lastmod>2021-02-05T05:20:05.126Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/YouTube/</loc>
+        <lastmod>2021-02-01T08:53:46.594Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/Facebook/</loc>
+        <lastmod>2021-02-01T07:44:09.500Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -31,14 +52,14 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/tags/SVN/</loc>
-        <lastmod>2021-01-25T13:06:51.660Z</lastmod>
+        <loc>https://sowon-dev.github.io/tags/TIL/</loc>
+        <lastmod>2021-01-29T04:56:59.732Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/tags/Eclipse/</loc>
+        <loc>https://sowon-dev.github.io/tags/SVN/</loc>
         <lastmod>2021-01-25T13:06:51.660Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -95,13 +116,6 @@
 
     <url>
         <loc>https://sowon-dev.github.io/tags/IntelliJ/</loc>
-        <lastmod>2020-12-28T01:56:08.219Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/Journal/</loc>
         <lastmod>2020-12-28T01:56:08.219Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
