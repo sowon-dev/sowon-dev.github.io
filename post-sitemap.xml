@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2020/11/19/algorithmList/</loc>
+        <lastmod>2021-02-14T16:05:04.929Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2021/02/14/210214al-hackerrank-between-two-sets/</loc>
-        <lastmod>2021-02-14T16:03:14.785Z</lastmod>
+        <lastmod>2021-02-14T16:04:33.529Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -114,14 +122,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2021/01/18/210118al-l0172/</loc>
         <lastmod>2021-01-21T16:03:24.333Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/11/19/algorithmList/</loc>
-        <lastmod>2021-01-21T15:57:38.354Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
