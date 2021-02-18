@@ -4,7 +4,14 @@
 
     <url>
         <loc>https://sowon-dev.github.io/tags/Hackerrank/</loc>
-        <lastmod>2021-02-17T13:00:54.490Z</lastmod>
+        <lastmod>2021-02-18T13:36:01.101Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/List/</loc>
+        <lastmod>2021-02-18T13:29:45.965Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -12,13 +19,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/%25EC%2598%25A4%25EB%25A5%2598%25EC%259D%25BC%25EC%25A7%2580/</loc>
         <lastmod>2021-02-14T16:13:47.608Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/List/</loc>
-        <lastmod>2021-02-14T16:09:02.734Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
