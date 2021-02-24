@@ -3,22 +3,43 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/List/</loc>
+        <lastmod>2021-02-24T14:30:41.074Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/Journal/</loc>
+        <lastmod>2021-02-24T14:30:41.074Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/DataStructure/</loc>
+        <lastmod>2021-02-24T14:30:06.742Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/%25EC%2598%25A4%25EB%25A5%2598%25EC%259D%25BC%25EC%25A7%2580/</loc>
-        <lastmod>2021-02-24T05:24:13.978Z</lastmod>
+        <lastmod>2021-02-24T05:32:34.085Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/tags/SVN/</loc>
-        <lastmod>2021-02-24T05:24:13.978Z</lastmod>
+        <lastmod>2021-02-24T05:32:34.085Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/tags/Eclipse/</loc>
-        <lastmod>2021-02-24T05:24:13.978Z</lastmod>
+        <lastmod>2021-02-24T05:32:34.085Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -26,20 +47,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/Hackerrank/</loc>
         <lastmod>2021-02-21T03:53:15.096Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/List/</loc>
-        <lastmod>2021-02-21T03:47:23.216Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/Journal/</loc>
-        <lastmod>2021-02-05T05:21:03.188Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -138,13 +145,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/HTML-CSS/</loc>
         <lastmod>2020-12-10T15:31:40.470Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/DataStructure/</loc>
-        <lastmod>2020-12-07T05:09:56.339Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
