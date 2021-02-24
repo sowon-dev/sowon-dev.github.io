@@ -40,6 +40,33 @@
     </item>
     
     <item>
+      <title>SVN lock 해제하기, commit시 already lock 충돌 해결하기</title>
+      <link>https://sowon-dev.github.io/2021/02/23/210224svn-unlock/</link>
+      <guid>https://sowon-dev.github.io/2021/02/23/210224svn-unlock/</guid>
+      <pubDate>Tue, 23 Feb 2021 19:43:32 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;문제상황&quot;&gt;&lt;a href=&quot;#문제상황&quot; class=&quot;headerlink&quot; title=&quot;문제상황&quot;&gt;&lt;/a&gt;문제상황&lt;/h2&gt;&lt;p&gt;commit을 치는데 계속 svn 충돌문제가 발생했다. console을 확인해보니 already lock이라는 에러메세지가 보였다. 이로 인해 commit도 update도 되지 않았다.&lt;br&gt;문제 발생 원인을 생각해보니 최근 소스파일을 수정하고 commit 명령어를 날렸는데 그 사이 svn서버가 재시작하게된 일이있었다.&lt;br&gt;이때문에 commit은 svn서버에 정상반영되었으나 내 로컬에는 해당 commit이 반영되지않는 이상한 일있었다. svn의 모든 기능이 잠겨버리는 바람에 해결해야만했다.&lt;br&gt;해결하고보니 간단한 문제였다. 미리 겁먹지말자!&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="문제상황"><a href="#문제상황" class="headerlink" title="문제상황"></a>문제상황</h2><p>commit을 치는데 계속 svn 충돌문제가 발생했다. console을 확인해보니 already lock이라는 에러메세지가 보였다. 이로 인해 commit도 update도 되지 않았다.<br>문제 발생 원인을 생각해보니 최근 소스파일을 수정하고 commit 명령어를 날렸는데 그 사이 svn서버가 재시작하게된 일이있었다.<br>이때문에 commit은 svn서버에 정상반영되었으나 내 로컬에는 해당 commit이 반영되지않는 이상한 일있었다. svn의 모든 기능이 잠겨버리는 바람에 해결해야만했다.<br>해결하고보니 간단한 문제였다. 미리 겁먹지말자!</p><a id="more"></a><p><a href="http://svnbook.red-bean.com/en/1.8/svn.advanced.locking.html">SVN official doc</a>에는 Harry and Sally의 예시를 통해 어떤 경우에 LOCK이 발생하는 지 설명해놓았다.<br>다양한 상황에 따라 LOCK발생하지만 딱 한마디로 요약해보자면 clashing commits(커밋충돌)을 방지하기 위해서이다.</p><p><br><br><br></p><h2 id="해결방법"><a href="#해결방법" class="headerlink" title="해결방법"></a>해결방법</h2><ol><li><p><a href="https://sqlitebrowser.org/">sqlite browser사이트에서 DB Browser for SQLite를</a> 자신의 상황에 맞게다운로드한다.<br>나는 윈도우 64비트를 사용중이므로 가장 최신 버전중에 설치가 필요없는 파일을 다운로드했다.<br><img src="/img/210224svn-unlock.PNG" alt="no installer 다운"></p></li><li><p><code>DB Browser for SQLite.exe</code> 실행<br>설치된 파일안의 DB Browser for SQLite.exe 파일을 실행한다.</p></li><li><p><code>데이터베이스 열기</code>를 클릭</p></li><li><p>사용중인 프로젝트안의 <code>wc.db</code> 파일 열기<br>나의 경우 D:\workspace\프로젝트명.svn 안의 wc.db 파일을 열었다.</p></li><li><p>SQL실행 탭에서 unlock명령어 실행<br>lock이 생성된 경우 데이터보기 탭에서 WC_LOCK 테이블과 WORK_QUEUE테이블에 데이터가 존재하는 것을 확인할 수 있다.<br>svn에 이상이 없는경우 두 테이블에 데이터가 존재하지 않는다.</p></li></ol><p>두 테이블에 데이터가 존재하는 경우 SQL실행탭을 클릭하여 아래와 같이 명령어를 실행한다.</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> WC_LOCK</span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> WORK_QUEUE;</span><br></pre></td></tr></table></figure><p>이제 이클립스로 돌아가서 commit이나 update를 하면 svn이 정상적으로 작동된다.<br>해결!</p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Version-control/">Version control</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Eclipse/">Eclipse</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/SVN/">SVN</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%A5%98%EC%9D%BC%EC%A7%80/">오류일지</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2021/02/23/210224svn-unlock/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>[자바JAVA]Sherlock and Squares 해커랭크</title>
       <link>https://sowon-dev.github.io/2021/02/18/210218al-hakkerrank-Sherlock-and-Squares/</link>
       <guid>https://sowon-dev.github.io/2021/02/18/210218al-hakkerrank-Sherlock-and-Squares/</guid>
@@ -476,33 +503,6 @@
       
       
       <comments>https://sowon-dev.github.io/2020/12/29/201230taskkillerror/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Oracle SQL</title>
-      <link>https://sowon-dev.github.io/2020/12/28/201229oracleSQL/</link>
-      <guid>https://sowon-dev.github.io/2020/12/28/201229oracleSQL/</guid>
-      <pubDate>Mon, 28 Dec 2020 15:26:15 GMT</pubDate>
-      
-      <description>&lt;h2 id=&quot;주석&quot;&gt;&lt;a href=&quot;#주석&quot; class=&quot;headerlink&quot; title=&quot;주석&quot;&gt;&lt;/a&gt;주석&lt;/h2&gt;&lt;p&gt;두 가지 방법이 있다.&lt;br&gt;쿼리 마지막라인에 &lt;code&gt;--주석문&lt;/code&gt;을 사용하면 그 뒤의 내부적으로 추가되는 sql구문에 주석이 인식되어질 수 있어 에러가 발생할 수 있다.&lt;br&gt;따라서 &lt;code&gt;--주석문&lt;/code&gt;보다 &lt;code&gt;/* 주석문 */&lt;/code&gt;을 사용하는 습관을 들이는 것이 좋다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="주석"><a href="#주석" class="headerlink" title="주석"></a>주석</h2><p>두 가지 방법이 있다.<br>쿼리 마지막라인에 <code>--주석문</code>을 사용하면 그 뒤의 내부적으로 추가되는 sql구문에 주석이 인식되어질 수 있어 에러가 발생할 수 있다.<br>따라서 <code>--주석문</code>보다 <code>/* 주석문 */</code>을 사용하는 습관을 들이는 것이 좋다.</p><a id="more"></a><ul><li><code>--주석문</code> : 한 줄 주석처리</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">insert into test(</span><br><span class="line">ppl_name, -- 사원이름</span><br><span class="line">ppl_dept -- 사원부서</span><br><span class="line">) values (</span><br><span class="line">#&#123;name&#125;,</span><br><span class="line">#&#123;dept&#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure><ul><li><code>/* 주석문 */</code> : 범위를 주석처리</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select member from dual</span><br><span class="line">union all &#x2F;* member테이블과 dept테이블을 합침*&#x2F;</span><br><span class="line">select dept from dual</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="쌍-파이프"><a href="#쌍-파이프" class="headerlink" title="||(쌍 파이프)"></a>||(쌍 파이프)</h2><p>문자열이나 컬럼을 합쳐주는 역할을 한다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 예시</span><br><span class="line">select rpad(&#39;010-&#39;, 8, &#39;*&#39;),  lpad(&#39;1234&#39;, 5, &#39;-&#39;) from dual;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 출력값</span><br><span class="line">rpad : 010-****</span><br><span class="line">lpad : -1234</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 콤마대신 ||(쌍파이프 사용)</span><br><span class="line">select rpad(&#39;010-&#39;, 8, &#39;*&#39;) || &#39;(개인정보보호)&#39; || lpad(&#39;1234&#39;, 5, &#39;-&#39;) from dual;</span><br><span class="line">010-****(개인정보보호)-1234</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="UNION"><a href="#UNION" class="headerlink" title="UNION"></a>UNION</h2><p><img src="https://cdn.sqlservertutorial.net/wp-content/uploads/SQL-Server-UNION-vs-JOIN.png" alt="UNION과 INNER JOIN차이"></p><p>위의 사진에서 왼쪽테이블을 table1, 오른쪽테이블은 table2라고 해보자.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;union</span><br><span class="line">select * from table1</span><br><span class="line">union</span><br><span class="line">select * from table2</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;출력값</span><br><span class="line">id컬럼안에 1,2,3,4</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;union all</span><br><span class="line">select * from table1</span><br><span class="line">union all</span><br><span class="line">select * from table2</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;출력값</span><br><span class="line">id컬럼안에 1,2,3,2,3,4</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="CASE-WHEN-THEN-ELSE-END"><a href="#CASE-WHEN-THEN-ELSE-END" class="headerlink" title="CASE WHEN THEN ELSE END"></a>CASE WHEN THEN ELSE END</h2><p>JAVA에서 IF ELSE구문같은 역할을 한다.</p><ul><li>규칙<ol><li>CASE문은 반드시 END로 끝나야한다.</li><li>ELSE 뒷 부분에 NULL이 와선 안된다.</li></ol></li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">case when x &#x3D; y then a else b end</span><br><span class="line">: 조건 x &#x3D; y 가 true 일 경우 a 이고 그렇지 않으면 b</span><br><span class="line"></span><br><span class="line">case when x &lt; y then a when x &#x3D; y then b else c end</span><br><span class="line">: 조건 x&lt;y가 true 일 경우 a 로, 조건 x &#x3D; y 일 경우엔 b 로 그렇지 않으면 c 로 변경</span><br><span class="line"></span><br><span class="line">case XYZ when &#39;foo&#39; then &#39;moo&#39; else &#39;bar&#39; end</span><br><span class="line">:  XYZ 가 foo일 경우  moo로 변경,  그렇지 않으면  bar로 변경</span><br><span class="line"></span><br><span class="line">출처: https:&#x2F;&#x2F;joke00.tistory.com&#x2F;103 [Smile virus]</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://mazekb.tistory.com/424">https://mazekb.tistory.com/424</a></li><li><a href="https://sesok808.tistory.com/510">https://sesok808.tistory.com/510</a></li><li><a href="https://www.sqlservertutorial.net/sql-server-basics/sql-server-union/">https://www.sqlservertutorial.net/sql-server-basics/sql-server-union/</a></li><li><a href="https://joke00.tistory.com/103">https://joke00.tistory.com/103</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/Oracle/">Oracle</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/TIL/">TIL</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/Oracle/">Oracle</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2020/12/28/201229oracleSQL/#disqus_thread</comments>
       
     </item>
     
