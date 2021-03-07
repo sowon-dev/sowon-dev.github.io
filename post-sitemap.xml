@@ -9,7 +9,15 @@
 
     <url>
         <loc>https://sowon-dev.github.io/2021/12/29/algorithmList/</loc>
-        <lastmod>2021-03-07T14:09:48.278Z</lastmod>
+        <lastmod>2021-03-07T14:43:28.445Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2021/03/07/210307al-hackkerrank-bigsorting/</loc>
+        <lastmod>2021-03-07T14:40:01.589Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
