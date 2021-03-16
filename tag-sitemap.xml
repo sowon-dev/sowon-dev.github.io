@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/Review/</loc>
+        <lastmod>2021-03-16T13:29:02.505Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/STS/</loc>
         <lastmod>2021-03-15T03:20:47.438Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -138,13 +145,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/IntelliJ/</loc>
         <lastmod>2020-12-28T01:56:08.219Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/Review/</loc>
-        <lastmod>2020-12-11T14:25:37.399Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
