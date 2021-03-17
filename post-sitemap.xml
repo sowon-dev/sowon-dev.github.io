@@ -9,7 +9,15 @@
 
     <url>
         <loc>https://sowon-dev.github.io/2021/03/16/210317pythonRegularExpression/</loc>
-        <lastmod>2021-03-17T13:46:02.655Z</lastmod>
+        <lastmod>2021-03-17T13:58:04.080Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2021/03/15/210316woowatechATDD/</loc>
+        <lastmod>2021-03-17T13:57:53.388Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -18,14 +26,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2019/08/30/190831/</loc>
         <lastmod>2021-03-17T13:41:15.549Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2021/03/15/210316woowatechATDD/</loc>
-        <lastmod>2021-03-16T13:53:47.551Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
