@@ -40,36 +40,10 @@
     </item>
     
     <item>
-      <title>[Hexo]헥소블로그 방문자수 조회수 간단하게 처리하기(초간단!)</title>
-      <link>https://sowon-dev.github.io/2021/03/22/210323hexo-visitcunt/</link>
-      <guid>https://sowon-dev.github.io/2021/03/22/210323hexo-visitcunt/</guid>
-      <pubDate>Mon, 22 Mar 2021 19:33:45 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;블로그를 운영하다보면 조회수가 궁금해지기마련이다.&lt;br&gt;구글서치콘솔로 조회수를 확인할 수 있지만 블로그에서 바로 확인하면 더욱 좋을 것이다. 헥소블로그는 지킬블로그보다 정보가 많이 없어서 구글링을 좀 많이 했다. 그랬더니 내가 쓰고 있는 hexo</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p>블로그를 운영하다보면 조회수가 궁금해지기마련이다.<br>구글서치콘솔로 조회수를 확인할 수 있지만 블로그에서 바로 확인하면 더욱 좋을 것이다. 헥소블로그는 지킬블로그보다 정보가 많이 없어서 구글링을 좀 많이 했다. 그랬더니 내가 쓰고 있는 hexo-icarus테마는 busuanzi플러그인을 통하여 초간단하게 조회수와 방문자수를 처리할 수 있었다.</p><ul><li>사용중인 hexo테마 : <a href="https://github.com/ppoffice/hexo-theme-icarus">icarus</a></li></ul><p><br><br><br></p><h2 id="조회수-기능-등록-방법"><a href="#조회수-기능-등록-방법" class="headerlink" title="조회수 기능 등록 방법"></a>조회수 기능 등록 방법</h2><p><a href="http://busuanzi.ibruce.info/">busuanzi</a>플러그인은 중국어지만 구글의 힘을 빌려서 사용가능하다. 간단하게 스크립트코드와 html태그를 넣어서 조회수를 처리할 수 있다.<br>하지만 내가 사용중인 hexo icarus테마는 true/false만으로도 적용이 가능하다! 세상 간편!<br>물론 커스텀하고 싶다면 <a href="http://ibruce.info/2015/04/04/busuanzi/">공식사이트</a>를 통해 원하는 대로 적용할 수 있다.</p><ol><li>프로젝트에서 <code>themes/hexo-theme-icarus/_config.yml</code> 파일을 연다.</li><li><code>busuanzi</code>를 검색하여 false를 true로 변경해준다.</li><li>끝!</li></ol><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># BuSuanZi site/page view counter</span><br><span class="line"># https://busuanzi.ibruce.info</span><br><span class="line">busuanzi: true</span><br><span class="line"># CNZZ statistics</span><br><span class="line"># https://www.umeng.com/web</span><br></pre></td></tr></table></figure><p>true로 바꿔주기만하면 블로그 footer에 전체 방문자수와 조회수가 출력될뿐아니라 각 포스팅의 조회수도 확인 가능하다!<br>초간단!</p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://blog.zhangruipeng.me/hexo-theme-icarus/Plugins/Analytics/icarus-user-guide-web-analytics-plugins/#BuSuanZi-Web-Counter">https://blog.zhangruipeng.me/hexo-theme-icarus/Plugins/Analytics/icarus-user-guide-web-analytics-plugins/#BuSuanZi-Web-Counter</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/Hexo/">Hexo</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2021/03/22/210323hexo-visitcunt/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
       <title>JDA VS JDBC</title>
       <link>https://sowon-dev.github.io/2021/03/22/210323jpaVSjdbc/</link>
       <guid>https://sowon-dev.github.io/2021/03/22/210323jpaVSjdbc/</guid>
-      <pubDate>Mon, 22 Mar 2021 19:32:35 GMT</pubDate>
+      <pubDate>Mon, 22 Mar 2021 15:00:00 GMT</pubDate>
       
       <description>&lt;p&gt;&lt;strong&gt;오늘 또 못알아듣고 말았습니다.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;회의시간만되면 신입개발자인 나는 참 바쁘다. 모르는 용어들이 쏟아지기때문에 볼펜을 놓쳐선 안된다. 회의 중 모르는 용어들은 다 적어놨다가 회의가 끝나고 혼자 구글링해보곤한다. 그럴때마다 아 그렇구나하고 뒤돌아선 까먹기 일수!&lt;br&gt;그래서 아예 포스팅을 하기로 했다. 역시 기억보단 기록이지!&lt;br&gt;TAGS는 &lt;code&gt;신입개발자실무뿌시기&lt;/code&gt;로 정해봤다.&lt;br&gt;언젠가 내가 회의를 다 알아들으며 주도하는 그 날이 올때까지 열심히 공부해야겠다.&lt;/p&gt;</description>
@@ -92,7 +66,30 @@
     </item>
     
     <item>
-      <title>[리액트] 컴포넌트 생명주기</title>
+      <title>[Hexo]헥소블로그 방문자수 조회수 간단하게 처리하기(초간단)</title>
+      <link>https://sowon-dev.github.io/2021/03/22/210323hexo-visitcunt/</link>
+      <guid>https://sowon-dev.github.io/2021/03/22/210323hexo-visitcunt/</guid>
+      <pubDate>Mon, 22 Mar 2021 15:00:00 GMT</pubDate>
+      
+      <description>&lt;p&gt;블로그를 운영하다보면 조회수가 궁금해지기마련이다.&lt;br&gt;구글서치콘솔로 조회수를 확인할 수 있지만 블로그에서 바로 확인하면 더욱 좋을 것이다. 헥소블로그는 지킬블로그보다 정보가 많이 없어서 구글링을 좀 많이 했다. 그랬더니 내가 쓰고 있는 hexo-icarus테마는 busuanzi플러그인을 통하여 초간단하게 조회수와 방문자수를 처리할 수 있었다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>블로그를 운영하다보면 조회수가 궁금해지기마련이다.<br>구글서치콘솔로 조회수를 확인할 수 있지만 블로그에서 바로 확인하면 더욱 좋을 것이다. 헥소블로그는 지킬블로그보다 정보가 많이 없어서 구글링을 좀 많이 했다. 그랬더니 내가 쓰고 있는 hexo-icarus테마는 busuanzi플러그인을 통하여 초간단하게 조회수와 방문자수를 처리할 수 있었다.</p><a id="more"></a><ul><li>사용중인 hexo테마 : <a href="https://github.com/ppoffice/hexo-theme-icarus">icarus</a></li></ul><p><br><br><br></p><h2 id="조회수-기능-등록-방법"><a href="#조회수-기능-등록-방법" class="headerlink" title="조회수 기능 등록 방법"></a>조회수 기능 등록 방법</h2><p><a href="http://busuanzi.ibruce.info/">busuanzi</a>플러그인은 중국어지만 구글의 힘을 빌려서 사용가능하다. 간단하게 스크립트코드와 html태그를 넣어서 조회수를 처리할 수 있다.<br>하지만 내가 사용중인 hexo icarus테마는 true/false만으로도 적용이 가능하다! 세상 간편!<br>물론 커스텀하고 싶다면 <a href="http://ibruce.info/2015/04/04/busuanzi/">공식사이트</a>를 통해 원하는 대로 적용할 수 있다.</p><ol><li>프로젝트에서 <code>themes/hexo-theme-icarus/_config.yml</code> 파일을 연다.</li><li><code>busuanzi</code>를 검색하여 false를 true로 변경해준다.</li><li>끝!</li></ol><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># BuSuanZi site/page view counter</span><br><span class="line"># https://busuanzi.ibruce.info</span><br><span class="line">busuanzi: true</span><br><span class="line"># CNZZ statistics</span><br><span class="line"># https://www.umeng.com/web</span><br></pre></td></tr></table></figure><p>true로 바꿔주기만하면 블로그 footer에 전체 방문자수와 조회수가 출력될뿐아니라 각 포스팅의 조회수도 확인 가능하다!<br>초간단!</p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://blog.zhangruipeng.me/hexo-theme-icarus/Plugins/Analytics/icarus-user-guide-web-analytics-plugins/#BuSuanZi-Web-Counter">https://blog.zhangruipeng.me/hexo-theme-icarus/Plugins/Analytics/icarus-user-guide-web-analytics-plugins/#BuSuanZi-Web-Counter</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Hexo/">Hexo</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2021/03/22/210323hexo-visitcunt/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>[리액트]컴포넌트 생명주기</title>
       <link>https://sowon-dev.github.io/2021/03/22/210323React-componentLifeCycle/</link>
       <guid>https://sowon-dev.github.io/2021/03/22/210323React-componentLifeCycle/</guid>
       <pubDate>Mon, 22 Mar 2021 15:00:00 GMT</pubDate>
