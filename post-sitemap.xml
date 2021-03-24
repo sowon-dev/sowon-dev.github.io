@@ -8,8 +8,24 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2019/08/04/190805/</loc>
+        <lastmod>2021-03-24T15:59:00.084Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2021/03/23/210324React-Hooks/</loc>
-        <lastmod>2021-03-24T15:49:18.048Z</lastmod>
+        <lastmod>2021-03-24T15:56:34.442Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2021/03/22/210323jpaVSjdbc/</loc>
+        <lastmod>2021-03-24T15:55:39.817Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -26,14 +42,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2021/03/22/210323hexo-visitcunt/</loc>
         <lastmod>2021-03-23T09:25:47.176Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2021/03/22/210323jpaVSjdbc/</loc>
-        <lastmod>2021-03-23T09:25:38.048Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -786,14 +794,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2019/07/25/190726/</loc>
         <lastmod>2020-10-29T13:52:54.489Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2019/08/04/190805/</loc>
-        <lastmod>2020-10-29T13:52:49.449Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

@@ -3,22 +3,36 @@
 
 
     <url>
-        <loc>https://sowon-dev.github.io/tags/Hexo/</loc>
-        <lastmod>2021-03-23T09:25:47.176Z</lastmod>
+        <loc>https://sowon-dev.github.io/tags/HTML-CSS/</loc>
+        <lastmod>2021-03-24T15:59:00.084Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/TIL/</loc>
+        <lastmod>2021-03-24T15:59:00.084Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/tags/%25EC%258B%25A0%25EC%259E%2585%25EA%25B0%259C%25EB%25B0%259C%25EC%259E%2590%25EC%258B%25A4%25EB%25AC%25B4%25EB%25BF%258C%25EC%258B%259C%25EA%25B8%25B0/</loc>
-        <lastmod>2021-03-23T09:25:38.048Z</lastmod>
+        <lastmod>2021-03-24T15:55:39.817Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/tags/Journal/</loc>
-        <lastmod>2021-03-23T09:25:38.048Z</lastmod>
+        <lastmod>2021-03-24T15:55:39.817Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/Hexo/</loc>
+        <lastmod>2021-03-23T09:25:47.176Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -108,13 +122,6 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/tags/TIL/</loc>
-        <lastmod>2021-01-29T04:56:59.732Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/tags/Codeup100/</loc>
         <lastmod>2021-01-24T04:06:55.241Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -159,13 +166,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/IntelliJ/</loc>
         <lastmod>2020-12-28T01:56:08.219Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/HTML-CSS/</loc>
-        <lastmod>2020-12-10T15:31:40.470Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
