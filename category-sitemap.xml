@@ -8,6 +8,27 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
+        <lastmod>2021-03-25T04:17:45.384Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/React/</loc>
+        <lastmod>2021-03-25T01:05:29.619Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Django/</loc>
+        <lastmod>2021-03-25T00:57:11.513Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/%25EC%25A0%259C%25EC%25A3%25BC%25EC%25BD%2594%25EB%2594%25A9%25EB%25B2%25A0%25EC%259D%25B4%25EC%258A%25A4%25EC%25BA%25A0%25ED%2594%2584-10%25EA%25B8%25B0/</loc>
         <lastmod>2021-03-24T15:59:00.084Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -15,22 +36,8 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/categories/React/</loc>
-        <lastmod>2021-03-24T15:56:34.442Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/categories/JAVA/</loc>
         <lastmod>2021-03-24T15:55:39.817Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
-        <lastmod>2021-03-23T09:25:47.176Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -143,13 +150,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/%25EC%25BD%2594%25EB%2593%259C%25EC%258A%25A4%25ED%2585%258C%25EC%259D%25B4%25EC%25B8%25A0-PRE35%25EA%25B8%25B0/</loc>
         <lastmod>2020-10-29T14:08:11.355Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Django/</loc>
-        <lastmod>2020-07-12T07:50:47.183Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
