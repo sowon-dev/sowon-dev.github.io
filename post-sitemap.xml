@@ -8,8 +8,32 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2021/01/24/210125lombokerror/</loc>
-        <lastmod>2021-03-25T04:17:45.384Z</lastmod>
+        <loc>https://sowon-dev.github.io/2020/06/01/200602python/</loc>
+        <lastmod>2021-03-26T05:19:00.259Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2019/10/14/191015/</loc>
+        <lastmod>2021-03-26T05:17:15.009Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2019/09/06/190907/</loc>
+        <lastmod>2021-03-26T05:15:48.542Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2021/03/25/210226JS-discordchatbot/</loc>
+        <lastmod>2021-03-26T04:18:01.025Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +41,23 @@
 
     <url>
         <loc>https://sowon-dev.github.io/2021/03/24/210325React-err-failedproptype/</loc>
-        <lastmod>2021-03-25T01:05:29.619Z</lastmod>
+        <lastmod>2021-03-26T02:01:30.963Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/06/07/200608dbi/</loc>
+        <lastmod>2021-03-26T01:57:32.701Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2021/01/24/210125lombokerror/</loc>
+        <lastmod>2021-03-25T04:17:45.384Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1776,14 +1816,6 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2020/06/07/200608dbi/</loc>
-        <lastmod>2020-09-14T02:15:00.295Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/2020/08/10/200811dbi/</loc>
         <lastmod>2020-09-14T02:10:39.050Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -3288,14 +3320,6 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2019/09/07/190907/</loc>
-        <lastmod>2020-06-17T01:27:05.519Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/2019/09/24/190924/</loc>
         <lastmod>2020-06-17T01:26:27.875Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -3394,14 +3418,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/06/01/200601python/</loc>
         <lastmod>2020-06-17T00:57:04.138Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/06/02/200602python/</loc>
-        <lastmod>2020-06-17T00:53:24.949Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -3658,14 +3674,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2019/08/16/190816/</loc>
         <lastmod>2020-05-16T09:39:23.665Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2019/10/15/191015/</loc>
-        <lastmod>2020-05-16T09:26:36.862Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

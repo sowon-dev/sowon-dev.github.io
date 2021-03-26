@@ -8,15 +8,36 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
-        <lastmod>2021-03-25T04:17:45.384Z</lastmod>
+        <loc>https://sowon-dev.github.io/categories/Python/</loc>
+        <lastmod>2021-03-26T05:19:00.259Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/JavaScript/</loc>
+        <lastmod>2021-03-26T05:17:15.009Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/categories/React/</loc>
-        <lastmod>2021-03-25T01:05:29.619Z</lastmod>
+        <lastmod>2021-03-26T02:01:30.963Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Database/</loc>
+        <lastmod>2021-03-26T01:57:32.701Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
+        <lastmod>2021-03-25T04:17:45.384Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -73,20 +94,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/Database/Oracle/</loc>
         <lastmod>2021-01-29T04:56:59.732Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Database/</loc>
-        <lastmod>2021-01-29T04:56:59.732Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/JavaScript/</loc>
-        <lastmod>2021-01-25T01:16:20.688Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -150,13 +157,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/%25EC%25BD%2594%25EB%2593%259C%25EC%258A%25A4%25ED%2585%258C%25EC%259D%25B4%25EC%25B8%25A0-PRE35%25EA%25B8%25B0/</loc>
         <lastmod>2020-10-29T14:08:11.355Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Python/</loc>
-        <lastmod>2020-06-17T01:22:51.283Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
