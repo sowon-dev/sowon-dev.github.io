@@ -8,6 +8,13 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/Linux/</loc>
+        <lastmod>2021-03-29T02:33:49.716Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/Python/</loc>
         <lastmod>2021-03-26T05:19:00.259Z</lastmod>
         <changefreq>weekly</changefreq>

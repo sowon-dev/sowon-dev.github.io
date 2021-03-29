@@ -40,6 +40,27 @@
     </item>
     
     <item>
+      <title>컨테이너, 도커, 쿠버네티스</title>
+      <link>https://sowon-dev.github.io/2021/03/28/210329Container/</link>
+      <guid>https://sowon-dev.github.io/2021/03/28/210329Container/</guid>
+      <pubDate>Sun, 28 Mar 2021 15:45:39 GMT</pubDate>
+      
+      <description>&lt;p&gt;새로운 프로젝트를 진행하면서 팀장급 회의가 있었다. 신규 프로젝트는 어떻게 구성하는 지, 의사결정은 어떻게 이루어지는 지 너무너무 궁금해서 팀장님들 회의에 서기로라도 참석하고싶었지만… 나는 신입이기때문에… 참여할 수 없었다. 하지만 팀전체에 공유된 회의 참고자료를 볼 수 있었고 내가 들어만 봤던 도커와 쿠버네티스라는 단어가 보였다. 이참에 완전히 정리해보려고한다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>새로운 프로젝트를 진행하면서 팀장급 회의가 있었다. 신규 프로젝트는 어떻게 구성하는 지, 의사결정은 어떻게 이루어지는 지 너무너무 궁금해서 팀장님들 회의에 서기로라도 참석하고싶었지만… 나는 신입이기때문에… 참여할 수 없었다. 하지만 팀전체에 공유된 회의 참고자료를 볼 수 있었고 내가 들어만 봤던 도커와 쿠버네티스라는 단어가 보였다. 이참에 완전히 정리해보려고한다.</p><a id="more"></a><h2 id="컨테이너-Container"><a href="#컨테이너-Container" class="headerlink" title="컨테이너(Container)"></a>컨테이너(Container)</h2><p>쿠버네티스를 알려면 도커를 알아야하고 그럴러면 컨테이너를 알아야한다.</p><ul><li>컨테이너란 다양한 프로그램, 실행환경을 패키지로 묶어 추상화하여 격리 환경을 만드는 것</li></ul><p>컨테이너를 통해 동일한 인터페이스를 제공할 수 있어 프로그램의 배포 및 관리를 단순하게 해준다.<br>컨테이너는 가상머신(VM)과 비교할 수 있다. VM의 경우 Guest OS가 올라가기때문에 컨테이너보다 훨씬 무겁다.</p><p><img src="https://miro.medium.com/max/2400/1*wOBkzBpi1Hl9Nr__Jszplg.png" alt="https://medium.com/@darkrasid/docker%EC%99%80-vm-d95d60e56fdd"></p><table><thead><tr><th align="center">가상머신 서버</th><th align="center">컨테이너서버</th></tr></thead><tbody><tr><td align="center">가상 머신의 모든 자원을 사용</td><td align="center">운영체제의 자원을 필요한 만큼 격리하여 컨테이너에 할당</td></tr></tbody></table><p><br><br><br></p><h2 id="도커-Docker"><a href="#도커-Docker" class="headerlink" title="도커(Docker)"></a>도커(Docker)</h2><ul><li>컨테이너기반의 오픈소스 가상화 플랫폼</li></ul><p><img src="https://tech.osci.kr/assets/images/91690167/20.png" alt="https://tech.osci.kr/2020/03/03/91690167/#2-docker"></p><ul><li>도커의 작동 순서<ol><li>코드개발</li><li>Dockerfile 생성: Image파일만 생성하면 변경사항을 확인할 수 없기때문에 이미지내용을 코드화함</li><li>Dockerfile Image 생성: 컨테이너 실행에 필요한 파일과 설정값등을 포함하고 있는 것을 이미지화한다.(Immutable)</li><li>Container Orchestrator를 통한 배포 : Kubernetes, Docker Swarm, Rancher, Apache Mesos등의 컨테이너 오케스트레이션 툴을 사용</li><li>Container run</li><li>Container image Push</li></ol></li></ul><p><br><br><br></p><h2 id="쿠버네티스-Kubernetes"><a href="#쿠버네티스-Kubernetes" class="headerlink" title="쿠버네티스(Kubernetes)"></a>쿠버네티스(Kubernetes)</h2><ul><li><p>컨테이너를 관리를 위해 나온 오픈소스 플랫폼<br>컨테이너 역시 그 수가 많아지게 되면 관리와 운영에 있어서 어려움이 따르는데 이를 관리하고 조율하는 시스템 중 하나가 바로 쿠버네티스이다.</p></li><li><p><a href="https://subicura.com/2019/05/19/kubernetes-basic-1.html">쿠버네티스 시작하기 - Kubernetes란 무엇인가?</a></p></li></ul><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><p>참고라고 적어놓고 필독이라고 읽는다. 하나하나 꼭 읽어봐야한다.<br>특히 Container 시리즈는 정말 주옥같다. </p><ul><li><a href="https://tech.osci.kr/2020/03/03/91690167/">Container 시리즈 전체</a></li><li><a href="https://zzsza.github.io/development/2018/04/17/docker-kubernetes/">Docker와 쿠버네티스의 이해</a></li><li><a href="https://hwan-shell.tistory.com/116">Linux) Doker와 Container의 탄생과 설명, 차이점</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Linux/">Linux</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2021/03/28/210329Container/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>[특강후기]JS로 디스코드 봇만들기</title>
       <link>https://sowon-dev.github.io/2021/03/25/210226JS-discordchatbot/</link>
       <guid>https://sowon-dev.github.io/2021/03/25/210226JS-discordchatbot/</guid>
@@ -89,27 +110,6 @@
     </item>
     
     <item>
-      <title>[리액트] state나 props 변경시 성능향상 방법</title>
-      <link>https://sowon-dev.github.io/2021/03/23/210324React-managementofcomponent/</link>
-      <guid>https://sowon-dev.github.io/2021/03/23/210324React-managementofcomponent/</guid>
-      <pubDate>Tue, 23 Mar 2021 15:00:00 GMT</pubDate>
-      
-      <description>&lt;h2 id=&quot;React어플리케이션-성능향상-방법&quot;&gt;&lt;a href=&quot;#React어플리케이션-성능향상-방법&quot; class=&quot;headerlink&quot; title=&quot;React어플리케이션 성능향상 방법&quot;&gt;&lt;/a&gt;React어플리케이션 성능향상 방법&lt;/h2&gt;&lt;p&gt;React에서 state나 props가 변경되었을때 render가 진행되는데 값이 없는 setState() 호출에도 rendering이 된다.&lt;br&gt;이게 쌓이면 성능이 저하된다. 이를 해결하는 방법을 알아보자.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="React어플리케이션-성능향상-방법"><a href="#React어플리케이션-성능향상-방법" class="headerlink" title="React어플리케이션 성능향상 방법"></a>React어플리케이션 성능향상 방법</h2><p>React에서 state나 props가 변경되었을때 render가 진행되는데 값이 없는 setState() 호출에도 rendering이 된다.<br>이게 쌓이면 성능이 저하된다. 이를 해결하는 방법을 알아보자.</p><a id="more"></a><p><br><br><br></p><h3 id="class인-경우"><a href="#class인-경우" class="headerlink" title="class인 경우"></a>class인 경우</h3><p>state나 props가 변경되었을때 성능을 위해 shouldComponentUpdate(){} 또는 PureComponent를 쓸 수 있다.<br>PureComponent란 shouldComponentUpdate()를 구현해놓은 컴포넌트이다.<br>shouldComponentUpdate()는 배열이나 객체에 변경이 있는 경우 변경사항을 인지하지 못할 수 도 있다. → 새로운 배열을 만들고 싶다면 <code>[...기존arr, 1]</code> 복사해서 사용해야한다.<br>따라서 shouldComponentUpdate()보다는 PureComponent 를 쓰는 것이 좋다.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">shouldComponentUpdate(prevProps, prevState) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.props.data !== prevProps.data;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//더 편하게</span></span><br><span class="line"><span class="keyword">import</span> React, &#123; PureComponent &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h3 id="Hooks인-경우"><a href="#Hooks인-경우" class="headerlink" title="Hooks인 경우"></a>Hooks인 경우</h3><p>PureComponent와 shouldComponentUpdate가 없다. 그대신 memo(memoization의 약자)를 사용한다.<br>훅스할때는 state들을 최상위로 빼야한다. 그렇지 않고 if조건문에 state를 넣으면 에러가 발생한다.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//함수 컴포넌트. 이건 그냥 함수 컴포넌트</span></span><br><span class="line"><span class="keyword">import</span> React, &#123; memo &#125; <span class="keyword">from</span> <span class="string">"react"</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Ball = memo(<span class="function">(<span class="params">&#123; number &#125;</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> background;</span><br><span class="line">  <span class="keyword">if</span> (number &lt;= <span class="number">10</span>) &#123;</span><br><span class="line">    background = <span class="string">"red"</span>;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    background = <span class="string">"green"</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//Hooks :  useRef, useState, useCallback등을 사용하고 함수 컴포넌트인 것</span></span><br><span class="line"><span class="keyword">import</span> React, &#123; useRef, useState, useCallback &#125; <span class="keyword">from</span> <span class="string">"react"</span>; </span><br><span class="line"><span class="keyword">const</span> Ball = memo(<span class="function">(<span class="params">&#123; number &#125;</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> background;</span><br><span class="line">  <span class="keyword">if</span> (number &lt;= <span class="number">10</span>) &#123;</span><br><span class="line">    background = <span class="string">"red"</span>;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    background = <span class="string">"green"</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/React/">React</category>
-      
-      
-      
-      <comments>https://sowon-dev.github.io/2021/03/23/210324React-managementofcomponent/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
       <title>[리액트] Hooks API로 생명주기 관리</title>
       <link>https://sowon-dev.github.io/2021/03/23/210324React-Hooks/</link>
       <guid>https://sowon-dev.github.io/2021/03/23/210324React-Hooks/</guid>
@@ -131,25 +131,23 @@
     </item>
     
     <item>
-      <title>[Hexo]헥소블로그 방문자수 조회수 간단하게 처리하기(초간단)</title>
-      <link>https://sowon-dev.github.io/2021/03/22/210323hexo-visitcunt/</link>
-      <guid>https://sowon-dev.github.io/2021/03/22/210323hexo-visitcunt/</guid>
-      <pubDate>Mon, 22 Mar 2021 15:00:00 GMT</pubDate>
+      <title>[리액트] state나 props 변경시 성능향상 방법</title>
+      <link>https://sowon-dev.github.io/2021/03/23/210324React-managementofcomponent/</link>
+      <guid>https://sowon-dev.github.io/2021/03/23/210324React-managementofcomponent/</guid>
+      <pubDate>Tue, 23 Mar 2021 15:00:00 GMT</pubDate>
       
-      <description>&lt;p&gt;블로그를 운영하다보면 조회수가 궁금해지기마련이다.&lt;br&gt;구글서치콘솔로 조회수를 확인할 수 있지만 블로그에서 바로 확인하면 더욱 좋을 것이다. 헥소블로그는 지킬블로그보다 정보가 많이 없어서 구글링을 좀 많이 했다. 그랬더니 내가 쓰고 있는 hexo-icarus테마는 busuanzi플러그인을 통하여 초간단하게 조회수와 방문자수를 처리할 수 있었다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>블로그를 운영하다보면 조회수가 궁금해지기마련이다.<br>구글서치콘솔로 조회수를 확인할 수 있지만 블로그에서 바로 확인하면 더욱 좋을 것이다. 헥소블로그는 지킬블로그보다 정보가 많이 없어서 구글링을 좀 많이 했다. 그랬더니 내가 쓰고 있는 hexo-icarus테마는 busuanzi플러그인을 통하여 초간단하게 조회수와 방문자수를 처리할 수 있었다.</p><a id="more"></a><ul><li>사용중인 hexo테마 : <a href="https://github.com/ppoffice/hexo-theme-icarus">icarus</a></li></ul><p><br><br><br></p><h2 id="조회수-기능-등록-방법"><a href="#조회수-기능-등록-방법" class="headerlink" title="조회수 기능 등록 방법"></a>조회수 기능 등록 방법</h2><p><a href="http://busuanzi.ibruce.info/">busuanzi</a>플러그인은 중국어지만 구글의 힘을 빌려서 사용가능하다. 간단하게 스크립트코드와 html태그를 넣어서 조회수를 처리할 수 있다.<br>하지만 내가 사용중인 hexo icarus테마는 true/false만으로도 적용이 가능하다! 세상 간편!<br>물론 커스텀하고 싶다면 <a href="http://ibruce.info/2015/04/04/busuanzi/">공식사이트</a>를 통해 원하는 대로 적용할 수 있다.</p><ol><li>프로젝트에서 <code>themes/hexo-theme-icarus/_config.yml</code> 파일을 연다.</li><li><code>busuanzi</code>를 검색하여 false를 true로 변경해준다.</li><li>끝!</li></ol><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># BuSuanZi site/page view counter</span><br><span class="line"># https://busuanzi.ibruce.info</span><br><span class="line">busuanzi: true</span><br><span class="line"># CNZZ statistics</span><br><span class="line"># https://www.umeng.com/web</span><br></pre></td></tr></table></figure><p>true로 바꿔주기만하면 블로그 footer에 전체 방문자수와 조회수가 출력될뿐아니라 각 포스팅의 조회수도 확인 가능하다!<br>초간단!</p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://blog.zhangruipeng.me/hexo-theme-icarus/Plugins/Analytics/icarus-user-guide-web-analytics-plugins/#BuSuanZi-Web-Counter">https://blog.zhangruipeng.me/hexo-theme-icarus/Plugins/Analytics/icarus-user-guide-web-analytics-plugins/#BuSuanZi-Web-Counter</a></li></ul>]]></content:encoded>
+      <description>&lt;h2 id=&quot;React어플리케이션-성능향상-방법&quot;&gt;&lt;a href=&quot;#React어플리케이션-성능향상-방법&quot; class=&quot;headerlink&quot; title=&quot;React어플리케이션 성능향상 방법&quot;&gt;&lt;/a&gt;React어플리케이션 성능향상 방법&lt;/h2&gt;&lt;p&gt;React에서 state나 props가 변경되었을때 render가 진행되는데 값이 없는 setState() 호출에도 rendering이 된다.&lt;br&gt;이게 쌓이면 성능이 저하된다. 이를 해결하는 방법을 알아보자.&lt;/p&gt;</description>
       
       
-      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      <content:encoded><![CDATA[<h2 id="React어플리케이션-성능향상-방법"><a href="#React어플리케이션-성능향상-방법" class="headerlink" title="React어플리케이션 성능향상 방법"></a>React어플리케이션 성능향상 방법</h2><p>React에서 state나 props가 변경되었을때 render가 진행되는데 값이 없는 setState() 호출에도 rendering이 된다.<br>이게 쌓이면 성능이 저하된다. 이를 해결하는 방법을 알아보자.</p><a id="more"></a><p><br><br><br></p><h3 id="class인-경우"><a href="#class인-경우" class="headerlink" title="class인 경우"></a>class인 경우</h3><p>state나 props가 변경되었을때 성능을 위해 shouldComponentUpdate(){} 또는 PureComponent를 쓸 수 있다.<br>PureComponent란 shouldComponentUpdate()를 구현해놓은 컴포넌트이다.<br>shouldComponentUpdate()는 배열이나 객체에 변경이 있는 경우 변경사항을 인지하지 못할 수 도 있다. → 새로운 배열을 만들고 싶다면 <code>[...기존arr, 1]</code> 복사해서 사용해야한다.<br>따라서 shouldComponentUpdate()보다는 PureComponent 를 쓰는 것이 좋다.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">shouldComponentUpdate(prevProps, prevState) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.props.data !== prevProps.data;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//더 편하게</span></span><br><span class="line"><span class="keyword">import</span> React, &#123; PureComponent &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h3 id="Hooks인-경우"><a href="#Hooks인-경우" class="headerlink" title="Hooks인 경우"></a>Hooks인 경우</h3><p>PureComponent와 shouldComponentUpdate가 없다. 그대신 memo(memoization의 약자)를 사용한다.<br>훅스할때는 state들을 최상위로 빼야한다. 그렇지 않고 if조건문에 state를 넣으면 에러가 발생한다.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//함수 컴포넌트. 이건 그냥 함수 컴포넌트</span></span><br><span class="line"><span class="keyword">import</span> React, &#123; memo &#125; <span class="keyword">from</span> <span class="string">"react"</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Ball = memo(<span class="function">(<span class="params">&#123; number &#125;</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> background;</span><br><span class="line">  <span class="keyword">if</span> (number &lt;= <span class="number">10</span>) &#123;</span><br><span class="line">    background = <span class="string">"red"</span>;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    background = <span class="string">"green"</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//Hooks :  useRef, useState, useCallback등을 사용하고 함수 컴포넌트인 것</span></span><br><span class="line"><span class="keyword">import</span> React, &#123; useRef, useState, useCallback &#125; <span class="keyword">from</span> <span class="string">"react"</span>; </span><br><span class="line"><span class="keyword">const</span> Ball = memo(<span class="function">(<span class="params">&#123; number &#125;</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> background;</span><br><span class="line">  <span class="keyword">if</span> (number &lt;= <span class="number">10</span>) &#123;</span><br><span class="line">    background = <span class="string">"red"</span>;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    background = <span class="string">"green"</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content:encoded>
       
       
-      <category domain="https://sowon-dev.github.io/tags/Hexo/">Hexo</category>
+      <category domain="https://sowon-dev.github.io/categories/React/">React</category>
       
       
-      <comments>https://sowon-dev.github.io/2021/03/22/210323hexo-visitcunt/#disqus_thread</comments>
+      
+      <comments>https://sowon-dev.github.io/2021/03/23/210324React-managementofcomponent/#disqus_thread</comments>
       
     </item>
     
@@ -201,6 +199,29 @@
       
       
       <comments>https://sowon-dev.github.io/2021/03/22/210323React-componentLifeCycle/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>[Hexo]헥소블로그 방문자수 조회수 간단하게 처리하기(초간단)</title>
+      <link>https://sowon-dev.github.io/2021/03/22/210323hexo-visitcunt/</link>
+      <guid>https://sowon-dev.github.io/2021/03/22/210323hexo-visitcunt/</guid>
+      <pubDate>Mon, 22 Mar 2021 15:00:00 GMT</pubDate>
+      
+      <description>&lt;p&gt;블로그를 운영하다보면 조회수가 궁금해지기마련이다.&lt;br&gt;구글서치콘솔로 조회수를 확인할 수 있지만 블로그에서 바로 확인하면 더욱 좋을 것이다. 헥소블로그는 지킬블로그보다 정보가 많이 없어서 구글링을 좀 많이 했다. 그랬더니 내가 쓰고 있는 hexo-icarus테마는 busuanzi플러그인을 통하여 초간단하게 조회수와 방문자수를 처리할 수 있었다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>블로그를 운영하다보면 조회수가 궁금해지기마련이다.<br>구글서치콘솔로 조회수를 확인할 수 있지만 블로그에서 바로 확인하면 더욱 좋을 것이다. 헥소블로그는 지킬블로그보다 정보가 많이 없어서 구글링을 좀 많이 했다. 그랬더니 내가 쓰고 있는 hexo-icarus테마는 busuanzi플러그인을 통하여 초간단하게 조회수와 방문자수를 처리할 수 있었다.</p><a id="more"></a><ul><li>사용중인 hexo테마 : <a href="https://github.com/ppoffice/hexo-theme-icarus">icarus</a></li></ul><p><br><br><br></p><h2 id="조회수-기능-등록-방법"><a href="#조회수-기능-등록-방법" class="headerlink" title="조회수 기능 등록 방법"></a>조회수 기능 등록 방법</h2><p><a href="http://busuanzi.ibruce.info/">busuanzi</a>플러그인은 중국어지만 구글의 힘을 빌려서 사용가능하다. 간단하게 스크립트코드와 html태그를 넣어서 조회수를 처리할 수 있다.<br>하지만 내가 사용중인 hexo icarus테마는 true/false만으로도 적용이 가능하다! 세상 간편!<br>물론 커스텀하고 싶다면 <a href="http://ibruce.info/2015/04/04/busuanzi/">공식사이트</a>를 통해 원하는 대로 적용할 수 있다.</p><ol><li>프로젝트에서 <code>themes/hexo-theme-icarus/_config.yml</code> 파일을 연다.</li><li><code>busuanzi</code>를 검색하여 false를 true로 변경해준다.</li><li>끝!</li></ol><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># BuSuanZi site/page view counter</span><br><span class="line"># https://busuanzi.ibruce.info</span><br><span class="line">busuanzi: true</span><br><span class="line"># CNZZ statistics</span><br><span class="line"># https://www.umeng.com/web</span><br></pre></td></tr></table></figure><p>true로 바꿔주기만하면 블로그 footer에 전체 방문자수와 조회수가 출력될뿐아니라 각 포스팅의 조회수도 확인 가능하다!<br>초간단!</p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://blog.zhangruipeng.me/hexo-theme-icarus/Plugins/Analytics/icarus-user-guide-web-analytics-plugins/#BuSuanZi-Web-Counter">https://blog.zhangruipeng.me/hexo-theme-icarus/Plugins/Analytics/icarus-user-guide-web-analytics-plugins/#BuSuanZi-Web-Counter</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Hexo/">Hexo</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2021/03/22/210323hexo-visitcunt/#disqus_thread</comments>
       
     </item>
     
@@ -471,29 +492,6 @@
       
       
       <comments>https://sowon-dev.github.io/2021/03/01/210302al-hackerrank-Separate-the-Numbers/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[자바JAVA]문자열 내 p와 y의 개수 프로그래머스</title>
-      <link>https://sowon-dev.github.io/2021/02/27/210228al-programmers-The-Number-of-pandy-in-String/</link>
-      <guid>https://sowon-dev.github.io/2021/02/27/210228al-programmers-The-Number-of-pandy-in-String/</guid>
-      <pubDate>Sat, 27 Feb 2021 21:59:33 GMT</pubDate>
-      
-      <description>&lt;h2 id=&quot;문자열-내-p와-y의-개수&quot;&gt;&lt;a href=&quot;#문자열-내-p와-y의-개수&quot; class=&quot;headerlink&quot; title=&quot;문자열 내 p와 y의 개수&quot;&gt;&lt;/a&gt;문자열 내 p와 y의 개수&lt;/h2&gt;&lt;p&gt;대문자와 소문자가 섞여있는 문자열 s가 주어집니다. s에 ‘p’의 개수와 ‘y’의 개수를 비교해 같으면 True, 다르면 False를 return 하는 solution를 완성하세요. ‘p’, ‘y’ 모두 하나도 없는 경우는 항상 True를 리턴합니다. 단, 개수를 비교할 때 대문자와 소문자는 구별하지 않습니다.&lt;br&gt;예를 들어 s가 “pPoooyY”면 true를 return하고 “Pyy”라면 false를 return합니다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="문자열-내-p와-y의-개수"><a href="#문자열-내-p와-y의-개수" class="headerlink" title="문자열 내 p와 y의 개수"></a>문자열 내 p와 y의 개수</h2><p>대문자와 소문자가 섞여있는 문자열 s가 주어집니다. s에 ‘p’의 개수와 ‘y’의 개수를 비교해 같으면 True, 다르면 False를 return 하는 solution를 완성하세요. ‘p’, ‘y’ 모두 하나도 없는 경우는 항상 True를 리턴합니다. 단, 개수를 비교할 때 대문자와 소문자는 구별하지 않습니다.<br>예를 들어 s가 “pPoooyY”면 true를 return하고 “Pyy”라면 false를 return합니다.</p><a id="more"></a><ul><li><p>제한사항<br>문자열 s의 길이 : 50 이하의 자연수<br>문자열 s는 알파벳으로만 이루어져 있습니다.</p></li><li><p>입출력 예시1</p></li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;입력</span><br><span class="line">pPoooyY</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;출력</span><br><span class="line">true</span><br></pre></td></tr></table></figure><ul><li>입출력 예시2</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;입력</span><br><span class="line">Pyy</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;출력</span><br><span class="line">false</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="코드1"><a href="#코드1" class="headerlink" title="코드1"></a>코드1</h2><p>제일 처음 생각했던 방법이다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">solution</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line"><span class="comment">//sol1. score 1004, 평균 통과 (0.02ms, 51.8MB)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> cntP = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> cntY = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">char</span> c : s.toCharArray())&#123;</span><br><span class="line">  <span class="keyword">if</span>(c == <span class="string">'p'</span> || c ==<span class="string">'P'</span>)&#123;</span><br><span class="line">cntP ++;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span>(c == <span class="string">'y'</span> || c == <span class="string">'Y'</span>)&#123;</span><br><span class="line">cntY ++;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> cntP == cntY;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="코드2"><a href="#코드2" class="headerlink" title="코드2"></a>코드2</h2><p>int cnt를 하나로 가져가면서 toUpperCase 사용하는 방법이다.<br>평균 통과 (0.04ms, 53.9MB)</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">solution</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line"><span class="keyword">int</span> cnt = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">char</span> c : s.toUpperCase().toCharArray())&#123;</span><br><span class="line">      <span class="keyword">if</span>(c == <span class="string">'P'</span>)&#123;</span><br><span class="line">        cnt ++;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">if</span>(c == <span class="string">'Y'</span>)&#123;</span><br><span class="line">        cnt --;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">return</span> cnt == <span class="number">0</span> ? <span class="keyword">true</span> : <span class="keyword">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="코드3-람다식-사용"><a href="#코드3-람다식-사용" class="headerlink" title="코드3 : 람다식 사용"></a>코드3 : 람다식 사용</h2><p>평균 통과 (3.37ms, 53.3MB)</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">solution</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">    s = s.toUpperCase();</span><br><span class="line">    <span class="keyword">return</span> s.chars().filter( e -&gt; <span class="string">'P'</span>== e).count() == s.chars().filter( e -&gt; <span class="string">'Y'</span>== e).count();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Algorithm/">Algorithm</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/Programmers/">Programmers</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2021/02/27/210228al-programmers-The-Number-of-pandy-in-String/#disqus_thread</comments>
       
     </item>
     
