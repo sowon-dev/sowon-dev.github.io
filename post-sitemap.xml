@@ -8,8 +8,104 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2021/03/29/210330React-tip/</loc>
+        <lastmod>2021-03-30T05:32:54.585Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/06/23/200624python/</loc>
+        <lastmod>2021-03-30T05:25:30.309Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/06/24/200625python/</loc>
+        <lastmod>2021-03-30T05:23:40.412Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/07/04/200705python/</loc>
+        <lastmod>2021-03-30T05:22:34.859Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/06/25/200626python/</loc>
+        <lastmod>2021-03-30T05:21:24.003Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2021/03/29/210330React-Redux/</loc>
+        <lastmod>2021-03-30T05:18:45.133Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2019/10/07/191008/</loc>
+        <lastmod>2021-03-30T05:16:45.845Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/07/23/200724webi/</loc>
+        <lastmod>2021-03-30T01:45:02.120Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2021/03/29/210330React-Destructuringassignment/</loc>
+        <lastmod>2021-03-30T01:36:39.409Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2019/08/28/190829/</loc>
+        <lastmod>2021-03-30T01:36:00.418Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/07/02/200703webi/</loc>
+        <lastmod>2021-03-30T01:31:08.647Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2019/09/04/190905/</loc>
+        <lastmod>2021-03-30T01:29:59.324Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2021/03/28/210329Container/</loc>
-        <lastmod>2021-03-29T02:33:49.716Z</lastmod>
+        <lastmod>2021-03-30T00:45:48.544Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -74,14 +170,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/06/26/200627python/</loc>
         <lastmod>2021-03-25T00:57:11.513Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/07/04/200705python/</loc>
-        <lastmod>2021-03-25T00:56:02.517Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1920,14 +2008,6 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2020/07/02/200703webi/</loc>
-        <lastmod>2020-09-14T01:36:22.947Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/2020/07/09/200710dbi2/</loc>
         <lastmod>2020-09-14T01:33:26.994Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2816,14 +2896,6 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2020/07/24/200724webi/</loc>
-        <lastmod>2020-07-24T06:16:39.930Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/2020/07/17/200717webi2/</loc>
         <lastmod>2020-07-24T05:34:52.830Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -3200,22 +3272,6 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2020/06/26/200626python/</loc>
-        <lastmod>2020-06-26T13:57:58.701Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/06/24/200624python/</loc>
-        <lastmod>2020-06-26T13:09:05.128Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/2020/06/19/200619webi/</loc>
         <lastmod>2020-06-26T05:56:36.298Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -3274,14 +3330,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/06/23/200623jspi2/</loc>
         <lastmod>2020-06-26T01:29:47.704Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/06/25/200625python/</loc>
-        <lastmod>2020-06-25T14:20:20.051Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -3632,14 +3680,6 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2019/08/29/190829/</loc>
-        <lastmod>2020-05-30T10:35:11.221Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/2020/05/23/200523javae/</loc>
         <lastmod>2020-05-23T08:10:02.685Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -3688,14 +3728,6 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2019/10/08/191008/</loc>
-        <lastmod>2020-05-16T09:26:04.893Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/2019/09/12/190912/</loc>
         <lastmod>2020-05-16T09:25:17.368Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -3706,14 +3738,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2019/09/06/190906/</loc>
         <lastmod>2020-05-16T09:24:45.720Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2019/09/05/190905/</loc>
-        <lastmod>2020-05-16T09:24:38.575Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
