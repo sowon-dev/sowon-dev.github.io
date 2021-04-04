@@ -8,6 +8,13 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/Algorithm/</loc>
+        <lastmod>2021-04-04T15:47:41.088Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/Database/</loc>
         <lastmod>2021-04-03T14:46:14.839Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -94,13 +101,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/Lectures-Seminars/</loc>
         <lastmod>2021-03-17T13:58:04.080Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Algorithm/</loc>
-        <lastmod>2021-03-14T06:09:51.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
