@@ -3,8 +3,22 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/%25ED%2595%2599%25EC%2582%25AC%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%25A8%25ED%2594%2584%25EB%25A1%259C%25EC%25A0%259D%25ED%258A%25B8/</loc>
+        <lastmod>2021-04-09T01:09:19.736Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/List/</loc>
-        <lastmod>2021-04-05T02:12:06.051Z</lastmod>
+        <lastmod>2021-04-07T08:09:28.867Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/Journal/</loc>
+        <lastmod>2021-04-07T08:09:28.867Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -32,13 +46,6 @@
 
     <url>
         <loc>https://sowon-dev.github.io/tags/%25EC%258B%25A0%25EC%259E%2585%25EA%25B0%259C%25EB%25B0%259C%25EC%259E%2590%25EC%258B%25A4%25EB%25AC%25B4%25EB%25BF%258C%25EC%258B%259C%25EA%25B8%25B0/</loc>
-        <lastmod>2021-04-03T14:46:14.839Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/Journal/</loc>
         <lastmod>2021-04-03T14:46:14.839Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

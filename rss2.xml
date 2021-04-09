@@ -40,6 +40,31 @@
     </item>
     
     <item>
+      <title>[스프링부트 리액트]학사프로그램01 프로젝트 구상 및 구조</title>
+      <link>https://sowon-dev.github.io/2021/04/06/210407swlms1/</link>
+      <guid>https://sowon-dev.github.io/2021/04/06/210407swlms1/</guid>
+      <pubDate>Tue, 06 Apr 2021 22:40:06 GMT</pubDate>
+      
+      <description>&lt;p&gt;Springboot와 React를 쓰는 학사프로그램을 토이프로젝트로 만들어보자.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>Springboot와 React를 쓰는 학사프로그램을 토이프로젝트로 만들어보자.</p><a id="more"></a><p><br><br><br></p><h2 id="기술스택"><a href="#기술스택" class="headerlink" title="기술스택"></a>기술스택</h2><ul><li>spring-boot 2.4.4</li><li>Maven</li><li>java 1.8</li><li>Spring Security</li><li>Mybatis 2.1.4</li><li>MySQL</li><li>React</li></ul><p><br><br><br></p><h2 id="프레임워크-및-라이브러리"><a href="#프레임워크-및-라이브러리" class="headerlink" title="프레임워크 및 라이브러리"></a>프레임워크 및 라이브러리</h2><p>|라이브러리명|정의|선택한 이유|<br>|:—:|:—:|<br>|<a href="https://axios-http.com/docs/example/">axios</a>|브라우저, Node.js를 위한 Promise API를 활용하는 HTTP 비동기 통신 라이브러리|Ajax말고 axios를 선택한 이유는 브라우저호환성이 좋고 편리하다|<br>|<a href="https://material-ui.com/">material-ui</a>| 리액트 개발에서 쉽게 사용할 수 있는 UI Framework||</p><p><br><br><br></p><h2 id="FLow-chart"><a href="#FLow-chart" class="headerlink" title="FLow chart"></a>FLow chart</h2><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/sowon-dev/SWLMS">SW LMS 깃헙레포지토리</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Project/">Project</category>
+      
+      <category domain="https://sowon-dev.github.io/categories/Project/Springboot-React/">Springboot+React</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/%ED%95%99%EC%82%AC%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/">학사프로그램프로젝트</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2021/04/06/210407swlms1/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>[자바JAVA]백준 1110 더하기 사이클 풀이</title>
       <link>https://sowon-dev.github.io/2021/04/04/210404al-backjoon-1110/</link>
       <guid>https://sowon-dev.github.io/2021/04/04/210404al-backjoon-1110/</guid>
@@ -325,29 +350,6 @@
     </item>
     
     <item>
-      <title>[Hexo]헥소블로그 방문자수 조회수 간단하게 처리하기(초간단)</title>
-      <link>https://sowon-dev.github.io/2021/03/22/210323hexo-visitcunt/</link>
-      <guid>https://sowon-dev.github.io/2021/03/22/210323hexo-visitcunt/</guid>
-      <pubDate>Mon, 22 Mar 2021 15:00:00 GMT</pubDate>
-      
-      <description>&lt;p&gt;블로그를 운영하다보면 조회수가 궁금해지기마련이다.&lt;br&gt;구글서치콘솔로 조회수를 확인할 수 있지만 블로그에서 바로 확인하면 더욱 좋을 것이다. 헥소블로그는 지킬블로그보다 정보가 많이 없어서 구글링을 좀 많이 했다. 그랬더니 내가 쓰고 있는 hexo-icarus테마는 busuanzi플러그인을 통하여 초간단하게 조회수와 방문자수를 처리할 수 있었다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>블로그를 운영하다보면 조회수가 궁금해지기마련이다.<br>구글서치콘솔로 조회수를 확인할 수 있지만 블로그에서 바로 확인하면 더욱 좋을 것이다. 헥소블로그는 지킬블로그보다 정보가 많이 없어서 구글링을 좀 많이 했다. 그랬더니 내가 쓰고 있는 hexo-icarus테마는 busuanzi플러그인을 통하여 초간단하게 조회수와 방문자수를 처리할 수 있었다.</p><a id="more"></a><ul><li>사용중인 hexo테마 : <a href="https://github.com/ppoffice/hexo-theme-icarus">icarus</a></li></ul><p><br><br><br></p><h2 id="조회수-기능-등록-방법"><a href="#조회수-기능-등록-방법" class="headerlink" title="조회수 기능 등록 방법"></a>조회수 기능 등록 방법</h2><p><a href="http://busuanzi.ibruce.info/">busuanzi</a>플러그인은 중국어지만 구글의 힘을 빌려서 사용가능하다. 간단하게 스크립트코드와 html태그를 넣어서 조회수를 처리할 수 있다.<br>하지만 내가 사용중인 hexo icarus테마는 true/false만으로도 적용이 가능하다! 세상 간편!<br>물론 커스텀하고 싶다면 <a href="http://ibruce.info/2015/04/04/busuanzi/">공식사이트</a>를 통해 원하는 대로 적용할 수 있다.</p><ol><li>프로젝트에서 <code>themes/hexo-theme-icarus/_config.yml</code> 파일을 연다.</li><li><code>busuanzi</code>를 검색하여 false를 true로 변경해준다.</li><li>끝!</li></ol><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># BuSuanZi site/page view counter</span><br><span class="line"># https://busuanzi.ibruce.info</span><br><span class="line">busuanzi: true</span><br><span class="line"># CNZZ statistics</span><br><span class="line"># https://www.umeng.com/web</span><br></pre></td></tr></table></figure><p>true로 바꿔주기만하면 블로그 footer에 전체 방문자수와 조회수가 출력될뿐아니라 각 포스팅의 조회수도 확인 가능하다!</p><p><img src="/img/210323postvisitercmt.png" alt=""></p><p>초간단!</p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://blog.zhangruipeng.me/hexo-theme-icarus/Plugins/Analytics/icarus-user-guide-web-analytics-plugins/#BuSuanZi-Web-Counter">https://blog.zhangruipeng.me/hexo-theme-icarus/Plugins/Analytics/icarus-user-guide-web-analytics-plugins/#BuSuanZi-Web-Counter</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/Hexo/">Hexo</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2021/03/22/210323hexo-visitcunt/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
       <title>[리액트]컴포넌트 생명주기</title>
       <link>https://sowon-dev.github.io/2021/03/22/210323React-componentLifeCycle/</link>
       <guid>https://sowon-dev.github.io/2021/03/22/210323React-componentLifeCycle/</guid>
@@ -369,6 +371,29 @@
       
       
       <comments>https://sowon-dev.github.io/2021/03/22/210323React-componentLifeCycle/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>[Hexo]헥소블로그 방문자수 조회수 간단하게 처리하기(초간단)</title>
+      <link>https://sowon-dev.github.io/2021/03/22/210323hexo-visitcunt/</link>
+      <guid>https://sowon-dev.github.io/2021/03/22/210323hexo-visitcunt/</guid>
+      <pubDate>Mon, 22 Mar 2021 15:00:00 GMT</pubDate>
+      
+      <description>&lt;p&gt;블로그를 운영하다보면 조회수가 궁금해지기마련이다.&lt;br&gt;구글서치콘솔로 조회수를 확인할 수 있지만 블로그에서 바로 확인하면 더욱 좋을 것이다. 헥소블로그는 지킬블로그보다 정보가 많이 없어서 구글링을 좀 많이 했다. 그랬더니 내가 쓰고 있는 hexo-icarus테마는 busuanzi플러그인을 통하여 초간단하게 조회수와 방문자수를 처리할 수 있었다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>블로그를 운영하다보면 조회수가 궁금해지기마련이다.<br>구글서치콘솔로 조회수를 확인할 수 있지만 블로그에서 바로 확인하면 더욱 좋을 것이다. 헥소블로그는 지킬블로그보다 정보가 많이 없어서 구글링을 좀 많이 했다. 그랬더니 내가 쓰고 있는 hexo-icarus테마는 busuanzi플러그인을 통하여 초간단하게 조회수와 방문자수를 처리할 수 있었다.</p><a id="more"></a><ul><li>사용중인 hexo테마 : <a href="https://github.com/ppoffice/hexo-theme-icarus">icarus</a></li></ul><p><br><br><br></p><h2 id="조회수-기능-등록-방법"><a href="#조회수-기능-등록-방법" class="headerlink" title="조회수 기능 등록 방법"></a>조회수 기능 등록 방법</h2><p><a href="http://busuanzi.ibruce.info/">busuanzi</a>플러그인은 중국어지만 구글의 힘을 빌려서 사용가능하다. 간단하게 스크립트코드와 html태그를 넣어서 조회수를 처리할 수 있다.<br>하지만 내가 사용중인 hexo icarus테마는 true/false만으로도 적용이 가능하다! 세상 간편!<br>물론 커스텀하고 싶다면 <a href="http://ibruce.info/2015/04/04/busuanzi/">공식사이트</a>를 통해 원하는 대로 적용할 수 있다.</p><ol><li>프로젝트에서 <code>themes/hexo-theme-icarus/_config.yml</code> 파일을 연다.</li><li><code>busuanzi</code>를 검색하여 false를 true로 변경해준다.</li><li>끝!</li></ol><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># BuSuanZi site/page view counter</span><br><span class="line"># https://busuanzi.ibruce.info</span><br><span class="line">busuanzi: true</span><br><span class="line"># CNZZ statistics</span><br><span class="line"># https://www.umeng.com/web</span><br></pre></td></tr></table></figure><p>true로 바꿔주기만하면 블로그 footer에 전체 방문자수와 조회수가 출력될뿐아니라 각 포스팅의 조회수도 확인 가능하다!</p><p><img src="/img/210323postvisitercmt.png" alt=""></p><p>초간단!</p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://blog.zhangruipeng.me/hexo-theme-icarus/Plugins/Analytics/icarus-user-guide-web-analytics-plugins/#BuSuanZi-Web-Counter">https://blog.zhangruipeng.me/hexo-theme-icarus/Plugins/Analytics/icarus-user-guide-web-analytics-plugins/#BuSuanZi-Web-Counter</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Hexo/">Hexo</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2021/03/22/210323hexo-visitcunt/#disqus_thread</comments>
       
     </item>
     
@@ -470,28 +495,6 @@
       
       
       <comments>https://sowon-dev.github.io/2021/03/14/210315springBeanerror/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[리액트] webpack과 hot reloading 설치하기</title>
-      <link>https://sowon-dev.github.io/2021/03/14/210314ReactLectureByZerocho/</link>
-      <guid>https://sowon-dev.github.io/2021/03/14/210314ReactLectureByZerocho/</guid>
-      <pubDate>Sun, 14 Mar 2021 02:37:15 GMT</pubDate>
-      
-      <description>&lt;h2 id=&quot;webpack-개념&quot;&gt;&lt;a href=&quot;#webpack-개념&quot; class=&quot;headerlink&quot; title=&quot;webpack 개념&quot;&gt;&lt;/a&gt;webpack 개념&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;node : 자바스크립트 실행기일뿐 서버가 아니다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="webpack-개념"><a href="#webpack-개념" class="headerlink" title="webpack 개념"></a>webpack 개념</h2><ul><li><p>node : 자바스크립트 실행기일뿐 서버가 아니다.</p><a id="more"></a></li><li><p>바벨 종류</p><ul><li>npm i -D @babel/명칭 : 바벨 설치하는 명령어 </li></ul></li></ul><table><thead><tr><th align="center">바벨종류</th><th align="center">설명</th></tr></thead><tbody><tr><td align="center">@babel/core</td><td align="center">바벨 기본적인 것</td></tr><tr><td align="center">@babel/preset-env</td><td align="center">브라우저에 맞게 옛날문법을 최신문법으로 바꿔줌(즉, 옛날 문법을 지원해줌)지원할 <a href="https://github.com/browserslist/browserslist#full-list">브라우저를 옵션으로 설정</a>할 수 있다. 지원을 많이할수록 느려진다</td></tr><tr><td align="center">@babel/preset-react</td><td align="center">jsx 지원</td></tr><tr><td align="center">babel-loader</td><td align="center">바벨과 웹팩을 연결해줌</td></tr><tr><td align="center">@babel/plugin-proposal-class-properties</td><td align="center">state문법사용할 수 있게 만듦</td></tr></tbody></table><p><br><br><br></p><h2 id="webpack-만드는-순서"><a href="#webpack-만드는-순서" class="headerlink" title="webpack 만드는 순서"></a>webpack 만드는 순서</h2><ol><li>만든 파일 webpack으로 만들기<ol><li>npm init</li><li>npm install –save react react-dom</li><li>npm i -D webpack webpack-cli</li><li>npm i -D @babel/core @babel/preset-env @babel/preset-react babel-loader @babel/plugin-proposal-class-properties</li></ol></li><li>위 4가지 설치 완료 후에 webpack.config.js 파일 생성 후 작성</li><li>entry파일 생성 -&gt; client.jsx</li><li>Gugudan.jsx파일 생성</li><li>npm run dev 또는 npx webpack</li><li>index.html 파일생성하여 webpack으로 만든 app.js 불러오기</li></ol><p><br><br><br></p><h2 id="webpack-데브-서버-dev-server-와-핫-리로딩-hot-reloading"><a href="#webpack-데브-서버-dev-server-와-핫-리로딩-hot-reloading" class="headerlink" title="webpack 데브 서버(dev server)와 핫 리로딩(hot reloading)"></a>webpack 데브 서버(dev server)와 핫 리로딩(hot reloading)</h2><table><thead><tr><th align="center">개념</th><th align="center">설명</th></tr></thead><tbody><tr><td align="center">reloading</td><td align="center">그냥 새로고침</td></tr><tr><td align="center">hot reloading</td><td align="center">기존데이터 유지하고 변경점만 바뀜</td></tr><tr><td align="center">plugins</td><td align="center">확장프로그램</td></tr></tbody></table><ol><li>react-refresh-webpack 설치하기<ul><li>npm i react-refresh @pmmmwh/react-refresh-webpack-plugin -D</li><li>서버도 필요하기때문에 설치하기 변경점이 생기면 감지하여서 기존데이터 유지하면서 화면을 바꿔줌.</li></ul></li><li>dev-server 설치하기<ul><li>npm i -D webpack-dev-server</li></ul></li><li>pakage.json scripts 수정<ul><li>“dev”: “webpack serve –env development”</li></ul></li><li>webpack.config.js에서 수정<ul><li>plugins추가<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">plugins[</span><br><span class="line"><span class="keyword">new</span> RefreshWebpackPlugin()</span><br><span class="line">]</span><br></pre></td></tr></table></figure></li></ul></li></ol>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/React/">React</category>
-      
-      
-      
-      <comments>https://sowon-dev.github.io/2021/03/14/210314ReactLectureByZerocho/#disqus_thread</comments>
       
     </item>
     
