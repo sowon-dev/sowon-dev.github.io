@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2021/04/18/210418al-backjoon-1065/</loc>
+        <lastmod>2021-04-18T13:51:08.897Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2021/12/29/algorithmList/</loc>
+        <lastmod>2021-04-18T13:47:43.195Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2021/04/12/210415MSA/</loc>
         <lastmod>2021-04-15T06:45:49.174Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -32,15 +48,7 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2021/12/29/algorithmList/</loc>
-        <lastmod>2021-04-13T22:54:15.297Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2021/04/13/210411al-backjon-4344/</loc>
+        <loc>https://sowon-dev.github.io/2021/04/13/210411al-backjoon-4344/</loc>
         <lastmod>2021-04-13T13:22:08.250Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -48,7 +56,7 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2021/04/13/210411al-backjon-3052/</loc>
+        <loc>https://sowon-dev.github.io/2021/04/13/210411al-backjoon-3052/</loc>
         <lastmod>2021-04-13T13:21:46.318Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
