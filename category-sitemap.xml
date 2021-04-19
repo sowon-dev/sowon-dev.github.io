@@ -8,15 +8,29 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/categories/Algorithm/</loc>
-        <lastmod>2021-04-18T13:51:08.897Z</lastmod>
+        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
+        <lastmod>2021-04-19T06:56:21.236Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
-        <lastmod>2021-04-15T06:45:49.174Z</lastmod>
+        <loc>https://sowon-dev.github.io/categories/Algorithm/</loc>
+        <lastmod>2021-04-19T05:52:55.361Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/JavaScript/</loc>
+        <lastmod>2021-04-19T05:52:05.849Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Lectures-Seminars/</loc>
+        <lastmod>2021-04-19T00:37:36.157Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -52,13 +66,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/Network/</loc>
         <lastmod>2021-04-02T09:08:07.667Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/JavaScript/</loc>
-        <lastmod>2021-04-02T06:14:14.486Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -101,13 +108,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/%25EC%25A0%259C%25EC%25A3%25BC%25EC%25BD%2594%25EB%2594%25A9%25EB%25B2%25A0%25EC%259D%25B4%25EC%258A%25A4%25EC%25BA%25A0%25ED%2594%2584-10%25EA%25B8%25B0/</loc>
         <lastmod>2021-03-24T15:59:00.084Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Lectures-Seminars/</loc>
-        <lastmod>2021-03-17T13:58:04.080Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
