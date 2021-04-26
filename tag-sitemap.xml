@@ -3,15 +3,22 @@
 
 
     <url>
-        <loc>https://sowon-dev.github.io/tags/Backjoon/</loc>
-        <lastmod>2021-04-19T15:01:47.805Z</lastmod>
+        <loc>https://sowon-dev.github.io/tags/Hexo/</loc>
+        <lastmod>2021-04-26T02:29:50.321Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/tags/List/</loc>
-        <lastmod>2021-04-19T14:50:03.732Z</lastmod>
+        <lastmod>2021-04-26T02:16:30.085Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/Backjoon/</loc>
+        <lastmod>2021-04-19T15:01:47.805Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -124,13 +131,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/HTML-CSS/</loc>
         <lastmod>2021-04-02T06:09:44.389Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/Hexo/</loc>
-        <lastmod>2021-04-02T05:09:51.088Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
