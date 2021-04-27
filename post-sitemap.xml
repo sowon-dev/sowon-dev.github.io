@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2020/11/16/jspList/</loc>
+        <lastmod>2021-04-27T13:43:31.012Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/07/14/freeToolListForFront/</loc>
+        <lastmod>2021-04-27T12:52:45.201Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2021/04/26/210427appDB/</loc>
         <lastmod>2021-04-27T09:35:57.123Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -162,14 +178,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/12/03/freeToolListForBack/</loc>
         <lastmod>2021-04-07T08:00:20.166Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/07/14/freeToolListForFront/</loc>
-        <lastmod>2021-04-07T02:25:39.363Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -938,14 +946,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/11/16/201117techbloglist/</loc>
         <lastmod>2020-11-17T07:38:32.291Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/11/16/jspList/</loc>
-        <lastmod>2020-11-12T05:30:37.260Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
