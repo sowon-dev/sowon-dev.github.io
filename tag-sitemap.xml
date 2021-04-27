@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/MariaDB/</loc>
+        <lastmod>2021-04-27T09:35:57.123Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/Hexo/</loc>
         <lastmod>2021-04-26T13:58:32.927Z</lastmod>
         <changefreq>weekly</changefreq>
