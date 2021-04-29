@@ -3,8 +3,15 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/Backjoon/</loc>
+        <lastmod>2021-04-29T15:34:52.691Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/List/</loc>
-        <lastmod>2021-04-28T05:49:16.303Z</lastmod>
+        <lastmod>2021-04-29T15:21:38.512Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -33,13 +40,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/Hexo/</loc>
         <lastmod>2021-04-26T13:58:32.927Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/Backjoon/</loc>
-        <lastmod>2021-04-19T15:01:47.805Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
