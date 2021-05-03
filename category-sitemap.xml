@@ -8,6 +8,27 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/Database/MySQL/</loc>
+        <lastmod>2021-05-03T02:15:39.330Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Database/</loc>
+        <lastmod>2021-05-03T02:15:39.330Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/%25EC%25BD%2594%25EB%2593%259C%25EC%258A%25A4%25ED%2585%258C%25EC%259D%25B4%25EC%25B8%25A0-PRE35%25EA%25B8%25B0/</loc>
+        <lastmod>2021-05-01T14:43:52.866Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/JSP/</loc>
         <lastmod>2021-05-01T14:40:57.867Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -50,13 +71,6 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/categories/Database/</loc>
-        <lastmod>2021-04-15T04:42:02.466Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/categories/Spring/</loc>
         <lastmod>2021-04-13T07:40:13.962Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -73,13 +87,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/Network/</loc>
         <lastmod>2021-04-02T09:08:07.667Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/%25EC%25BD%2594%25EB%2593%259C%25EC%258A%25A4%25ED%2585%258C%25EC%259D%25B4%25EC%25B8%25A0-PRE35%25EA%25B8%25B0/</loc>
-        <lastmod>2021-04-02T06:12:55.946Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -157,13 +164,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/%25EC%2598%25A4%25ED%2594%2588%25EC%2586%258C%25EC%258A%25A4%25EC%25BB%25A8%25ED%258A%25B8%25EB%25A6%25AC%25EB%25B7%25B0%25ED%2586%25A42020/</loc>
         <lastmod>2020-11-08T12:52:07.153Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Database/MySQL/</loc>
-        <lastmod>2020-10-30T00:16:47.427Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
