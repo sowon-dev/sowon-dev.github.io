@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2020/11/16/jspList/</loc>
+        <lastmod>2021-05-06T13:54:15.310Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2021/05/02/210504Datetypediff/</loc>
-        <lastmod>2021-05-04T00:08:06.190Z</lastmod>
+        <lastmod>2021-05-06T13:51:08.204Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +25,7 @@
 
     <url>
         <loc>https://sowon-dev.github.io/2021/05/02/210503MariaDB-SQLQuery/</loc>
-        <lastmod>2021-05-03T03:21:23.406Z</lastmod>
+        <lastmod>2021-05-06T05:58:08.764Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -26,14 +34,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/05/18/200519pre/</loc>
         <lastmod>2021-05-01T14:43:52.866Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/11/16/jspList/</loc>
-        <lastmod>2021-05-01T14:40:57.867Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
