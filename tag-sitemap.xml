@@ -3,6 +3,20 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/%25ED%258C%25A8%25EC%258A%25A4%25ED%258A%25B8%25EC%25BA%25A0%25ED%258D%25BC%25EC%258A%25A4-%25EC%25B4%2588%25EA%25B2%25A9%25EC%25B0%25A8Java-Spring/</loc>
+        <lastmod>2021-05-12T03:01:42.965Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/SpringBoot/</loc>
+        <lastmod>2021-05-12T03:01:42.965Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/List/</loc>
         <lastmod>2021-05-11T08:09:11.574Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -12,13 +26,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/Journal/</loc>
         <lastmod>2021-05-11T08:09:11.574Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/SpringBoot/</loc>
-        <lastmod>2021-05-10T14:14:35.923Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -103,13 +110,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/JSON/</loc>
         <lastmod>2021-04-15T04:42:02.466Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/%25ED%258C%25A8%25EC%258A%25A4%25ED%258A%25B8%25EC%25BA%25A0%25ED%258D%25BC%25EC%258A%25A4-%25EC%25B4%2588%25EA%25B2%25A9%25EC%25B0%25A8Java-Spring/</loc>
-        <lastmod>2021-04-13T07:40:13.962Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
