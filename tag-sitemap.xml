@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/SpringBoot/</loc>
+        <lastmod>2021-05-26T14:41:06.669Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/Eclipse/</loc>
         <lastmod>2021-05-13T01:42:52.859Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -11,13 +18,6 @@
 
     <url>
         <loc>https://sowon-dev.github.io/tags/%25ED%258C%25A8%25EC%258A%25A4%25ED%258A%25B8%25EC%25BA%25A0%25ED%258D%25BC%25EC%258A%25A4-%25EC%25B4%2588%25EA%25B2%25A9%25EC%25B0%25A8Java-Spring/</loc>
-        <lastmod>2021-05-12T03:01:42.965Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/SpringBoot/</loc>
         <lastmod>2021-05-12T03:01:42.965Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
