@@ -3,8 +3,22 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/Backjoon/</loc>
+        <lastmod>2021-06-05T16:14:02.391Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/List/</loc>
+        <lastmod>2021-06-05T16:00:40.445Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/MyBatis/</loc>
-        <lastmod>2021-06-04T07:46:04.533Z</lastmod>
+        <lastmod>2021-06-05T15:59:30.636Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -31,13 +45,6 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/tags/List/</loc>
-        <lastmod>2021-05-11T08:09:11.574Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/tags/Journal/</loc>
         <lastmod>2021-05-11T08:09:11.574Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -47,13 +54,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/git/</loc>
         <lastmod>2021-05-10T03:11:37.297Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/Backjoon/</loc>
-        <lastmod>2021-05-08T09:25:55.215Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

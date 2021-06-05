@@ -8,8 +8,24 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2021/06/05/210606al-backjoon-2751/</loc>
+        <lastmod>2021-06-05T16:14:02.391Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2021/12/29/algorithmList/</loc>
+        <lastmod>2021-06-05T16:00:40.445Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2021/06/03/210604MyBatis-selectKey/</loc>
-        <lastmod>2021-06-04T07:46:04.533Z</lastmod>
+        <lastmod>2021-06-05T15:59:30.636Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -66,14 +82,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2021/05/08/210508al-backjoon-2869/</loc>
         <lastmod>2021-05-08T09:25:55.215Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2021/12/29/algorithmList/</loc>
-        <lastmod>2021-05-08T09:17:23.515Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
