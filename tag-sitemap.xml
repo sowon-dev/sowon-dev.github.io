@@ -3,15 +3,22 @@
 
 
     <url>
-        <loc>https://sowon-dev.github.io/tags/List/</loc>
-        <lastmod>2021-06-07T14:38:06.533Z</lastmod>
+        <loc>https://sowon-dev.github.io/tags/git/</loc>
+        <lastmod>2021-06-09T07:16:27.170Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/tags/Backjoon/</loc>
-        <lastmod>2021-06-07T14:38:04.389Z</lastmod>
+        <lastmod>2021-06-09T01:23:35.540Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/List/</loc>
+        <lastmod>2021-06-07T14:38:06.533Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -47,13 +54,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/Journal/</loc>
         <lastmod>2021-05-11T08:09:11.574Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/git/</loc>
-        <lastmod>2021-05-10T03:11:37.297Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

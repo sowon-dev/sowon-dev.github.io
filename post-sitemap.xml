@@ -8,8 +8,16 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2021/12/29/algorithmList/</loc>
-        <lastmod>2021-06-07T14:38:06.533Z</lastmod>
+        <loc>https://sowon-dev.github.io/2021/05/09/210510git-connectProject/</loc>
+        <lastmod>2021-06-09T07:16:27.170Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2021/06/08/210609Gitadddiff/</loc>
+        <lastmod>2021-06-09T07:16:25.246Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +25,15 @@
 
     <url>
         <loc>https://sowon-dev.github.io/2021/06/05/210606al-backjoon-2751/</loc>
-        <lastmod>2021-06-07T14:38:04.389Z</lastmod>
+        <lastmod>2021-06-09T01:23:35.540Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2021/12/29/algorithmList/</loc>
+        <lastmod>2021-06-07T14:38:06.533Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -66,14 +82,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2021/05/09/210510springboot-pom/</loc>
         <lastmod>2021-05-10T14:14:35.923Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2021/05/09/210510git-connectProject/</loc>
-        <lastmod>2021-05-10T03:11:37.297Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
