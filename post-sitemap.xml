@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2021/06/23/210624MybatisColumnChange/</loc>
+        <lastmod>2021-06-24T04:39:46.341Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2021/06/03/210604MyBatis-selectKey/</loc>
+        <lastmod>2021-06-24T04:39:01.177Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2021/06/13/210614leftouter/</loc>
         <lastmod>2021-06-14T05:51:19.121Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -50,14 +66,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2021/12/29/algorithmList/</loc>
         <lastmod>2021-06-07T14:38:06.533Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2021/06/03/210604MyBatis-selectKey/</loc>
-        <lastmod>2021-06-05T15:59:30.636Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
