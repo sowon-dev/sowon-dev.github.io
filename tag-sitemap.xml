@@ -3,6 +3,20 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/STS/</loc>
+        <lastmod>2021-07-08T03:01:32.138Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/Eclipse/</loc>
+        <lastmod>2021-07-08T03:01:32.138Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/APK/</loc>
         <lastmod>2021-07-02T02:17:52.634Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -54,13 +68,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/SpringBoot/</loc>
         <lastmod>2021-05-27T14:17:31.290Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/Eclipse/</loc>
-        <lastmod>2021-05-13T01:42:52.859Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -138,13 +145,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/JSON/</loc>
         <lastmod>2021-04-15T04:42:02.466Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/STS/</loc>
-        <lastmod>2021-04-13T00:57:53.834Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

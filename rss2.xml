@@ -40,6 +40,31 @@
     </item>
     
     <item>
+      <title>[Eclip/STS]특정 파일이  커밋이 안 될때, 파일아이콘에 체크표시가 되어있을때</title>
+      <link>https://sowon-dev.github.io/2021/07/07/210708sts-icon-meaning/</link>
+      <guid>https://sowon-dev.github.io/2021/07/07/210708sts-icon-meaning/</guid>
+      <pubDate>Wed, 07 Jul 2021 16:19:12 GMT</pubDate>
+      
+      <description>&lt;p&gt;STS에서 열심히 코딩하고 커밋하려고 하는데 특정 파일만 자꾸 Git Staging에 올라오지도 않고 index에 추가되지도 않으며 Commit도 되질 않았다.&lt;br&gt;도대체 문제가 뭘까.&lt;br&gt;설정을 확인하며 파일을 유심히 보는데 오 홀리!!! 해당 파일의 작은 아이콘 모양이 다른 파일들과 달랐다.&lt;br&gt;왕년의 다른그림찾기실력이 여기서 쓰일 줄이야. 😂 &lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>STS에서 열심히 코딩하고 커밋하려고 하는데 특정 파일만 자꾸 Git Staging에 올라오지도 않고 index에 추가되지도 않으며 Commit도 되질 않았다.<br>도대체 문제가 뭘까.<br>설정을 확인하며 파일을 유심히 보는데 오 홀리!!! 해당 파일의 작은 아이콘 모양이 다른 파일들과 달랐다.<br>왕년의 다른그림찾기실력이 여기서 쓰일 줄이야. 😂 </p><a id="more"></a><p><br><br><br></p><h2 id="원인"><a href="#원인" class="headerlink" title="원인"></a>원인</h2><p>다른 파일들은 노란 네모 아이콘이 있는데 해당 파일에만 체크 아이콘이 있었다.<br>이 작은 아이콘을 가볍게 여겨선 안된다.<br>Assume unchanged라는 의미로 git에서 해당 파일이 무슨 변화가 있든 변화가 없다고 받아드리겠다는 의미이다.<br>그러니 내가 아무리 코드를 수정해도 git은 수정사항이 없다고 판단하고 staging에 올리지도 않았다.</p><p><br><br><br></p><h2 id="ICON-뜻-알아보기"><a href="#ICON-뜻-알아보기" class="headerlink" title="ICON 뜻 알아보기"></a>ICON 뜻 알아보기</h2><p>아래 이미지의 순서대로 아이콘의 의미를 알아보자.</p><p><img src="https://wiki.eclipse.org/images/0/07/02-IconDecorations.png" alt="https://wiki.eclipse.org/EGit/User_Guide/State"></p><ul><li>floder앞에 닫는 태그 <code>&gt;</code> (dirty) : 이 폴더 안의 적어도 하나 이상의 파일이 dirty 하다. 즉 변화가 있는 파일이 있다.</li><li>노란 네모 (tracked) : Git 레포지토리에 해당 파일를 추적 중이다.</li><li><code>?</code> (untracked) : Git 레포지토리에서 처음 보는 파일이다. 즉 신규 파일을 생성한 경우 이렇게 뜬다.</li><li>아이콘 없음 (ignored) : .gitignore 파일 안에 명시된 파일이나 git에 올라가지 않는 무시되고있는 파일이다.<ul><li>설정 및 확인방법 1. 파일 우클릭-&gt;Team-&gt;ignore</li><li>설정 및 확인방법 2. preference-&gt;Team-&gt;Ignored Resources</li></ul></li><li>dirty.txt앞에 닫는 태그<code>&gt;</code> (dirty) : 인덱스 및 레포지토리에 추가되지 않은 변경사항이 있는 파일이다.</li><li><code>*</code> (staged) : 해당 파일이 인덱스에 추가되었다. </li><li><code>*</code>와 <code>&gt;</code> (partially-staged) : 해당 파일의 수정사항이 인덱스에 추가된 후 해당 파일에 변경사항이 있다.</li><li><code>+</code> (added) : 해당 파일이 인덱스에 추가되었다.</li><li><code>x</code> (removed) : 해당 파일이 로컬 디렉토리에서 삭제되면서 버전이 변경되었다. 이 표시는 프로젝트 구조가 아닌 Git staging 메뉴에서 확인할 수 있다.</li><li>빨간 마름모 (conflict) : 해당 파일에 merge 충돌이 있다.</li><li>파란 <code>✓</code> (assume-valid) : 해당 파일에 무슨 변화가 있더라도 변화가 없다고 판단한다.<ul><li>설정방법 : Team -&gt;Assume unchanged 또는 Not Assume unchanged</li></ul></li></ul><p><br><br><br></p><h2 id="GUI로-해결하기"><a href="#GUI로-해결하기" class="headerlink" title="GUI로 해결하기"></a>GUI로 해결하기</h2><ol><li>체크 아이콘이 있는 파일 우클릭</li><li>아래 이미지처럼 Team -&gt; Advanced -&gt; No Assume Unchanged 클릭<br><img src="/img/210708sts-icon.PNG" alt=""></li><li>2번을 실행해도 여전히 체크 아이콘이 있을 것이다. 당황하지 않고 😁 STS/이클립스를 재시작해준다.</li><li>재시작 후 확인해보면 해당 파일의 체크 아이콘이 노란 네모 아이콘으로 바뀐 것을 확인할 수 있다!</li></ol><p>해결!</p><p><br><br><br></p><h2 id="CLI로-해결하기"><a href="#CLI로-해결하기" class="headerlink" title="CLI로 해결하기"></a>CLI로 해결하기</h2><p>CLI로 설정하는 방법은 <a href="https://www.zerocho.com/category/Git/post/60ceb24dcc6ccc0004c38287">특정 파일만 커밋하지 않기(–assume-unchanged)</a>를 참고하면 된다.</p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://wiki.eclipse.org/EGit/User_Guide/State">https://wiki.eclipse.org/EGit/User_Guide/State</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Eclipse/">Eclipse</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/STS/">STS</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2021/07/07/210708sts-icon-meaning/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>안드로이드 스튜디오 AVD에 APK연결하기</title>
       <link>https://sowon-dev.github.io/2021/06/29/210630avd/</link>
       <guid>https://sowon-dev.github.io/2021/06/29/210630avd/</guid>
@@ -469,29 +494,6 @@
       
       
       <comments>https://sowon-dev.github.io/2021/04/26/210427appDB/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[Hexo]헥소블로그 구글애드센스설정(초간단)</title>
-      <link>https://sowon-dev.github.io/2021/04/25/210426hexoblog-googleAdSense/</link>
-      <guid>https://sowon-dev.github.io/2021/04/25/210426hexoblog-googleAdSense/</guid>
-      <pubDate>Sun, 25 Apr 2021 17:08:55 GMT</pubDate>
-      
-      <description>&lt;p&gt;Hexo 블로그에 구글애드센스를 설정해보자. &lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>Hexo 블로그에 구글애드센스를 설정해보자. </p><a id="more"></a><h1 id="구글애드센스-가입"><a href="#구글애드센스-가입" class="headerlink" title="구글애드센스 가입"></a>구글애드센스 가입</h1><p><a href="https://www.google.co.kr/intl/ko_kr/adsense/start/?utm_campaign=1001272-adsense-acquisition-kr-ko-hybrid-bkws">구글애드센스</a>에서 시작하기 버튼을 클릭한 뒤 아래 정보를 입력한다.</p><ul><li>웹사이트: 자신의 헥소 블로그 주소 </li><li>이메일주소: 자신의 구글 이메일주소</li></ul><p>저장하고 계속하기를 클릭하면 구글 애드센스 코드를 입력하라는 안내메세지가 나온다.<br>여기서 클라이언트ID를 복사한다.<br>참고로 client_id는 ‘ca-알파벳세글자-숫자여러개’로 구성된다.</p><p><br><br><br></p><h1 id="헥소블로그에-구글애드센스-아이디-넣기"><a href="#헥소블로그에-구글애드센스-아이디-넣기" class="headerlink" title="헥소블로그에 구글애드센스 아이디 넣기"></a>헥소블로그에 구글애드센스 아이디 넣기</h1><p>블로그 프로젝트에서 <code>_config.yml</code>를 연다. 혹시나 <code>_config.yml</code>이 두 개인 경우 사용하는 테마내의 <code>_config.yml</code>를 열어주면 된다.<br>헷갈릴 경우 <code>_config.yml</code> 둘 다 연뒤 <code>AdSense</code> 키워드로 검색해서 검색결과가 있는 <code>_config.yml</code>를 찾으면 된다.<br>복사해둔 클라이언트ID를 작은 따옴표 안에 붙여넣고 DEPLOY해준다.<br>구글봇이 내 블로그가 구글애드센스에 적합한지 체크를 한 뒤 구글애드센스를 이용할 수 있다. 이 과정은 최대 2주일정도 소요된다고한다.<br>나는 5일정도 걸렸다. </p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># Google AdSense unit configurations</span><br><span class="line">-</span><br><span class="line"># Where should the widget be placed, left sidebar or right sidebar</span><br><span class="line">position: left</span><br><span class="line">type: adsense</span><br><span class="line"># AdSense client ID</span><br><span class="line">client_id: '웹게시자 ID입력' </span><br><span class="line"># AdSense AD unit ID</span><br><span class="line">slot_id: '고객 ID입력'</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="slot-id넣기"><a href="#slot-id넣기" class="headerlink" title="slot_id넣기"></a>slot_id넣기</h1><p>구글 애드센스가 정상적으로 등록되었다면 <a href="https://www.google.co.kr/intl/ko_kr/adsense/start/?utm_campaign=1001272-adsense-acquisition-kr-ko-hybrid-bkws">구글 애드센스</a>에서 로그인하면 대시보드를 볼 수 있다.<br>여기서 [계정] - [계정정보]를 클릭하면 웹게시자ID와 고객 ID를 확인할 수 있다.<br>이때 고객 ID를 복사 한뒤 사용하는 테마내의 <code>_config.yml</code>를 열고 slot_id의 작은 따옴표 안에 붙여넣는다.<br>slot_id는 오로지 숫자여러개로 구성되어있다.</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># Google AdSense unit configurations</span><br><span class="line">-</span><br><span class="line"># Where should the widget be placed, left sidebar or right sidebar</span><br><span class="line">position: left</span><br><span class="line">type: adsense</span><br><span class="line"># AdSense client ID</span><br><span class="line">client_id: '웹게시자 ID입력'</span><br><span class="line"># AdSense AD unit ID</span><br><span class="line">slot_id: '고객 ID입력'</span><br></pre></td></tr></table></figure><p>이렇게 설정하면 끝!</p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/Hexo/">Hexo</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2021/04/25/210426hexoblog-googleAdSense/#disqus_thread</comments>
       
     </item>
     
