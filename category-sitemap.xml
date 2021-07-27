@@ -8,6 +8,20 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/Database/</loc>
+        <lastmod>2021-07-27T08:04:06.354Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Algorithm/</loc>
+        <lastmod>2021-07-27T06:38:59.176Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/Lectures-Seminars/</loc>
         <lastmod>2021-07-25T10:02:44.121Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -50,13 +64,6 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/categories/Database/</loc>
-        <lastmod>2021-06-24T04:39:46.341Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/categories/Database/MySQL/</loc>
         <lastmod>2021-06-14T05:51:19.121Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -66,13 +73,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/Version-control/</loc>
         <lastmod>2021-06-09T07:16:27.170Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Algorithm/</loc>
-        <lastmod>2021-06-09T01:23:35.540Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
