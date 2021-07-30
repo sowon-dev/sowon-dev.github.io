@@ -8,15 +8,22 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/categories/Spring/</loc>
-        <lastmod>2021-07-29T14:40:47.305Z</lastmod>
+        <loc>https://sowon-dev.github.io/categories/Network/</loc>
+        <lastmod>2021-07-30T14:55:08.874Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/categories/Lectures-Seminars/</loc>
-        <lastmod>2021-07-27T13:37:37.956Z</lastmod>
+        <lastmod>2021-07-30T14:54:12.542Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Spring/</loc>
+        <lastmod>2021-07-30T14:44:51.100Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -108,13 +115,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/React/</loc>
         <lastmod>2021-04-13T04:39:17.886Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Network/</loc>
-        <lastmod>2021-04-02T09:08:07.667Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
