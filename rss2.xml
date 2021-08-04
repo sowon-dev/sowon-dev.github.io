@@ -9,8 +9,56 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Mon, 02 Aug 2021 07:54:43 GMT</pubDate>
+    <pubDate>Wed, 04 Aug 2021 07:43:52 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[Spring]Springboot Exception처리</title>
+      <link>https://sowon-dev.github.io/2021/08/03/210804springbootError/</link>
+      <guid>https://sowon-dev.github.io/2021/08/03/210804springbootError/</guid>
+      <pubDate>Tue, 03 Aug 2021 21:35:42 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;예외처리-어노테이션&quot;&gt;&lt;a href=&quot;#예외처리-어노테이션&quot; class=&quot;headerlink&quot; title=&quot;예외처리 어노테이션&quot;&gt;&lt;/a&gt;예외처리 어노테이션&lt;/h2&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="예외처리-어노테이션"><a href="#예외처리-어노테이션" class="headerlink" title="예외처리 어노테이션"></a>예외처리 어노테이션</h2><a id="more"></a><ul><li><code>@ControllerAdvice</code>: 글로벌 예외처리 및 특정 package/controller 예외처리<ul><li>속성 basePackageClasses</li></ul></li><li><code>@ExceptionHandler</code>: 특정 controller예외처리</li></ul><p>Exceprion이 발생했을 때 어떤 부분의 예외인지 그 이름을 알고 싶을때 Exception클래스 내 <code>e.getClass().getName()</code>메서드를 사용할 수 있다.</p><p><br><br><br></p><h2 id="다른-개발자가-봐도-알기쉽도록-메시지를-꾸며보자"><a href="#다른-개발자가-봐도-알기쉽도록-메시지를-꾸며보자" class="headerlink" title="다른 개발자가 봐도 알기쉽도록 메시지를 꾸며보자"></a>다른 개발자가 봐도 알기쉽도록 메시지를 꾸며보자</h2>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4-%EC%B4%88%EA%B2%A9%EC%B0%A8Java-Spring/">패스트캠퍼스(초격차Java/Spring)</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2021/08/03/210804springbootError/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>@의 의미와 ROWNUM으로 활용하기</title>
+      <link>https://sowon-dev.github.io/2021/08/03/210804rownum/</link>
+      <guid>https://sowon-dev.github.io/2021/08/03/210804rownum/</guid>
+      <pubDate>Tue, 03 Aug 2021 19:30:55 GMT</pubDate>
+      
+      <description>&lt;p&gt;MySql에서 사용하는 @의 의미는 무엇일까? 사용자 정의 변수이다.&lt;br&gt;게시판 글번호 매기는 기능은 화면에서 할 수 있지만 MySQL에서도 할 수 있다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>MySql에서 사용하는 @의 의미는 무엇일까? 사용자 정의 변수이다.<br>게시판 글번호 매기는 기능은 화면에서 할 수 있지만 MySQL에서도 할 수 있다.</p><a id="more"></a><h2 id="사용자-정의-변수"><a href="#사용자-정의-변수" class="headerlink" title="사용자 정의 변수"></a>사용자 정의 변수</h2><p>접두사 <code>@</code>는 사용자정의함수를 의미한다.<br>아래처럼 변수를 초기화할 수 있고 초기화시 NULL값이 할당된다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//변수 abc 선언</span></span><br><span class="line">SELECT <span class="meta">@abc</span>;</span><br></pre></td></tr></table></figure><p>MySQL은 NULL을 리턴한다.<br>사용자 정의 변수는 하나의 커넥션상에서 공유되기때문에 변수를 사용하고 초기화하지않으면 다른 쿼리 결과에 영향을 미칠 수 있다.<br>따라서 사용자 정의 변수 사용시 변수값을 항상 초기화해줘야한다. </p><p><br><br><br></p><h2 id="사용자-정의-변수-초기화"><a href="#사용자-정의-변수-초기화" class="headerlink" title="사용자 정의 변수 초기화"></a>사용자 정의 변수 초기화</h2><p>사용자 정의 변수에 할당할 수 있는 데이터 타입은 5가지이다.<br>별도의 타입을 지정하는 것은 아니고 스크립트언어처럼 저장하는 값에 의해 타입이 정해진다. </p><ol><li>문자열</li><li>정수</li><li>십진수</li><li>부동 소수점</li><li>NULL</li></ol><p>사용자 정의 변수 초기화 방법에는 3가지가 있다.</p><ol><li>SET 이용</li><li>SELECT 이용 + FROM절에서 초기화</li><li>SELECT 이용 + WHERE절에서 초기화</li></ol><p>이때 명령문 2가지를 사용할 수 있는데 두 명령문은 동일하다.</p><ol><li>SET이용시 <code>@변수명=값</code> 또는 <code>@변수명:=값</code></li><li>SELECT이용시 <code>@변수명:=값</code></li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. SET이용하여 변수 abc 초기화</span></span><br><span class="line">SET <span class="meta">@abc</span>=<span class="number">77</span>; </span><br><span class="line">SET <span class="meta">@abc</span>:=<span class="number">77</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// set한 변수 사용 예시</span></span><br><span class="line">SELECT <span class="meta">@abc</span> as <span class="string">'순번'</span></span><br><span class="line">FROM example;</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 2. SELECT이용 + FROM절에서 변수 abc를 77로 초기화 후 10씩 증가</span></span><br><span class="line">SELECT <span class="meta">@abc</span>:=<span class="meta">@abc</span>+<span class="number">10</span></span><br><span class="line">FROM   example t1, (SELECT <span class="meta">@abc</span>:=<span class="number">77</span>) t2;</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 3. SELECT 이용 + WHERE절에서 변수 abc를 77로 초기화 후 10씩 증가</span></span><br><span class="line">SELECT <span class="meta">@abc</span>:=<span class="meta">@abc</span>+<span class="number">10</span></span><br><span class="line">FROM   example t1</span><br><span class="line">WHERE  (<span class="meta">@abc</span>:=<span class="number">77</span>) = <span class="number">77</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 결과</span></span><br><span class="line"><span class="number">87</span></span><br><span class="line"><span class="number">97</span></span><br><span class="line"><span class="number">107</span></span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">.</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="ROWNUM-사용"><a href="#ROWNUM-사용" class="headerlink" title="ROWNUM 사용"></a>ROWNUM 사용</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// FROM절에서 초기화</span></span><br><span class="line">SELECT <span class="meta">@rowNum</span>:=<span class="meta">@rowNum</span>+<span class="number">1</span>  as <span class="string">'순번'</span></span><br><span class="line">FROM   example t1, (SELECT <span class="meta">@rowNum</span>:=<span class="number">0</span>) t2;</span><br></pre></td></tr></table></figure><p>실제로 내가 업무에서 사용하고 있는 방식은 WHERE절에서 초기화하는 방식이다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// WHERE절에서 초기화</span></span><br><span class="line">SELECT <span class="meta">@rowNum</span>:=<span class="meta">@rowNum</span>+<span class="number">1</span> as <span class="string">'순번'</span></span><br><span class="line">FROM   example</span><br><span class="line">WHERE (<span class="meta">@rowNum</span>:=<span class="number">0</span>) = <span class="number">0</span>;</span><br></pre></td></tr></table></figure><p>추가로 역순으로 나타내고 싶을 때 사용할 수 있는 방법이 있다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 역순 정렬</span></span><br><span class="line">SELECT A.no as <span class="string">'순번'</span></span><br><span class="line">FROM (</span><br><span class="line">   SELECT <span class="meta">@rowNum</span> := <span class="meta">@rowNum</span> + <span class="number">1</span> AS 순번</span><br><span class="line">   FROM   example t1, (SELECT <span class="meta">@rowNum</span>:=<span class="number">0</span>) t2;</span><br><span class="line">     ) A</span><br><span class="line">ORDER BY 순번 DESC</span><br></pre></td></tr></table></figure><p>여기서 하나 의문점은 select절 별칭부분에 따옴표를 넣어 <code>as &#39;순번&#39;</code>을 사용하고 <code>order by &#39;순번&#39; desc</code>를 한다면 정렬이 되지 않는 다.<br>여러 테스트를 해본 결과 DBtool이 아닌 MariaDB문제인 것 같다.<br>왜 <code>순번</code>은 되고 <code>&#39;순번&#39;</code>은 안될까?<br>구글링해도 뚜렷한 답이 나오지 않아 issue를 보내려고 했으나 <a href="https://github.com/MariaDB/server">레포에 issue창은 없고 PR창만 있어서</a> 기여는 다음에 언젠가 하는 걸로….</p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://three-pleasure.tistory.com/256">https://three-pleasure.tistory.com/256</a></li><li><a href="https://wakestand.tistory.com/556">https://wakestand.tistory.com/556</a></li><li><a href="https://dev.mysql.com/doc/refman/8.0/en/user-variables.html">https://dev.mysql.com/doc/refman/8.0/en/user-variables.html</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
+      
+      <category domain="https://sowon-dev.github.io/categories/Database/MySQL/">MySQL</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/MariaDB/">MariaDB</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2021/08/03/210804rownum/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Springboot validation annotation parttern 정규식 오류 해결</title>
@@ -438,52 +486,6 @@
       
       
       <comments>https://sowon-dev.github.io/2021/06/05/210606al-backjoon-2751/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[MyBatis] select한 값을 바로 insert할 수 있을까?</title>
-      <link>https://sowon-dev.github.io/2021/06/03/210604MyBatis-selectKey/</link>
-      <guid>https://sowon-dev.github.io/2021/06/03/210604MyBatis-selectKey/</guid>
-      <pubDate>Thu, 03 Jun 2021 15:00:00 GMT</pubDate>
-      
-      <description>&lt;p&gt;DB Mapper를 코딩하면서 일회성으로 쓸 쿼리를 계속 만들어야하는가에 대한 의문이 생겼다.&lt;br&gt;예를 들어 아래와 같은 UserDTO가 있다고하자.&lt;br&gt;user테이블에 idx, name, dept_code만 넣고 싶다. dept_code는 department테이블에서 user_id로 알아낼 수 있다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>DB Mapper를 코딩하면서 일회성으로 쓸 쿼리를 계속 만들어야하는가에 대한 의문이 생겼다.<br>예를 들어 아래와 같은 UserDTO가 있다고하자.<br>user테이블에 idx, name, dept_code만 넣고 싶다. dept_code는 department테이블에서 user_id로 알아낼 수 있다.</p><a id="more"></a><p>그렇다면 가장 쉽게 생각나는 방법은 dept_code를 찾는 쿼리와 insert하는 쿼리로 2가지 쿼리 만드는 방법이다.<br>하지만 dept_code를 찾는 쿼리는 insert하는 쿼리하기위해 한번만 사용되는 일회성 쿼리라면 굳이 쿼리를 나눠서 작성할 필요가 있을까?<br>여기서 내 궁금증은 커져만 갔고 한 개의 쿼리를 만들고 싶다는 마음이 강해졌다.</p><p><br><br><br></p><h2 id="공통코드"><a href="#공통코드" class="headerlink" title="공통코드"></a>공통코드</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line">  <span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserDTO</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> idx;</span><br><span class="line"><span class="keyword">private</span> String name;</span><br><span class="line">    <span class="meta">@NotBlank</span> <span class="meta">@Size</span>(min=<span class="number">13</span>, max=<span class="number">14</span>)</span><br><span class="line">    <span class="keyword">private</span> String user_id;</span><br><span class="line"><span class="keyword">private</span> String dept_code;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="기존코드"><a href="#기존코드" class="headerlink" title="기존코드"></a>기존코드</h2><p>UserDTO를 선언하고 findDeptCode 쿼리 실행하여 나온 result값을 dept_code에 넣어주고 난 뒤 insertUser쿼리를 실행하면 된다.</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- dept_code를 찾는 쿼리  --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"findDeptCode"</span> <span class="attr">parameterType</span>=<span class="string">"String"</span> <span class="attr">resultType</span>=<span class="string">"String"</span>&gt;</span></span><br><span class="line">SELECT dept_code from department</span><br><span class="line">WHERE user_id = #&#123;user_id&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span> </span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- insert 쿼리  --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">insert</span> <span class="attr">id</span>=<span class="string">"insertUser"</span> <span class="attr">parameterType</span>=<span class="string">"UserDTO"</span>&gt;</span></span><br><span class="line">insert into user</span><br><span class="line">(idx, name, dept_code)</span><br><span class="line">values ( #&#123;idx&#125;, #&#123;name&#125;, #&#123;dept_code&#125; )</span><br><span class="line"><span class="tag">&lt;/<span class="name">insert</span>&gt;</span></span><br></pre></td></tr></table></figure><p>직관적인 쿼리들이지만 나는 하나의 쿼리로 만들고 싶었다.<br>한 기능에서만 딱 한 번 그리고 세트로 실행되는데 여러 개 쿼리를 나눈 것이 비효율적이라고 느껴졌기때문이다.<br>findDeptCode 쿼리와 insertUser 쿼리는 세트이기때문에 유지보수를 위해서도 한 쿼리로 관리하고 싶었다.</p><p>다른 방법이 없을까 구글링하던 끝에 주임님께 조심스럽게 내 생각을 전해보았다.<br>주임님은 바로 이해하시고는 selectkey를 알려주셨다.<br>주임님은 겸손하면서 다정하게 잘 알려주신다.<br>다 가졌어.<br>겸손까지…<br>그저 완벽.</p><p><br><br><br></p><h2 id="selectkey사용한-코드"><a href="#selectkey사용한-코드" class="headerlink" title="selectkey사용한 코드"></a>selectkey사용한 코드</h2><p>짜잔! 한 쿼리로 다 관리할 수 있다. 이를 조금 고급스럽게 표현하면 Mybatis 동적쿼리라고 부른다.</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">insert</span> <span class="attr">id</span>=<span class="string">"insertUser"</span> <span class="attr">parameterType</span>=<span class="string">"UserDTO"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">selectKey</span> <span class="attr">id</span>=<span class="string">"findDeptCode"</span> <span class="attr">resultType</span>=<span class="string">"String"</span> <span class="attr">keyProperty</span>=<span class="string">"dept_code"</span> <span class="attr">order</span>=<span class="string">"BEFORE"</span>&gt;</span></span><br><span class="line">SELECT dept_code from department</span><br><span class="line">WHERE user_id = #&#123;user_id&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">selectKey</span>&gt;</span> </span><br><span class="line">insert into user</span><br><span class="line">(idx, name, dept_code)</span><br><span class="line">values ( #&#123;idx&#125;, #&#123;name&#125;, #&#123;dept_code&#125; )</span><br><span class="line"><span class="tag">&lt;/<span class="name">insert</span>&gt;</span></span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="selectkey-사용법"><a href="#selectkey-사용법" class="headerlink" title="selectkey 사용법"></a>selectkey 사용법</h2><ul><li><code>keyProperty</code> : 컬럼명이므로 DTO에 있는 동일한 명을 입력하면 된다.</li><li><code>order=&quot;BEFORE&quot;</code> : insert전에 selectKey문이 실행된다.</li><li><code>order=&quot;AFTER&quot;</code> : insert후에 selectKey문이 실행된다.</li></ul><p><br><br><br></p><h2 id="여담"><a href="#여담" class="headerlink" title="여담"></a>여담</h2><p>주임님 덕분에 오늘 난 한 걸음 더 성장했다!<br>될지 안 될지 알 수 없는 상황에서 구글링해도 안 나오니까 그냥 안 되나보다하고 포기하지않고 끝까지 물어보길 잘했다.<br>아 스트레스도 많이 받지만 이럴땐 정말 재밌다 코딩<br>하나하나 알게 되는 기쁨이 이루 말할수없다.<br>앞으로도 이렇게 성장해나가야지!<br>그나저나 주임님 정말 천재!!</p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://yookeun.github.io/java/2014/07/11/mybatis-selectkey/">https://yookeun.github.io/java/2014/07/11/mybatis-selectkey/</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/MyBatis/">MyBatis</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2021/06/03/210604MyBatis-selectKey/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>REST API 컨트롤러 Mapping을 어떻게 하지?</title>
-      <link>https://sowon-dev.github.io/2021/05/25/210526RESTfulAPI-Odata/</link>
-      <guid>https://sowon-dev.github.io/2021/05/25/210526RESTfulAPI-Odata/</guid>
-      <pubDate>Tue, 25 May 2021 15:00:00 GMT</pubDate>
-      
-      <description>&lt;p&gt;스프링부트로 RestAPI를 구현하고 있다. Mapping 어노테이션에서 URI를 지정시 어떤 규칙으로 적용해야할까?&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>스프링부트로 RestAPI를 구현하고 있다. Mapping 어노테이션에서 URI를 지정시 어떤 규칙으로 적용해야할까?</p><a id="more"></a><h2 id="web-api규칙"><a href="#web-api규칙" class="headerlink" title="web api규칙"></a>web api규칙</h2><p>이를 잘 정리해 둔 블로그가 있다. 이 블로그를 통해 감을 잡을 수 있었다.</p><ul><li><a href="https://www.mimul.com/blog/web-api-design-from-apigee/?fbclid=IwAR1Q5QmdYTLpgc9c5w9IKQM2i49JBsNuEwyJHntYjWytEYQK89m2fJUMPAE">https://www.mimul.com/blog/web-api-design-from-apigee/?fbclid=IwAR1Q5QmdYTLpgc9c5w9IKQM2i49JBsNuEwyJHntYjWytEYQK89m2fJUMPAE</a></li></ul><p>모든 내용들이 다 좋았지만 그 중에서도 직관적으로 바로 이해가는 세가지는 아래와 같다.</p><ol><li>Nouns are good; verbs are bad.</li><li>Plural nouns and concrete names. 복수명사를 사용하고 구체적인 이름을 사용하기.</li><li>Simplify associations - sweep complexity under the ‘?’. 자원간의 관계, 매개 변수 및 속성과 같은 복잡한 것은 HTTP 물음표 뒤에 가지고 가자.</li></ol><p>위 규칙은 <a href="https://pages.apigee.com/rs/apigee/images/api-design-ebook-2012-03.pdf">Web API Design - Crafting Interfaces that Developers Love</a>과 위 블로그에서 발췌했다.</p><p><br><br><br></p><h2 id="OData-Open-Data-Protocol"><a href="#OData-Open-Data-Protocol" class="headerlink" title="OData (Open Data Protocol)"></a>OData (Open Data Protocol)</h2><p>번역하면 공공 데이터 규약 즉, 데이터를 주고 받는데 있어 지켜야하는 규약을 의미한다.<br>OPEN API들은 보통 이 규약을 준수한다.</p><ul><li><a href="https://docs.microsoft.com/en-us/graph/use-the-api?view=graph-rest-1.0">https://docs.microsoft.com/en-us/graph/use-the-api?view=graph-rest-1.0</a></li></ul><p>마이크로소프트사의 페이지를 가보면 Access data and methods, Paging등에 관한 API예시가 있다.<br>이를 참조하여  오픈 API 틀을 잡는데 도움이 된다.</p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.odata.org/getting-started/basic-tutorial/">https://www.odata.org/getting-started/basic-tutorial/</a></li><li><a href="https://www.ibm.com/docs/ko/license-metric-tool?topic=api-rest-resources-http-methods">https://www.ibm.com/docs/ko/license-metric-tool?topic=api-rest-resources-http-methods</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/SpringBoot/">SpringBoot</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2021/05/25/210526RESTfulAPI-Odata/#disqus_thread</comments>
       
     </item>
     

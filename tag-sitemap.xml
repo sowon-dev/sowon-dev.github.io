@@ -3,15 +3,29 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/%25ED%258C%25A8%25EC%258A%25A4%25ED%258A%25B8%25EC%25BA%25A0%25ED%258D%25BC%25EC%258A%25A4-%25EC%25B4%2588%25EA%25B2%25A9%25EC%25B0%25A8Java-Spring/</loc>
+        <lastmod>2021-08-04T07:43:52.403Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/MariaDB/</loc>
+        <lastmod>2021-08-04T06:32:28.426Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/%25EC%25A0%2595%25EA%25B7%259C%25ED%2591%259C%25ED%2598%2584%25EC%258B%259D/</loc>
-        <lastmod>2021-08-02T07:54:43.912Z</lastmod>
+        <lastmod>2021-08-04T04:35:06.178Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/tags/%25EC%2598%25A4%25EB%25A5%2598%25EC%259D%25BC%25EC%25A7%2580/</loc>
-        <lastmod>2021-08-02T07:54:43.912Z</lastmod>
+        <lastmod>2021-08-04T04:35:06.178Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -19,13 +33,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/Review/</loc>
         <lastmod>2021-08-02T07:29:55.121Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/%25ED%258C%25A8%25EC%258A%25A4%25ED%258A%25B8%25EC%25BA%25A0%25ED%258D%25BC%25EC%258A%25A4-%25EC%25B4%2588%25EA%25B2%25A9%25EC%25B0%25A8Java-Spring/</loc>
-        <lastmod>2021-08-02T07:06:35.454Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -124,13 +131,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/ITWILL-JAVA/</loc>
         <lastmod>2021-05-06T13:54:15.310Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/MariaDB/</loc>
-        <lastmod>2021-05-06T13:51:08.204Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
