@@ -66,7 +66,7 @@
       
       
       
-      <content:encoded><![CDATA[<p>스프링에서 인터셉터에 대해 알아보자.</p><a id="more"></a><h2 id="Interceptor"><a href="#Interceptor" class="headerlink" title="Interceptor"></a>Interceptor</h2><ul><li><a href="https://sowon-dev.github.io/2021/08/06/210807Spring-filter/">Filter</a>와 매우 유사한 형태지만 차이점은 Spring Context에 등록됨.</li><li>Controller 영역 안에 존재</li><li>AOP와 유사한 기능 제공 가능</li><li>주로 <code>인증 단계</code>를 처리하는데 사용 (조직에 따라 Logging용도로 사용)</li><li>인터셉터를 선/후처리함으로써, 서비스 비즈니스 로직과 분리시킴.</li></ul><p><br><br><br></p><h2 id="코드"><a href="#코드" class="headerlink" title="코드"></a>코드</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content:encoded>
+      <content:encoded><![CDATA[<p>스프링에서 인터셉터에 대해 알아보자.</p><a id="more"></a><h2 id="Interceptor"><a href="#Interceptor" class="headerlink" title="Interceptor"></a>Interceptor</h2><ul><li><a href="https://sowon-dev.github.io/2021/08/06/210807Spring-filter/">Filter</a>와 매우 유사한 형태지만 차이점은 Spring Context에 등록됨.</li><li>Controller 영역 안에 존재</li><li>AOP와 유사한 기능 제공 가능</li><li>주로 <code>인증 단계</code>를 처리하는데 사용 (조직에 따라 Logging용도로 사용)</li><li>인터셉터를 선/후처리함으로써, 서비스 비즈니스 로직과 분리시킴.</li><li><code>@RequiredArgsConstructor</code>: final로 선언된 객체들을 생성자에서 주입받을 수 있도록 해줌</li></ul>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
