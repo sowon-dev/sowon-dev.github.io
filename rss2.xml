@@ -9,7 +9,7 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Fri, 13 Aug 2021 14:45:05 GMT</pubDate>
+    <pubDate>Sat, 14 Aug 2021 14:52:19 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -22,7 +22,7 @@
       
       
       
-      <content:encoded><![CDATA[<p>Junit 사용법을 예시와 함께 확인해보자</p><a id="more"></a><ul><li>입출력예시</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="코드"><a href="#코드" class="headerlink" title="코드"></a>코드</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content:encoded>
+      <content:encoded><![CDATA[<p>Junit 사용법을 예시와 함께 확인해보자</p><a id="more"></a><h2 id="Junit"><a href="#Junit" class="headerlink" title="Junit"></a>Junit</h2><ul><li>java 기반의 단위 테스트를 위한 프레임워크</li><li>어노테이션기반으로 테스트 지원</li><li>Assert를 통해서 예상과 실제를 비교하여 검증</li></ul><p><br><br><br></p><h2 id="Mock"><a href="#Mock" class="headerlink" title="Mock"></a>Mock</h2><p>Mock이란 실제 사용되어야하는 객체의 대체객체로 실제 객체를 만들어서 하기엔 시간이 부족하고 비용이 높은 경우, 구현이 까다로울 경우에 가짜 객체를 만들어서 사용하는데 그중 하나가 Mock객체이다.</p><ul><li>행위를 검증하기 위해 사용되는 객체</li><li>직접 만들거나 스프링프레임워크를 통해서 간단하게 만들수 있음</li><li>@Mock</li><li>@MockBean</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
