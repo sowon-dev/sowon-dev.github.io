@@ -9,20 +9,20 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Sat, 14 Aug 2021 14:52:19 GMT</pubDate>
+    <pubDate>Sun, 15 Aug 2021 14:39:50 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title>[Spring]Junit</title>
-      <link>https://sowon-dev.github.io/2021/08/13/210813Spring-junit/</link>
-      <guid>https://sowon-dev.github.io/2021/08/13/210813Spring-junit/</guid>
-      <pubDate>Fri, 13 Aug 2021 05:43:15 GMT</pubDate>
+      <link>https://sowon-dev.github.io/2021/08/12/210813Spring-junit/</link>
+      <guid>https://sowon-dev.github.io/2021/08/12/210813Spring-junit/</guid>
+      <pubDate>Thu, 12 Aug 2021 15:00:00 GMT</pubDate>
       
       <description>&lt;p&gt;Junit 사용법을 예시와 함께 확인해보자&lt;/p&gt;</description>
       
       
       
-      <content:encoded><![CDATA[<p>Junit 사용법을 예시와 함께 확인해보자</p><a id="more"></a><h2 id="Junit"><a href="#Junit" class="headerlink" title="Junit"></a>Junit</h2><ul><li>java 기반의 단위 테스트를 위한 프레임워크</li><li>어노테이션기반으로 테스트 지원</li><li>Assert를 통해서 예상과 실제를 비교하여 검증</li></ul><p><br><br><br></p><h2 id="Mock"><a href="#Mock" class="headerlink" title="Mock"></a>Mock</h2><p>Mock이란 실제 사용되어야하는 객체의 대체객체로 실제 객체를 만들어서 하기엔 시간이 부족하고 비용이 높은 경우, 구현이 까다로울 경우에 가짜 객체를 만들어서 사용하는데 그중 하나가 Mock객체이다.</p><ul><li>행위를 검증하기 위해 사용되는 객체</li><li>직접 만들거나 스프링프레임워크를 통해서 간단하게 만들수 있음</li><li>@Mock</li><li>@MockBean</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content:encoded>
+      <content:encoded><![CDATA[<p>Junit 사용법을 예시와 함께 확인해보자</p><a id="more"></a><h2 id="Junit"><a href="#Junit" class="headerlink" title="Junit"></a>Junit</h2><ul><li>java 기반의 단위 테스트를 위한 프레임워크</li><li>어노테이션기반으로 테스트 지원</li><li>Assert를 통해서 예상과 실제를 비교하여 검증</li></ul><p><br><br><br></p><h2 id="Mock"><a href="#Mock" class="headerlink" title="Mock"></a>Mock</h2><p>Mock이란 실제 사용되어야하는 객체의 대체객체로 실제 객체를 만들어서 하기엔 시간이 부족하고 비용이 높은 경우, 구현이 까다로울 경우에 가짜 객체를 만들어서 사용하는데 그중 하나가 Mock객체이다.</p><ul><li>행위를 검증하기 위해 사용되는 객체</li><li>직접 만들거나 스프링프레임워크를 통해서 간단하게 만들수 있음</li><li>@Mock<ul><li>Mockito 라이브러리에 위치</li><li>주로 @injectMocks 조합으로 사용</li><li>give, when, then으로 Mock객체의 행위 정의함</li></ul></li><li>@MockBean<ul><li>Springboot 테스트 패키지 내에 위치</li><li>테스트를 하려는 객체 내에서 기존에 등록된 Bean이 아닌, MockBean을 주입함.</li><li>주로 @SpringbootTest, @WebMVCTest와 함께 사용</li><li>give, when, then으로 Mock객체의 행위 정의함</li></ul></li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
@@ -31,15 +31,15 @@
       <category domain="https://sowon-dev.github.io/tags/%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4-%EC%B4%88%EA%B2%A9%EC%B0%A8Java-Spring/">패스트캠퍼스(초격차Java/Spring)</category>
       
       
-      <comments>https://sowon-dev.github.io/2021/08/13/210813Spring-junit/#disqus_thread</comments>
+      <comments>https://sowon-dev.github.io/2021/08/12/210813Spring-junit/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>[Spring]RestTemplate 활용</title>
-      <link>https://sowon-dev.github.io/2021/08/12/210812Spring-resttemplate/</link>
-      <guid>https://sowon-dev.github.io/2021/08/12/210812Spring-resttemplate/</guid>
-      <pubDate>Thu, 12 Aug 2021 05:26:59 GMT</pubDate>
+      <link>https://sowon-dev.github.io/2021/08/11/210812Spring-resttemplate/</link>
+      <guid>https://sowon-dev.github.io/2021/08/11/210812Spring-resttemplate/</guid>
+      <pubDate>Wed, 11 Aug 2021 15:00:00 GMT</pubDate>
       
       <description>&lt;p&gt;클라이언트와 서버끼리 RestTemplate객체를 사용하여 JSON을 주고받을 수 있다.&lt;/p&gt;</description>
       
@@ -54,7 +54,7 @@
       <category domain="https://sowon-dev.github.io/tags/%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4-%EC%B4%88%EA%B2%A9%EC%B0%A8Java-Spring/">패스트캠퍼스(초격차Java/Spring)</category>
       
       
-      <comments>https://sowon-dev.github.io/2021/08/12/210812Spring-resttemplate/#disqus_thread</comments>
+      <comments>https://sowon-dev.github.io/2021/08/11/210812Spring-resttemplate/#disqus_thread</comments>
       
     </item>
     
@@ -104,9 +104,9 @@
     
     <item>
       <title>[Spring]Interceptor</title>
-      <link>https://sowon-dev.github.io/2021/08/09/210809Spring-interceptor/</link>
-      <guid>https://sowon-dev.github.io/2021/08/09/210809Spring-interceptor/</guid>
-      <pubDate>Mon, 09 Aug 2021 05:25:25 GMT</pubDate>
+      <link>https://sowon-dev.github.io/2021/08/08/210809Spring-interceptor/</link>
+      <guid>https://sowon-dev.github.io/2021/08/08/210809Spring-interceptor/</guid>
+      <pubDate>Sun, 08 Aug 2021 15:00:00 GMT</pubDate>
       
       <description>&lt;p&gt;스프링에서 인터셉터에 대해 알아보자.&lt;/p&gt;</description>
       
@@ -121,7 +121,7 @@
       <category domain="https://sowon-dev.github.io/tags/%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4-%EC%B4%88%EA%B2%A9%EC%B0%A8Java-Spring/">패스트캠퍼스(초격차Java/Spring)</category>
       
       
-      <comments>https://sowon-dev.github.io/2021/08/09/210809Spring-interceptor/#disqus_thread</comments>
+      <comments>https://sowon-dev.github.io/2021/08/08/210809Spring-interceptor/#disqus_thread</comments>
       
     </item>
     
