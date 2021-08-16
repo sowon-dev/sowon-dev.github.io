@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Sun, 15 Aug 2021 14:39:50 GMT</pubDate>
+    <pubDate>Mon, 16 Aug 2021 14:35:45 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>210816Spring-springfoxswagger</title>
+      <link>https://sowon-dev.github.io/2021/08/16/210816Spring-springfoxswagger/</link>
+      <guid>https://sowon-dev.github.io/2021/08/16/210816Spring-springfoxswagger/</guid>
+      <pubDate>Mon, 16 Aug 2021 05:03:09 GMT</pubDate>
+      
+      <description>&lt;p&gt;Swagger는 다양한 라이브러리가 있다. 그 중 Swagger2와 Swagger-ui 조합이 현재 가장 많이 사용된다.&lt;br&gt;오늘 포스팅에서는 스프링부트환경에서 Swagger2 라이브러리보다 쉽게 사용할 수 있는 Springfox Boot Starter를 소개하려고한다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>Swagger는 다양한 라이브러리가 있다. 그 중 Swagger2와 Swagger-ui 조합이 현재 가장 많이 사용된다.<br>오늘 포스팅에서는 스프링부트환경에서 Swagger2 라이브러리보다 쉽게 사용할 수 있는 Springfox Boot Starter를 소개하려고한다.</p><a id="more"></a><h2 id="Springfox-Boot-Starter-라이브러리"><a href="#Springfox-Boot-Starter-라이브러리" class="headerlink" title="Springfox Boot Starter 라이브러리"></a>Springfox Boot Starter 라이브러리</h2><p><img src="https://mvnrepository.com/artifact/io.springfox/springfox-boot-starter" alt="Maven Repository Springfox Boot Starter">에서 메이븐 또는 그레들 중 원하는 소스를 복사한다.</p><ul><li>Gradle</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// https://mvnrepository.com/artifact/io.springfox/springfox-boot-starter</span></span><br><span class="line">implementation group: <span class="string">'io.springfox'</span>, name: <span class="string">'springfox-boot-starter'</span>, version: <span class="string">'3.0.0'</span></span><br></pre></td></tr></table></figure><ul><li>실행하기<br>서버를 실행한 뒤 <code>http://localhost:8080/swagger-ui/</code>에서 바로 확인할 수 있다.</li></ul><p><br><br><br></p><h2 id="Annotation"><a href="#Annotation" class="headerlink" title="Annotation"></a>Annotation</h2><table><thead><tr><th align="center">종류</th><th align="center">속성</th><th align="center">설명</th></tr></thead><tbody><tr><td align="center">@Api</td><td align="center"></td><td align="center">해당 클래스를 Swagger에 표시함</td></tr><tr><td align="center">@Api</td><td align="center">tags</td><td align="center">API 클래스명을 한글로 제공 가능</td></tr></tbody></table>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Algorithm/">Algorithm</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Backjoon/">Backjoon</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2021/08/16/210816Spring-springfoxswagger/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[Spring]Junit</title>
@@ -22,7 +45,7 @@
       
       
       
-      <content:encoded><![CDATA[<p>Junit 사용법을 예시와 함께 확인해보자</p><a id="more"></a><h2 id="Junit"><a href="#Junit" class="headerlink" title="Junit"></a>Junit</h2><ul><li>java 기반의 단위 테스트를 위한 프레임워크</li><li>어노테이션기반으로 테스트 지원</li><li>Assert를 통해서 예상과 실제를 비교하여 검증</li></ul><p><br><br><br></p><h2 id="Mock"><a href="#Mock" class="headerlink" title="Mock"></a>Mock</h2><p>Mock이란 실제 사용되어야하는 객체의 대체객체로 실제 객체를 만들어서 하기엔 시간이 부족하고 비용이 높은 경우, 구현이 까다로울 경우에 가짜 객체를 만들어서 사용하는데 그중 하나가 Mock객체이다.</p><ul><li>행위를 검증하기 위해 사용되는 객체</li><li>직접 만들거나 스프링프레임워크를 통해서 간단하게 만들수 있음</li><li>@Mock<ul><li>Mockito 라이브러리에 위치</li><li>주로 @injectMocks 조합으로 사용</li><li>give, when, then으로 Mock객체의 행위 정의함</li></ul></li><li>@MockBean<ul><li>Springboot 테스트 패키지 내에 위치</li><li>테스트를 하려는 객체 내에서 기존에 등록된 Bean이 아닌, MockBean을 주입함.</li><li>주로 @SpringbootTest, @WebMVCTest와 함께 사용</li><li>give, when, then으로 Mock객체의 행위 정의함</li></ul></li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content:encoded>
+      <content:encoded><![CDATA[<p>Junit 사용법을 예시와 함께 확인해보자</p><a id="more"></a><h2 id="Junit"><a href="#Junit" class="headerlink" title="Junit"></a>Junit</h2><ul><li>java 기반의 단위 테스트를 위한 프레임워크</li><li>어노테이션기반으로 테스트 지원</li><li>Assert를 통해서 예상과 실제를 비교하여 검증</li></ul><p><br><br><br></p><h2 id="Mock"><a href="#Mock" class="headerlink" title="Mock"></a>Mock</h2><p>Mock이란 실제 사용되어야하는 객체의 대체객체로 실제 객체를 만들어서 하기엔 시간이 부족하고 비용이 높은 경우, 구현이 까다로울 경우에 가짜 객체를 만들어서 사용하는데 그중 하나가 Mock객체이다.</p><ul><li>행위를 검증하기 위해 사용되는 객체</li><li>직접 만들거나 스프링프레임워크를 통해서 간단하게 만들수 있음</li><li>@Mock<ul><li>Mockito 라이브러리에 위치</li><li>주로 @injectMocks 조합으로 사용</li><li>give, when, then으로 Mock객체의 행위 정의함</li></ul></li><li>@MockBean<ul><li>Springboot 테스트 패키지 내에 위치</li><li>테스트를 하려는 객체 내에서 기존에 등록된 Bean이 아닌, MockBean을 주입함.</li><li>주로 @SpringbootTest, @WebMVCTest와 함께 사용</li><li>give, when, then으로 Mock객체의 행위 정의함</li></ul></li></ul><p><br><br><br></p><h2 id="Jacoco"><a href="#Jacoco" class="headerlink" title="Jacoco"></a>Jacoco</h2><p>자바코드의 코드 커버리지를 체크하는 라이브러리로 결과를 html로 확인 가능하다.</p><p>플러그인 id에 <code>jacoco</code>를 추가하기만하면 끝!</p><ul><li>build.gradle</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">plugins &#123;</span><br><span class="line"></span><br><span class="line">(중략)</span><br><span class="line">id <span class="string">'jacoco'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
@@ -447,31 +470,6 @@
       
       
       <comments>https://sowon-dev.github.io/2021/07/14/210715Calendar/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[Eclip/STS]특정 파일이  커밋이 안 될때, 파일아이콘에 체크표시가 되어있을때</title>
-      <link>https://sowon-dev.github.io/2021/07/07/210708sts-icon-meaning/</link>
-      <guid>https://sowon-dev.github.io/2021/07/07/210708sts-icon-meaning/</guid>
-      <pubDate>Wed, 07 Jul 2021 16:19:12 GMT</pubDate>
-      
-      <description>&lt;p&gt;STS에서 열심히 코딩하고 커밋하려고 하는데 특정 파일만 자꾸 Git Staging에 올라오지도 않고 index에 추가되지도 않으며 Commit도 되질 않았다.&lt;br&gt;도대체 문제가 뭘까.&lt;br&gt;설정을 확인하며 파일을 유심히 보는데 오 홀리!!! 해당 파일의 작은 아이콘 모양이 다른 파일들과 달랐다.&lt;br&gt;왕년의 다른그림찾기실력이 여기서 쓰일 줄이야. 😂 &lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>STS에서 열심히 코딩하고 커밋하려고 하는데 특정 파일만 자꾸 Git Staging에 올라오지도 않고 index에 추가되지도 않으며 Commit도 되질 않았다.<br>도대체 문제가 뭘까.<br>설정을 확인하며 파일을 유심히 보는데 오 홀리!!! 해당 파일의 작은 아이콘 모양이 다른 파일들과 달랐다.<br>왕년의 다른그림찾기실력이 여기서 쓰일 줄이야. 😂 </p><a id="more"></a><p><br><br><br></p><h2 id="원인"><a href="#원인" class="headerlink" title="원인"></a>원인</h2><p>다른 파일들은 노란 네모 아이콘이 있는데 해당 파일에만 체크 아이콘이 있었다.<br>이 작은 아이콘을 가볍게 여겨선 안된다.<br>Assume unchanged라는 의미로 git에서 해당 파일이 무슨 변화가 있든 변화가 없다고 받아드리겠다는 의미이다.<br>그러니 내가 아무리 코드를 수정해도 git은 수정사항이 없다고 판단하고 staging에 올리지도 않았다.</p><p><br><br><br></p><h2 id="ICON-뜻-알아보기"><a href="#ICON-뜻-알아보기" class="headerlink" title="ICON 뜻 알아보기"></a>ICON 뜻 알아보기</h2><p>아래 이미지의 순서대로 아이콘의 의미를 알아보자.</p><p><img src="https://wiki.eclipse.org/images/0/07/02-IconDecorations.png" alt="https://wiki.eclipse.org/EGit/User_Guide/State"></p><ul><li>floder앞에 닫는 태그 <code>&gt;</code> (dirty) : 이 폴더 안의 적어도 하나 이상의 파일이 dirty 하다. 즉 변화가 있는 파일이 있다.</li><li>노란 네모 (tracked) : Git 레포지토리에 해당 파일를 추적 중이다.</li><li><code>?</code> (untracked) : Git 레포지토리에서 처음 보는 파일이다. 즉 신규 파일을 생성한 경우 이렇게 뜬다.</li><li>아이콘 없음 (ignored) : .gitignore 파일 안에 명시된 파일이나 git에 올라가지 않는 무시되고있는 파일이다.<ul><li>설정 및 확인방법 1. 파일 우클릭-&gt;Team-&gt;ignore</li><li>설정 및 확인방법 2. preference-&gt;Team-&gt;Ignored Resources</li></ul></li><li>dirty.txt앞에 닫는 태그<code>&gt;</code> (dirty) : 인덱스 및 레포지토리에 추가되지 않은 변경사항이 있는 파일이다.</li><li><code>*</code> (staged) : 해당 파일이 인덱스에 추가되었다. </li><li><code>*</code>와 <code>&gt;</code> (partially-staged) : 해당 파일의 수정사항이 인덱스에 추가된 후 해당 파일에 변경사항이 있다.</li><li><code>+</code> (added) : 해당 파일이 인덱스에 추가되었다.</li><li><code>x</code> (removed) : 해당 파일이 로컬 디렉토리에서 삭제되면서 버전이 변경되었다. 이 표시는 프로젝트 구조가 아닌 Git staging 메뉴에서 확인할 수 있다.</li><li>빨간 마름모 (conflict) : 해당 파일에 merge 충돌이 있다.</li><li>파란 <code>✓</code> (assume-valid) : 해당 파일에 무슨 변화가 있더라도 변화가 없다고 판단한다.<ul><li>설정방법 : Team -&gt;Assume unchanged 또는 Not Assume unchanged</li></ul></li></ul><p><br><br><br></p><h2 id="GUI로-해결하기"><a href="#GUI로-해결하기" class="headerlink" title="GUI로 해결하기"></a>GUI로 해결하기</h2><ol><li>체크 아이콘이 있는 파일 우클릭</li><li>아래 이미지처럼 Team -&gt; Advanced -&gt; No Assume Unchanged 클릭<br><img src="/img/210708sts-icon.PNG" alt=""></li><li>2번을 실행해도 여전히 체크 아이콘이 있을 것이다. 당황하지 않고 😁 STS/이클립스를 재시작해준다.</li><li>재시작 후 확인해보면 해당 파일의 체크 아이콘이 노란 네모 아이콘으로 바뀐 것을 확인할 수 있다!</li></ol><p>해결!</p><p><br><br><br></p><h2 id="CLI로-해결하기"><a href="#CLI로-해결하기" class="headerlink" title="CLI로 해결하기"></a>CLI로 해결하기</h2><p>CLI로 설정하는 방법은 <a href="https://www.zerocho.com/category/Git/post/60ceb24dcc6ccc0004c38287">특정 파일만 커밋하지 않기(–assume-unchanged)</a>를 참고하면 된다.</p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://wiki.eclipse.org/EGit/User_Guide/State">https://wiki.eclipse.org/EGit/User_Guide/State</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/Eclipse/">Eclipse</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/STS/">STS</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2021/07/07/210708sts-icon-meaning/#disqus_thread</comments>
       
     </item>
     
