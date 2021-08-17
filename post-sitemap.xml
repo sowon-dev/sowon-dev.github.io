@@ -8,8 +8,16 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2021/08/16/210816Spring-springfoxswagger/</loc>
-        <lastmod>2021-08-16T14:35:45.726Z</lastmod>
+        <loc>https://sowon-dev.github.io/2020/12/03/freeToolListForBack/</loc>
+        <lastmod>2021-08-17T04:45:36.886Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2021/08/15/210816Spring-springfoxswagger/</loc>
+        <lastmod>2021-08-17T02:22:00.037Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -362,14 +370,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2021/04/28/210429al-backjoon-2908/</loc>
         <lastmod>2021-04-29T15:34:52.691Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/12/03/freeToolListForBack/</loc>
-        <lastmod>2021-04-28T05:49:16.303Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

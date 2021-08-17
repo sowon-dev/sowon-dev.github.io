@@ -8,15 +8,15 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/categories/Algorithm/</loc>
-        <lastmod>2021-08-16T14:35:45.726Z</lastmod>
+        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
+        <lastmod>2021-08-17T04:45:36.886Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/categories/Spring/</loc>
-        <lastmod>2021-08-16T14:03:13.153Z</lastmod>
+        <lastmod>2021-08-17T02:22:00.037Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -50,6 +50,13 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/Algorithm/</loc>
+        <lastmod>2021-07-27T06:38:59.176Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/JOURNAL/</loc>
         <lastmod>2021-07-22T02:14:38.149Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -59,13 +66,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/JAVA/</loc>
         <lastmod>2021-07-16T14:39:02.621Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
-        <lastmod>2021-07-08T03:01:32.138Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
