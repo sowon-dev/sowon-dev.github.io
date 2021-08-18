@@ -8,8 +8,16 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2020/12/03/freeToolListForBack/</loc>
-        <lastmod>2021-08-17T04:45:36.886Z</lastmod>
+        <loc>https://sowon-dev.github.io/2021/08/17/210818Spring-applicationyml/</loc>
+        <lastmod>2021-08-18T09:12:15.004Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2021/08/17/210818Lombok-build/</loc>
+        <lastmod>2021-08-18T09:05:54.497Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +25,23 @@
 
     <url>
         <loc>https://sowon-dev.github.io/2021/08/15/210816Spring-springfoxswagger/</loc>
-        <lastmod>2021-08-17T02:22:00.037Z</lastmod>
+        <lastmod>2021-08-18T06:30:04.978Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/10/03/201003spring-1/</loc>
+        <lastmod>2021-08-18T06:05:22.372Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/12/03/freeToolListForBack/</loc>
+        <lastmod>2021-08-17T04:45:36.886Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1914,14 +1938,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/10/05/201006springi-1/</loc>
         <lastmod>2020-10-06T03:33:04.825Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/10/03/201003spring-1/</loc>
-        <lastmod>2020-10-06T02:20:31.191Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
