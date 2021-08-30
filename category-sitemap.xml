@@ -8,8 +8,15 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
+        <lastmod>2021-08-30T14:33:48.529Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/Spring/</loc>
-        <lastmod>2021-08-29T14:54:12.593Z</lastmod>
+        <lastmod>2021-08-30T08:32:10.232Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -17,13 +24,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/Lectures-Seminars/</loc>
         <lastmod>2021-08-26T06:36:50.849Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
-        <lastmod>2021-08-17T04:45:36.886Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
