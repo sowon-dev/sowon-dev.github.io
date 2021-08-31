@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Mon, 30 Aug 2021 14:33:48 GMT</pubDate>
+    <pubDate>Tue, 31 Aug 2021 14:36:13 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>ngrok를 아시나요?</title>
+      <link>https://sowon-dev.github.io/2021/08/31/210831ngrok/</link>
+      <guid>https://sowon-dev.github.io/2021/08/31/210831ngrok/</guid>
+      <pubDate>Tue, 31 Aug 2021 04:25:18 GMT</pubDate>
+      
+      <description>&lt;p&gt;오늘 팀장님이 되게 흥미로운 프로그램을 알려주셨다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>오늘 팀장님이 되게 흥미로운 프로그램을 알려주셨다.</p><a id="more"></a><p>바로<a href="https://ngrok.com/">https://ngrok.com/</a>이다.</p><h2 id="ngrok란"><a href="#ngrok란" class="headerlink" title="ngrok란"></a>ngrok란</h2><p>외부에서 로컬 접근을 가능하게 만들 수 있는 프로그램이다.<br>어떨때 주로 사용할까?<br>내 로컬에서 외부로 리다이렉트받을때 사용할 수 있다.</p><p><br><br><br></p><h2 id="외부에서-로컬-접근을-왜-해"><a href="#외부에서-로컬-접근을-왜-해" class="headerlink" title="외부에서 로컬 접근을 왜 해?"></a>외부에서 로컬 접근을 왜 해?</h2><p>웹훅을 사용하게 된다면 필수로 필요한 기능이다.</p><p>웹훅이 무엇인지는 아래 한 장의 이미지로 정리할 수 있다.</p><p><img src="https://miro.medium.com/max/1400/1*WStVIykpS0sKLD2IFOxJUA.png" alt="https://simsimjae.medium.com/%EC%9B%B9%ED%9B%85%EC%9D%B4%EB%9E%80-e41cf1ba92f0"></p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%8A%98%EB%98%90%EB%AA%BB%EC%95%8C%EC%95%84%EB%93%A3%EA%B3%A0%EB%A7%90%EC%95%98%EC%8A%B5%EB%8B%88%EB%8B%A4/">오늘또못알아듣고말았습니다</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2021/08/31/210831ngrok/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>호스팅 용어 차이</title>
@@ -442,32 +465,6 @@
       
       
       <comments>https://sowon-dev.github.io/2021/07/27/210728Spring/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[MyBatis] insert할때 자동으로 키 생성하기(useGeneratedKeys과 selectKey방식 차이점)</title>
-      <link>https://sowon-dev.github.io/2021/07/26/210727MyBatis-keyProperty/</link>
-      <guid>https://sowon-dev.github.io/2021/07/26/210727MyBatis-keyProperty/</guid>
-      <pubDate>Mon, 26 Jul 2021 15:00:00 GMT</pubDate>
-      
-      <description>&lt;h2 id=&quot;😎-insert할때-자동으로-번호를-올리고-싶어&quot;&gt;&lt;a href=&quot;#😎-insert할때-자동으로-번호를-올리고-싶어&quot; class=&quot;headerlink&quot; title=&quot;😎 insert할때 자동으로 번호를 올리고 싶어&quot;&gt;&lt;/a&gt;😎 insert할때 자동으로 번호를 올리고 싶어&lt;/h2&gt;&lt;p&gt;방금 insert한 autoincrement가 걸린 PK값을 바로 사용하고싶다면 어떻게 해야할까?&lt;br&gt;두가지방식이 있다. &lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;useGeneratedKeys와 keyProperty 사용하기&lt;/li&gt;
-&lt;li&gt;selectKey 사용하기&lt;br&gt;이름을 어떻게 부르는 지 몰라서 그냥 내가 지어보았다.</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="😎-insert할때-자동으로-번호를-올리고-싶어"><a href="#😎-insert할때-자동으로-번호를-올리고-싶어" class="headerlink" title="😎 insert할때 자동으로 번호를 올리고 싶어"></a>😎 insert할때 자동으로 번호를 올리고 싶어</h2><p>방금 insert한 autoincrement가 걸린 PK값을 바로 사용하고싶다면 어떻게 해야할까?<br>두가지방식이 있다. </p><ol><li>useGeneratedKeys와 keyProperty 사용하기</li><li>selectKey 사용하기<br>이름을 어떻게 부르는 지 몰라서 그냥 내가 지어보았다.<a id="more"></a></li></ol><p><br><br><br></p><h2 id="방법1-useGeneratedKeys와-keyProperty"><a href="#방법1-useGeneratedKeys와-keyProperty" class="headerlink" title="방법1: useGeneratedKeys와 keyProperty"></a>방법1: useGeneratedKeys와 keyProperty</h2><p>항상 useGeneratedKeys와 keyProperty는 함께 사용하면 된다.</p><ul><li>useGeneratedKeys : insert나 update됨가 동시에 자동생성된 키를 가져올 수 있는 속성으로 true로 설정 (default: false)</li><li>keyProperty : 리턴 될 key property 설정. 즉 values나 set 다음에 오는 컬럼명과 동일하게 설정하면 됨. 여러개를 사용한다면 ,(콤마)를 구분자로 설정</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> exampleVO &#123;</span><br><span class="line">  <span class="keyword">int</span> userCode;</span><br><span class="line">  String name;</span><br><span class="line">  String email;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">insert</span> <span class="attr">id</span>=<span class="string">"insertExample"</span> <span class="attr">useGeneratedKeys</span>=<span class="string">"true"</span> <span class="attr">keyProperty</span>=<span class="string">"userCode"</span> <span class="attr">parameterType</span>=<span class="string">"exampleVO"</span>&gt;</span> </span><br><span class="line">INSERT INTO example </span><br><span class="line">   (name, email ) </span><br><span class="line">VALUES </span><br><span class="line">   (#&#123;name&#125;, #&#123;email&#125; ) </span><br><span class="line"><span class="tag">&lt;/<span class="name">insert</span>&gt;</span></span><br></pre></td></tr></table></figure><p>userCode가 자동 증감되어 DB에 등록된다.<br>따로 set해주지 않더라도 exampleVO.getUserCode()를 하면 autoIncrement된 값을 get할 수 있다!<br>세상 간편하다!<br>insert 나 update return받을 때 주로 사용할 수 있다.</p><p><br><br><br></p><h2 id="방법2-selectKey"><a href="#방법2-selectKey" class="headerlink" title="방법2: selectKey"></a>방법2: selectKey</h2><p>마이바티스는 자동생성키 칼럼을 지원하지 않는 다른 데이터베이스를 위해 다른 방법 또한 제공한다.<br>바로 selectKey를 이용하는 것이다.<br>아래 예제에서 selectKey구문이 먼저 실행되고 userCode 최대값에서 1씩 증가되게끔 셋팅된다. 그리고 나서 insert 구문이 실행된다. 이건 복잡한 자바코드 없이도 데이터베이스에 자동생성키의 행위와 비슷한 효과를 가지도록 해준다.</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">insert</span> <span class="attr">id</span>=<span class="string">"insertExample"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">selectKey</span> <span class="attr">keyProperty</span>=<span class="string">"userCode"</span> <span class="attr">resultType</span>=<span class="string">"int"</span> <span class="attr">order</span>=<span class="string">"BEFORE"</span>&gt;</span></span><br><span class="line">    SELECT IFNULL(MAX(userCode+1),1) FROM example</span><br><span class="line">  <span class="tag">&lt;/<span class="name">selectKey</span>&gt;</span></span><br><span class="line">  INSERT INTO example</span><br><span class="line">   (userCode, email)</span><br><span class="line">  VALUES</span><br><span class="line">     (#&#123;userCode&#125;, #&#123;email&#125;)</span><br><span class="line"><span class="tag">&lt;/<span class="name">insert</span>&gt;</span></span><br></pre></td></tr></table></figure><p>selectKey에 대한 추가설명은 아래 포스팅을 참고하면 된다.</p><ul><li><a href="https://sowon-dev.github.io/2021/06/03/210604MyBatis-selectKey/">select한 값을 바로 insert할 수 있을까?</a></li></ul><p><br><br><br></p><h2 id="방법1과-방법2의-차이"><a href="#방법1과-방법2의-차이" class="headerlink" title="방법1과 방법2의 차이"></a>방법1과 방법2의 차이</h2><p>위의 두 예시는 최근 userCode에서 <code>+1</code>을 해주는 결과를 나타낸다.<br>결과가 같은데 왜 방식이 두개일까? 사용방향에 따라 차이점이 존재하기때문이다.</p><p>방법 1은 DBMS의 도움이 필요하다. 즉 auto increment가 되는 DBMS만 사용가능하다.<br>만약 사용하는 DBMS는 AUTO INCREMENT를 지원해주지 않는다면 방법 2를 써야한다.</p><p>auto increment를 지원해주는 DBMS라 하더라도 단순히 <code>+1</code> 증감이 아닌 뭔가 커스텀하게 증가시키고싶다면 2번을 사용해야한다.<br>커스텀하게 증가시키는 게 무엇일까?<br>아래 예시처럼 항상 5자리로 userCode를 등록할 수 있다.</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">insert</span> <span class="attr">id</span>=<span class="string">"insertExample"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">selectKey</span> <span class="attr">resultType</span>=<span class="string">"int"</span> <span class="attr">keyProperty</span>=<span class="string">"userCode"</span> <span class="attr">order</span>=<span class="string">"BEFORE"</span>&gt;</span></span><br><span class="line">SELECT lpad(cast((IFNULL(MAX(userCode), 0) + 1) as char),5,'0') </span><br><span class="line">  FROM example</span><br><span class="line">    <span class="tag">&lt;/<span class="name">selectKey</span>&gt;</span> </span><br><span class="line">  INSERT INTO example</span><br><span class="line">   (userCode, email)</span><br><span class="line">  VALUES</span><br><span class="line">     (#&#123;userCode&#125;, #&#123;email&#125;)</span><br><span class="line"><span class="tag">&lt;/<span class="name">insert</span>&gt;</span></span><br></pre></td></tr></table></figure><p>만약 현재 userCode의 최대값이 12라면 다음 userCode는 selectKey 실행에 의해 <code>00013</code>으로 DB에 등록된다.</p><p><br><br></p><h3 id="요약"><a href="#요약" class="headerlink" title="요약"></a>요약</h3><ul><li>방법1: DBMS가 auto increment를 지원하고 특정 컬럼에 <code>+1</code>하는 로직인 경우 사용</li><li>방법2: <ul><li>DBMS가 auto increment를 지원하지 않는 경우 사용</li><li>DBMS가 auto increment를 지원하지만 특정 규칙으로 컬럼값을 증가시키는 로직인 경우 사용</li></ul></li></ul><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://mybatis.org/mybatis-3/sqlmap-xml.html">https://mybatis.org/mybatis-3/sqlmap-xml.html</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/MyBatis/">MyBatis</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2021/07/26/210727MyBatis-keyProperty/#disqus_thread</comments>
       
     </item>
     
