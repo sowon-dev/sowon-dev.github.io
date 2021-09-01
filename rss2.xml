@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Tue, 31 Aug 2021 14:36:13 GMT</pubDate>
+    <pubDate>Wed, 01 Sep 2021 14:50:04 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>불안할때는</title>
+      <link>https://sowon-dev.github.io/2021/08/31/210901insecure/</link>
+      <guid>https://sowon-dev.github.io/2021/08/31/210901insecure/</guid>
+      <pubDate>Tue, 31 Aug 2021 15:00:00 GMT</pubDate>
+      
+      <description>&lt;p&gt;오늘 팀장님이 좋은 말씀을 해주셨다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>오늘 팀장님이 좋은 말씀을 해주셨다.</p><a id="more"></a><p><em>불안할떄는 뭐든 준비를 해놓는게 제일 안심이 될겁니다</em></p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2021/08/31/210901insecure/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>ngrok를 아시나요?</title>
@@ -22,7 +43,7 @@
       
       
       
-      <content:encoded><![CDATA[<p>오늘 팀장님이 되게 흥미로운 프로그램을 알려주셨다.</p><a id="more"></a><p>바로<a href="https://ngrok.com/">https://ngrok.com/</a>이다.</p><h2 id="ngrok란"><a href="#ngrok란" class="headerlink" title="ngrok란"></a>ngrok란</h2><p>외부에서 로컬 접근을 가능하게 만들 수 있는 프로그램이다.<br>어떨때 주로 사용할까?<br>내 로컬에서 외부로 리다이렉트받을때 사용할 수 있다.</p><p><br><br><br></p><h2 id="외부에서-로컬-접근을-왜-해"><a href="#외부에서-로컬-접근을-왜-해" class="headerlink" title="외부에서 로컬 접근을 왜 해?"></a>외부에서 로컬 접근을 왜 해?</h2><p>웹훅을 사용하게 된다면 필수로 필요한 기능이다.</p><p>웹훅이 무엇인지는 아래 한 장의 이미지로 정리할 수 있다.</p><p><img src="https://miro.medium.com/max/1400/1*WStVIykpS0sKLD2IFOxJUA.png" alt="https://simsimjae.medium.com/%EC%9B%B9%ED%9B%85%EC%9D%B4%EB%9E%80-e41cf1ba92f0"></p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>오늘 팀장님이 되게 흥미로운 프로그램을 알려주셨다.</p><a id="more"></a><p>바로<a href="https://ngrok.com/">https://ngrok.com/</a>이다.</p><h2 id="ngrok란"><a href="#ngrok란" class="headerlink" title="ngrok란"></a>ngrok란</h2><p>외부에서 로컬 접근을 가능하게 만들 수 있는 프로그램이다.<br>어떨때 주로 사용할까?<br>내 로컬에서 외부로 리다이렉트받을때 사용할 수 있다.</p><p><br><br><br></p><h2 id="외부에서-로컬-접근을-왜-해"><a href="#외부에서-로컬-접근을-왜-해" class="headerlink" title="외부에서 로컬 접근을 왜 해?"></a>외부에서 로컬 접근을 왜 해?</h2><p>웹훅을 사용하게 된다면 필수로 필요한 기능이다.<br>웹훅이 무엇인지는 아래 한 장의 이미지로 정리할 수 있다.</p><p><img src="https://miro.medium.com/max/1400/1*WStVIykpS0sKLD2IFOxJUA.png" alt="https://simsimjae.medium.com/%EC%9B%B9%ED%9B%85%EC%9D%B4%EB%9E%80-e41cf1ba92f0"></p><p>방화벽넘어 외부에서 로컬에 접속 가능하게 하는 터널프로그램이다.<br>아래 명령어로 간단히 실행할 수 있다!</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ngrok http 포트번호</span><br></pre></td></tr></table></figure>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
@@ -442,29 +463,6 @@
       
       
       <comments>https://sowon-dev.github.io/2021/07/30/210730TCPVSUDP/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Spring 들여다보기: IoC, AOP</title>
-      <link>https://sowon-dev.github.io/2021/07/27/210728Spring/</link>
-      <guid>https://sowon-dev.github.io/2021/07/27/210728Spring/</guid>
-      <pubDate>Tue, 27 Jul 2021 15:00:00 GMT</pubDate>
-      
-      <description>&lt;h1 id=&quot;IoC란&quot;&gt;&lt;a href=&quot;#IoC란&quot; class=&quot;headerlink&quot; title=&quot;IoC란&quot;&gt;&lt;/a&gt;IoC란&lt;/h1&gt;&lt;p&gt;스프링에서 일반적으로 Java 객체를 new로 생성하여 Spring Container에게 관리를 맡긴다.&lt;br&gt;즉, 개발자에서 프레임워크로 객체 제어의 권한이 넘어 갔으므로 &lt;code&gt;제어의 역전(Inversion of Control)&lt;/code&gt;이라고 한다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h1 id="IoC란"><a href="#IoC란" class="headerlink" title="IoC란"></a>IoC란</h1><p>스프링에서 일반적으로 Java 객체를 new로 생성하여 Spring Container에게 관리를 맡긴다.<br>즉, 개발자에서 프레임워크로 객체 제어의 권한이 넘어 갔으므로 <code>제어의 역전(Inversion of Control)</code>이라고 한다.</p><a id="more"></a><p>스프링이 알아서 객체의 생명주기를 관리한다면 개발자는 어떻게 그 객체를 사용할 수 있을까?<br>DI를 통해서 사용할 수 있다.</p><p><br><br><br></p><h2 id="DI-Dependency-Injection"><a href="#DI-Dependency-Injection" class="headerlink" title="DI(Dependency Injection)"></a>DI(Dependency Injection)</h2><p>의존성 주입이란 객체를 직접 생성/제어하는 것이 아니라, 제어의 역행을 사용해서 특정 객체를 필요한 객체의 외부에 가져다가 연결하는 것을 뜻한다.<br>객체가 필요한 어떤 객체를 생성자 혹은 setter를 통해 주입하는 것을 말한다.</p><ul><li><a href="https://sowon-dev.github.io/2020/10/03/201003spring-1/#%EC%9D%98%EC%A1%B4%EC%84%B1-%EC%A3%BC%EC%9E%85-%EB%B0%A9%EB%B2%95">DI 두가지 방법 예시</a></li></ul><p><br><br><br></p><h2 id="빈-Bean-이란"><a href="#빈-Bean-이란" class="headerlink" title="빈(Bean)이란?"></a>빈(Bean)이란?</h2><p>스프링 컨테이너에서 관리되는 객체들을 모두 빈이라고 한다.</p><p><br><br><br></p><h2 id="DI된-빈-사용하는-방법"><a href="#DI된-빈-사용하는-방법" class="headerlink" title="DI된 빈 사용하는 방법"></a>DI된 빈 사용하는 방법</h2><ul><li>@SpringBootApplication: 등록된 빈을 확인할 수 있다.</li><li>@Component: 해당 어노테이션이 붙은 클래스는 스프링에서 빈으로 생성하여 자동적으로 관리한다.</li><li>@Qualifier(“빈이름”): @Component가 여러 개가 있는 경우 스프링이 어느 것을 선택해야할 지 헷갈리므로 @Qualifier로 이름을 지정해서 빈을 사용하면 된다.</li></ul><p>이렇게 빈으로 등록한 클래스를 어떻게 가져와서 사용할까?<br>먼저 ApplicationContextAware를 구현한 ApplicationProvider클래스를 생성한 뒤 <code>@Component</code>를 통해서 빈 등록을 한다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ApplicationProvider</span> <span class="keyword">implements</span> <span class="title">ApplicationContextAware</span>  </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> ApplicationContext context;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setApplicationContext</span><span class="params">(ApplicationContext applicationContext)</span> <span class="keyword">throws</span> BeansException </span>&#123;</span><br><span class="line"><span class="keyword">this</span>.context = applicationContext;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> ApplicationContext <span class="title">getContext</span><span class="params">()</span></span>&#123;</span><br><span class="line"><span class="keyword">return</span> context;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>new로 생성할 필요없이 <code>@Component</code>로 등록된 빈들은 getBean()메서드를 통해서 접근할 수 있다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 기존 방법: 개발자가 직접 new로 클래스 생성</span></span><br><span class="line">Example ex1 = <span class="keyword">new</span> Example(클래스명);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 스프링에게 loC한 방법</span></span><br><span class="line">Example ex1 = context.getBean(빈등록한클래스명<span class="class">.<span class="keyword">class</span>)</span>;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="한-클래스에서-여러-개-빈-생성하고-싶은-경우"><a href="#한-클래스에서-여러-개-빈-생성하고-싶은-경우" class="headerlink" title="한 클래스에서 여러 개 빈 생성하고 싶은 경우"></a>한 클래스에서 여러 개 빈 생성하고 싶은 경우</h2><ul><li>@Configuration: 한 클래스에서 여러 개의 빈을 등록하겠다는 의미. @Component와 동일한 동작이지만 여러 개 빈을 한 클래스에 등록할 수 있다. </li><li>@Bean(“빈이름”): @Configuration를 사용한 클래스 안에서 여러 개의 빈을 @Bean으로 등록할 수 있다. 스프링이 헷갈리지 않도록 각각 빈이름을 붙여줘야한다.</li></ul><p>한 클래스에서 여러 개의 빈 생성하는 예시를 보자.<br>여기서 return에 new로 생성한 것은 예시일뿐 실무에서는 set메서드, 생성자, 변수에 @Autowird, Inject등의 방법을 통해서 객체를 받아온 뒤 진행한다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AppConfig</span></span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Bean</span>(<span class="string">"빈이름1"</span>)</span><br><span class="line"><span class="function"><span class="keyword">public</span> Example <span class="title">ex</span><span class="params">(FirstBaseClass firstBaseClass)</span></span>&#123;</span><br><span class="line"><span class="keyword">return</span> <span class="keyword">new</span> Example(firstBaseClass);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Bean</span>(<span class="string">"빈이름2"</span>)</span><br><span class="line"><span class="function"><span class="keyword">public</span> Example <span class="title">ex</span><span class="params">(SecondBaseClass secondBaseClass)</span></span>&#123;</span><br><span class="line"><span class="keyword">return</span> <span class="keyword">new</span> Example(secondBaseClass);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>위에서 생성한 빈 중 FirstBaseClass를 사용하는 예시이다</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Example ex1 = context.getBean(<span class="string">"firstBaseClass"</span> , Example<span class="class">.<span class="keyword">class</span>)</span>;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="AOP-Aspect-Oriented-Programming-란"><a href="#AOP-Aspect-Oriented-Programming-란" class="headerlink" title="AOP( Aspect Oriented Programming)란"></a>AOP( Aspect Oriented Programming)란</h1><p>AOP는의 관점 지향 프로그래밍으로 반복되는 코드들을 한 곳으로 모아서 사용할 수 있게하는, 즉 모듈화하겠다는 개념이다. </p><p>자주 사용하는 어노테이션은 아래와 같다.</p><ul><li>@Aspect: AOP를 정의하는 Class에 할당</li><li>@Pointcut: 기능을 어디에 적용시킬지, 예를 들어 메서드에 적용시킬 지, 어노테이션에 적용시킬지와 같은 AOP를 적용시킬 지점을 설정</li><li>@Before (이전) : 메서드 실행하기 이전</li><li>@After (이후) : 메서드의 결과에 관계없이(즉 성공, 예외 관계없이) 메서드가 완료 되면 실행</li><li>@AfterReturning 메서드호출 성공 실행 시</li><li>@AfterThrowing (예외 발생 이후) : 메서드호출 실패 예외 발생시</li><li>@Around (메소드 실행 전후) : Before / After 모두 제어</li></ul><p><br><br><br></p><h1 id="ObjectMapper"><a href="#ObjectMapper" class="headerlink" title="ObjectMapper"></a>ObjectMapper</h1><p>objectMapper 클래스를 통해서 Json node에 접근 할 수 있다.</p><ul><li>참고: <a href="https://www.baeldung.com/jackson-object-mapper-tutorial">https://www.baeldung.com/jackson-object-mapper-tutorial</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4-%EC%B4%88%EA%B2%A9%EC%B0%A8Java-Spring/">패스트캠퍼스(초격차Java/Spring)</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2021/07/27/210728Spring/#disqus_thread</comments>
       
     </item>
     
