@@ -8,15 +8,15 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/categories/Spring/</loc>
-        <lastmod>2021-09-06T08:12:47.243Z</lastmod>
+        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
+        <lastmod>2021-09-07T13:41:56.481Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
-        <lastmod>2021-09-01T14:51:59.622Z</lastmod>
+        <loc>https://sowon-dev.github.io/categories/Spring/</loc>
+        <lastmod>2021-09-07T07:34:30.988Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -52,13 +52,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/Algorithm/</loc>
         <lastmod>2021-07-27T06:38:59.176Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/JOURNAL/</loc>
-        <lastmod>2021-07-22T02:14:38.149Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

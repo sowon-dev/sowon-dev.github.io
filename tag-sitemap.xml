@@ -3,8 +3,29 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/%25EB%2594%2594%25EC%259E%2590%25EC%259D%25B8%25ED%258C%25A8%25ED%2584%25B4/</loc>
+        <lastmod>2021-09-07T13:41:56.481Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/JPA/</loc>
+        <lastmod>2021-09-07T13:41:56.481Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/DBeaver/</loc>
+        <lastmod>2021-09-07T07:53:45.195Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/%25ED%258C%25A8%25EC%258A%25A4%25ED%258A%25B8%25EC%25BA%25A0%25ED%258D%25BC%25EC%258A%25A4-%25EC%25B4%2588%25EA%25B2%25A9%25EC%25B0%25A8Java-Spring/</loc>
-        <lastmod>2021-09-06T08:12:47.243Z</lastmod>
+        <lastmod>2021-09-07T07:12:37.804Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -89,13 +110,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/%25EC%2598%25A4%25EB%25A5%2598%25EC%259D%25BC%25EC%25A7%2580/</loc>
         <lastmod>2021-08-04T04:35:06.178Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/DBeaver/</loc>
-        <lastmod>2021-07-22T02:14:38.149Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
