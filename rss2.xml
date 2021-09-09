@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Wed, 08 Sep 2021 02:48:04 GMT</pubDate>
+    <pubDate>Wed, 08 Sep 2021 23:23:32 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[GIT]`git add .` 와 `git add *` 차이</title>
+      <link>https://sowon-dev.github.io/2021/09/08/210909GIT-add-VSadd/</link>
+      <guid>https://sowon-dev.github.io/2021/09/08/210909GIT-add-VSadd/</guid>
+      <pubDate>Wed, 08 Sep 2021 14:14:28 GMT</pubDate>
+      
+      <description>&lt;p&gt;간단한 내용이지만 적어두지않으면 잊어버리기 쉽다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>간단한 내용이지만 적어두지않으면 잊어버리기 쉽다.</p><a id="more"></a><h2 id="git-add-와-git-add-차이"><a href="#git-add-와-git-add-차이" class="headerlink" title="git add . 와 git add * 차이"></a><code>git add .</code> 와 <code>git add *</code> 차이</h2><ul><li><code>git add .</code>: .gitignore에 기재된 것 고려하여 모두 추가</li><li><code>git add *</code>: .gitignore에 기재된 것 상관없이 모두 추가</li></ul><p>따라서 <code>git add .</code>를 사용하자.</p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Version-control/">Version control</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/git/">git</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2021/09/08/210909GIT-add-VSadd/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[디자인패턴]자바빌드 패턴 VS 빌더패턴 VS 생성자 패턴</title>
@@ -444,31 +467,6 @@
       
       
       <comments>https://sowon-dev.github.io/2021/08/03/210804rownum/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Springboot validation annotation parttern 정규식 오류 해결</title>
-      <link>https://sowon-dev.github.io/2021/08/01/210802Pattern-regexp/</link>
-      <guid>https://sowon-dev.github.io/2021/08/01/210802Pattern-regexp/</guid>
-      <pubDate>Sun, 01 Aug 2021 17:48:46 GMT</pubDate>
-      
-      <description>&lt;p&gt;Spring 프로젝트에서 서비스단에서 처리하는 유효성체크를 VO에서 처리하고 싶었다.&lt;br&gt;내가 원하는 바는 String depart컬럼에 null은 허용하지만 빈값과 white space는 허용하지 않는 유효성체크를 하고 싶었다.&lt;br&gt;만약 빈값과 white space가 들어온다면 null로 변경해서 DB에 저장해야하는 로직이었다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>Spring 프로젝트에서 서비스단에서 처리하는 유효성체크를 VO에서 처리하고 싶었다.<br>내가 원하는 바는 String depart컬럼에 null은 허용하지만 빈값과 white space는 허용하지 않는 유효성체크를 하고 싶었다.<br>만약 빈값과 white space가 들어온다면 null로 변경해서 DB에 저장해야하는 로직이었다.</p><a id="more"></a><h2 id="기본-어노테이션들"><a href="#기본-어노테이션들" class="headerlink" title="기본 어노테이션들"></a>기본 어노테이션들</h2><p>NULL체크를 위해 기본으로 제공되는 어노테이션들이 있다.</p><table><thead><tr><th align="center"></th><th align="center">NULL</th><th align="center">빈칸(“”)</th><th align="center">White Space(“ “)</th></tr></thead><tbody><tr><td align="center"><code>@NotNull</code></td><td align="center">허용X</td><td align="center">허용O</td><td align="center">허용O</td></tr><tr><td align="center"><code>@NotEmpty</code></td><td align="center">허용X</td><td align="center">허용X</td><td align="center">허용O</td></tr><tr><td align="center"><code>@NotBlank</code></td><td align="center">허용X</td><td align="center">허용X</td><td align="center">허용X</td></tr></tbody></table><p>내 경우는 NULL은 허용해주어야했기에 위의 어노테이션들을 전부 사용할 수 없었다.</p><p><br><br><br></p><h2 id="기존코드"><a href="#기존코드" class="headerlink" title="기존코드"></a>기존코드</h2><ul><li>VO코드</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">exampleVO</span></span>&#123;</span><br><span class="line">String depart;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>SERVICE 클래스의 checkVal메서드<br>서비스에서 null은 허용되면서도 isBlank가 참인 조건으로 만들었다. 정상작동하지만 마음에 들지 않았다.</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">checkVal</span><span class="params">(String depart)</span></span>&#123;</span><br><span class="line"><span class="keyword">if</span>(exampleVO.getDepart() != <span class="keyword">null</span> &amp;&amp; exampleVO.getDepart().isBlank()) &#123;</span><br><span class="line">  exampleVO.setDepart(<span class="keyword">null</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">//비즈니스 로직</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="정규표현식-코드"><a href="#정규표현식-코드" class="headerlink" title="정규표현식 코드"></a>정규표현식 코드</h2><p><a href="https://regexr.com/">정규식 테스트 사이트</a>를 이용하여 원하는 정규식인 <code>[0-9a-zA-Z가-힣]</code>를 만들었다.<br>혹시 정규표현식이 처음이라면 <a href="https://sowon-dev.github.io/2021/03/16/210317pythonRegularExpression/">정규표현식 기초 포스팅</a>을 참고하자</p><p>내가 만든 정규식 <code>[0-9a-zA-Z가-힣]</code>은 아래와 같이 처리한다.</p><ul><li>허용: 숫자와 영대소문자, 한글, NULL</li><li>허용하지않음: 빈칸, 공백 </li></ul><p><br><br><br></p><h3 id="첫시도-gt-실패"><a href="#첫시도-gt-실패" class="headerlink" title="첫시도 =&gt; 실패"></a>첫시도 =&gt; 실패</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">exampleVO</span></span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Pattern</span>(groups = &#123;ValidationGroups.insert<span class="class">.<span class="keyword">class</span>, <span class="title">ValidationGroups</span>.<span class="title">update</span>.<span class="title">class</span>&#125;</span></span><br><span class="line"><span class="class">, <span class="title">regexp</span> </span>= <span class="string">"[0-9a-zA-Z가-힣]"</span>, message = <span class="string">"빈값이나 공백이 들어갈 수 없습니다."</span>)</span><br><span class="line">String depart;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>포스트맨을 통해서 아래와 같이 테스트를 해봤는데 문자열을 입력할때 <code>&quot;빈값이나 공백이 들어갈 수 없습니다.&quot;</code>가 응답되면서 에러가 발생했다.</p><table><thead><tr><th align="center">파라미터</th><th align="center">정상작동여부</th><th align="center">설명</th></tr></thead><tbody><tr><td align="center">null</td><td align="center">O</td><td align="center">DB에 null값이 정상적으로 insert, update됨</td></tr><tr><td align="center">빈값(“”)</td><td align="center">O</td><td align="center">@Pattern message속성에 걸어둔 메시지가 출력됨</td></tr><tr><td align="center">white space(“ “)</td><td align="center">O</td><td align="center">@Pattern message속성에 걸어둔 메시지가 출력됨</td></tr><tr><td align="center">숫자,영대소문자,한글이 포함된 문자열</td><td align="center">X</td><td align="center">@Pattern message속성에 걸어둔 메시지가 출력됨</td></tr></tbody></table><p>도대체 왜일까? 에러를 이해하지못해서 삽질하고 있었는데 과장님이 간단하게 해결해주셨다.<br>과장님 감사합니다.🙏</p><p><br><br><br></p><h3 id="성공코드"><a href="#성공코드" class="headerlink" title="성공코드"></a>성공코드</h3><p>글자수<code>{0,64}</code>만 추가하면 된다!!</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">exampleVO</span></span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Pattern</span>(groups = &#123;ValidationGroups.insert<span class="class">.<span class="keyword">class</span>, <span class="title">ValidationGroups</span>.<span class="title">update</span>.<span class="title">class</span>&#125;</span></span><br><span class="line"><span class="class">, <span class="title">regexp</span> </span>= <span class="string">"[0-9a-zA-Z가-힣]&#123;0,64&#125;"</span>, message = <span class="string">"빈값이나 공백이 들어갈 수 없습니다."</span>)</span><br><span class="line">String depart;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><table><thead><tr><th align="center">파라미터</th><th align="center">정상작동여부</th><th align="center">설명</th></tr></thead><tbody><tr><td align="center">null</td><td align="center">O</td><td align="center">DB에 null값이 정상적으로 DB에 insert, update됨</td></tr><tr><td align="center">빈값(“”)</td><td align="center">O</td><td align="center">@Pattern message속성에 걸어둔 메시지가 출력됨</td></tr><tr><td align="center">white space(“ “)</td><td align="center">O</td><td align="center">@Pattern message속성에 걸어둔 메시지가 출력됨</td></tr><tr><td align="center">숫자,영대소문자,한글이 포함된 문자열</td><td align="center">O</td><td align="center">문자열값이 정상적으로 DB에 insert, update됨</td></tr></tbody></table><p>세상 간단한 에러였는데 내 눈에는 보이지 않는 것이 참 이상했다.<br>앞으로는 절대 빼먹을 일 없겠다! 과장님 다시한번 감사합니다!</p><p>여담이지만 사실 이렇게 사소한 오류일지를 적어야할지 고민이 많았다.<br>하지만 사소한 것일수록 남겨놔야 나중에 시간을 단축시킬 수 있고, 또 누군가는 나처럼 삽질할 수 도 있으니 단 한 명에게라도 도움을 줄수있다면 아주 사소한 오류일지라도 적여야겠다는 생각이 들었다.<br>주니어개발자 여러분 우리 모두 화이팅합시다.</p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%A5%98%EC%9D%BC%EC%A7%80/">오류일지</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D/">정규표현식</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2021/08/01/210802Pattern-regexp/#disqus_thread</comments>
       
     </item>
     
