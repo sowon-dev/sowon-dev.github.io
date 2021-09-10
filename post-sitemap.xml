@@ -8,6 +8,46 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2021/09/09/210910Jpa-autowiredVSconstructorInjection/</loc>
+        <lastmod>2021-09-10T01:47:31.321Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2021/09/06/210907Jpa-entityVSDto/</loc>
+        <lastmod>2021-09-10T01:33:01.195Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2021/08/19/210820spring-jpa/</loc>
+        <lastmod>2021-09-10T01:32:56.307Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/10/03/201003spring-1/</loc>
+        <lastmod>2021-09-10T01:28:27.829Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2021/09/06/210907DesignPattern-builder/</loc>
+        <lastmod>2021-09-10T01:28:09.823Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2021/05/09/210510git-connectProject/</loc>
         <lastmod>2021-09-08T23:39:05.620Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -24,32 +64,8 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2021/09/06/210907DesignPattern-builder/</loc>
-        <lastmod>2021-09-08T02:48:04.408Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/2021/07/21/210722DEeaver-shortcutkey/</loc>
         <lastmod>2021-09-07T07:53:45.195Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2021/09/06/210907Jpa-entityVSDto/</loc>
-        <lastmod>2021-09-07T07:34:30.988Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2021/08/19/210820spring-jpa/</loc>
-        <lastmod>2021-09-07T07:12:37.804Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -106,14 +122,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2021/08/15/210816Spring-springfoxswagger/</loc>
         <lastmod>2021-08-18T06:30:04.978Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/10/03/201003spring-1/</loc>
-        <lastmod>2021-08-18T06:05:22.372Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
