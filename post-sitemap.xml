@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2021/09/06/210907DesignPattern-builder/</loc>
+        <lastmod>2021-09-10T14:32:03.779Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2021/09/09/210910Jpa-autowiredVSconstructorInjection/</loc>
-        <lastmod>2021-09-10T01:47:31.321Z</lastmod>
+        <lastmod>2021-09-10T14:30:28.836Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -34,14 +42,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/10/03/201003spring-1/</loc>
         <lastmod>2021-09-10T01:28:27.829Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2021/09/06/210907DesignPattern-builder/</loc>
-        <lastmod>2021-09-10T01:28:09.823Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
