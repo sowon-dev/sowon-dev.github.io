@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2021/09/14/210915DB-commonCodeGrup/</loc>
+        <lastmod>2021-09-15T08:51:21.852Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2021/09/06/210907DesignPattern-builder/</loc>
         <lastmod>2021-09-10T14:32:03.779Z</lastmod>
         <changefreq>weekly</changefreq>
