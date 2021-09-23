@@ -3,8 +3,22 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/ITWILL-JAVA/</loc>
+        <lastmod>2021-09-23T14:15:05.125Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/TIL/</loc>
+        <lastmod>2021-09-23T14:15:05.125Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/%25EC%2598%25A4%25EB%25A5%2598%25EC%259D%25BC%25EC%25A7%2580/</loc>
-        <lastmod>2021-09-16T06:58:27.232Z</lastmod>
+        <lastmod>2021-09-16T07:34:59.990Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -26,13 +40,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/%25ED%258C%25A8%25EC%258A%25A4%25ED%258A%25B8%25EC%25BA%25A0%25ED%258D%25BC%25EC%258A%25A4-%25EC%25B4%2588%25EA%25B2%25A9%25EC%25B0%25A8Java-Spring/</loc>
         <lastmod>2021-09-10T01:32:56.307Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/TIL/</loc>
-        <lastmod>2021-09-10T01:28:27.829Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -159,13 +166,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/Backjoon/</loc>
         <lastmod>2021-06-09T01:23:35.540Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/ITWILL-JAVA/</loc>
-        <lastmod>2021-05-06T13:54:15.310Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
