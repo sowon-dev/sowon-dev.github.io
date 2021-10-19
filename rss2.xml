@@ -9,8 +9,33 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Wed, 06 Oct 2021 02:04:10 GMT</pubDate>
+    <pubDate>Tue, 19 Oct 2021 04:42:15 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[MySQL/MariaDB] Union all 사용법</title>
+      <link>https://sowon-dev.github.io/2021/10/18/211019SQL-unionall/</link>
+      <guid>https://sowon-dev.github.io/2021/10/18/211019SQL-unionall/</guid>
+      <pubDate>Mon, 18 Oct 2021 15:00:00 GMT</pubDate>
+      
+      <description>&lt;p&gt;동일한 컬럼을 가지고 있는 두 테이블은 JOIN과 ON절을 이용해서 합칠 수 있다.&lt;br&gt;하지만 동일한 컬럼을 가지고 있지 않은데 검색결과를 함께보고싶다면 고려해봐야할 것이 바로 union all을 사용해보자.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>동일한 컬럼을 가지고 있는 두 테이블은 JOIN과 ON절을 이용해서 합칠 수 있다.<br>하지만 동일한 컬럼을 가지고 있지 않은데 검색결과를 함께보고싶다면 고려해봐야할 것이 바로 union all을 사용해보자.</p><a id="more"></a><ul><li>JOIN: 수직결합</li><li>UNION: 수평결합<ul><li>UNION: 중복데이터 제거 </li><li>UNION ALL: 중복여부와 상관없이 모든 데이터 출력</li></ul></li></ul><p>만약 과일가게테이블과 편의점테이블이 아래처럼 있다고 생각해보자.</p><ul><li><p>과일가게테이블</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">과일가게테이블</span><br><span class="line">+--------+--------+</span><br><span class="line">| 품  명  | 가  격 |</span><br><span class="line">+--------+--------+</span><br><span class="line">| 바나나 |   1500 |</span><br><span class="line">| 딸기   |   2000 |</span><br><span class="line">| 사과   |   2000 |</span><br><span class="line">+--------+--------+</span><br></pre></td></tr></table></figure></li><li><p>편의점테이블</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">편의점테이블</span><br><span class="line">+--------+--------+</span><br><span class="line">| 품  명 | 가  격  |</span><br><span class="line">+--------+--------+</span><br><span class="line">| 바나나 |   1500 |</span><br><span class="line">| 사과   |   2500 |</span><br><span class="line">| 하리보 |   2000 |</span><br><span class="line">+--------+--------+</span><br></pre></td></tr></table></figure></li></ul><h2 id="UNION"><a href="#UNION" class="headerlink" title="UNION"></a>UNION</h2><p>중복데이터 제거한 결과가 출력된다.</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM 과일가게테이블 </span><br><span class="line">UNION </span><br><span class="line">SELECT * FROM 편의점테이블;</span><br><span class="line"></span><br><span class="line">// 결과</span><br><span class="line">+--------+--------+</span><br><span class="line">| 품  명 | 가  격  |</span><br><span class="line">+--------+--------+</span><br><span class="line">| 바나나 |   1500 |</span><br><span class="line">| 딸기   |   2000 |</span><br><span class="line">| 사과   |   2000 |</span><br><span class="line">| 바나나 |   1500 |</span><br><span class="line">| 사과   |   2500 |</span><br><span class="line">| 하리보 |   2000 |</span><br><span class="line">+--------+--------+</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="UNION-ALL"><a href="#UNION-ALL" class="headerlink" title="UNION ALL"></a>UNION ALL</h2><p>중복여부와 상관없이 모든 데이터 출력된다.</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM 과일가게테이블 </span><br><span class="line">UNION ALL</span><br><span class="line">SELECT * FROM 편의점테이블;</span><br><span class="line"></span><br><span class="line">// 결과</span><br><span class="line">+--------+--------+</span><br><span class="line">| 품  명 | 가  격  |</span><br><span class="line">+--------+--------+</span><br><span class="line">| 바나나 |   1500 |</span><br><span class="line">| 딸기   |   2000 |</span><br><span class="line">| 사과   |   2000 |</span><br><span class="line">| 사과   |   2500 |</span><br><span class="line">| 하리보 |   2000 |</span><br><span class="line">+--------+--------+</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
+      
+      <category domain="https://sowon-dev.github.io/categories/Database/MySQL/">MySQL</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/MariaDB/">MariaDB</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2021/10/18/211019SQL-unionall/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[jQuery] 3depth가 있는 ul의 검색기능 구현</title>
@@ -446,29 +471,6 @@
       
       
       <comments>https://sowon-dev.github.io/2021/08/09/210810STSgitClone/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[Spring]Interceptor</title>
-      <link>https://sowon-dev.github.io/2021/08/08/210809Spring-interceptor/</link>
-      <guid>https://sowon-dev.github.io/2021/08/08/210809Spring-interceptor/</guid>
-      <pubDate>Sun, 08 Aug 2021 15:00:00 GMT</pubDate>
-      
-      <description>&lt;p&gt;스프링에서 인터셉터에 대해 알아보자.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>스프링에서 인터셉터에 대해 알아보자.</p><a id="more"></a><h2 id="Interceptor"><a href="#Interceptor" class="headerlink" title="Interceptor"></a>Interceptor</h2><ul><li><a href="https://sowon-dev.github.io/2021/08/06/210807Spring-filter/">Filter</a>와 매우 유사한 형태지만 차이점은 Spring Context에 등록됨.</li><li>Controller 영역 안에 존재</li><li>AOP와 유사한 기능 제공 가능</li><li>주로 <code>인증 단계</code>를 처리하는데 사용 (조직에 따라 Logging용도로 사용)</li><li>인터셉터를 선/후처리함으로써, 서비스 비즈니스 로직과 분리시킴.</li><li><code>@RequiredArgsConstructor</code>: final로 선언된 객체들을 생성자에서 주입받을 수 있도록 해줌</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4-%EC%B4%88%EA%B2%A9%EC%B0%A8Java-Spring/">패스트캠퍼스(초격차Java/Spring)</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2021/08/08/210809Spring-interceptor/#disqus_thread</comments>
       
     </item>
     

@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/MariaDB/</loc>
+        <lastmod>2021-10-19T04:42:15.450Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/jQuery/</loc>
         <lastmod>2021-10-06T02:04:10.489Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -117,13 +124,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/MyBatis/</loc>
         <lastmod>2021-08-05T06:30:25.984Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/MariaDB/</loc>
-        <lastmod>2021-08-04T06:32:28.426Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
