@@ -9,8 +9,33 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Tue, 19 Oct 2021 04:42:15 GMT</pubDate>
+    <pubDate>Thu, 21 Oct 2021 12:27:51 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[MySQL/MariaDB] WITH RECURSIVE 사용법</title>
+      <link>https://sowon-dev.github.io/2021/10/19/211020SQL-recurisve/</link>
+      <guid>https://sowon-dev.github.io/2021/10/19/211020SQL-recurisve/</guid>
+      <pubDate>Tue, 19 Oct 2021 15:00:00 GMT</pubDate>
+      
+      <description>&lt;p&gt;MySQL에서 재귀쿼리를 사용해야한다면? with recursive문을 사용할 수 있다.&lt;br&gt;with recursive는 UNION ALL과 함께 사용하며 UNION ALL은 관련 포스팅인 &lt;a href=&quot;https://sowon-dev.github.io/2021/10/18/211019SQL-unionall/&quot;&gt;Union all 사용법&lt;/a&gt;을 참조하면 된다. &lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>MySQL에서 재귀쿼리를 사용해야한다면? with recursive문을 사용할 수 있다.<br>with recursive는 UNION ALL과 함께 사용하며 UNION ALL은 관련 포스팅인 <a href="https://sowon-dev.github.io/2021/10/18/211019SQL-unionall/">Union all 사용법</a>을 참조하면 된다. </p><a id="more"></a><h2 id="기본-쿼리"><a href="#기본-쿼리" class="headerlink" title="기본 쿼리"></a>기본 쿼리</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">with recursive 테이블명 as (</span><br><span class="line">select 초기값 as 별명1</span><br><span class="line"></span><br><span class="line">union all</span><br><span class="line"></span><br><span class="line">select 별명1 반복_할_계산식 from 테이블명 where 반복을_멈출_제어문</span><br><span class="line">)</span><br><span class="line">select * from 테이블명</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="코드"><a href="#코드" class="headerlink" title="코드"></a>코드</h2><p>예시코드를 보자.<br>menu테이블이 있고 menu테이블은 계층형구조로 이루어져있다.<br>상위 메뉴ID와 하위 메뉴ID를 동일한 menu테이블에서 가져오는 재귀쿼리로 활용할 수 있다.</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">with recursive cte as (</span><br><span class="line">SELECTMENU_ID</span><br><span class="line">, UPPER_MENU_ID</span><br><span class="line">, MENU_NM</span><br><span class="line">FROM menu</span><br><span class="line"></span><br><span class="line">UNION ALL</span><br><span class="line"></span><br><span class="line">SELECTm.MENU_ID</span><br><span class="line">, m.UPPER_MENU_ID</span><br><span class="line">, m.MENU_NM</span><br><span class="line">FROMcte</span><br><span class="line">INNER JOIN </span><br><span class="line">menu m</span><br><span class="line">ON cte.MENU_ID = m.UPPER_MENU_ID</span><br><span class="line">)</span><br><span class="line">SELECT*</span><br><span class="line">FROMmenu M</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
+      
+      <category domain="https://sowon-dev.github.io/categories/Database/MySQL/">MySQL</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/MariaDB/">MariaDB</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2021/10/19/211020SQL-recurisve/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[MySQL/MariaDB] Union all 사용법</title>
@@ -448,29 +473,6 @@
       
       
       <comments>https://sowon-dev.github.io/2021/08/09/210810Spring-excel/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>STS git clone 깃허브연동하여 스프링 maven프로젝트 가져오기</title>
-      <link>https://sowon-dev.github.io/2021/08/09/210810STSgitClone/</link>
-      <guid>https://sowon-dev.github.io/2021/08/09/210810STSgitClone/</guid>
-      <pubDate>Mon, 09 Aug 2021 19:23:00 GMT</pubDate>
-      
-      <description>&lt;p&gt;프로젝트 셋팅을 자주하지 않기때문에 헷갈릴 염려가 있어 아예 순서를 적어두려고 한다.&lt;br&gt;github 레포지토리의 springboot maven(메이븐)프로젝트를 가져오는 방법이다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>프로젝트 셋팅을 자주하지 않기때문에 헷갈릴 염려가 있어 아예 순서를 적어두려고 한다.<br>github 레포지토리의 springboot maven(메이븐)프로젝트를 가져오는 방법이다.</p><a id="more"></a><h2 id="1-STS에서-Perpectives를-git으로-변경"><a href="#1-STS에서-Perpectives를-git으로-변경" class="headerlink" title="1 STS에서 Perpectives를 git으로 변경"></a>1 STS에서 Perpectives를 git으로 변경</h2><p><img src="/img/210810STSgitClone1.PNG" alt=""></p><ol><li>STS 또는 이클립스에서 Perspectives의 돋보기 아이콘을 클릭한다.</li><li>git 검색</li><li>Perpectives git 선택</li></ol><p><br><br><br></p><h2 id="2-Clone-a-Git-repository"><a href="#2-Clone-a-Git-repository" class="headerlink" title="2 Clone a Git repository"></a>2 Clone a Git repository</h2><p><img src="/img/210810STSgitClone2.PNG" alt=""></p><ol><li><code>Clone a Git repository</code> 클릭</li><li>깃헙 레포에서 복사한 clone URI를 붙여넣기한다.<br>깃헙에서 초록색 <code>Code</code>버튼을 클릭한 뒤 URI를 복사했다면 붙여넣지 않아도 자동적으로 기입된다.</li><li>NEXT를 클릭한 뒤 Clone을 원하는 브랜치를 선택한다.<br>기본값은 main 또는 master 브랜치가 체크되어 있다.<br>Tag fetching strateguy는 기본값으로 진행하나 필요에 따라 바꾸면 된다.</li><li>LocalDestination의 Directory를 선택한다.<br>저장은 원하는 곳에 설정하면 된다. 나는 보통 D 드라이브로 경로를 설정한다.</li></ol><p>이제 깃헙 연동이 끝났다!<br>잘 가져왔는 지 어떻게 확인할까?<br>아래 이미지에서 체크한 부분을 보자.</p><p><img src="/img/210810STSgitClone3.PNG" alt=""></p><p>STS의 Progress탭을 보면 클론이 진행중인 걸 확인할 수 있다.<br>프로젝트 크기에 따라 시간이 꽤 걸릴 수 있다.</p><p><br><br><br></p><h2 id="3-STS에서-Perpectives를-java로-변경"><a href="#3-STS에서-Perpectives를-java로-변경" class="headerlink" title="3 STS에서 Perpectives를 java로 변경"></a>3 STS에서 Perpectives를 java로 변경</h2><p><img src="/img/210810STSgitClone4.PNG" alt=""></p><ol><li>import projects 클릭</li><li>maven 검색</li><li>Existing Maven Projects선택</li></ol><p><img src="/img/210810STSgitClone5.PNG" alt=""></p><ol start="4"><li><p>Browe 선택 후 위에서 저장된 경로 선택<br>나는 D에 저장햇으므로 D에 있는 파일 경로를 선택했다.</p></li><li><p>pom.xml 선택 확인<br>자동적으로 pom.xml이 검색되고 체크되므로 확인한다.</p></li><li><p>finish 버튼<br>조금만 기다리면 불러오기가 완료된다!<br>끝!</p></li></ol><h2 id="gradle-프로젝트라면"><a href="#gradle-프로젝트라면" class="headerlink" title="gradle 프로젝트라면?"></a>gradle 프로젝트라면?</h2><p>1,2번은 동일하게 진행하면 되고 3번에서 maven이 아니라 gradle폴더를 선택한 후 <code>Existing Gradle Project</code>를 클릭하면 된다!<br>참 쉽죠?!</p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/STS/">STS</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2021/08/09/210810STSgitClone/#disqus_thread</comments>
       
     </item>
     
