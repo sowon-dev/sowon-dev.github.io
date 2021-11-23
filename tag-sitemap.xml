@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/%25ED%259A%258C%25EA%25B3%25A0%25EB%25A1%259D/</loc>
+        <lastmod>2021-11-23T06:04:45.590Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/MariaDB/</loc>
         <lastmod>2021-10-21T12:27:51.214Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -152,13 +159,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/APK/</loc>
         <lastmod>2021-07-02T02:17:52.634Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/%25ED%259A%258C%25EA%25B3%25A0%25EB%25A1%259D/</loc>
-        <lastmod>2021-06-27T14:40:20.915Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
