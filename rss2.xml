@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Tue, 30 Nov 2021 01:17:07 GMT</pubDate>
+    <pubDate>Sat, 01 Jan 2022 11:35:27 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>DDD는 디자인패턴인가 아키텍처인가?</title>
+      <link>https://sowon-dev.github.io/2021/12/31/2201013tier-archVSddd/</link>
+      <guid>https://sowon-dev.github.io/2021/12/31/2201013tier-archVSddd/</guid>
+      <pubDate>Fri, 31 Dec 2021 22:31:52 GMT</pubDate>
+      
+      <description>&lt;p&gt;DDD(Domain-driven design)으로 프로젝트를 진행하게 되면서 DDD가 무엇인지 궁금해졌다.&lt;br&gt;DDD는 디자인패턴일까 아키텍처일까?&lt;br&gt;사소한 하나하나 다 궁금할 시기이지. 암암 그렇고말고.&lt;br&gt;구글링을 아무리 해봐도 뚜렷한 구분이 나오지 않았다. 그래서 공부한 내용을 바탕으로 팀장님께 문의를 드렸고 팀장님도 함께 고민해주셨다.&lt;br&gt;참 감사하다!&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>DDD(Domain-driven design)으로 프로젝트를 진행하게 되면서 DDD가 무엇인지 궁금해졌다.<br>DDD는 디자인패턴일까 아키텍처일까?<br>사소한 하나하나 다 궁금할 시기이지. 암암 그렇고말고.<br>구글링을 아무리 해봐도 뚜렷한 구분이 나오지 않았다. 그래서 공부한 내용을 바탕으로 팀장님께 문의를 드렸고 팀장님도 함께 고민해주셨다.<br>참 감사하다!</p><a id="more"></a><h2 id="디자인-패턴이란-🤠"><a href="#디자인-패턴이란-🤠" class="headerlink" title="디자인 패턴이란? 🤠"></a>디자인 패턴이란? 🤠</h2><ul><li>정의: 어떤걸 해결할려고 할때 효율적인 방법에 대해서 정해놓은 규칙</li><li>문제를 해결하기 위한 방법을 가이드</li><li>크기로 보면 패턴이 좀 더 아키텍쳐 보단 작은 느낌</li></ul><p><br><br><br></p><h2 id="소프트웨어-아키텍처란-🤠"><a href="#소프트웨어-아키텍처란-🤠" class="headerlink" title="소프트웨어 아키텍처란? 🤠"></a>소프트웨어 아키텍처란? 🤠</h2><ul><li>정의: 시스템, 컴포넌트 간의 관계가 어떻게 되어있냐 그런 구조적인 측면에서 정의한 것</li><li>특징: 언어적 혹은 시스템 구조적 등 여러가지 환경에 따라 구조가 달라서 해당 구조에서 사용할 수 있는 패턴도 달라짐</li><li>인프라 아키텍쳐(가장 광범위) -&gt; 시스템 아키텍쳐 -&gt; 소프트웨어 아키텍쳐(좁은범위)</li></ul><p><br><br><br></p><h2 id="디자인패턴-VS-소프트웨어-아키텍처-예시"><a href="#디자인패턴-VS-소프트웨어-아키텍처-예시" class="headerlink" title="디자인패턴 VS 소프트웨어 아키텍처 예시"></a>디자인패턴 VS 소프트웨어 아키텍처 예시</h2><table><thead><tr><th align="center"></th><th align="center">디자인패턴</th><th align="center">아키텍처</th></tr></thead><tbody><tr><td align="center">대표 예시</td><td align="center">MVC모델, Commnad, Factory, DAO</td><td align="center">데이터중심 스타일, 규칙기반스타일, 분산스타일, 파이프와 필터스타일</td></tr></tbody></table><p><br><br><br></p><h2 id="내가-내린-결론"><a href="#내가-내린-결론" class="headerlink" title="내가 내린 결론"></a>내가 내린 결론</h2><p>그래서 다시 본래 질문으로 돌아가자.<br>DDD는 디자인패턴일까 아키텍처일까?<br>여기서 내가 내린 결론은 소프트웨어 아키텍처이다.<br>왜냐하면 DDD는 디자인패턴 같으면서도 구조적이다. 비즈니스와 디자인패턴, 아키텍쳐까지 포함하기에 디자인패턴보다는 큰 개념인 아키텍처라고 생각한다.</p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li>팀장님 지식</li><li><a href="https://incheol-jung.gitbook.io/docs/q-and-a/architecture/ddd">https://incheol-jung.gitbook.io/docs/q-and-a/architecture/ddd</a></li><li><a href="https://m.blog.naver.com/limoremo/220073573980">https://m.blog.naver.com/limoremo/220073573980</a></li><li><a href="http://www.jidum.com/jidums/view.do?jidumId=1002">http://www.jidum.com/jidums/view.do?jidumId=1002</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/">디자인패턴</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2021/12/31/2201013tier-archVSddd/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[JPA]@CreatedDate에 날짜가 안 담길때 오류</title>
@@ -456,29 +479,6 @@
       
       
       <comments>https://sowon-dev.github.io/2021/08/15/210816Spring-springfoxswagger/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[Spring]Junit</title>
-      <link>https://sowon-dev.github.io/2021/08/12/210813Spring-junit/</link>
-      <guid>https://sowon-dev.github.io/2021/08/12/210813Spring-junit/</guid>
-      <pubDate>Thu, 12 Aug 2021 15:00:00 GMT</pubDate>
-      
-      <description>&lt;p&gt;Junit 사용법을 예시와 함께 확인해보자&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>Junit 사용법을 예시와 함께 확인해보자</p><a id="more"></a><h2 id="Junit"><a href="#Junit" class="headerlink" title="Junit"></a>Junit</h2><ul><li>java 기반의 단위 테스트를 위한 프레임워크</li><li>어노테이션기반으로 테스트 지원</li><li>Assert를 통해서 예상과 실제를 비교하여 검증</li></ul><p><br><br><br></p><h2 id="Mock"><a href="#Mock" class="headerlink" title="Mock"></a>Mock</h2><p>Mock이란 실제 사용되어야하는 객체의 대체객체로 실제 객체를 만들어서 하기엔 시간이 부족하고 비용이 높은 경우, 구현이 까다로울 경우에 가짜 객체를 만들어서 사용하는데 그중 하나가 Mock객체이다.</p><ul><li>행위를 검증하기 위해 사용되는 객체</li><li>직접 만들거나 스프링프레임워크를 통해서 간단하게 만들수 있음</li><li>@Mock<ul><li>Mockito 라이브러리에 위치</li><li>주로 @injectMocks 조합으로 사용</li><li>give, when, then으로 Mock객체의 행위 정의함</li></ul></li><li>@MockBean<ul><li>Springboot 테스트 패키지 내에 위치</li><li>테스트를 하려는 객체 내에서 기존에 등록된 Bean이 아닌, MockBean을 주입함.</li><li>주로 @SpringbootTest, @WebMVCTest와 함께 사용</li><li>give, when, then으로 Mock객체의 행위 정의함</li></ul></li></ul><p><br><br><br></p><h2 id="Jacoco"><a href="#Jacoco" class="headerlink" title="Jacoco"></a>Jacoco</h2><p>자바코드의 코드 커버리지를 체크하는 라이브러리로 결과를 html로 확인 가능하다.</p><p>플러그인 id에 <code>jacoco</code>를 추가하기만하면 끝!</p><ul><li>build.gradle</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">plugins &#123;</span><br><span class="line"></span><br><span class="line">(중략)</span><br><span class="line">id <span class="string">'jacoco'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4-%EC%B4%88%EA%B2%A9%EC%B0%A8Java-Spring/">패스트캠퍼스(초격차Java/Spring)</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2021/08/12/210813Spring-junit/#disqus_thread</comments>
       
     </item>
     

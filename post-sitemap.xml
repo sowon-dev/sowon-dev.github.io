@@ -8,8 +8,8 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2021/11/29/211130Jpa-auditing/</loc>
-        <lastmod>2021-11-30T01:17:07.340Z</lastmod>
+        <loc>https://sowon-dev.github.io/2021/12/31/2201013tier-archVSddd/</loc>
+        <lastmod>2022-01-01T11:35:27.676Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +17,15 @@
 
     <url>
         <loc>https://sowon-dev.github.io/2021/11/16/211117PrjtReview/</loc>
-        <lastmod>2021-11-23T06:53:14.516Z</lastmod>
+        <lastmod>2022-01-01T07:38:57.452Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2021/11/29/211130Jpa-auditing/</loc>
+        <lastmod>2021-11-30T01:17:07.340Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
