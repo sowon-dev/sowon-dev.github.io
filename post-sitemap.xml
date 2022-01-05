@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2022/01/05/220105JS-closure/</loc>
+        <lastmod>2022-01-05T14:54:44.115Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2022/01/04/220104JS-eventloop/</loc>
-        <lastmod>2022-01-04T14:47:24.488Z</lastmod>
+        <lastmod>2022-01-05T14:47:16.277Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

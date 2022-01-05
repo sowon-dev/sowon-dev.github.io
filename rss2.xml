@@ -9,25 +9,43 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Tue, 04 Jan 2022 14:47:24 GMT</pubDate>
+    <pubDate>Wed, 05 Jan 2022 14:54:44 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>이벤트루프와 메인스레드</title>
+      <title>클로저(Closure)란</title>
+      <link>https://sowon-dev.github.io/2022/01/05/220105JS-closure/</link>
+      <guid>https://sowon-dev.github.io/2022/01/05/220105JS-closure/</guid>
+      <pubDate>Wed, 05 Jan 2022 05:44:34 GMT</pubDate>
+      
+      <description>&lt;p&gt;탄탄한 자바스크립트 기본기를 다지기 위해 클로저에 대해 알아보자.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>탄탄한 자바스크립트 기본기를 다지기 위해 클로저에 대해 알아보자.</p><a id="more"></a><h2 id="Closure"><a href="#Closure" class="headerlink" title="Closure"></a>Closure</h2><p>closure = function + environment<br>함수(function)가 하나 생길때마다 클로저는 하나씩 생성된다.</p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://ko.javascript.info/closure">https://ko.javascript.info/closure</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Node-js/">Node.js</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2022/01/05/220105JS-closure/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>이벤트루프(Event loop)와 메인스레드(Main thread)</title>
       <link>https://sowon-dev.github.io/2022/01/04/220104JS-eventloop/</link>
       <guid>https://sowon-dev.github.io/2022/01/04/220104JS-eventloop/</guid>
       <pubDate>Tue, 04 Jan 2022 05:31:30 GMT</pubDate>
       
-        
-        
-      <description>&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-
-&lt;h2 id=&quot;이벤트루프모델&quot;&gt;&lt;a href=&quot;#이벤트루프모델&quot; class=&quot;headerlink&quot; title=&quot;이벤트루프모델&quot;&gt;&lt;/a&gt;이벤트루프모델&lt;/h2&gt;&lt;p&gt;이벤트 루푸 모델은 여러 스레드를 사용한다.&lt;br&gt;Nod</description>
-        
+      <description>&lt;p&gt;탄탄한 자바스크립트 기본기를 다지기 위해 이벤트 루프에 대해 알아보자.&lt;/p&gt;</description>
       
       
       
-      <content:encoded><![CDATA[<a id="more"></a><h2 id="이벤트루프모델"><a href="#이벤트루프모델" class="headerlink" title="이벤트루프모델"></a>이벤트루프모델</h2><p>이벤트 루푸 모델은 여러 스레드를 사용한다.<br>Node.js 프로세스에서 메인 스레드는 1개이며, 한 순간에 한 줄씩만 실행하지만 워커스레드는 여러개이다.<br>이벤트 루프는 앞에 있는 콜백이 전부 처리가 끝나야 다음 콜백을 처리할 수 있다.</p><p>용어정리</p><ul><li>메인스레드: 자바스크립트 코드가 실행되는 스레드</li><li>워커스레드: 파일입출력스레드, 네트워크스레드등 메인스레드 외의 일을 하는 스레드</li><li>콜스택: 현재까지 불린 함수들의 스택</li><li>스택: 스택자료구조로 후입선출의 특성을 가진다.</li></ul><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Data_stack.svg/1280px-Data_stack.svg.png" alt="출처: 위키백과"></p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2>]]></content:encoded>
+      <content:encoded><![CDATA[<p>탄탄한 자바스크립트 기본기를 다지기 위해 이벤트 루프에 대해 알아보자.</p><a id="more"></a><h2 id="이벤트루프모델"><a href="#이벤트루프모델" class="headerlink" title="이벤트루프모델"></a>이벤트루프모델</h2><p>이벤트 루프 모델은 여러 스레드를 사용한다.<br>Node.js 프로세스에서 메인 스레드는 1개이며, 한 순간에 한 줄씩만 실행하지만 워커스레드(Worker thread)는 여러개이다.<br>이벤트 루프는 앞에 있는 콜백이 전부 처리가 끝나야 다음 콜백을 처리할 수 있다.</p><p>용어정리</p><ul><li>메인스레드: 자바스크립트 코드가 실행되는 스레드</li><li>워커스레드: 파일입출력스레드, 네트워크스레드등 메인스레드 외의 일을 하는 스레드</li><li>콜스택: 현재까지 불린 함수들의 스택</li><li>스택: 스택자료구조로 후입선출의 특성을 가진다.</li></ul><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Data_stack.svg/1280px-Data_stack.svg.png" alt="출처: 위키백과"></p>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
@@ -461,29 +479,6 @@
       
       
       <comments>https://sowon-dev.github.io/2021/08/17/210818Lombok-build/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>application.properties과 application.yml 차이</title>
-      <link>https://sowon-dev.github.io/2021/08/17/210818Spring-applicationyml/</link>
-      <guid>https://sowon-dev.github.io/2021/08/17/210818Spring-applicationyml/</guid>
-      <pubDate>Tue, 17 Aug 2021 15:00:00 GMT</pubDate>
-      
-      <description>&lt;p&gt;스프링부트 프로젝트를 설정하다보면 application.properties 또는 application.yml 혹은 둘 다 만날때가 있다.&lt;br&gt;이 둘은 외부 속성을 설정하는 파일이다. 그럼 둘의 차이점은 무엇일까?&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>스프링부트 프로젝트를 설정하다보면 application.properties 또는 application.yml 혹은 둘 다 만날때가 있다.<br>이 둘은 외부 속성을 설정하는 파일이다. 그럼 둘의 차이점은 무엇일까?</p><a id="more"></a><h2 id="application-properties"><a href="#application-properties" class="headerlink" title="application.properties"></a>application.properties</h2><p>키-밸류형식을 사용하여 외부 구성의 속성을 설정할 수 있다.</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">spring.datasource.url=jdbc:h2:DB이름</span><br><span class="line">spring.datasource.username=유저이름</span><br><span class="line">spring.datasource.password=비밀번호</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="application-yml"><a href="#application-yml" class="headerlink" title="application.yml"></a>application.yml</h2><p>YAML기반으로 외부 구성의 속성을 설정할 수 있다.<br>반복되는 접두사가 없어 가독성이 좋다.</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">spring:</span><br><span class="line">    datasource:</span><br><span class="line">        url: jdbc:h2:DB이름</span><br><span class="line">        username: 유저이름</span><br><span class="line">password: 비밀번호</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="결론"><a href="#결론" class="headerlink" title="결론"></a>결론</h2><p>application.yml이 계층적으로 잘 표현할 수 있어 편리하다.</p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/SpringBoot/">SpringBoot</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2021/08/17/210818Spring-applicationyml/#disqus_thread</comments>
       
     </item>
     
