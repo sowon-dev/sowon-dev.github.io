@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Wed, 05 Jan 2022 14:54:44 GMT</pubDate>
+    <pubDate>Thu, 06 Jan 2022 02:17:21 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>사내 101번서버에 접속하세요라는 의미(DNS 정보조회)</title>
+      <link>https://sowon-dev.github.io/2022/01/05/220106Server-nslookup/</link>
+      <guid>https://sowon-dev.github.io/2022/01/05/220106Server-nslookup/</guid>
+      <pubDate>Wed, 05 Jan 2022 16:38:12 GMT</pubDate>
+      
+      <description>&lt;p&gt;한참 모든 것이 궁금한 시기인 나는 오늘도 궁금한 점이 생겼다.&lt;br&gt;오늘 팀장님이 사내서버에 프로젝트를 올렸으니 101번(임의번호)서버로 접속해서 확인해보라고 하셨다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>한참 모든 것이 궁금한 시기인 나는 오늘도 궁금한 점이 생겼다.<br>오늘 팀장님이 사내서버에 프로젝트를 올렸으니 101번(임의번호)서버로 접속해서 확인해보라고 하셨다.</p><a id="more"></a><p>사내 서버의 도메인을 이미 알고있었기때문에 해당 도메인인 link.sowonDev.com(임의도메인)으로 접속하니 잘 접속이 되었다.<br>여기서 궁금증한 건 사내도메인 link.sowonDev.com을 왜 101번서버라고 부르는 지였다.</p><p><br><br><br></p><h2 id="도메인-정보를-조회하는-명령어"><a href="#도메인-정보를-조회하는-명령어" class="headerlink" title="도메인 정보를 조회하는 명령어"></a>도메인 정보를 조회하는 명령어</h2><ul><li>nslookup: 도메인 이름에 대한 정보를 조회할 때 사용할 수 있는 명령어이다.</li></ul><p>cmd를 열어 아래와 같이 nslookup명령어를 입력하면 DNS서버에 해당 도메인정보를 요청하는 것이고 응답으로는 도메인정보가 나온다.<br>요청을 끝내고 싶으면 exit을 통해서 명령어작성에서 빠져나오면 된다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;명령어</span><br><span class="line">$ nslookup [정보를알고싶은도메인]</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;명령어 예시</span><br><span class="line">$ nslookup link.sowonDev.com</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;응답</span><br><span class="line">권한 없는 응답:</span><br><span class="line">이름: link.sowonDev.com</span><br><span class="line">Address: 123.000.00.101</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;명령종료</span><br><span class="line">$ exit</span><br></pre></td></tr></table></figure><p>자 이제 왜 101서버라고 불리는 지 감이 잡혔다.<br>응답을 보면 address부분의 제일 마지막 IP가 101이기 때문이다!<br>다른 사이트들도 궁금해졌다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ nslookup naver.com</span><br><span class="line"></span><br><span class="line">권한 없는  응답:</span><br><span class="line">이름: naver.com</span><br><span class="line">Address: 223.130.200.107</span><br><span class="line">223.130.195.200</span><br><span class="line">223.130.200.104</span><br><span class="line">223.130.195.95</span><br></pre></td></tr></table></figure><p>네이버 예시에서 알 수 있듯 네이버급의 규모가 큰 프로젝트는 4개의 서버를 사용한다.<br>신기해👍</p><p>그리고 좀 더 구글링해보니 굳이 cmd가 아니더라도 DNS recode를 조회할 수 있는 사이트를 찾을 수 있었다.<br>IPv4 Address뿐만 아니라 회사위치와 회사명도 나온다!</p><ul><li><a href="https://www.nslookup.io/">https://www.nslookup.io/</a></li></ul><p>위 사이트에서 google.com을 검색하면 IPv4는 물론 AAAA records인 IPv6 address도 확인할 수 있다!<br>재밌다😎</p><p><br><br><br></p><h2 id="결론"><a href="#결론" class="headerlink" title="결론"></a>결론</h2><p>새로운 지식 습득은 언제나 재밌다.<br>그려려니 넘어가지말고 꼭 구글링해보자!</p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Server/">Server</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%8A%98%EB%98%90%EB%AA%BB%EC%95%8C%EC%95%84%EB%93%A3%EA%B3%A0%EB%A7%90%EC%95%98%EC%8A%B5%EB%8B%88%EB%8B%A4/">오늘또못알아듣고말았습니다</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2022/01/05/220106Server-nslookup/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>클로저(Closure)란</title>
@@ -45,7 +68,7 @@
       
       
       
-      <content:encoded><![CDATA[<p>탄탄한 자바스크립트 기본기를 다지기 위해 이벤트 루프에 대해 알아보자.</p><a id="more"></a><h2 id="이벤트루프모델"><a href="#이벤트루프모델" class="headerlink" title="이벤트루프모델"></a>이벤트루프모델</h2><p>이벤트 루프 모델은 여러 스레드를 사용한다.<br>Node.js 프로세스에서 메인 스레드는 1개이며, 한 순간에 한 줄씩만 실행하지만 워커스레드(Worker thread)는 여러개이다.<br>이벤트 루프는 앞에 있는 콜백이 전부 처리가 끝나야 다음 콜백을 처리할 수 있다.</p><p>용어정리</p><ul><li>메인스레드: 자바스크립트 코드가 실행되는 스레드</li><li>워커스레드: 파일입출력스레드, 네트워크스레드등 메인스레드 외의 일을 하는 스레드</li><li>콜스택: 현재까지 불린 함수들의 스택</li><li>스택: 스택자료구조로 후입선출의 특성을 가진다.</li></ul><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Data_stack.svg/1280px-Data_stack.svg.png" alt="출처: 위키백과"></p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>탄탄한 자바스크립트 기본기를 다지기 위해 이벤트 루프에 대해 알아보자.</p><a id="more"></a><h2 id="이벤트루프모델"><a href="#이벤트루프모델" class="headerlink" title="이벤트루프모델"></a>이벤트루프모델</h2><p>이벤트 루프 모델은 여러 스레드를 사용한다.<br>Node.js 프로세스에서 메인 스레드는 1개이며, 한 순간에 한 줄씩만 실행하지만 워커스레드(Worker thread)는 여러개이다.<br>이벤트 루프는 앞에 있는 콜백이 전부 처리가 끝나야 다음 콜백을 처리할 수 있다.</p><h2 id="용어정리"><a href="#용어정리" class="headerlink" title="용어정리"></a>용어정리</h2><ul><li>메인스레드: 자바스크립트 코드가 실행되는 스레드</li><li>워커스레드: 파일입출력스레드, 네트워크스레드등 메인스레드 외의 일을 하는 스레드</li><li>콜스택: 현재까지 불린 함수들의 스택</li><li>스택: 스택자료구조로 후입선출의 특성을 가진다.</li></ul><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Data_stack.svg/1280px-Data_stack.svg.png" alt="출처: 위키백과"></p>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
@@ -456,29 +479,6 @@
       
       
       <comments>https://sowon-dev.github.io/2021/08/19/210820spring-jpa/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[Lombok]@build, @Data 차이</title>
-      <link>https://sowon-dev.github.io/2021/08/17/210818Lombok-build/</link>
-      <guid>https://sowon-dev.github.io/2021/08/17/210818Lombok-build/</guid>
-      <pubDate>Tue, 17 Aug 2021 23:13:17 GMT</pubDate>
-      
-      <description>&lt;p&gt;자바프로젝트를 사용하면서 없어선 안될 라이브러리가 바로 롬복이다.&lt;br&gt;스프링부트프로젝트로 생성시 롬복 라이브러리를 바로 추가할 수 있다.&lt;br&gt;또는 사이트에서 jar를 다운로드받아 외부라이브러리로 import하여 사용할 수 있다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>자바프로젝트를 사용하면서 없어선 안될 라이브러리가 바로 롬복이다.<br>스프링부트프로젝트로 생성시 롬복 라이브러리를 바로 추가할 수 있다.<br>또는 사이트에서 jar를 다운로드받아 외부라이브러리로 import하여 사용할 수 있다.</p><a id="more"></a><ul><li><a href="https://projectlombok.org/">Lombok 사이트</a></li></ul><p>이제 어노테이션별 차이를 살펴보자.</p><h2 id="롬복-어노테이션"><a href="#롬복-어노테이션" class="headerlink" title="롬복 어노테이션"></a>롬복 어노테이션</h2><table><thead><tr><th align="center">구분</th><th align="center">설명</th></tr></thead><tbody><tr><td align="center">@Data</td><td align="center">@Getter + @Setter + @RequiredArgsConstructor + @ToString + @EqualsAndHashCode 를 한꺼번에 제공</td></tr><tr><td align="center">@Builder</td><td align="center">@AllArgsConstructor와 비슷하게 객체를 생성하고 필드값을 주입해주는데 빌더의 형식을 제공함</td></tr><tr><td align="center">@NoArgsConstructor</td><td align="center">파라미터가 없는 생성자 제공. JPA 사용시 필수</td></tr><tr><td align="center">@AllArgsConstructor</td><td align="center">필드의 모든 변수가 있는 생성자 제공</td></tr></tbody></table><p><br><br><br></p><h2 id="예시"><a href="#예시" class="headerlink" title="예시"></a>예시</h2><ul><li>User.java</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@NoArgsConstructor</span></span><br><span class="line"><span class="meta">@AllArgsConstructor</span></span><br><span class="line"><span class="meta">@Builder</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</span><br><span class="line"><span class="keyword">private</span> String name;</span><br><span class="line"><span class="keyword">private</span> String email;</span><br><span class="line"><span class="keyword">private</span> LocalDateTime createdAt = LocalDateTime.now();</span><br><span class="line"><span class="keyword">private</span> LocalDateTime updatedAt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>위 클래스를 jUnit으로 테스트해보자.</p><ul><li>UserTest.java</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">UserTest</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">test</span><span class="params">()</span> </span>&#123;</span><br><span class="line"><span class="comment">// setter 사용</span></span><br><span class="line">User u1 = <span class="keyword">new</span> User();</span><br><span class="line">u1.setName(<span class="string">"마리아"</span>);</span><br><span class="line">u1.setEmail(<span class="string">"maria@example.com"</span>);</span><br><span class="line">u1.setCreatedAt(LocalDateTime.now());</span><br><span class="line">u1.setUpdatedAt(LocalDateTime.now());</span><br><span class="line">System.out.println(<span class="string">"@ test u1: "</span>+u1);</span><br><span class="line"></span><br><span class="line"><span class="comment">// @AllArgsConstructor 생성자로 생성</span></span><br><span class="line">User u2 = <span class="keyword">new</span> User(<span class="string">"가나다"</span>, <span class="string">"ganada@example.com"</span>, LocalDateTime.now(), LocalDateTime.now());</span><br><span class="line">System.out.println(<span class="string">"@ test u2: "</span>+u2);</span><br><span class="line"></span><br><span class="line"><span class="comment">// @NoArgsConstructor 생성자로 생성</span></span><br><span class="line">User u3 = <span class="keyword">new</span> User();</span><br><span class="line">System.out.println(<span class="string">"@ test u3: "</span>+u3);</span><br><span class="line"></span><br><span class="line"><span class="comment">// @Builder 로 생성</span></span><br><span class="line">User u4 = User.builder()</span><br><span class="line">.name(<span class="string">"마바사"</span>)</span><br><span class="line">.email(<span class="string">"mabasa"</span>)</span><br><span class="line">.updatedAt(LocalDateTime.now())</span><br><span class="line">.build();</span><br><span class="line">System.out.println(<span class="string">"@ test u4: "</span>+u4);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>User객체 4개가 생성되었고 그 결과는 아래와 같다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@ test u1: User(name&#x3D;마리아, email&#x3D;maria@example.com, createdAt&#x3D;2021-08-18T22:01:39.588614800, updatedAt&#x3D;2021-08-18T22:01:39.588614800)</span><br><span class="line">@ test u2: User(name&#x3D;가나다, email&#x3D;ganada@example.com, createdAt&#x3D;2021-08-18T22:01:39.588614800, updatedAt&#x3D;2021-08-18T22:01:39.588614800)</span><br><span class="line">@ test u3: User(name&#x3D;null, email&#x3D;null, createdAt&#x3D;2021-08-18T22:01:39.588614800, updatedAt&#x3D;null)</span><br><span class="line">@ test u4: User(name&#x3D;마바사, email&#x3D;mabasa, createdAt&#x3D;null, updatedAt&#x3D;2021-08-18T22:01:39.589613600)</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="결론"><a href="#결론" class="headerlink" title="결론"></a>결론</h2><p>상황에 맞는 롬복을 사용하면 된다!</p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/Lombok/">Lombok</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2021/08/17/210818Lombok-build/#disqus_thread</comments>
       
     </item>
     
