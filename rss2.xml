@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Sat, 15 Jan 2022 07:32:01 GMT</pubDate>
+    <pubDate>Sun, 16 Jan 2022 14:39:09 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Promise 프로미스</title>
+      <link>https://sowon-dev.github.io/2022/01/16/220116JS-promise/</link>
+      <guid>https://sowon-dev.github.io/2022/01/16/220116JS-promise/</guid>
+      <pubDate>Sun, 16 Jan 2022 05:31:03 GMT</pubDate>
+      
+      <description>&lt;p&gt;프로미스에 대해 알아보자.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>프로미스에 대해 알아보자.</p><a id="more"></a><h2 id="개념"><a href="#개념" class="headerlink" title="개념"></a>개념</h2><p>Promise객체는 자바스크립트에서 비동기 처리에 사용되는 객체이다.</p><h2 id="프로미스의-3가지-상태"><a href="#프로미스의-3가지-상태" class="headerlink" title="프로미스의 3가지 상태"></a>프로미스의 3가지 상태</h2><table><thead><tr><th align="center">용어</th><th align="center">뜻</th><th align="center">설명</th></tr></thead><tbody><tr><td align="center">Pending</td><td align="center">대기</td><td align="center">비동기처리를 하지도, 거부하지도 않은 초기 상태</td></tr><tr><td align="center">Fulfilled</td><td align="center">이행</td><td align="center">비동기처리가 성공적으로 완료됨</td></tr><tr><td align="center">Rejected</td><td align="center">거부</td><td align="center">비동기처리가 실패함</td></tr></tbody></table><p><img src="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/promises.png" alt="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise"></p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2022/01/16/220116JS-promise/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>spread operator (...) 점 세 개를 알아보자</title>
@@ -454,29 +475,6 @@
       
       
       <comments>https://sowon-dev.github.io/2021/09/06/210907DesignPattern-builder/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[JPA] Entity VS DTO</title>
-      <link>https://sowon-dev.github.io/2021/09/06/210907Jpa-entityVSDto/</link>
-      <guid>https://sowon-dev.github.io/2021/09/06/210907Jpa-entityVSDto/</guid>
-      <pubDate>Mon, 06 Sep 2021 22:08:00 GMT</pubDate>
-      
-      <description>&lt;p&gt;JPA프로젝트를 구글링하다보면 Entity와 DTO를 필드가 똑같은데 나눠서 작성한다.&lt;br&gt;왜 그렇게 해야할까?&lt;br&gt;Entity 클래스를 데이터베이스와 맞닿은 핵심 클래스로 Request/Response 클래스로 사용하면 안되기 때문이다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>JPA프로젝트를 구글링하다보면 Entity와 DTO를 필드가 똑같은데 나눠서 작성한다.<br>왜 그렇게 해야할까?<br>Entity 클래스를 데이터베이스와 맞닿은 핵심 클래스로 Request/Response 클래스로 사용하면 안되기 때문이다.</p><a id="more"></a><h2 id="Entity"><a href="#Entity" class="headerlink" title="Entity"></a>Entity</h2><p>builder메서드를 통해서 DTO를 entity로 변환할 수 있다.<br>참고로 @ApiModelProperty는 swagger와 관련된 어노테이션으로 JPA와 관련이 없으므로 무시해도 된다.</p><ul><li>ReviewEntity.java</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Table</span>(name = <span class="string">"board"</span>) <span class="comment">// 자동으로 DB테이블을 생성해준다. JPA사랑해...</span></span><br><span class="line"><span class="meta">@Entity</span></span><br><span class="line"><span class="meta">@Getter</span> <span class="meta">@Setter</span> <span class="comment">// XXX 자바빈즈 패턴</span></span><br><span class="line"><span class="meta">@NoArgsConstructor</span>(access = AccessLevel.PROTECTED) <span class="meta">@AllArgsConstructor</span> <span class="comment">// XXX 생성자 패컨</span></span><br><span class="line"><span class="meta">@Builder</span>(builderMethodName = <span class="string">"ReviewEntityBuilder"</span>)<span class="comment">// XXX 빌드 패턴</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ReviewEntity</span> <span class="keyword">extends</span> <span class="title">TimeEntity</span> </span>&#123;</span><br><span class="line"><span class="meta">@ApiModelProperty</span>(value = <span class="string">"게시글 번호"</span>)</span><br><span class="line">    <span class="meta">@Id</span></span><br><span class="line">    <span class="meta">@GeneratedValue</span>(strategy = GenerationType.IDENTITY)</span><br><span class="line">    <span class="keyword">private</span> Long id;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@ApiModelProperty</span>(value = <span class="string">"이메일"</span>, example = <span class="string">"example@example.com"</span>, required = <span class="keyword">true</span>)</span><br><span class="line">    <span class="meta">@Column</span>(name = <span class="string">"email"</span>, nullable = <span class="keyword">false</span>)</span><br><span class="line"><span class="keyword">private</span> String email;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@ApiModelProperty</span>(value = <span class="string">"게시글내용"</span>, example = <span class="string">"심장이 떨렸습니다."</span>, required = <span class="keyword">true</span>)</span><br><span class="line">    <span class="meta">@Column</span>(name = <span class="string">"content"</span>)</span><br><span class="line">    <span class="keyword">private</span> String content;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> ReviewEntityBuilder <span class="title">builder</span><span class="params">(ReviewDto dto)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> ReviewEntityBuilder()</span><br><span class="line">    .id(dto.getId())</span><br><span class="line">    .email(dto.getEmail())</span><br><span class="line">    .content(dto.getContent());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="Dto"><a href="#Dto" class="headerlink" title="Dto"></a>Dto</h2><ul><li>ReviewDto.java</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@AllArgsConstructor</span></span><br><span class="line"><span class="meta">@NoArgsConstructor</span></span><br><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ReviewDto</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Long id;</span><br><span class="line"><span class="keyword">private</span> String email;</span><br><span class="line">    <span class="keyword">private</span> String content;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="컨트롤러에서는-뭘-받아야할까-DTO-ENTITY"><a href="#컨트롤러에서는-뭘-받아야할까-DTO-ENTITY" class="headerlink" title="컨트롤러에서는 뭘 받아야할까? DTO? ENTITY?"></a>컨트롤러에서는 뭘 받아야할까? DTO? ENTITY?</h2><p>컨트롤러에선 DTO로 받아야하며 서비스단에서 ENTITY로 변환 후 DB에 전달하면 된다.</p><p><img src="https://gmlwjd9405.github.io/images/spring-framework/spring-package-flow.png" alt="https://gmlwjd9405.github.io/2018/12/25/difference-dao-dto-entity.html"></p><p><br><br><br></p><h2 id="Entity-클래스와-DTO-클래스를-분리하는-이유"><a href="#Entity-클래스와-DTO-클래스를-분리하는-이유" class="headerlink" title="Entity 클래스와 DTO 클래스를 분리하는 이유"></a>Entity 클래스와 DTO 클래스를 분리하는 이유</h2><ul><li>View Layer와 DB Layer의 역할을 철저하게 분리하기 위해</li></ul><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://gmlwjd9405.github.io/2018/12/25/difference-dao-dto-entity.html">https://gmlwjd9405.github.io/2018/12/25/difference-dao-dto-entity.html</a></li><li><a href="https://velog.io/@swchoi0329/Spring-Boot%EC%97%90%EC%84%9C-JPA-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0">https://velog.io/@swchoi0329/Spring-Boot%EC%97%90%EC%84%9C-JPA-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/JPA/">JPA</category>
-      
-      
-      
-      <comments>https://sowon-dev.github.io/2021/09/06/210907Jpa-entityVSDto/#disqus_thread</comments>
       
     </item>
     
