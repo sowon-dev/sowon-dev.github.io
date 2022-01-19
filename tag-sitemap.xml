@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/%25ED%259A%258C%25EA%25B3%25A0%25EB%25A1%259D/</loc>
+        <lastmod>2022-01-19T12:57:58.534Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/HTML-CSS/</loc>
         <lastmod>2022-01-14T02:00:30.086Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -26,13 +33,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/%25EB%2594%2594%25EC%259E%2590%25EC%259D%25B8%25ED%258C%25A8%25ED%2584%25B4/</loc>
         <lastmod>2022-01-01T11:40:58.130Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/%25ED%259A%258C%25EA%25B3%25A0%25EB%25A1%259D/</loc>
-        <lastmod>2022-01-01T07:38:57.452Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
