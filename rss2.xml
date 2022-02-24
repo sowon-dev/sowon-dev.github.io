@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Wed, 19 Jan 2022 13:09:40 GMT</pubDate>
+    <pubDate>Thu, 24 Feb 2022 02:44:21 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[OS]메모리vs드라이브vsCPU 코어</title>
+      <link>https://sowon-dev.github.io/2022/02/23/220224CS-cpuMemoryDrive/</link>
+      <guid>https://sowon-dev.github.io/2022/02/23/220224CS-cpuMemoryDrive/</guid>
+      <pubDate>Wed, 23 Feb 2022 17:12:39 GMT</pubDate>
+      
+      <description>&lt;p&gt;소스코드를 일절 건드리지않았는데 운영서버의 사이트가 500에러가 났다.&lt;br&gt;팀장님은 드라이브 문제일수있다고 하셨다.&lt;br&gt;여기서 드라이브란?&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>소스코드를 일절 건드리지않았는데 운영서버의 사이트가 500에러가 났다.<br>팀장님은 드라이브 문제일수있다고 하셨다.<br>여기서 드라이브란?</p><a id="more"></a><p>스토리지드라이브를 뜻하며 HDD나 SDD가 포함된다.</p><p>메모리와 드라이브 개념을 확실히하기 위해 글을 찾아봤는데 비유가 가장 적합한 글을 찾았다.<br>정말 좋은 글이니 꼭 읽어보기를 바란다.</p><ul><li><a href="https://www.crucial.kr/articles/about-memory/support-what-does-computer-memory-do">컴퓨터 메모리(RAM)란 무엇이며 어떤 역할을 합니까?</a></li></ul><p>위 글에 따르면 메모리는 책상과 비슷하다고 한다. 책상안에서 서류작성, 파일보관, 업무전화등 다양한 작업을 진행할 수 있다.<br>이때 책상이 크면 클수록 더 많은 작업을 한꺼번에 펼쳐놓고 처리할 수 있어서 서류 보관 캐비넷(드라이브)에 빠르게 접근이 가능하다.<br>책상이 크다면 이미 책상 위에 올려져있을테니까!</p><p>그렇다면 CPU 코어는 뭘까? 코어가 많을수록 메모리가 많을수록 작업이 빨라진다. 이 둘은 어떻게 다를까?<br>이에 관해 팀장님이 비유적으로 설명해주셨다. CPU 코어는 책상앞의 사람의 수로 비유할 수 있다고 한다.👍 사람수가 많을수록 작업이 빨라지니까 CPU 코어가 많을수록 속도가 빨라진다.</p><p>이해 쏙쏙!!!😁👍👍</p><p><br><br><br></p><h2 id="정리"><a href="#정리" class="headerlink" title="정리"></a>정리</h2><ul><li>메모리: 책상</li><li>드라이브: 서류 보관 캐비넷</li><li>CPU 코어: 일을 처리하기 위해 책상앞에 앉아있는 사람<ul><li>예를 들어 CPU 6코어면 6명의 사람이 일처리를 위해 책상 앞에 있다고 생각하면 됨</li></ul></li><li>CPU 스레드: 사람의 손<ul><li>예를 들어 CPU 2코어 4스레드이면 2명의 사람이 4가지 작업을 동시에 할 수 있다고 생각하면 됨</li><li>한 손에 한 작업씩 진행중인 느낌.</li></ul></li></ul><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.crucial.kr/articles/about-memory/support-what-does-computer-memory-do">https://www.crucial.kr/articles/about-memory/support-what-does-computer-memory-do</a></li><li>팀장님 설명</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Operating-Systeming/">Operating Systeming</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%8A%98%EB%98%90%EB%AA%BB%EC%95%8C%EC%95%84%EB%93%A3%EA%B3%A0%EB%A7%90%EC%95%98%EC%8A%B5%EB%8B%88%EB%8B%A4/">오늘또못알아듣고말았습니다</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2022/02/23/220224CS-cpuMemoryDrive/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>닷넷프로젝트를 끝내며 코드리뷰가 내게 남긴 것</title>
@@ -452,29 +475,6 @@
       
       
       <comments>https://sowon-dev.github.io/2021/09/09/210910Jpa-autowiredVSconstructorInjection/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[GIT]`git add .` 와 `git add *` 차이</title>
-      <link>https://sowon-dev.github.io/2021/09/08/210909GIT-add-VSadd/</link>
-      <guid>https://sowon-dev.github.io/2021/09/08/210909GIT-add-VSadd/</guid>
-      <pubDate>Wed, 08 Sep 2021 14:14:28 GMT</pubDate>
-      
-      <description>&lt;p&gt;간단한 내용이지만 적어두지않으면 잊어버리기 쉽다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>간단한 내용이지만 적어두지않으면 잊어버리기 쉽다.</p><a id="more"></a><h2 id="git-add-와-git-add-차이"><a href="#git-add-와-git-add-차이" class="headerlink" title="git add . 와 git add * 차이"></a><code>git add .</code> 와 <code>git add *</code> 차이</h2><ul><li><code>git add .</code>: .gitignore에 기재된 것 고려하여 모두 추가</li><li><code>git add *</code>: .gitignore에 기재된 것 상관없이 모두 추가</li></ul><p>따라서 <code>git add .</code>를 사용하자.</p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Version-control/">Version control</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/git/">git</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2021/09/08/210909GIT-add-VSadd/#disqus_thread</comments>
       
     </item>
     
