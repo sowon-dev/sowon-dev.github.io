@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Thu, 24 Feb 2022 02:55:20 GMT</pubDate>
+    <pubDate>Sat, 26 Feb 2022 12:54:24 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>NoSQL이 뭐길래</title>
+      <link>https://sowon-dev.github.io/2022/02/26/220226NoSQL/</link>
+      <guid>https://sowon-dev.github.io/2022/02/26/220226NoSQL/</guid>
+      <pubDate>Sat, 26 Feb 2022 03:46:51 GMT</pubDate>
+      
+      <description>&lt;p&gt;NoSQL이란 무엇일까?&lt;br&gt;SQL문을 아예 안쓴다는 말일까?&lt;br&gt;Nope!&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>NoSQL이란 무엇일까?<br>SQL문을 아예 안쓴다는 말일까?<br>Nope!</p><a id="more"></a><h2 id="🏷️-NoSQL-Not-Only-SQL"><a href="#🏷️-NoSQL-Not-Only-SQL" class="headerlink" title="🏷️ NoSQL = Not Only SQL"></a>🏷️ NoSQL = Not Only SQL</h2><p>스키마없이 데이터를 표현하는 것이 주된 특징인 일련의 데이터베이스들을 의미한다.</p><p><br><br><br></p><h2 id="🏷️-일반적인특징"><a href="#🏷️-일반적인특징" class="headerlink" title="🏷️ 일반적인특징"></a>🏷️ 일반적인특징</h2><ol><li>정해진 스키마가 없다.</li><li>DB종류에 따라 그 특성이 매우 다르다. (RDBMS가 비슷비슷한 것과는 다름)</li></ol><p><br><br><br></p><h2 id="🏷️-장점"><a href="#🏷️-장점" class="headerlink" title="🏷️ 장점"></a>🏷️ 장점</h2><ol><li>높은 수평 확장성<ul><li>더 많은 인스턴스를 만들어 더 큰 로드를 감당할 수 있음</li></ul></li><li>초기 개발의 용이성</li><li>스키마 설계의 유연성</li></ol><p><br><br><br></p><h2 id="🏷️-단점"><a href="#🏷️-단점" class="headerlink" title="🏷️ 단점"></a>🏷️ 단점</h2><ol><li>표준의 부재<ul><li>표준이 없어서 마이그레이션할때 각각 다 맞춰야 함</li></ul></li><li>SQL에 비해 약한 query capability<ul><li>복잡한 쿼리는 힘듬 -&gt; 단순한 쿼리만 가능</li></ul></li><li>스키마가 없기때문에 data consistency를 어플리케이션 레벨에서 보장해야 함</li></ol><p><br><br><br></p><h2 id="🏷️-종류"><a href="#🏷️-종류" class="headerlink" title="🏷️ 종류"></a>🏷️ 종류</h2><ol><li>Key-value<ul><li>예: Redis, AWS DynamoDB</li><li>모든 레코드는 Key-value의 페어이다.</li><li>NoSQL의 가장 단순한 형태</li></ul></li><li>Document-based<ul><li>예: DynamoDB, CouchDB,몽고DB</li><li>각 레코드가 하나의 문서가 된다.</li><li>key-value종류보다 문서가 구조적이기때문에 쿼리 최적화, 활용성 높은 API가 제공됨</li></ul></li><li>Graph<ul><li>예: Neo4j, AWS Neptune</li><li>그래프 이론을 바탕으로 데이터베이스를 그래프로 표현함</li><li>그래프는 node(객체)와 edge(관계) 그리고 property(객체의 속성)로 이루짐</li><li>관계가 first-class citizen이기 때문에 관계 기반 문제(실시간 추천등)에 유리</li></ul></li></ol>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/NoSQL/">NoSQL</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2022/02/26/220226NoSQL/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[OS]메모리vs드라이브vsCPU 코어 쉽게 이해하자</title>
@@ -452,29 +475,6 @@
       
       
       <comments>https://sowon-dev.github.io/2021/09/14/210915DB-commonCodeGrup/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[JPA] @Autowired보다 생성자 주입을 사용해야하는 이유</title>
-      <link>https://sowon-dev.github.io/2021/09/09/210910Jpa-autowiredVSconstructorInjection/</link>
-      <guid>https://sowon-dev.github.io/2021/09/09/210910Jpa-autowiredVSconstructorInjection/</guid>
-      <pubDate>Thu, 09 Sep 2021 16:25:47 GMT</pubDate>
-      
-      <description>&lt;p&gt;MVC패턴 스프링프로젝트에서 Controller에서 Service를 의존성 주입할때 대부분 @Autowired로 필드주입을 한다.&lt;br&gt;하지만 JPA를 사용하는 경우 @Autowired 필드 주입보다는 생성자 주입 사용을 권장한다.&lt;br&gt;그 이유가 무엇인지 알아보자.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>MVC패턴 스프링프로젝트에서 Controller에서 Service를 의존성 주입할때 대부분 @Autowired로 필드주입을 한다.<br>하지만 JPA를 사용하는 경우 @Autowired 필드 주입보다는 생성자 주입 사용을 권장한다.<br>그 이유가 무엇인지 알아보자.</p><a id="more"></a><h2 id="필드-주입-Field-Injection-이란"><a href="#필드-주입-Field-Injection-이란" class="headerlink" title="필드 주입(Field Injection)이란?"></a>필드 주입(Field Injection)이란?</h2><p>사용법이 매우 간단하여 많은 개발자들이 사용한다. 필드에 @Autowired만 붙여주면 끝!<br>해당 필드에 자동으로 의존성이 주입된다.</p><ul><li>ApiController.java<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ApiController</span> </span>&#123;</span><br><span class="line"><span class="meta">@Autowired</span> </span><br><span class="line">NoticeService noticeService;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><p><br><br><br></p><h2 id="생성자-주입-Constructor-Injection-이란"><a href="#생성자-주입-Constructor-Injection-이란" class="headerlink" title="생성자 주입(Constructor Injection)이란?"></a>생성자 주입(Constructor Injection)이란?</h2><p>생성자로 의존성을 주입한다. 방법은 총 두가지이다.</p><h3 id="첫번째-방법-정석"><a href="#첫번째-방법-정석" class="headerlink" title="첫번째 방법: 정석"></a>첫번째 방법: 정석</h3><ul><li>ApiController.java<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ApiController</span> </span>&#123;</span><br><span class="line">NoticeRepository noticeRepository;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">ApiController</span><span class="params">(NoticeRepository noticeRepository)</span> </span>&#123;</span><br><span class="line"><span class="keyword">this</span>.noticeRepository = noticeRepository;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><p><br><br><br></p><h3 id="두번째-방법-RequiredArgsConstructor-final사용"><a href="#두번째-방법-RequiredArgsConstructor-final사용" class="headerlink" title="두번째 방법: @RequiredArgsConstructor + final사용"></a>두번째 방법: @RequiredArgsConstructor + final사용</h3><p>위의 방법을 쉽게 할 수 있는 스프링프레임워크의 어노테이션이 있다!<br>바로 @RequiredArgsConstructor를 넣은 뒤 필드를 final로 선언해주면 된다.</p><ul><li>ApiController.java<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@RequiredArgsConstructor</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ApiController</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">final</span> NoticeRepository noticeRepository;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><p><br><br><br></p><h2 id="스프링팀에서-쉬운-필드-주입보다-생성자-주입은-권장하는-이유는"><a href="#스프링팀에서-쉬운-필드-주입보다-생성자-주입은-권장하는-이유는" class="headerlink" title="스프링팀에서 쉬운 필드 주입보다 생성자 주입은 권장하는 이유는?"></a>스프링팀에서 쉬운 필드 주입보다 생성자 주입은 권장하는 이유는?</h2><ol><li>순환참조 방지해서 애플리케이션이 뻗어버리는 걸 방지</li><li>final선언이 가능해서 불변성 확보</li></ol>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/JPA/">JPA</category>
-      
-      
-      
-      <comments>https://sowon-dev.github.io/2021/09/09/210910Jpa-autowiredVSconstructorInjection/#disqus_thread</comments>
       
     </item>
     
