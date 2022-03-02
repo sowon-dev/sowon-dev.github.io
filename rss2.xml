@@ -9,8 +9,33 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Sat, 26 Feb 2022 12:54:24 GMT</pubDate>
+    <pubDate>Wed, 02 Mar 2022 06:44:07 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[이클립스/STS] 보기 편하게 code style 설정하기 - 포맷팅설정</title>
+      <link>https://sowon-dev.github.io/2022/03/01/220302STS-formatSetting/</link>
+      <guid>https://sowon-dev.github.io/2022/03/01/220302STS-formatSetting/</guid>
+      <pubDate>Tue, 01 Mar 2022 21:09:29 GMT</pubDate>
+      
+      <description>&lt;p&gt;이클립스나 STS 기본 코드 스타일은 너무 많은 tab공백 등으로 지저분해보이기도 한다.&lt;br&gt;보기 편하도록 신규 프로젝트 시작시 코드 스타일을 적용하고 있다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>이클립스나 STS 기본 코드 스타일은 너무 많은 tab공백 등으로 지저분해보이기도 한다.<br>보기 편하도록 신규 프로젝트 시작시 코드 스타일을 적용하고 있다.</p><a id="more"></a><p>코드 스타일 적용 단축키: <code>Ctrl + Shift + F</code></p><p>아래는 내가 주로 사용하는 코드 스타일이다.</p><p><br><br></p><h2 id="JAVA-code-style-🎀"><a href="#JAVA-code-style-🎀" class="headerlink" title="JAVA code style 🎀"></a>JAVA code style 🎀</h2><p>자바코드스타일은 구글 스타일을 사용하고 있다.<br>먼저 <a href="https://github.com/google/styleguide/blob/gh-pages/eclipse-java-google-style.xml">google/styleguide 레포지토리안의 eclipse-java-google-style</a>를 선택하여 xml파일로 다운로드한다.</p><ol><li>이클립스 상단의 Windows &gt; Preferences</li><li>Formatter 검색 후 Java &gt; Code Style &gt; Formatter 클릭 </li><li>Import 버튼 클릭 후 미리 다운로드한 eclipse-java-google-style.xml 파일을 선택한 후 apply 버튼 클릭</li></ol><p>자바 코드 스타일 적용 끝!</p><p><br><br><br></p><h2 id="JavaScript-code-style-🎀"><a href="#JavaScript-code-style-🎀" class="headerlink" title="JavaScript code style 🎀"></a>JavaScript code style 🎀</h2><p>jsp에서 script태그를 이용해 js를 사용하는 경우 이 설정도 함께 해줘야 보기 편하다.</p><ol><li>이클립스 상단의 Windows &gt; Preferences</li><li>Formatter 검색 후 JavaScript &gt; Code Style &gt; Formatter 클릭 </li><li>New 버튼 클릭 후 <code>Profile name: 원하는 이름</code> 기입하고  <code>Initialize settings with the following profile: Eclipse[built-in]</code> 선택 후 OK버튼</li><li>Indentation 에서 <code>Tab policy : Spaces only</code>와 <code>Indentation size : 2</code>, 그리고 <code>Tab size : 2</code>를 기입<ul><li><img src="/img/220302jsCodeStyle1.JPG" alt="Indentation 참고"></li></ul></li><li>Line Wrapping &gt; <code>Maximem line width : 180</code> 기입<ul><li><img src="/img/220302jsCodeStyle2.JPG" alt="Line Wrapping 참고"></li></ul></li></ol><p>자바스크립트 코드 스타일 적용 끝!</p><p><br><br><br></p><h2 id="HTML-code-style-🎀"><a href="#HTML-code-style-🎀" class="headerlink" title="HTML code style 🎀"></a>HTML code style 🎀</h2><ol><li>이클립스 상단의 Windows &gt; Preferences</li><li>html 검색 후  Web &gt; HTML Files &gt; Editor 클릭 <ul><li>Line width : 120</li><li>Indent using spaces 체크</li><li>Indentation size = 2</li><li>Inline Elements &gt; 인라인으로 보이기 싫은 태그들 선택 &gt; Remove<ul><li>나는 주로 select, tr, td를 remove한다.</li></ul></li></ul></li><li>apply 버튼 클릭 후 OK버튼 클릭</li></ol><p><img src="/img/220302jsCodeStyle2.JPG" alt="HTML 설정 참고"></p><p>HTML 코드 스타일 적용 끝!</p><p><br><br><br></p><h2 id="JSP-Validation-OFF-🎀"><a href="#JSP-Validation-OFF-🎀" class="headerlink" title="JSP Validation OFF 🎀"></a>JSP Validation OFF 🎀</h2><p>JSP파일이 많다면 Validation OFF를 하는 게 로딩도 빠르고 보기 편하다.</p><ul><li>Window &gt; Preference &gt; Web &gt; JSP Files &gt; Validation<ul><li>Validate JSP fragemtns 체크해제</li></ul></li></ul><p>끝!</p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Eclipse/">Eclipse</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/STS/">STS</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2022/03/01/220302STS-formatSetting/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>NoSQL이 뭐길래</title>
@@ -452,29 +477,6 @@
       
       
       <comments>https://sowon-dev.github.io/2021/09/15/210916JPA-FKincorrectlyformed/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[DB설계]공통코드는 어떻게 만들까?(예시)</title>
-      <link>https://sowon-dev.github.io/2021/09/14/210915DB-commonCodeGrup/</link>
-      <guid>https://sowon-dev.github.io/2021/09/14/210915DB-commonCodeGrup/</guid>
-      <pubDate>Tue, 14 Sep 2021 15:00:00 GMT</pubDate>
-      
-      <description>&lt;p&gt;회사에서 스터디를 진행하고있다. 스터디속에 부장님의 특급 강의도 함께 있어서 정말 많이 배우고있다.&lt;br&gt;스터디 넘 재밌다!!!&lt;br&gt;스터디동안에 각자 만들 사이트를 하나씩 정했다. 나는 백신후기웹사이트!!&lt;br&gt;DB설계를 보여드리고 피드백은 받았다.  &lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>회사에서 스터디를 진행하고있다. 스터디속에 부장님의 특급 강의도 함께 있어서 정말 많이 배우고있다.<br>스터디 넘 재밌다!!!<br>스터디동안에 각자 만들 사이트를 하나씩 정했다. 나는 백신후기웹사이트!!<br>DB설계를 보여드리고 피드백은 받았다.  </p><a id="more"></a><h2 id="내가-작성한-리뷰테이블"><a href="#내가-작성한-리뷰테이블" class="headerlink" title="내가 작성한 리뷰테이블"></a>내가 작성한 리뷰테이블</h2><p><img src="/img/210915commoncodegrup1.PNG" alt=""></p><p>내가 처음 작성한 리뷰테이블이다.<br>백신종류와 6가지정도 되는 증상이 함께 들어가 있다.</p><ul><li>백신종류</li></ul><table><thead><tr><th align="center">백신종류</th><th align="center">값</th></tr></thead><tbody><tr><td align="center">AZ</td><td align="center">아스트라제네카</td></tr><tr><td align="center">DO</td><td align="center">모더나</td></tr><tr><td align="center">PH</td><td align="center">화이자</td></tr><tr><td align="center">JA</td><td align="center">얀센</td></tr></tbody></table><ul><li>증상(강도보단 유무를 받기로 함)<ol><li>발열유무</li><li>통증(근육통,두통,몸살)유무</li><li>기침유무</li><li>부정출혈유무</li><li>오한유무</li><li>설사유무</li></ol></li></ul><p>이렇게 내가 짠 프로그램을 설명드리니 부장님은 아래와 같은 피드백을 주셨다.</p><blockquote><p>💬 부장님: 공통코드로 만들어보세요</p></blockquote><p><br><br><br></p><h2 id="공통코드"><a href="#공통코드" class="headerlink" title="공통코드?"></a>공통코드?</h2><p>공통코드란 데이터 속성에 사용되는 공통적인 값을 코드로 표현하는 것이다.<br>공통코드를 사용하면 좋은 장점은 무엇일까?</p><ul><li>공통코드 장점<ol><li>데이터 유연성: 현재 4개의 백신종류에서 추가 승인 받은 백신이 생겼다면? 공통코드에서는 코드 하나만 추가하면 끝이기때문에 유연성이 높다. </li><li>데이터 명칭의 일관성: <code>아스트라제네카</code>를 누군가는 <code>아스트라 제네카</code>라고 띄어 쓸 수 도 있다. 코드를 통해 명칭의 일관성을 유지하여 데이터 정합성을 높일 수 있다.</li></ol></li></ul><p><br><br><br></p><h2 id="내가-작성한-공통코드-테이블"><a href="#내가-작성한-공통코드-테이블" class="headerlink" title="내가 작성한 공통코드 테이블"></a>내가 작성한 공통코드 테이블</h2><p><img src="/img/210915commoncodegrup2.PNG" alt=""></p><p>열심히 구글링해서 아래와 같이 공통코드를 구성해보았다. 아래와 같은 궁금증이 생겼다.</p><ul><li>의문점 <ol><li>백신타입을 공통코드로 써야하는 이유가 뭘까? 어차피 한 컬럼에 한 개의 값만 들어가는데..굳이..</li><li>공통코드를 사용한다면 증상이 1개 이상 있는 사람은 어떻게 db에 넣지? -&gt; 리뷰테이블에서 증상부분들을 하나로 합치고 Varchar값으로 콤마로 구분해서 넣을까? -&gt; 그럼 어떻게 보여주지? 보여줄땐 split해서 보여주면 될까?</li></ol></li></ul><p>고민하다가 팀장님께 물어봤는데 바로 해결책을 알려주셨다.<br>팀장님은 역시 천재…빛과 소금😀</p><p><br><br><br></p><h2 id="😎-의문점에-대한-팀장님의-명쾌한-조언"><a href="#😎-의문점에-대한-팀장님의-명쾌한-조언" class="headerlink" title="😎 의문점에 대한 팀장님의 명쾌한 조언"></a>😎 의문점에 대한 팀장님의 명쾌한 조언</h2><blockquote><p>💬 김팀장님:<br>테이블은 성격이 다른 컬럼은 다른 테이블로 나누어야합니다.<br>현재 리뷰테이블은 성격이 다른 컬럼들이 한 곳에 모여있어서 여러 의문점이 생기신 것 같아요.<br>컬럼의 성격에 따라 분류해보세요<br>증상은 성격이 다르니까 다른 테이블로 뺀 뒤 reviewId와 함께 PK를 걸면 좋을거예요. 일대다의 관계.<br>공통코드테이블을 위처럼 작성하면 명칭이 헷갈릴 수 있어요. 코드그룹, 코드, 코드명, 사용여부, 정렬순번을 기본적으로 사용하는 게 어때요?</p></blockquote><p><br><br><br></p><h2 id="공통코드-테이블"><a href="#공통코드-테이블" class="headerlink" title="공통코드 테이블"></a>공통코드 테이블</h2><p>내가 고민했던 모든 것은 테이블을 다시 설계하면 다 해결되는 문제였다!<br>팀장님의 조언을 토대로 테이블을 다시 나누었다.</p><p><img src="/img/210915commoncodegrup3.PNG" alt=""></p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/DB%EC%84%A4%EA%B3%84/">DB설계</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2021/09/14/210915DB-commonCodeGrup/#disqus_thread</comments>
       
     </item>
     

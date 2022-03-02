@@ -3,6 +3,20 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/STS/</loc>
+        <lastmod>2022-03-02T06:44:07.588Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/Eclipse/</loc>
+        <lastmod>2022-03-02T06:44:07.588Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/NoSQL/</loc>
         <lastmod>2022-02-26T12:54:24.872Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -12,13 +26,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/%25EC%2598%25A4%25EB%258A%2598%25EB%2598%2590%25EB%25AA%25BB%25EC%2595%258C%25EC%2595%2584%25EB%2593%25A3%25EA%25B3%25A0%25EB%25A7%2590%25EC%2595%2598%25EC%258A%25B5%25EB%258B%2588%25EB%258B%25A4/</loc>
         <lastmod>2022-02-24T02:55:20.241Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/STS/</loc>
-        <lastmod>2022-02-17T01:02:28.357Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -166,13 +173,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/java-util-Calendar/</loc>
         <lastmod>2021-07-16T14:39:02.621Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/Eclipse/</loc>
-        <lastmod>2021-07-08T03:01:32.138Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
