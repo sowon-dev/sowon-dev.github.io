@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Wed, 02 Mar 2022 06:44:07 GMT</pubDate>
+    <pubDate>Mon, 07 Mar 2022 12:32:48 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>톰캣서버란? Tomcat 내부 구조와 설정파일</title>
+      <link>https://sowon-dev.github.io/2022/03/07/220307Server-tomcat/</link>
+      <guid>https://sowon-dev.github.io/2022/03/07/220307Server-tomcat/</guid>
+      <pubDate>Mon, 07 Mar 2022 02:55:29 GMT</pubDate>
+      
+      <description>&lt;p&gt;클라이언트가 요청을 보내면 톰캣 내부에서는 어떤 일이 일어날까?&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>클라이언트가 요청을 보내면 톰캣 내부에서는 어떤 일이 일어날까?</p><a id="more"></a><h2 id="톰캣-서버-내부-구조"><a href="#톰캣-서버-내부-구조" class="headerlink" title="톰캣 서버 내부 구조"></a>톰캣 서버 내부 구조</h2><p><img src="https://flylib.com/books/4/15/1/html/2/id_9807/fig21_01.jpg" alt="https://flylib.com/books/4/15/1/html/2/id_9807/fig21_01.jpg"></p><p>Tomcat Server안에 Service가 있고 그 서비스를 처리하는 것이 Engine(Catalina)이다.<br>Engine안에는 Host가 여러 개가 있을 수 있다.<br>Host안에는 여러 개의 Context가 있을 수 있다.<br>여기사 Context란 쉽게 말해 스프링프로젝트라고 생각하면 된다.<br>Context안에 있는 Servlet이 여러개 있는데 각 Servlet은 쉽게 Controller로 생각할 수 있다.</p><p><img src="https://imgs.developpaper.com/imgs/1195016741-5cf1158dc0127_articlex.png" alt="https://imgs.developpaper.com/imgs/1195016741-5cf1158dc0127_articlex.png"></p><p>클라이언트가 먼저 url을 요청하면 Thread Pool로 간다. Thread Pool은 요청을 받은 후에 만들면 늦으니까 요청을 받기 전 미리 만들어 놓는다.<br>그 중 요청을 처리하고 있지 않은 Thread 하나가 요청을 받게된다.<br>요청 프로토콜에 따라 Connector가 동일한 프로토콜을 연결해주며 보통 HTTP1.1 프로토콜이다.<br>프로토콜이 프로세스를 처리해서 Engline(Catalina)을 거치고 요청 받은 Host안의 Context까지 찾은 다음 해당 Servlet을 호출한다.<br>Dispatcher Servlet이 요청받은 Controller의 method를 찾아 호출한다.</p><p><br><br><br></p><h2 id="설정파일"><a href="#설정파일" class="headerlink" title="설정파일"></a>설정파일</h2><ul><li>톰캣설치경로/conf/server.xml : 톰캣 서버 설정 파일</li><li>톰캣설치경로/conf/web.xml : 톰캣의 모든 프로젝트의 공통설정 파일</li><li>프로젝트이름/WEB-INF/web.xml : 프로젝트(Context)의 개별 설정</li></ul><p>공통설정파일이 먼저 적용된 후 프로젝트 개별 설정파일이 적용된다.</p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://tomcat.apache.org/tomcat-9.0-doc/architecture/overview.html">https://tomcat.apache.org/tomcat-9.0-doc/architecture/overview.html</a></li><li><a href="https://imgs.developpaper.com/imgs/1195016741-5cf1158dc0127_articlex.png">https://imgs.developpaper.com/imgs/1195016741-5cf1158dc0127_articlex.png</a></li><li><a href="https://sowon-dev.github.io/2020/10/04/201005jspProcessVSThreadNWebServerVSWAS/#%EC%9B%B9%EC%84%9C%EB%B2%84-WEB-SERVER-VS-%EC%9B%B9%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%84%9C%EB%B2%84-WAS-Web-Application-Server">웹서버(WEB SERVER) VS 웹어플리케이션서버(WAS, Web Application Server)</a></li><li><a href="https://sowon-dev.github.io/2020/08/16/200817jspi/#Servlet%EA%B8%B0%EC%B4%88">Servlet : Servlet용어정리</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Server/">Server</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Tomcat/">Tomcat</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2022/03/07/220307Server-tomcat/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[이클립스/STS] 보기 편하게 code style 설정하기 - 포맷팅설정</title>
@@ -452,31 +475,6 @@
       
       
       <comments>https://sowon-dev.github.io/2021/09/15/210916Jpa-entityPKFK/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[JPA/MariaDB]errno: 150 Foreign key constraint is incorrectly formed 해결방법</title>
-      <link>https://sowon-dev.github.io/2021/09/15/210916JPA-FKincorrectlyformed/</link>
-      <guid>https://sowon-dev.github.io/2021/09/15/210916JPA-FKincorrectlyformed/</guid>
-      <pubDate>Wed, 15 Sep 2021 21:16:32 GMT</pubDate>
-      
-      <description>&lt;p&gt;MariaDB와 JPA로 복합키이면서 그 중 하나는 FK인 테이블을 만들고 싶었는데 계속해서 FK 에러가 발생했다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>MariaDB와 JPA로 복합키이면서 그 중 하나는 FK인 테이블을 만들고 싶었는데 계속해서 FK 에러가 발생했다.</p><a id="more"></a><p><img src="/img/210915commoncodegrup3.PNG" alt=""></p><p>위 ERD와 같이 symptom테이블을 만들고 싶었다.<br>모든 키가 복합키이면서 review_id키는 FK 제약조건을 걸고싶었다.<br>create해서 테이블은 잘 생성되지만 FK를 걸다가 에러를 발생했다.</p><ul><li>에러코드</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Hibernate: <span class="function">alter table symptom add constraint FKct400cemwq2cjh9mdfusfieko foreign <span class="title">key</span> <span class="params">(review_id)</span> references <span class="title">review</span> <span class="params">(id)</span></span></span><br><span class="line"><span class="function">GenerationTarget encountered exception accepting command : Error executing DDL "alter table symptom add constraint FKct400cemwq2cjh9mdfusfieko foreign <span class="title">key</span> <span class="params">(review_id)</span> references <span class="title">review</span> <span class="params">(id)</span>" via JDBC Statement</span></span><br><span class="line"><span class="function">org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table symptom add constraint FKct400cemwq2cjh9mdfusfieko foreign <span class="title">key</span> <span class="params">(review_id)</span> references <span class="title">review</span> <span class="params">(id)</span>" via JDBC Statement</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"><span class="params">(중략)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">Caused by: java.sql.SQLTransientConnectionException: <span class="params">(conn=<span class="number">115300</span>)</span> Can't create table `boostshot`.`symptom` <span class="params">(errno: <span class="number">150</span> <span class="string">"Foreign key constraint is incorrectly formed"</span>)</span></span></span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="에러-150을-해결하는-방법-4가지"><a href="#에러-150을-해결하는-방법-4가지" class="headerlink" title="에러 150을 해결하는 방법 4가지"></a>에러 150을 해결하는 방법 4가지</h2><p>아래 4가지 조건에 부합해야한다.</p><ol><li>데이터 타입이 일치해야 함</li><li>NOT NULL or NULL 여부가 동일해야 함</li><li>참조받는 데이터가 unique key / primary key 이어야함</li><li>두 테이블의 charset 이 같아야함</li></ol><p>참고 포스팅 : <a href="https://box0830.tistory.com/211">박스님 - errno: 150 “Foreign key constraint is incorrectly formed</a></p><p><br><br><br></p><h2 id="기존-테이블"><a href="#기존-테이블" class="headerlink" title="기존 테이블"></a>기존 테이블</h2><p><img src="/img/210916jpafkerror1.PNG" alt=""></p><p>위 4가지 조건에서 1번과 4번조건이 부합하지않는다.</p><ol><li>데이터 타입이 BIGINT와 VARCHAR임</li><li>조합이 UTF-8 한쪽만 설정되어 있음</li></ol><p><br><br><br></p><h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><p>복합키를 위해 생성한 클래스에서 데이터 타입이 잘못 지정되어있었다.<br>String타입을 Long타입으로 변경하여 일치 시켜주니 정상 작동했다!</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@NoArgsConstructor</span> <span class="meta">@AllArgsConstructor</span></span><br><span class="line"><span class="meta">@EqualsAndHashCode</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SymptomId</span> <span class="keyword">implements</span> <span class="title">Serializable</span> </span>&#123;</span><br><span class="line"><span class="comment">// 기존 </span></span><br><span class="line"><span class="comment">// private String reviewId; </span></span><br><span class="line"><span class="comment">// 변경: String -&gt; Long</span></span><br><span class="line"><span class="keyword">private</span> Long reviewId;</span><br><span class="line"><span class="keyword">private</span> String symptomCode;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>정상작동한 테이블 모습</li></ul><p><img src="/img/210916jpafkerror2.PNG" alt=""></p><p>여담이지만 이 별것도 아닌 에러를 가지고 2시간이나쓰고 그것도 모자라서 과장님께 한번만 도와달라고 부탁까지했다.<br>과장님은 단 5분만에 데이터 타입이 다른 것을 찾아주셨다…그저 빛🌞<br>역시 물어보길 잘했다. 완벽하게 이해했기때문에 이 에러는 다시는 만나지 않을 것 같다.</p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><p>에러부분 말고 전체 코드는 <a href="https://sowon-dev.github.io/2021/09/15/210916Jpa-entityPKFK/">JPA: Entity에 복합키와 FK 제약조건 넣기</a> 포스팅에서 확인할 수 있다.</p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/JPA/">JPA</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%A5%98%EC%9D%BC%EC%A7%80/">오류일지</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2021/09/15/210916JPA-FKincorrectlyformed/#disqus_thread</comments>
       
     </item>
     

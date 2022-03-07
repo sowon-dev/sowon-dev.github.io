@@ -8,6 +8,30 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2022/03/07/220307Server-tomcat/</loc>
+        <lastmod>2022-03-07T12:32:48.134Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/08/16/200817jspi/</loc>
+        <lastmod>2022-03-07T11:53:56.315Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/12/30/201231portdiff/</loc>
+        <lastmod>2022-03-07T11:47:23.233Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2022/03/01/220302STS-formatSetting/</loc>
         <lastmod>2022-03-02T06:44:07.588Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -802,14 +826,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2021/04/04/210404al-backjoon-2562/</loc>
         <lastmod>2021-04-04T15:37:24.380Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/12/30/201231portdiff/</loc>
-        <lastmod>2021-04-02T09:08:07.667Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -3234,14 +3250,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/08/10/200811jspi/</loc>
         <lastmod>2020-09-02T02:54:40.830Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/08/16/200817jspi/</loc>
-        <lastmod>2020-09-02T02:52:05.810Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
