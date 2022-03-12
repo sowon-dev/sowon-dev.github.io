@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2020/11/01/201102spring/</loc>
+        <lastmod>2022-03-12T14:53:35.215Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2022/03/11/220311STS-changeJavaVersion/</loc>
         <lastmod>2022-03-11T13:12:09.900Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1650,14 +1658,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/11/02/201103db/</loc>
         <lastmod>2020-11-03T00:30:57.347Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/11/01/201102spring/</loc>
-        <lastmod>2020-11-02T08:19:26.658Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
