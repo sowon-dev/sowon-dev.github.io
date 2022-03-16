@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Fri, 11 Mar 2022 13:12:09 GMT</pubDate>
+    <pubDate>Wed, 16 Mar 2022 14:52:38 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>DispatcherSerlvet 씹어먹기</title>
+      <link>https://sowon-dev.github.io/2022/03/16/220316DispatcherServlet/</link>
+      <guid>https://sowon-dev.github.io/2022/03/16/220316DispatcherServlet/</guid>
+      <pubDate>Wed, 16 Mar 2022 05:34:04 GMT</pubDate>
+      
+      <description>&lt;p&gt;SpringMVC에선 DispatcherSerlvet가 아주 중요한 역할을 한다.&lt;br&gt;잠깐 SpringMVC란 무엇일까?&lt;br&gt;Spring프레임워크에 Model, View, Controller를 븐리한 디자인 패턴을 말한다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>SpringMVC에선 DispatcherSerlvet가 아주 중요한 역할을 한다.<br>잠깐 SpringMVC란 무엇일까?<br>Spring프레임워크에 Model, View, Controller를 븐리한 디자인 패턴을 말한다.</p><a id="more"></a><p>Spring 프레임워크는 개발을 지원하기 위해 다양한 clas를 제공하는데 그 중 아래 3가지를 이번 글에서 다룰 것이다.</p><ol><li>DispatcherServlet</li><li>HandlerMapping: Key-Value구조로 URL-메서드를 저장한 table에서 클라이언트의 요청을 처리할 Controller를 찾는 역할</li><li>ViewResolver</li></ol><table><thead><tr><th align="center">용어</th><th align="center">설명</th><th align="center">예시</th></tr></thead><tbody><tr><td align="center"></td><td align="center"></td><td align="center"></td></tr></tbody></table><p><br><br><br></p><h2 id="SpringMVC-요청-처리-과정"><a href="#SpringMVC-요청-처리-과정" class="headerlink" title="SpringMVC 요청 처리 과정"></a>SpringMVC 요청 처리 과정</h2><p><img src="" alt=""></p><ol><li>클라이언트가 요청을 한다. ex) /admin/post/add</li><li>DispatcherServlet는 어떤 메서드가 좋은지 HandlerMapping에게 물어본다.</li></ol>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2022/03/16/220316DispatcherServlet/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[STS] 자바버전 안 바뀔때 해결! 자바버전 바꾸는 방법(1.8에서 11로)</title>
@@ -448,31 +469,6 @@
       
       
       <comments>https://sowon-dev.github.io/2021/10/19/211020SQL-recurisve/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[MySQL/MariaDB] Union all 사용법</title>
-      <link>https://sowon-dev.github.io/2021/10/18/211019SQL-unionall/</link>
-      <guid>https://sowon-dev.github.io/2021/10/18/211019SQL-unionall/</guid>
-      <pubDate>Mon, 18 Oct 2021 15:00:00 GMT</pubDate>
-      
-      <description>&lt;p&gt;동일한 컬럼을 가지고 있는 두 테이블은 JOIN과 ON절을 이용해서 합칠 수 있다.&lt;br&gt;하지만 동일한 컬럼을 가지고 있지 않은데 검색결과를 함께보고싶다면 고려해봐야할 것이 바로 union all을 사용해보자.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>동일한 컬럼을 가지고 있는 두 테이블은 JOIN과 ON절을 이용해서 합칠 수 있다.<br>하지만 동일한 컬럼을 가지고 있지 않은데 검색결과를 함께보고싶다면 고려해봐야할 것이 바로 union all을 사용해보자.</p><a id="more"></a><ul><li>JOIN: 수직결합</li><li>UNION: 수평결합<ul><li>UNION: 중복데이터 제거 </li><li>UNION ALL: 중복여부와 상관없이 모든 데이터 출력</li></ul></li></ul><p>만약 과일가게테이블과 편의점테이블이 아래처럼 있다고 생각해보자.</p><ul><li><p>과일가게테이블</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">과일가게테이블</span><br><span class="line">+--------+--------+</span><br><span class="line">| 품  명  | 가  격 |</span><br><span class="line">+--------+--------+</span><br><span class="line">| 바나나 |   1500 |</span><br><span class="line">| 딸기   |   2000 |</span><br><span class="line">| 사과   |   2000 |</span><br><span class="line">+--------+--------+</span><br></pre></td></tr></table></figure></li><li><p>편의점테이블</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">편의점테이블</span><br><span class="line">+--------+--------+</span><br><span class="line">| 품  명 | 가  격  |</span><br><span class="line">+--------+--------+</span><br><span class="line">| 바나나 |   1500 |</span><br><span class="line">| 사과   |   2500 |</span><br><span class="line">| 하리보 |   2000 |</span><br><span class="line">+--------+--------+</span><br></pre></td></tr></table></figure></li></ul><h2 id="UNION"><a href="#UNION" class="headerlink" title="UNION"></a>UNION</h2><p>중복데이터 제거한 결과가 출력된다.</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM 과일가게테이블 </span><br><span class="line">UNION </span><br><span class="line">SELECT * FROM 편의점테이블;</span><br><span class="line"></span><br><span class="line">// 결과</span><br><span class="line">+--------+--------+</span><br><span class="line">| 품  명 | 가  격  |</span><br><span class="line">+--------+--------+</span><br><span class="line">| 바나나 |   1500 |</span><br><span class="line">| 딸기   |   2000 |</span><br><span class="line">| 사과   |   2000 |</span><br><span class="line">| 바나나 |   1500 |</span><br><span class="line">| 사과   |   2500 |</span><br><span class="line">| 하리보 |   2000 |</span><br><span class="line">+--------+--------+</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="UNION-ALL"><a href="#UNION-ALL" class="headerlink" title="UNION ALL"></a>UNION ALL</h2><p>중복여부와 상관없이 모든 데이터 출력된다.</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM 과일가게테이블 </span><br><span class="line">UNION ALL</span><br><span class="line">SELECT * FROM 편의점테이블;</span><br><span class="line"></span><br><span class="line">// 결과</span><br><span class="line">+--------+--------+</span><br><span class="line">| 품  명 | 가  격  |</span><br><span class="line">+--------+--------+</span><br><span class="line">| 바나나 |   1500 |</span><br><span class="line">| 딸기   |   2000 |</span><br><span class="line">| 사과   |   2000 |</span><br><span class="line">| 사과   |   2500 |</span><br><span class="line">| 하리보 |   2000 |</span><br><span class="line">+--------+--------+</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/MySQL/">MySQL</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/MariaDB/">MariaDB</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2021/10/18/211019SQL-unionall/#disqus_thread</comments>
       
     </item>
     
