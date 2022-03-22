@@ -9,8 +9,33 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Wed, 16 Mar 2022 15:32:54 GMT</pubDate>
+    <pubDate>Tue, 22 Mar 2022 14:52:39 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>주니어 개발자와 시니어 개발자의 차이</title>
+      <link>https://sowon-dev.github.io/2022/03/22/220322SQLdiff/</link>
+      <guid>https://sowon-dev.github.io/2022/03/22/220322SQLdiff/</guid>
+      <pubDate>Tue, 22 Mar 2022 05:26:26 GMT</pubDate>
+      
+      <description>&lt;p&gt;예약시간표를 만들어보자.&lt;br&gt;예악가능한 시간대는 10시와 13시, 15시가 총 3가지이고 예약상태가 예약승인, 예약취소 총 3가지가 있다.&lt;br&gt;예약이 한 번도 없거나, 예약취소가 된 경우 예약이 가능하며 예약승인인 경우 예약이 불가능하다.&lt;br&gt;이때 특정 날짜를 달력에서 선택했을때 시간대별로 예약가능한지 불가능한지를 알고싶었다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>예약시간표를 만들어보자.<br>예악가능한 시간대는 10시와 13시, 15시가 총 3가지이고 예약상태가 예약승인, 예약취소 총 3가지가 있다.<br>예약이 한 번도 없거나, 예약취소가 된 경우 예약이 가능하며 예약승인인 경우 예약이 불가능하다.<br>이때 특정 날짜를 달력에서 선택했을때 시간대별로 예약가능한지 불가능한지를 알고싶었다.</p><a id="more"></a><p>예를 들어 달력에서 3월 22일 클릭했을때 얘약상태가 null이거나 예약취소이면 예약이 가능하고 예약상태가 예약승인경우에 예약이 불가능하다. 예약시간대와 예약상태는 DB 데이터로 존재하므로 쿼리를 잘 짜서 예약가능여부를 출력하고 싶었다.</p><table><thead><tr><th align="center">선택한날짜(searchDate)</th><th align="center">예약시간대</th><th align="center">예약상태</th><th align="center">예약가능여부</th></tr></thead><tbody><tr><td align="center">2022-03-22</td><td align="center">10시</td><td align="center">예약승인</td><td align="center">X</td></tr><tr><td align="center">2022-03-22</td><td align="center">13시</td><td align="center">null</td><td align="center">O</td></tr><tr><td align="center">2022-03-22</td><td align="center">15시</td><td align="center">예약취소</td><td align="center">O</td></tr></tbody></table><p><br><br><br></p><h2 id="내-쿼리"><a href="#내-쿼리" class="headerlink" title="내 쿼리"></a>내 쿼리</h2><p>예약상태 값이 있든 없든 출력되어야하므로 먼저 left join을 생각했었다. 하지만 기준테이블을 뭘로 잡으면 좋을지 고민해봤지만 주니어의 머리속엔 아무것도 떠오르지 않았다.<br>그래서 고민하다가 union이 떠올랐다. union에 관해서는 2번적도 포스팅을 한 적이 있었는데 언젠가 내 머리속에서 버로 떠올랐으면 했었는데 드디어 떠올랐다.  짜릿해😆<br>배운 지식이 머리속에서 떠오르는 건 짜릿한 경험이다.</p><ul><li>sql<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">select <span class="title">ifnull</span><span class="params">(예약시간대, <span class="string">'10:00'</span>)</span></span></span><br><span class="line"><span class="function">, <span class="title">ifnull</span><span class="params">(count(예약상태)</span>, '예약가능')</span></span><br><span class="line"><span class="function">from exampletable</span></span><br><span class="line"><span class="function">where 예약시간대 </span>= <span class="string">'10:00'</span></span><br><span class="line">and searchDate = #&#123;searchDate&#125;</span><br><span class="line">and 예약상태 = <span class="string">'예약승인'</span></span><br><span class="line"></span><br><span class="line">union </span><br><span class="line"></span><br><span class="line"><span class="function">select <span class="title">ifnull</span><span class="params">(예약시간대, <span class="string">'13:00'</span>)</span></span></span><br><span class="line"><span class="function">, <span class="title">ifnull</span><span class="params">(count(예약상태)</span>, '예약가능')</span></span><br><span class="line"><span class="function">from exampletable</span></span><br><span class="line"><span class="function">where 예약시간대 </span>= <span class="string">'13:00'</span></span><br><span class="line">and searchDate = #&#123;searchDate&#125;</span><br><span class="line">and 예약상태 = <span class="string">'예약승인'</span></span><br><span class="line"></span><br><span class="line">union </span><br><span class="line"></span><br><span class="line"><span class="function">select <span class="title">ifnull</span><span class="params">(예약시간대, <span class="string">'15:00'</span>)</span></span></span><br><span class="line"><span class="function">, <span class="title">ifnull</span><span class="params">(count(예약상태)</span>, '예약가능')</span></span><br><span class="line"><span class="function">from exampletable</span></span><br><span class="line"><span class="function">where 예약시간대 </span>= <span class="string">'15:00'</span></span><br><span class="line">and searchDate = #&#123;searchDate&#125;</span><br><span class="line">and 예약상태 = <span class="string">'예약승인'</span></span><br></pre></td></tr></table></figure></li></ul><p>ifnull<br>count로 1이상 나오는 경우<br>union이 나왔<br><br><br><br></p><h2 id="중복을-제거한-쿼리"><a href="#중복을-제거한-쿼리" class="headerlink" title="중복을 제거한 쿼리"></a>중복을 제거한 쿼리</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> b.v_dt, b.v_tm, vw.*</span><br><span class="line"><span class="keyword">from</span> </span><br><span class="line">(<span class="keyword">select</span>  <span class="comment">#&#123;searchDate&#125; v_dt, '10:00' v_tm</span></span><br><span class="line"><span class="keyword">union</span> </span><br><span class="line"><span class="keyword">select</span>  <span class="comment">#&#123;searchDate&#125;, '13:00' </span></span><br><span class="line"><span class="keyword">union</span> </span><br><span class="line"><span class="keyword">select</span>  <span class="comment">#&#123;searchDate&#125;, '15:00') b</span></span><br><span class="line"><span class="keyword">left</span> <span class="keyword">join</span></span><br><span class="line">(<span class="keyword">select</span> searchDate, 예약시간대, <span class="keyword">count</span>(*) cnt </span><br><span class="line"><span class="keyword">from</span> exampletable </span><br><span class="line"><span class="keyword">where</span> 예약상태 = <span class="string">'관람종료'</span> <span class="keyword">or</span> 예약상태 = <span class="string">'예약승인'</span> </span><br><span class="line"><span class="keyword">group</span> <span class="keyword">by</span> searchDate, 예약시간대) vw</span><br><span class="line"><span class="keyword">on</span>b.v_dt = vw.searchDate </span><br><span class="line"><span class="keyword">and</span> b.v_tm = vw.예약시간대;</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
+      
+      <category domain="https://sowon-dev.github.io/categories/Database/MySQL/">MySQL</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/MySQLDB/">MySQLDB</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2022/03/22/220322SQLdiff/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>DispatcherSerlvet 씹어먹기</title>
@@ -444,31 +469,6 @@
       
       
       <comments>https://sowon-dev.github.io/2021/11/16/211117PrjtReview/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[MySQL/MariaDB] WITH RECURSIVE 사용법</title>
-      <link>https://sowon-dev.github.io/2021/10/19/211020SQL-recurisve/</link>
-      <guid>https://sowon-dev.github.io/2021/10/19/211020SQL-recurisve/</guid>
-      <pubDate>Tue, 19 Oct 2021 15:00:00 GMT</pubDate>
-      
-      <description>&lt;p&gt;MySQL에서 재귀쿼리를 사용해야한다면? with recursive문을 사용할 수 있다.&lt;br&gt;with recursive는 UNION ALL과 함께 사용하며 UNION ALL은 관련 포스팅인 &lt;a href=&quot;https://sowon-dev.github.io/2021/10/18/211019SQL-unionall/&quot;&gt;Union all 사용법&lt;/a&gt;을 참조하면 된다. &lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>MySQL에서 재귀쿼리를 사용해야한다면? with recursive문을 사용할 수 있다.<br>with recursive는 UNION ALL과 함께 사용하며 UNION ALL은 관련 포스팅인 <a href="https://sowon-dev.github.io/2021/10/18/211019SQL-unionall/">Union all 사용법</a>을 참조하면 된다. </p><a id="more"></a><h2 id="기본-쿼리"><a href="#기본-쿼리" class="headerlink" title="기본 쿼리"></a>기본 쿼리</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">with recursive 테이블명 as (</span><br><span class="line">select 초기값 as 별명1</span><br><span class="line"></span><br><span class="line">union all</span><br><span class="line"></span><br><span class="line">select 별명1 반복_할_계산식 from 테이블명 where 반복을_멈출_제어문</span><br><span class="line">)</span><br><span class="line">select * from 테이블명</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="코드"><a href="#코드" class="headerlink" title="코드"></a>코드</h2><p>예시코드를 보자.<br>menu테이블이 있고 menu테이블은 계층형구조로 이루어져있다.<br>상위 메뉴ID와 하위 메뉴ID를 동일한 menu테이블에서 가져오는 재귀쿼리로 활용할 수 있다.</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">with recursive cte as (</span><br><span class="line">SELECTMENU_ID</span><br><span class="line">, UPPER_MENU_ID</span><br><span class="line">, MENU_NM</span><br><span class="line">FROM menu</span><br><span class="line"></span><br><span class="line">UNION ALL</span><br><span class="line"></span><br><span class="line">SELECTm.MENU_ID</span><br><span class="line">, m.UPPER_MENU_ID</span><br><span class="line">, m.MENU_NM</span><br><span class="line">FROMcte</span><br><span class="line">INNER JOIN </span><br><span class="line">menu m</span><br><span class="line">ON cte.MENU_ID = m.UPPER_MENU_ID</span><br><span class="line">)</span><br><span class="line">SELECT*</span><br><span class="line">FROMmenu M</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/MySQL/">MySQL</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/MariaDB/">MariaDB</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2021/10/19/211020SQL-recurisve/#disqus_thread</comments>
       
     </item>
     

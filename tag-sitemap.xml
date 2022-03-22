@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/MySQLDB/</loc>
+        <lastmod>2022-03-22T14:52:39.614Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/TIL/</loc>
         <lastmod>2022-03-15T12:00:59.997Z</lastmod>
         <changefreq>weekly</changefreq>
