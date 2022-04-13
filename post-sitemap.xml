@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2022/04/13/220413trycatchvsthrow/</loc>
+        <lastmod>2022-04-13T14:33:29.401Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/07/21/200722javai/</loc>
+        <lastmod>2022-04-13T14:31:12.722Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2021/04/11/210412SpringBootAPI/</loc>
         <lastmod>2022-04-05T14:15:05.893Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -3690,14 +3706,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/07/22/200723javai/</loc>
         <lastmod>2020-07-23T07:18:40.196Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/07/21/200722javai/</loc>
-        <lastmod>2020-07-23T03:21:12.289Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
