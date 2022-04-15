@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Wed, 13 Apr 2022 14:33:29 GMT</pubDate>
+    <pubDate>Fri, 15 Apr 2022 14:36:23 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>ODBC란</title>
+      <link>https://sowon-dev.github.io/2022/04/15/220415ODBC/</link>
+      <guid>https://sowon-dev.github.io/2022/04/15/220415ODBC/</guid>
+      <pubDate>Fri, 15 Apr 2022 04:57:53 GMT</pubDate>
+      
+      <description>&lt;p&gt;오늘 CentOS에 odbc Connect를 다운로드해야할 일이 있었다.&lt;br&gt;JDBC&lt;a href=&quot;https://sowon-dev.github.io/2021/03/22/210323jpaVSjdbc/&quot;&gt;(링크)&lt;/a&gt;는 익히 들어 알고 있는데 ODBC는 무엇일까?&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>오늘 CentOS에 odbc Connect를 다운로드해야할 일이 있었다.<br>JDBC<a href="https://sowon-dev.github.io/2021/03/22/210323jpaVSjdbc/">(링크)</a>는 익히 들어 알고 있는데 ODBC는 무엇일까?</p><a id="more"></a><h2 id="ODBC"><a href="#ODBC" class="headerlink" title="ODBC"></a>ODBC</h2><p>Open Database Connectivity의 약자로 DB에 접근하기 위한 API이다. Open이라는 단어가 주는 느낌처럼 어떤 종류의 DB든 접속할 수 있는 표준화된 규격으로 Microsoft에서 만들었다고 한다.<br>규격이 왜 필요할까?<br>세상에는 수많은 DB가 있고 각 DB마다 그들의 규격이 있다. 예를 들면 MariaDB는 MariaDB에서 만든 접근API를 사용해야한다.<br>너무나도 다른 규격들을 하나로 통일하고자 Micro soft는 ODBC를 만들었다.<br>이름 그대로 Open Database Connectivity이니 모든 DB회사들은 이 ODBC API와 통신할 수 있는 DB Driver를 만들게 되는데 그것이 바로 MYSQL ODBC Driver, MSSQL ODBC Driver등이 되었다.</p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.microsoft.com/en-us/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-ver15">https://docs.microsoft.com/en-us/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-ver15</a></li><li><a href="https://www.techtarget.com/searchoracle/definition/Open-Database-Connectivity">https://www.techtarget.com/searchoracle/definition/Open-Database-Connectivity</a></li><li><a href="https://bramhyun.tistory.com/63">https://bramhyun.tistory.com/63</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%8A%98%EB%98%90%EB%AA%BB%EC%95%8C%EC%95%84%EB%93%A3%EA%B3%A0%EB%A7%90%EC%95%98%EC%8A%B5%EB%8B%88%EB%8B%A4/">오늘또못알아듣고말았습니다</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2022/04/15/220415ODBC/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>try catch와 throws, throw의 차이</title>
@@ -446,31 +469,6 @@
       
       
       <comments>https://sowon-dev.github.io/2021/12/31/2201013tier-archVSddd/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[JPA]@CreatedDate에 날짜가 안 담길때 오류</title>
-      <link>https://sowon-dev.github.io/2021/11/29/211130Jpa-auditing/</link>
-      <guid>https://sowon-dev.github.io/2021/11/29/211130Jpa-auditing/</guid>
-      <pubDate>Mon, 29 Nov 2021 15:57:08 GMT</pubDate>
-      
-      <description>&lt;p&gt;@CreatedDate를 사용하여 save()메서드로 데이터를 insert하는데 날짜가 null로 나왔다.&lt;br&gt;이런 오류는 대부분 auditing이 제대로 적용되지 않았을때 발생한다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>@CreatedDate를 사용하여 save()메서드로 데이터를 insert하는데 날짜가 null로 나왔다.<br>이런 오류는 대부분 auditing이 제대로 적용되지 않았을때 발생한다.</p><a id="more"></a><p><img src="/img/211130jpaAuditing1.PNG" alt="created_at 컬럼이 현재시간이 아닌 null값이다"></p><p><br><br><br></p><h2 id="원인"><a href="#원인" class="headerlink" title="원인"></a>원인</h2><p> Entity클래스에 @EntityListeners 추가되어있지 않아서 Auditing기능이 작동하지않았다.</p><ul><li>Sample.java<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Getter</span></span><br><span class="line"><span class="meta">@Setter</span></span><br><span class="line"><span class="meta">@Builder</span></span><br><span class="line"><span class="meta">@NoArgsConstructor</span></span><br><span class="line"><span class="meta">@AllArgsConstructor</span></span><br><span class="line"><span class="meta">@Entity</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Sample</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Id</span></span><br><span class="line"><span class="meta">@GeneratedValue</span>(strategy =GenerationType.IDENTITY)</span><br><span class="line"><span class="keyword">protected</span> Long id;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> Integer age;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@CreatedDate</span></span><br><span class="line">    <span class="keyword">private</span> LocalDateTime createdAt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><p><br><br><br></p><h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><ol><li><code>패키지Application.java</code>에 @EnableJpaAuditing 어노테이션 추가<br>JpaAuditing 기능을 사용하기 위해서는 패키지Application.java파일에서 @EnableJpaAuditing 추가해줘야한다.</li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@EnableJpaAuditing</span> <span class="comment">// 추가</span></span><br><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> 패키지<span class="title">Application</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">System.out.println(<span class="string">"@아아"</span>);</span><br><span class="line">SpringApplication.run(패키지Application<span class="class">.<span class="keyword">class</span>, <span class="title">args</span>)</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ol start="2"><li>Entity클래스에 @EntityListeners 추가<br>이걸 빼먹으면 @CreatedDate등 Auditing기능이 작동하지않는다.</li></ol><ul><li>Sample.java<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Getter</span></span><br><span class="line"><span class="meta">@Setter</span></span><br><span class="line"><span class="meta">@Builder</span></span><br><span class="line"><span class="meta">@NoArgsConstructor</span></span><br><span class="line"><span class="meta">@AllArgsConstructor</span></span><br><span class="line"><span class="meta">@Entity</span></span><br><span class="line"><span class="meta">@EntityListeners</span>(AuditingEntityListener<span class="class">.<span class="keyword">class</span>) // 추가</span></span><br><span class="line"><span class="class"><span class="title">public</span> <span class="title">class</span> <span class="title">Sample</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Id</span></span><br><span class="line"><span class="meta">@GeneratedValue</span>(strategy =GenerationType.IDENTITY)</span><br><span class="line"><span class="keyword">protected</span> Long id;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> Integer age;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@CreatedDate</span></span><br><span class="line">    <span class="keyword">private</span> LocalDateTime createdAt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><p><img src="/img/211130jpaAuditing2.PNG" alt="정상적으로 날짜값이 isnert되었다."></p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/JPA/">JPA</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4-%EC%B4%88%EA%B2%A9%EC%B0%A8Java-Spring/">패스트캠퍼스(초격차Java/Spring)</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2021/11/29/211130Jpa-auditing/#disqus_thread</comments>
       
     </item>
     
