@@ -9,7 +9,7 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Fri, 15 Apr 2022 14:36:23 GMT</pubDate>
+    <pubDate>Sat, 16 Apr 2022 14:44:54 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -22,7 +22,7 @@
       
       
       
-      <content:encoded><![CDATA[<p>오늘 CentOS에 odbc Connect를 다운로드해야할 일이 있었다.<br>JDBC<a href="https://sowon-dev.github.io/2021/03/22/210323jpaVSjdbc/">(링크)</a>는 익히 들어 알고 있는데 ODBC는 무엇일까?</p><a id="more"></a><h2 id="ODBC"><a href="#ODBC" class="headerlink" title="ODBC"></a>ODBC</h2><p>Open Database Connectivity의 약자로 DB에 접근하기 위한 API이다. Open이라는 단어가 주는 느낌처럼 어떤 종류의 DB든 접속할 수 있는 표준화된 규격으로 Microsoft에서 만들었다고 한다.<br>규격이 왜 필요할까?<br>세상에는 수많은 DB가 있고 각 DB마다 그들의 규격이 있다. 예를 들면 MariaDB는 MariaDB에서 만든 접근API를 사용해야한다.<br>너무나도 다른 규격들을 하나로 통일하고자 Micro soft는 ODBC를 만들었다.<br>이름 그대로 Open Database Connectivity이니 모든 DB회사들은 이 ODBC API와 통신할 수 있는 DB Driver를 만들게 되는데 그것이 바로 MYSQL ODBC Driver, MSSQL ODBC Driver등이 되었다.</p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.microsoft.com/en-us/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-ver15">https://docs.microsoft.com/en-us/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-ver15</a></li><li><a href="https://www.techtarget.com/searchoracle/definition/Open-Database-Connectivity">https://www.techtarget.com/searchoracle/definition/Open-Database-Connectivity</a></li><li><a href="https://bramhyun.tistory.com/63">https://bramhyun.tistory.com/63</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p>오늘 CentOS에 odbc Connect를 다운로드해야할 일이 있었다.<br>JDBC<a href="https://sowon-dev.github.io/2021/03/22/210323jpaVSjdbc/">(링크)</a>는 익히 들어 알고 있는데 ODBC는 무엇일까?</p><a id="more"></a><h2 id="ODBC"><a href="#ODBC" class="headerlink" title="ODBC"></a>ODBC</h2><p>Open Database Connectivity의 약자로 DB에 접근하기 위한 API이다. Open이라는 단어가 주는 느낌처럼 어떤 종류의 DB든 접속할 수 있는 표준화된 규격으로 Microsoft에서 만들었다고 한다.<br>규격이 왜 필요할까?<br>세상에는 수많은 DB가 있고 각 DB마다 그들의 규격이 있다. 예를 들면 MariaDB는 MariaDB에서 만든 접근API를 사용해야한다.<br>너무나도 다른 규격들을 하나로 통일하고자 Micro soft는 ODBC를 만들었다.<br>이름 그대로 Open Database Connectivity이니 모든 DB회사들은 이 ODBC API와 통신할 수 있는 DB Driver를 만들게 되는데 그것이 바로 MYSQL ODBC Driver, MSSQL ODBC Driver등이 되었다.</p><iframe width="100%" height="350" src="https://www.youtube.com/embed/VkMXJvaWeTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.microsoft.com/en-us/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-ver15">https://docs.microsoft.com/en-us/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-ver15</a></li><li><a href="https://www.techtarget.com/searchoracle/definition/Open-Database-Connectivity">https://www.techtarget.com/searchoracle/definition/Open-Database-Connectivity</a></li><li><a href="https://bramhyun.tistory.com/63">https://bramhyun.tistory.com/63</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
