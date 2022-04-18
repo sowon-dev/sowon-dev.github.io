@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Sat, 16 Apr 2022 14:44:54 GMT</pubDate>
+    <pubDate>Mon, 18 Apr 2022 12:35:37 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>ECMAScript</title>
+      <link>https://sowon-dev.github.io/2022/04/18/220418ECMAScript/</link>
+      <guid>https://sowon-dev.github.io/2022/04/18/220418ECMAScript/</guid>
+      <pubDate>Mon, 18 Apr 2022 02:49:53 GMT</pubDate>
+      
+      <description>&lt;p&gt;오늘 고객사로부터 사이트의 달력이 제대로 작동되지 않는다는 연락을 받았다. 내 머신에서는 잘만 되는데 왜그럴까? 유심히 찾아보고있는데 팀장님께서 호환성 문제라고 말씀해주셨다.&lt;br&gt;요구사항을 구현하면서 Promise를 사용했는데 IE는 해당 기능을 지원하지 않아서 제대로 작동하지 않았던 것이다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>오늘 고객사로부터 사이트의 달력이 제대로 작동되지 않는다는 연락을 받았다. 내 머신에서는 잘만 되는데 왜그럴까? 유심히 찾아보고있는데 팀장님께서 호환성 문제라고 말씀해주셨다.<br>요구사항을 구현하면서 Promise를 사용했는데 IE는 해당 기능을 지원하지 않아서 제대로 작동하지 않았던 것이다.</p><a id="more"></a><p>이번 프로젝트에서는 IE는 지원하지 않기로 이미 협의했는데 고객사 담당자가 모르고 있었던 것! 이번 기회에 팀장님이 ES6에 대해 설명해주셨는데 더 궁금해서 찾아봤다.</p><h2 id="ES6"><a href="#ES6" class="headerlink" title="ES6"></a>ES6</h2><p>ES6이란 ECMAScript 2015 의 약어로 ES2015라고도 불린다.<br>European Computer Manufacturer’s Association(이하 ECMA)에서 js와 Node.js의 기초가 되는 범용 프로그래밍 언어인 ECMAScript를 제정한다. 즉, 스크립트 언어<a href="https://sowon-dev.github.io/2020/05/27/200528javai/#스크립트언어">(링크)</a>가 어떻게 생겨야 하는 지에 관한 기준이다.</p><p><br><br><br></p><h2 id="JavaScript와-ECMAScript-관계"><a href="#JavaScript와-ECMAScript-관계" class="headerlink" title="JavaScript와 ECMAScript 관계"></a>JavaScript와 ECMAScript 관계</h2><p>실상 두 용어는 혼용되곤 한다.<br>왜냐하면 JavaScript는 1996년에 만들어졌고 이를 표준화하기 위해 ECMAScript가 1997년에 만들어졌다. 그 후 ECMAScript를 준수하면서 JavaScript가 발전해왔다.<br>즉 서로가 서로를 바라보고 있는 셈이다.</p><p><br><br><br></p><h2 id="배운점"><a href="#배운점" class="headerlink" title="배운점"></a>배운점</h2><p>사실 어떤 기능을 사용하건 다양한 브라우저의 호환성 문제를 항상 먼저 확인해야한다.<br>크롬브라우저에서 된다고 모든 브라우저에서 다 되는 게 아니니까! 따라서 프로젝트기획때부터 어떤 브라우저 버전까지 지원할지를 명확히 하는 습관이 필요하다!<br>난중에 시니어가 된 후 프로젝트 계약시 꼭 호환성 문제를 특약으로 명시해야겠다.</p><p>그나저나 만약 호환성문제가 있다면 사용했던 ES6기능을 눈물을 머금고 싹 다 걷어내야하는걸까??<br>NOPE!<br>세상에는 천재들이 많고 그 천재들이 이미 호환성 문제를 해결해주는 라이브러리들을 만들어놨기때문이다.<br>예를 들어 IE에서 Promise를 사용하고 싶은 경우 bluebirdjs<a href="http://bluebirdjs.com/docs/getting-started.html">(링크)</a>라는 라이브러리를 사용하면 된다.</p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://en.wikipedia.org/wiki/ECMAScript">https://en.wikipedia.org/wiki/ECMAScript</a></li><li><a href="https://www.educative.io/edpresso/what-is-ecmascript">https://www.educative.io/edpresso/what-is-ecmascript</a></li><li><a href="https://wormwlrm.github.io/2018/10/03/What-is-the-difference-between-javascript-and-ecmascript.html">https://wormwlrm.github.io/2018/10/03/What-is-the-difference-between-javascript-and-ecmascript.html</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%8A%98%EB%98%90%EB%AA%BB%EC%95%8C%EC%95%84%EB%93%A3%EA%B3%A0%EB%A7%90%EC%95%98%EC%8A%B5%EB%8B%88%EB%8B%A4/">오늘또못알아듣고말았습니다</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2022/04/18/220418ECMAScript/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>ODBC란</title>
@@ -446,29 +469,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/01/04/220104JS-eventloop/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>DDD는 디자인패턴인가 아키텍처인가?</title>
-      <link>https://sowon-dev.github.io/2021/12/31/2201013tier-archVSddd/</link>
-      <guid>https://sowon-dev.github.io/2021/12/31/2201013tier-archVSddd/</guid>
-      <pubDate>Fri, 31 Dec 2021 22:31:52 GMT</pubDate>
-      
-      <description>&lt;p&gt;DDD(Domain-driven design)으로 프로젝트를 진행하게 되면서 DDD가 무엇인지 궁금해졌다.&lt;br&gt;DDD는 디자인패턴일까 아키텍처일까?&lt;br&gt;사소한 하나하나 다 궁금할 시기이지. 암암 그렇고말고.&lt;br&gt;구글링을 아무리 해봐도 뚜렷한 구분이 나오지 않았다. 그래서 공부한 내용을 바탕으로 팀장님께 문의를 드렸고 팀장님도 함께 고민해주셨다.&lt;br&gt;참 감사하다!&lt;br&gt;이번 포스팅은 스스로 공부하면서 작성한 포스팅이므로 정답이 아닐 수 있다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>DDD(Domain-driven design)으로 프로젝트를 진행하게 되면서 DDD가 무엇인지 궁금해졌다.<br>DDD는 디자인패턴일까 아키텍처일까?<br>사소한 하나하나 다 궁금할 시기이지. 암암 그렇고말고.<br>구글링을 아무리 해봐도 뚜렷한 구분이 나오지 않았다. 그래서 공부한 내용을 바탕으로 팀장님께 문의를 드렸고 팀장님도 함께 고민해주셨다.<br>참 감사하다!<br>이번 포스팅은 스스로 공부하면서 작성한 포스팅이므로 정답이 아닐 수 있다.</p><a id="more"></a><p>나에게 가장 익숙한 프로젝트 구조는 MVC패턴으로 프레젠테이션로직, 비즈니스로직, 데이터베이스 로직을 구분한 구조이다. 이를 3계층 구조라고 부른다고 하셨다.<br>디자인패턴으로 보면 MVC패턴이지만 아키텍처관점에서는 3Tier Architecture라는 것이다.</p><h2 id="디자인-패턴이란-🤠"><a href="#디자인-패턴이란-🤠" class="headerlink" title="디자인 패턴이란? 🤠"></a>디자인 패턴이란? 🤠</h2><ul><li>정의: 어떤걸 해결할려고 할때 효율적인 방법에 대해서 정해놓은 규칙</li><li>문제를 해결하기 위한 방법을 가이드</li><li>크기로 보면 패턴이 좀 더 아키텍쳐 보단 작은 느낌</li></ul><p><br><br><br></p><h2 id="소프트웨어-아키텍처란-🤠"><a href="#소프트웨어-아키텍처란-🤠" class="headerlink" title="소프트웨어 아키텍처란? 🤠"></a>소프트웨어 아키텍처란? 🤠</h2><ul><li>정의: 시스템, 컴포넌트 간의 관계가 어떻게 되어있냐 그런 구조적인 측면에서 정의한 것</li><li>특징: 언어적 혹은 시스템 구조적 등 여러가지 환경에 따라 구조가 달라서 해당 구조에서 사용할 수 있는 패턴도 달라짐</li><li>인프라 아키텍쳐(가장 광범위) -&gt; 시스템 아키텍쳐 -&gt; 소프트웨어 아키텍쳐(좁은범위)</li></ul><p><br><br><br></p><h2 id="디자인패턴-VS-소프트웨어-아키텍처-예시"><a href="#디자인패턴-VS-소프트웨어-아키텍처-예시" class="headerlink" title="디자인패턴 VS 소프트웨어 아키텍처 예시"></a>디자인패턴 VS 소프트웨어 아키텍처 예시</h2><table><thead><tr><th align="center"></th><th align="center">디자인패턴</th><th align="center">아키텍처</th></tr></thead><tbody><tr><td align="center">대표 예시</td><td align="center">MVC모델, Commnad, Factory, DAO</td><td align="center">데이터중심 스타일, 규칙기반스타일, 분산스타일, 파이프와 필터스타일</td></tr></tbody></table><p><br><br><br></p><h2 id="내가-내린-결론"><a href="#내가-내린-결론" class="headerlink" title="내가 내린 결론"></a>내가 내린 결론</h2><p>다시 본래 질문으로 돌아가자.<br>DDD는 디자인패턴일까 아키텍처일까?<br>여기서 내가 내린 결론은 소프트웨어 아키텍처이다.<br>왜냐하면 DDD는 디자인패턴 같으면서도 구조적이다. 비즈니스와 디자인패턴, 아키텍쳐까지 포함하기에 디자인패턴보다는 큰 개념인 아키텍처에 적합하다.</p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li>팀장님 지식</li><li><a href="https://incheol-jung.gitbook.io/docs/q-and-a/architecture/ddd">https://incheol-jung.gitbook.io/docs/q-and-a/architecture/ddd</a></li><li><a href="https://m.blog.naver.com/limoremo/220073573980">https://m.blog.naver.com/limoremo/220073573980</a></li><li><a href="http://www.jidum.com/jidums/view.do?jidumId=1002">http://www.jidum.com/jidums/view.do?jidumId=1002</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/">디자인패턴</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2021/12/31/2201013tier-archVSddd/#disqus_thread</comments>
       
     </item>
     

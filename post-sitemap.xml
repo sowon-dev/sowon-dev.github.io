@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2022/04/18/220418ECMAScript/</loc>
+        <lastmod>2022-04-18T12:35:37.264Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/05/27/200528javai/</loc>
+        <lastmod>2022-04-18T12:20:09.091Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2022/04/15/220415ODBC/</loc>
         <lastmod>2022-04-16T14:44:54.366Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -3826,14 +3842,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/06/02/200603javai/</loc>
         <lastmod>2020-07-16T13:54:49.114Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/05/27/200528javai/</loc>
-        <lastmod>2020-07-16T13:27:30.410Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
