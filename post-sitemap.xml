@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2022/04/19/220419trim/</loc>
+        <lastmod>2022-04-19T14:56:57.746Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2022/04/18/220418ECMAScript/</loc>
-        <lastmod>2022-04-18T12:44:54.061Z</lastmod>
+        <lastmod>2022-04-19T14:29:59.326Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

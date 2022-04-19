@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Mon, 18 Apr 2022 12:44:54 GMT</pubDate>
+    <pubDate>Tue, 19 Apr 2022 14:56:57 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>input 공백 입력방지하는 가장 쉬운 방법</title>
+      <link>https://sowon-dev.github.io/2022/04/19/220419trim/</link>
+      <guid>https://sowon-dev.github.io/2022/04/19/220419trim/</guid>
+      <pubDate>Tue, 19 Apr 2022 05:32:21 GMT</pubDate>
+      
+      <description>&lt;p&gt;input태그의 value가 공백일 경우 유효성체크를 해야한다.&lt;br&gt;머릿속에는 둥둥 여러 가지 방법이 떠올랐다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>input태그의 value가 공백일 경우 유효성체크를 해야한다.<br>머릿속에는 둥둥 여러 가지 방법이 떠올랐다.</p><a id="more"></a><p>정규표현식으로 아예 패턴을 만들까? 그냥 trim을 쓸까? validation 라이브러리를 쓸까? 등등 이 중 가장 접근이 빠른 방법은 무엇일까?<br>프로젝트는 이미 제이쿼리를 쓰고 있었기에 그냥 trim을 쓰는 것이 에너지를 아껴 다른 코드를 더 집중해서 볼 수 있는 길이라고 판단했다. </p><h2 id="기존-코드"><a href="#기존-코드" class="headerlink" title="기존 코드"></a>기존 코드</h2><p>value만 체크할 경우 공백 입력이 가능해진다.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    $(<span class="string">"button[data-role=submit]"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;   </span><br><span class="line">      <span class="keyword">if</span>($(<span class="string">'input[name="nm"]'</span>).val() == <span class="string">''</span>)&#123;</span><br><span class="line">        toastr.info(<span class="string">'이름은 필수 입력입니다.'</span>);</span><br><span class="line">        $(<span class="string">'input[name="nm"]'</span>).val(<span class="string">''</span>);</span><br><span class="line">        $(<span class="string">'input[name="nm"]'</span>).focus();</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><h2 id="공백-입력시-유효성-체크-코드"><a href="#공백-입력시-유효성-체크-코드" class="headerlink" title="공백 입력시 유효성 체크 코드"></a>공백 입력시 유효성 체크 코드</h2><p>trim()만 넣어주면 해결!</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    $(<span class="string">"button[data-role=submit]"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;   </span><br><span class="line">      <span class="keyword">if</span>($(<span class="string">'input[name="nm"]'</span>).val().trim() == <span class="string">''</span>)&#123;</span><br><span class="line">        toastr.info(<span class="string">'이름은 필수 입력입니다.'</span>);</span><br><span class="line">        $(<span class="string">'input[name="nm"]'</span>).val(<span class="string">''</span>);</span><br><span class="line">        $(<span class="string">'input[name="nm"]'</span>).focus();</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/jQuery/">jQuery</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2022/04/19/220419trim/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>ECMAScript</title>
@@ -446,29 +469,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/01/05/220105JS-closure/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>이벤트루프(Event loop)와 메인스레드(Main thread)</title>
-      <link>https://sowon-dev.github.io/2022/01/04/220104JS-eventloop/</link>
-      <guid>https://sowon-dev.github.io/2022/01/04/220104JS-eventloop/</guid>
-      <pubDate>Tue, 04 Jan 2022 05:31:30 GMT</pubDate>
-      
-      <description>&lt;p&gt;탄탄한 자바스크립트 기본기를 다지기 위해 이벤트 루프에 대해 알아보자.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>탄탄한 자바스크립트 기본기를 다지기 위해 이벤트 루프에 대해 알아보자.</p><a id="more"></a><h2 id="이벤트루프모델"><a href="#이벤트루프모델" class="headerlink" title="이벤트루프모델"></a>이벤트루프모델</h2><p>이벤트 루프 모델은 여러 스레드를 사용한다.<br>Node.js 프로세스에서 메인 스레드는 1개이며, 한 순간에 한 줄씩만 실행하지만 워커스레드(Worker thread)는 여러개이다.<br>이벤트 루프는 앞에 있는 콜백이 전부 처리가 끝나야 다음 콜백을 처리할 수 있다.</p><h2 id="용어정리"><a href="#용어정리" class="headerlink" title="용어정리"></a>용어정리</h2><ul><li>메인스레드: 자바스크립트 코드가 실행되는 스레드</li><li>워커스레드: 파일입출력스레드, 네트워크스레드등 메인스레드 외의 일을 하는 스레드</li><li>콜스택: 현재까지 불린 함수들의 스택</li><li>스택: 스택자료구조로 후입선출의 특성을 가진다.</li></ul><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Data_stack.svg/1280px-Data_stack.svg.png" alt="출처: 위키백과"></p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/Node-js/">Node.js</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/01/04/220104JS-eventloop/#disqus_thread</comments>
       
     </item>
     
