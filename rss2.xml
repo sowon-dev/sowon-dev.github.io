@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Thu, 21 Apr 2022 13:32:14 GMT</pubDate>
+    <pubDate>Sun, 24 Apr 2022 14:19:06 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Async await를 Deferred로 걷어내기</title>
+      <link>https://sowon-dev.github.io/2022/04/24/220424AwaitToDeferred/</link>
+      <guid>https://sowon-dev.github.io/2022/04/24/220424AwaitToDeferred/</guid>
+      <pubDate>Sun, 24 Apr 2022 05:01:06 GMT</pubDate>
+      
+      <description>&lt;p&gt;ES6문법으로 작업한 내용을 다 걷어내고 ES5문법에 맞춰 작업할 일이 생겼다.&lt;br&gt;Async await를 쓴 것들을 싹 걷어냈다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>ES6문법으로 작업한 내용을 다 걷어내고 ES5문법에 맞춰 작업할 일이 생겼다.<br>Async await를 쓴 것들을 싹 걷어냈다.</p><a id="more"></a><p>ES6에서 ES5로 바로 문법을 변환해주는 사이트<a href="https://es6console.com/">(링크)</a>도 있다.<br>이런 일은 사실 생기면 안되는건데… 인생은 어쩔수없다.</p><h2 id="Async-await"><a href="#Async-await" class="headerlink" title="Async await"></a>Async await</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">setSelectBox</span>(<span class="params">nextSelectTagId, parntsId</span>) </span>&#123;</span><br><span class="line"><span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>) </span>&#123;</span><br><span class="line">  $.<span class="keyword">get</span>("/admin/tree?parntsId=" + parntsId, function(data, status) &#123;</span><br><span class="line"><span class="comment">// 코드생략</span></span><br><span class="line">resolve();</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>위 함수는 아래처럼 사용가능하다.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">show</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line"><span class="keyword">var</span> checkedDateset = e.dataset;</span><br><span class="line"><span class="keyword">await</span> setSelectBox(<span class="string">'lev2ClId'</span>, checkedDateset.clid1);</span><br><span class="line"><span class="keyword">await</span> setSelectBox(<span class="string">'lev3ClId'</span>, checkedDateset.clid2);</span><br><span class="line"><span class="comment">// 코드 생략</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="Deferred"><a href="#Deferred" class="headerlink" title="Deferred"></a>Deferred</h2><p>Promise 선언한 부분은 Deferred로 대체했다.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">setSelectBox</span>(<span class="params">nextSelectTagId, parntsId</span>) </span>&#123;</span><br><span class="line"><span class="keyword">var</span> dfd = $.Deferred();</span><br><span class="line">$.<span class="keyword">get</span>("/admin/tree?parntsId=" + parntsId, function(data, status) &#123;</span><br><span class="line"><span class="comment">// 코드생략</span></span><br><span class="line">dfd.resolve();</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> dfd.promise();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>위 함수를 아래처럼 사용하면 된다.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">show</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line"><span class="keyword">var</span> checkedDateset = e.dataset;</span><br><span class="line">setSelectBox(<span class="string">'lev2ClId'</span>, checkedDateset.clid1).then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> setSelectBox(<span class="string">'lev3ClId'</span>, checkedDateset.clid2); </span><br><span class="line">    &#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="comment">// 코드 생략</span></span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2022/04/24/220424AwaitToDeferred/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>input태그에 스크립트 방지하는 방법(XSS 방지)</title>
@@ -444,29 +465,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/01/09/220109JS-proto/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>사내 101번서버에 접속하세요라는 의미(DNS 정보조회)</title>
-      <link>https://sowon-dev.github.io/2022/01/05/220106Server-nslookup/</link>
-      <guid>https://sowon-dev.github.io/2022/01/05/220106Server-nslookup/</guid>
-      <pubDate>Wed, 05 Jan 2022 16:38:12 GMT</pubDate>
-      
-      <description>&lt;p&gt;한참 모든 것이 궁금한 시기인 나는 오늘도 궁금한 점이 생겼다.&lt;br&gt;오늘 팀장님이 사내서버에 프로젝트를 올렸으니 101번(임의번호)서버로 접속해서 확인해보라고 하셨다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>한참 모든 것이 궁금한 시기인 나는 오늘도 궁금한 점이 생겼다.<br>오늘 팀장님이 사내서버에 프로젝트를 올렸으니 101번(임의번호)서버로 접속해서 확인해보라고 하셨다.</p><a id="more"></a><p>사내 서버의 도메인을 이미 알고있었기때문에 해당 도메인인 link.sowonDev.com(임의도메인)으로 접속하니 잘 접속이 되었다.<br>여기서 궁금증한 건 사내도메인 link.sowonDev.com을 왜 101번서버라고 부르는 지였다.</p><p><br><br><br></p><h2 id="도메인-정보를-조회하는-명령어"><a href="#도메인-정보를-조회하는-명령어" class="headerlink" title="도메인 정보를 조회하는 명령어"></a>도메인 정보를 조회하는 명령어</h2><ul><li>nslookup: 도메인 이름에 대한 정보를 조회할 때 사용할 수 있는 명령어이다.</li></ul><p>cmd를 열어 아래와 같이 nslookup명령어를 입력하면 DNS서버에 해당 도메인정보를 요청하는 것이고 응답으로는 도메인정보가 나온다.<br>요청을 끝내고 싶으면 exit을 통해서 명령어작성에서 빠져나오면 된다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;명령어</span><br><span class="line">$ nslookup [정보를알고싶은도메인]</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;명령어 예시</span><br><span class="line">$ nslookup link.sowonDev.com</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;응답</span><br><span class="line">권한 없는 응답:</span><br><span class="line">이름: link.sowonDev.com</span><br><span class="line">Address: 123.000.00.101</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;명령종료</span><br><span class="line">$ exit</span><br></pre></td></tr></table></figure><p>자 이제 왜 101서버라고 불리는 지 감이 잡혔다.<br>응답을 보면 address부분의 제일 마지막 IP가 101이기 때문이다!<br>다른 사이트들도 궁금해졌다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ nslookup naver.com</span><br><span class="line"></span><br><span class="line">권한 없는  응답:</span><br><span class="line">이름: naver.com</span><br><span class="line">Address: 223.130.200.107</span><br><span class="line">223.130.195.200</span><br><span class="line">223.130.200.104</span><br><span class="line">223.130.195.95</span><br></pre></td></tr></table></figure><p>네이버 예시에서 알 수 있듯 네이버급의 규모가 큰 프로젝트는 4개의 서버를 사용한다.<br>신기해👍</p><p>그리고 좀 더 구글링해보니 굳이 cmd가 아니더라도 DNS recode를 조회할 수 있는 사이트를 찾을 수 있었다.<br>IPv4 Address뿐만 아니라 회사위치와 회사명도 나온다!</p><ul><li><a href="https://www.nslookup.io/">https://www.nslookup.io/</a></li></ul><p>위 사이트에서 google.com을 검색하면 IPv4는 물론 AAAA records인 IPv6 address도 확인할 수 있다!<br>재밌다😎</p><p><br><br><br></p><h2 id="결론"><a href="#결론" class="headerlink" title="결론"></a>결론</h2><p>새로운 지식 습득은 언제나 재밌다.<br>그려려니 넘어가지말고 꼭 구글링해보자!</p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Server/">Server</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%8A%98%EB%98%90%EB%AA%BB%EC%95%8C%EC%95%84%EB%93%A3%EA%B3%A0%EB%A7%90%EC%95%98%EC%8A%B5%EB%8B%88%EB%8B%A4/">오늘또못알아듣고말았습니다</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/01/05/220106Server-nslookup/#disqus_thread</comments>
       
     </item>
     
