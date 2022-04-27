@@ -8,8 +8,15 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/Server/</loc>
+        <lastmod>2022-04-27T11:42:32.822Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/JavaScript/</loc>
-        <lastmod>2022-04-26T13:57:38.648Z</lastmod>
+        <lastmod>2022-04-27T11:20:36.870Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -45,13 +52,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/Database/MySQL/</loc>
         <lastmod>2022-03-22T15:23:50.558Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Server/</loc>
-        <lastmod>2022-03-07T12:32:48.134Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -143,13 +143,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/Django/</loc>
         <lastmod>2021-03-30T05:25:30.309Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Linux/</loc>
-        <lastmod>2021-03-30T00:45:48.544Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

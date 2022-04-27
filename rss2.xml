@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Tue, 26 Apr 2022 13:57:38 GMT</pubDate>
+    <pubDate>Wed, 27 Apr 2022 11:42:32 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Docker는 어떻게 HostOS와 다른 운영체제에서 돌아갈까?</title>
+      <link>https://sowon-dev.github.io/2022/04/27/220427DockerDefinition/</link>
+      <guid>https://sowon-dev.github.io/2022/04/27/220427DockerDefinition/</guid>
+      <pubDate>Wed, 27 Apr 2022 02:22:51 GMT</pubDate>
+      
+      <description>&lt;p&gt;오늘 VM에 대해 팀장님과 이야기하다가 문득 Docker로 어떻게 리눅스OS를 쓸 수 있는지가 궁금해졌다.&lt;br&gt;HostOS가 원도우 환경에서 VM은 GuestOS를 원하는 대로 설치할 수 있으니 리눅스든 우분투든 원하는 OS를 쓸 수 있다.&lt;br&gt;하지만 Docker는? &lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>오늘 VM에 대해 팀장님과 이야기하다가 문득 Docker로 어떻게 리눅스OS를 쓸 수 있는지가 궁금해졌다.<br>HostOS가 원도우 환경에서 VM은 GuestOS를 원하는 대로 설치할 수 있으니 리눅스든 우분투든 원하는 OS를 쓸 수 있다.<br>하지만 Docker는? </p><a id="more"></a><p>Docker는 GuestOS를 설치하지 않고 HostOS를 활용한다. 그래서 VM보다 훨씬 가볍고 빠르다.<br><img src="https://geekflare.com/wp-content/uploads/2019/09/traditional-vs-new-gen.png" alt="https://geekflare.com/wp-content/uploads/2019/09/traditional-vs-new-gen.png"></p><h2 id="HostOS가-원도우-환경인-Docker에서-어떻게-리눅스OS를-사용할-수-있을까"><a href="#HostOS가-원도우-환경인-Docker에서-어떻게-리눅스OS를-사용할-수-있을까" class="headerlink" title="HostOS가 원도우 환경인 Docker에서 어떻게 리눅스OS를 사용할 수 있을까?"></a>HostOS가 원도우 환경인 Docker에서 어떻게 리눅스OS를 사용할 수 있을까?</h2><p>여러 구글링을 끝에 내가 내린 결론이다. 따라서 정확하지않을 수 있다. (잘못된 부분은 댓글로 알려주시면 이 글을 읽는 모두에게 도움이 됩니다. 감사하겠습니다!)<br><a href="https://www.docker.com/products/docker-desktop/">Docker Desktop for Windows(링크)</a>를 다운로드 받으면 리눅스 엔진이 함께 설치된다.<br>이 리눅스엔진을 통해서 리눅스OS나 우분투OS를 사용할 수 있다!</p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Server/">Server</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Docker/">Docker</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2022/04/27/220427DockerDefinition/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title> el태그 대신 &lt;c:out&gt; 사용하는 이유</title>
@@ -18,11 +41,11 @@
       <guid>https://sowon-dev.github.io/2022/04/26/220426-xssCout/</guid>
       <pubDate>Tue, 26 Apr 2022 03:25:00 GMT</pubDate>
       
-      <description>&lt;p&gt;jsp에서 서버사이드랜더링을 다양한 방식으로 호출할 수 있다.&lt;br&gt;그 중 가장 많이 쓰는건 el태그 &lt;code&gt;${}&lt;/code&gt;이다.&lt;/p&gt;</description>
+      <description>&lt;p&gt;jsp에서 다양한 방식으로 서버사이드 데이터를 출력할 수 있다.&lt;br&gt;그 중 가장 많이 쓰는건 el태그인데 그 이유는 el태그 사용법이 &lt;code&gt;${}&lt;/code&gt;로 매우 간단하기때문이다.&lt;/p&gt;</description>
       
       
       
-      <content:encoded><![CDATA[<p>jsp에서 서버사이드랜더링을 다양한 방식으로 호출할 수 있다.<br>그 중 가장 많이 쓰는건 el태그 <code>${}</code>이다.</p><a id="more"></a><p>el태그만 써도 화면에 값이 잘 출력되는데 왜 굳이 <code>&lt;c:out&gt;</code>를 사용할까?</p><h2 id="결국-XSS-방어하기-위해"><a href="#결국-XSS-방어하기-위해" class="headerlink" title="결국 XSS 방어하기 위해!"></a>결국 XSS 방어하기 위해!</h2><p> <code>&lt;c:out&gt;</code>의 escapeXml속성을 활용하여 가장 간단하게 XSS를 방어할 수 있다.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1.escapeXml = true 인 경우(디폴트)</span></span><br><span class="line">&lt;c:out value=<span class="string">"&lt;script type='text/javascript'&gt;alert('테스트');&lt;/script&gt;"</span>/&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2.escapeXml = false 인 경우 == el태그와 동일</span></span><br><span class="line">&lt;c:out value=<span class="string">"&lt;script type='text/javascript'&gt;alert('테스트');&lt;/script&gt;"</span> escapeXml=<span class="string">"false"</span>/&gt;</span><br></pre></td></tr></table></figure><ol><li><code>escapeXml = true</code>의 경우, text 그대로 출력된다.</li><li><code>escapeXml = false</code> 인 경우나 el태그인 경우, alert창이 실행된다.</li></ol><p>따라서 XSS 방어하기 위해서는 <code>&lt;c:out&gt;</code>을 사용하는 게 좋다.</p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>jsp에서 다양한 방식으로 서버사이드 데이터를 출력할 수 있다.<br>그 중 가장 많이 쓰는건 el태그인데 그 이유는 el태그 사용법이 <code>${}</code>로 매우 간단하기때문이다.</p><a id="more"></a><p>el태그만 써도 화면에 값이 잘 출력되는데 왜 굳이 <code>&lt;c:out&gt;</code>를 사용할까?</p><h2 id="결론-XSS-방어하기-위해"><a href="#결론-XSS-방어하기-위해" class="headerlink" title="결론: XSS 방어하기 위해!"></a>결론: XSS 방어하기 위해!</h2><p> <code>&lt;c:out&gt;</code>를 사용하면 escapeXml속성을 활용할 수 있다.<br> escapeXml를 true로 설정함으로써 가장 간단하게 XSS<a href="https://sowon-dev.github.io/2022/04/20/220420XSS/#XSS란">(링크)</a>를 방어할 수 있다.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1.escapeXml = true 인 경우(디폴트)</span></span><br><span class="line">&lt;c:out value=<span class="string">"&lt;script type='text/javascript'&gt;alert('테스트');&lt;/script&gt;"</span>/&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2.escapeXml = false 인 경우 == el태그와 동일</span></span><br><span class="line">&lt;c:out value=<span class="string">"&lt;script type='text/javascript'&gt;alert('테스트');&lt;/script&gt;"</span> escapeXml=<span class="string">"false"</span>/&gt;</span><br></pre></td></tr></table></figure><ol><li><code>escapeXml = true</code>의 경우, text 그대로 출력된다.</li><li><code>escapeXml = false</code> 인 경우나 el태그인 경우, alert창이 실행된다.</li></ol><p>따라서 XSS 방어하기 위해서는 <code>&lt;c:out&gt;</code>을 사용하는 게 좋다.</p>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
@@ -440,29 +463,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/01/14/220115JS-letConstVar/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>경로(절대경로, 상대경로, ., ~)</title>
-      <link>https://sowon-dev.github.io/2022/01/13/220114path/</link>
-      <guid>https://sowon-dev.github.io/2022/01/13/220114path/</guid>
-      <pubDate>Thu, 13 Jan 2022 16:30:53 GMT</pubDate>
-      
-      <description>&lt;p&gt;경로란 파일 위치를 알려줘서 연결할 때 사용한다.&lt;br&gt;이번에 &lt;code&gt;~&lt;/code&gt;라는 경로를 보았다. 항상 &lt;code&gt;.&lt;/code&gt;만 보았기때문에 어떤 경로인지 궁금했다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>경로란 파일 위치를 알려줘서 연결할 때 사용한다.<br>이번에 <code>~</code>라는 경로를 보았다. 항상 <code>.</code>만 보았기때문에 어떤 경로인지 궁금했다.</p><a id="more"></a><h2 id="경로"><a href="#경로" class="headerlink" title="경로"></a>경로</h2><p>만약 아래와 같인 디렉토리 구조가 있다고 가정하자</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">project</span><br><span class="line">│   README.md</span><br><span class="line">│   exam1.txt</span><br><span class="line">│</span><br><span class="line">└───webroot</span><br><span class="line">│   │   favicon.ico</span><br><span class="line">│   │</span><br><span class="line">│   └───css</span><br><span class="line">│   │   │   maim.css</span><br><span class="line">│   │   │   common.css</span><br><span class="line">│   │   │   ...</span><br><span class="line">│   │</span><br><span class="line">│   └───js</span><br><span class="line">│       │   maim.js</span><br><span class="line">│       │   common.js</span><br><span class="line">│       │   ...</span><br><span class="line">│</span><br><span class="line">└───controller</span><br><span class="line">│   │  HomeController</span><br><span class="line">│   │  UserController</span><br><span class="line">│</span><br><span class="line">└───view</span><br><span class="line">│   │ </span><br><span class="line">│   └───Home</span><br><span class="line">│       │   Home.html</span><br><span class="line">│   │ </span><br><span class="line">│   └───User</span><br><span class="line">│       │   Create.html</span><br><span class="line">│       │   Edit.html</span><br><span class="line">│       │   ...</span><br></pre></td></tr></table></figure><p>현재 <code>Create.html</code>에서 경로를 작성한다고 생각한다면 절대경로와 상대경로 예시는 아래 표와 같다.</p><table><thead><tr><th align="center">표현</th><th align="center">의미</th><th align="center">위치예시</th></tr></thead><tbody><tr><td align="center"><code>/</code></td><td align="center">루트, 가장 최상위 디렉토리</td><td align="center">project</td></tr><tr><td align="center"><code>~/</code></td><td align="center">루트, 가장 최상위 디렉토리</td><td align="center">project</td></tr><tr><td align="center"><code>./</code></td><td align="center">현재 위치</td><td align="center">User</td></tr><tr><td align="center"><code>../</code></td><td align="center">현재 위치의 상단 폴더</td><td align="center">view</td></tr><tr><td align="center"><code>../../</code></td><td align="center">현재 위치의 상단 폴더의 상단폴더</td><td align="center">project</td></tr></tbody></table>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/HTML-CSS/">HTML&amp;CSS</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/HTML-CSS/">HTML&amp;CSS</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/01/13/220114path/#disqus_thread</comments>
       
     </item>
     
