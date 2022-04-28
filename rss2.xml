@@ -9,7 +9,7 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Wed, 27 Apr 2022 11:42:32 GMT</pubDate>
+    <pubDate>Thu, 28 Apr 2022 12:49:28 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -22,7 +22,7 @@
       
       
       
-      <content:encoded><![CDATA[<p>오늘 VM에 대해 팀장님과 이야기하다가 문득 Docker로 어떻게 리눅스OS를 쓸 수 있는지가 궁금해졌다.<br>HostOS가 원도우 환경에서 VM은 GuestOS를 원하는 대로 설치할 수 있으니 리눅스든 우분투든 원하는 OS를 쓸 수 있다.<br>하지만 Docker는? </p><a id="more"></a><p>Docker는 GuestOS를 설치하지 않고 HostOS를 활용한다. 그래서 VM보다 훨씬 가볍고 빠르다.<br><img src="https://geekflare.com/wp-content/uploads/2019/09/traditional-vs-new-gen.png" alt="https://geekflare.com/wp-content/uploads/2019/09/traditional-vs-new-gen.png"></p><h2 id="HostOS가-원도우-환경인-Docker에서-어떻게-리눅스OS를-사용할-수-있을까"><a href="#HostOS가-원도우-환경인-Docker에서-어떻게-리눅스OS를-사용할-수-있을까" class="headerlink" title="HostOS가 원도우 환경인 Docker에서 어떻게 리눅스OS를 사용할 수 있을까?"></a>HostOS가 원도우 환경인 Docker에서 어떻게 리눅스OS를 사용할 수 있을까?</h2><p>여러 구글링을 끝에 내가 내린 결론이다. 따라서 정확하지않을 수 있다. (잘못된 부분은 댓글로 알려주시면 이 글을 읽는 모두에게 도움이 됩니다. 감사하겠습니다!)<br><a href="https://www.docker.com/products/docker-desktop/">Docker Desktop for Windows(링크)</a>를 다운로드 받으면 리눅스 엔진이 함께 설치된다.<br>이 리눅스엔진을 통해서 리눅스OS나 우분투OS를 사용할 수 있다!</p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>오늘 VM에 대해 팀장님과 이야기하다가 문득 Docker로 어떻게 리눅스OS를 쓸 수 있는지가 궁금해졌다.<br>HostOS가 원도우 환경에서 VM은 GuestOS를 원하는 대로 설치할 수 있으니 리눅스든 우분투든 원하는 OS를 쓸 수 있다.<br>하지만 Docker는? </p><a id="more"></a><p>Docker는 GuestOS를 설치하지 않고 HostOS를 활용한다. 그래서 VM보다 훨씬 가볍고 빠르다.<br><img src="https://miro.medium.com/max/2400/1*wOBkzBpi1Hl9Nr__Jszplg.png" alt="https://medium.com/@darkrasid/docker%EC%99%80-vm-d95d60e56fdd"></p><h2 id="HostOS가-원도우-환경인-Docker에서-어떻게-리눅스OS를-사용할-수-있을까"><a href="#HostOS가-원도우-환경인-Docker에서-어떻게-리눅스OS를-사용할-수-있을까" class="headerlink" title="HostOS가 원도우 환경인 Docker에서 어떻게 리눅스OS를 사용할 수 있을까?"></a>HostOS가 원도우 환경인 Docker에서 어떻게 리눅스OS를 사용할 수 있을까?</h2><p>여러 구글링을 끝에 내가 내린 결론이다. 따라서 정확하지않을 수 있다. (잘못된 부분은 댓글로 알려주시면 이 글을 읽는 모두에게 도움이 됩니다. 감사하겠습니다!)<br><a href="https://www.docker.com/products/docker-desktop/">Docker Desktop for Windows(링크)</a>를 다운로드 받으면 리눅스 엔진이 함께 설치된다.<br>이 리눅스엔진을 통해서 리눅스OS나 우분투OS를 사용할 수 있다!</p><p><br><br></p><h2 id="같이-읽으면-좋은-글"><a href="#같이-읽으면-좋은-글" class="headerlink" title="같이 읽으면 좋은 글"></a>같이 읽으면 좋은 글</h2><ul><li><a href="https://sowon-dev.github.io/2021/03/28/210329Container/">컨테이너, 도커, 쿠버네티스</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/Server/">Server</category>
