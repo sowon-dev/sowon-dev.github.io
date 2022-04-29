@@ -8,16 +8,24 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2022/04/27/220427DockerDefinition/</loc>
-        <lastmod>2022-04-28T12:49:28.701Z</lastmod>
+        <loc>https://sowon-dev.github.io/2021/03/28/210329Container/</loc>
+        <lastmod>2022-04-29T14:27:19.718Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2021/03/28/210329Container/</loc>
-        <lastmod>2022-04-27T11:25:53.499Z</lastmod>
+        <loc>https://sowon-dev.github.io/2022/04/24/220424AwaitToDeferred/</loc>
+        <lastmod>2022-04-29T14:27:01.382Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/04/27/220427DockerDefinition/</loc>
+        <lastmod>2022-04-28T12:49:28.701Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -34,14 +42,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2022/04/19/220419trim/</loc>
         <lastmod>2022-04-25T12:59:50.707Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/04/24/220424AwaitToDeferred/</loc>
-        <lastmod>2022-04-25T12:59:28.388Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
