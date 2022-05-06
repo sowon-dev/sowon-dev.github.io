@@ -3,8 +3,15 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/%25EC%2598%25A4%25EB%25A5%2598%25EC%259D%25BC%25EC%25A7%2580/</loc>
+        <lastmod>2022-05-06T08:22:04.724Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/CSRF/</loc>
-        <lastmod>2022-05-05T14:40:12.126Z</lastmod>
+        <lastmod>2022-05-06T07:45:00.182Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -131,13 +138,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/MariaDB/</loc>
         <lastmod>2021-10-21T12:27:51.214Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/%25EC%2598%25A4%25EB%25A5%2598%25EC%259D%25BC%25EC%25A7%2580/</loc>
-        <lastmod>2021-09-16T07:34:59.990Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
