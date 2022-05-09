@@ -9,8 +9,33 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Sun, 08 May 2022 14:05:43 GMT</pubDate>
+    <pubDate>Mon, 09 May 2022 13:35:13 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[WIP]전자정부프레임워크프로젝트를 끝내며 내가 배운 것</title>
+      <link>https://sowon-dev.github.io/2022/05/09/220509prjtreview5/</link>
+      <guid>https://sowon-dev.github.io/2022/05/09/220509prjtreview5/</guid>
+      <pubDate>Mon, 09 May 2022 04:12:10 GMT</pubDate>
+      
+      <description>&lt;p&gt;전자정부프레임워크&lt;a href=&quot;https://www.egovframe.go.kr/home/ntt/nttRead.do?menuNo=76&amp;bbsId=171&amp;nttId=1576&quot;&gt;(링크)&lt;/a&gt;는 이번 프로젝트에서 처음 사용해보았다. 사실 특별히 새로울 건 없었다. 왜냐하면 Spring프레임워크와 거의 똑같기 때문이다. 전자정부프레임워크란 “효율적인 정보시스템 개발을 위한 코드 라이브러리, 인터페이스규약, 설정정보 등의 뼈대를 제공하는 표준프레임워크”라고 한다. &lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>전자정부프레임워크<a href="https://www.egovframe.go.kr/home/ntt/nttRead.do?menuNo=76&bbsId=171&nttId=1576">(링크)</a>는 이번 프로젝트에서 처음 사용해보았다. 사실 특별히 새로울 건 없었다. 왜냐하면 Spring프레임워크와 거의 똑같기 때문이다. 전자정부프레임워크란 “효율적인 정보시스템 개발을 위한 코드 라이브러리, 인터페이스규약, 설정정보 등의 뼈대를 제공하는 표준프레임워크”라고 한다. </p><a id="more"></a><p>즉, egovframework는 Spring프레임워크 + MyBatis + MySql + Jsp + Jquery 조합에다가 전자정부프레임워크가 제공하는 라이브러리나 클래스가 추가되어있다고 보면 된다.</p><p><br><br><br></p><h2 id="Keep"><a href="#Keep" class="headerlink" title="Keep"></a>Keep</h2><p>현재 만족하고 있는 부분과 계속해서 이어갔으면 하는 부분</p><ol><li>프로젝트 설정을 추가했다.<br>프로젝트 진행 중 Spring Security를 도입하자고 건의했고 받아들여졌다. 프로젝트 중간에 설정을 추가하는 일은 살짝 두려웠다. 혹시나 내가 추가한 설정들때문에 잘되던 동작들이 꼬일까봐 걱정했는데 다행히 잘 작동해서 뿌듯했다. </li><li>XSS와 CSRF의 차이를 알고 이를 예방했다.<br>CSRF<a href="https://sowon-dev.github.io/2022/05/02/220502springsecurity-CSRF/">(링크)</a>는 사이트 간 요청 위조 약자로 공격대상이 Server이다.<br>XSS<a href="https://sowon-dev.github.io/2022/04/20/220420XSS/">(링크)</a>는 사이트 간 스크립팅의 약자로 공격대상이 Client이다.</li><li>ES5와 ES6 차이를 정확히 알고있다.<br>브라우저 호환성과 ES5와 ES6 차이<a href="https://sowon-dev.github.io/2022/04/18/220418ECMAScript/">(링크)</a>를 확실히 알게되었다.</li></ol><p><br><br><br></p><h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><p>개선이 필요하다고 생각되는 부분</p><ol><li><p><br><br><br></p><h2 id="Try"><a href="#Try" class="headerlink" title="Try"></a>Try</h2><p>Problem의 해결책이 될 수 있는 부분</p></li><li></li></ol>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2022/05/09/220509prjtreview5/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>괄호가 &amp;#41;로 자동으로 바뀌어버릴때 해결법(ft.EscapeHtml)</title>
@@ -442,31 +467,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/02/23/220224CS-cpuMemoryDrive/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>닷넷프로젝트를 끝내며 코드리뷰가 내게 남긴 것</title>
-      <link>https://sowon-dev.github.io/2022/01/19/220119prjtreview/</link>
-      <guid>https://sowon-dev.github.io/2022/01/19/220119prjtreview/</guid>
-      <pubDate>Wed, 19 Jan 2022 02:32:49 GMT</pubDate>
-      
-      <description>&lt;p&gt;한 달간 진행되었던 네번째 프로젝트가 끝이 났다!&lt;br&gt;처음 사용하는 C#에다가 닷넷프레임워크, 그리고 Visual Studio, MSSQL, Azure까지!&lt;br&gt;모든 것이 새롭게 다가왔고 정말 열심히 배웠고 큰 성장을 이루어냈다.&lt;br&gt;잠깐만 갑자기 C#에다가 닷넷??!&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>한 달간 진행되었던 네번째 프로젝트가 끝이 났다!<br>처음 사용하는 C#에다가 닷넷프레임워크, 그리고 Visual Studio, MSSQL, Azure까지!<br>모든 것이 새롭게 다가왔고 정말 열심히 배웠고 큰 성장을 이루어냈다.<br>잠깐만 갑자기 C#에다가 닷넷??!</p><a id="more"></a><p>그렇게 됐다.<br>회사의 일은 가끔(또는 자주) 내 뜻대로 되지 않는 법. 이번에 맡은 프로젝트는 닷넷 프레임워크를 사용했다.<br>아직 스프링프레임워크도 깊게 보지 못한 내게 새로운 언어와 새로운 프레임워크는 혼돈의 카오스 그 자체였다.<br>절망하기보단 <code>이왕 해야 할 거! 최선을 다해 빨리 성장하자 하나라도 더 알자</code>는 마음가짐으로 열정적으로 임했다.<br>그래서 그런지 정말 많은 것들을 배울 수 있었다.</p><p>DDD도 처음이고 CQRS도 처음이었다. 혼자 부트스트랩으로 페이지도 만들고 저장 프로시저 이용해서 쿼리도 짜고 EF도 이용해봤다.<br>성장하고자하는 마음 하나로 한달<br>닷넷프레임워크의 여러 장점 중 가장 좋았던 점은 시간연산이 굉장히 편하다는 점이다!! 날짜 포맷팅도 <code>.ToString(&quot;yyyy-MM-dd&quot;)</code> 이런식으로 정말 간단하다! 최고</p><p><br><br></p><h2 id="Keep"><a href="#Keep" class="headerlink" title="Keep"></a>Keep</h2><p>현재 만족하고 있는 부분과 계속해서 이어갔으면 하는 부분</p><ol><li><p>명확한 단어 사용을 위한 단어 합의를 위해 노력했다.<br>기존 4개의 역할(Admin / Owner / Super / Member)이 있었다. 한 눈에 봐도 Super의 역할이 모호했다.<br>프로젝트 구조와 요구사항을 파악하고 나서 역할의 이름을 Super에서 Manager로 변경을 제안했다.<br>몇몇 기능 개발이 되어있던 상태였기때문에 변경에 있어서 고민이 많았지만 “지금이라도 잡아야 나중에 유지보수까지 편해집니다”라는 의견을 피력했고 다행히 내 의견이 받아들여졌고 초반에 합의한 덕분에 후반부 작업이 훨씬 수월해졌다!</p></li><li><p>CSR와 SSR 구분 명확하게 할 수 있다.<br>서버사이드랜더링(SSR)과 클라이언트사이드랜더링(CSR)을 확실하게 구분할 수 있고 나만의 우선순위도 생겼다.</p></li></ol><ul><li>우선순위: SSR &gt; CSR<br>꼭 필요한 경우가 아니면 서버사이드랜더링을 사용하는 것이 좋다.<br>그 이유로는 첫째, 최초 로딩 속도가 빠르다 두번째, SEO최적화, 크롤러에 대응하기 용이하다는 점이 있다.</li></ul><p>닷넷프레임워크에서는 서버사이드랜더링으로 Razor를 사용해보았다. <code>@</code>를 사용하며 간단한 처리는 컨트롤러를 통하지않고 html에서 직접 서비스를 호출하여 처리할 수도 있다.</p><ol start="3"><li>Bootstrap을 자유자재로 구사할 수 있다.<br>항상 템플릿을 가져와서 써봤지 직접 bootstrap으로 화면을 구현한 적은 처음이다.<br>처음에는 내가 원하는 대로 row와 col 나누는 게 너무 어려웠는데 한 번 적응하고 나니 훨씬 편했다.<br>또 기존에는 style속성으로 각 태그에 css를 변경하곤 했으나 비효율적이며 통일성이 떨어졌다. Bootstrap class를 사용하니 훨씬 편했다.</li></ol><ul><li><a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/">참고: Bootstrap Docs</a></li></ul><ol start="4"><li>Auth policy등 enum타입으로 사용하여 휴먼에러를 줄였다.</li></ol><p><br><br><br></p><h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><p>개선이 필요하다고 생각되는 부분</p><ol><li>DDD의 심도깊은 이해와 EF 사용<br>이번에 처음 CQRS를 사용하면서 ORM(object-relational mapper)인 Entity Framework를 사용해봤다.<br>Application Layer는 다루었으나 Domain Layer는 많이 다루지 못해 아쉬움이 있다.<br>EF는 아주 간단한 Include와 Where만을 사용했다. 조금 복잡하다싶으면 나에게 익숙한 저장 프로시저를 이용했다. EF만 잘 사용한다면 효율적인 쿼리를 구현할 수 있었을텐데 아쉬움이 남는다.</li></ol><ul><li><a href="https://sowon-dev.github.io/2021/03/22/210323jpaVSjdbc/#%F0%9F%86%9ASQL-Mapper-vs-ORM">참고: ORM vs SQL Mappeer</a></li><li><a href="https://incheol-jung.gitbook.io/docs/q-and-a/architecture/ddd">참고: DDD Application Layer란?</a></li></ul><ol start="2"><li>UnitTest를 못한 점<br>프로젝트기한이 촉박해 UnitTest를 거의 하지 못해서 아쉬움이 무척 남는다.</li></ol><p><br><br><br></p><h2 id="Try"><a href="#Try" class="headerlink" title="Try"></a>Try</h2><p>Problem의 해결책이 될 수 있는 부분</p><ol><li><p>DDD의 여러 사례 공부와 Domain Layer 공부하기<br><a href="https://docs.microsoft.com/en-us/ef/core/querying/">Entity Framework Docs</a></p></li><li><p>UnitTest를 손에 익히기<br>손에 익으면 프로젝트 기한이 촉박해도 빠르게 test code를 짤 수 있다.</p></li></ol><p><br><br><br></p><h2 id="코드리뷰"><a href="#코드리뷰" class="headerlink" title="코드리뷰"></a>코드리뷰</h2><p>이번 코드리뷰는 질문과 답변을 통해 이루어졌다. 회사코드라서 모든 걸 다 적을 수 없고 적을 수 있는 것만 포편적인 예시를 들어 적어보려고 한다.</p><h3 id="페이지-이동할-때-3가지-방식-중-우선순위가-있나요"><a href="#페이지-이동할-때-3가지-방식-중-우선순위가-있나요" class="headerlink" title="페이지 이동할 때 3가지 방식 중 우선순위가 있나요?"></a>페이지 이동할 때 3가지 방식 중 우선순위가 있나요?</h3><p>페이지 이동할 때 3가지 방식이 있다.</p><ol><li>razor : <code>@Url.Action(&quot;Board&quot;, &quot;Admin&quot;, new {id=@id})</code></li><li>asp.net: <code>&lt;a asp-action=&quot;Board&quot; asp-controller=&quot;Admin&quot; asp-route-id=&quot;@id&quot;&gt;</code></li><li>js: <code>location.href=&quot;/Admin/Board/&quot;+@id</code></li></ol><p>이 중 razor와 asp-action을 이용한 방식은 SSR이고 js는 CSL이다.<br>세 가지 방식 중에 우선순위가 있는 방식은 없다. 상황에 맡게 사용하면 된다!</p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
-      
-      <category domain="https://sowon-dev.github.io/categories/Journal/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/01/19/220119prjtreview/#disqus_thread</comments>
       
     </item>
     
