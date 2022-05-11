@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Tue, 10 May 2022 14:34:28 GMT</pubDate>
+    <pubDate>Wed, 11 May 2022 07:41:37 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>JSP에서 엑셀다운로드할때 한글깨짐현상을 해결하는 가장 간단한 방법</title>
+      <link>https://sowon-dev.github.io/2022/05/10/220511ExcelKoreanError/</link>
+      <guid>https://sowon-dev.github.io/2022/05/10/220511ExcelKoreanError/</guid>
+      <pubDate>Tue, 10 May 2022 21:48:42 GMT</pubDate>
+      
+      <description>&lt;p&gt;JSP에서 엑셀다운로드를 할때 한글깨짐 현상이 나타났다. 이를 해결할 수 있는 가장 간단한 방법이 있다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>JSP에서 엑셀다운로드를 할때 한글깨짐 현상이 나타났다. 이를 해결할 수 있는 가장 간단한 방법이 있다.</p><a id="more"></a><h2 id="원인"><a href="#원인" class="headerlink" title="원인"></a>원인</h2><p>이럴때는 meta태그에 utf-8이 잘 설정되어있는지 확인하면 된다.<br>만약 utf-8설정을 찾을 수 없다면 코드를 head사이에 추가하면 된다.</p><p><br><br><br></p><h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">// (중략)</span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">'Content-Type'</span> <span class="attr">content</span>=<span class="string">'application/vnd.ms-excel; charset=utf-8'</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/JSP/">JSP</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2022/05/10/220511ExcelKoreanError/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[WIP]전자정부프레임워크프로젝트를 끝내며 내가 배운 것</title>
@@ -18,11 +39,11 @@
       <guid>https://sowon-dev.github.io/2022/05/09/220509prjtreview5/</guid>
       <pubDate>Mon, 09 May 2022 04:12:10 GMT</pubDate>
       
-      <description>&lt;p&gt;전자정부프레임워크&lt;a href=&quot;https://www.egovframe.go.kr/home/ntt/nttRead.do?menuNo=76&amp;bbsId=171&amp;nttId=1576&quot;&gt;(링크)&lt;/a&gt;는 이번 프로젝트에서 처음 사용해보았다. 사실 특별히 새로울 건 없었다. 왜냐하면 Spring프레임워크와 거의 똑같기 때문이다. 전자정부프레임워크란 “효율적인 정보시스템 개발을 위한 코드 라이브러리, 인터페이스규약, 설정정보 등의 뼈대를 제공하는 표준프레임워크”라고 한다. &lt;/p&gt;</description>
+      <description>&lt;p&gt;전자정부프레임워크&lt;a href=&quot;https://www.egovframe.go.kr/home/ntt/nttRead.do?menuNo=76&amp;bbsId=171&amp;nttId=1576&quot;&gt;(링크)&lt;/a&gt;는 이번 프로젝트에서 처음 사용해보았다. 사실 특별히 새로울 건 없었다. 왜냐하면 Spring프레임워크와 거의 똑같기 때문이다. &lt;/p&gt;</description>
       
       
       
-      <content:encoded><![CDATA[<p>전자정부프레임워크<a href="https://www.egovframe.go.kr/home/ntt/nttRead.do?menuNo=76&bbsId=171&nttId=1576">(링크)</a>는 이번 프로젝트에서 처음 사용해보았다. 사실 특별히 새로울 건 없었다. 왜냐하면 Spring프레임워크와 거의 똑같기 때문이다. 전자정부프레임워크란 “효율적인 정보시스템 개발을 위한 코드 라이브러리, 인터페이스규약, 설정정보 등의 뼈대를 제공하는 표준프레임워크”라고 한다. </p><a id="more"></a><p>즉, egovframework는 Spring프레임워크 + MyBatis + MySql + Jsp + Jquery 조합에다가 전자정부프레임워크가 제공하는 라이브러리나 클래스가 추가되어있다고 보면 된다.</p><p><br><br><br></p><h2 id="Keep"><a href="#Keep" class="headerlink" title="Keep"></a>Keep</h2><p>현재 만족하고 있는 부분과 계속해서 이어갔으면 하는 부분</p><ol><li>프로젝트 설정을 추가했다.<br>프로젝트 진행 중 Spring Security를 도입하자고 건의했다. 다행히 받아들여져서 프로젝트 설정을 추가하는 경험을 할 수 있었다. 프로젝트 진행 중에 다시 프로젝트 셋팅을 건든다는 게 살짝 두려웠던 건 사실이다. 혹시나 내가 추가한 설정들때문에 잘되던 동작들이 꼬일까봐 걱정했는데 다행히 잘 작동해서 뿌듯했다. </li><li>XSS와 CSRF의 차이를 알고 이를 예방했다.<br>CSRF<a href="https://sowon-dev.github.io/2022/05/02/220502springsecurity-CSRF/">(링크)</a>는 사이트 간 요청 위조 약자로 공격대상이 Server이다.<br>XSS<a href="https://sowon-dev.github.io/2022/04/20/220420XSS/">(링크)</a>는 사이트 간 스크립팅의 약자로 공격대상이 Client이다.</li><li>ES5와 ES6 차이를 정확히 알고있다.<br>브라우저 호환성과 ES5와 ES6 차이<a href="https://sowon-dev.github.io/2022/04/18/220418ECMAScript/">(링크)</a>를 확실히 알게되었다.</li></ol><p><br><br><br></p><h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><p>개선이 필요하다고 생각되는 부분</p><ol><li>트리구조 메뉴를 개발하는데 쿼리로 애를 많이 먹었다. 서버로 재귀호출을 돌리면서 tree데이터를 json으로 만들어 화면에 던진 뒤에 jsTree라이브러리<a href="https://www.jstree.com/">(링크)</a>를 사용해 개발을 완료할 수 있었다. 고급 SQL에 대한 공부가 필요하다.</li></ol><p><br><br><br></p><h2 id="Try"><a href="#Try" class="headerlink" title="Try"></a>Try</h2><p>Problem의 해결책이 될 수 있는 부분</p><ol><li>recursive등 고급 SQL을 더 깊게 공부할 것</li></ol>]]></content:encoded>
+      <content:encoded><![CDATA[<p>전자정부프레임워크<a href="https://www.egovframe.go.kr/home/ntt/nttRead.do?menuNo=76&bbsId=171&nttId=1576">(링크)</a>는 이번 프로젝트에서 처음 사용해보았다. 사실 특별히 새로울 건 없었다. 왜냐하면 Spring프레임워크와 거의 똑같기 때문이다. </p><a id="more"></a><p>전자정부프레임워크란 “효율적인 정보시스템 개발을 위한 코드 라이브러리, 인터페이스규약, 설정정보 등의 뼈대를 제공하는 표준프레임워크”라고 한다.<br>즉, egovframework는 Spring프레임워크 + MyBatis + MySql + Jsp + Jquery 조합에다가 전자정부프레임워크가 제공하는 라이브러리나 클래스가 추가되어있다고 보면 된다.</p><p><br><br><br></p><h2 id="Keep"><a href="#Keep" class="headerlink" title="Keep"></a>Keep</h2><p>현재 만족하고 있는 부분과 계속해서 이어갔으면 하는 부분</p><ol><li>가능한 많은 기능을 담당하고자 한 것!<br>팀장님이 일이 많아서 팀장님이 담당하시는 기능 중 일부를 받아냈다.</li><li>프로젝트 설정을 추가한 것!<br>프로젝트 진행 중 CSRF 방어가 필요했는데 여러 방법으로 해결할 수 있었다. 각 페이지마다 하거나 form태그마다 할수도 있었지만 프로젝트 차원에서 해결하는 방법이 가장 좋다고 판단이 들어 Spring Security도입을 건의했다. 다행히 잘 받아들여져서 프로젝트 설정을 직접 추가하는 경험을 할 수 있었다. 프로젝트 진행 중간에 프로젝트 셋팅을 건든다는 게 살짝 두려웠던 건 사실이다. 혹시나 내가 추가한 설정들때문에 잘되던 동작들이 꼬일까봐 걱정했는데 다행히 잘 작동해서 정말 뿌듯했다. </li><li>XSS와 CSRF의 차이를 명확히 안 것!<br>CSRF<a href="https://sowon-dev.github.io/2022/05/02/220502springsecurity-CSRF/">(링크)</a>는 사이트 간 요청 위조 약자로 공격대상이 Server이다.<br>XSS<a href="https://sowon-dev.github.io/2022/04/20/220420XSS/">(링크)</a>는 사이트 간 스크립팅의 약자로 공격대상이 Client이다.</li><li>ES5와 ES6 차이를 정확히 안 것!<br>브라우저 호환성과 ES5와 ES6 차이<a href="https://sowon-dev.github.io/2022/04/18/220418ECMAScript/">(링크)</a>를 확실히 알게되었다.</li></ol><p><br><br><br></p><h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><p>개선이 필요하다고 생각되는 부분</p><ol><li>트리구조 메뉴를 개발하는데 쿼리로 애를 많이 먹었다. 서버로 재귀호출을 돌리면서 tree데이터를 json으로 만들어 화면에 던진 뒤에 jsTree라이브러리<a href="https://www.jstree.com/">(링크)</a>를 사용해 개발을 완료할 수 있었다. 고급 SQL에 대한 공부가 필요하다.</li></ol><p><br><br><br></p><h2 id="Try"><a href="#Try" class="headerlink" title="Try"></a>Try</h2><p>Problem의 해결책이 될 수 있는 부분</p><ol><li>recursive등 고급 SQL을 더 깊게 공부할 것</li></ol>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
@@ -444,29 +465,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/02/26/220226NoSQL/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[OS]메모리vs드라이브vsCPU 코어 쉽게 이해하자</title>
-      <link>https://sowon-dev.github.io/2022/02/23/220224CS-cpuMemoryDrive/</link>
-      <guid>https://sowon-dev.github.io/2022/02/23/220224CS-cpuMemoryDrive/</guid>
-      <pubDate>Wed, 23 Feb 2022 17:12:39 GMT</pubDate>
-      
-      <description>&lt;p&gt;소스코드를 일절 건드리지않았는데 운영서버의 사이트가 500에러가 났다.&lt;br&gt;팀장님은 드라이브 문제일수있다고 하셨다.&lt;br&gt;💾여기서 드라이브란?&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>소스코드를 일절 건드리지않았는데 운영서버의 사이트가 500에러가 났다.<br>팀장님은 드라이브 문제일수있다고 하셨다.<br>💾여기서 드라이브란?</p><a id="more"></a><p>스토리지드라이브를 뜻하며 HDD나 SDD가 해딩된다.<br>메모리와 드라이브 개념을 확실히하기 위해 글을 찾아봤는데 비유가 가장 적합한 글을 찾았다.<br>기업소개사이트인데 Aricles폴더 안에 메모리 개념들이 잘 포스팅되어있다.</p><ul><li><a href="https://www.crucial.kr/articles/about-memory/support-what-does-computer-memory-do">컴퓨터 메모리(RAM)란 무엇이며 어떤 역할을 합니까?</a></li></ul><p>위 글에 따르면 메모리는 책상과 비슷하다고 한다. 책상안에서 서류작성, 파일보관, 업무전화등 다양한 작업을 진행할 수 있다.<br>이때 책상이 크면 클수록 더 많은 작업을 한꺼번에 펼쳐놓고 처리할 수 있어서 서류 보관 캐비넷(드라이브)에 빠르게 접근이 가능하다.<br>책상이 크다면 이미 책상 위에 올려져있을테니까!</p><p><br><br><br></p><h2 id="그렇다면-CPU-코어는-뭘까-😮"><a href="#그렇다면-CPU-코어는-뭘까-😮" class="headerlink" title="그렇다면 CPU 코어는 뭘까? 😮"></a>그렇다면 CPU 코어는 뭘까? 😮</h2><p>코어가 많을수록 메모리가 많을수록 작업이 빨라진다던데 메모리와 코어, 이 둘은 어떻게 다를까?<br>이에 관해 팀장님이 비유적으로 설명해주셨다.<br><strong>CPU 코어는 책상앞의 사람의 수</strong>로 비유할 수 있다고 한다.👍 사람수가 많을수록 작업이 빨라지니까 CPU 코어가 많을수록 속도가 빨라진다.</p><p>와 역시 팀장님이다. 이해 쏙쏙!!!😆</p><p><br><br><br></p><h2 id="정리-📀"><a href="#정리-📀" class="headerlink" title="정리 📀"></a>정리 📀</h2><ul><li>메모리: 책상</li><li>드라이브: 서류 보관 캐비넷</li><li>CPU 코어: 일을 처리하기 위해 책상앞에 앉아있는 사람<ul><li>예를 들어 CPU 6코어면 6명의 사람이 일처리를 위해 책상 앞에 있다고 생각하면 됨</li></ul></li><li>CPU 스레드: 사람의 손<ul><li>예를 들어 CPU 2코어 4스레드이면 2명의 사람이 4가지 작업을 동시에 할 수 있다고 생각하면 됨</li><li>한 손에 한 작업씩 진행중인 느낌.</li></ul></li></ul><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.crucial.kr/articles/about-memory/support-what-does-computer-memory-do">https://www.crucial.kr/articles/about-memory/support-what-does-computer-memory-do</a></li><li>팀장님 설명</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Operating-Systeming/">Operating Systeming</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%8A%98%EB%98%90%EB%AA%BB%EC%95%8C%EC%95%84%EB%93%A3%EA%B3%A0%EB%A7%90%EC%95%98%EC%8A%B5%EB%8B%88%EB%8B%A4/">오늘또못알아듣고말았습니다</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/02/23/220224CS-cpuMemoryDrive/#disqus_thread</comments>
       
     </item>
     
