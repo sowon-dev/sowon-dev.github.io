@@ -8,8 +8,8 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2022/05/09/220509prjtreview5/</loc>
-        <lastmod>2022-05-14T13:52:42.022Z</lastmod>
+        <loc>https://sowon-dev.github.io/2022/04/30/220430JS-axiosVsajax/</loc>
+        <lastmod>2022-05-15T13:25:01.952Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +17,15 @@
 
     <url>
         <loc>https://sowon-dev.github.io/2022/05/10/220511ExcelKoreanError/</loc>
-        <lastmod>2022-05-11T07:41:37.813Z</lastmod>
+        <lastmod>2022-05-15T13:24:04.380Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/05/09/220509prjtreview5/</loc>
+        <lastmod>2022-05-14T13:52:42.022Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -34,14 +42,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2022/05/02/220502springsecurity-CSRF/</loc>
         <lastmod>2022-05-06T07:45:00.182Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/04/30/220430JS-axiosVsajax/</loc>
-        <lastmod>2022-05-01T14:49:37.803Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
