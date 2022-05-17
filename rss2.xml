@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Sun, 15 May 2022 13:24:04 GMT</pubDate>
+    <pubDate>Tue, 17 May 2022 08:07:55 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[JS]scope 스코프</title>
+      <link>https://sowon-dev.github.io/2022/05/16/220517JSscope/</link>
+      <guid>https://sowon-dev.github.io/2022/05/16/220517JSscope/</guid>
+      <pubDate>Mon, 16 May 2022 19:12:43 GMT</pubDate>
+      
+      <description>&lt;p&gt;이번에 프로젝트를 진행하면서 버그가 발생했는데 알고보니 스코프문제였다.&lt;br&gt;이번 기회에 스코프에 대해 확실히 정리해보고자 한다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>이번에 프로젝트를 진행하면서 버그가 발생했는데 알고보니 스코프문제였다.<br>이번 기회에 스코프에 대해 확실히 정리해보고자 한다.</p><a id="more"></a><h2 id="스코프란"><a href="#스코프란" class="headerlink" title="스코프란?"></a>스코프란?</h2><p>w3school에 따르면<a href="https://www.w3schools.com/js/js_scope.asp">(링크)</a> Scope란 변수의 유효한 범위이다.</p><p>&lt; 스코프종류 &gt;</p><ol><li>Global scope</li><li>Local Scope<ol><li>Block scope</li><li>Function scope</li></ol></li></ol><p>ES6이전에는 js는 Global Scope and Function Scope만 있었다.<br>ES6전에는 var만 있었는데 ES6이후로 let과 const가 생겨나면서 block scope 개념도 함께 생겨났다.</p><p><br><br><br></p><h2 id="1-Global-scope-블록스코프"><a href="#1-Global-scope-블록스코프" class="headerlink" title="1 Global scope 블록스코프"></a>1 Global scope 블록스코프</h2><p>이름그대로 변수가 전역에 선언된 경우이다.<br>어디서든 접근이 가능하다. 어디서나 접근가능하기때문에 편리한 장점이 있지만 코드가 길어질수록 휴먼에러가 날 확률이 높아진다.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> carName = <span class="string">"Volvo"</span>;</span><br><span class="line"><span class="comment">// code here can use carName</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="comment">// code here can also use carName</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="2-Block-scope-블록스코프"><a href="#2-Block-scope-블록스코프" class="headerlink" title="2 Block scope 블록스코프"></a>2 Block scope 블록스코프</h2><p>블록스코는 <code>브라켓 {}</code>블록안에서만 변수가 유효할때를 뜻한다. 아래 비교예시를 보자.</p><ul><li><p>var 키워드 사용</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="keyword">var</span> x = <span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// x CAN be used here</span></span><br></pre></td></tr></table></figure></li><li><p>let 또는 const 키워드 사용</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="keyword">let</span> x = <span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// x can NOT be used here</span></span><br></pre></td></tr></table></figure></li></ul><p>위 두 예시의 차이에서 알 수 있듯이 <code>브라켓 {}</code>을 벗어나도 선언한 변수를 호출할 수 있는지 없는지로 블록스코프인지를 확인할 수 있다.<br>var변수는 블록스코프가 아니기때문에 변수관리에 있어 문제를 초래하기도 한다.</p><p><br><br><br></p><h2 id="3-Function-Scope-로컬스코프"><a href="#3-Function-Scope-로컬스코프" class="headerlink" title="3 Function Scope 로컬스코프"></a>3 Function Scope 로컬스코프</h2><p>말그대로 함수 안에서 선언한 변수로 함수안에서만 호출가능하고 함수 밖에서는 호출할 수 없다.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// code here can NOT use carName</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> carName = <span class="string">"Volvo"</span>;</span><br><span class="line">  <span class="comment">// code here CAN use carName</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// code here can NOT use carName</span></span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="Static-Scoping-Lexical-Scoping"><a href="#Static-Scoping-Lexical-Scoping" class="headerlink" title="Static Scoping (Lexical Scoping)"></a>Static Scoping (Lexical Scoping)</h2><p>JavaScropt, C, Java 등에서는  Static Scoping을 따른다. 즉, 함수를 어디서 선언했는지에 따라 상위 스코프를 결정하는 것이다.<br>var를 사용하여 변수를 선언했을때 어떻게 값이 나올까?</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> num = <span class="number">7</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">a</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> num = <span class="number">17</span>;</span><br><span class="line">    b();</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">b</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(num);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">a(); <span class="comment">//값은?</span></span><br><span class="line">b(); <span class="comment">//값은?</span></span><br></pre></td></tr></table></figure><ul><li>output<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">7</span></span><br><span class="line"><span class="number">7</span></span><br></pre></td></tr></table></figure>a()의 호출값이 17이 아니고 왜 7인 걸까?</li></ul><p>함수가 언제 호출되는지에 따르는 게 아니라 함수를 어디에 선언했냐에 따라 상위 스코프가 결정되기 때문이다.<br>num은 이미 두 함수보다 먼저 선언했으므로 7은 17로 덮어써지지않고 그대로 7로 출력된다.</p><blockquote><p>참고로 함수 호출에 따라 스코프가 결정되는 것을 Dynamic Scope라고 한다. Perl, Bash Shell 등에서 사용된다.</p></blockquote>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2022/05/16/220517JSscope/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>JSP에서 엑셀다운로드할때 한글깨짐현상을 해결하는 가장 간단한 방법</title>
@@ -442,29 +463,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/03/01/220302STS-formatSetting/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>NoSQL이 뭐길래</title>
-      <link>https://sowon-dev.github.io/2022/02/26/220226NoSQL/</link>
-      <guid>https://sowon-dev.github.io/2022/02/26/220226NoSQL/</guid>
-      <pubDate>Sat, 26 Feb 2022 03:46:51 GMT</pubDate>
-      
-      <description>&lt;p&gt;NoSQL이란 무엇일까?&lt;br&gt;SQL문을 아예 안쓴다는 말일까?&lt;br&gt;Nope!&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>NoSQL이란 무엇일까?<br>SQL문을 아예 안쓴다는 말일까?<br>Nope!</p><a id="more"></a><h2 id="🏷️-NoSQL-Not-Only-SQL"><a href="#🏷️-NoSQL-Not-Only-SQL" class="headerlink" title="🏷️ NoSQL = Not Only SQL"></a>🏷️ NoSQL = Not Only SQL</h2><p>스키마없이 데이터를 표현하는 것이 주된 특징인 일련의 데이터베이스들을 의미한다.</p><p><br><br><br></p><h2 id="🏷️-일반적인특징"><a href="#🏷️-일반적인특징" class="headerlink" title="🏷️ 일반적인특징"></a>🏷️ 일반적인특징</h2><ol><li>정해진 스키마가 없다.</li><li>DB종류에 따라 그 특성이 매우 다르다. (RDBMS가 비슷비슷한 것과는 다름)</li></ol><p><br><br><br></p><h2 id="🏷️-장점"><a href="#🏷️-장점" class="headerlink" title="🏷️ 장점"></a>🏷️ 장점</h2><ol><li>높은 수평 확장성<ul><li>더 많은 인스턴스를 만들어 더 큰 로드를 감당할 수 있음</li></ul></li><li>초기 개발의 용이성</li><li>스키마 설계의 유연성</li></ol><p><br><br><br></p><h2 id="🏷️-단점"><a href="#🏷️-단점" class="headerlink" title="🏷️ 단점"></a>🏷️ 단점</h2><ol><li>표준의 부재<ul><li>표준이 없어서 마이그레이션할때 각각 다 맞춰야 함</li></ul></li><li>SQL에 비해 약한 query capability<ul><li>복잡한 쿼리는 힘듬 -&gt; 단순한 쿼리만 가능</li></ul></li><li>스키마가 없기때문에 data consistency를 어플리케이션 레벨에서 보장해야 함</li></ol><p><br><br><br></p><h2 id="🏷️-종류"><a href="#🏷️-종류" class="headerlink" title="🏷️ 종류"></a>🏷️ 종류</h2><ol><li>Key-value<ul><li>예: Redis, AWS DynamoDB</li><li>모든 레코드는 Key-value의 페어이다.</li><li>NoSQL의 가장 단순한 형태</li></ul></li><li>Document-based<ul><li>예: DynamoDB, CouchDB,몽고DB</li><li>각 레코드가 하나의 문서가 된다.</li><li>key-value종류보다 문서가 구조적이기때문에 쿼리 최적화, 활용성 높은 API가 제공됨</li></ul></li><li>Graph<ul><li>예: Neo4j, AWS Neptune</li><li>그래프 이론을 바탕으로 데이터베이스를 그래프로 표현함</li><li>그래프는 node(객체)와 edge(관계) 그리고 property(객체의 속성)로 이루짐</li><li>관계가 first-class citizen이기 때문에 관계 기반 문제(실시간 추천등)에 유리</li></ul></li></ol>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/NoSQL/">NoSQL</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/02/26/220226NoSQL/#disqus_thread</comments>
       
     </item>
     
