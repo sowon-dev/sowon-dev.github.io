@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Tue, 17 May 2022 08:07:55 GMT</pubDate>
+    <pubDate>Mon, 23 May 2022 05:27:20 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[리액트]Error: Cannot find module loader에러 해결</title>
+      <link>https://sowon-dev.github.io/2022/05/22/220523ReactLoaderError/</link>
+      <guid>https://sowon-dev.github.io/2022/05/22/220523ReactLoaderError/</guid>
+      <pubDate>Sun, 22 May 2022 20:05:32 GMT</pubDate>
+      
+      <description>&lt;p&gt;리액트가 궁금해 정적사이트를 하나 만들고 있다.&lt;br&gt;script를 정의하고 &lt;code&gt;npm run start&lt;/code&gt;를 했는데 아래와 같은 오류가 발생했다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>리액트가 궁금해 정적사이트를 하나 만들고 있다.<br>script를 정의하고 <code>npm run start</code>를 했는데 아래와 같은 오류가 발생했다.</p><a id="more"></a><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">node:internal/modules/cjs/loader:<span class="number">361</span></span><br><span class="line">      <span class="keyword">throw</span> err;</span><br><span class="line">      ^</span><br><span class="line"></span><br><span class="line"><span class="built_in">Error</span>: Cannot find <span class="built_in">module</span> <span class="string">'/workspace/프로젝트명/node_modules/finalhandler/node_modules/debug/src/index.js'</span>. Please verify that the package.json has a valid <span class="string">"main"</span> entry</span><br><span class="line">    at tryPackage (node:internal/modules/cjs/loader:<span class="number">353</span>:<span class="number">19</span>)</span><br><span class="line">    at <span class="built_in">Function</span>.Module._findPath (node:internal/modules/cjs/loader:<span class="number">566</span>:<span class="number">18</span>)</span><br><span class="line">    at <span class="built_in">Function</span>.Module._resolveFilename (node:internal/modules/cjs/loader:<span class="number">919</span>:<span class="number">27</span>)</span><br><span class="line">    at <span class="built_in">Function</span>.Module._load (node:internal/modules/cjs/loader:<span class="number">778</span>:<span class="number">27</span>)</span><br><span class="line">    at Module.require (node:internal/modules/cjs/loader:<span class="number">1005</span>:<span class="number">19</span>)</span><br><span class="line">    at <span class="built_in">require</span> (node:internal/modules/cjs/helpers:<span class="number">102</span>:<span class="number">18</span>)</span><br><span class="line">  code: <span class="string">'MODULE_NOT_FOUND'</span>,</span><br><span class="line">  path: <span class="string">'/workspace/프로젝트명/node_modules/finalhandler/node_modules/debug/package.json'</span>,</span><br><span class="line">  requestPath: <span class="string">'debug'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>에러를 보면 알수있듯 loader에서 err가 잡혔다.<br>구글링하니 nodejs 레포의 이슈<a href="https://github.com/nodejs/help/issues/2644">(링크)</a>로 많은 개발자들이 해결방법을 주고받은 걸 확인할 수 있었다.<br>이 여러 방법중 나는 아래의 방법으로 해결했다.</p><p><br><br><br></p><h2 id="해결방법"><a href="#해결방법" class="headerlink" title="해결방법"></a>해결방법</h2><ol><li><code>npm cache clean --force</code> 명령어로 캐시를 삭제한다.</li><li>node_modules 폴더를 삭제한다.</li><li>package-lock.json 파일을 삭제한다.</li><li><code>npm install</code> 명령어를 입력하면 node_modules와 package-lock.json가 다시 설치된다.</li></ol><p>위 조치를 취한 후 <code>npm run start</code>를 하니 잘 실행된다.<br>해결!</p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/React/">React</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%A5%98%EC%9D%BC%EC%A7%80/">오류일지</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2022/05/22/220523ReactLoaderError/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[JS]scope 스코프</title>
@@ -438,31 +461,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/03/07/220307Server-tomcat/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[이클립스/STS] 보기 편하게 code style 설정하기 - 포맷팅설정</title>
-      <link>https://sowon-dev.github.io/2022/03/01/220302STS-formatSetting/</link>
-      <guid>https://sowon-dev.github.io/2022/03/01/220302STS-formatSetting/</guid>
-      <pubDate>Tue, 01 Mar 2022 21:09:29 GMT</pubDate>
-      
-      <description>&lt;p&gt;이클립스나 STS 기본 코드 스타일은 너무 많은 tab공백 등으로 지저분해보이기도 한다.&lt;br&gt;보기 편하도록 신규 프로젝트 시작시 코드 스타일을 적용하고 있다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>이클립스나 STS 기본 코드 스타일은 너무 많은 tab공백 등으로 지저분해보이기도 한다.<br>보기 편하도록 신규 프로젝트 시작시 코드 스타일을 적용하고 있다.</p><a id="more"></a><p>코드 스타일 적용 단축키: <code>Ctrl + Shift + F</code></p><p>아래는 내가 주로 사용하는 코드 스타일이다.</p><p><br><br></p><h2 id="JAVA-code-style-🎀"><a href="#JAVA-code-style-🎀" class="headerlink" title="JAVA code style 🎀"></a>JAVA code style 🎀</h2><p>자바코드스타일은 구글 스타일을 사용하고 있다.<br>먼저 <a href="https://github.com/google/styleguide/blob/gh-pages/eclipse-java-google-style.xml">google/styleguide 레포지토리안의 eclipse-java-google-style</a>를 선택하여 xml파일로 다운로드한다.</p><ol><li>이클립스 상단의 Windows &gt; Preferences</li><li>Formatter 검색 후 Java &gt; Code Style &gt; Formatter 클릭 </li><li>Import 버튼 클릭 후 미리 다운로드한 eclipse-java-google-style.xml 파일을 선택한 후 apply 버튼 클릭</li></ol><p>자바 코드 스타일 적용 끝!</p><p><br><br><br></p><h2 id="JavaScript-code-style-🎀"><a href="#JavaScript-code-style-🎀" class="headerlink" title="JavaScript code style 🎀"></a>JavaScript code style 🎀</h2><p>jsp에서 script태그를 이용해 js를 사용하는 경우 이 설정도 함께 해줘야 보기 편하다.</p><ol><li>이클립스 상단의 Windows &gt; Preferences</li><li>Formatter 검색 후 JavaScript &gt; Code Style &gt; Formatter 클릭 </li><li>New 버튼 클릭 후 <code>Profile name: 원하는 이름</code> 기입하고  <code>Initialize settings with the following profile: Eclipse[built-in]</code> 선택 후 OK버튼</li><li>Indentation 에서 <code>Tab policy : Spaces only</code>와 <code>Indentation size : 2</code>, 그리고 <code>Tab size : 2</code>를 기입<ul><li><img src="/img/220302jsCodeStyle1.JPG" alt="Indentation 참고"></li></ul></li><li>Line Wrapping &gt; <code>Maximem line width : 180</code> 기입<ul><li><img src="/img/220302jsCodeStyle2.JPG" alt="Line Wrapping 참고"></li></ul></li></ol><p>자바스크립트 코드 스타일 적용 끝!</p><p><br><br><br></p><h2 id="HTML-code-style-🎀"><a href="#HTML-code-style-🎀" class="headerlink" title="HTML code style 🎀"></a>HTML code style 🎀</h2><ol><li>이클립스 상단의 Windows &gt; Preferences</li><li>html 검색 후  Web &gt; HTML Files &gt; Editor 클릭 <ul><li>Line width : 120</li><li>Indent using spaces 체크</li><li>Indentation size = 2</li><li>Inline Elements &gt; 인라인으로 보이기 싫은 태그들 선택 &gt; Remove<ul><li>나는 주로 select, tr, td를 remove한다.</li></ul></li></ul></li><li>apply 버튼 클릭 후 OK버튼 클릭</li></ol><p><img src="/img/220302jsCodeStyle2.JPG" alt="HTML 설정 참고"></p><p>HTML 코드 스타일 적용 끝!</p><p><br><br><br></p><h2 id="JSP-Validation-OFF-🎀"><a href="#JSP-Validation-OFF-🎀" class="headerlink" title="JSP Validation OFF 🎀"></a>JSP Validation OFF 🎀</h2><p>JSP파일이 많다면 Validation OFF를 하는 게 로딩도 빠르고 보기 편하다.</p><ul><li>Window &gt; Preference &gt; Web &gt; JSP Files &gt; Validation<ul><li>Validate JSP fragemtns 체크해제</li></ul></li></ul><p>끝!</p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/Eclipse/">Eclipse</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/STS/">STS</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/03/01/220302STS-formatSetting/#disqus_thread</comments>
       
     </item>
     
