@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Mon, 23 May 2022 05:27:20 GMT</pubDate>
+    <pubDate>Wed, 25 May 2022 04:46:06 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[닷넷] Url.Action사용해서 원하는 URL연결하기</title>
+      <link>https://sowon-dev.github.io/2022/05/24/220525dotnet-Urlhelper/</link>
+      <guid>https://sowon-dev.github.io/2022/05/24/220525dotnet-Urlhelper/</guid>
+      <pubDate>Tue, 24 May 2022 19:22:47 GMT</pubDate>
+      
+      <description>&lt;p&gt;cshtml에서 Url.Action으로 a태그 href를 변경하고 싶었다. &lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>cshtml에서 Url.Action으로 a태그 href를 변경하고 싶었다. </p><a id="more"></a><p>파일구조 </p><ul><li>Areas<ul><li>Student<ul><li>Controller<ul><li>LearningController.cs</li></ul></li><li>View<ul><li>Index.cshtml</li></ul></li></ul></li><li>Professor<ul><li>Controller <ul><li>StudyController.cs</li></ul></li><li>View<ul><li>Index.cshtml</li></ul></li></ul></li></ul></li></ul><p>내가 원하는 것은 아래처럼 2개의 a태그에 각각 다른 컨트롤러의 url이다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; url결과</span><br><span class="line">&#x2F;Student&#x2F;Learning</span><br><span class="line">&#x2F;Professor&#x2F;Study</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="기존코드"><a href="#기존코드" class="headerlink" title="기존코드"></a>기존코드</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"@Url.Action("</span><span class="attr">Index</span>","<span class="attr">Learning</span>")" <span class="attr">id</span>=<span class="string">"menuUrl"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"@Url.Action("</span><span class="attr">Index</span>","<span class="attr">Study</span>")" <span class="attr">id</span>=<span class="string">"menuUrl"</span>&gt;</span></span><br></pre></td></tr></table></figure><p>url결과는 아래와 같다</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; url결과</span><br><span class="line">&#x2F;Student&#x2F;Learning</span><br><span class="line">&#x2F;Student&#x2F;Study</span><br></pre></td></tr></table></figure><p><code>Action(string, string)</code>은 처음 URI를 잡고있기때문에 Professor의 Study가 아니라 Student에서 Study를 찾는다.</p><p><br><br><br></p><h2 id="해결법-Action-String-String-Object"><a href="#해결법-Action-String-String-Object" class="headerlink" title="해결법 Action(String, String, Object)"></a>해결법 Action(String, String, Object)</h2><p>routeValues를 사용해서 area를 지정해주었다.</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"@Url.Action("</span><span class="attr">Index</span>", "<span class="attr">Learning</span>", <span class="attr">new</span> &#123; <span class="attr">area</span> = <span class="string">"Student"</span> &#125;)" <span class="attr">id</span>=<span class="string">"menuUrl"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"@Url.Action("</span><span class="attr">Index</span>", "<span class="attr">Study</span>", <span class="attr">new</span> &#123; <span class="attr">area</span> = <span class="string">"Professor"</span> &#125;)" <span class="attr">id</span>=<span class="string">"menuUrl"</span>&gt;</span></span><br></pre></td></tr></table></figure><p>new 연산자로 area를 지정했기에 해당 area아래의 Url을 각각찾느다</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; url결과</span><br><span class="line">&#x2F;Student&#x2F;Learning</span><br><span class="line">&#x2F;Professor&#x2F;Study</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><p>MS사의 docs는 예시도 많이 없고 UI자체도 가독성이 많이 떨어진다. 그래도 docs 질은 괜찮은 건지 블로그글이 많이 없다. 닷넷개발자들은 영어고수인게 틀림없다.</p><ul><li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.web.mvc.urlhelper.action?view=aspnet-mvc-5.2#system-web-mvc-urlhelper-action(system-string-system-string-system-object)">https://docs.microsoft.com/en-us/dotnet/api/system.web.mvc.urlhelper.action?view=aspnet-mvc-5.2#system-web-mvc-urlhelper-action(system-string-system-string-system-object)</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/NET/">.NET</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/C/">C#</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2022/05/24/220525dotnet-Urlhelper/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[리액트]Error: Cannot find module loader에러 해결</title>
@@ -438,29 +461,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/03/09/220309binaryfile/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>톰캣서버란? Tomcat 내부 구조와 설정파일</title>
-      <link>https://sowon-dev.github.io/2022/03/07/220307Server-tomcat/</link>
-      <guid>https://sowon-dev.github.io/2022/03/07/220307Server-tomcat/</guid>
-      <pubDate>Mon, 07 Mar 2022 02:55:29 GMT</pubDate>
-      
-      <description>&lt;p&gt;클라이언트가 요청을 보내면 톰캣 내부에서는 어떤 일이 일어날까?&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>클라이언트가 요청을 보내면 톰캣 내부에서는 어떤 일이 일어날까?</p><a id="more"></a><h2 id="톰캣-서버-내부-구조"><a href="#톰캣-서버-내부-구조" class="headerlink" title="톰캣 서버 내부 구조"></a>톰캣 서버 내부 구조</h2><p><img src="https://flylib.com/books/4/15/1/html/2/id_9807/fig21_01.jpg" alt="https://flylib.com/books/4/15/1/html/2/id_9807/fig21_01.jpg"></p><p>Tomcat Server안에 Service가 있고 그 서비스를 처리하는 것이 Engine(Catalina)이다.<br>Engine안에는 Host가 여러 개가 있을 수 있다.<br>Host안에는 여러 개의 Context가 있을 수 있다.<br>여기사 Context란 쉽게 말해 스프링프로젝트라고 생각하면 된다.<br>Context안에 있는 Servlet이 여러개 있는데 각 Servlet은 쉽게 Controller로 생각할 수 있다.</p><p><img src="https://imgs.developpaper.com/imgs/1195016741-5cf1158dc0127_articlex.png" alt="https://imgs.developpaper.com/imgs/1195016741-5cf1158dc0127_articlex.png"></p><p>클라이언트가 먼저 url을 요청하면 Thread Pool로 간다. Thread Pool은 요청을 받은 후에 만들면 늦으니까 요청을 받기 전 미리 만들어 놓는다.<br>그 중 요청을 처리하고 있지 않은 Thread 하나가 요청을 받게된다.<br>요청 프로토콜에 따라 Connector가 동일한 프로토콜을 연결해주며 보통 HTTP1.1 프로토콜이다.<br>프로토콜이 프로세스를 처리해서 Engline(Catalina)을 거치고 요청 받은 Host안의 Context까지 찾은 다음 해당 Servlet을 호출한다.<br>Dispatcher Servlet이 요청받은 Controller의 method를 찾아 호출한다.</p><p><br><br><br></p><h2 id="설정파일"><a href="#설정파일" class="headerlink" title="설정파일"></a>설정파일</h2><ul><li>톰캣설치경로/conf/server.xml : 톰캣 서버 설정 파일</li><li>톰캣설치경로/conf/web.xml : 톰캣의 모든 프로젝트의 공통설정 파일</li><li>프로젝트이름/WEB-INF/web.xml : 프로젝트(Context)의 개별 설정</li></ul><p>공통설정파일이 먼저 적용된 후 프로젝트 개별 설정파일이 적용된다.</p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://tomcat.apache.org/tomcat-9.0-doc/architecture/overview.html">https://tomcat.apache.org/tomcat-9.0-doc/architecture/overview.html</a></li><li><a href="https://imgs.developpaper.com/imgs/1195016741-5cf1158dc0127_articlex.png">https://imgs.developpaper.com/imgs/1195016741-5cf1158dc0127_articlex.png</a></li><li><a href="https://sowon-dev.github.io/2020/10/04/201005jspProcessVSThreadNWebServerVSWAS/#%EC%9B%B9%EC%84%9C%EB%B2%84-WEB-SERVER-VS-%EC%9B%B9%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%84%9C%EB%B2%84-WAS-Web-Application-Server">웹서버(WEB SERVER) VS 웹어플리케이션서버(WAS, Web Application Server)</a></li><li><a href="https://sowon-dev.github.io/2020/08/16/200817jspi/#Servlet%EA%B8%B0%EC%B4%88">Servlet : Servlet용어정리</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Server/">Server</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/Tomcat/">Tomcat</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/03/07/220307Server-tomcat/#disqus_thread</comments>
       
     </item>
     
