@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Sat, 04 Jun 2022 14:46:42 GMT</pubDate>
+    <pubDate>Sun, 05 Jun 2022 14:38:30 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>DOM과 가상DOM</title>
+      <link>https://sowon-dev.github.io/2022/06/05/220605VitualDOM/</link>
+      <guid>https://sowon-dev.github.io/2022/06/05/220605VitualDOM/</guid>
+      <pubDate>Sun, 05 Jun 2022 05:17:57 GMT</pubDate>
+      
+      <description>&lt;p&gt;React나 Vue.js를 쓸때 가상돔을 많이 얘기한다.&lt;br&gt;가상돔을 제대로 알고 싶어 DOM이 뭔지 공부해봤다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>React나 Vue.js를 쓸때 가상돔을 많이 얘기한다.<br>가상돔을 제대로 알고 싶어 DOM이 뭔지 공부해봤다.</p><a id="more"></a><h2 id="DOM-Document-Object-Model"><a href="#DOM-Document-Object-Model" class="headerlink" title="DOM(Document Object Model)"></a>DOM(Document Object Model)</h2><p>HTML태그들을 작성하면 자바스크립트는 어떻게 읽을까? 한 번쯤 궁금했을 것이다.<br>자바스크립트는 HTML, head, body등의 요소를 구조화 한다. 구조화에는 다양한 방식이 있다. 이때 DOM은 트리구조를 형성한다. 즉 상위 노드와 하위 노드가 트리처럼 연결되어 있는데 여기서 만약 서른마흔다섯번째 노드를 update시키면 어떻게 될까?<br>DOM은 수많은 노드들 중에서 특정 노드를 찾는 과정에서 비용이 발생한다. 만약 한 번의 update가 연결된 다른 500개의 노드들에 변경을 일으킨다면? 점점 더 많은 비용이 발생하게 된다.</p><p>이를 해결하기 위해 등장한 것이 바로 가상돔(Virtual DOM)이다.</p><p><br><br><br></p><h2 id="가상돔-Virtual-DOM"><a href="#가상돔-Virtual-DOM" class="headerlink" title="가상돔(Virtual DOM)"></a>가상돔(Virtual DOM)</h2><p>가상돔은 이름 그대로 실제DOM이 아닌 가짜DOM(HTML돔의 추상화)이다.<br>웹페이지에서 사용자에 의해 이벤트가 발생된다면(update) 실제돔을 바로 수정하지않고, 가상돔을 랜더링한 뒤 이전의 돔과 비교해서 변경된 부분만 실제돔에 반영한다. 이로써 실제돔의 변경을 최소화하여 성능을 향상시킬 수 있다.</p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/JAVASCRIPT/">JAVASCRIPT</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2022/06/05/220605VitualDOM/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[Vue]체크박스 모두 선택 기능 구현하기</title>
@@ -440,29 +461,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/03/16/220316DispatcherServlet/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[STS] 자바버전 안 바뀔때 해결! 자바버전 바꾸는 방법(1.8에서 11로)</title>
-      <link>https://sowon-dev.github.io/2022/03/11/220311STS-changeJavaVersion/</link>
-      <guid>https://sowon-dev.github.io/2022/03/11/220311STS-changeJavaVersion/</guid>
-      <pubDate>Fri, 11 Mar 2022 03:54:33 GMT</pubDate>
-      
-      <description>&lt;p&gt;자바버전을 깔~끔하게 1.8에서 11로 바꿔보자!&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>자바버전을 깔~끔하게 1.8에서 11로 바꿔보자!</p><a id="more"></a><h2 id="1-Preferences-설정"><a href="#1-Preferences-설정" class="headerlink" title="1 Preferences 설정"></a>1 Preferences 설정</h2><p>Window -&gt; Preferences -&gt; 검색어: Compiler -&gt; Java 하위 Compiler클릭 -&gt; JDK Compliance에서 Compiler compliance level에서 1.8을 11로 변경<br><img src="/img/220311javaVersion1.JPG" alt=""></p><p><br><br><br></p><h2 id="2-pom-xml-설정"><a href="#2-pom-xml-설정" class="headerlink" title="2 pom.xml 설정"></a>2 pom.xml 설정</h2><p>pom.xml을 더블클릭하여 연 뒤 아래 2가지를 수정한다.</p><ol><li><p>properties 하위 java-version을 1.8에서 11로 변경<br><img src="/img/220311javaVersion2.JPG" alt=""></p></li><li><p>plugins 하위 artifactId가 maven-compiler-plugin를 찾은 뒤 그 하위 source와 target을 ${java-version} 으로 변경</p><ul><li><code>${java-version}</code>으로 설정해놓으면 1번에서 설정한 java-version을 그대로 따라가므로 11로 변경하든 16으로 변경하든 다시 1.8로 변경하든 동일한 자바 버전을 바라봐서 추후 변경할 필요가 없다.<br><img src="/img/220311javaVersion3.JPG" alt=""></li></ul></li></ol>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/STS/">STS</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/03/11/220311STS-changeJavaVersion/#disqus_thread</comments>
       
     </item>
     
