@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Sun, 05 Jun 2022 14:38:30 GMT</pubDate>
+    <pubDate>Sat, 11 Jun 2022 14:56:53 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>findAsync와 find의 차이점</title>
+      <link>https://sowon-dev.github.io/2022/06/11/220611findAsyncvsfind/</link>
+      <guid>https://sowon-dev.github.io/2022/06/11/220611findAsyncvsfind/</guid>
+      <pubDate>Sat, 11 Jun 2022 05:34:55 GMT</pubDate>
+      
+      <description>&lt;p&gt;닷넷프레임워크를 사용하다보면서 find 메서드를 사용했는데 비주얼스튜디오가 FindAsync를 추천해줬다.&lt;br&gt;사용해보니 둘 다 동일한 결과가 나왔는데 둘의 차이점이 궁금해서 공부해보았다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>닷넷프레임워크를 사용하다보면서 find 메서드를 사용했는데 비주얼스튜디오가 FindAsync를 추천해줬다.<br>사용해보니 둘 다 동일한 결과가 나왔는데 둘의 차이점이 궁금해서 공부해보았다.</p><a id="more"></a><h2 id="Find"><a href="#Find" class="headerlink" title="Find"></a>Find</h2><p>비교적 간단한 구문이다.<br>모든 문서를 한 번에 조회한다.<br>따라서 데이터양이 작을 때 사용하면 좋다.</p><p><br><br></p><h2 id="FindAsync"><a href="#FindAsync" class="headerlink" title="FindAsync"></a>FindAsync</h2><p>모든 DB를 한 번에 조회하지 않는다. return값이 cursor라서 DB cursor에서 문서를 하나씩 검색할 수 있는 interface를 제공한다.<br>따라서 데이터양이 클 때 사용하면 좋다.</p><p>여기서 DB cursor란?<br>리문에 의해서 반환되는 결과값들을 저장하는 메모리공간을 말한다.</p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.data.entity.dbset.findasync?view=entity-framework-6.2.0">https://docs.microsoft.com/en-us/dotnet/api/system.data.entity.dbset.findasync?view=entity-framework-6.2.0</a></li><li><a href="https://stackoverflow.com/questions/30650722/difference-between-find-and-findasync">https://stackoverflow.com/questions/30650722/difference-between-find-and-findasync</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/NET/">.NET</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/C/">C#</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2022/06/11/220611findAsyncvsfind/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>DOM과 가상DOM</title>
@@ -440,27 +463,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/03/22/220322SQLdiff/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>DispatcherSerlvet 씹어먹기</title>
-      <link>https://sowon-dev.github.io/2022/03/16/220316DispatcherServlet/</link>
-      <guid>https://sowon-dev.github.io/2022/03/16/220316DispatcherServlet/</guid>
-      <pubDate>Wed, 16 Mar 2022 05:34:04 GMT</pubDate>
-      
-      <description>&lt;p&gt;SpringMVC에선 DispatcherSerlvet가 아주 중요한 역할을 한다.&lt;br&gt;잠깐 SpringMVC란 무엇일까?&lt;br&gt;Spring프레임워크에 Model, View, Controller를 븐리한 디자인 패턴을 말한다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>SpringMVC에선 DispatcherSerlvet가 아주 중요한 역할을 한다.<br>잠깐 SpringMVC란 무엇일까?<br>Spring프레임워크에 Model, View, Controller를 븐리한 디자인 패턴을 말한다.</p><a id="more"></a><p>Spring 프레임워크는 개발을 지원하기 위해 다양한 clas를 제공하는데 그 중 아래 3가지를 이번 글에서 다룰 것이다.</p><ol><li>DispatcherServlet</li><li>HandlerMapping</li><li>ViewResolver</li></ol><table><thead><tr><th align="center">용어</th><th align="center">역할</th><th align="center">예시</th></tr></thead><tbody><tr><td align="center">DispatcherServlet</td><td align="center">클라이언트의 요청을 받아서 HandlerMapping에 넘긴다</td><td align="center"></td></tr><tr><td align="center">HandlerMapping</td><td align="center">Key-Value구조로 URL-메서드를 저장한 table에서 클라이언트의 요청을 처리할 Controller를 찾는 역할</td><td align="center">@RequestMapping(“/url”) annotaion사용하면 Controller URL Mapping한다.</td></tr><tr><td align="center">ViewResolver</td><td align="center">Controller가 리턴한 View Name에 prefix와 suffix를 적용하여 반환한다.</td><td align="center"></td></tr></tbody></table><p><br><br><br></p><h2 id="SpringMVC-요청-처리-과정"><a href="#SpringMVC-요청-처리-과정" class="headerlink" title="SpringMVC 요청 처리 과정"></a>SpringMVC 요청 처리 과정</h2><p><img src="https://docs.spring.io/spring-framework/docs/2.0.8/reference/images/mvc.png" alt="https://docs.spring.io/spring-framework/docs/2.0.8/reference/mvc.html"></p><ol><li>클라이언트가 요청을 한다. <ul><li>ex) /admin/post/add</li></ul></li><li>DispatcherServlet는 어떤 메서드가 좋은지 HandlerMapping에게 물어본다.</li><li>HandlerMapping는 URL매칭테이블에서 뒤져서 해당 url과 일치하는 메서드를 반환한다. <ul><li>ex) add()</li></ul></li><li>DispatcherServlet는 받은 메서드를 가지고 어떤 HandlerAdapter가 처리할 수 있는 지 확인후 특정 HandlerAdapter에 넘겨준다.</li><li>HandlerAdapter가 받은 정보로 Controller에게 전달한다. <ul><li>ex) @RequestMapping(“/admin/post/add”) public String add(){ return “addForm” }</li><li>스프링의 큰 특징은 관심사의 분리이다. DispatcherServlet이 직접 Controller를 호출하는 것보다 HandlerAdapter를 통함으로써 느슨한 연결이 된다.</li><li>느슨한 연결은 어떤 변경에서든지 유리하게 대처할 수 있다. =&gt; 즉, 변경의 유리한 설계</li></ul></li><li>Controller 반환값을 HandlerAdapter에게 넘겨준다.<ul><li>ex) addForm</li></ul></li><li>HandlerAdapter는 그 값을 DispatcherServlet에게 전달한다.<ul><li>ex) addForm</li></ul></li><li>DispatcherServlet는 ViewResolver에게 전달한다. <ul><li>ex) addForm</li></ul></li><li>ViewResolver는 prefix와 suffix를 적용한 뒤 실제 화면을 알아내서 DispatcherServlet에게 반환한다.<ul><li>ex) /WEB-INF/views/addForm.jsp</li></ul></li><li>DispatcherServlet은 해당 뷰를 호출하면서 Model도 함께 전달한다.</li><li>화면은 Model객체를 가져와서 응답결과를 만들고 클라이언트에게 응답결과를 전달한다.</li></ol>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
-      
-      
-      
-      <comments>https://sowon-dev.github.io/2022/03/16/220316DispatcherServlet/#disqus_thread</comments>
       
     </item>
     
