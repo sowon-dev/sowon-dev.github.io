@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Mon, 27 Jun 2022 08:19:11 GMT</pubDate>
+    <pubDate>Tue, 28 Jun 2022 08:40:57 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>(WIP)[Vue]computed를 찾다가 명령형프로그래밍과 선언형 프로그래밍 차이점까지 알게된 썰</title>
+      <link>https://sowon-dev.github.io/2022/06/27/220628Vuejs-computed/</link>
+      <guid>https://sowon-dev.github.io/2022/06/27/220628Vuejs-computed/</guid>
+      <pubDate>Mon, 27 Jun 2022 21:35:59 GMT</pubDate>
+      
+      <description>&lt;p&gt;VueJS로 화면을 구성하다가 computed와 watch를 사용하는 데 있어 차이점이 궁금했다.&lt;br&gt;둘이 역할이 비슷한 거 같은데 어떤 차이가 있을까?&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>VueJS로 화면을 구성하다가 computed와 watch를 사용하는 데 있어 차이점이 궁금했다.<br>둘이 역할이 비슷한 거 같은데 어떤 차이가 있을까?</p><a id="more"></a><p><a href="https://kr.vuejs.org/v2/guide/computed.html#computed-%EC%86%8D%EC%84%B1-vs-watch-%EC%86%8D%EC%84%B1">Vue.js 한글 공식문서</a>에도 이와 관련해서 자세히 설명되어있다.</p><h2 id="computed-속성"><a href="#computed-속성" class="headerlink" title="computed 속성"></a>computed 속성</h2><p>원래 computed 속성은 계산이 필요한 속성이 반복 호출될때 사용하는 속성이다.<br>아래 코드와 같이 표현식으로 간단한 계산을 할 수 있지만 저 코드가 반복되서 사용되어야한다면? 여러 코드에 반복사용될수록 소스 코드가 지저분해질것이다.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 간단한 계산</span></span><br><span class="line"></span><br><span class="line">&lt;p&gt;책을 가지고 있다:&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">&lt;span&gt;&#123;&#123; author.books.length &gt; 0 ? 'Yes' : 'No' &#125;&#125;&lt;/</span>span&gt;</span><br></pre></td></tr></table></figure><p>이때 computed 속성을 사용할 수 있다.<br>Vue코드에서 아래처럼 호출한 뒤</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  data() &#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      author: &#123;</span><br><span class="line">        name: <span class="string">'John Doe'</span>,</span><br><span class="line">        books: [</span><br><span class="line">          <span class="string">'Vue 2 - Advanced Guide'</span>,</span><br><span class="line">          <span class="string">'Vue 3 - Basic Guide'</span>,</span><br><span class="line">          <span class="string">'Vue 4 - The Mystery'</span></span><br><span class="line">        ]</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  computed: &#123;</span><br><span class="line">    <span class="comment">// 계산된 값을 반환하는 속성</span></span><br><span class="line">    publishedBooksMessage() &#123;</span><br><span class="line">      <span class="comment">// `this`는 컴포넌트 인스턴스를 가리킵니다.</span></span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">this</span>.author.books.length &gt; <span class="number">0</span> ? <span class="string">'Yes'</span> : <span class="string">'No'</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>화면에서는 아래처럼 간단하게 쓸 수 있어 가독성이 좋아진다.</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>책을 가지고 있다:<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span>&gt;</span>&#123;&#123; publishedBooksMessage &#125;&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="watch"><a href="#watch" class="headerlink" title="watch"></a>watch</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="명령형-프로그래밍-vs-선언형-프로그래밍"><a href="#명령형-프로그래밍-vs-선언형-프로그래밍" class="headerlink" title="명령형 프로그래밍 vs. 선언형 프로그래밍"></a>명령형 프로그래밍 vs. 선언형 프로그래밍</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://ui.dev/imperative-vs-declarative-programming">https://ui.dev/imperative-vs-declarative-programming</a></li><li><a href="https://v3-docs.vuejs-korea.org/guide/essentials/computed.html#basic-example">https://v3-docs.vuejs-korea.org/guide/essentials/computed.html#basic-example</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/JAVASCRIPT/">JAVASCRIPT</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/VueJS/">VueJS</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2022/06/27/220628Vuejs-computed/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[요약/후기]The End Of Localhost</title>
@@ -434,33 +457,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/04/15/220415ODBC/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>try catch와 throws, throw의 차이</title>
-      <link>https://sowon-dev.github.io/2022/04/13/220413trycatchvsthrow/</link>
-      <guid>https://sowon-dev.github.io/2022/04/13/220413trycatchvsthrow/</guid>
-      <pubDate>Wed, 13 Apr 2022 04:52:33 GMT</pubDate>
-      
-      <description>&lt;p&gt;예외처리기법은 크게 3가지가 있다.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;try catch를 통한 예외처리&lt;/li&gt;
-&lt;li&gt;throw로 그냥 예외발생시키기&lt;/li&gt;
-&lt;li&gt;throws 키워드를 통한 예외처리 위임&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;이 중 try catch와 throw의 차이는 무엇일까?&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>예외처리기법은 크게 3가지가 있다.</p><ol><li>try catch를 통한 예외처리</li><li>throw로 그냥 예외발생시키기</li><li>throws 키워드를 통한 예외처리 위임</li></ol><p>이 중 try catch와 throw의 차이는 무엇일까?</p><a id="more"></a><h2 id="try-catch와-throws의-차이"><a href="#try-catch와-throws의-차이" class="headerlink" title="try catch와 throws의 차이"></a>try catch와 throws의 차이</h2><p>throws의 예외를 던지는 것, 즉 위임이다. 이는 처리와는 다르다.<br>try catch는 예외를 받아서 처리하는 것이다. 이는 처리이다. catch구문에서 사용자가 흐름을 능동적으로 제어할 수 있다.</p><p><br><br><br></p><h2 id="throws"><a href="#throws" class="headerlink" title="throws"></a>throws</h2><p>throws는 메서드에서 처리해야 할 하나 이상의 예외를 메서드를 호출한 곳으로 던져버린다.<br>이러한 위임은 처리와는 다르다.<br>try catch사용시 catch블록에서 예외를 처리해서 없애버린다.<br>BUT 위임은 예외를 없애지 못하고 그냥 호출한 곳으로 예외를 전달만 한다.<br>예외를 전달받은 메서드는 다시 예외 처리 책임이 발생한다.</p><p>throws를 쓰면 예외처리를 해줘야하는 번거로움이 있는데 왜 사용할까?<br>주로 개발자가 직접 정의하는 예외를 발생시키고 싶은 경우 사용한다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">customThrowExample</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line"><span class="comment">// 다시 예외처리해줘야한다.</span></span><br><span class="line"><span class="keyword">throw</span> <span class="keyword">new</span> Exception();</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">customThrowExample();</span><br><span class="line">&#125; <span class="keyword">catch</span> (Exception e)&#123;</span><br><span class="line">System.out.println(<span class="string">"catch구문은 잡히지않는다. try에서 customThrowExample으로 직접 예외를 발생시킴"</span>);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://sowon-dev.github.io/2020/07/21/200722javai/">자바 Error와 Exception</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/JAVA/">JAVA</category>
-      
-      
-      
-      <comments>https://sowon-dev.github.io/2022/04/13/220413trycatchvsthrow/#disqus_thread</comments>
       
     </item>
     

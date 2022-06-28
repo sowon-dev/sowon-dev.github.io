@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/VueJS/</loc>
+        <lastmod>2022-06-28T08:40:57.261Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/GeekNews/</loc>
         <lastmod>2022-06-27T08:19:11.257Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -12,13 +19,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/C/</loc>
         <lastmod>2022-06-12T09:38:18.962Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/VueJS/</loc>
-        <lastmod>2022-06-04T14:46:42.506Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
