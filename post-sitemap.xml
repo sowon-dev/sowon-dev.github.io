@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2022/07/07/220708DouleColonOperator/</loc>
+        <lastmod>2022-07-09T14:33:00.491Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2020/10/04/201005jspSessionVSCookie/</loc>
         <lastmod>2022-07-08T05:31:35.997Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -26,14 +34,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2021/09/06/210907Jpa-entityVSDto/</loc>
         <lastmod>2022-07-08T05:25:42.773Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/07/07/220708DouleColonOperator/</loc>
-        <lastmod>2022-07-08T05:15:08.856Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
