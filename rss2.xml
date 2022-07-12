@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Mon, 11 Jul 2022 08:00:21 GMT</pubDate>
+    <pubDate>Tue, 12 Jul 2022 08:44:27 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[리액트]SPA 동작 순서</title>
+      <link>https://sowon-dev.github.io/2022/07/11/220712React-spa/</link>
+      <guid>https://sowon-dev.github.io/2022/07/11/220712React-spa/</guid>
+      <pubDate>Mon, 11 Jul 2022 23:33:34 GMT</pubDate>
+      
+      <description>&lt;p&gt;SPA는 Single Page Application의 약자로 한 번 웹 페이지를 로딩하면 사용자가 새로고침하지 않는 이상 페이지를 새로 로딩하지 않는 애플리케이션을 의미한다.&lt;br&gt;이게 무슨 의미일까?&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>SPA는 Single Page Application의 약자로 한 번 웹 페이지를 로딩하면 사용자가 새로고침하지 않는 이상 페이지를 새로 로딩하지 않는 애플리케이션을 의미한다.<br>이게 무슨 의미일까?</p><a id="more"></a><h2 id="React-동작순서"><a href="#React-동작순서" class="headerlink" title="React 동작순서"></a>React 동작순서</h2><ol><li>index.html 렌더링<ul><li>HTML이 body태그를 렌더링하다가 마지막에 bundle.js 스크립트를 로딩하게 되고 거기에 index.js가 포함되어있음.</li></ul></li><li>index.js 실행<ul><li>ReactDOM.render() 함수가 실행됨 -&gt; 매개변수가 <code>&lt;APP /&gt;</code>이라서 해당 element를 렌더링하게 됨.</li></ul></li><li>root element 하위에 React.js가 생성한 HTML element 추가됨</li><li>root element 하위 element 렌더링</li></ol><p><br><br><br></p><h2 id="SPA에서-페이지를-변경하고-싶다면"><a href="#SPA에서-페이지를-변경하고-싶다면" class="headerlink" title="SPA에서 페이지를 변경하고 싶다면?"></a>SPA에서 페이지를 변경하고 싶다면?</h2><p>root의 하위 엘리먼트를 다른 HTMl로 수정해야한다.<br>HOW?<br>fetch나 ajax등의 함수로 서버에 데이터를 요청한 뒤 응답 데이터를 받음 -&gt; js내에서 HTML 재구성된다.</p><p>이렇게 서버에게 새 HTML 페이지를 요청하지 않고 데이터를 받은 다음에 js가 동적으로 HTML 재구성해서 만드는 클라이언트 애플리케이션을 SPA라고 한다.<br>이 렌더링 과정을 Client-side Rendering이라고 함.</p><ul><li><a href="https://sowon-dev.github.io/2022/01/19/220119prjtreview/#Keep">참고: SSR과 CSR 중 뭐를 우선순위로 두는 게 좋을까?</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/React/">React</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2022/07/11/220712React-spa/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[JPA] 리턴타입이 옵셔널(Optional)인 이유는?</title>
@@ -432,29 +453,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/04/20/220420XSS/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>input 공백 입력방지하는 가장 쉬운 방법</title>
-      <link>https://sowon-dev.github.io/2022/04/19/220419trim/</link>
-      <guid>https://sowon-dev.github.io/2022/04/19/220419trim/</guid>
-      <pubDate>Tue, 19 Apr 2022 05:32:21 GMT</pubDate>
-      
-      <description>&lt;p&gt;input태그의 value가 공백일 경우 유효성체크를 해야한다.&lt;br&gt;머릿속에는 여러 가지 방법이 둥둥 떠올랐다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>input태그의 value가 공백일 경우 유효성체크를 해야한다.<br>머릿속에는 여러 가지 방법이 둥둥 떠올랐다.</p><a id="more"></a><p>정규표현식으로 아예 패턴을 만들까? 그냥 trim을 쓸까? validation 라이브러리를 쓸까?<br>이 중 가장 접근이 빠른 방법은 무엇일까?<br>프로젝트는 이미 제이쿼리를 쓰고 있었기에 그냥 trim을 쓰는 것이 에너지를 아껴 다른 코드를 더 집중해서 볼 수 있는 길이라고 판단했다. </p><h2 id="기존-코드"><a href="#기존-코드" class="headerlink" title="기존 코드"></a>기존 코드</h2><p>기존 코드는 value가 빈 값인지만 확인하기 때문에 공백을 입력할 경우 if 조건절에 걸리지 않는다.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    $(<span class="string">"button[data-role=submit]"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;   </span><br><span class="line">      <span class="keyword">if</span>($(<span class="string">'input[name="nm"]'</span>).val() == <span class="string">''</span>)&#123;</span><br><span class="line">        toastr.info(<span class="string">'이름은 필수 입력입니다.'</span>);</span><br><span class="line">        $(<span class="string">'input[name="nm"]'</span>).val(<span class="string">''</span>);</span><br><span class="line">        $(<span class="string">'input[name="nm"]'</span>).focus();</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="공백-입력시-유효성-체크-코드"><a href="#공백-입력시-유효성-체크-코드" class="headerlink" title="공백 입력시 유효성 체크 코드"></a>공백 입력시 유효성 체크 코드</h2><p>trim()만 넣어주면 해결!</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    $(<span class="string">"button[data-role=submit]"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;   </span><br><span class="line">      <span class="keyword">if</span>($(<span class="string">'input[name="nm"]'</span>).val().trim() == <span class="string">''</span>)&#123;</span><br><span class="line">        toastr.info(<span class="string">'이름은 필수 입력입니다.'</span>);</span><br><span class="line">        $(<span class="string">'input[name="nm"]'</span>).val(<span class="string">''</span>);</span><br><span class="line">        $(<span class="string">'input[name="nm"]'</span>).focus();</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/jQuery/">jQuery</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/04/19/220419trim/#disqus_thread</comments>
       
     </item>
     
