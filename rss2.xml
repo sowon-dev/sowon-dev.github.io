@@ -9,7 +9,7 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Thu, 14 Jul 2022 14:45:38 GMT</pubDate>
+    <pubDate>Thu, 14 Jul 2022 14:49:17 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -18,11 +18,11 @@
       <guid>https://sowon-dev.github.io/2022/07/14/220714dtovsmodelvsentity/</guid>
       <pubDate>Thu, 14 Jul 2022 05:34:26 GMT</pubDate>
       
-      <description>&lt;p&gt;DTO와 Entity의 역할 차이는 확실한데 Model이 헷갈려서 공부해봤다.&lt;/p&gt;</description>
+      <description>&lt;p&gt;스프링프레임워크를 공부하면서 DTO와 Entity의 역할 차이는 확실한데 Model의 개념과 셋의 차이점이 궁금해 추가로 공부해봤다.&lt;br&gt;닷넷프레임워크를 사용할땐 대부분의 클래스를 Model라고 칭했기 때문에 더 혼란스러웠다.&lt;br&gt;언어별로 부르는 명칭이 다른 듯하다. 사실 명칭보다 더 중요한 것은 각 클래스가 어떤 역할을 하는지 정확히 아는 것이다.&lt;/p&gt;</description>
       
       
       
-      <content:encoded><![CDATA[<p>DTO와 Entity의 역할 차이는 확실한데 Model이 헷갈려서 공부해봤다.</p><a id="more"></a><table><thead><tr><th align="center">명칭</th><th align="center">역할</th></tr></thead><tbody><tr><td align="center">DTO</td><td align="center">클라이언트의 데이터를 받는 역할. 클라이언트에서 사용하는 것이므로 노출되도 상관없다.</td></tr><tr><td align="center">Model</td><td align="center">비즈니스 데이터를 담는 역할</td></tr><tr><td align="center">Entity</td><td align="center">데이터베이스의 테이블과 스키마를 표현하는 역할. DB컬럼과 연결되기때문에 필드명이 노출되서는 안된다.</td></tr></tbody></table><ul><li><a href="https://sowon-dev.github.io/2021/09/06/210907Jpa-entityVSDto/">참고: Entity VS DTO 차이점, 컨트롤러에서는 뭘 받아야할까?</a></li></ul><h2 id="예시"><a href="#예시" class="headerlink" title="예시"></a>예시</h2><p>공부하면서 내가 생각해 본 예시이다.<br>결제프로그램이 있다고 하자.</p><table><thead><tr><th align="center">명칭</th><th align="center">예시</th></tr></thead><tbody><tr><td align="center">DTO</td><td align="center">클라이언트가 입력한 카드정보, 쿠폰정보, 결정정보 파라미터로 전달한 걸 컨트롤러에서 받음</td></tr><tr><td align="center">Model</td><td align="center">유저별 결제 혜택, 포인트 차감, 통신사할인등 중간에 연산이나 외부시스템연동할때 쓸 필드들을 model에 담아서 처리함</td></tr><tr><td align="center">Entity</td><td align="center">연산되고 DB에 기록되어야 할 데이터(유저ID, 연산 후 포인트등)를 담아서 update시킴</td></tr></tbody></table>]]></content:encoded>
+      <content:encoded><![CDATA[<p>스프링프레임워크를 공부하면서 DTO와 Entity의 역할 차이는 확실한데 Model의 개념과 셋의 차이점이 궁금해 추가로 공부해봤다.<br>닷넷프레임워크를 사용할땐 대부분의 클래스를 Model라고 칭했기 때문에 더 혼란스러웠다.<br>언어별로 부르는 명칭이 다른 듯하다. 사실 명칭보다 더 중요한 것은 각 클래스가 어떤 역할을 하는지 정확히 아는 것이다.</p><a id="more"></a><table><thead><tr><th align="center">명칭</th><th align="center">역할</th></tr></thead><tbody><tr><td align="center">DTO</td><td align="center">클라이언트의 데이터를 받는 역할. 클라이언트에서 사용하는 것이므로 노출되도 상관없다.</td></tr><tr><td align="center">Model</td><td align="center">비즈니스 데이터를 담는 역할</td></tr><tr><td align="center">Entity</td><td align="center">데이터베이스의 테이블과 스키마를 표현하는 역할. DB컬럼과 연결되기때문에 필드명이 노출되서는 안된다.</td></tr></tbody></table><ul><li><a href="https://sowon-dev.github.io/2021/09/06/210907Jpa-entityVSDto/">참고: Entity VS DTO 차이점, 컨트롤러에서는 뭘 받아야할까?</a></li></ul><h2 id="예시"><a href="#예시" class="headerlink" title="예시"></a>예시</h2><p>공부하면서 내가 생각해 본 예시이다.<br>결제프로그램이 있다고 하자.</p><table><thead><tr><th align="center">명칭</th><th align="center">예시</th></tr></thead><tbody><tr><td align="center">DTO</td><td align="center">클라이언트가 입력한 카드정보, 쿠폰정보, 결정정보 파라미터로 전달한 걸 컨트롤러에서 받음</td></tr><tr><td align="center">Model</td><td align="center">유저별 결제 혜택, 포인트 차감, 통신사할인등 중간에 연산이나 외부시스템연동할때 쓸 필드들을 model에 담아서 처리함</td></tr><tr><td align="center">Entity</td><td align="center">연산되고 DB에 기록되어야 할 데이터(유저ID, 연산 후 포인트등)를 담아서 update시킴</td></tr></tbody></table><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://itzone.com.vn/en/article/entity-domain-model-and-dto-why-so-many/">Entity, domain model and DTO – why so many?</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
