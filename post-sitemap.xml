@@ -8,8 +8,56 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2022/07/14/220715wildcard-vs-typeparameter/</loc>
+        <lastmod>2022-07-15T08:33:13.929Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/07/19/200720javai2/</loc>
+        <lastmod>2022-07-15T07:05:09.929Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/06/02/220603VueJS-checkall/</loc>
+        <lastmod>2022-07-15T06:53:35.838Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/06/05/220605VitualDOM/</loc>
+        <lastmod>2022-07-15T06:53:21.906Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/06/27/220628Vuejs-computed/</loc>
+        <lastmod>2022-07-15T06:53:10.258Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2022/07/14/220714dtovsmodelvsentity/</loc>
-        <lastmod>2022-07-14T14:49:17.100Z</lastmod>
+        <lastmod>2022-07-15T06:52:28.553Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/07/07/220708DouleColonOperator/</loc>
+        <lastmod>2022-07-15T06:52:15.545Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -26,14 +74,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2022/07/10/220711JPA-optional/</loc>
         <lastmod>2022-07-11T08:00:21.159Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/07/07/220708DouleColonOperator/</loc>
-        <lastmod>2022-07-09T14:33:00.491Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -72,14 +112,6 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2022/06/27/220628Vuejs-computed/</loc>
-        <lastmod>2022-07-07T14:11:44.075Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/2022/06/26/220627Article-TheEndOfLocalhost/</loc>
         <lastmod>2022-06-27T08:19:11.257Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -98,22 +130,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2022/06/11/220611findAsyncvsfind/</loc>
         <lastmod>2022-06-12T09:38:18.962Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/06/05/220605VitualDOM/</loc>
-        <lastmod>2022-06-05T14:38:30.946Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/06/02/220603VueJS-checkall/</loc>
-        <lastmod>2022-06-04T14:46:42.506Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -3810,14 +3826,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/07/29/200730jspi/</loc>
         <lastmod>2020-07-30T08:31:43.976Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/07/19/200720javai2/</loc>
-        <lastmod>2020-07-30T03:53:42.575Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
