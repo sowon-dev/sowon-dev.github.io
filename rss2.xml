@@ -9,11 +9,11 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Sat, 16 Jul 2022 14:48:47 GMT</pubDate>
+    <pubDate>Sun, 17 Jul 2022 14:47:49 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>[WIP]제네릭(Generic) 타입파라미터(T) vs 와일드카드(?) 차이</title>
+      <title>제네릭(Generic) 타입파라미터(T) vs 와일드카드(?) 차이</title>
       <link>https://sowon-dev.github.io/2022/07/14/220715wildcard-vs-typeparameter/</link>
       <guid>https://sowon-dev.github.io/2022/07/14/220715wildcard-vs-typeparameter/</guid>
       <pubDate>Thu, 14 Jul 2022 21:47:59 GMT</pubDate>
