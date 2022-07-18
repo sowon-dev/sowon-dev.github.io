@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2022/07/17/220718CORS/</loc>
+        <lastmod>2022-07-18T06:18:33.684Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2022/07/14/220715wildcard-vs-typeparameter/</loc>
         <lastmod>2022-07-17T14:47:49.155Z</lastmod>
         <changefreq>weekly</changefreq>
