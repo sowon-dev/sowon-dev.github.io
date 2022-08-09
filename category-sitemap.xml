@@ -8,14 +8,28 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/categories/Spring/JPA/</loc>
-        <lastmod>2022-08-08T10:48:01.970Z</lastmod>
+        <loc>https://sowon-dev.github.io/categories/Database/MySQL/</loc>
+        <lastmod>2022-08-09T13:48:35.016Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Database/</loc>
+        <lastmod>2022-08-09T13:48:35.016Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/categories/Spring/</loc>
+        <lastmod>2022-08-09T13:14:08.546Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Spring/JPA/</loc>
         <lastmod>2022-08-08T10:48:01.970Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -80,20 +94,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/Server/</loc>
         <lastmod>2022-04-29T14:27:19.718Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Database/</loc>
-        <lastmod>2022-04-16T14:44:54.366Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Database/MySQL/</loc>
-        <lastmod>2022-03-22T15:23:50.558Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

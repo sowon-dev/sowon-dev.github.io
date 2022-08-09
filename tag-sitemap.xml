@@ -3,15 +3,22 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/MySQLDB/</loc>
+        <lastmod>2022-08-09T13:48:35.016Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/WEB/</loc>
-        <lastmod>2022-08-04T00:27:53.242Z</lastmod>
+        <lastmod>2022-08-09T13:14:08.546Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/tags/Book/</loc>
-        <lastmod>2022-08-04T00:27:53.242Z</lastmod>
+        <lastmod>2022-08-09T13:14:08.546Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -124,13 +131,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/SpringBoot/</loc>
         <lastmod>2022-04-05T14:15:05.893Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/MySQLDB/</loc>
-        <lastmod>2022-03-22T15:23:50.558Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

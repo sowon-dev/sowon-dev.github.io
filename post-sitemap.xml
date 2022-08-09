@@ -8,8 +8,8 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2022/08/08/220808SpringJPA-queryannotation/</loc>
-        <lastmod>2022-08-08T10:48:01.970Z</lastmod>
+        <loc>https://sowon-dev.github.io/2022/08/09/220809SQL-refact-subquery-to-join/</loc>
+        <lastmod>2022-08-09T13:48:35.016Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +17,15 @@
 
     <url>
         <loc>https://sowon-dev.github.io/2022/07/22/220722authenticationVSauthorization/</loc>
-        <lastmod>2022-08-04T00:27:53.242Z</lastmod>
+        <lastmod>2022-08-09T13:14:08.546Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/08/08/220808SpringJPA-queryannotation/</loc>
+        <lastmod>2022-08-08T10:48:01.970Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
