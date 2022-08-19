@@ -3,8 +3,15 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/EL/</loc>
+        <lastmod>2022-08-19T00:47:56.741Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/JSTL/</loc>
-        <lastmod>2022-08-18T14:50:01.977Z</lastmod>
+        <lastmod>2022-08-19T00:47:56.741Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
