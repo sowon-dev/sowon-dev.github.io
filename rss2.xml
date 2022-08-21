@@ -9,8 +9,33 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Thu, 18 Aug 2022 14:50:01 GMT</pubDate>
+    <pubDate>Sun, 21 Aug 2022 09:36:31 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>포인트 플랫폼 프로젝트를 끝내며 내가 배운 것</title>
+      <link>https://sowon-dev.github.io/2022/08/20/220715projectreivew6/</link>
+      <guid>https://sowon-dev.github.io/2022/08/20/220715projectreivew6/</guid>
+      <pubDate>Sat, 20 Aug 2022 23:44:17 GMT</pubDate>
+      
+      <description>&lt;p&gt;이번 프로젝트는 기능 구현상 어려운 점은 크게 없었으나 서비스 도메인이 처음 접하는 도메인이라 비즈니스를 이해하는데 꽤 시간이 걸렸다.&lt;br&gt;이번 프로젝트를 통해 그 어떤 새로운 서비스 도메인을 접해도 어디서부터 어떻게 흐름을 잡고 분석하면 될지 배울 수 있었다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>이번 프로젝트는 기능 구현상 어려운 점은 크게 없었으나 서비스 도메인이 처음 접하는 도메인이라 비즈니스를 이해하는데 꽤 시간이 걸렸다.<br>이번 프로젝트를 통해 그 어떤 새로운 서비스 도메인을 접해도 어디서부터 어떻게 흐름을 잡고 분석하면 될지 배울 수 있었다.</p><a id="more"></a><p>역시 노력하면 못할 게 없다. 물론 옆에 든든한 대리님과 팀장님이 있어서 모르는 부분을 중복해서 물어봐도 이해가 쏙쏙 되도록 잘 알려주셨다. 이 자리를 빌어 감사드립니다.<br>비즈니스로직에 의문을 품는 습관도 중요하다는 걸 알게되었다. 모두가 다 테스트 끝났다고 했지만 흐름을 이해하면서 하다보니 누락된 오류들을 여러 건 잡을 수 있었다.<br>문제가 발생되기 전에 미리 예방해서 참 뿌듯했다.</p><h2 id="Keep"><a href="#Keep" class="headerlink" title="Keep"></a>Keep</h2><p>현재 만족하고 있는 부분과 계속해서 이어갔으면 하는 부분</p><ol><li>서비스 도메인을 빠른 시일내에 이해하려고 노력한 부분: 어려운 도메인은 서비스 이해에서부터 시작된다. 처음하는 채굴과 코인, 포인트, 추천인등의 세계에서 나는 갈피를 못잡고 허우적대다 대리님의 주신 동아줄을 가까스로 잡을 수 있었다.</li><li>비즈니스 로직에 의심을 품은 부분: 단순히 숫자가 잘 나오는 지 테스트하는 게 아니라 유저입장과 관리자입장에서 각각 비즈니스 로직을 생각하고 현재 있는 로직에 오류는 없는 지 두번 체크한 부분은 참 잘했다. 덕분에 누락된 오류들과 애매모호한 로직들을 미리 잡고 정책을 만들 수 있었다. 뿌듯!</li><li>서버에 war배포를 직접 하겠다고 하고 해낸 부분: PuTTY와 FileZilla를 자주 접하려고 노력한 점은 참 잘했다. </li></ol><p><br><br><br></p><h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><p>개선이 필요하다고 생각되는 부분</p><ol><li>쉘스크립트 개념이 어려워서 다음에 이해해야지하고 넘어간 부분: 다음이란 없다. 다른 시니어 개발자와 소통할 수 있도록 지금부터 공부해야한다.</li><li>자바 스케줄러를 제대로 이해하려고 노력하지 않은 부분: 마찬가지로 다음이란 없다. 지금부터 익히 들어두며 스스로 공부해야한다.</li><li>트리구조 쿼리를 여전히 제대로 만들지 못하는 부분: recursive등 고급 SQL을 더 깊게 공부해야한다. 언제까지고 팀장님이 도와주실순 없다. 스스로 노력하자.</li><li>톰캣 배포 에러나는 부분은 전혀 갈피를 못잡고 팀장님께 도움을 요청한 부분: Server 배포를 추가로 공부하자.</li></ol><p><br><br><br></p><h2 id="Try"><a href="#Try" class="headerlink" title="Try"></a>Try</h2><p>Problem의 해결책이 될 수 있는 부분</p><ol><li>욕심내자. 생각으로 욕심내는 게아니라 행동으로 욕심내자. 실력은 스스로 키우는 것이다.</li></ol>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2022/08/20/220715projectreivew6/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[JSTL] 날짜 차이 계산하기</title>
@@ -440,29 +465,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/05/24/220525dotnet-Urlhelper/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[리액트]Error: Cannot find module loader에러 해결</title>
-      <link>https://sowon-dev.github.io/2022/05/22/220523ReactLoaderError/</link>
-      <guid>https://sowon-dev.github.io/2022/05/22/220523ReactLoaderError/</guid>
-      <pubDate>Sun, 22 May 2022 20:05:32 GMT</pubDate>
-      
-      <description>&lt;p&gt;리액트가 궁금해 정적사이트를 하나 만들고 있다.&lt;br&gt;script를 정의하고 &lt;code&gt;npm run start&lt;/code&gt;를 했는데 아래와 같은 오류가 발생했다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>리액트가 궁금해 정적사이트를 하나 만들고 있다.<br>script를 정의하고 <code>npm run start</code>를 했는데 아래와 같은 오류가 발생했다.</p><a id="more"></a><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">node:internal/modules/cjs/loader:<span class="number">361</span></span><br><span class="line">      <span class="keyword">throw</span> err;</span><br><span class="line">      ^</span><br><span class="line"></span><br><span class="line"><span class="built_in">Error</span>: Cannot find <span class="built_in">module</span> <span class="string">'/workspace/프로젝트명/node_modules/finalhandler/node_modules/debug/src/index.js'</span>. Please verify that the package.json has a valid <span class="string">"main"</span> entry</span><br><span class="line">    at tryPackage (node:internal/modules/cjs/loader:<span class="number">353</span>:<span class="number">19</span>)</span><br><span class="line">    at <span class="built_in">Function</span>.Module._findPath (node:internal/modules/cjs/loader:<span class="number">566</span>:<span class="number">18</span>)</span><br><span class="line">    at <span class="built_in">Function</span>.Module._resolveFilename (node:internal/modules/cjs/loader:<span class="number">919</span>:<span class="number">27</span>)</span><br><span class="line">    at <span class="built_in">Function</span>.Module._load (node:internal/modules/cjs/loader:<span class="number">778</span>:<span class="number">27</span>)</span><br><span class="line">    at Module.require (node:internal/modules/cjs/loader:<span class="number">1005</span>:<span class="number">19</span>)</span><br><span class="line">    at <span class="built_in">require</span> (node:internal/modules/cjs/helpers:<span class="number">102</span>:<span class="number">18</span>)</span><br><span class="line">  code: <span class="string">'MODULE_NOT_FOUND'</span>,</span><br><span class="line">  path: <span class="string">'/workspace/프로젝트명/node_modules/finalhandler/node_modules/debug/package.json'</span>,</span><br><span class="line">  requestPath: <span class="string">'debug'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>에러를 보면 알수있듯 loader에서 err가 잡혔다.<br>구글링하니 nodejs 레포의 이슈<a href="https://github.com/nodejs/help/issues/2644">(링크)</a>로 많은 개발자들이 해결방법을 주고받은 걸 확인할 수 있었다.<br>이 여러 방법중 나는 아래의 방법으로 해결했다.</p><p><br><br><br></p><h2 id="해결방법"><a href="#해결방법" class="headerlink" title="해결방법"></a>해결방법</h2><ol><li><code>npm cache clean --force</code> 명령어로 캐시를 삭제한다.</li><li>node_modules 폴더를 삭제한다.</li><li>package-lock.json 파일을 삭제한다.</li><li><code>npm install</code> 명령어를 입력하면 node_modules와 package-lock.json가 다시 설치된다.</li></ol><p>위 조치를 취한 후 <code>npm run start</code>를 하니 잘 실행된다.<br>해결!</p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/React/">React</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%A5%98%EC%9D%BC%EC%A7%80/">오류일지</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/05/22/220523ReactLoaderError/#disqus_thread</comments>
       
     </item>
     
