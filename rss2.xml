@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Sun, 21 Aug 2022 09:36:31 GMT</pubDate>
+    <pubDate>Tue, 23 Aug 2022 06:54:18 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>소장도서목록</title>
+      <link>https://sowon-dev.github.io/2022/08/22/bookList/</link>
+      <guid>https://sowon-dev.github.io/2022/08/22/bookList/</guid>
+      <pubDate>Mon, 22 Aug 2022 21:18:45 GMT</pubDate>
+      
+      <description>&lt;p&gt;소장도서목록입니다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>소장도서목록입니다.</p><a id="more"></a><h2 id="📚-소장도서"><a href="#📚-소장도서" class="headerlink" title="📚 소장도서"></a>📚 소장도서</h2><table><thead><tr><th align="center"><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=21396757">프로그래머의 뇌</a></th><th align="center"><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=22462163">좋은 코드, 나쁜 코드</a></th></tr></thead><tbody><tr><td align="center"><img src="http://image.kyobobook.co.kr/images/book/xlarge/650/x9791191600650.jpg" width="400px" height="300px"/>훌륭한 프로그래머가 알아야 할 인지과학의 모든 것</td><td align="center"><img src="http://image.kyobobook.co.kr/images/book/xlarge/896/x9791191600896.jpg" width="400px" height="300px"/>프로그래머의 코드 개선법</td></tr><tr><td align="center"><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788960777330&orderClick=LEa&Kc="><strong>자바 ORM 표준 JPA 프로그래밍</strong></a></td><td align="center"><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791161755656&orderClick=LEa&Kc="><strong>React.js, 스프링 부트, AWS로 배우는 웹 개발 101</strong></a></td></tr><tr><td align="center"><img src="http://image.kyobobook.co.kr/images/book/xlarge/330/x9788960777330.jpg" width="400px" height="300px"/>스프링 데이터 예제 프로젝트로 배우는 전자정부 표준 데이터베이스 프레임</td><td align="center"><img src="http://image.kyobobook.co.kr/images/book/xlarge/656/x9791161755656.jpg" width="400px" height="300px"/>SPA, REST API 기반 웹 애플리케이션 개발</td></tr><tr><td align="center"><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&linkClass=&barcode=9791190665643"><strong>자바 개발자를 위한 97가지 제안</strong></a></td><td align="center"><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9791191600414#N"><strong>그림으로 공부하는 TCP/IP 구조</strong></a></td></tr><tr><td align="center"><img src="http://image.kyobobook.co.kr/images/book/xlarge/643/x9791190665643.jpg" width="400px" height="300px"/>73인의 전문가에게 듣는 자바 컬렉션</td><td align="center"><img src="http://image.kyobobook.co.kr/images/book/xlarge/414/x9791191600414.jpg" width="400px" height="300px"/>인터넷, TCP/IP, 애플리케이션부터 보안, 네트워크 기기, 부하분산까지 네트워크의 기본 지식</td></tr><tr><td align="center"><a href=""></a></td><td align="center"><a href=""></a></td></tr><tr><td align="center"></td><td align="center"></td></tr></tbody></table>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/List/">List</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2022/08/22/bookList/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>포인트 플랫폼 프로젝트를 끝내며 내가 배운 것</title>
@@ -442,29 +465,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/06/02/220603VueJS-checkall/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[닷넷] Url.Action사용해서 원하는 URL연결하기</title>
-      <link>https://sowon-dev.github.io/2022/05/24/220525dotnet-Urlhelper/</link>
-      <guid>https://sowon-dev.github.io/2022/05/24/220525dotnet-Urlhelper/</guid>
-      <pubDate>Tue, 24 May 2022 19:22:47 GMT</pubDate>
-      
-      <description>&lt;p&gt;cshtml에서 Url.Action으로 a태그 href를 변경하고 싶었다. &lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>cshtml에서 Url.Action으로 a태그 href를 변경하고 싶었다. </p><a id="more"></a><p>파일구조 </p><ul><li>Areas<ul><li>Student<ul><li>Controller<ul><li>LearningController.cs</li></ul></li><li>View<ul><li>Index.cshtml</li></ul></li></ul></li><li>Professor<ul><li>Controller <ul><li>StudyController.cs</li></ul></li><li>View<ul><li>Index.cshtml</li></ul></li></ul></li></ul></li></ul><p>내가 원하는 것은 아래처럼 2개의 a태그에 각각 다른 컨트롤러의 url이다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; url결과</span><br><span class="line">&#x2F;Student&#x2F;Learning</span><br><span class="line">&#x2F;Professor&#x2F;Study</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="기존코드"><a href="#기존코드" class="headerlink" title="기존코드"></a>기존코드</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"@Url.Action("</span><span class="attr">Index</span>","<span class="attr">Learning</span>")" <span class="attr">id</span>=<span class="string">"menuUrl"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"@Url.Action("</span><span class="attr">Index</span>","<span class="attr">Study</span>")" <span class="attr">id</span>=<span class="string">"menuUrl"</span>&gt;</span></span><br></pre></td></tr></table></figure><p>url결과는 아래와 같다</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; url결과</span><br><span class="line">&#x2F;Student&#x2F;Learning</span><br><span class="line">&#x2F;Student&#x2F;Study</span><br></pre></td></tr></table></figure><p><code>Action(string, string)</code>은 처음 URI를 잡고있기때문에 Professor의 Study가 아니라 Student에서 Study를 찾는다.</p><p><br><br><br></p><h2 id="해결법-Action-String-String-Object"><a href="#해결법-Action-String-String-Object" class="headerlink" title="해결법 Action(String, String, Object)"></a>해결법 Action(String, String, Object)</h2><p>routeValues를 사용해서 area를 지정해주었다.</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"@Url.Action("</span><span class="attr">Index</span>", "<span class="attr">Learning</span>", <span class="attr">new</span> &#123; <span class="attr">area</span> = <span class="string">"Student"</span> &#125;)" <span class="attr">id</span>=<span class="string">"menuUrl"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"@Url.Action("</span><span class="attr">Index</span>", "<span class="attr">Study</span>", <span class="attr">new</span> &#123; <span class="attr">area</span> = <span class="string">"Professor"</span> &#125;)" <span class="attr">id</span>=<span class="string">"menuUrl"</span>&gt;</span></span><br></pre></td></tr></table></figure><p>new 연산자로 area를 지정했기에 해당 area아래의 Url을 각각찾느다</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; url결과</span><br><span class="line">&#x2F;Student&#x2F;Learning</span><br><span class="line">&#x2F;Professor&#x2F;Study</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><p>MS사의 docs는 예시도 많이 없고 UI자체도 가독성이 많이 떨어진다. 그래도 docs 질은 괜찮은 건지 블로그글이 많이 없다. 닷넷개발자들은 영어고수인게 틀림없다.</p><ul><li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.web.mvc.urlhelper.action?view=aspnet-mvc-5.2#system-web-mvc-urlhelper-action(system-string-system-string-system-object)">https://docs.microsoft.com/en-us/dotnet/api/system.web.mvc.urlhelper.action?view=aspnet-mvc-5.2#system-web-mvc-urlhelper-action(system-string-system-string-system-object)</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/NET/">.NET</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/C/">C#</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/05/24/220525dotnet-Urlhelper/#disqus_thread</comments>
       
     </item>
     
