@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2022/07/22/220722authenticationVSauthorization/</loc>
+        <lastmod>2022-08-25T08:43:24.153Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2022/08/23/220824projectreview7/</loc>
         <lastmod>2022-08-24T07:53:24.963Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -82,14 +90,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2022/08/10/220811Json-convert-map/</loc>
         <lastmod>2022-08-11T00:42:24.675Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/07/22/220722authenticationVSauthorization/</loc>
-        <lastmod>2022-08-09T13:14:08.546Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

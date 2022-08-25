@@ -3,6 +3,20 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/WEB/</loc>
+        <lastmod>2022-08-25T08:43:24.153Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/Book/</loc>
+        <lastmod>2022-08-25T08:43:24.153Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/%25ED%259A%258C%25EA%25B3%25A0%25EB%25A1%259D/</loc>
         <lastmod>2022-08-24T07:53:24.963Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -40,20 +54,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/JSON/</loc>
         <lastmod>2022-08-11T00:42:24.675Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/WEB/</loc>
-        <lastmod>2022-08-09T13:14:08.546Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/Book/</loc>
-        <lastmod>2022-08-09T13:14:08.546Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
