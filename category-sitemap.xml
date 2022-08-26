@@ -8,22 +8,22 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/categories/Spring/</loc>
-        <lastmod>2022-08-25T08:43:24.153Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/categories/Journal/%25ED%259A%258C%25EA%25B3%25A0%25EB%25A1%259D/</loc>
-        <lastmod>2022-08-24T07:53:24.963Z</lastmod>
+        <lastmod>2022-08-26T09:01:02.475Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/categories/Journal/</loc>
-        <lastmod>2022-08-24T07:53:24.963Z</lastmod>
+        <lastmod>2022-08-26T09:01:02.475Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Spring/</loc>
+        <lastmod>2022-08-25T08:43:24.153Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
