@@ -9,7 +9,15 @@
 
     <url>
         <loc>https://sowon-dev.github.io/2022/08/23/220824projectreview7/</loc>
-        <lastmod>2022-08-26T09:01:02.475Z</lastmod>
+        <lastmod>2022-08-27T14:34:56.897Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/08/18/220818JSTL-date/</loc>
+        <lastmod>2022-08-27T14:28:15.223Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -50,14 +58,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/08/10/200811jspi/</loc>
         <lastmod>2022-08-19T00:47:45.681Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/08/18/220818JSTL-date/</loc>
-        <lastmod>2022-08-18T14:50:01.977Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
