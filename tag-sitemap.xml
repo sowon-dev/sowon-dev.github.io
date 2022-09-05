@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/Tomcat/</loc>
+        <lastmod>2022-09-05T07:51:21.064Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/%25ED%259A%258C%25EA%25B3%25A0%25EB%25A1%259D/</loc>
         <lastmod>2022-09-01T04:11:53.189Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -173,13 +180,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/STS/</loc>
         <lastmod>2022-03-11T13:12:09.900Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/Tomcat/</loc>
-        <lastmod>2022-03-07T12:32:48.134Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

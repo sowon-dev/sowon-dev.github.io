@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Wed, 31 Aug 2022 06:29:14 GMT</pubDate>
+    <pubDate>Mon, 05 Sep 2022 13:44:04 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[WIP]DB서버를 분리하는 이유가 뭘까</title>
+      <link>https://sowon-dev.github.io/2022/09/04/220905Server-separation/</link>
+      <guid>https://sowon-dev.github.io/2022/09/04/220905Server-separation/</guid>
+      <pubDate>Sun, 04 Sep 2022 22:49:00 GMT</pubDate>
+      
+      <description>&lt;p&gt;프로젝트를 진행하다보면 단일 서버도 있지만 보통 실무프로젝트에선 DB서버를 분리하여 서버를 구축한다.&lt;br&gt;그 차이점이 궁금했다. 어떨때 DB서버를 분리하고 어떨 때는 분리하지 않는걸까? 그로 인한 장단점에는 뭐가 있을까?&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>프로젝트를 진행하다보면 단일 서버도 있지만 보통 실무프로젝트에선 DB서버를 분리하여 서버를 구축한다.<br>그 차이점이 궁금했다. 어떨때 DB서버를 분리하고 어떨 때는 분리하지 않는걸까? 그로 인한 장단점에는 뭐가 있을까?</p><a id="more"></a><h2 id="DB서버와-WAS를-나누는-이유"><a href="#DB서버와-WAS를-나누는-이유" class="headerlink" title="DB서버와 WAS를 나누는 이유"></a>DB서버와 WAS를 나누는 이유</h2><p>프로젝트 관리정책이나 클라이언트의 요구에 따라 단일 서버를 쓰기도 하고 DB서버를 분리하기도 한다.<br>DB서버를 분리하는 이유는 크게 두 가지를 들 수 있다.</p><ol><li>보안<ul><li>서버를 분리할수록 보안에 유리하다.</li></ul></li><li>성능<ul><li>DB 서버는 메모리를 빡빡하게 쓴다. 리소스를 많이 잡아먹으므로 서버분리를 통해 성능을 높일 수 있다. </li><li>실무에선 WAS에서 처리하는게 많은 경우,DB서버와 분리한다.</li></ul></li></ol><p><br><br><br></p><h2 id="DB서버-분리-단점"><a href="#DB서버-분리-단점" class="headerlink" title="DB서버 분리 단점"></a>DB서버 분리 단점</h2><p>보안과 성능이라는 두가지 장점이 있다면 단점도 분명 있을 것이다.<br>단점도 크게 두가지로 볼 수 잇다.</p><ol><li>서버 비용 증가</li><li>방화벽설정 문제가 발생할 수 있음<ul><li>단점이라기보단 예상할 수 있는 문제에 가깝지만, 실무에서 DB서버를 분리함으로서 방화벽설정에 문제가 있을 수 있다. 예를 들어 관리포인트가 많을 경우 한 쪽서버만 접속되는 문제가 발생할 수 있다.</li></ul></li></ol><p><br><br><br></p><h2 id="소스코드가-있는-프로그램을-부르는-명칭이-따로-있을까"><a href="#소스코드가-있는-프로그램을-부르는-명칭이-따로-있을까" class="headerlink" title="소스코드가 있는 프로그램을 부르는 명칭이 따로 있을까?"></a>소스코드가 있는 프로그램을 부르는 명칭이 따로 있을까?</h2><p>나는 늘 그랬듯 용어가 궁금했다. 소통을 잘하고싶은 마음때문에 항상 용어를 신경쓴다.<br>소스코드가 있는 그 프로그램을 뭐라고 부르는지 무척 궁금했는데 과장님이 프로그램을 소스코드 경로 최상단인 <code>webroot</code> 라고도 부른다고 알려주셨다.<br>감사합니다 과장님!</p><p>여담으로, 회사 선임분들이 너무 좋다. 팀장님도 좋고 과장님도 좋다. 내가 난해하게 물어볼때도 최대한 알기쉽게 알려주신다. 항상 감사하다. 덕분에 많이 배웁니다.</p><p><br><br><br></p><h2 id="출처"><a href="#출처" class="headerlink" title="출처"></a>출처</h2><ul><li>과장님 경험</li><li><a href="https://webisfree.com/2020-05-07/[%EC%84%9C%EB%B2%84%EA%B5%AC%EC%B6%95]-%EB%8B%A8%EC%9D%BC-%EC%84%9C%EB%B2%84%EC%99%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%84%9C%EB%B2%84%EC%9D%98-%EB%B6%84%EB%A6%AC%EA%B0%80-%EC%99%9C-%ED%95%84%EC%9A%94%ED%95%A0%EA%B9%8C">단일 서버와 데이터베이스 서버의 분리가 왜 필요할까</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Server/">Server</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2022/09/04/220905Server-separation/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[JS]동적 달력(캘린더)만들기</title>
@@ -444,29 +465,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/06/26/220627Article-TheEndOfLocalhost/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>findAsync와 find의 차이점</title>
-      <link>https://sowon-dev.github.io/2022/06/11/220611findAsyncvsfind/</link>
-      <guid>https://sowon-dev.github.io/2022/06/11/220611findAsyncvsfind/</guid>
-      <pubDate>Sat, 11 Jun 2022 05:34:55 GMT</pubDate>
-      
-      <description>&lt;p&gt;닷넷프레임워크를 사용하다보면서 find 메서드를 사용했는데 비주얼스튜디오가 FindAsync를 추천해줬다.&lt;br&gt;사용해보니 둘 다 동일한 결과가 나왔는데 둘의 차이점이 궁금해서 공부해보았다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>닷넷프레임워크를 사용하다보면서 find 메서드를 사용했는데 비주얼스튜디오가 FindAsync를 추천해줬다.<br>사용해보니 둘 다 동일한 결과가 나왔는데 둘의 차이점이 궁금해서 공부해보았다.</p><a id="more"></a><h2 id="Find"><a href="#Find" class="headerlink" title="Find"></a>Find</h2><p>비교적 간단한 구문이다.<br>모든 문서를 한 번에 조회한다.<br>따라서 데이터양이 작을 때 사용하면 좋다. 가져오는 데이터양이 클때 Find를 쓸 경우 뷰단이 멈춰버릴 수 있다. 이럴때 비동기인 FindAsync로 처리해야한다.</p><p><br><br></p><h2 id="FindAsync"><a href="#FindAsync" class="headerlink" title="FindAsync"></a>FindAsync</h2><p>모든 DB를 한 번에 조회하지 않는다. return값이 cursor라서 DB cursor에서 문서를 하나씩 검색할 수 있는 interface를 제공한다.<br>따라서 데이터양이 클 때 사용하면 좋다. </p><p>여기서 DB cursor란?<br>쿼리문에 의해서 반환되는 결과값들을 저장하는 메모리공간을 말한다.</p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.data.entity.dbset.findasync?view=entity-framework-6.2.0">https://docs.microsoft.com/en-us/dotnet/api/system.data.entity.dbset.findasync?view=entity-framework-6.2.0</a></li><li><a href="https://stackoverflow.com/questions/30650722/difference-between-find-and-findasync">https://stackoverflow.com/questions/30650722/difference-between-find-and-findasync</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/NET/">.NET</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/C/">C#</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/06/11/220611findAsyncvsfind/#disqus_thread</comments>
       
     </item>
     
