@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2022/08/22/bookList/</loc>
+        <lastmod>2022-09-09T10:09:07.888Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2022/09/05/220906Tomcat-vs-Apatch/</loc>
         <lastmod>2022-09-08T04:54:58.145Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -58,14 +66,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2022/07/22/220722authenticationVSauthorization/</loc>
         <lastmod>2022-08-25T08:43:24.153Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/08/22/bookList/</loc>
-        <lastmod>2022-08-23T07:04:34.692Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
