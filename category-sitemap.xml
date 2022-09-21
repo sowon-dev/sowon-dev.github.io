@@ -8,6 +8,13 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/NET/</loc>
+        <lastmod>2022-09-21T06:40:33.250Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/React/</loc>
         <lastmod>2022-09-14T08:38:21.986Z</lastmod>
         <changefreq>weekly</changefreq>
