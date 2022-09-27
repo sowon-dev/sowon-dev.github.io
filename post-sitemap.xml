@@ -8,8 +8,32 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2022/09/26/220927as-is-to-be/</loc>
+        <lastmod>2022-09-27T07:55:05.369Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/07/14/220715wildcard-vs-typeparameter/</loc>
+        <lastmod>2022-09-27T07:45:41.915Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/09/05/220906Tomcat-vs-Apatch/</loc>
+        <lastmod>2022-09-27T07:45:33.952Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2022/09/20/220921ASPNET-WEBFORM-VS-MVC/</loc>
-        <lastmod>2022-09-26T04:10:51.249Z</lastmod>
+        <lastmod>2022-09-27T07:45:12.727Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -34,14 +58,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2022/08/22/bookList/</loc>
         <lastmod>2022-09-09T10:09:07.888Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/09/05/220906Tomcat-vs-Apatch/</loc>
-        <lastmod>2022-09-08T04:54:58.145Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -170,14 +186,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2022/07/17/220718CORS/</loc>
         <lastmod>2022-07-19T13:27:09.148Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/07/14/220715wildcard-vs-typeparameter/</loc>
-        <lastmod>2022-07-17T14:47:49.155Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

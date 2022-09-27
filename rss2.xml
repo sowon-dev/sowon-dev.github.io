@@ -9,8 +9,33 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Mon, 26 Sep 2022 04:10:51 GMT</pubDate>
+    <pubDate>Tue, 27 Sep 2022 07:55:05 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[IT용어] AS-IS VS TO-BE</title>
+      <link>https://sowon-dev.github.io/2022/09/26/220927as-is-to-be/</link>
+      <guid>https://sowon-dev.github.io/2022/09/26/220927as-is-to-be/</guid>
+      <pubDate>Mon, 26 Sep 2022 22:42:45 GMT</pubDate>
+      
+      <description>&lt;p&gt;프로젝트문서를 읽던 중 AS-IS 시스템 설명과 TO-BE 시스템 설명을 읽게되었다.&lt;br&gt;영어로 적혀있어 감은 오지만 정확히 어떤 의미로 IT업계에서 사용하는지 궁금해서 찾아보았다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>프로젝트문서를 읽던 중 AS-IS 시스템 설명과 TO-BE 시스템 설명을 읽게되었다.<br>영어로 적혀있어 감은 오지만 정확히 어떤 의미로 IT업계에서 사용하는지 궁금해서 찾아보았다.</p><a id="more"></a><h2 id="AS-IS"><a href="#AS-IS" class="headerlink" title="AS-IS"></a>AS-IS</h2><p>영어 의미로는 <code>지금 현재</code> 또는 <code>있는 그대로</code>로 쓰이는데 IT업게예서도 이와 비슷하다.<br>AS-IS 뒤에 다양한 단어들을 붙여서 기존 서비스, 레거시 프로젝트, 기존 시스템등을 의미한다.<br>AS-IS 분석을 잘해놓으면 추후 구현하고자하는 신규 서비스의 TO-BE분석이 수월하다.</p><p>예시</p><ul><li>AS-IS 시스템: 현재의(기존) 시스템을 의미</li><li>AS-IS 분석: 현재의 업무 프로세스를 분석한다는 의미</li></ul><p><br><br><br></p><h2 id="TO-BE"><a href="#TO-BE" class="headerlink" title="TO-BE"></a>TO-BE</h2><p>영어 의미로는 <code>미래의</code> 로 쓰이는데 IT업게예서도 이와 비슷하다.<br>미래에 개선될 업무나 프로젝트, 프로세스, 신규 시스템등을 의미한다.</p><p>예시</p><ul><li>TO-BE 시스템: 신규 시스템을 의미로 프로젝트에 투입될 시스템</li><li>TO-BE 분석: 신규 업무 프로세스를 분석한다는 의미로 보통 각 모듈별로 TO-BE 프로세스 작성함</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%8A%98%EB%98%90%EB%AA%BB%EC%95%8C%EC%95%84%EB%93%A3%EA%B3%A0%EB%A7%90%EC%95%98%EC%8A%B5%EB%8B%88%EB%8B%A4/">오늘또못알아듣고말았습니다</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/%EC%B0%A8%EC%9D%B4/">차이</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2022/09/26/220927as-is-to-be/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[ASP.NET] 웹폼(WebForm) VS MVC</title>
@@ -29,6 +54,8 @@
       
       
       <category domain="https://sowon-dev.github.io/tags/C/">C#</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/%EC%B0%A8%EC%9D%B4/">차이</category>
       
       
       <comments>https://sowon-dev.github.io/2022/09/20/220921ASPNET-WEBFORM-VS-MVC/#disqus_thread</comments>
@@ -71,6 +98,8 @@
       
       <category domain="https://sowon-dev.github.io/categories/Server/">Server</category>
       
+      
+      <category domain="https://sowon-dev.github.io/tags/%EC%B0%A8%EC%9D%B4/">차이</category>
       
       
       <comments>https://sowon-dev.github.io/2022/09/05/220906Tomcat-vs-Apatch/#disqus_thread</comments>
@@ -396,6 +425,8 @@
       <category domain="https://sowon-dev.github.io/categories/JAVA/">JAVA</category>
       
       
+      <category domain="https://sowon-dev.github.io/tags/%EC%B0%A8%EC%9D%B4/">차이</category>
+      
       
       <comments>https://sowon-dev.github.io/2022/07/14/220715wildcard-vs-typeparameter/#disqus_thread</comments>
       
@@ -440,29 +471,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/07/11/220712React-spa/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[JPA] 리턴타입이 옵셔널(Optional)인 이유는?</title>
-      <link>https://sowon-dev.github.io/2022/07/10/220711JPA-optional/</link>
-      <guid>https://sowon-dev.github.io/2022/07/10/220711JPA-optional/</guid>
-      <pubDate>Sun, 10 Jul 2022 22:19:54 GMT</pubDate>
-      
-      <description>&lt;p&gt;JPA를 사용 중 아래 코드를 만났고 의문이 생겼다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>JPA를 사용 중 아래 코드를 만났고 의문이 생겼다.</p><a id="more"></a><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">final</span> Optional&lt;TodoEntity&gt; original = repository.findById(entity.getId());</span><br></pre></td></tr></table></figure><p>왜 꼭 Optional로 리턴타입을 감싸줘야하는걸까?<br>그냥 리턴타입만 쓰면 안될까?</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">final</span> TodoEntity original = repository.findById(entity.getId());</span><br></pre></td></tr></table></figure><p>이런식으로 말이다.<br>위처럼 옵셔널(Optional)을 빼버리니 바로 IDE가 에러를 알려주었다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Type mismatch: cannot convert from Optional&lt;TodoEntity&gt; to TodoEntity</span><br></pre></td></tr></table></figure><p>왜 이런 에러가 발생하는 걸까?<br>원인은 바로 CrudRepository 인터페이스였다.</p><p><br><br><br></p><h2 id="갑자기-CrudRepository라고"><a href="#갑자기-CrudRepository라고" class="headerlink" title="갑자기 CrudRepository라고?"></a>갑자기 CrudRepository라고?</h2><p>Repository 인터페이스를 만들때 JPA를 쓰기 위해서 JpaRepository를 상속받는다.<br>JpaRepository인터페이스에서 find와 관련된 메서드를 알기위해서는 CrudRepository를 확인하라고 적혀있다.</p><ul><li>JpaRepository 인터페이스</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * JPA specific extension of &#123;<span class="doctag">@link</span> org.springframework.data.repository.Repository&#125;.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Oliver Gierke</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Christoph Strobl</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Mark Paluch</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Sander Krabbenborg</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Jesse Wouters</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Greg Turnquist</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@NoRepositoryBean</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">JpaRepository</span>&lt;<span class="title">T</span>, <span class="title">ID</span>&gt; <span class="keyword">extends</span> <span class="title">PagingAndSortingRepository</span>&lt;<span class="title">T</span>, <span class="title">ID</span>&gt;, <span class="title">QueryByExampleExecutor</span>&lt;<span class="title">T</span>&gt; </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * (non-Javadoc)</span></span><br><span class="line"><span class="comment"> * @see org.springframework.data.repository.CrudRepository#findAll()</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function">List&lt;T&gt; <span class="title">findAll</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * (non-Javadoc)</span></span><br><span class="line"><span class="comment"> * @see org.springframework.data.repository.PagingAndSortingRepository#findAll(org.springframework.data.domain.Sort)</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function">List&lt;T&gt; <span class="title">findAll</span><span class="params">(Sort sort)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * (non-Javadoc)</span></span><br><span class="line"><span class="comment"> * @see org.springframework.data.repository.CrudRepository#findAll(java.lang.Iterable)</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function">List&lt;T&gt; <span class="title">findAllById</span><span class="params">(Iterable&lt;ID&gt; ids)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// (중략)</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="CrudRepository-인터페이스"><a href="#CrudRepository-인터페이스" class="headerlink" title="CrudRepository 인터페이스"></a>CrudRepository 인터페이스</h2><p>CrudRepository 인터페이스에서 findById 메서드를 확인해보면 리턴값이 Optional 타입으로 고정되어있다.<br>그래서 바로 IDE가 에러를 알려주었다. 그렇다면 Optional를 쓰면 좋은 점이 뭘까?</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Interface for generic CRUD operations on a repository for a specific type.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Oliver Gierke</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Eberhard Wolff</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Jens Schauder</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@NoRepositoryBean</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">CrudRepository</span>&lt;<span class="title">T</span>, <span class="title">ID</span>&gt; <span class="keyword">extends</span> <span class="title">Repository</span>&lt;<span class="title">T</span>, <span class="title">ID</span>&gt; </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Retrieves an entity by its id.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> id must not be &#123;<span class="doctag">@literal</span> null&#125;.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> the entity with the given id or &#123;<span class="doctag">@literal</span> Optional#empty()&#125; if none found.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@throws</span> IllegalArgumentException if &#123;<span class="doctag">@literal</span> id&#125; is &#123;<span class="doctag">@literal</span> null&#125;.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function">Optional&lt;T&gt; <span class="title">findById</span><span class="params">(ID id)</span></span>;</span><br><span class="line"> </span><br><span class="line"><span class="comment">// (생략)</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="Optional-쓰면-좋은-점"><a href="#Optional-쓰면-좋은-점" class="headerlink" title="Optional 쓰면 좋은 점?"></a>Optional 쓰면 좋은 점?</h2><p>Optional은 Java 8에 추가되었다. 이전 자바버전에서는 사용 불가능하다.<br>Optional은 고통스러운 null 처리를 도와주는 Wrapper 클래스이다.</p><p>코드 예시를 보자.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">String name;</span><br><span class="line">    </span><br><span class="line"><span class="function">String <span class="title">getName</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(name != <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> name;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"name is null"</span>;</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>또는 try catch문을 이용해서 null을 처리할 수 있도 있고 다양한 NPE 처리 방법이 있다. </p><ul><li><a href="https://sowon-dev.github.io/2021/06/27/210627Memoir6months/#4-%EC%BB%A4%EC%8A%A4%ED%85%80-%EC%98%88%EC%99%B8-%ED%81%B4%EB%9E%98%EC%8A%A4%EB%A1%9C-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC-%EA%B0%80%EB%8A%A5">참고: 특별한 거 추가 없이 기본 메서드로 NPE처리하는 방법</a></li></ul><p>그런데 만약 필드가 많다면? 모든 필드를 NULL처리를 해줘야한다.</p><p>이때 Optional 클래스와 해당 클래스가 제공하는 orElse 메서드 또는 orElseGet 메서드를 이용하면 쉽게 NPE 처리가 가능하다.</p><table><thead><tr><th align="center">메서드명</th><th align="center">특징</th></tr></thead><tbody><tr><td align="center">orElseThrow(NullPointerException::new)</td><td align="center">null이라면 함수형 파라미터로 생성한 예외(NullPointerException)를 발생시킨다.</td></tr><tr><td align="center">orElse(person)</td><td align="center">null이면 파라미터(person)를 반환한다. 이때 파라미터(person)은 해당 값이 null이든지 말든지 항상 미리 생성된다.</td></tr><tr><td align="center">orElseGet</td><td align="center">null이면 파라미터(person)를 반환한다.  이때 파라미터(person)은 해당 값이 null 일때만 생성된다. 즉 미리 생성되지 않는다.</td></tr></tbody></table><p><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true">https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/JPA/">JPA</category>
-      
-      
-      
-      <comments>https://sowon-dev.github.io/2022/07/10/220711JPA-optional/#disqus_thread</comments>
       
     </item>
     
