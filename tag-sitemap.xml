@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/MySQL/</loc>
+        <lastmod>2022-10-11T06:53:07.306Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/%25EC%25B0%25A8%25EC%259D%25B4/</loc>
         <lastmod>2022-09-27T07:55:05.369Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -68,13 +75,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/EL/</loc>
         <lastmod>2022-08-20T14:36:36.126Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/MySQL/</loc>
-        <lastmod>2022-08-12T01:15:30.196Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
