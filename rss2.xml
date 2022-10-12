@@ -9,11 +9,11 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Tue, 11 Oct 2022 06:53:07 GMT</pubDate>
+    <pubDate>Wed, 12 Oct 2022 15:11:40 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>[Spring/MySQL]서버 런 접속한 DB 이름 로그에 나타내기</title>
+      <title>[Spring/MySQL] 현재 서버에서 접속한 DB 이름 로그에 나타내기</title>
       <link>https://sowon-dev.github.io/2022/10/10/221011DBMessageQuery/</link>
       <guid>https://sowon-dev.github.io/2022/10/10/221011DBMessageQuery/</guid>
       <pubDate>Mon, 10 Oct 2022 21:46:45 GMT</pubDate>
@@ -22,7 +22,7 @@
       
       
       
-      <content:encoded><![CDATA[<p>DB를 여러 가지 쓰는 경우 현재 어느 DB에 접속되어있는지 서버 런할때 로그로 알 수 있으면 좋겠다고 생각했는데 팀장님이 그 방법을 알려주셨다.<br>바로 local.properties에 message.query를 이용하면 된다.</p><a id="more"></a><h2 id="local-properties에-message-query"><a href="#local-properties에-message-query" class="headerlink" title="local.properties에 message.query"></a>local.properties에 message.query</h2><p>local.properties파일에서 message.query 속성을 이용하면 된다.<br>아래처럼 입력해주면 끝!</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">message.query&#x3D;SELECT &#39;ko&#39; as LOCALE, &#39;0000001&#39; as CODE, concat(database(), &#39; ver.&#39;, version() , &#39; hostname - &#39;, @@hostname) as MSG FROM DUAL</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      <content:encoded><![CDATA[<p>DB를 여러 가지 쓰는 경우 현재 어느 DB에 접속되어있는지 서버 런할때 로그로 알 수 있으면 좋겠다고 생각했는데 팀장님이 그 방법을 알려주셨다.<br>바로 local.properties에 message.query를 이용하면 된다.</p><a id="more"></a><h2 id="local-properties에-message-query-속성-사용하기"><a href="#local-properties에-message-query-속성-사용하기" class="headerlink" title="local.properties에 message.query 속성 사용하기"></a>local.properties에 message.query 속성 사용하기</h2><p>local.properties파일에서 message.query 속성을 이용하면 된다.<br>아래처럼 입력해주면 끝!</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">message.query&#x3D;SELECT &#39;ko&#39; as LOCALE, &#39;0000001&#39; as CODE, concat(database(), &#39; ver.&#39;, version() , &#39; hostname - &#39;, @@hostname) as MSG FROM DUAL</span><br></pre></td></tr></table></figure>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
