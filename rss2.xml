@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Thu, 27 Oct 2022 12:52:54 GMT</pubDate>
+    <pubDate>Fri, 28 Oct 2022 05:26:32 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[jQuery] attr과 prop차이</title>
+      <link>https://sowon-dev.github.io/2022/10/27/221028jQuery-attr-vs-prop/</link>
+      <guid>https://sowon-dev.github.io/2022/10/27/221028jQuery-attr-vs-prop/</guid>
+      <pubDate>Thu, 27 Oct 2022 19:42:41 GMT</pubDate>
+      
+      <description>&lt;p&gt;제이쿼리를 사용하면서 attr와 prop는 아주 유사한 기능인데 어떠한 차이점이 있고 어떤 상황일때 어떤 걸 쓰는 게 더 좋은지 궁금해서 찾아봤다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>제이쿼리를 사용하면서 attr와 prop는 아주 유사한 기능인데 어떠한 차이점이 있고 어떤 상황일때 어떤 걸 쓰는 게 더 좋은지 궁금해서 찾아봤다.</p><a id="more"></a><p>역시 제일 좋은 건 jQuery 공식문서이다.<br>jQuery 1.6.0 버전에서부터 jQuery.attr()과 jQuery.prop()가 나눠졌다.</p><table><thead><tr><th align="center"></th><th align="center">jQuery.attr()</th><th align="center">jQuery.prop()</th></tr></thead><tbody><tr><td align="center">정의</td><td align="center">changes attributes for that HTML tag.</td><td align="center">changes properties for that HTML tag as per the DOM tree</td></tr><tr><td align="center">취급</td><td align="center">HTML 속성 (Attribute) 취급</td><td align="center">javascript 프로퍼티 (Property) 취급</td></tr><tr><td align="center">반환값</td><td align="center">returns the default value (Original state)</td><td align="center">returns the current value (Current state)</td></tr></tbody></table><p>많은 상황에서 둘은 같은 값을 반환하지만 attr()는 원래 값을 prop()는 현재 값을 반환한다.<br>예를 들어보자.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=<span class="string">"checkbox"</span> id=<span class="string">"test1"</span> checked=<span class="string">"checked"</span>&gt; 테스트<span class="number">1</span></span><br><span class="line">&lt;input type=<span class="string">"checkbox"</span> id=<span class="string">"test2"</span>&gt; 테스트<span class="number">2</span></span><br></pre></td></tr></table></figure><p>위 두가지 체크박스의 차이는 checked가 기본값인지 아닌지이다.<br>이를 콘솔에 찍어보면 차이를 발견할 수 있다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;#test1&quot;).attr(&quot;checked&quot;)</span><br><span class="line">$(&quot;#test2&quot;).attr(&quot;checked&quot;)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;결과값</span><br><span class="line">checked</span><br><span class="line">undefined</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;#test1&quot;).prop(&quot;checked&quot;)</span><br><span class="line">$(&quot;#test2&quot;).prop(&quot;checked&quot;)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;결과값</span><br><span class="line">true</span><br><span class="line">false</span><br></pre></td></tr></table></figure><p>attr()은 최초 element 랜더링시 defalut value를 반환하지만 prop()는 현재상태를 반환한다.</p><p><br><br><br></p><h2 id="결론"><a href="#결론" class="headerlink" title="결론"></a>결론</h2><ul><li><code>.attr()</code> : element가 가지는 속성 조회 권장<ul><li>style, src, rowspan</li></ul></li><li><code>.prop()</code>: element가 가지는 실제적인 상태 제어 사용 권장<ul><li>form요소의 disabled, selected, checked 속성값 확인 혹은 변경</li></ul></li></ul><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://api.jquery.com/attr/">https://api.jquery.com/attr/</a></li><li><a href="https://api.jquery.com/prop/">https://api.jquery.com/prop/</a></li><li><a href="http://net-informations.com/jq/iq/prop.htm">http://net-informations.com/jq/iq/prop.htm</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/jQuery/">jQuery</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2022/10/27/221028jQuery-attr-vs-prop/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[JS] 배열Array와 객체Object 내 포함 여부</title>
@@ -450,29 +473,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/07/22/220722authenticationVSauthorization/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>CORS는 왜 날 헷갈리게 하는걸까?(ft. CSRF, XSS)</title>
-      <link>https://sowon-dev.github.io/2022/07/17/220718CORS/</link>
-      <guid>https://sowon-dev.github.io/2022/07/17/220718CORS/</guid>
-      <pubDate>Sun, 17 Jul 2022 20:42:47 GMT</pubDate>
-      
-      <description>&lt;p&gt;CORS는 크로스-오리진 리소스 셰어링(Cross-Origin Resource Sharing)의 약자이고 직역하면 교차 출처 리소스 공유이다.&lt;br&gt;처음 리소스를 제공한 도메인(Origin)이 요청 도메인과 다르더라도 요청을 허락해 주는 웹 보안 방침이다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>CORS는 크로스-오리진 리소스 셰어링(Cross-Origin Resource Sharing)의 약자이고 직역하면 교차 출처 리소스 공유이다.<br>처음 리소스를 제공한 도메인(Origin)이 요청 도메인과 다르더라도 요청을 허락해 주는 웹 보안 방침이다.</p><a id="more"></a><h2 id="CORS-웹-보안-방침이-왜-필요한-걸까"><a href="#CORS-웹-보안-방침이-왜-필요한-걸까" class="headerlink" title="CORS 웹 보안 방침이 왜 필요한 걸까?"></a>CORS 웹 보안 방침이 왜 필요한 걸까?</h2><p>웹 사이트는 원래 사용자의 공격에 취약하므로 보안에 유의해야한다.<br>서로 다른 출처의 웹 사이트가 통신하는데 제약이 없으면 악의적인 사용자가 웹 사이트 정보를 탈튀할 수도 있다.<br>따라서 같은 출처인지 다른 출처인지 구분이 필요하고 다른 출처인 경우 경고를 하는 것이다.</p><p><br><br><br></p><h3 id="CORS-취약점"><a href="#CORS-취약점" class="headerlink" title="CORS 취약점"></a>CORS 취약점</h3><ul><li>CSRF <small><a href="https://sowon-dev.github.io/2022/05/02/220502springsecurity-CSRF/">(참고: 전자정부프레임워크3.8에 CSRF 설정하기)</a></small>: 사이트 간 요청 위조 약자로 공격대상이 Server</li><li>XSS <small><a href="https://sowon-dev.github.io/2022/04/20/220420XSS/">(참고: XSS 방지)</a></small>: 사이트 간 스크립팅의 약자로 공격대상이 Client</li></ul><p><br><br><br></p><h2 id="개발자도구-F12-의-네트워크-탭"><a href="#개발자도구-F12-의-네트워크-탭" class="headerlink" title="개발자도구(F12)의 네트워크 탭"></a>개발자도구(F12)의 네트워크 탭</h2><p>다른 출처의 웹사이트로 요청을 보내면 브라우저는 2개의 요청을 보낸다.</p><ol><li>Options 메서드를 사용하는 요청</li><li>사용자가 보낸 요청</li></ol><p>Options 메서드는 보통 리소스에 대해 어떤 HTTP 메서드를 사용할 수 있는지 확인하고 싶을 때 보내고 Options 요청이 반환되고 CORS여부 및 GET 요청 사용가능 여부를 확인하면 두번째 요청을 보내게 된다.</p><ul><li>Access-Control-Allow-Origin: 프론트엔드 애플리케이션 서버 주소</li><li>Access-Control-Allow-Methods: 허용되는 메서드 ex) GET,POST,PUT,PATCH,DELETE,OPTIONS</li></ul><p><br><br><br></p><h2 id="CORS가-가능하려면"><a href="#CORS가-가능하려면" class="headerlink" title="CORS가 가능하려면?"></a>CORS가 가능하려면?</h2><p>CORS가 가능하려면 백엔드에서 CORS 방침을 설정해줘야한다.<br>자바의 경우 WebMvcConfig 클래스로 설정할 수 있다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span> <span class="comment">// 스프링 빈으로 등록</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WebMvcConfig</span> <span class="keyword">implements</span> <span class="title">WebMvcConfigurer</span> </span>&#123;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">long</span> MAX_AGE_SECS = <span class="number">3600</span>;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addCorsMappings</span><span class="params">(CorsRegistry registry)</span> </span>&#123;</span><br><span class="line"><span class="comment">// 모든 경로에 대해</span></span><br><span class="line">registry.addMapping(<span class="string">"/**"</span>)</span><br><span class="line"><span class="comment">// Origin이 http:localhost:3000에 대해</span></span><br><span class="line">.allowedOrigins(<span class="string">"http://localhost:3000"</span>)</span><br><span class="line"><span class="comment">// GET, POST, PUT, PATCH, DELETE, OPTIONS 메서드를 허용한다.</span></span><br><span class="line">.allowedMethods(<span class="string">"GET"</span>, <span class="string">"POST"</span>, <span class="string">"PUT"</span>, <span class="string">"PATCH"</span>, <span class="string">"DELETE"</span>, <span class="string">"OPTIONS"</span>)</span><br><span class="line">.allowedHeaders(<span class="string">"*"</span>)</span><br><span class="line">.allowCredentials(<span class="keyword">true</span>)</span><br><span class="line">.maxAge(MAX_AGE_SECS);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><a href="https://github.com/fsoftwareengineer/todo-application/blob/main/3.3-Service_Integration/demo/src/main/java/com/example/demo/config/WebMvcConfig.java">예시코드 출처</a></li></ul><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="http://www.acornpub.co.kr/book/reactjs-springboot#toc">React.js, 스프링 부트, AWS로 배우는 웹 개발 101</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/CORS/">CORS</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/07/17/220718CORS/#disqus_thread</comments>
       
     </item>
     
