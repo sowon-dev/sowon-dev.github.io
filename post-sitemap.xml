@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2022/10/29/221029SQLD-tablepartition/</loc>
+        <lastmod>2022-10-31T04:36:27.938Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2022/09/12/220913React-useEffect-props/</loc>
         <lastmod>2022-10-30T07:25:14.563Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -58,14 +66,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2022/10/27/221028jQuery-attr-vs-prop/</loc>
         <lastmod>2022-10-29T15:43:57.719Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/10/29/221029SQLD-tablepartition/</loc>
-        <lastmod>2022-10-29T15:41:39.958Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
