@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Mon, 31 Oct 2022 04:36:27 GMT</pubDate>
+    <pubDate>Tue, 01 Nov 2022 07:01:25 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[SQLD] 슈퍼타입과 서브타입</title>
+      <link>https://sowon-dev.github.io/2022/10/31/221101SQLD-super-sub/</link>
+      <guid>https://sowon-dev.github.io/2022/10/31/221101SQLD-super-sub/</guid>
+      <pubDate>Mon, 31 Oct 2022 21:31:02 GMT</pubDate>
+      
+      <description>&lt;p&gt;슈퍼/서브타입 데이터 모델은 Extended ER모델이라고도 불린다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>슈퍼/서브타입 데이터 모델은 Extended ER모델이라고도 불린다.</p><a id="more"></a><ul><li>슈퍼타입: 공통의 부분</li><li>서브타입: 공통으로부터 상속받아 서</li></ul><p>if 10만건도 되지 않는 데이터 or 시스템을 운영하는 도중에도 데이터가 증가하지 않는다, 트랜잭션의 성격을 고려하지않고 전체를 하나의 테이블로 묶는 것도 괜찮은 방법이다.<br>하지만 데이터 양이 이미 많고 지속적으로 증가한다면 슈퍼/서브타입 물리적 데이터 모델로 변환하는 세 가지 유형을 고려해야한다.</p><p><br><br><br></p><h1 id="성능을-고려한-슈퍼-서브타입-데이터-모델-변환"><a href="#성능을-고려한-슈퍼-서브타입-데이터-모델-변환" class="headerlink" title="성능을 고려한 슈퍼/서브타입 데이터 모델 변환"></a>성능을 고려한 슈퍼/서브타입 데이터 모델 변환</h1><p><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FdIB9Iq%2FbtqCbgT9pcy%2FxrapasEiGw1KvgUTjG4k31%2Fimg.jpg" alt="https://hec-ker.tistory.com/68"></p><p><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FFLEnX%2FbtqCbhrWGzj%2FJk1PxKYOQNEXq8zkDbqGz0%2Fimg.jpg" alt="https://hec-ker.tistory.com/68"></p><table><thead><tr><th align="center">논리모델</th><th align="center">One to One Type(1:1 타입)</th><th align="center">Plus Type(슈퍼+서브 타입)</th><th align="center">Single Type(All in One 타입)</th></tr></thead><tbody><tr><td align="center">정의</td><td align="center">if 슈퍼타입과 서브타입 각각 트랜잭션이 발생, 개별 테이블로 구성(1:1 관계)</td><td align="center">if 슈퍼타입과 서브타입 함께 트랜잭션이 발생, 슈퍼타입의 PK와 각 서브타입의 속성을 묶어 N개의 테이블을 구성</td><td align="center">if 슈퍼타입과 서브타입 정확히 지정x상황, 하나의 테이블로 통합</td></tr><tr><td align="center">예시</td><td align="center">고객엔티티 하위에 개인고객, 법인고객으로 구분</td><td align="center">개인고객엔티티, 법인고객엔티티</td><td align="center">고객엔티티</td></tr><tr><td align="center">물리모델 결정기준</td><td align="center">개별로 발생되는 경우가 많은 서비스는 Identity로</td><td align="center">슈퍼타입+서브타입에 대해 발생되는 서비스는 RollDown 으로!</td><td align="center">전체를 하나로 묶어 트랜잭션이 발생할 때는 RollUp 으로!</td></tr></tbody></table><p><br><br><br></p><h1 id="출처"><a href="#출처" class="headerlink" title="출처"></a>출처</h1><ul><li><a href="https://hec-ker.tistory.com/68">마띠의블로그 - 데이터베이스 구조와 성능</a></li><li><a href="https://dataonair.or.kr/db-tech-reference/d-lounge/expert-column/?mod=document&uid=54034">데이터온에어 - ‘6개의 열쇠’로 데이터 모델링의 고수가 되자</a></li><li><a href="https://developer-ping9.tistory.com/293">공부하는 개발자 핑구 - 슈퍼-서브타입 모델의 물리모델 결정기준</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/SQLD/">SQLD</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2022/10/31/221101SQLD-super-sub/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[SQLD] 테이블 분할</title>
@@ -448,29 +471,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/08/09/220809SQL-refact-subquery-to-join/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[JPA] 쿼리 어노테이션(Query Annotation) 에러(expression or DISTINCT expected, got)해결</title>
-      <link>https://sowon-dev.github.io/2022/08/08/220808SpringJPA-queryannotation/</link>
-      <guid>https://sowon-dev.github.io/2022/08/08/220808SpringJPA-queryannotation/</guid>
-      <pubDate>Mon, 08 Aug 2022 00:57:57 GMT</pubDate>
-      
-      <description>&lt;p&gt;인텔리제이를 사용하면 Spring 프레임워크를 사용하는데 많은 도움을 받을 수 있다.&lt;br&gt;친구가 인텔리제이로 공부하던 중에 JPA 쿼리어노테이션 에러가 떠서 나한테 물어봤는데 나도 정확히 잘 몰라서 이참에 함께 공부해봤다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>인텔리제이를 사용하면 Spring 프레임워크를 사용하는데 많은 도움을 받을 수 있다.<br>친구가 인텔리제이로 공부하던 중에 JPA 쿼리어노테이션 에러가 떠서 나한테 물어봤는데 나도 정확히 잘 몰라서 이참에 함께 공부해봤다.</p><a id="more"></a><h2 id="에러"><a href="#에러" class="headerlink" title="에러"></a>에러</h2><p>친구는 Todo테이블에서 userId에 일치되는 행을 가져오는 쿼리를 짜고 싶었다고 한다.</p><p><img src="/img/220808jpaqueryannotation.png" alt=""></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Query</span>(<span class="string">"SELECT * FROM Todo WHERE t.userId = ?1"</span>)</span><br></pre></td></tr></table></figure><p>위 쿼리에서 오류가 있어 인텔리제이가 인텔리저이의 아래 error 메시지를 보여줬다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;expression&gt; or DISTINCT expected, got &#39;*&#39;</span><br></pre></td></tr></table></figure><p>에러를 해석해보면, <code>표현식 또는 구별자가 있어야한다</code>라고 한다.<br>어떤 오류일까?</p><p><br><br><br></p><h2 id="오류-해결"><a href="#오류-해결" class="headerlink" title="오류 해결"></a>오류 해결</h2><p>where절에서 t.userId를 불러오는데 쿼리상에 t가 정의되지 않았다.<br>즉 Todo 테이블의 별칭을 t로 정의해줘야한다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Query</span>(<span class="string">"SELECT * FROM Todo t WHERE t.userId = ?1"</span>)</span><br></pre></td></tr></table></figure><p>오류가 해결되었다!<br>사실 아주 간단한 문제였다.<br>하지만 JPA Query Annotation을 잘 알지못하니 5초만에 턱 해결할 수가 없었다.<br>JPA Query Annotation은 뭘까?<br>간단하게라도 공부해봤다.</p><p><br><br><br></p><h2 id="JPA-Query-Annotation-간단-설명"><a href="#JPA-Query-Annotation-간단-설명" class="headerlink" title="JPA Query Annotation 간단 설명"></a>JPA Query Annotation 간단 설명</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Query</span>(<span class="string">"SELECT * FROM Todo t WHERE t.userId = ?1"</span>)</span><br></pre></td></tr></table></figure><p>여기서 물음표의 의미는 파라미터갯수이다.<br>물음표 뒤의 숫자 1의 의미는 무엇일까?<br>물음표에 들어올 파라미터의 위치이다. 즉 첫번째 파라미터는 <code>?1</code>여기에 위치하게된다.<br>만약 파라미터가 두개라면?</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Query</span>(<span class="string">"SELECT * FROM Todo t WHERE t.userId = ?1 AND t.userName = ?2"</span>)</span><br></pre></td></tr></table></figure><p>간단하다!<br>더 깊은 설명은 아래 글을 참고하면 된다.</p><ul><li><a href="https://attacomsian.com/blog/spring-data-jpa-query-annotation">Spring Data JPA Custom Queries using @Query Annotation</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/JPA/">JPA</category>
-      
-      
-      
-      <comments>https://sowon-dev.github.io/2022/08/08/220808SpringJPA-queryannotation/#disqus_thread</comments>
       
     </item>
     
