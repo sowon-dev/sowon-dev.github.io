@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2022/11/02/221103JSP-utilDatefmt/</loc>
+        <lastmod>2022-11-03T10:16:40.969Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/08/18/220818JSTL-date/</loc>
+        <lastmod>2022-11-03T09:38:54.313Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2022/10/31/221101SQLD-super-sub/</loc>
         <lastmod>2022-11-01T07:01:25.946Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -186,14 +202,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2022/08/30/220831js-calendar/</loc>
         <lastmod>2022-08-31T06:29:14.827Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/08/18/220818JSTL-date/</loc>
-        <lastmod>2022-08-27T14:28:15.223Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
