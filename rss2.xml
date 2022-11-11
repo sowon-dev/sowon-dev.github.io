@@ -9,8 +9,33 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Thu, 10 Nov 2022 02:17:41 GMT</pubDate>
+    <pubDate>Fri, 11 Nov 2022 08:25:55 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[WIP]asp.net 웹폼(Web Form) 프로젝트를 끝내며 내가 배운 것</title>
+      <link>https://sowon-dev.github.io/2022/11/10/221111projectreview8/</link>
+      <guid>https://sowon-dev.github.io/2022/11/10/221111projectreview8/</guid>
+      <pubDate>Thu, 10 Nov 2022 19:59:26 GMT</pubDate>
+      
+      <description>&lt;p&gt;이번 프로젝트는 나에게 효율이 나질않는 프로젝트였다.&lt;br&gt;MVC패턴이 아닌 웹폼프레임워크를 처음 사용하면서 효율이 제대로 나오지않아 많이 답답했다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>이번 프로젝트는 나에게 효율이 나질않는 프로젝트였다.<br>MVC패턴이 아닌 웹폼프레임워크를 처음 사용하면서 효율이 제대로 나오지않아 많이 답답했다.</p><a id="more"></a><p>이번 프로젝트에서는 Code-Behind Page Model을 사용했는데 <code>*.aspx.cs</code>로부터 클래스를 상속받는 <code>*.aspx</code>파일에 html과 js로 화면작업했다.</p><h1 id="keep"><a href="#keep" class="headerlink" title="keep"></a>keep</h1><p><br><br><br></p><h1 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h1><p><br><br><br></p><h1 id="Try"><a href="#Try" class="headerlink" title="Try"></a>Try</h1>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2022/11/10/221111projectreview8/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[jQuery] checkbox와 select 다루기</title>
@@ -444,31 +469,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/08/15/220816Jsp-restart/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[SQL]변수 @사용법, 사용자 정의 변수 직접 사용해보기</title>
-      <link>https://sowon-dev.github.io/2022/08/11/220812SQL-variable/</link>
-      <guid>https://sowon-dev.github.io/2022/08/11/220812SQL-variable/</guid>
-      <pubDate>Thu, 11 Aug 2022 15:13:20 GMT</pubDate>
-      
-      <description>&lt;p&gt;SQL에서도 변수를 사용할 수 있다! 알고는 있었지만 잘 사용한 적이 없는데 이번에 select로 가져온 값을 서브쿼리에서 사용하고 싶어서 찾아보다가 변수를 사용하게 되었다.&lt;br&gt;이밖에도 row갯수를 셀때에도 단독으로 많이 사용한다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>SQL에서도 변수를 사용할 수 있다! 알고는 있었지만 잘 사용한 적이 없는데 이번에 select로 가져온 값을 서브쿼리에서 사용하고 싶어서 찾아보다가 변수를 사용하게 되었다.<br>이밖에도 row갯수를 셀때에도 단독으로 많이 사용한다.</p><a id="more"></a><h2 id="사용자-정의-변수"><a href="#사용자-정의-변수" class="headerlink" title="사용자 정의 변수"></a>사용자 정의 변수</h2><p>변수란? 특정 값을 담아두는 곳이다.<br>사용자 정의변수란? 명칭 그대로 사용자가 임의로 사용하려고 만든 변수이다.</p><p><br><br><br></p><h3 id="1-선언-및-초기화"><a href="#1-선언-및-초기화" class="headerlink" title="1. 선언 및 초기화"></a>1. 선언 및 초기화</h3><p>사용자 정의 변수를 선언 및 초기화하는 방법은 간단하다.</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SET</span> @변수명 = 대입값;</span><br><span class="line"><span class="keyword">SET</span> @변수명 := 대입값;</span><br><span class="line"><span class="keyword">SELECT</span> @변수명 := 대입값;</span><br></pre></td></tr></table></figure><p>SET 명령문에서는 <code>=</code>과 <code>:=</code>를 둘 다 사용할 수 있지만 SET 이외의 명령문에서는 <code>=</code>가 비교연산자이기때문에 변수를 선언할땐 <code>:=</code>만 쓸 수 있다.<br>기본값은 NULL이다.</p><p><br><br><br></p><h3 id="2-사용"><a href="#2-사용" class="headerlink" title="2. 사용"></a>2. 사용</h3><p>변수를 사용하는 방법은 더 간단하다.<br>원하는 곳에 </p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SET</span> @변수명 = 대입값;</span><br><span class="line"><span class="keyword">SET</span> @변수명 := 대입값;</span><br><span class="line"><span class="keyword">SELECT</span> @변수명 := 대입값;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="예시코드"><a href="#예시코드" class="headerlink" title="예시코드"></a>예시코드</h2><p>내가 하고 싶었던 것: select에서 가져온 TPOT.WEEK_CODE의 값을 별칭 roundRowNo를 가져올 서브쿼리에 사용하기.<br>그래서 아래와 같은 코드를 짰다.</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"getDetail"</span> <span class="attr">parameterType</span>=<span class="string">"int"</span> <span class="attr">resultType</span>=<span class="string">"Movie"</span>&gt;</span></span><br><span class="line">/* query id: getDetail */</span><br><span class="line">SELECT</span><br><span class="line">DATE_FORMAT(TPR.RESERVE_DT, '%Y-%m-%d') as reserveDt</span><br><span class="line">, @weekcode := TPOT.WEEK_CODE </span><br><span class="line">, (SELECT roundRowNo </span><br><span class="line">FROM (</span><br><span class="line">SELECT </span><br><span class="line">OPEN_TIME_ID</span><br><span class="line">, (@row_number := @row_number + 1) AS roundRowNo </span><br><span class="line">FROM tb_open_time</span><br><span class="line">JOIN (SELECT @row_number := 0) r</span><br><span class="line">WHERE IS_USE = 1 </span><br><span class="line">AND   WEEK_CODE = @weekcode</span><br><span class="line">) totalRowCnt</span><br><span class="line">  WHERE totalRowCnt.OPEN_TIME_ID = TPR.OPEN_TIME_ID</span><br><span class="line">  ) AS roundRowNo</span><br><span class="line">, -- 중략</span><br><span class="line">FROM TB_RESERVE TPR </span><br><span class="line">JOIN TB_USER TU </span><br><span class="line">ON TPR.RESERVE_USER_NO = TU.USER_NO</span><br><span class="line">JOIN TB_OPEN_TIME TPOT </span><br><span class="line">ON  TPR.OPEN_TIME_ID = TPOT.OPEN_TIME_ID </span><br><span class="line">WHERE TPR.RESERVE_ID = #&#123;reserveId&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure><p><br><br><br></p><h3 id="1-weekcode-TPOT-WEEK-CODE의-의미"><a href="#1-weekcode-TPOT-WEEK-CODE의-의미" class="headerlink" title="1. @weekcode := TPOT.WEEK_CODE의 의미"></a>1. <code>@weekcode := TPOT.WEEK_CODE</code>의 의미</h3><p>SELECT문에서 <code>weekcode</code>라는 변수를 선언 한 뒤(= <code>@weekcode</code>) TPOT.WEEK_CODE 값으로 초기화 했다.<br>이때 SET 명령문이 아닌 SELECT문이기에 <code>:=</code>를 사용했다.</p><p><br><br><br></p><h3 id="2-row-number"><a href="#2-row-number" class="headerlink" title="2. row_number"></a>2. row_number</h3><p>실무에서 사용자 정의 변수를 가장 많이 사용할 때는 바로 row 개수를 구할때이다.</p><ol><li><code>@row_number := 0</code> : 변수 <code>@row_number</code>를 0으로 선언 및 초기화를 한다.</li><li><code>@row_number := @row_number + 1</code> : 출력되는 행의 갯수만큼 +1 더해주면 되므로 누적합을 한다.</li><li>이를 행마다 출력해주면 row 개수를 구하는 쿼리 끝!</li></ol>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/MySQL/">MySQL</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/MySQL/">MySQL</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/08/11/220812SQL-variable/#disqus_thread</comments>
       
     </item>
     
