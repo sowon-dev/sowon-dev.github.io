@@ -9,7 +9,7 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Fri, 11 Nov 2022 08:25:55 GMT</pubDate>
+    <pubDate>Sat, 12 Nov 2022 00:20:31 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -22,7 +22,7 @@
       
       
       
-      <content:encoded><![CDATA[<p>이번 프로젝트는 나에게 효율이 나질않는 프로젝트였다.<br>MVC패턴이 아닌 웹폼프레임워크를 처음 사용하면서 효율이 제대로 나오지않아 많이 답답했다.</p><a id="more"></a><p>이번 프로젝트에서는 Code-Behind Page Model을 사용했는데 <code>*.aspx.cs</code>로부터 클래스를 상속받는 <code>*.aspx</code>파일에 html과 js로 화면작업했다.</p><h1 id="keep"><a href="#keep" class="headerlink" title="keep"></a>keep</h1><p><br><br><br></p><h1 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h1><p><br><br><br></p><h1 id="Try"><a href="#Try" class="headerlink" title="Try"></a>Try</h1>]]></content:encoded>
+      <content:encoded><![CDATA[<p>이번 프로젝트는 나에게 효율이 나질않는 프로젝트였다.<br>MVC패턴이 아닌 웹폼프레임워크를 처음 사용하면서 효율이 제대로 나오지않아 많이 답답했다.</p><a id="more"></a><p>이번 프로젝트에서는 Code-Behind Page Model을 사용했는데 <code>*.aspx.cs</code>로부터 클래스를 상속받는 <code>*.aspx</code>파일에 html과 js로 화면작업했다.</p><h1 id="keep"><a href="#keep" class="headerlink" title="keep"></a>keep</h1><p>현재 만족하고 있는 부분과 계속해서 이어갔으면 하는 부분</p><ol><li>레거시 코드를 분석하고 페이지테스트없이 코드를 이해하는 능력</li></ol><p><br><br><br></p><h1 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h1><p>개선이 필요하다고 생각되는 부분</p><ol><li><p><br><br><br></p><h1 id="Try"><a href="#Try" class="headerlink" title="Try"></a>Try</h1><p>Problem의 해결책이 될 수 있는 부분</p></li></ol>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
