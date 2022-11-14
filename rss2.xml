@@ -9,11 +9,11 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Sat, 12 Nov 2022 00:20:31 GMT</pubDate>
+    <pubDate>Mon, 14 Nov 2022 12:49:13 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>[WIP]asp.net 웹폼(Web Form) 프로젝트를 끝내며 내가 배운 것</title>
+      <title>asp.net 웹폼(Web Form)프로젝트를 끝내며 내가 배운 것</title>
       <link>https://sowon-dev.github.io/2022/11/10/221111projectreview8/</link>
       <guid>https://sowon-dev.github.io/2022/11/10/221111projectreview8/</guid>
       <pubDate>Thu, 10 Nov 2022 19:59:26 GMT</pubDate>
@@ -22,7 +22,7 @@
       
       
       
-      <content:encoded><![CDATA[<p>이번 프로젝트는 나에게 효율이 나질않는 프로젝트였다.<br>MVC패턴이 아닌 웹폼프레임워크를 처음 사용하면서 효율이 제대로 나오지않아 많이 답답했다.</p><a id="more"></a><p>이번 프로젝트에서는 Code-Behind Page Model을 사용했는데 <code>*.aspx.cs</code>로부터 클래스를 상속받는 <code>*.aspx</code>파일에 html과 js로 화면작업했다.</p><h1 id="keep"><a href="#keep" class="headerlink" title="keep"></a>keep</h1><p>현재 만족하고 있는 부분과 계속해서 이어갔으면 하는 부분</p><ol><li>레거시 코드를 분석하고 페이지테스트없이 코드를 이해하는 능력</li></ol><p><br><br><br></p><h1 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h1><p>개선이 필요하다고 생각되는 부분</p><ol><li><p><br><br><br></p><h1 id="Try"><a href="#Try" class="headerlink" title="Try"></a>Try</h1><p>Problem의 해결책이 될 수 있는 부분</p></li></ol>]]></content:encoded>
+      <content:encoded><![CDATA[<p>이번 프로젝트는 나에게 효율이 나질않는 프로젝트였다.<br>MVC패턴이 아닌 웹폼프레임워크를 처음 사용하면서 효율이 제대로 나오지않아 많이 답답했다.</p><a id="more"></a><p>이번 프로젝트에서는 Code-Behind Page Model을 사용했는데 <code>*.aspx.cs</code>로부터 클래스를 상속받는 <code>*.aspx</code>파일에 html과 js로 화면작업을 했다.<br>화면작업 위주로 했기에 백단을 많이 다루지 못해 개인적으로 아쉬운 프로젝트였다.</p><h1 id="keep"><a href="#keep" class="headerlink" title="keep"></a>keep</h1><p>현재 만족하고 있는 부분과 계속해서 이어갔으면 하는 부분</p><ol><li>레거시 코드를 분석하고 페이지테스트없이 코드를 이해하는 능력: 레거시 프로젝트를 고도화하는 작업이었기 때문에 레거시 코드를 정확히 읽어 기능을 이해하는 것이 작업의 핵심이였다. 프로젝트 특성상 기능을 테스트해볼수있는 페이지없이 오로지 코드만 보고 기능을 이해해야했기에 처음에는 버벅거렸으나 프로젝트 후반에는 술술 읽혀서 나조차 신기했다. 스스로 가장 많이 성장했다고 생각하는 부분이다.</li><li>프로시저 바로 이해하기: 이번 프로젝트는 전체가 프로시저로 구현되어있어 프로시저를 읽고 해석하는 부분이 많았고 덕분에 프로시저와 엄청나게 친숙해졌다.  </li></ol><p><br><br><br></p><h1 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h1><p>개선이 필요하다고 생각되는 부분</p><ol><li>엑셀파일을 업로드하면 엑셀파일을 읽어서 DB에 등록하는 부분 코드 뜯어보기: 호출만 하고 넘어간 부분인데 스스로 구현할 수 있을정도로 깊게 봤으면 더 성장했겠다는 생각이 들었다.</li></ol><p><br><br><br></p><h1 id="Try"><a href="#Try" class="headerlink" title="Try"></a>Try</h1><p>Problem의 해결책이 될 수 있는 부분</p><ol><li>이번에는 백엔드를 거의 건들이지 않았는데 욕심내서 뜯어볼 수도 있었는데 호출만해서 사용한 점이 아쉽다.</li></ol>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
