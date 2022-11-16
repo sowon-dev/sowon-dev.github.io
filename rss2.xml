@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Mon, 14 Nov 2022 12:49:13 GMT</pubDate>
+    <pubDate>Wed, 16 Nov 2022 14:37:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[WIP]Cron표현식 자세히</title>
+      <link>https://sowon-dev.github.io/2022/11/16/221116cron/</link>
+      <guid>https://sowon-dev.github.io/2022/11/16/221116cron/</guid>
+      <pubDate>Wed, 16 Nov 2022 05:14:08 GMT</pubDate>
+      
+      <description>&lt;p&gt;신규로 맡은 프로젝트의 코드분석 중 크론표현식을 만났다.&lt;br&gt;크론표현식을 한 번 공부한 적이 있어서 당연히 술술 읽힐 줄 알았는데 웬걸… 기억이 나질않았다.&lt;br&gt;역시 안다고 생각하는 것과 아는 것은 다르다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>신규로 맡은 프로젝트의 코드분석 중 크론표현식을 만났다.<br>크론표현식을 한 번 공부한 적이 있어서 당연히 술술 읽힐 줄 알았는데 웬걸… 기억이 나질않았다.<br>역시 안다고 생각하는 것과 아는 것은 다르다.</p><a id="more"></a><p>이참에 포스팅을 통해 확실히 내 것으로 만들어야겠다.</p><h1 id="개념"><a href="#개념" class="headerlink" title="개념"></a>개념</h1><p>Cron 표현식은 스케줄러 시간을 세팅할 때 주로 사용되는 표현식으로 7개의 필드를 띄어쓰기로 구분한다.<br>연도는 생략가능하다!</p><p><br><br><br></p><h1 id="형태"><a href="#형태" class="headerlink" title="형태"></a>형태</h1><p>시간을 나타내는 표현식인만큼 필드를 외우기는 참 쉽다!</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;초&gt; &lt;분&gt; &lt;시&gt; &lt;일&gt; &lt;월&gt; &lt;요일&gt; &lt;년&gt;</span><br></pre></td></tr></table></figure><p>각 필드마다 허용되는 값과 허용되는 특수문자가 다르다. 각 특수문자의 의미도 알아둬야한다!</p><table><thead><tr><th align="center">필드</th><th align="center">필수여부</th><th align="center">허용되는 값</th><th align="center">허용되는 특수문자</th></tr></thead><tbody><tr><td align="center">초</td><td align="center">Y</td><td align="center">0-59</td><td align="center">, - * /</td></tr><tr><td align="center">분</td><td align="center">Y</td><td align="center">0-59</td><td align="center">, - * /</td></tr><tr><td align="center">시간</td><td align="center">Y</td><td align="center">0-23</td><td align="center">, - * /</td></tr><tr><td align="center">일</td><td align="center">Y</td><td align="center">1-31</td><td align="center">, - * ? / L W C</td></tr><tr><td align="center">월</td><td align="center">Y</td><td align="center">0-11 or JAN-DEC</td><td align="center">, - * /</td></tr><tr><td align="center">요일</td><td align="center">Y</td><td align="center">1-7 or SUN-SAT</td><td align="center">, - * ? / L C #</td></tr><tr><td align="center">년</td><td align="center">N</td><td align="center">empty or 1970-2099</td><td align="center">, - * /</td></tr></tbody></table><p><br><br><br></p><h1 id="특수문자의-의미"><a href="#특수문자의-의미" class="headerlink" title="특수문자의 의미"></a>특수문자의 의미</h1><p><br><br><br></p><h1 id="예시"><a href="#예시" class="headerlink" title="예시"></a>예시</h1><pre><code></code></pre><p>사실 가장 쉬운 방법은 <a href="http://www.cronmaker.com/;jsessionid=node01e568mpg1sqg9132x6b0diwtkc1083568.node0?0">cronmaker</a>사이트를 이용하면된다.</p><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://docs.oracle.com/cd/E12058_01/doc/doc.1014/e12030/cron_expressions.htm">https://docs.oracle.com/cd/E12058_01/doc/doc.1014/e12030/cron_expressions.htm</a></li><li><a href="https://dev-bri.tistory.com/4">https://dev-bri.tistory.com/4</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2022/11/16/221116cron/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>asp.net 웹폼(Web Form)프로젝트를 끝내며 내가 배운 것</title>
@@ -448,27 +469,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/08/18/220818JSTL-date/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[JSP] jsp파일을 수정하면 서버를 재시작해야할까?</title>
-      <link>https://sowon-dev.github.io/2022/08/15/220816Jsp-restart/</link>
-      <guid>https://sowon-dev.github.io/2022/08/15/220816Jsp-restart/</guid>
-      <pubDate>Mon, 15 Aug 2022 20:16:34 GMT</pubDate>
-      
-      <description>&lt;p&gt;개발을 하다보면 알겠지만 jsp 파일을 수정한 뒤 서버를 재시작하지않아도 반영이 된다. 어떨땐 즉시 반영되는데 또 어떨땐 반영이 느릴때도 있다.&lt;br&gt;jsp에는 java코드도 있는데 어떻게 컴파일없이 바로 반영이 될까?&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>개발을 하다보면 알겠지만 jsp 파일을 수정한 뒤 서버를 재시작하지않아도 반영이 된다. 어떨땐 즉시 반영되는데 또 어떨땐 반영이 느릴때도 있다.<br>jsp에는 java코드도 있는데 어떻게 컴파일없이 바로 반영이 될까?</p><a id="more"></a><p>즉시반영이 안 될때 혹 반영이 느릴때는 어떻게 해야할까?</p><p><br><br><br></p><h2 id="JSP-특징"><a href="#JSP-특징" class="headerlink" title="JSP 특징"></a>JSP 특징</h2><ul><li>동적 웹어플리케이션 컴포넌트</li><li>응답형식 html</li></ul><p><br><br><br></p><h2 id="페이지-실행-순서"><a href="#페이지-실행-순서" class="headerlink" title="페이지 실행 순서"></a>페이지 실행 순서</h2><ul><li>최초 호출: jsp -&gt; 서블릿 java 변환 -&gt; .class로 컴파일(컴파일일시를기록) -&gt; 클래스파일을 메모리에 로딩 -&gt; html 전송 -&gt; 브라우저에서 html이 보여짐</li><li>jsp 파일 수정없이 호출한 경우: 깆ㄴ 단순히 publishing</li><li>jsp 파일 수정후 호출한 경우: 컴파일일시가 변경되었다면, 서블릿 java로 변환 -&gt; .class컴파일 후 재로딩</li></ul><p><br><br><br></p><h2 id="jsp-수정사항-즉시-반영이-안될때"><a href="#jsp-수정사항-즉시-반영이-안될때" class="headerlink" title="jsp 수정사항 즉시 반영이 안될때?"></a>jsp 수정사항 즉시 반영이 안될때?</h2><ol><li>서버세팅이 자동 컴파일 되는 지 체크<ul><li>톰캣 context.xml 파일에서 <code>&lt;Context reloadable=&quot;true&quot;&gt;</code> 리로더블이 true인지 확인할 것</li></ul></li><li>이클립스에서 publish to the server 버튼을 클릭(단축키 : Ctrl + Alt + P) - <a href="https://gocoder.tistory.com/387">참고글: Eclipse HTML 수정 즉시 반영</a></li></ol><p><br><br></p><h3 id="만약-서버-재시작해도-반영이-안된다면"><a href="#만약-서버-재시작해도-반영이-안된다면" class="headerlink" title="만약 서버 재시작해도 반영이 안된다면?"></a>만약 서버 재시작해도 반영이 안된다면?</h3><ol><li>해당 컴파일 파일을 먼저 백업해놓기</li><li>해당 class파일 석제하기</li><li>해당 페이지 다시 호출해서 컴파일 파일이 자동 생성되는 지 확인하기</li></ol><p>그렇다면 JSP컴파일 파일은 어디에 있을까?</p><ul><li>기본위치: <code>톰캣홈/work/Catalina/호스트이름/_/org/apache/jsp</code></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/JSP/">JSP</category>
-      
-      
-      
-      <comments>https://sowon-dev.github.io/2022/08/15/220816Jsp-restart/#disqus_thread</comments>
       
     </item>
     
