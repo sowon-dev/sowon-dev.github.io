@@ -3,6 +3,34 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/ITWILL-JAVA/</loc>
+        <lastmod>2022-11-21T14:14:34.856Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/TIL/</loc>
+        <lastmod>2022-11-21T14:14:34.856Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/MySQL/</loc>
+        <lastmod>2022-11-21T13:55:05.388Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/SQLD/</loc>
+        <lastmod>2022-11-21T13:54:49.683Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/%25ED%259A%258C%25EA%25B3%25A0%25EB%25A1%259D/</loc>
         <lastmod>2022-11-14T12:49:13.823Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -24,13 +52,6 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/tags/SQLD/</loc>
-        <lastmod>2022-11-01T07:01:25.946Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/tags/%25EC%25B0%25A8%25EC%259D%25B4/</loc>
         <lastmod>2022-10-29T15:44:57.076Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -47,20 +68,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/%25EC%2598%25A4%25EB%258A%2598%25EB%2598%2590%25EB%25AA%25BB%25EC%2595%258C%25EC%2595%2584%25EB%2593%25A3%25EA%25B3%25A0%25EB%25A7%2590%25EC%2595%2598%25EC%258A%25B5%25EB%258B%2588%25EB%258B%25A4/</loc>
         <lastmod>2022-10-29T15:44:52.265Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/MySQL/</loc>
-        <lastmod>2022-10-29T15:44:40.175Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/ITWILL-JAVA/</loc>
-        <lastmod>2022-10-28T04:54:22.495Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -110,13 +117,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/CORS/</loc>
         <lastmod>2022-07-19T13:27:09.148Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/TIL/</loc>
-        <lastmod>2022-07-15T07:05:09.929Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Thu, 17 Nov 2022 13:25:18 GMT</pubDate>
+    <pubDate>Mon, 21 Nov 2022 14:28:32 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[JS]Web Storage vs 쿠키(Cookie) vs 세션(Session) vs 캐시(Cache)</title>
+      <link>https://sowon-dev.github.io/2022/11/21/221121JS-webstorage/</link>
+      <guid>https://sowon-dev.github.io/2022/11/21/221121JS-webstorage/</guid>
+      <pubDate>Mon, 21 Nov 2022 04:27:19 GMT</pubDate>
+      
+      <description>&lt;p&gt;레거시프로젝트의 소스코드를 분석하다가 Web Storage를 만났다.&lt;br&gt;localStorage와 sessionStorage를 둘 다 사용하고 있었기에 둘 차이가 궁금해졌다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>레거시프로젝트의 소스코드를 분석하다가 Web Storage를 만났다.<br>localStorage와 sessionStorage를 둘 다 사용하고 있었기에 둘 차이가 궁금해졌다.</p><a id="more"></a><h1 id="Web-Storage"><a href="#Web-Storage" class="headerlink" title="Web Storage"></a>Web Storage</h1><ul><li>클라이언트에 저장</li><li>Key-Value 형태</li><li>쿠키와 달리 서버에 전송안함</li><li>CSRF로부터 안전 why? Origin단위로 접근이 제한되기때문에.</li><li>쿠키(4GB)보다 큰 저장용량(5GB)지원</li><li>문자형(String) 데이터 타입만 지원</li><li>종류<ul><li>localStorage: 사용자가 데이터를 지우지 않는 이상, 브라우저나 OS를 종료해도 계속 브라우저에 남아있음 (영구성) 단, 동일한 브라우저를 사용할 때만 해당</li><li>sessionStorage: 브라우저 탭에도 종속되기 때문에, 윈도우나 브라우저 탭을 닫을 경우 제거</li></ul></li></ul><p><br><br><br></p><h2 id="Origin-오리진이란"><a href="#Origin-오리진이란" class="headerlink" title="Origin 오리진이란?"></a>Origin 오리진이란?</h2><p>오리진 = 프로토콜 + 도메인 + 포트</p><p><br><br><br></p><h1 id="비교"><a href="#비교" class="headerlink" title="비교"></a>비교</h1><table><thead><tr><th align="center"></th><th align="left">localStorage</th><th align="left">sessionStorage</th><th align="left">Cookie</th><th align="left">Session</th></tr></thead><tbody><tr><td align="center">저장위치</td><td align="left">클라이언트</td><td align="left">클라이언트</td><td align="left">클라이언트</td><td align="left">서버</td></tr><tr><td align="center">저장형식</td><td align="left">String</td><td align="left">String</td><td align="left">String</td><td align="left">Obejct</td></tr><tr><td align="center">전송</td><td align="left">서버전송x <br> -&gt; 서버 부담없음</td><td align="left">서버전송x <br> -&gt; 서버 부담없음</td><td align="left">매번 서버에 자동 전송 <br> -&gt; 크기가 크면 서버에 부담</td><td align="left">서버에서 클라이언트를 구분하기 위해 세션 ID를 부여 <br> -&gt; 사용자가 많아질수록 서버 메모리를 많이 차지</td></tr><tr><td align="center">유효기간 설정</td><td align="left">불가능</td><td align="left">불가능</td><td align="left">가능</td><td align="left">가능(기본 30분)</td></tr><tr><td align="center">데이터영구성</td><td align="left">브라우저 종료해도 유지 <br> 명시적 삭제 필요</td><td align="left">윈도우나 브라우저 탭을 닫을 경우 삭제됨</td><td align="left">쿠키 저장시 설정(설정 없을 시에는 브라우저 종료시 만료)</td><td align="left">브라우저 종료 시 만료기간에 상관없이 삭제됨</td></tr><tr><td align="center">생성단위</td><td align="left">Origin별로 생성<br>다른 오리진의 로컬 스토리지에는 접근 불가<br>서로 다른 브라우저 탭이라도 동일한 오리진이라면 동일한 로컬 스토리지를 사용함<br></td><td align="left">탭/윈도우 단위로 생성-&gt;탭/윈도우를 닫을 시 데이터가 삭제됨</td><td align="left">브라우저에 여러개 생성가능</td><td align="left">브라우저당 하나의 세션SessionID이 생성</td></tr><tr><td align="center">주 사용처</td><td align="left">지속적으로 필요한 정보를 저장할때<br>e.g.자동 로그인 등</td><td align="left">잠시 동안 필요한 정보를 저장할 때<br>e.g.입력 폼 저장, 일회성 로그인 등</td><td align="left">로그인유지, 자동완성, 일주일간 다시 보지 않기, 최근 검색한 상품들을 광고에서 추천, 쇼핑몰 장바구니 기능</td><td align="left">로그인유지</td></tr></tbody></table><p><br><br><br></p><h1 id="캐시-Cache-는-또-뭘까"><a href="#캐시-Cache-는-또-뭘까" class="headerlink" title="캐시(Cache)는 또 뭘까?"></a>캐시(Cache)는 또 뭘까?</h1><p>쿠키와 세션을 이야기하다보면 자연스럽게 캐시가 나온다.<br>어떤 차이가 있을까?</p><ul><li>캐시: 웹 페이지 요소(e.g.img,css,js등 리소스파일)를 저장하기 위한 임시 저장소 for 빠른 웹페이지 랜더링</li><li>쿠키,세션: 정보 저장소 for 사용자인증</li></ul><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/API/Window/sessionStorage">https://developer.mozilla.org/ko/docs/Web/API/Window/sessionStorage</a></li><li><a href="https://it-eldorado.tistory.com/90">IT엘도라도 - 쿠키, 웹 스토리지(로컬 스토리지, 세션 스토리지)</a></li><li><a href="https://doqtqu.tistory.com/m/306">푸고배님 - 쿠키 vs 세션 vs 웹 스토리지(로컬 스토리지, 세션 스토리지)</a></li><li><a href="https://sowon-dev.github.io/2020/06/30/200701jspi/">https://sowon-dev.github.io/2020/06/30/200701jspi/</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2022/11/21/221121JS-webstorage/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Cron표현식 자세히</title>
@@ -446,29 +467,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/08/20/220715projectreivew6/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[JSTL] 날짜 차이 계산하기</title>
-      <link>https://sowon-dev.github.io/2022/08/18/220818JSTL-date/</link>
-      <guid>https://sowon-dev.github.io/2022/08/18/220818JSTL-date/</guid>
-      <pubDate>Thu, 18 Aug 2022 04:00:10 GMT</pubDate>
-      
-      <description>&lt;p&gt;현재날짜와 db에서 가져오는 날짜 차이를 계산하고 싶었다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>현재날짜와 db에서 가져오는 날짜 차이를 계산하고 싶었다.</p><a id="more"></a><h1 id="코드"><a href="#코드" class="headerlink" title="코드"></a>코드</h1><p>구글링끝에 드디어 성공~!!<br>now는 오늘날짜이고 list.dbDt는 db에서 가져온 날짜값이다.<br>여기서 중요한 점은 parseNumber할때 <code>.time</code>을 해줘야지 제대로 계산된다는 점이다. </p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">jsp:useBean</span> <span class="attr">id</span>=<span class="string">"now"</span> <span class="attr">class</span>=<span class="string">"java.util.Date"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">fmt:parseNumber</span> <span class="attr">value</span>=<span class="string">"$&#123;now.time / (1000*60*60*24)&#125;"</span> <span class="attr">integerOnly</span>=<span class="string">"true"</span> <span class="attr">var</span>=<span class="string">"nowfmtTime"</span> <span class="attr">scope</span>=<span class="string">"request"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">fmt:parseNumber</span> <span class="attr">value</span>=<span class="string">"$&#123;list.dbDt.time / (1000*60*60*24)&#125;"</span> <span class="attr">integerOnly</span>=<span class="string">"true"</span> <span class="attr">var</span>=<span class="string">"dbDtParse"</span> <span class="attr">scope</span>=<span class="string">"request"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line">$&#123;dbDtParse - nowfmtTime &#125;</span><br></pre></td></tr></table></figure><p>예를 들어 now가 2022-08-18이고 list.dbDt가 2022-08-19이면 <code>${dbDtParse - nowfmtTime }</code>값은 0이다.<br>테스트해보면 아래와 같이 값을 계산할 수 있다.</p><table><thead><tr><th align="center">now</th><th align="center">list.dbDt</th><th align="center">${dbDtParse - nowfmtTime }</th></tr></thead><tbody><tr><td align="center">2022-08-18</td><td align="center">2022-08-18</td><td align="center">-1</td></tr><tr><td align="center">2022-08-18</td><td align="center">2022-08-18</td><td align="center">0</td></tr><tr><td align="center">2022-08-18</td><td align="center">2022-08-20</td><td align="center">1</td></tr><tr><td align="center">2022-08-18</td><td align="center">2022-08-23</td><td align="center">4</td></tr></tbody></table><h1 id="관련"><a href="#관련" class="headerlink" title="관련"></a>관련</h1><ul><li><a href="">java.util.Date 현재날짜의 시간을 0으로 설정하기</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/JSP/">JSP</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/JSTL/">JSTL</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/08/18/220818JSTL-date/#disqus_thread</comments>
       
     </item>
     

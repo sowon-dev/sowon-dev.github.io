@@ -8,6 +8,46 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2022/11/21/221121JS-webstorage/</loc>
+        <lastmod>2022-11-21T14:28:32.650Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/06/30/200701jspi/</loc>
+        <lastmod>2022-11-21T14:14:34.856Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/08/11/220812SQL-variable/</loc>
+        <lastmod>2022-11-21T13:55:05.388Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/10/29/221029SQLD-tablepartition/</loc>
+        <lastmod>2022-11-21T13:54:49.683Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/10/31/221101SQLD-super-sub/</loc>
+        <lastmod>2022-11-21T13:54:10.247Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2022/11/16/221116cron/</loc>
         <lastmod>2022-11-17T13:25:18.701Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -42,22 +82,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2022/08/18/220818JSTL-date/</loc>
         <lastmod>2022-11-03T09:38:54.313Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/10/31/221101SQLD-super-sub/</loc>
-        <lastmod>2022-11-01T07:01:25.946Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/10/29/221029SQLD-tablepartition/</loc>
-        <lastmod>2022-10-31T04:36:27.938Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -266,14 +290,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2022/08/15/220816Jsp-restart/</loc>
         <lastmod>2022-08-16T05:56:40.244Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/08/11/220812SQL-variable/</loc>
-        <lastmod>2022-08-12T01:15:30.196Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -4306,14 +4322,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/06/14/200615jspi3/</loc>
         <lastmod>2020-07-14T14:06:14.992Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/06/30/200701jspi/</loc>
-        <lastmod>2020-07-14T13:53:19.199Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

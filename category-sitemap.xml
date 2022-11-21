@@ -8,6 +8,34 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/JavaScript/</loc>
+        <lastmod>2022-11-21T14:28:32.650Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/JSP/</loc>
+        <lastmod>2022-11-21T14:14:34.856Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Database/MySQL/</loc>
+        <lastmod>2022-11-21T13:55:05.388Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Database/</loc>
+        <lastmod>2022-11-21T13:55:05.388Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/Journal/</loc>
         <lastmod>2022-11-17T13:25:18.701Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -22,27 +50,6 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/categories/JavaScript/</loc>
-        <lastmod>2022-11-10T02:17:41.210Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/JSP/</loc>
-        <lastmod>2022-11-08T01:15:38.825Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Database/</loc>
-        <lastmod>2022-11-01T07:01:25.946Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/categories/React/</loc>
         <lastmod>2022-10-30T07:25:14.563Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -52,13 +59,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/NET/</loc>
         <lastmod>2022-10-29T15:44:57.076Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Database/MySQL/</loc>
-        <lastmod>2022-10-29T15:44:40.175Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
