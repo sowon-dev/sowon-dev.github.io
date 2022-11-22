@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Mon, 21 Nov 2022 14:28:32 GMT</pubDate>
+    <pubDate>Tue, 22 Nov 2022 06:30:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[WIP]레디스(Redis)란 무엇이고 왜 쓰는 것일까?</title>
+      <link>https://sowon-dev.github.io/2022/11/21/221122Redis/</link>
+      <guid>https://sowon-dev.github.io/2022/11/21/221122Redis/</guid>
+      <pubDate>Mon, 21 Nov 2022 20:33:44 GMT</pubDate>
+      
+      <description>&lt;p&gt;종종 들었던 Redis, 이번 레거시프로젝트 소스코드분석중 RedisTemplate을 만나면서 그 개념을 함께 정리해보고자한다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>종종 들었던 Redis, 이번 레거시프로젝트 소스코드분석중 RedisTemplate을 만나면서 그 개념을 함께 정리해보고자한다.</p><a id="more"></a><h1 id="Redis란"><a href="#Redis란" class="headerlink" title="Redis란?"></a>Redis란?</h1><p>Redis는 REmote DIctionary Server의 약어로 Key와 Value를 가진 오픈소스 NoSQL 데이터베이스이다.</p><p><br><br><br></p><h2 id="사용처"><a href="#사용처" class="headerlink" title="사용처"></a>사용처</h2><p>크게 3가지 용도로 사용한다.</p><ol><li>데이터베이스</li><li>캐시</li><li>메세지 브로커</li></ol><p><br><br><br></p><h2 id="특징"><a href="#특징" class="headerlink" title="특징"></a>특징</h2><ol><li>인메모리 데이터구조: 디스크 아닌 메모리 기반. Redis의 가장 큰 특징임. </li><li>캐시를 사용하여 속도가 빠름</li></ol><p><br><br><br></p><h1 id="DB가-있는데-Redis를-왜-쓸까"><a href="#DB가-있는데-Redis를-왜-쓸까" class="headerlink" title="DB가 있는데 Redis를 왜 쓸까?"></a>DB가 있는데 Redis를 왜 쓸까?</h1><p>근원적인 궁금증을 해결해준 글을 발견해서 발췌해왔다.</p><blockquote><p>데이터 베이스가 있는데도 Redis라는 인메모리 데이터 구조 저장소를 사용하는 이유는 무엇일까요?<br>데이터 베이스는 데이터를 물리 디스크에 직접 쓰기 때문에 서버에 문제가 발생하여 다운되더라도 데이터가 손실되지 않습니다. 하지만 매번 디스크에 접근해야 하기 때문에 사용자가 많아질수록 부하가 많아져서 느려질 수 있는데요.<br>일반적으로 서비스 운영 초반이거나 규모가 작은, 사용자가 많지 않은 서비스의 경우에는 WEB - WAS - DB 의 구조로도 데이터 베이스에 무리가 가지 않습니다.<br>하지만 사용자가 늘어난다면 데이터 베이스가 과부하 될 수 있기 때문에 이때 캐시 서버를 도입하여 사용합니다.<br>그리고 이 캐시 서버로 이용할 수 있는 것이 바로 Redis 입니다.<br>캐시는 한번 읽어온 데이터를 임의의 공간에 저장하여 다음에 읽을 때는 빠르게 결괏값을 받을 수 있도록 도와주는 공간입니다.<br>같은 요청이 여러 번 들어오는 경우 매번 데이터 베이스를 거치는 것이 아니라 캐시 서버에서 첫 번째 요청 이후 저장된 결괏값을 바로 내려주기 때문에 DB의 부하를 줄이고 서비스의 속도도 느려지지 않는 장점이 있습니다.<br>출처: <a href="https://wildeveloperetrain.tistory.com/m/21">Jan92님 블로그 - Redis란? 레디스의 기본적인 개념</a></p></blockquote><p><br><br><br></p><h1 id="MSSQL이나-MYSQL도-인메모리DB를-지원하는데-왜-굳이-레디스-Redis-를-사용할까"><a href="#MSSQL이나-MYSQL도-인메모리DB를-지원하는데-왜-굳이-레디스-Redis-를-사용할까" class="headerlink" title="MSSQL이나 MYSQL도 인메모리DB를 지원하는데 왜 굳이 레디스(Redis)를 사용할까?"></a>MSSQL이나 MYSQL도 인메모리DB를 지원하는데 왜 굳이 레디스(Redis)를 사용할까?</h1><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://aws.amazon.com/ko/elasticache/what-is-redis/">https://aws.amazon.com/ko/elasticache/what-is-redis/</a></li><li><a href="https://wildeveloperetrain.tistory.com/m/21">Jan92님 - Redis란? 레디스의 기본적인 개념</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Redis/">Redis</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2022/11/21/221122Redis/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[JS]Web Storage vs 쿠키(Cookie) vs 세션(Session) vs 캐시(Cache)</title>
@@ -22,7 +45,7 @@
       
       
       
-      <content:encoded><![CDATA[<p>레거시프로젝트의 소스코드를 분석하다가 Web Storage를 만났다.<br>localStorage와 sessionStorage를 둘 다 사용하고 있었기에 둘 차이가 궁금해졌다.</p><a id="more"></a><h1 id="Web-Storage"><a href="#Web-Storage" class="headerlink" title="Web Storage"></a>Web Storage</h1><ul><li>클라이언트에 저장</li><li>Key-Value 형태</li><li>쿠키와 달리 서버에 전송안함</li><li>CSRF로부터 안전 why? Origin단위로 접근이 제한되기때문에.</li><li>쿠키(4GB)보다 큰 저장용량(5GB)지원</li><li>문자형(String) 데이터 타입만 지원</li><li>종류<ul><li>localStorage: 사용자가 데이터를 지우지 않는 이상, 브라우저나 OS를 종료해도 계속 브라우저에 남아있음 (영구성) 단, 동일한 브라우저를 사용할 때만 해당</li><li>sessionStorage: 브라우저 탭에도 종속되기 때문에, 윈도우나 브라우저 탭을 닫을 경우 제거</li></ul></li></ul><p><br><br><br></p><h2 id="Origin-오리진이란"><a href="#Origin-오리진이란" class="headerlink" title="Origin 오리진이란?"></a>Origin 오리진이란?</h2><p>오리진 = 프로토콜 + 도메인 + 포트</p><p><br><br><br></p><h1 id="비교"><a href="#비교" class="headerlink" title="비교"></a>비교</h1><table><thead><tr><th align="center"></th><th align="left">localStorage</th><th align="left">sessionStorage</th><th align="left">Cookie</th><th align="left">Session</th></tr></thead><tbody><tr><td align="center">저장위치</td><td align="left">클라이언트</td><td align="left">클라이언트</td><td align="left">클라이언트</td><td align="left">서버</td></tr><tr><td align="center">저장형식</td><td align="left">String</td><td align="left">String</td><td align="left">String</td><td align="left">Obejct</td></tr><tr><td align="center">전송</td><td align="left">서버전송x <br> -&gt; 서버 부담없음</td><td align="left">서버전송x <br> -&gt; 서버 부담없음</td><td align="left">매번 서버에 자동 전송 <br> -&gt; 크기가 크면 서버에 부담</td><td align="left">서버에서 클라이언트를 구분하기 위해 세션 ID를 부여 <br> -&gt; 사용자가 많아질수록 서버 메모리를 많이 차지</td></tr><tr><td align="center">유효기간 설정</td><td align="left">불가능</td><td align="left">불가능</td><td align="left">가능</td><td align="left">가능(기본 30분)</td></tr><tr><td align="center">데이터영구성</td><td align="left">브라우저 종료해도 유지 <br> 명시적 삭제 필요</td><td align="left">윈도우나 브라우저 탭을 닫을 경우 삭제됨</td><td align="left">쿠키 저장시 설정(설정 없을 시에는 브라우저 종료시 만료)</td><td align="left">브라우저 종료 시 만료기간에 상관없이 삭제됨</td></tr><tr><td align="center">생성단위</td><td align="left">Origin별로 생성<br>다른 오리진의 로컬 스토리지에는 접근 불가<br>서로 다른 브라우저 탭이라도 동일한 오리진이라면 동일한 로컬 스토리지를 사용함<br></td><td align="left">탭/윈도우 단위로 생성-&gt;탭/윈도우를 닫을 시 데이터가 삭제됨</td><td align="left">브라우저에 여러개 생성가능</td><td align="left">브라우저당 하나의 세션SessionID이 생성</td></tr><tr><td align="center">주 사용처</td><td align="left">지속적으로 필요한 정보를 저장할때<br>e.g.자동 로그인 등</td><td align="left">잠시 동안 필요한 정보를 저장할 때<br>e.g.입력 폼 저장, 일회성 로그인 등</td><td align="left">로그인유지, 자동완성, 일주일간 다시 보지 않기, 최근 검색한 상품들을 광고에서 추천, 쇼핑몰 장바구니 기능</td><td align="left">로그인유지</td></tr></tbody></table><p><br><br><br></p><h1 id="캐시-Cache-는-또-뭘까"><a href="#캐시-Cache-는-또-뭘까" class="headerlink" title="캐시(Cache)는 또 뭘까?"></a>캐시(Cache)는 또 뭘까?</h1><p>쿠키와 세션을 이야기하다보면 자연스럽게 캐시가 나온다.<br>어떤 차이가 있을까?</p><ul><li>캐시: 웹 페이지 요소(e.g.img,css,js등 리소스파일)를 저장하기 위한 임시 저장소 for 빠른 웹페이지 랜더링</li><li>쿠키,세션: 정보 저장소 for 사용자인증</li></ul><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/API/Window/sessionStorage">https://developer.mozilla.org/ko/docs/Web/API/Window/sessionStorage</a></li><li><a href="https://it-eldorado.tistory.com/90">IT엘도라도 - 쿠키, 웹 스토리지(로컬 스토리지, 세션 스토리지)</a></li><li><a href="https://doqtqu.tistory.com/m/306">푸고배님 - 쿠키 vs 세션 vs 웹 스토리지(로컬 스토리지, 세션 스토리지)</a></li><li><a href="https://sowon-dev.github.io/2020/06/30/200701jspi/">https://sowon-dev.github.io/2020/06/30/200701jspi/</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p>레거시프로젝트의 소스코드를 분석하다가 Web Storage를 만났다.<br>localStorage와 sessionStorage를 둘 다 사용하고 있었기에 둘 차이가 궁금해졌다.</p><a id="more"></a><p>구글링할수도록 쿠키, 세션, 캐시까지 다양한 개념이 나오길래 이참에 다 정리해봤다.</p><h1 id="Web-Storage"><a href="#Web-Storage" class="headerlink" title="Web Storage"></a>Web Storage</h1><ul><li>클라이언트에 저장</li><li>Key-Value 형태</li><li>쿠키와 달리 서버에 전송안함</li><li>CSRF로부터 안전 why? Origin단위로 접근이 제한되기때문에.</li><li>쿠키(4GB)보다 큰 저장용량(5GB)지원</li><li>문자형(String) 데이터 타입만 지원</li><li>종류<ul><li>localStorage: 사용자가 데이터를 지우지 않는 이상, 브라우저나 OS를 종료해도 계속 브라우저에 남아있음 (영구성) 단, 동일한 브라우저를 사용할 때만 해당</li><li>sessionStorage: 브라우저 탭에도 종속되기 때문에, 윈도우나 브라우저 탭을 닫을 경우 제거</li></ul></li></ul><p><br><br><br></p><h2 id="Origin-오리진이란"><a href="#Origin-오리진이란" class="headerlink" title="Origin 오리진이란?"></a>Origin 오리진이란?</h2><p>오리진 = 프로토콜 + 도메인 + 포트</p><p><br><br><br></p><h1 id="비교"><a href="#비교" class="headerlink" title="비교"></a>비교</h1><table><thead><tr><th align="center"></th><th align="left">localStorage</th><th align="left">sessionStorage</th><th align="left">Cookie</th><th align="left">Session</th></tr></thead><tbody><tr><td align="center">저장위치</td><td align="left">클라이언트</td><td align="left">클라이언트</td><td align="left">클라이언트</td><td align="left">서버</td></tr><tr><td align="center">저장형식</td><td align="left">String</td><td align="left">String</td><td align="left">String</td><td align="left">Obejct</td></tr><tr><td align="center">전송</td><td align="left">서버전송x <br> -&gt; 서버 부담없음</td><td align="left">서버전송x <br> -&gt; 서버 부담없음</td><td align="left">매번 서버에 자동 전송 <br> -&gt; 크기가 크면 서버에 부담</td><td align="left">서버에서 클라이언트를 구분하기 위해 세션 ID를 부여 <br> -&gt; 사용자가 많아질수록 서버 메모리를 많이 차지</td></tr><tr><td align="center">유효기간 설정</td><td align="left">불가능</td><td align="left">불가능</td><td align="left">가능</td><td align="left">가능(기본 30분)</td></tr><tr><td align="center">데이터영구성</td><td align="left">브라우저 종료해도 유지 <br> 명시적 삭제 필요</td><td align="left">윈도우나 브라우저 탭을 닫을 경우 삭제됨</td><td align="left">쿠키 저장시 설정(설정 없을 시에는 브라우저 종료시 만료)</td><td align="left">브라우저 종료 시 만료기간에 상관없이 삭제됨</td></tr><tr><td align="center">생성단위</td><td align="left">Origin별로 생성<br>다른 오리진의 로컬 스토리지에는 접근 불가<br>서로 다른 브라우저 탭이라도 동일한 오리진이라면 동일한 로컬 스토리지를 사용함<br></td><td align="left">Origin별마다 탭/윈도우 단위로 생성-&gt;탭/윈도우를 닫을 시 데이터가 삭제됨</td><td align="left">브라우저에 여러개 생성가능</td><td align="left">브라우저당 하나의 세션SessionID이 생성</td></tr><tr><td align="center">주 사용처</td><td align="left">지속적으로 필요한 정보를 저장할때<br>e.g.자동 로그인 등</td><td align="left">잠시 동안 필요한 정보를 저장할 때<br>e.g.입력 폼 저장, 일회성 로그인 등</td><td align="left">로그인유지, 자동완성, 일주일간 다시 보지 않기, 최근 검색한 상품들을 광고에서 추천, 쇼핑몰 장바구니 기능</td><td align="left">로그인유지</td></tr></tbody></table><p><br><br><br></p><h1 id="캐시-Cache-는-또-뭘까"><a href="#캐시-Cache-는-또-뭘까" class="headerlink" title="캐시(Cache)는 또 뭘까?"></a>캐시(Cache)는 또 뭘까?</h1><p>쿠키와 세션을 이야기하다보면 자연스럽게 캐시가 나온다.<br>어떤 차이가 있을까?</p><ul><li>캐시: 웹 페이지 요소(e.g.img,css,js등 리소스파일)를 저장하기 위한 임시 저장소 for 빠른 웹페이지 랜더링</li><li>쿠키,세션: 정보 저장소 for 사용자인증</li></ul><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/API/Window/sessionStorage">https://developer.mozilla.org/ko/docs/Web/API/Window/sessionStorage</a></li><li><a href="https://it-eldorado.tistory.com/90">IT엘도라도 - 쿠키, 웹 스토리지(로컬 스토리지, 세션 스토리지)</a></li><li><a href="https://doqtqu.tistory.com/m/306">푸고배님 - 쿠키 vs 세션 vs 웹 스토리지(로컬 스토리지, 세션 스토리지)</a></li><li><a href="https://sowon-dev.github.io/2020/06/30/200701jspi/">https://sowon-dev.github.io/2020/06/30/200701jspi/</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
@@ -442,31 +465,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/08/22/bookList/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>포인트 플랫폼 프로젝트를 끝내며 내가 배운 것</title>
-      <link>https://sowon-dev.github.io/2022/08/20/220715projectreivew6/</link>
-      <guid>https://sowon-dev.github.io/2022/08/20/220715projectreivew6/</guid>
-      <pubDate>Sat, 20 Aug 2022 23:44:17 GMT</pubDate>
-      
-      <description>&lt;p&gt;이번 프로젝트는 기능 구현상 어려운 점은 크게 없었으나 서비스 도메인이 처음 접하는 도메인이라 비즈니스를 이해하는데 꽤 시간이 걸렸다.&lt;br&gt;이번 프로젝트를 통해 그 어떤 새로운 서비스 도메인을 접해도 어디서부터 어떻게 흐름을 잡고 분석하면 될지 배울 수 있었다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>이번 프로젝트는 기능 구현상 어려운 점은 크게 없었으나 서비스 도메인이 처음 접하는 도메인이라 비즈니스를 이해하는데 꽤 시간이 걸렸다.<br>이번 프로젝트를 통해 그 어떤 새로운 서비스 도메인을 접해도 어디서부터 어떻게 흐름을 잡고 분석하면 될지 배울 수 있었다.</p><a id="more"></a><p>역시 노력하면 못할 게 없다. 물론 옆에 든든한 대리님과 팀장님이 있어서 모르는 부분을 중복해서 물어봐도 이해가 쏙쏙 되도록 잘 알려주셨다. 이 자리를 빌어 감사드립니다.<br>비즈니스로직에 의문을 품는 습관도 중요하다는 걸 알게되었다. 모두가 다 테스트 끝났다고 했지만 흐름을 이해하면서 하다보니 누락된 오류들을 여러 건 잡을 수 있었다.<br>문제가 발생되기 전에 미리 예방해서 참 뿌듯했다.</p><h2 id="Keep"><a href="#Keep" class="headerlink" title="Keep"></a>Keep</h2><p>현재 만족하고 있는 부분과 계속해서 이어갔으면 하는 부분</p><ol><li>서비스 도메인을 빠른 시일내에 이해하려고 노력한 부분: 어려운 도메인은 서비스 이해에서부터 시작된다. 처음하는 채굴과 코인, 포인트, 추천인등의 세계에서 나는 갈피를 못잡고 허우적대다 대리님의 주신 동아줄을 가까스로 잡을 수 있었다.</li><li>비즈니스 로직에 의심을 품은 부분: 단순히 숫자가 잘 나오는 지 테스트하는 게 아니라 유저입장과 관리자입장에서 각각 비즈니스 로직을 생각하고 현재 있는 로직에 오류는 없는 지 두번 체크한 부분은 참 잘했다. 덕분에 누락된 오류들과 애매모호한 로직들을 미리 잡고 정책을 만들 수 있었다. 뿌듯!</li><li>서버에 war배포를 직접 하겠다고 하고 해낸 부분: PuTTY와 FileZilla를 자주 접하려고 노력한 점은 참 잘했다. </li></ol><p><br><br><br></p><h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><p>개선이 필요하다고 생각되는 부분</p><ol><li>쉘스크립트 개념이 어려워서 다음에 이해해야지하고 넘어간 부분: 다음이란 없다. 다른 시니어 개발자와 소통할 수 있도록 지금부터 공부해야한다.</li><li>자바 스케줄러를 제대로 이해하려고 노력하지 않은 부분: 마찬가지로 다음이란 없다. 지금부터 익히 들어두며 스스로 공부해야한다.</li><li>트리구조 쿼리를 여전히 제대로 만들지 못하는 부분: recursive등 고급 SQL을 더 깊게 공부해야한다. 언제까지고 팀장님이 도와주실순 없다. 스스로 노력하자.</li><li>톰캣 배포 에러나는 부분은 전혀 갈피를 못잡고 팀장님께 도움을 요청한 부분: Server 배포를 추가로 공부하자.</li></ol><p><br><br><br></p><h2 id="Try"><a href="#Try" class="headerlink" title="Try"></a>Try</h2><p>Problem의 해결책이 될 수 있는 부분</p><ol><li>욕심내자. 생각으로 욕심내는 게아니라 행동으로 욕심내자. 실력은 스스로 키우는 것이다.</li></ol>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
-      
-      <category domain="https://sowon-dev.github.io/categories/Journal/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/08/20/220715projectreivew6/#disqus_thread</comments>
       
     </item>
     

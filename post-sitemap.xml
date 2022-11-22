@@ -8,8 +8,56 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2022/11/21/221122Redis/</loc>
+        <lastmod>2022-11-22T06:30:41.478Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2022/11/21/221121JS-webstorage/</loc>
-        <lastmod>2022-11-21T14:28:32.650Z</lastmod>
+        <lastmod>2022-11-22T06:18:33.894Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/08/09/220809SQL-refact-subquery-to-join/</loc>
+        <lastmod>2022-11-22T06:15:41.310Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/08/11/220812SQL-variable/</loc>
+        <lastmod>2022-11-22T06:15:29.284Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/10/29/221029SQLD-tablepartition/</loc>
+        <lastmod>2022-11-22T06:15:14.191Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/10/31/221101SQLD-super-sub/</loc>
+        <lastmod>2022-11-22T06:15:02.829Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/10/10/221011DBMessageQuery/</loc>
+        <lastmod>2022-11-21T14:34:52.246Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -18,30 +66,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/06/30/200701jspi/</loc>
         <lastmod>2022-11-21T14:14:34.856Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/08/11/220812SQL-variable/</loc>
-        <lastmod>2022-11-21T13:55:05.388Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/10/29/221029SQLD-tablepartition/</loc>
-        <lastmod>2022-11-21T13:54:49.683Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/10/31/221101SQLD-super-sub/</loc>
-        <lastmod>2022-11-21T13:54:10.247Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -114,14 +138,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2022/09/27/220928JS-JSDoc/</loc>
         <lastmod>2022-10-29T15:44:46.230Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/10/10/221011DBMessageQuery/</loc>
-        <lastmod>2022-10-29T15:44:40.175Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -290,14 +306,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2022/08/15/220816Jsp-restart/</loc>
         <lastmod>2022-08-16T05:56:40.244Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/08/09/220809SQL-refact-subquery-to-join/</loc>
-        <lastmod>2022-08-12T00:55:48.561Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
