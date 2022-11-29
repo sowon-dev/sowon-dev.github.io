@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Wed, 23 Nov 2022 01:49:43 GMT</pubDate>
+    <pubDate>Tue, 29 Nov 2022 06:45:21 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[MySQL/MariaDB] 함수(function) vs 프로시저(Procedure) 차이</title>
+      <link>https://sowon-dev.github.io/2022/11/28/221129MySQL-function-Procedure/</link>
+      <guid>https://sowon-dev.github.io/2022/11/28/221129MySQL-function-Procedure/</guid>
+      <pubDate>Mon, 28 Nov 2022 21:03:57 GMT</pubDate>
+      
+      <description>&lt;p&gt;이번에 진행중인 프로젝트는 프로시저보다 함수가 더 많이 사용되었다. 지난번 담당했던 프로젝트는 오직 프로시저만 썼었다. 둘의 차이가 뭘까? 언뜻 생각해봤을땐 return유무정도인데 깊이있게 알고싶어졌다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>이번에 진행중인 프로젝트는 프로시저보다 함수가 더 많이 사용되었다. 지난번 담당했던 프로젝트는 오직 프로시저만 썼었다. 둘의 차이가 뭘까? 언뜻 생각해봤을땐 return유무정도인데 깊이있게 알고싶어졌다.</p><a id="more"></a><p><br><br><br></p><h1 id="함수"><a href="#함수" class="headerlink" title="함수"></a>함수</h1><ol><li>정의: 항상 리턴값을 가짐</li><li>특징<ul><li>리턴값은 필수이고 오직 하나</li><li>try catch 사용 불가</li></ul></li><li>단점<ul><li>클라이언트실행으로 프로시저보다 속도가 느리다.</li></ul></li><li>선언 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">FUNCTION</span> function_name(</span><br><span class="line">param1,</span><br><span class="line">param2,…</span><br><span class="line">)</span><br><span class="line"><span class="keyword">RETURNS</span> datatype</span><br><span class="line">[<span class="keyword">NOT</span>] <span class="keyword">DETERMINISTIC</span></span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line"> <span class="comment">-- statements</span></span><br><span class="line"><span class="keyword">END</span></span><br></pre></td></tr></table></figure></li><li>선언예시 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">function</span> MultiplyNumbers(@int1 <span class="keyword">as</span> <span class="built_in">int</span>,@int2 <span class="keyword">as</span> <span class="built_in">int</span>)</span><br><span class="line"><span class="keyword">As</span></span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line"><span class="keyword">Return</span> (@int1 * @int2)</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure></li><li>호출 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">MultiplyNumbers(2,2) </span><br><span class="line">// RETURN: 4</span><br></pre></td></tr></table></figure></li></ol><h1 id="프로시저"><a href="#프로시저" class="headerlink" title="프로시저"></a>프로시저</h1><ol><li>정의: 특정 작업을 수행. 여러 SQL문을 한 번에 실행 가능</li><li>특징<ul><li>개발업무와 DB처리를 구분하여 개발할 수 있음</li><li>보수성 뛰어남</li><li>서버 실행이라 속도가 함수보다 상대적으로 빠름</li><li>리턴값 없거나 여러개도 가능 -&gt; 유연성</li><li>try catch 사용가능 -&gt; 에러처리가능</li></ul></li><li>단점<ul><li>재사용성이 좋지 않음</li></ul></li><li>선언 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Create</span> <span class="keyword">Procedure</span> [<span class="keyword">Procedure</span> <span class="keyword">Name</span>] ([Parameter <span class="number">1</span>], [Parameter <span class="number">2</span>], [Parameter <span class="number">3</span>] )</span><br><span class="line"><span class="keyword">Begin</span></span><br><span class="line"><span class="comment">-- SQL Queries..</span></span><br><span class="line"><span class="keyword">End</span></span><br></pre></td></tr></table></figure></li><li>선언 예시 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">PROCEDURE</span> GetAllProducts()</span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line"><span class="keyword">SELECT</span> *  <span class="keyword">FROM</span> products;</span><br><span class="line"><span class="keyword">END</span></span><br></pre></td></tr></table></figure></li><li>호출 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CALL</span> GetAllProducts()</span><br></pre></td></tr></table></figure></li></ol><p><br><br><br></p><h1 id="차이"><a href="#차이" class="headerlink" title="차이"></a>차이</h1><table><thead><tr><th align="center"></th><th align="left">함수(Function)</th><th align="left">프로시저(Procedure)</th></tr></thead><tbody><tr><td align="center">처리주체</td><td align="left">클라이언트에서 처리</td><td align="left">서버로 보내서 처리</td></tr><tr><td align="center">리턴값 유무</td><td align="left">필수</td><td align="left">선택</td></tr><tr><td align="center">리턴값 갯수</td><td align="left">하나만 반환가능</td><td align="left">여러개 반환가능</td></tr></tbody></table><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://www.geeksforgeeks.org/difference-between-function-and-procedure/">https://www.geeksforgeeks.org/difference-between-function-and-procedure/</a></li><li><a href="https://www.mysqltutorial.org/getting-started-with-mysql-stored-procedures.aspx">https://www.mysqltutorial.org/getting-started-with-mysql-stored-procedures.aspx</a></li><li><a href="https://velog.io/@devjooj/Mysql-Function%EA%B3%BC-Procedure-%EC%B0%A8%EC%9D%B4">https://velog.io/@devjooj/Mysql-Function%EA%B3%BC-Procedure-%EC%B0%A8%EC%9D%B4</a></li><li><a href="https://spiderwebcoding.tistory.com/7">https://spiderwebcoding.tistory.com/7</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
+      
+      <category domain="https://sowon-dev.github.io/categories/Database/MySQL/">MySQL</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2022/11/28/221129MySQL-function-Procedure/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>레디스(Redis)가 뭐길래</title>
@@ -57,7 +80,7 @@
     </item>
     
     <item>
-      <title>Cron표현식 자세히</title>
+      <title>Cron표현식이 뭐길래</title>
       <link>https://sowon-dev.github.io/2022/11/16/221116cron/</link>
       <guid>https://sowon-dev.github.io/2022/11/16/221116cron/</guid>
       <pubDate>Wed, 16 Nov 2022 05:14:08 GMT</pubDate>
@@ -442,29 +465,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/08/23/220824projectreview7/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>소장도서목록</title>
-      <link>https://sowon-dev.github.io/2022/08/22/bookList/</link>
-      <guid>https://sowon-dev.github.io/2022/08/22/bookList/</guid>
-      <pubDate>Mon, 22 Aug 2022 21:18:45 GMT</pubDate>
-      
-      <description>&lt;p&gt;소장도서목록입니다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>소장도서목록입니다.</p><a id="more"></a><h2 id="📚-소장도서"><a href="#📚-소장도서" class="headerlink" title="📚 소장도서"></a>📚 소장도서</h2><table><thead><tr><th align="center"><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=21396757">프로그래머의 뇌</a></th><th align="center"><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=22462163">좋은 코드, 나쁜 코드</a></th></tr></thead><tbody><tr><td align="center"><img src="http://image.kyobobook.co.kr/images/book/xlarge/650/x9791191600650.jpg" width="100%" height="300px"/>훌륭한 프로그래머가 알아야 할 인지과학의 모든 것</td><td align="center"><img src="http://image.kyobobook.co.kr/images/book/xlarge/896/x9791191600896.jpg" width="100%" height="300px"/>프로그래머의 코드 개선법</td></tr><tr><td align="center"><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788960777330&orderClick=LEa&Kc="><strong>자바 ORM 표준 JPA 프로그래밍</strong></a></td><td align="center"><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791161755656&orderClick=LEa&Kc="><strong>React.js, 스프링 부트, AWS로 배우는 웹 개발 101</strong></a></td></tr><tr><td align="center"><img src="http://image.kyobobook.co.kr/images/book/xlarge/330/x9788960777330.jpg" width="100%" height="300px"/>스프링 데이터 예제 프로젝트로 배우는 전자정부 표준 데이터베이스 프레임</td><td align="center"><img src="http://image.kyobobook.co.kr/images/book/xlarge/656/x9791161755656.jpg" width="100%" height="300px"/>SPA, REST API 기반 웹 애플리케이션 개발</td></tr><tr><td align="center"><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&linkClass=&barcode=9791190665643"><strong>자바 개발자를 위한 97가지 제안</strong></a></td><td align="center"><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9791191600414#N"><strong>그림으로 공부하는 TCP/IP 구조</strong></a></td></tr><tr><td align="center"><img src="http://image.kyobobook.co.kr/images/book/xlarge/643/x9791190665643.jpg" width="100%" height="300px"/>73인의 전문가에게 듣는 자바 컬렉션</td><td align="center"><img src="http://image.kyobobook.co.kr/images/book/xlarge/414/x9791191600414.jpg" width="100%" height="300px"/>인터넷, TCP/IP, 애플리케이션부터 보안, 네트워크 기기, 부하분산까지 네트워크의 기본 지식</td></tr><tr><td align="center"><a href="http://www.yes24.com/Product/Goods/112036547">모두를 위한 클라우드 컴퓨팅</a></td><td align="center"><a href=""></a></td></tr><tr><td align="center"><img src="http://image.yes24.com/goods/112036547/XL" width="100%" height="300px"/>HTC 개념부터 가상화, 컨테이너, CI/CD, AWS 프로그래밍까지</td><td align="center"></td></tr></tbody></table>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/List/">List</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/08/22/bookList/#disqus_thread</comments>
       
     </item>
     
