@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/jQuery/</loc>
+        <lastmod>2022-11-30T06:47:50.566Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/SQLD/</loc>
         <lastmod>2022-11-29T06:15:21.465Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -40,13 +47,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/%25ED%259A%258C%25EA%25B3%25A0%25EB%25A1%259D/</loc>
         <lastmod>2022-11-14T12:49:13.823Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/jQuery/</loc>
-        <lastmod>2022-11-10T02:17:41.210Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

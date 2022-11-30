@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Tue, 29 Nov 2022 06:45:21 GMT</pubDate>
+    <pubDate>Wed, 30 Nov 2022 06:47:50 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[WIP/jQuery] Ajax 글로벌 이벤트(Global Event)가 뭐길래</title>
+      <link>https://sowon-dev.github.io/2022/11/29/221130jQuery-global/</link>
+      <guid>https://sowon-dev.github.io/2022/11/29/221130jQuery-global/</guid>
+      <pubDate>Tue, 29 Nov 2022 21:10:59 GMT</pubDate>
+      
+      <description>&lt;p&gt;레거시 소스코드를 분석하면서 jQuery.ajaxSetup()에 대해 알아볼 기회가 생겼다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>레거시 소스코드를 분석하면서 jQuery.ajaxSetup()에 대해 알아볼 기회가 생겼다.</p><a id="more"></a><p>jQuery Ajax는 지역 이벤트(Local Event)와 전역 이벤트(Global Event)로 나뉜다. 둘이 가지고 있는 이벤트가 매우 비슷하다.</p><h1 id="지역-이벤트-Local-Event-vs-전역-이벤트-Global-Event"><a href="#지역-이벤트-Local-Event-vs-전역-이벤트-Global-Event" class="headerlink" title="지역 이벤트(Local Event) vs 전역 이벤트(Global Event)"></a>지역 이벤트(Local Event) vs 전역 이벤트(Global Event)</h1><table><thead><tr><th align="left"></th><th align="left">로컬 이벤트</th><th align="left">글로벌 이벤트</th></tr></thead><tbody><tr><td align="left">셋팅</td><td align="left">global속성을 false(default)설정</td><td align="left">global속성을 true설정</td></tr><tr><td align="left">시행시기</td><td align="left">ajax수행의 특정시점에 함수가 호출되는 callback형태로 이벤트 발생</td><td align="left">개별 혹은 전체 ajax전송에 이벤트 발생</td></tr><tr><td align="left">보내기전 이벤트</td><td align="left">beforeSend</td><td align="left">ajaxSend()</td></tr><tr><td align="left">성공시 이벤트</td><td align="left">success</td><td align="left">ajaxSuccess()</td></tr><tr><td align="left">에러발생시 이벤트</td><td align="left">error</td><td align="left">ajaxError()</td></tr><tr><td align="left">완료시 이벤트</td><td align="left">complete</td><td align="left">ajaxComplete()</td></tr><tr><td align="left">ajax시작시 정의</td><td align="left"></td><td align="left">ajaxStart()</td></tr><tr><td align="left"></td><td align="left"></td><td align="left">ajaxStop()</td></tr></tbody></table><ul><li>특징<ul><li>지역과 전역에 둘다 존재하는 send, success, error, complete와 관련된 이벤트들은 지역이벤트 callback이 실행 후 전역이벤트가 실행된다.</li></ul></li></ul><p><br><br><br></p><h1 id="코드"><a href="#코드" class="headerlink" title="코드"></a>코드</h1><ul><li>.java<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></li></ul><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://api.jquery.com/jquery.ajaxsetup/">https://api.jquery.com/jquery.ajaxsetup/</a></li><li><a href="https://www.nextree.co.kr/p10308/">https://www.nextree.co.kr/p10308/</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/jQuery/">jQuery</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2022/11/29/221130jQuery-global/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[MySQL/MariaDB] 함수(function) vs 프로시저(Procedure) 차이</title>
@@ -440,31 +463,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/08/30/220831js-calendar/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>예약 프로그램 프로젝트를 끝내며 내가 배운 것</title>
-      <link>https://sowon-dev.github.io/2022/08/23/220824projectreview7/</link>
-      <guid>https://sowon-dev.github.io/2022/08/23/220824projectreview7/</guid>
-      <pubDate>Tue, 23 Aug 2022 20:40:31 GMT</pubDate>
-      
-      <description>&lt;p&gt;이번 프로젝트에서는 예약프로그램을 도맡아 개발했다. 요구사항에 맞게 기능을 제한하는 부분에 가장 많은 공을 들였다.&lt;br&gt;시간이 많이 촉박했던 프로젝트라 야근을 많이 했는데 테스트할때 생각보다 큰 버그가 없어서 뿌듯했다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>이번 프로젝트에서는 예약프로그램을 도맡아 개발했다. 요구사항에 맞게 기능을 제한하는 부분에 가장 많은 공을 들였다.<br>시간이 많이 촉박했던 프로젝트라 야근을 많이 했는데 테스트할때 생각보다 큰 버그가 없어서 뿌듯했다.</p><a id="more"></a><h2 id="Keep"><a href="#Keep" class="headerlink" title="Keep"></a>Keep</h2><p>현재 만족하고 있는 부분과 계속해서 이어갔으면 하는 부분</p><ol><li>성능을 고려하면서 SQL을 제대로 짜기위해 노력했다.</li><li>js와 jqeury로 달력그리기 마스터가 되었다. 데이터를 가져올때 async 와 await 도 사용하고 이해도가 훨씬 향상되었다. 다음에는 템플릿을 이용해서 그리고 싶다.</li></ol><p><br><br><br></p><h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><p>개선이 필요하다고 생각되는 부분</p><ol><li>고객사의 요구사항이 명확하지 않을때 해결하는 과정에서 많은 어려움이 있었다. 고객사 담당자도 구체적인 정책이 없는 상황에서 프로젝트 시간은 여전히 촉박하고 기다림의 시간이 반복되었다. 최대한 확장성이 있는 기능을 구현하는 게 해답이라는 걸 깨달았다. </li></ol><p><br><br><br></p><h2 id="Try"><a href="#Try" class="headerlink" title="Try"></a>Try</h2><p>Problem의 해결책이 될 수 있는 부분</p><ol><li>앞으로도 요구사항이 명확하지 않은 프로젝트를 할 수 있는데 어떤 설계를 해야 확장성을 갖추면서 효율적으로 개발할 수 있을까? 디자인패턴을 공부해야겠다.</li></ol><p><br><br><br></p><h2 id="관련-포스팅"><a href="#관련-포스팅" class="headerlink" title="관련 포스팅"></a>관련 포스팅</h2><ul><li><a href="https://sowon-dev.github.io/2022/08/09/220809SQL-refact-subquery-to-join/">서브쿼리(Subquery)보다 조인(Join)을 써야하는 이유(코드비교)</a></li><li><a href="https://sowon-dev.github.io/2022/08/10/220811Json-convert-map/">gson을 이용하여 JSON을 HashMap으로 변환하기(영화관 좌석 예매 예시)</a></li><li><a href="https://sowon-dev.github.io/2022/08/11/220812SQL-variable/">변수 @사용법, 사용자 정의 변수 직접 사용해보기</a></li><li><a href="https://sowon-dev.github.io/2022/08/15/220816Jsp-restart/">jsp파일을 수정하면 서버를 재시작해야할까?</a></li><li><a href="https://sowon-dev.github.io/2022/08/18/220818JSTL-date/">JSTL 날짜 차이 계산하기</a></li><li><a href="https://sowon-dev.github.io/2022/08/30/220831js-calendar/">동적 달력(캘린더)만들기</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
-      
-      <category domain="https://sowon-dev.github.io/categories/Journal/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/08/23/220824projectreview7/#disqus_thread</comments>
       
     </item>
     
