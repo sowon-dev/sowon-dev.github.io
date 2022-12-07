@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/WEB/</loc>
+        <lastmod>2022-12-07T05:11:36.025Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/MariaDB/</loc>
         <lastmod>2022-12-06T07:11:27.272Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -96,13 +103,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/Tomcat/</loc>
         <lastmod>2022-09-05T07:51:21.064Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/WEB/</loc>
-        <lastmod>2022-08-25T08:43:24.153Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
