@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Thu, 08 Dec 2022 04:44:14 GMT</pubDate>
+    <pubDate>Sun, 11 Dec 2022 06:20:48 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[WIP/Spring]RestTemplate과 HttpEntity가 뭐길래</title>
+      <link>https://sowon-dev.github.io/2022/12/09/221220spring-resttemplate/</link>
+      <guid>https://sowon-dev.github.io/2022/12/09/221220spring-resttemplate/</guid>
+      <pubDate>Fri, 09 Dec 2022 19:32:44 GMT</pubDate>
+      
+      <description>&lt;p&gt;프로젝트를 하다보면 화면이 아닌 서비스단에서 외부 API와 호출해야할 일들이 있다.&lt;br&gt;이때 주로 사용되는 것이 RestTemplate이다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>프로젝트를 하다보면 화면이 아닌 서비스단에서 외부 API와 호출해야할 일들이 있다.<br>이때 주로 사용되는 것이 RestTemplate이다.</p><a id="more"></a><p>이번 프로젝트에서 백엔드 업무를 도맡있다. 첫 작업으로 맡게 된 건 외부 프로그램과 API로 연동하는 작업이었다.<br>Http통신을 화면에서 수도없이 날렸지만 서비스단에서 하는 건 업무로썬 처음이었다. 결론 너무 재밌다!<br>역시 난 프론트보단 백을 더 재밌어.</p><h1 id="RestTemplate-이란"><a href="#RestTemplate-이란" class="headerlink" title="RestTemplate 이란?"></a>RestTemplate 이란?</h1><p>스프링 3.0에서부터 지원하는 객체로 REST방식으로 API를 호출할 수 있는 내장 클래스이다.<br>스프링어플리케이션에서 HTTP요청할때 사용하며 주로 외부API와 연동할때 RestTemplate와 함께 MultiValueMap, HttpEntity도 사용한다.<br>다만, 스프링프레임워크5부터는 <a href="https://www.baeldung.com/spring-5-webclient">WebClient</a>사용을 권장하고 있기에 조만간 RestTemplate은 deprecated 될지도 모른다.</p><ul><li><p>특징</p><ul><li>RESTful 원칙을 지킴</li><li>멀티쓰레드 방식 사용</li><li><a href="https://sowon-dev.github.io/2019/09/23/190924/#2-%EB%8F%99%EA%B8%B0%EC%99%80-%EB%B9%84%EB%8F%99%EA%B8%B0-%EA%B0%9C%EB%85%90%EC%84%A4%EB%AA%85-Blocking-VS-non-blocking">Blocking(동기) 방식 사용</a></li></ul></li><li><p>함수</p><ul><li>exchage() : 모든 HTTP 요청 메소드를 지원하며 원하는 서버에 요청시켜주는 메소드</li><li>작성중<br><br><br><br><h1 id="동작원리"><a href="#동작원리" class="headerlink" title="동작원리"></a>동작원리</h1></li></ul></li></ul><p>작성중</p><p><br><br><br></p><h1 id="사용방법"><a href="#사용방법" class="headerlink" title="사용방법"></a>사용방법</h1><p><br><br><br></p><h2 id="1-의존성-설정"><a href="#1-의존성-설정" class="headerlink" title="1. 의존성 설정"></a>1. 의존성 설정</h2><p>스프링부트를 사용하면 이미 포함되어있으므로 의존성 설정을 따로 해줄 필요가 없다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">implementation <span class="string">'org.springframework.boot:spring-boot-starter-web'</span></span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="2-RestTemplate의-생성"><a href="#2-RestTemplate의-생성" class="headerlink" title="2. RestTemplate의 생성"></a>2. RestTemplate의 생성</h2><ol><li>Header 생성: HTTP요청을 보낼때 Body를 설명해주는 Header도 같이 보내야한다.</li><li>Body 생성: key-value 형식인 MultiValueMap 타입을 사용해서 만든다.</li><li>HttpEntity생성: HTTP통신을 하려면 Header와 Body가 하나여야하는데 HttpEntity클래스가 Header와 Body를 합쳐준다. </li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RestTemplateClientService</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> ResponseEntity <span class="title">test</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 1. Header생성</span></span><br><span class="line">HttpHeaders headers = <span class="keyword">new</span> HttpHeaders();</span><br><span class="line">headers.add(<span class="string">"content-type"</span>, <span class="string">"application/json"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2. Body생성</span></span><br><span class="line">MultiValueMap&lt;String, String&gt; params = <span class="keyword">new</span> LinkedMultiValueMap&lt;&gt;();</span><br><span class="line">params.add(<span class="string">"name"</span>, <span class="string">"sowon-dev"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 3. HttpEntity생성</span></span><br><span class="line">HttpEntity&lt;MultiValueMap&lt;String, String&gt;&gt; entity = <span class="keyword">new</span> HttpEntity&lt;&gt;(params, headers);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 4. HTTP 통신</span></span><br><span class="line">RestTemplate rt = <span class="keyword">new</span> RestTemplate();</span><br><span class="line">ResponseEntity&lt;String&gt; response = rt.exchange(</span><br><span class="line">                <span class="string">"http://localhost:3000/"</span>, <span class="comment">//요청할 서버주소</span></span><br><span class="line">                HttpMethod.POST, <span class="comment">//요청방식</span></span><br><span class="line">                entity, <span class="comment">//요청데이터</span></span><br><span class="line">                String<span class="class">.<span class="keyword">class</span> //반환되는 데이터타입</span></span><br><span class="line"><span class="class">)</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> response;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html">https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html</a></li><li><a href="https://sowon-dev.github.io/2021/08/11/210812Spring-resttemplate/">https://sowon-dev.github.io/2021/08/11/210812Spring-resttemplate/</a></li><li><a href="https://jung-story.tistory.com/132">https://jung-story.tistory.com/132</a></li><li><a href="https://www.baeldung.com/rest-template">https://www.baeldung.com/rest-template</a></li><li><a href="https://tecoble.techcourse.co.kr/post/2021-07-25-resttemplate-webclient/">https://tecoble.techcourse.co.kr/post/2021-07-25-resttemplate-webclient/</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2022/12/09/221220spring-resttemplate/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[Java] web.xml이 뭐길래</title>
@@ -446,29 +467,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/09/12/220913React-useEffect-props/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[Server]아파치 vs 톰캣 같은 거 아냐? 차이점</title>
-      <link>https://sowon-dev.github.io/2022/09/05/220906Tomcat-vs-Apatch/</link>
-      <guid>https://sowon-dev.github.io/2022/09/05/220906Tomcat-vs-Apatch/</guid>
-      <pubDate>Mon, 05 Sep 2022 19:05:43 GMT</pubDate>
-      
-      <description>&lt;p&gt;과장님과 서버구축 관련 이야기를 나누다 아파치와 톰캣이 차이가 있다는 걸 알게되었다.&lt;br&gt;띠용? 톰캣이 아파치 소프트웨어 재단에서 개발된 것이므로 아파치서버나 톰캣서버나 동일하다고 생각하고 있었다.&lt;br&gt;구글링결과 아파치서버와 톰캣서버는 아주 큰 차이점이 있었고 이를 공부해봤다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>과장님과 서버구축 관련 이야기를 나누다 아파치와 톰캣이 차이가 있다는 걸 알게되었다.<br>띠용? 톰캣이 아파치 소프트웨어 재단에서 개발된 것이므로 아파치서버나 톰캣서버나 동일하다고 생각하고 있었다.<br>구글링결과 아파치서버와 톰캣서버는 아주 큰 차이점이 있었고 이를 공부해봤다.</p><a id="more"></a><h2 id="아피치-톰캣-다-같은-거-아냐"><a href="#아피치-톰캣-다-같은-거-아냐" class="headerlink" title="아피치 톰캣 다 같은 거 아냐?"></a>아피치 톰캣 다 같은 거 아냐?</h2><p>NOPE!<br>아파치(Apach)란 아파치 소프트웨어 재단 이름이다. 실무에서 아파치서버라고 부른다면 아파치 재단의 오픈소스로 만든 Web Server를 칭한다.<br>우리가 헷갈리는 이유 WAS가 웹서버의 기능을 다 수행할 수 있기때문이다.<br>하지만 서버과부하, 보안강화 등의 목적으로 WAS와 Web Server를 분리하는 프로젝트들도 있다.</p><table><thead><tr><th align="center"></th><th align="center">Web Server</th><th align="center">WAS(Web Application Server)</th></tr></thead><tbody><tr><td align="center">정의</td><td align="center">웹 브라우저 클라이언트로부터 HTTP 요청을 받아 정적인 컨텐츠(.html .jpeg .css 등)를 제공하는 컴퓨터 프로그램</td><td align="center">DB 조회나 다양한 로직 처리를 요구하는 동적인 컨텐츠를 제공하기 위해 만들어진 Application Server</td></tr><tr><td align="center">데이터</td><td align="center">클라이언트측 정적 데이터</td><td align="center">서버측 동적 데이터</td></tr><tr><td align="center">DB데이터 사용</td><td align="center">불가능</td><td align="center">가능</td></tr><tr><td align="center">예시</td><td align="center">Apache Server, Nginx, IIS(Windows 전용 Web 서버)등</td><td align="center">Tomcat, JBoss, Jeus, Web Sphere 등</td></tr></tbody></table><p><br><br><br></p><h2 id="잠시만-IIS도-동적페이지-생성이-가능한데-Web-Server라고"><a href="#잠시만-IIS도-동적페이지-생성이-가능한데-Web-Server라고" class="headerlink" title="잠시만 IIS도 동적페이지 생성이 가능한데 Web Server라고?"></a>잠시만 IIS도 동적페이지 생성이 가능한데 Web Server라고?</h2><p>맞다. IIS는 Web Server와 WAS가 함께 있는 서버이다.<br>ms진영에서는 IIS를 웹서버라고 부르며, 웹서버와 WAS를 딱히 구별하지 않는 듯 하다.<br>IIS는 ms용, WAS는 범용이라 생각하면 되고 서로 바라보는 범위가 약간 다른 셈!</p><p><br><br><br></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://sowon-dev.github.io/2020/10/04/201005jspProcessVSThreadNWebServerVSWAS/#%EC%9B%B9%EC%84%9C%EB%B2%84-WEB-SERVER-VS-%EC%9B%B9%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%84%9C%EB%B2%84-WAS-Web-Application-Server">웹서버(WEB SERVER) VS 웹어플리케이션서버(WAS, Web Application Server)</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Server/">Server</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%EC%B0%A8%EC%9D%B4/">차이</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/09/05/220906Tomcat-vs-Apatch/#disqus_thread</comments>
       
     </item>
     
