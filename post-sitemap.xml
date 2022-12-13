@@ -8,7 +8,31 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2022/12/09/221220spring-resttemplate/</loc>
+        <loc>https://sowon-dev.github.io/2022/12/12/221213java-timeunit/</loc>
+        <lastmod>2022-12-13T01:04:22.523Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2019/09/21/190922/</loc>
+        <lastmod>2022-12-13T00:51:17.332Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/12/09/221221spring-resttemplate/</loc>
+        <lastmod>2022-12-13T00:45:40.289Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/12/09/221210spring-resttemplate/</loc>
         <lastmod>2022-12-12T03:30:35.259Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -4042,14 +4066,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/07/13/200714jspi/</loc>
         <lastmod>2020-08-10T03:27:20.156Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2019/09/21/190922/</loc>
-        <lastmod>2020-08-05T23:57:59.356Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
