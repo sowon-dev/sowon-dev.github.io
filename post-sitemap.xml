@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2022/12/15/221216payload/</loc>
+        <lastmod>2022-12-16T05:11:11.177Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2022/12/09/221210spring-resttemplate/</loc>
-        <lastmod>2022-12-15T02:43:56.963Z</lastmod>
+        <lastmod>2022-12-16T04:48:34.099Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
