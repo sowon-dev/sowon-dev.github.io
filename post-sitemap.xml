@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2022/12/21/221222server-mockserver/</loc>
+        <lastmod>2022-12-22T06:00:37.037Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2022/12/20/221221java-responseentity-refactoring/</loc>
         <lastmod>2022-12-21T00:57:34.181Z</lastmod>
         <changefreq>weekly</changefreq>
