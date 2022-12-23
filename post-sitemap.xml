@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2022/12/22/221223spring-transactional-annotation/</loc>
+        <lastmod>2022-12-23T06:21:07.407Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2022/12/21/221222server-mockserver/</loc>
-        <lastmod>2022-12-22T06:00:37.037Z</lastmod>
+        <lastmod>2022-12-23T05:30:36.222Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
