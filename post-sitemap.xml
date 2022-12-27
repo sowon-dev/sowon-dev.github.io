@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2022/08/15/220816Jsp-restart/</loc>
+        <lastmod>2022-12-27T02:24:30.598Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2022/12/22/221223spring-transactional-annotation/</loc>
         <lastmod>2022-12-23T06:21:07.407Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -394,14 +402,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/08/10/200811jspi/</loc>
         <lastmod>2022-08-19T00:47:45.681Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/08/15/220816Jsp-restart/</loc>
-        <lastmod>2022-08-16T05:56:40.244Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
