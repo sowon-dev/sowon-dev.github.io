@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Wed, 28 Dec 2022 05:54:18 GMT</pubDate>
+    <pubDate>Fri, 30 Dec 2022 01:24:39 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>AP(Access Point)가 뭐길래</title>
+      <link>https://sowon-dev.github.io/2022/12/29/221230accesspoint/</link>
+      <guid>https://sowon-dev.github.io/2022/12/29/221230accesspoint/</guid>
+      <pubDate>Thu, 29 Dec 2022 16:09:24 GMT</pubDate>
+      
+      <description>&lt;p&gt;회의때 무수히 들었던 AP. 도대체 AP가 뭘까?&lt;br&gt;일단 Access Point의 약어이다. 네트워크와 관련된 느낌 물씬!&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>회의때 무수히 들었던 AP. 도대체 AP가 뭘까?<br>일단 Access Point의 약어이다. 네트워크와 관련된 느낌 물씬!</p><a id="more"></a><h1 id="AP란"><a href="#AP란" class="headerlink" title="AP란"></a>AP란</h1><blockquote><p>무선랜을 구성하는 장치중 하나로, 유선랜과 무선랜을 연결시켜주는 장치이다.<br>AP는 Access Point의 약어이나, Wireless Access Point라고 하여 WAP 라고도 한다.)<br>AP 는 대체로 독립형 장치로, 이더넷 허브(Ehternet Hub)나 서버(Server)에 꽂아 사용할 수 있다.<br>AP 는 휴대폰(Cellular Phone)처럼 사용자의 위치에 따라 하나의 AP에서 다른 AP로 핸드오프(Hand-off : 넘겨주기) 되므로, 사용자가 이동하면서 이동형 무선장치를 사용할 수 있다.<br>출처: <a href="https://m.blog.naver.com/twers/50118628879">Just Blue - AP(Access Point)</a></p></blockquote>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Network/">Network</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2022/12/29/221230accesspoint/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[Spring]@Transactional 속성 총정리</title>
@@ -438,27 +459,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/10/27/221028jQuery-attr-vs-prop/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[JS] 배열Array와 객체Object 내 포함 여부</title>
-      <link>https://sowon-dev.github.io/2022/10/25/221026JS-some/</link>
-      <guid>https://sowon-dev.github.io/2022/10/25/221026JS-some/</guid>
-      <pubDate>Tue, 25 Oct 2022 20:20:15 GMT</pubDate>
-      
-      <description>&lt;p&gt;자바스크립트에서 &lt;code&gt;배열[]&lt;/code&gt; 안의 &lt;code&gt;객체{}&lt;/code&gt;가 있는 경우가 많은데 여기서 내가 원하는 값이 포함되어있는지 확인할 수 있는 좋은 메서드가 있는데 바로 some()이다.&lt;br&gt;some()메서드를 알아볼땐 함께 알아봐야할 메서드가 있다. 짝궁인 every()메서드이다. 또한 개인적으로 includes()와 비슷해서 함께 알아보았다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>자바스크립트에서 <code>배열[]</code> 안의 <code>객체{}</code>가 있는 경우가 많은데 여기서 내가 원하는 값이 포함되어있는지 확인할 수 있는 좋은 메서드가 있는데 바로 some()이다.<br>some()메서드를 알아볼땐 함께 알아봐야할 메서드가 있다. 짝궁인 every()메서드이다. 또한 개인적으로 includes()와 비슷해서 함께 알아보았다.</p><a id="more"></a><h1 id="📌-Some"><a href="#📌-Some" class="headerlink" title="📌 Some"></a>📌 Some</h1><p>특정 조건을 만족하는지 배열 내부를 차례대로 검사한다.<br>조건에 <code>내부 원소 한 개라도</code> 만족하면 true, 아니면 false를 리턴한다.<br>차례대로 검사하던 중 조건을 만족하는 내부 값이 발견되면 즉시 검사가 중단되고 return값이 나온다. -&gt; 성능에 GOOD<br>es5이상 사용가능하다.</p><p><br><br></p><h2 id="배열-내-객체-예시"><a href="#배열-내-객체-예시" class="headerlink" title="배열 내 객체 예시"></a>배열 내 객체 예시</h2><p>예약프로그램을 예시로 들어보자. 아래처럼 휴일 객체가 있다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const holiday &#x3D; [</span><br><span class="line">  &#123;RESTDE_DATE: &#39;2022-10-03&#39;, RESTDE_NM: &#39;개천절&#39;&#125;</span><br><span class="line">  , &#123;RESTDE_DATE: &#39;2022-10-28&#39;, RESTDE_NM: &#39;정기휴관&#39;&#125;</span><br><span class="line">  , &#123;RESTDE_DATE: &#39;2022-10-30&#39;, RESTDE_NM: &#39;임시휴관&#39;&#125;</span><br><span class="line">];</span><br></pre></td></tr></table></figure><p>holiday 객체안에 <code>2022-10-28</code> 있는지 확인해보자.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">holiday.some(date &#x3D;&gt; date.RESTDE_DATE &#x3D;&#x3D; &#39;2022-10-28&#39;)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 결과값</span><br><span class="line">true</span><br></pre></td></tr></table></figure><p>moment.js를 이용해서 오늘이 휴일객체 안에 있는지 확인해볼 수도 있다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">holiday.some(date &#x3D;&gt; date.RESTDE_DATE &#x3D;&#x3D; moment().format(&#39;YYYY-MM-DD&#39;))</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 결과값</span><br><span class="line">true or false</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="📌-Every"><a href="#📌-Every" class="headerlink" title="📌 Every"></a>📌 Every</h1><p>some과 비교되는 메서드로 every가 있다.<br>특정 조건을 만족하는지 배열 내부를 차례대로 검사한다.<br>조건에 <code>내부 원소 모두</code> 만족하면 true, 아니면 false를 리턴한다.<br>차례대로 검사하던 중 조건을 만족하지 않는 내부 값이 발견되면 즉시 검사가 중단되고 return값이 나온다. -&gt; 성능에 GOOD<br>es5이상 사용가능하다.</p><p><br><br></p><h2 id="배열-내-객체-예시-1"><a href="#배열-내-객체-예시-1" class="headerlink" title="배열 내 객체 예시"></a>배열 내 객체 예시</h2><p>예약프로그램을 예시로 들어보자. 아래처럼 휴일 객체가 있다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const holiday &#x3D; [</span><br><span class="line">  &#123;RESTDE_DATE: &#39;2022-10-03&#39;, RESTDE_NM: &#39;개천절&#39;&#125;</span><br><span class="line">  , &#123;RESTDE_DATE: &#39;2022-10-28&#39;, RESTDE_NM: &#39;정기휴관&#39;&#125;</span><br><span class="line">  , &#123;RESTDE_DATE: &#39;2022-10-30&#39;, RESTDE_NM: &#39;임시휴관&#39;&#125;</span><br><span class="line">];</span><br></pre></td></tr></table></figure><p>holiday 객체가 모두 <code>2022-10-31</code> 이전 일자인지 확인해보자.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">holiday.some(date &#x3D;&gt; date.RESTDE_DATE &lt; &#39;2022-10-31&#39;)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 결과값</span><br><span class="line">true</span><br></pre></td></tr></table></figure><p>moment.js를 이용해서 오늘보다 이전날짜만 있는지도 확인가능하다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">holiday.some(date &#x3D;&gt; date.RESTDE_DATE &lt; moment().format(&#39;YYYY-MM-DD&#39;))</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 결과값</span><br><span class="line">true or false</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="📌-includes"><a href="#📌-includes" class="headerlink" title="📌 includes"></a>📌 includes</h1><p>배열이 특정 요소를 포함하고 있는 지 검사한다.<br>있으면 true, 없으면 false를 리턴한다.<br>대소문자를 구별하고 <code>배열[]</code> 에서만 사용할 수 있다.</p><p><br><br></p><h2 id="배열-예시"><a href="#배열-예시" class="headerlink" title="배열 예시"></a>배열 예시</h2><p>예약프로그램을 예시로 들어보자. 아래처럼 휴일 객체가 있다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const holiday &#x3D; [&#39;2022-10-03&#39;, &#39;2022-10-28&#39;, &#39;2022-10-30&#39;];</span><br></pre></td></tr></table></figure><p>holiday배열에 <code>2022-10-28</code>이 있는지 확인해보자.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">holiday.includes(&#39;2022-10-28&#39;))</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 결과값</span><br><span class="line">true</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="📌-참고"><a href="#📌-참고" class="headerlink" title="📌 참고"></a>📌 참고</h1><p> -<a href="https://stackoverflow.com/questions/64946404/when-use-js-includes-vs-some">스택오버플로우 질문글 when use JS .includes() vs .some() </a></p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
-      
-      
-      
-      <comments>https://sowon-dev.github.io/2022/10/25/221026JS-some/#disqus_thread</comments>
       
     </item>
     
