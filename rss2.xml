@@ -9,7 +9,7 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Fri, 30 Dec 2022 01:24:39 GMT</pubDate>
+    <pubDate>Sun, 01 Jan 2023 14:19:23 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -22,7 +22,7 @@
       
       
       
-      <content:encoded><![CDATA[<p>회의때 무수히 들었던 AP. 도대체 AP가 뭘까?<br>일단 Access Point의 약어이다. 네트워크와 관련된 느낌 물씬!</p><a id="more"></a><h1 id="AP란"><a href="#AP란" class="headerlink" title="AP란"></a>AP란</h1><blockquote><p>무선랜을 구성하는 장치중 하나로, 유선랜과 무선랜을 연결시켜주는 장치이다.<br>AP는 Access Point의 약어이나, Wireless Access Point라고 하여 WAP 라고도 한다.)<br>AP 는 대체로 독립형 장치로, 이더넷 허브(Ehternet Hub)나 서버(Server)에 꽂아 사용할 수 있다.<br>AP 는 휴대폰(Cellular Phone)처럼 사용자의 위치에 따라 하나의 AP에서 다른 AP로 핸드오프(Hand-off : 넘겨주기) 되므로, 사용자가 이동하면서 이동형 무선장치를 사용할 수 있다.<br>출처: <a href="https://m.blog.naver.com/twers/50118628879">Just Blue - AP(Access Point)</a></p></blockquote>]]></content:encoded>
+      <content:encoded><![CDATA[<p>회의때 무수히 들었던 AP. 도대체 AP가 뭘까?<br>일단 Access Point의 약어이다. 네트워크와 관련된 느낌 물씬!</p><a id="more"></a><h1 id="AP란"><a href="#AP란" class="headerlink" title="AP란"></a>AP란</h1><p>AP는 유선랜의 유선신호를 무선으로 변경해주는 것이다. → 회사 내부망이 유선랜인데 다양한 기기에서 사용하려면 무선랜으로 바꿔주면 편리하다.<br>AP는 DHCP 서버에서 IP를 할당해줘야한다.</p><blockquote><p>무선랜을 구성하는 장치중 하나로, 유선랜과 무선랜을 연결시켜주는 장치이다.<br>AP는 Access Point의 약어이나, Wireless Access Point라고 하여 WAP 라고도 한다.<br>AP는 대체로 독립형 장치로, 이더넷 허브(Ehternet Hub)나 서버(Server)에 꽂아 사용할 수 있다.<br>AP는 휴대폰(Cellular Phone)처럼 사용자의 위치에 따라 하나의 AP에서 다른 AP로 핸드오프(Hand-off : 넘겨주기) 되므로, 사용자가 이동하면서 이동형 무선장치를 사용할 수 있다.<br>출처: <a href="https://m.blog.naver.com/twers/50118628879">Just Blue - AP(Access Point)</a></p></blockquote><p><br><br><br></p><h1 id="AP와-일반-무선공유기-차이점"><a href="#AP와-일반-무선공유기-차이점" class="headerlink" title="AP와 일반 무선공유기 차이점"></a>AP와 일반 무선공유기 차이점</h1><table><thead><tr><th align="left">일반 무선공유기</th><th align="left">AP</th></tr></thead><tbody><tr><td align="left">한 개의 IP로 여러 명의 네트워크를 사용할 수 있음</td><td align="left">건물의 각 층과 사무실별로 설치할 경우 사무실 내에서 자유롭게 네트워크를 사용할 수 있다는 장점이 있고 안테나의 개수에 따라 사용할 수 있는 범위가 정해지며 넓은 곳일수록 안테나가 많이 달린 제품을 활용하면 좋음</td></tr><tr><td align="left">SSID 3개까지 가능</td><td align="left">SSID 512까지도 가능</td></tr><tr><td align="left">네트워크선 따로, 전원선 따로</td><td align="left">특정 모델에 따라 네트워크선 하나로 전원까지 공급가능</td></tr><tr><td align="left"></td><td align="left">일반공유기보다 많은 라우팅 기능을 지원</td></tr></tbody></table><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=futuremain&logNo=221618229181">https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&amp;blogId=futuremain&amp;logNo=221618229181</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/Network/">Network</category>
