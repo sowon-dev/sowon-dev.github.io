@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Mon, 02 Jan 2023 08:19:57 GMT</pubDate>
+    <pubDate>Tue, 03 Jan 2023 14:03:47 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[안드로이드] 키스토어란?</title>
+      <link>https://sowon-dev.github.io/2023/01/03/230103Android-keystore/</link>
+      <guid>https://sowon-dev.github.io/2023/01/03/230103Android-keystore/</guid>
+      <pubDate>Tue, 03 Jan 2023 04:51:33 GMT</pubDate>
+      
+      <description>&lt;p&gt;오늘 회의에서 키스토어에 대해서 이야기가 나왔다. 앱개발은 전혀 모르므로 이참에 공부해봤다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>오늘 회의에서 키스토어에 대해서 이야기가 나왔다. 앱개발은 전혀 모르므로 이참에 공부해봤다.</p><a id="more"></a><h1 id="Keystore란"><a href="#Keystore란" class="headerlink" title="Keystore란?"></a>Keystore란?</h1><p>안드로이드 앱을 구글 플레이스토어에 올리려면 배포할때 개발자가 서명을 해야한다. 이 서명을 코드서명인증서 즉, 키스토어(Keystore)라고 한다.<br>키스토어(Keystore)는 앱 개발자에 대한 정보를 서명한 암호화된 파일이다.</p><p><br><br><br></p><h1 id="왜-Keystore를-사용할까"><a href="#왜-Keystore를-사용할까" class="headerlink" title="왜 Keystore를 사용할까?"></a>왜 Keystore를 사용할까?</h1><p>추후에 버그픽스등으로 해당 앱 업데이트시 서명이 동일한 지 확인한다. 만약 이 서명을 잃어버리면 아무리 내가 만든 앱이라고해도 이 앱을 업데이트 할 수 없다.<br>즉, 키스토어를 통해서 다른 개발자가 내 앱을 변조 못하게 막는 역할을 한다.</p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Android/">Android</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2023/01/03/230103Android-keystore/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>AP(Access Point)가 뭐길래</title>
@@ -436,29 +457,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/10/29/221029SQLD-tablepartition/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[jQuery] attr과 prop차이</title>
-      <link>https://sowon-dev.github.io/2022/10/27/221028jQuery-attr-vs-prop/</link>
-      <guid>https://sowon-dev.github.io/2022/10/27/221028jQuery-attr-vs-prop/</guid>
-      <pubDate>Thu, 27 Oct 2022 19:42:41 GMT</pubDate>
-      
-      <description>&lt;p&gt;제이쿼리를 사용하면서 attr와 prop는 아주 유사한 기능인데 어떠한 차이점이 있고 어떤 상황일때 어떤 걸 쓰는 게 더 좋은지 궁금해서 찾아봤다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>제이쿼리를 사용하면서 attr와 prop는 아주 유사한 기능인데 어떠한 차이점이 있고 어떤 상황일때 어떤 걸 쓰는 게 더 좋은지 궁금해서 찾아봤다.</p><a id="more"></a><p>역시 제일 좋은 건 jQuery 공식문서이다.<br>jQuery 1.6.0 버전에서부터 jQuery.attr()과 jQuery.prop()가 나눠졌다.</p><table><thead><tr><th align="center"></th><th align="center">jQuery.attr()</th><th align="center">jQuery.prop()</th></tr></thead><tbody><tr><td align="center">정의</td><td align="center">changes attributes for that HTML tag.</td><td align="center">changes properties for that HTML tag as per the DOM tree</td></tr><tr><td align="center">취급</td><td align="center">HTML 속성 (Attribute) 취급</td><td align="center">javascript 프로퍼티 (Property) 취급</td></tr><tr><td align="center">반환값</td><td align="center">returns the default value (Original state)</td><td align="center">returns the current value (Current state)</td></tr></tbody></table><p>많은 상황에서 둘은 같은 값을 반환하지만 attr()는 원래 값을 prop()는 현재 값을 반환한다.<br>예를 들어보자.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=<span class="string">"checkbox"</span> id=<span class="string">"test1"</span> checked=<span class="string">"checked"</span>&gt; 테스트<span class="number">1</span></span><br><span class="line">&lt;input type=<span class="string">"checkbox"</span> id=<span class="string">"test2"</span>&gt; 테스트<span class="number">2</span></span><br></pre></td></tr></table></figure><p>위 두가지 체크박스의 차이는 checked가 기본값인지 아닌지이다.<br>이를 콘솔에 찍어보면 차이를 발견할 수 있다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;#test1&quot;).attr(&quot;checked&quot;)</span><br><span class="line">$(&quot;#test2&quot;).attr(&quot;checked&quot;)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;결과값</span><br><span class="line">checked</span><br><span class="line">undefined</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;#test1&quot;).prop(&quot;checked&quot;)</span><br><span class="line">$(&quot;#test2&quot;).prop(&quot;checked&quot;)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;결과값</span><br><span class="line">true</span><br><span class="line">false</span><br></pre></td></tr></table></figure><p>attr()은 최초 element 랜더링시 defalut value를 반환하지만 prop()는 현재상태를 반환한다.</p><p><br><br><br></p><h1 id="결론"><a href="#결론" class="headerlink" title="결론"></a>결론</h1><ul><li><code>.attr()</code> : element가 가지는 속성 조회 권장<ul><li>style, src, rowspan</li></ul></li><li><code>.prop()</code>: element가 가지는 실제적인 상태 제어 사용 권장<ul><li>form요소의 disabled, selected, checked 속성값 확인 혹은 변경</li></ul></li></ul><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://api.jquery.com/attr/">https://api.jquery.com/attr/</a></li><li><a href="https://api.jquery.com/prop/">https://api.jquery.com/prop/</a></li><li><a href="http://net-informations.com/jq/iq/prop.htm">http://net-informations.com/jq/iq/prop.htm</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/jQuery/">jQuery</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/10/27/221028jQuery-attr-vs-prop/#disqus_thread</comments>
       
     </item>
     
