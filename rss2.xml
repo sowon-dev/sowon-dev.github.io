@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Thu, 05 Jan 2023 04:52:45 GMT</pubDate>
+    <pubDate>Thu, 05 Jan 2023 05:11:06 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[Spring] 새로운 컨트롤러(Controller)를 생성했는데 호출이 안될때</title>
+      <link>https://sowon-dev.github.io/2023/01/04/230105spring-servletcontext/</link>
+      <guid>https://sowon-dev.github.io/2023/01/04/230105spring-servletcontext/</guid>
+      <pubDate>Wed, 04 Jan 2023 20:02:22 GMT</pubDate>
+      
+      <description>&lt;p&gt;레거시 프로젝트에 신규 패키지를 만들고 그 패키지안에 신규 컨트롤러를 생성했다. 컨트롤러에 서비스 메서드를 만들고 포스트맨으로 호출했는데 웬걸?! 서버가 전혀 반응을 안한다. 왜일까?&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>레거시 프로젝트에 신규 패키지를 만들고 그 패키지안에 신규 컨트롤러를 생성했다. 컨트롤러에 서비스 메서드를 만들고 포스트맨으로 호출했는데 웬걸?! 서버가 전혀 반응을 안한다. 왜일까?</p><a id="more"></a><p>기본적으로 해봐야하는 것은 build 탭 &gt; clean &gt; 서버 재시작이다. 빌드가 제대로 안되어있으면 컨트롤러가 새로 생성된지도 모르기때문이다. 하지만 나는 여전히 반응하지않았다. 수석연구원님께 물어 알게된 것은 컴포넌트 스캔문제였다.</p><h1 id="문제점"><a href="#문제점" class="headerlink" title="문제점"></a>문제점</h1><p><code>servlet-context.xml</code>파일에서 아래처럼 컴포넌트 스캔 코드가 있는데 나는 테스트용 새로운 패키지인 <code>com.test.preview</code>를 만들고 그곳에다 신규 컨트롤러를 생성했다. 따라서 컴포넌트가 스캔이 되지않았던 것이다.</p><ul><li>기존코드 </li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;context:component-scan base-<span class="keyword">package</span>=<span class="string">"com.test.controller"</span> /&gt;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h1><p>콤마를 이용해서 베이스패키지를 추가해주면 해결!<br>감사합니다 김수석연구원님!</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;context:component-scan base-<span class="keyword">package</span>=<span class="string">"com.test.controller,com.test.preview"</span> /&gt;</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2023/01/04/230105spring-servletcontext/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[Java] 포스트맨(Postman)사용시 동시 요청이 되는 이유?</title>
@@ -49,6 +70,8 @@
       <category domain="https://sowon-dev.github.io/categories/Android/">Android</category>
       
       
+      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%8A%98%EB%98%90%EB%AA%BB%EC%95%8C%EC%95%84%EB%93%A3%EA%B3%A0%EB%A7%90%EC%95%98%EC%8A%B5%EB%8B%88%EB%8B%A4/">오늘또못알아듣고말았습니다</category>
+      
       
       <comments>https://sowon-dev.github.io/2023/01/03/230103Android-keystore/#disqus_thread</comments>
       
@@ -69,6 +92,8 @@
       
       <category domain="https://sowon-dev.github.io/categories/Network/">Network</category>
       
+      
+      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%8A%98%EB%98%90%EB%AA%BB%EC%95%8C%EC%95%84%EB%93%A3%EA%B3%A0%EB%A7%90%EC%95%98%EC%8A%B5%EB%8B%88%EB%8B%A4/">오늘또못알아듣고말았습니다</category>
       
       
       <comments>https://sowon-dev.github.io/2022/12/29/221230accesspoint/#disqus_thread</comments>
@@ -432,29 +457,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/11/02/221103JSP-utilDatefmt/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[SQLD] 슈퍼타입과 서브타입</title>
-      <link>https://sowon-dev.github.io/2022/10/31/221101SQLD-super-sub/</link>
-      <guid>https://sowon-dev.github.io/2022/10/31/221101SQLD-super-sub/</guid>
-      <pubDate>Mon, 31 Oct 2022 21:31:02 GMT</pubDate>
-      
-      <description>&lt;p&gt;슈퍼/서브타입 데이터 모델은 Extended ER모델이라고도 불린다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>슈퍼/서브타입 데이터 모델은 Extended ER모델이라고도 불린다.</p><a id="more"></a><ul><li>슈퍼타입: 공통의 부분</li><li>서브타입: 공통으로부터 상속받아 서</li></ul><p>if 10만건도 되지 않는 데이터 or 시스템을 운영하는 도중에도 데이터가 증가하지 않는다, 트랜잭션의 성격을 고려하지않고 전체를 하나의 테이블로 묶는 것도 괜찮은 방법이다.<br>하지만 데이터 양이 이미 많고 지속적으로 증가한다면 슈퍼/서브타입 물리적 데이터 모델로 변환하는 세 가지 유형을 고려해야한다.</p><p><br><br><br></p><h1 id="성능을-고려한-슈퍼-서브타입-데이터-모델-변환"><a href="#성능을-고려한-슈퍼-서브타입-데이터-모델-변환" class="headerlink" title="성능을 고려한 슈퍼/서브타입 데이터 모델 변환"></a>성능을 고려한 슈퍼/서브타입 데이터 모델 변환</h1><p><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FdIB9Iq%2FbtqCbgT9pcy%2FxrapasEiGw1KvgUTjG4k31%2Fimg.jpg" alt="https://hec-ker.tistory.com/68"></p><p><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FFLEnX%2FbtqCbhrWGzj%2FJk1PxKYOQNEXq8zkDbqGz0%2Fimg.jpg" alt="https://hec-ker.tistory.com/68"></p><table><thead><tr><th align="center">논리모델</th><th align="center">One to One Type(1:1 타입)</th><th align="center">Plus Type(슈퍼+서브 타입)</th><th align="center">Single Type(All in One 타입)</th></tr></thead><tbody><tr><td align="center">정의</td><td align="center">if 슈퍼타입과 서브타입 각각 트랜잭션이 발생, 개별 테이블로 구성(1:1 관계)</td><td align="center">if 슈퍼타입과 서브타입 함께 트랜잭션이 발생, 슈퍼타입의 PK와 각 서브타입의 속성을 묶어 N개의 테이블을 구성</td><td align="center">if 슈퍼타입과 서브타입 정확히 지정x상황, 하나의 테이블로 통합</td></tr><tr><td align="center">예시</td><td align="center">고객엔티티 하위에 개인고객, 법인고객으로 구분</td><td align="center">개인고객엔티티, 법인고객엔티티</td><td align="center">고객엔티티</td></tr><tr><td align="center">물리모델 결정기준</td><td align="center">개별로 발생되는 경우가 많은 서비스는 Identity로</td><td align="center">슈퍼타입+서브타입에 대해 발생되는 서비스는 RollDown 으로!</td><td align="center">전체를 하나로 묶어 트랜잭션이 발생할 때는 RollUp 으로!</td></tr></tbody></table><p><br><br><br></p><h1 id="출처"><a href="#출처" class="headerlink" title="출처"></a>출처</h1><ul><li><a href="https://hec-ker.tistory.com/68">마띠의블로그 - 데이터베이스 구조와 성능</a></li><li><a href="https://dataonair.or.kr/db-tech-reference/d-lounge/expert-column/?mod=document&uid=54034">데이터온에어 - ‘6개의 열쇠’로 데이터 모델링의 고수가 되자</a></li><li><a href="https://developer-ping9.tistory.com/293">공부하는 개발자 핑구 - 슈퍼-서브타입 모델의 물리모델 결정기준</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/SQLD/">SQLD</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/10/31/221101SQLD-super-sub/#disqus_thread</comments>
       
     </item>
     
