@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Tue, 03 Jan 2023 14:03:47 GMT</pubDate>
+    <pubDate>Thu, 05 Jan 2023 04:52:45 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[Java] 포스트맨(Postman)사용시 동시 요청이 되는 이유?</title>
+      <link>https://sowon-dev.github.io/2023/01/04/230105postman-multithread/</link>
+      <guid>https://sowon-dev.github.io/2023/01/04/230105postman-multithread/</guid>
+      <pubDate>Wed, 04 Jan 2023 19:20:56 GMT</pubDate>
+      
+      <description>&lt;p&gt;서버 API 작업 중 A요청 후 디버깅을 하는 와중에 B요청을 했더니 B요청에 대한 응답을 바로 받을 수 있었다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>서버 API 작업 중 A요청 후 디버깅을 하는 와중에 B요청을 했더니 B요청에 대한 응답을 바로 받을 수 있었다.</p><a id="more"></a><p>A요청에 대한 응답을 받기 전인데 B응답과 요청을 어떻게 처리될 수 있었을까?</p><h1 id="멀티쓰레드가-답이다"><a href="#멀티쓰레드가-답이다" class="headerlink" title="멀티쓰레드가 답이다."></a>멀티쓰레드가 답이다.</h1><p>내가 만든 서버API는 스프링프레임워크로 스프링프레이워크는 멀티스레드를 지원한다. 그래서 특별한 설정을 하지않아도 한 요청에 대한 응답을 받기도 전에 다른 요청을 보내고 응답도 받을 수 있었던 것!<br>간단하게 멀티쓰레드의 장점은 작업 분리로 효율성 증대이고 단점은 제어의 어려움이 있다.</p><p>블로그 글 <a href="https://sowon-dev.github.io/2020/08/19/200820javai/">멀티스레드프로그래밍1 : 개념, 용어정리, 스래드 상태와 제어</a>을 보면 더 자세히 알수있다.</p><p><br><br><br></p><h1 id="멀티스레드말고-싱글스레드를-쓰기도-하는가"><a href="#멀티스레드말고-싱글스레드를-쓰기도-하는가" class="headerlink" title="멀티스레드말고 싱글스레드를 쓰기도 하는가?"></a>멀티스레드말고 싱글스레드를 쓰기도 하는가?</h1><p>싱글스레드하면 떠오르는 건 node.js이다. 사실 node.js는 싱글스레드도 지원하면서 멀티스레드도 지원한다. 이에 대해서는 블로그글 <a href="https://haeunyah.tistory.com/81">vodkamitlime님의 NodeJS 는 Single Thread 일까? Multi Thread 일까?</a>을 보면 자세히 알수있다.</p><p>언뜻보기에는 멀티스레드가 좋은데 왜 싱글스레드를 지원할까?<br>자바스크립트가 싱글스레드를 지원하기 때문이다. </p><p>싱글스레드를 사용하는 이유는 싱글스레드만의 장점이 있기때문이다.</p><p><br><br><br></p><h1 id="싱글스레드-장단점"><a href="#싱글스레드-장단점" class="headerlink" title="싱글스레드 장단점"></a>싱글스레드 장단점</h1><ul><li>장점<ul><li>자원 접근에 대한 동기화를 신경쓰지 않아도 된다</li><li>작업전환(context switch) 작업을 요구하지 않는다.</li></ul></li><li>단점<ul><li>여러개의 CPU를 활용하지 못한다.</li></ul></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/JAVA/">JAVA</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2023/01/04/230105postman-multithread/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[안드로이드] 키스토어란?</title>
@@ -434,29 +455,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/10/31/221101SQLD-super-sub/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[SQLD] 테이블 분할</title>
-      <link>https://sowon-dev.github.io/2022/10/29/221029SQLD-tablepartition/</link>
-      <guid>https://sowon-dev.github.io/2022/10/29/221029SQLD-tablepartition/</guid>
-      <pubDate>Sat, 29 Oct 2022 05:37:20 GMT</pubDate>
-      
-      <description>&lt;p&gt;SQL을 더 잘 다루고싶어서 공부하다가 하는 김에 결과가 남는 자격증을 도전하게되었다.&lt;br&gt;테이블 반정규화 과정에는 3가지가 있다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>SQL을 더 잘 다루고싶어서 공부하다가 하는 김에 결과가 남는 자격증을 도전하게되었다.<br>테이블 반정규화 과정에는 3가지가 있다.</p><a id="more"></a><h1 id="🏷️-테이블-반정규화"><a href="#🏷️-테이블-반정규화" class="headerlink" title="🏷️ 테이블 반정규화"></a>🏷️ 테이블 반정규화</h1><ol><li>테이블 병합: 1:1관계, 1:M관계, 슈퍼/서브타입</li><li>테이블 분할: 수직분할, 수평분할</li><li>테이블 추가: 중복, 통계, 이력</li></ol><p>이 중 테이블 분할에 대해 궁금해져 자세히 알아보았다.<br>테이블은 합치는 것보다 나누는 것이 더 어렵다. 사실 기존 테이블을 바꾼다는 것 자체가 큰 위험이 따른다.</p><p><br><br></p><h2 id="이렇게-위험한-테이블-반정규화를-왜-하는걸까"><a href="#이렇게-위험한-테이블-반정규화를-왜-하는걸까" class="headerlink" title="이렇게 위험한 테이블 반정규화를 왜 하는걸까?"></a>이렇게 위험한 테이블 반정규화를 왜 하는걸까?</h2><p>반정규화는 시스템 성능향상과 개바로가 운영의 단순화를 위해 중복, 통합, 분리 등을 수행하는 데이터 기법이다. 즉, 장기적으로 봤을 때 기존 시스템보다 개선효과가 클때 반정규화를 한다.</p><ul><li>테이블 컬럼 수 많을수록  -&gt; I/O(Input/Output) 부하 생김</li><li>테이블 Row 수 많을수록 -&gt; Index 부하 생김</li></ul><p>따라서, 컬럼 또는 로우 기준으로 수직 또는 수평으로 테이블 분리를 통한 성능 개선을 검토한다.<br>그럼 이제 수직분할과 수평분할을 알아보자.</p><p><br><br><br></p><h1 id="🏷️-수직분할"><a href="#🏷️-수직분할" class="headerlink" title="🏷️ 수직분할"></a>🏷️ 수직분할</h1><ol><li>정의: 컬럼 기준으로 테이블 분리</li><li>분리이유<ul><li>만약 한 테이블에 너무 많은 컬럼이 존재한다면 디스크의 여러 블록에 데이터가 저장되어 디스크I/O성능 저하가 일어난다. </li></ul></li><li>왜 디스크의 여러 블록에 데이터가 저장될까? <ul><li>로우체이닝과 로우 마이그레이션이 많아지기때문! 로우체이닝과 로우마이그레이션이 많아지면 디스크I/O 성능저하가 나타난다.</li><li>Row Chaining: 길이가 너무 길어 하나의 블록에 저장되지 못하고 다수의 블록에 나눠 저장</li><li>Row Migration: 수정된 데이터를 해당 데이터 블록에 저장하지 못하고 다른 블록 빈 공간에 저장</li></ul></li><li>분리기준<ul><li>조회 조건에 맞게 이용되는 컬럼들을 그룹화하여 분리</li></ul></li></ol><p><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbK6vM6%2FbtqxJaKhzIM%2FNLAp7u63ZC87MIiDXXOfIK%2Fimg.png" alt="출처: https://umbum.dev/969"></p><p><br><br><br></p><h1 id="🏷️-수평분할"><a href="#🏷️-수평분할" class="headerlink" title="🏷️ 수평분할"></a>🏷️ 수평분할</h1><ol><li>정의: Row 기준으로 테이블 분리</li><li>분리이유<ul><li>대량의 데이터가 하나의 테이블에 있으면 인덱스 정보 생성시 부하가 터진다. </li><li>집중 발생되는 트랙잰션 해소를 통한 성능 향상</li></ul></li><li>왜 인덱시 정보 생성시 부하가 커질까?<ul><li>인덱스 깊이(Depth)가 깊어지면 찾아가는데 해당 depth까지 시간이 오래 걸림</li><li>인덱스 크기가 커질수록 더 많은 성능 저하</li></ul></li><li>분리기준<ul><li>논리적으로 같은 테이블이지만 물리적으로 나누는 파티션 방법 이용</li></ul></li></ol><p><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F0OIvd%2FbtqxKq6sYRh%2F2lKlThTW3Yr7kELKJjubP0%2Fimg.png" alt="출처: https://umbum.dev/969"> </p><p>수평분할시 분리기준으로 파티션 방법이 있다. 파티션 방법이 구체적으로 뭘까? </p><p><br><br><br></p><h2 id="파티셔닝-종류"><a href="#파티셔닝-종류" class="headerlink" title="파티셔닝 종류"></a>파티셔닝 종류</h2><p><img src="https://docs.oracle.com/cd/B10500_01/server.920/a96524/cncpt158.gif" alt="출처: docs.oracle.com"></p><table><thead><tr><th align="center">파티셔닝명</th><th align="center">분리기준</th><th align="center">예시</th></tr></thead><tbody><tr><td align="center">List</td><td align="center">사용자가 지정한 값으로 분리(불연속적, 보통 핵심적인 코드값)</td><td align="center">판매데이터를 지역별로</td></tr><tr><td align="center">Range</td><td align="center">주로 날짜 또는 숫자값 기준으로 분리</td><td align="center">판매데이터를 분기별로</td></tr><tr><td align="center">Hash</td><td align="center">파티션 키 값에 해시 함수를 적용하여 지정된 Hash조건에 따라 분리</td><td align="center">고객번호, 주문일련번호 등</td></tr><tr><td align="center">Composite</td><td align="center">Range나 List 파티션 내 다른 서브파티션</td><td align="center">Range + List 또는 List + Hash</td></tr></tbody></table><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://dataonair.or.kr/db-tech-reference/d-lounge/expert-column/?mod=document&uid=51990#:~:text=%ED%85%8C%EC%9D%B4%EB%B8%94%EC%9D%98%20%EC%88%98%EC%A7%81%EB%B6%84%ED%95%A0%EC%9D%80,%EC%84%B1%EB%8A%A5%20%EA%B0%9C%EC%84%A0%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EA%B2%83%EC%9D%B4%EB%8B%A4.">데이타온에어 전문가칼럼 - 테이블의 수직분할과 수평분할에 대한 이해</a></li><li><a href="https://umbum.dev/969">엄범 기술블로그 - 분산 DB, 파티셔닝 (partitioning ), 샤딩 (sharding)</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/SQLD/">SQLD</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/10/29/221029SQLD-tablepartition/#disqus_thread</comments>
       
     </item>
     

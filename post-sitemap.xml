@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2023/01/04/230105postman-multithread/</loc>
+        <lastmod>2023-01-05T04:52:45.193Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/08/19/200820javai/</loc>
+        <lastmod>2023-01-05T04:43:11.888Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2023/01/03/230103Android-keystore/</loc>
         <lastmod>2023-01-03T14:03:47.311Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -3994,14 +4010,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/08/13/200814jspi2/</loc>
         <lastmod>2020-09-02T02:37:57.251Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/08/19/200820javai/</loc>
-        <lastmod>2020-09-02T02:37:02.408Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
