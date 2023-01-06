@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Thu, 05 Jan 2023 05:11:06 GMT</pubDate>
+    <pubDate>Fri, 06 Jan 2023 06:54:15 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[Gson]한글이 ?로 깨져보일때</title>
+      <link>https://sowon-dev.github.io/2023/01/05/230106gson-korean-encoding/</link>
+      <guid>https://sowon-dev.github.io/2023/01/05/230106gson-korean-encoding/</guid>
+      <pubDate>Thu, 05 Jan 2023 21:07:31 GMT</pubDate>
+      
+      <description>&lt;p&gt;구글에서 만든 &lt;a href=&quot;https://github.com/google/gson&quot;&gt;Gson&lt;/a&gt;을 사용해서 객체를 json으로 혹은 그 반대로 변환하는데 사용하고 있다. 이때 한글이 ?로 깨지는 현상이 나타났다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>구글에서 만든 <a href="https://github.com/google/gson">Gson</a>을 사용해서 객체를 json으로 혹은 그 반대로 변환하는데 사용하고 있다. 이때 한글이 ?로 깨지는 현상이 나타났다.</p><a id="more"></a><h1 id="한글깨질때-produces-quot-text-plain-charset-UTF-8-quot-추가하기"><a href="#한글깨질때-produces-quot-text-plain-charset-UTF-8-quot-추가하기" class="headerlink" title="한글깨질때 produces=&quot;text/plain;charset=UTF-8&quot; 추가하기"></a>한글깨질때 <code>produces=&quot;text/plain;charset=UTF-8&quot;</code> 추가하기</h1><p>컨트롤러 RequestMapping 에 추가하면 된다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping</span>(value=<span class="string">"/test"</span>, method=RequestMethod.GET, produces=<span class="string">"text/plain;charset=UTF-8"</span>)</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="그래도-안될때"><a href="#그래도-안될때" class="headerlink" title="그래도 안될때"></a>그래도 안될때</h1><p>produces를 설정하고 나니까 http통신이 안된다. 그래서 <code>produces = &quot;application/json;charset=utf-8&quot;</code>로 바꿔주니 통신이 되었다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping</span>(value=<span class="string">"/test"</span>, method=RequestMethod.GET, produces=<span class="string">"application/json;charset=UTF-8"</span>)</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="그래도-또-안될때"><a href="#그래도-또-안될때" class="headerlink" title="그래도 또 안될때"></a>그래도 또 안될때</h1><p>하지만 여전히 한글이 깨졌다. 그래서 다시 구글링해서 찾은 내용인 <code>produces = &quot;MediaType.APPLICATION_JSON_UTF8_VALUE&quot;</code>로 바꿔적용했다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping</span>(value=<span class="string">"/test"</span>, method=RequestMethod.GET, produces=<span class="string">"MediaType.APPLICATION_JSON_UTF8_VALUE"</span>)</span><br></pre></td></tr></table></figure><p>해결!</p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Gson/">Gson</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2023/01/05/230106gson-korean-encoding/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[Spring] 새로운 컨트롤러(Controller)를 생성했는데 호출이 안될때</title>
@@ -434,29 +457,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/11/08/221109jQuery-input-type/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[JSTL] java.util.Date 현재날짜의 시간을 0으로 설정하기</title>
-      <link>https://sowon-dev.github.io/2022/11/02/221103JSP-utilDatefmt/</link>
-      <guid>https://sowon-dev.github.io/2022/11/02/221103JSP-utilDatefmt/</guid>
-      <pubDate>Wed, 02 Nov 2022 16:15:38 GMT</pubDate>
-      
-      <description>&lt;p&gt;JSTL로 현재날짜와 DB에서 가져오는 날짜 차이를 계산했었다.&lt;br&gt;잘 되는 줄 알았던 코드가 특정 시간을 기점으로 버그가 발생한다는 것을 알게되었다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>JSTL로 현재날짜와 DB에서 가져오는 날짜 차이를 계산했었다.<br>잘 되는 줄 알았던 코드가 특정 시간을 기점으로 버그가 발생한다는 것을 알게되었다.</p><a id="more"></a><p><br><br><br></p><h1 id="기존코드와-문제점"><a href="#기존코드와-문제점" class="headerlink" title="기존코드와 문제점"></a>기존코드와 문제점</h1><p>구글링하면 가장 많이 사용하는 방법으로 <a href="https://sowon-dev.github.io/2022/08/18/220818JSTL-date/">포스팅 - 날짜 차이 계산하기</a>을 작성했다.<br>날짜차이 계산은 모든 날짜를 시간으로 바꾼 뒤 뺄셈을 통해 날짜가 얼마나 남았는지 계산할 수 있다. </p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;jsp:useBean id=<span class="string">"now"</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"java.util.Date"</span> /&gt;</span><br><span class="line">&lt;fmt:parseNumber <span class="keyword">var</span>=<span class="string">"nowfmtTime"</span> value=<span class="string">"$&#123;now.time / (1000*60*60*24)&#125;"</span> integerOnly=<span class="string">"true"</span> scope=<span class="string">"request"</span>/&gt;</span><br><span class="line">&lt;fmt:parseNumber <span class="keyword">var</span>=<span class="string">"dbDtParse"</span> value=<span class="string">"$&#123;list.dbDt.time / (1000*60*60*24)&#125;"</span> integerOnly=<span class="string">"true"</span> scope=<span class="string">"request"</span>/&gt;</span><br><span class="line"></span><br><span class="line">$&#123;nowfmtTime &#125;</span><br></pre></td></tr></table></figure><p>코드상의 문제는 전혀없으나 요구사항이 하루전에는 예약할 수 없는 예약프로그램을 구현하는 것이라서 수정이 필요했다.<br>현재시간을 time로 변경하는데 HH:mm:ss가 00:00:00이 아니라서 위 방식으로 시간계산시 미세하게 차이가 발생했다.<br>이를 해결하기 위해 현재날짜의 시간을 0으로 설정해야했다.</p><p><br><br><br></p><h1 id="해결코드"><a href="#해결코드" class="headerlink" title="해결코드"></a>해결코드</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;jsp:useBean id=<span class="string">"now"</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"java.util.Date"</span> /&gt;</span><br><span class="line">&lt;fmt:formatDate <span class="keyword">var</span>=<span class="string">"today"</span> value=<span class="string">"$&#123;now&#125;"</span> pattern=<span class="string">"yyyyMMdd000000"</span> /&gt;</span><br><span class="line">&lt;fmt:parseDate <span class="keyword">var</span>=<span class="string">"nowfmt"</span> value=<span class="string">"$&#123;today&#125;"</span> pattern=<span class="string">"yyyyMMddHHmmss"</span>/&gt;</span><br><span class="line">&lt;fmt:parseNumber <span class="keyword">var</span>=<span class="string">"nowfmtTime"</span> value=<span class="string">"$&#123;nowfmt.time / (1000*60*60*24)&#125;"</span> integerOnly=<span class="string">"true"</span> scope=<span class="string">"request"</span>/&gt;</span><br><span class="line"></span><br><span class="line">$&#123;nowfmtTime &#125;</span><br></pre></td></tr></table></figure><p><code>fmt:formatDate</code>의 pattern속성으로 시간을 0으로 설정한다.<br>그리고 <code>fmt:parseDate</code>로 Date 타입으로 파싱해준 뒤 바로 날짜를 이용할 수 있고 나처럼 날짜계산을 위해 다시 <code>fmt:parseNumber</code> 숫자타입으로 변경해서 이용할수도 있다.</p><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://sowon-dev.github.io/2020/08/11/200812jspi2/">JSTL과 EL : fmt 라이브러리(formatDate, formatNumber)</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/JSP/">JSP</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/JSTL/">JSTL</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/11/02/221103JSP-utilDatefmt/#disqus_thread</comments>
       
     </item>
     
