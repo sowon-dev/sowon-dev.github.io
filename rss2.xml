@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Fri, 06 Jan 2023 06:54:15 GMT</pubDate>
+    <pubDate>Mon, 09 Jan 2023 07:19:03 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[Spring] 컨트롤러에서 json을 리턴하고 싶을때</title>
+      <link>https://sowon-dev.github.io/2023/01/08/230109spring-returnjsonview/</link>
+      <guid>https://sowon-dev.github.io/2023/01/08/230109spring-returnjsonview/</guid>
+      <pubDate>Sun, 08 Jan 2023 21:44:25 GMT</pubDate>
+      
+      <description>&lt;p&gt;컨트롤러에서 json형식으로 반환해주는 방법은 크게 두가지이다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>컨트롤러에서 json형식으로 반환해주는 방법은 크게 두가지이다.</p><a id="more"></a><ol><li>String으로 반환: Controller return type을 String으로 리턴한 뒤 클라이언트에서 파싱하기.</li><li>MappingJackson2JsonView 사용: ModelAndView를 json 형식으로 반환해 준다.</li></ol><p>스프링프레임워크에서는 주로 MappingJackson2JsonView을 bean으로 등록해서 이용한다.</p><p><br><br><br></p><h1 id="MappingJackson2JsonView"><a href="#MappingJackson2JsonView" class="headerlink" title="MappingJackson2JsonView"></a>MappingJackson2JsonView</h1><p><code>servlet-context.xml</code>에서 아래 코드를 추가한다.</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"jsonView"</span> <span class="attr">class</span>=<span class="string">"org.springframework.web.servlet.view.json.MappingJacksonJsonView"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"contentType"</span> <span class="attr">value</span>=<span class="string">"application/json;charset=UTF-8"</span>&gt;</span> <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- BeanNameViewResolver 우선순위 지정 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"beanNameResolver"</span> <span class="attr">class</span>=<span class="string">"org.springframework.web.servlet.view.BeanNameViewResolver"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"order"</span> <span class="attr">value</span>=<span class="string">"0"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure><blockquote><p>BeanNameViewResolver우선순위 지정: beanNameResolver는 우선순위를 0으로 해서 ViewPage를 찾을 때 우선 탐색한다. 만약 BeanNameViewResolver에서 없으면 viewResolver에서 탐색한다.<br>출처: <a href="https://icefree.tistory.com/entry/Spring-BeanNameViewResolver">Classic!님의 블로그 글 BeanNameViewResolver</a></p></blockquote>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2023/01/08/230109spring-returnjsonview/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[Gson]한글이 ?로 깨져보일때</title>
@@ -434,29 +455,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/11/10/221111projectreview8/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[jQuery] checkbox와 select 다루기</title>
-      <link>https://sowon-dev.github.io/2022/11/08/221109jQuery-input-type/</link>
-      <guid>https://sowon-dev.github.io/2022/11/08/221109jQuery-input-type/</guid>
-      <pubDate>Tue, 08 Nov 2022 23:04:34 GMT</pubDate>
-      
-      <description>&lt;p&gt;jQuery로 checkbox와 select 다루는 법을 전체적으로 정리해보자.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>jQuery로 checkbox와 select 다루는 법을 전체적으로 정리해보자.</p><a id="more"></a><h1 id="✍Checkbox"><a href="#✍Checkbox" class="headerlink" title="✍Checkbox"></a>✍Checkbox</h1><p><br><br></p><h2 id="1-체크하기"><a href="#1-체크하기" class="headerlink" title="1. 체크하기"></a>1. 체크하기</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ID로 지정하는 방법</span></span><br><span class="line">$(<span class="string">'#체크박스아이디'</span>).prop(<span class="string">'checked'</span>,<span class="literal">true</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// input 속성으로 지정하는 방법</span></span><br><span class="line">$(<span class="string">'input:checkbox[name="체크박스네임"]'</span>).prop(<span class="string">'checked'</span>,<span class="literal">true</span>);</span><br></pre></td></tr></table></figure><p><br><br></p><h2 id="2-체크여부-확인"><a href="#2-체크여부-확인" class="headerlink" title="2. 체크여부 확인"></a>2. 체크여부 확인</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'#체크박스아이디'</span>).is(<span class="string">':checked'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 반환값: true, false</span></span><br></pre></td></tr></table></figure><p>참고로 <code>$(&#39;#체크박스아이디&#39;).val()</code>을 하면 반환값이 on이나 undifined가 뜬다.</p><p><br><br></p><h2 id="3-한번에-전체-체크하기"><a href="#3-한번에-전체-체크하기" class="headerlink" title="3. 한번에 전체 체크하기"></a>3. 한번에 전체 체크하기</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'#allCheck'</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"><span class="keyword">var</span> isChecked = $(<span class="string">'#allCheck'</span>).is(<span class="string">':checked'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(isChecked)</span><br><span class="line">$(<span class="string">'input:checkbox'</span>).prop(<span class="string">'checked'</span>,<span class="literal">true</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p><br><br></p><h1 id="✍-Select"><a href="#✍-Select" class="headerlink" title="✍ Select"></a>✍ Select</h1><p><br><br></p><h2 id="1-값-읽기-가져오기"><a href="#1-값-읽기-가져오기" class="headerlink" title="1. 값 읽기(가져오기)"></a>1. 값 읽기(가져오기)</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ID로 접근하는 방법</span></span><br><span class="line">$(<span class="string">"#셀렉트박스아이디 option:selected"</span>).val();</span><br><span class="line"></span><br><span class="line"><span class="comment">// input 속성으로 접근하는 방법</span></span><br><span class="line">$(<span class="string">"select[name=셀렉트박스네임]"</span>).val();</span><br></pre></td></tr></table></figure><p><br><br></p><h2 id="2-옵션-추가하기"><a href="#2-옵션-추가하기" class="headerlink" title="2. 옵션 추가하기"></a>2. 옵션 추가하기</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 옵션추가</span></span><br><span class="line">$(<span class="string">"#셀렉트박스아이디"</span>).append(<span class="string">"&lt;option value='1번'&gt;1번 테스트&lt;/option&gt;"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 옵션을 맨 앞에 추가</span></span><br><span class="line">$(<span class="string">"#셀렉트박스ID"</span>).prepend(<span class="string">"&lt;option value='맨앞'&gt;맨앞&lt;/option&gt;"</span>);</span><br></pre></td></tr></table></figure><p><br><br></p><h2 id="3-옵션-삭제하기"><a href="#3-옵션-삭제하기" class="headerlink" title="3. 옵션 삭제하기"></a>3. 옵션 삭제하기</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 옵션 전체 삭제</span></span><br><span class="line">$(<span class="string">"#셀렉트박스아이디 option"</span>).remove();</span><br><span class="line">$(<span class="string">"select[name=셀렉트박스네임] option"</span>).remove();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 특정 옵션 벨류 값으로 삭제</span></span><br><span class="line">$(<span class="string">"#셀렉트박스아이디 option[value='맨앞']"</span>).remove();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 특정 옵션 인덱스 값으로 삭제</span></span><br><span class="line">$(<span class="string">"#셀렉트박스아이디 option:eq(0)"</span>).remove();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 첫번째 옵션 삭제</span></span><br><span class="line">$(<span class="string">"#셀렉트박스아이디 option:first"</span>).remove();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 마지막 옵션 삭제</span></span><br><span class="line">$(<span class="string">"#셀렉트박스아이디 option:last"</span>).remove();</span><br></pre></td></tr></table></figure><p><br><br></p><h2 id="4-선택하기"><a href="#4-선택하기" class="headerlink" title="4. 선택하기"></a>4. 선택하기</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 옵션 전체 삭제</span></span><br><span class="line">$(<span class="string">"#셀렉트ID option:eq(1)"</span>).attr(<span class="string">"selected"</span>, <span class="string">"selected"</span>);</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/jQuery/">jQuery</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/11/08/221109jQuery-input-type/#disqus_thread</comments>
       
     </item>
     
