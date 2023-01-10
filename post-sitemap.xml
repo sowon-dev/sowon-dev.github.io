@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2022/08/15/220816Jsp-restart/</loc>
+        <lastmod>2023-01-10T04:37:51.517Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2023/01/08/230109spring-returnjsonview/</loc>
         <lastmod>2023-01-09T07:19:03.288Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -58,14 +66,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/08/19/200820javai/</loc>
         <lastmod>2023-01-05T04:43:11.888Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/08/15/220816Jsp-restart/</loc>
-        <lastmod>2022-12-28T06:34:21.846Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
