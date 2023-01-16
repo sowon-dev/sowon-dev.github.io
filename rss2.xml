@@ -9,8 +9,35 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Fri, 13 Jan 2023 01:24:17 GMT</pubDate>
+    <pubDate>Mon, 16 Jan 2023 02:36:24 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[WIP]NAS가 뭐길래</title>
+      <link>https://sowon-dev.github.io/2023/01/15/230116nas/</link>
+      <guid>https://sowon-dev.github.io/2023/01/15/230116nas/</guid>
+      <pubDate>Sun, 15 Jan 2023 16:55:28 GMT</pubDate>
+      
+      <description>&lt;p&gt;&lt;a href=&quot;&quot;&gt;클라우드 네이티브&lt;/a&gt;관련해서 교육을 듣던 중 강사님이 NAS에 관해 아래처럼 말씀하셨다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;서버 1x.x.x.xx는 NAS로 사용합니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;예전에 대리님이 아기 사진이 너무 많아 NAS서버를 만들까한다는 말도 떠오르면서 NAS가 정확히 뭔지 궁금해졌다.&lt;br&gt;문맥상 데이터 저장소같은데 DB와는 또 어떻게 다를까? 외부에서 접근하면 클라우드저장소같은데 그와는 또 어떻게 다를까?&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p><a href="">클라우드 네이티브</a>관련해서 교육을 듣던 중 강사님이 NAS에 관해 아래처럼 말씀하셨다.</p><blockquote><p>서버 1x.x.x.xx는 NAS로 사용합니다.</p></blockquote><p>예전에 대리님이 아기 사진이 너무 많아 NAS서버를 만들까한다는 말도 떠오르면서 NAS가 정확히 뭔지 궁금해졌다.<br>문맥상 데이터 저장소같은데 DB와는 또 어떻게 다를까? 외부에서 접근하면 클라우드저장소같은데 그와는 또 어떻게 다를까?</p><a id="more"></a><h1 id="NAS-Network-Attached-Storage"><a href="#NAS-Network-Attached-Storage" class="headerlink" title="NAS(Network Attached Storage)"></a>NAS(Network Attached Storage)</h1><ul><li>Network Attached Storage: 네트워크 결합 스토리지</li><li>LAN으로 연결하는 외장 하드디스크</li><li>반대 개념은 컴퓨터에 직접 연결해서 쓰는 DAS(직접 결합 저장장치, Direct Attached Storage) e.g. 내장형 하드디스크</li></ul><p>컴퓨터를 직접 연결하지 않고 근거리 통신 네트워크(LAN)를 통해 데이터를 주고 받는다. 클라우드 스토리지 서비스와 유사한 느낌인데 어떤 차이가 있을까?</p><p><br><br><br></p><h1 id="클라우드-스토리지-서비스와-차이점"><a href="#클라우드-스토리지-서비스와-차이점" class="headerlink" title="클라우드 스토리지 서비스와 차이점"></a>클라우드 스토리지 서비스와 차이점</h1><table><thead><tr><th align="center"></th><th align="left">NAS</th><th align="left">클라우드스토리지</th></tr></thead><tbody><tr><td align="center">정의</td><td align="left">LAN으로 연결하는 외장 하드디스크</td><td align="left"></td></tr><tr><td align="center">보안성</td><td align="left">우수</td><td align="left">개인정보보안취약</td></tr><tr><td align="center">안정성</td><td align="left">하드디스크에 몇개에 의존해서 취약</td><td align="left">우수</td></tr><tr><td align="center">속도</td><td align="left">상대적 빠름</td><td align="left">상대적 느림</td></tr><tr><td align="center">비용</td><td align="left">초기비용많지만 유지비 상대적 저렴</td><td align="left">주로 월정액방식으로 초기비용도 낮고 유지비도 비싸지않다</td></tr></tbody></table><p><br><br><br></p><h1 id="NAS-목적"><a href="#NAS-목적" class="headerlink" title="NAS 목적"></a>NAS 목적</h1><p>사람에 따라 사용방식이 다양하지만 구글링해본 결과 대용량, 개인자료는 NAS에 보관하고 업무용 또는 백업용 자료는 클라우드저장소(구글클라우드)를 많이 사용하는 것으로 보인다.</p><p><br><br><br></p><h1 id="RAID"><a href="#RAID" class="headerlink" title="RAID"></a>RAID</h1><p>NAS에 대해 궁금한 점을 팀장님께 물으니 팀장님이 RAID에 관해서도 함께 설명해주셨다. 안 물어보면 어쩔뻔했어! 이렇게 지식이 확장되는 거 정말 좋다! 재밌어!</p><p>(작성중)</p><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://namu.wiki/w/NAS(%EC%A0%80%EC%9E%A5%EC%9E%A5%EC%B9%98)">https://namu.wiki/w/NAS(%EC%A0%80%EC%9E%A5%EC%9E%A5%EC%B9%98)</a></li><li><a href="https://namu.wiki/w/RAID">https://namu.wiki/w/RAID</a></li><li><a href="https://quarker.tistory.com/175">quarker님 - NAS와 Cloud Storage 서비스 비교</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Server/">Server</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%8A%98%EB%98%90%EB%AA%BB%EC%95%8C%EC%95%84%EB%93%A3%EA%B3%A0%EB%A7%90%EC%95%98%EC%8A%B5%EB%8B%88%EB%8B%A4/">오늘또못알아듣고말았습니다</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2023/01/15/230116nas/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[Spring]RestTemplate response 한글깨짐 UTF-8적용하기</title>
@@ -432,27 +459,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/11/21/221122Redis/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[JS]Web Storage vs 쿠키(Cookie) vs 세션(Session) vs 캐시(Cache)</title>
-      <link>https://sowon-dev.github.io/2022/11/21/221121JS-webstorage/</link>
-      <guid>https://sowon-dev.github.io/2022/11/21/221121JS-webstorage/</guid>
-      <pubDate>Mon, 21 Nov 2022 04:27:19 GMT</pubDate>
-      
-      <description>&lt;p&gt;레거시프로젝트의 소스코드를 분석하다가 Web Storage를 만났다.&lt;br&gt;localStorage와 sessionStorage를 둘 다 사용하고 있었기에 둘 차이가 궁금해졌다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>레거시프로젝트의 소스코드를 분석하다가 Web Storage를 만났다.<br>localStorage와 sessionStorage를 둘 다 사용하고 있었기에 둘 차이가 궁금해졌다.</p><a id="more"></a><p>구글링할수도록 쿠키, 세션, 캐시까지 다양한 개념이 나오길래 이참에 다 정리해봤다.</p><h1 id="Web-Storage"><a href="#Web-Storage" class="headerlink" title="Web Storage"></a>Web Storage</h1><ul><li>클라이언트에 저장</li><li>Key-Value 형태</li><li>쿠키와 달리 서버에 전송안함</li><li>CSRF로부터 안전 why? Origin단위로 접근이 제한되기때문에.</li><li>쿠키(4GB)보다 큰 저장용량(5GB)지원</li><li>문자형(String) 데이터 타입만 지원</li><li>종류<ul><li>localStorage: 사용자가 데이터를 지우지 않는 이상, 브라우저나 OS를 종료해도 계속 브라우저에 남아있음 (영구성) 단, 동일한 브라우저를 사용할 때만 해당</li><li>sessionStorage: 브라우저 탭에도 종속되기 때문에, 윈도우나 브라우저 탭을 닫을 경우 제거</li></ul></li></ul><p><br><br><br></p><h2 id="Origin-오리진이란"><a href="#Origin-오리진이란" class="headerlink" title="Origin 오리진이란?"></a>Origin 오리진이란?</h2><p>오리진 = 프로토콜 + 도메인 + 포트</p><p><br><br><br></p><h1 id="비교"><a href="#비교" class="headerlink" title="비교"></a>비교</h1><table><thead><tr><th align="center"></th><th align="left">localStorage</th><th align="left">sessionStorage</th><th align="left">Cookie</th><th align="left">Session</th></tr></thead><tbody><tr><td align="center">저장위치</td><td align="left">클라이언트</td><td align="left">클라이언트</td><td align="left">클라이언트</td><td align="left">서버</td></tr><tr><td align="center">저장형식</td><td align="left">String</td><td align="left">String</td><td align="left">String</td><td align="left">Obejct</td></tr><tr><td align="center">전송</td><td align="left">서버전송x <br> -&gt; 서버 부담없음</td><td align="left">서버전송x <br> -&gt; 서버 부담없음</td><td align="left">매번 서버에 자동 전송 <br> -&gt; 크기가 크면 서버에 부담</td><td align="left">서버에서 클라이언트를 구분하기 위해 세션 ID를 부여 <br> -&gt; 사용자가 많아질수록 서버 메모리를 많이 차지</td></tr><tr><td align="center">유효기간 설정</td><td align="left">불가능</td><td align="left">불가능</td><td align="left">가능</td><td align="left">가능(기본 30분)</td></tr><tr><td align="center">데이터영구성</td><td align="left">브라우저 종료해도 유지 <br> 명시적 삭제 필요</td><td align="left">윈도우나 브라우저 탭을 닫을 경우 삭제됨</td><td align="left">쿠키 저장시 설정(설정 없을 시에는 브라우저 종료시 만료)</td><td align="left">브라우저 종료 시 만료기간에 상관없이 삭제됨</td></tr><tr><td align="center">생성단위</td><td align="left">Origin별로 생성<br>다른 오리진의 로컬 스토리지에는 접근 불가<br>서로 다른 브라우저 탭이라도 동일한 오리진이라면 동일한 로컬 스토리지를 사용함<br></td><td align="left">Origin별마다 탭/윈도우 단위로 생성-&gt;탭/윈도우를 닫을 시 데이터가 삭제됨</td><td align="left">브라우저에 여러개 생성가능</td><td align="left">브라우저당 하나의 세션SessionID이 생성</td></tr><tr><td align="center">주 사용처</td><td align="left">지속적으로 필요한 정보를 저장할때<br>e.g.자동 로그인 등</td><td align="left">잠시 동안 필요한 정보를 저장할 때<br>e.g.입력 폼 저장, 일회성 로그인 등</td><td align="left">로그인유지, 자동완성, 일주일간 다시 보지 않기, 최근 검색한 상품들을 광고에서 추천, 쇼핑몰 장바구니 기능</td><td align="left">로그인유지</td></tr></tbody></table><p><br><br><br></p><h1 id="캐시-Cache-는-또-뭘까"><a href="#캐시-Cache-는-또-뭘까" class="headerlink" title="캐시(Cache)는 또 뭘까?"></a>캐시(Cache)는 또 뭘까?</h1><p>쿠키와 세션을 이야기하다보면 자연스럽게 캐시가 나온다.<br>어떤 차이가 있을까?</p><ul><li>캐시: 웹 페이지 요소(e.g.img,css,js등 리소스파일)를 저장하기 위한 임시 저장소 for 빠른 웹페이지 랜더링</li><li>쿠키,세션: 정보 저장소 for 사용자인증</li></ul><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/API/Window/sessionStorage">https://developer.mozilla.org/ko/docs/Web/API/Window/sessionStorage</a></li><li><a href="https://it-eldorado.tistory.com/90">IT엘도라도 - 쿠키, 웹 스토리지(로컬 스토리지, 세션 스토리지)</a></li><li><a href="https://doqtqu.tistory.com/m/306">푸고배님 - 쿠키 vs 세션 vs 웹 스토리지(로컬 스토리지, 세션 스토리지)</a></li><li><a href="https://sowon-dev.github.io/2020/06/30/200701jspi/">https://sowon-dev.github.io/2020/06/30/200701jspi/</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
-      
-      
-      
-      <comments>https://sowon-dev.github.io/2022/11/21/221121JS-webstorage/#disqus_thread</comments>
       
     </item>
     
