@@ -9,7 +9,21 @@
 
     <url>
         <loc>https://sowon-dev.github.io/categories/Server/</loc>
-        <lastmod>2023-01-17T04:30:02.506Z</lastmod>
+        <lastmod>2023-01-18T05:12:10.922Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Network/</loc>
+        <lastmod>2023-01-18T04:33:19.616Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Android/</loc>
+        <lastmod>2023-01-18T04:32:37.050Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -38,20 +52,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/Journal/</loc>
         <lastmod>2023-01-06T06:54:15.878Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Network/</loc>
-        <lastmod>2023-01-05T05:04:22.816Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Android/</loc>
-        <lastmod>2023-01-05T05:04:17.008Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

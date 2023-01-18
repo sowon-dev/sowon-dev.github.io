@@ -9,16 +9,37 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Tue, 17 Jan 2023 04:30:02 GMT</pubDate>
+    <pubDate>Wed, 18 Jan 2023 05:12:10 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>NAS가 뭐길래</title>
+      <title>클라우드 네이티브(Cloud Native)란? 개념,정의</title>
+      <link>https://sowon-dev.github.io/2023/01/17/230118cloudnative/</link>
+      <guid>https://sowon-dev.github.io/2023/01/17/230118cloudnative/</guid>
+      <pubDate>Tue, 17 Jan 2023 19:24:30 GMT</pubDate>
+      
+      <description>&lt;p&gt;클라우드 네이티브(Cloud Native)란 무엇일까? 이번에 교육을 받으면서 도커, 쿠버네티스, MSA등의 용어가 쏟아졌다. 이들이 어떤 Cloud Native와 관계가 있는지 궁금해서 정확히 알아보았다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>클라우드 네이티브(Cloud Native)란 무엇일까? 이번에 교육을 받으면서 도커, 쿠버네티스, MSA등의 용어가 쏟아졌다. 이들이 어떤 Cloud Native와 관계가 있는지 궁금해서 정확히 알아보았다.</p><a id="more"></a><h1 id="클라우드-네이티브"><a href="#클라우드-네이티브" class="headerlink" title="클라우드 네이티브"></a>클라우드 네이티브</h1><blockquote><p>클라우드 네이티브라는 용어는 클라우드 제공 모델에서 제공하는 분산 컴퓨팅을 활용하기 위해 애플리케이션을 구축 및 실행하는 개념을 의미합니다. 클라우드 네이티브 앱은 클라우드가 제공하는 확장성, 탄력성, 복원성, 유연성을 활용하도록 설계 및 구축되었습니다.(중략) 클라우드 네이티브 서비스는 Kubernetes, Docker, 서버리스 함수, API 및 Kafka와 같은 기술을 사용하여 최신 애플리케이션 개발을 지원합니다. 업계 최고의 클라우드 제공업체를 통해 클라우드 툴과 서비스를 구현하므로 개발자가 운영 작업을 줄이고 애플리케이션을 더 빠르게 구축할 수 있습니다. 클라우드 네이티브 서비스는 개발자에게 마이크로서비스, 서버리스 함수와 같은 클라우드 네이티브 애플리케이션을 구축, 배포, 관리할 수 있는 종합적인 표준 기반 플랫폼을 제공합니다.<br>출처: <a href="https://www.oracle.com/kr/cloud/cloud-native/what-is-cloud-native/">오라클 공식홈페이지</a></p></blockquote><p>클라우드 네이티브란 클라우드의 장점을 모두 활용하는 애플리케이션을 개발하고 실행하기 위한 접근 방식이다.<br>그렇다면 클라우드의 장점이 무엇일까?</p><p><br><br><br></p><h1 id="클라우드의-장점"><a href="#클라우드의-장점" class="headerlink" title="클라우드의 장점"></a>클라우드의 장점</h1><ol><li>확장가능성(Scaling) : 사용량에 따라 편리하게 인스턴스를 증가, 감소할 수 있음</li><li>CI/CD: 구축, 테스트 및 배포를 자동화하여 소프트웨어가 개발 시스템에서 운영 시스템으로 빠르고 안정적인 프로그램 구축가능</li><li>장애대응: 정 서비스에 오류가 발생해도 다른 서비스에 영향을 주지 않음</li></ol><p><br><br><br></p><h1 id="클라우드-네이티브-핵심-구성요소-4가지"><a href="#클라우드-네이티브-핵심-구성요소-4가지" class="headerlink" title="클라우드 네이티브 핵심 구성요소 4가지"></a>클라우드 네이티브 핵심 구성요소 4가지</h1><p><img src="https://images.ctfassets.net/o7xu9whrs0u9/2tVV4YzJRE7JGKzXjj4Xsp/af35d764254ead0c720c5761c74c134e/Cloud-Nateive-technologies-pyramid.jpg" alt=""><br><a href="https://www.influxdata.com/blog/introduction-cloud-native/">사진출처: https://www.influxdata.com/blog/introduction-cloud-native/</a></p><ol><li>DevOps<ul><li>개발 조직과 운영 조직의 통합을 의미: 이전에는 개발과 운영이 분리되어 개발자가 구동할 프로그램 준비를 끝나면, 이후 배포와 운영 작업은 다른 조직이 했다. 만약 우리가 단 몇줄의 코드를 바꿔야 할지라도 바꾼 후에 운영 조직과 다시 소통하여 배포해야 하므로 매우 번거로운 일이 아닐 수 없다. 이를 극복하기 위해 나온 개념으로 서비스의 문제가 생기면 바로 수정해서 즉시 배포하는 과정을 반복하는 것을 목적으로 한다.</li></ul></li><li>CI/CD<ul><li>지속적인 통합 (CI : Continuous Integration)<ul><li>소스 관리(형상관리), 빌드, 테스트를 모두 포함한다. e.g. 젠킨스, Team CI, Travic CI등</li></ul></li><li>지속적인 배포 (CD : Continuous Delivery &amp; Deployment)<ul><li>Continuous Delivery인 경우 빌드는 자동이지만 배포는 수동 반영</li><li>Continuous Deployment인 경우 빌드와 배포까지 모두 자동 반영</li></ul></li></ul></li><li>Container 가상화 기술<ul><li>기존에는 서로 다른 OS환경을 위해 가상머신을 사용해야해서 비용, 운영측면에서 부담이 많았지만 도커라는 컨테이너 가상화 기술을 도입하여 각각의 서비스와 앱을 관리할 수 있게 되었음</li></ul></li><li>MSA(Micro Service Architecture)<ul><li><a href="https://sowon-dev.github.io/2021/04/12/210415MSA/">내가 이해한 MSA(MicroService Architecture)</a> 참고</li></ul></li></ol><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://www.itworld.co.kr/news/248260">IT World - 클라우드 네이티브의 진정한 의미</a></li><li><a href="https://born2bedeveloper.tistory.com/51">jimkwon님 - Cloud Native Architecture - (1)</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Server/">Server</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2023/01/17/230118cloudnative/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>나스(NAS)란? 개념,정의</title>
       <link>https://sowon-dev.github.io/2023/01/15/230116nas/</link>
       <guid>https://sowon-dev.github.io/2023/01/15/230116nas/</guid>
       <pubDate>Sun, 15 Jan 2023 16:55:28 GMT</pubDate>
       
-      <description>&lt;p&gt;&lt;a href=&quot;&quot;&gt;클라우드 네이티브&lt;/a&gt;관련해서 교육을 듣던 중 강사님이 NAS에 관해 아래처럼 말씀하셨다.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&quot;https://sowon-dev.github.io/2023/01/17/230118cloudnative/&quot;&gt;클라우드 네이티브&lt;/a&gt;관련해서 교육을 듣던 중 강사님이 NAS에 관해 아래처럼 말씀하셨다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;서버 1x.x.x.xx는 NAS로 사용합니다.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -26,7 +47,7 @@
       
       
       
-      <content:encoded><![CDATA[<p><a href="">클라우드 네이티브</a>관련해서 교육을 듣던 중 강사님이 NAS에 관해 아래처럼 말씀하셨다.</p><blockquote><p>서버 1x.x.x.xx는 NAS로 사용합니다.</p></blockquote><p>예전에 대리님이 아기 사진이 너무 많아 NAS서버를 만들까한다는 말도 떠오르면서 NAS가 정확히 뭔지 궁금해졌다.<br>문맥상 데이터 저장소같은데 DB와는 또 어떻게 다를까? 외부에서 접근하면 클라우드저장소같은데 그와는 또 어떻게 다를까?</p><a id="more"></a><h1 id="NAS-Network-Attached-Storage"><a href="#NAS-Network-Attached-Storage" class="headerlink" title="NAS(Network Attached Storage)"></a>NAS(Network Attached Storage)</h1><ul><li>Network Attached Storage: 네트워크 결합 스토리지</li><li>LAN으로 연결하는 외장 하드디스크</li><li>반대 개념은 컴퓨터에 직접 연결해서 쓰는 DAS(직접 결합 저장장치, Direct Attached Storage) e.g. 내장형 하드디스크</li></ul><p>컴퓨터를 직접 연결하지 않고 근거리 통신 네트워크(LAN)를 통해 데이터를 주고 받는다. 클라우드 스토리지 서비스와 유사한 느낌인데 어떤 차이가 있을까?</p><p><br><br><br></p><h1 id="클라우드-스토리지-서비스와-차이점"><a href="#클라우드-스토리지-서비스와-차이점" class="headerlink" title="클라우드 스토리지 서비스와 차이점"></a>클라우드 스토리지 서비스와 차이점</h1><table><thead><tr><th align="center"></th><th align="left">NAS</th><th align="left">클라우드스토리지</th></tr></thead><tbody><tr><td align="center">정의</td><td align="left">LAN으로 연결하는 외장 하드디스크</td><td align="left"></td></tr><tr><td align="center">보안성</td><td align="left">우수</td><td align="left">개인정보보안취약</td></tr><tr><td align="center">안정성</td><td align="left">하드디스크에 몇개에 의존해서 취약</td><td align="left">우수</td></tr><tr><td align="center">속도</td><td align="left">상대적 빠름</td><td align="left">상대적 느림</td></tr><tr><td align="center">비용</td><td align="left">초기비용많지만 유지비 상대적 저렴</td><td align="left">주로 월정액방식으로 초기비용도 낮고 유지비도 비싸지않다</td></tr></tbody></table><p><br><br><br></p><h1 id="NAS-목적"><a href="#NAS-목적" class="headerlink" title="NAS 목적"></a>NAS 목적</h1><p>사람에 따라 사용방식이 다양하지만 구글링해본 결과 대용량, 개인자료는 NAS에 보관하고 업무용 또는 백업용 자료는 클라우드저장소(구글클라우드)를 많이 사용하는 것으로 보인다.</p><p><br><br><br></p><h1 id="RAID"><a href="#RAID" class="headerlink" title="RAID"></a>RAID</h1><p>NAS에 대해 궁금한 점을 팀장님께 물으니 팀장님이 RAID에 관해서도 함께 설명해주셨다. 안 물어보면 어쩔뻔했어! 이렇게 지식이 확장되는 거 정말 좋다! 재밌어!</p><ul><li>RAID정의: 저장장치 여러 개를 묶어 고용량, 고성능인 저장 장치 한 개와 같은 효과를 얻기 위해 개발된 기법</li><li>사용목적<ol><li>무정지 구현</li><li>고성능 구현</li></ol></li></ul><p>그렇다면 왜 묶어서 사용할까? 나무위키에 그에 관한 설명이 잘 나와있다.</p><blockquote><p>저장장치는 소모품이다. 5년에서 10년정도 수없이 읽고 쓰기를 반복하면 물리적으로 움직이는 부품이 있는 HDD는 물론이요 전자적으로만 작동하는 SSD도 NAND 소자가 닳아 읽고 쓰는 속도가 느려지고, 결국에는 읽고 쓸 수 없는 부분인 불량섹터가 발생하게 된다. 이런 경우에는 불량섹터에 기록되어 있던 정보가 손상되는 것도 문제지만, 이후에 저장장치에 기록되는 데이터의 무결성을 보장할 수 없기 때문에 보통 장치째로 (기존에 기록되어 있던 데이터와 함께) 폐기 처분하게 된다. 여러개의 디스크를 특정 방법으로 연결해주는 시스템인 RAID는 바로 이렇게 저장장치가 갑자기 고장나는 경우를 대비해서 활용할 수 있는 유용한 기법이다. 방대한 양의 데이터를 읽고 쓰며 1년 365일 내내 가용성이 보장되어야 하는 구글이나 페이스북의 서버들을 상상해보자.<br>출처: 나무위키</p></blockquote><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://namu.wiki/w/NAS(%EC%A0%80%EC%9E%A5%EC%9E%A5%EC%B9%98)">https://namu.wiki/w/NAS(%EC%A0%80%EC%9E%A5%EC%9E%A5%EC%B9%98)</a></li><li><a href="https://namu.wiki/w/RAID">https://namu.wiki/w/RAID</a></li><li><a href="https://quarker.tistory.com/175">quarker님 - NAS와 Cloud Storage 서비스 비교</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><a href="https://sowon-dev.github.io/2023/01/17/230118cloudnative/">클라우드 네이티브</a>관련해서 교육을 듣던 중 강사님이 NAS에 관해 아래처럼 말씀하셨다.</p><blockquote><p>서버 1x.x.x.xx는 NAS로 사용합니다.</p></blockquote><p>예전에 대리님이 아기 사진이 너무 많아 NAS서버를 만들까한다는 말도 떠오르면서 NAS가 정확히 뭔지 궁금해졌다.<br>문맥상 데이터 저장소같은데 DB와는 또 어떻게 다를까? 외부에서 접근하면 클라우드저장소같은데 그와는 또 어떻게 다를까?</p><a id="more"></a><h1 id="NAS-Network-Attached-Storage"><a href="#NAS-Network-Attached-Storage" class="headerlink" title="NAS(Network Attached Storage)"></a>NAS(Network Attached Storage)</h1><ul><li>Network Attached Storage: 네트워크 결합 스토리지</li><li>LAN으로 연결하는 외장 하드디스크</li><li>반대 개념은 컴퓨터에 직접 연결해서 쓰는 DAS(직접 결합 저장장치, Direct Attached Storage) e.g. 내장형 하드디스크</li></ul><p>컴퓨터를 직접 연결하지 않고 근거리 통신 네트워크(LAN)를 통해 데이터를 주고 받는다. 클라우드 스토리지 서비스와 유사한 느낌인데 어떤 차이가 있을까?</p><p><br><br><br></p><h1 id="클라우드-스토리지-서비스와-차이점"><a href="#클라우드-스토리지-서비스와-차이점" class="headerlink" title="클라우드 스토리지 서비스와 차이점"></a>클라우드 스토리지 서비스와 차이점</h1><table><thead><tr><th align="center"></th><th align="left">NAS</th><th align="left">클라우드스토리지</th></tr></thead><tbody><tr><td align="center">정의</td><td align="left">LAN으로 연결하는 외장 하드디스크</td><td align="left"></td></tr><tr><td align="center">보안성</td><td align="left">우수</td><td align="left">개인정보보안취약</td></tr><tr><td align="center">안정성</td><td align="left">하드디스크에 몇개에 의존해서 취약</td><td align="left">우수</td></tr><tr><td align="center">속도</td><td align="left">상대적 빠름</td><td align="left">상대적 느림</td></tr><tr><td align="center">비용</td><td align="left">초기비용많지만 유지비 상대적 저렴</td><td align="left">주로 월정액방식으로 초기비용도 낮고 유지비도 비싸지않다</td></tr></tbody></table><p><br><br><br></p><h1 id="NAS-목적"><a href="#NAS-목적" class="headerlink" title="NAS 목적"></a>NAS 목적</h1><p>사람에 따라 사용방식이 다양하지만 구글링해본 결과 대용량, 개인자료는 NAS에 보관하고 업무용 또는 백업용 자료는 클라우드저장소(구글클라우드)를 많이 사용하는 것으로 보인다.</p><p><br><br><br></p><h1 id="RAID"><a href="#RAID" class="headerlink" title="RAID"></a>RAID</h1><p>NAS에 대해 궁금한 점을 팀장님께 물으니 팀장님이 RAID에 관해서도 함께 설명해주셨다. 안 물어보면 어쩔뻔했어! 이렇게 지식이 확장되는 거 정말 좋다! 재밌어!</p><ul><li>RAID정의: 저장장치 여러 개를 묶어 고용량, 고성능인 저장 장치 한 개와 같은 효과를 얻기 위해 개발된 기법</li><li>사용목적<ol><li>무정지 구현</li><li>고성능 구현</li></ol></li></ul><p>그렇다면 왜 묶어서 사용할까? 나무위키에 그에 관한 설명이 잘 나와있다.</p><blockquote><p>저장장치는 소모품이다. 5년에서 10년정도 수없이 읽고 쓰기를 반복하면 물리적으로 움직이는 부품이 있는 HDD는 물론이요 전자적으로만 작동하는 SSD도 NAND 소자가 닳아 읽고 쓰는 속도가 느려지고, 결국에는 읽고 쓸 수 없는 부분인 불량섹터가 발생하게 된다. 이런 경우에는 불량섹터에 기록되어 있던 정보가 손상되는 것도 문제지만, 이후에 저장장치에 기록되는 데이터의 무결성을 보장할 수 없기 때문에 보통 장치째로 (기존에 기록되어 있던 데이터와 함께) 폐기 처분하게 된다. 여러개의 디스크를 특정 방법으로 연결해주는 시스템인 RAID는 바로 이렇게 저장장치가 갑자기 고장나는 경우를 대비해서 활용할 수 있는 유용한 기법이다. 방대한 양의 데이터를 읽고 쓰며 1년 365일 내내 가용성이 보장되어야 하는 구글이나 페이스북의 서버들을 상상해보자.<br>출처: 나무위키</p></blockquote><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://namu.wiki/w/NAS(%EC%A0%80%EC%9E%A5%EC%9E%A5%EC%B9%98)">https://namu.wiki/w/NAS(%EC%A0%80%EC%9E%A5%EC%9E%A5%EC%B9%98)</a></li><li><a href="https://namu.wiki/w/RAID">https://namu.wiki/w/RAID</a></li><li><a href="https://quarker.tistory.com/175">quarker님 - NAS와 Cloud Storage 서비스 비교</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/Server/">Server</category>
@@ -170,7 +191,7 @@
     </item>
     
     <item>
-      <title>[안드로이드] 키스토어란?</title>
+      <title>[안드로이드] 키스토어란? 개념,정의</title>
       <link>https://sowon-dev.github.io/2023/01/03/230103Android-keystore/</link>
       <guid>https://sowon-dev.github.io/2023/01/03/230103Android-keystore/</guid>
       <pubDate>Tue, 03 Jan 2023 04:51:33 GMT</pubDate>
@@ -193,7 +214,7 @@
     </item>
     
     <item>
-      <title>AP(Access Point)가 뭐길래</title>
+      <title>AP(Access Point)란? 개념,정의</title>
       <link>https://sowon-dev.github.io/2022/12/29/221230accesspoint/</link>
       <guid>https://sowon-dev.github.io/2022/12/29/221230accesspoint/</guid>
       <pubDate>Thu, 29 Dec 2022 16:09:24 GMT</pubDate>
@@ -283,7 +304,7 @@
     </item>
     
     <item>
-      <title>[네트워크]payload가 뭐길래</title>
+      <title>[네트워크]페이로드(payload)가 뭐길래? 개념,정의</title>
       <link>https://sowon-dev.github.io/2022/12/15/221216payload/</link>
       <guid>https://sowon-dev.github.io/2022/12/15/221216payload/</guid>
       <pubDate>Thu, 15 Dec 2022 19:54:50 GMT</pubDate>
@@ -436,29 +457,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/11/28/221129MySQL-function-Procedure/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>레디스(Redis)가 뭐길래</title>
-      <link>https://sowon-dev.github.io/2022/11/21/221122Redis/</link>
-      <guid>https://sowon-dev.github.io/2022/11/21/221122Redis/</guid>
-      <pubDate>Mon, 21 Nov 2022 20:33:44 GMT</pubDate>
-      
-      <description>&lt;p&gt;종종 들었던 Redis, 이번 레거시프로젝트 소스코드분석중 RedisTemplate을 만나면서 그 개념을 함께 정리해보고자한다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>종종 들었던 Redis, 이번 레거시프로젝트 소스코드분석중 RedisTemplate을 만나면서 그 개념을 함께 정리해보고자한다.</p><a id="more"></a><h1 id="In-Memory-DB란"><a href="#In-Memory-DB란" class="headerlink" title="In Memory DB란?"></a>In Memory DB란?</h1><blockquote><p>인메모리 데이터베이스(In-memory Database)는 데이터 스토리지의 메인 메모리에 설치되어 운영되는 방식의 데이터베이스 관리 시스템이다.<br>인메모리 데이터베이스는 디스크에 최적화된 데이터베이스보다 더 빠른데 그 까닭은 디스크 접근이 메모리 접근보다 느리기 때문이며, 이 데이터베이스는 내부 최적화 알고리즘이 더 단순하며 더 적은 CPU 명령을 실행한다. 메모리의 데이터에 접근하면 데이터를 조회할 때 검색 시간이 줄어들며 디스크보다 더 빠르고 더 예측 가능성 성능을 제공한다.<br>인메모리 데이터 스토리지의 잠재적인 기술적 문제는 RAM의 휘발성이다. 구체적으로 말해 전원이 소실될 경우나 고의적인 상황 등에서 휘발성 RAM 안에 저장된 데이터는 손실된다.비휘발성 RAM 기술의 도입으로 인메모리 데이터베이스는 전력 손실에도 완전한 속도로 데이터를 유지할 수 있게 되었다.<br>출처: <a href="https://ko.wikipedia.org/wiki/%EC%9D%B8%EB%A9%94%EB%AA%A8%EB%A6%AC_%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4">위키백과</a></p></blockquote><p><br><br><br></p><h2 id="인메모리DB-특징"><a href="#인메모리DB-특징" class="headerlink" title="인메모리DB 특징"></a>인메모리DB 특징</h2><p>인메모리디비의 가장 큰 특징은 2가지이다.</p><ol><li>인메모리 데이터구조: 디스크 아닌 메모리 기반. Redis의 가장 큰 특징.</li><li>캐시를 사용하여 속도가 빠름</li></ol><p><br><br><br></p><h2 id="인메모리DB-사용처"><a href="#인메모리DB-사용처" class="headerlink" title="인메모리DB 사용처"></a>인메모리DB 사용처</h2><p>크게 3가지 용도로 사용한다.</p><ol><li>데이터베이스</li><li>캐시</li><li>메세지 브로커</li></ol><p>결국 빠른 속도를 위해서 메모리에 올려서 사용하는 데이터 저장소이다.<br>인메모리DB의 종류에는 Redis, Memcached, Amazon ElastiCache 등이 있고 그 중 Redis의 인기가 압도적으로 높다. </p><p><br><br><br></p><h1 id="Redis란"><a href="#Redis란" class="headerlink" title="Redis란?"></a>Redis란?</h1><p>Redis는 REmote DIctionary Server의 약어로 Key와 Value를 가진 오픈소스 NoSQL 데이터베이스이다.<br>여기서 NoSQL이란 스키마없이 데이터를 표현한 데이터베이스로 <a href="https://sowon-dev.github.io/2022/02/26/220226NoSQL/">NoSQL이 뭐길래</a>포스팅을 참고하면된다.</p><p><br><br><br></p><h2 id="Redis-특징"><a href="#Redis-특징" class="headerlink" title="Redis 특징"></a>Redis 특징</h2><ol><li>다양한 데이터 구조: String, Set, Sorted Set, Hash, List 등 다양한 타입을 지원</li><li>스냅샷: 장애시 복구 가능</li><li>Master-Slave 구조로 여러 개의 복제본 만들기 용이</li><li>트랜잭션 지원</li><li>Pub(발행) / Sub(구독) 방식의 메시징을 지원</li></ol><p><br><br><br></p><h1 id="DB가-있는데-인메모리DB를-왜-쓸까"><a href="#DB가-있는데-인메모리DB를-왜-쓸까" class="headerlink" title="DB가 있는데 인메모리DB를 왜 쓸까?"></a>DB가 있는데 인메모리DB를 왜 쓸까?</h1><p>근원적인 궁금증을 해결해준 글을 발견해서 발췌해왔다.</p><blockquote><p>데이터 베이스가 있는데도 Redis라는 인메모리 데이터 구조 저장소를 사용하는 이유는 무엇일까요?<br>데이터 베이스는 데이터를 물리 디스크에 직접 쓰기 때문에 서버에 문제가 발생하여 다운되더라도 데이터가 손실되지 않습니다. 하지만 매번 디스크에 접근해야 하기 때문에 사용자가 많아질수록 부하가 많아져서 느려질 수 있는데요.<br>일반적으로 서비스 운영 초반이거나 규모가 작은, 사용자가 많지 않은 서비스의 경우에는 WEB - WAS - DB 의 구조로도 데이터 베이스에 무리가 가지 않습니다.<br>하지만 사용자가 늘어난다면 데이터 베이스가 과부하 될 수 있기 때문에 이때 캐시 서버를 도입하여 사용합니다.<br>그리고 이 캐시 서버로 이용할 수 있는 것이 바로 Redis 입니다.<br>캐시는 한번 읽어온 데이터를 임의의 공간에 저장하여 다음에 읽을 때는 빠르게 결괏값을 받을 수 있도록 도와주는 공간입니다.<br>같은 요청이 여러 번 들어오는 경우 매번 데이터 베이스를 거치는 것이 아니라 캐시 서버에서 첫 번째 요청 이후 저장된 결괏값을 바로 내려주기 때문에 DB의 부하를 줄이고 서비스의 속도도 느려지지 않는 장점이 있습니다.<br>출처: <a href="https://wildeveloperetrain.tistory.com/m/21">Jan92님 블로그 - Redis란? 레디스의 기본적인 개념</a></p></blockquote><p><br><br><br></p><h1 id="MSSQL이나-MYSQL도-인메모리테이블을-지원하는데-왜-굳이-레디스-Redis-를-사용할까"><a href="#MSSQL이나-MYSQL도-인메모리테이블을-지원하는데-왜-굳이-레디스-Redis-를-사용할까" class="headerlink" title="MSSQL이나 MYSQL도 인메모리테이블을 지원하는데 왜 굳이 레디스(Redis)를 사용할까?"></a>MSSQL이나 MYSQL도 인메모리테이블을 지원하는데 왜 굳이 레디스(Redis)를 사용할까?</h1><p>레디스에 대해 이야기를 나누다가 팀장님이 RDB에서도 인메모리를 지원하는데 왜 굳이 레디스를 사용하는 지 알아보는게 어떠냐고 제안해주셨다.<br>RDB에서도 메모리DB를 쓸수있다니! 전혀 몰랐던 사실이어서 공부해봤다.</p><table><thead><tr><th align="center">DB명</th><th align="left">인메모리DB 사용</th><th align="left">적용법</th></tr></thead><tbody><tr><td align="center">Oracle</td><td align="left">In Memory Option</td><td align="left"><a href="http://www.koreaoug.org/c12/935">Oracle Database In-Memory Option –I (설명과 설정방법)</a></td></tr><tr><td align="center">MySQL</td><td align="left">메모리테이블</td><td align="left"><a href="https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=oralol&logNo=222198862146">DB 튜닝 - MySQL Memory 테이블 사용</a></td></tr><tr><td align="center">MSSQL</td><td align="left">메모리테이블</td><td align="left"><a href="https://mozi.tistory.com/566">MSSQL 테이블을 인메모리(in-memory)로 사용하는 방법</a></td></tr></tbody></table><p><br><br><br></p><h2 id="왜-굳이-레디스를-사용할까"><a href="#왜-굳이-레디스를-사용할까" class="headerlink" title="왜 굳이 레디스를 사용할까?"></a>왜 굳이 레디스를 사용할까?</h2><p>먼저, 레디스는 사용자가 많아 자료가 많다. 커뮤니티가 큰 오픈소스를 사용해야 적용 및 대응이 쉽다.<br>두번째로 인메모리데이블은 제약사항이 많은 반면에 레디스는 다양한 데이터구조 사용가능, 스냅샷으로 복구시 활용가능한 점등이 확장성을 고려해봤을때도 여전히 좋다.</p><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://aws.amazon.com/ko/elasticache/what-is-redis/">https://aws.amazon.com/ko/elasticache/what-is-redis/</a></li><li><a href="https://wildeveloperetrain.tistory.com/m/21">https://wildeveloperetrain.tistory.com/m/21</a></li><li><a href="https://ko.wikipedia.org/wiki/%EC%9D%B8%EB%A9%94%EB%AA%A8%EB%A6%AC_%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4">위키백과 - 인메모리데이터베이스</a></li><li><a href="http://www.koreaoug.org/c12/935">http://www.koreaoug.org/c12/935</a></li><li><a href="https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&amp;blogId=oralol&amp;logNo=222198862146">https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&amp;blogId=oralol&amp;logNo=222198862146</a></li><li><a href="https://mozi.tistory.com/566">https://mozi.tistory.com/566</a></li><li><a href="https://kdhyo98.tistory.com/89">https://kdhyo98.tistory.com/89</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/Redis/">Redis</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/11/21/221122Redis/#disqus_thread</comments>
       
     </item>
     
