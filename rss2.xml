@@ -9,8 +9,33 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Wed, 18 Jan 2023 05:12:10 GMT</pubDate>
+    <pubDate>Thu, 19 Jan 2023 01:22:32 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Jackson ObjectMapper VS Gson 차이</title>
+      <link>https://sowon-dev.github.io/2023/01/18/230119objectmappervsgson/</link>
+      <guid>https://sowon-dev.github.io/2023/01/18/230119objectmappervsgson/</guid>
+      <pubDate>Wed, 18 Jan 2023 15:51:35 GMT</pubDate>
+      
+      <description>&lt;p&gt;Object Mapper만 사용하다가 Gson을 알게되면서 둘의 차이점이 궁금해졌다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>Object Mapper만 사용하다가 Gson을 알게되면서 둘의 차이점이 궁금해졌다.</p><a id="more"></a><h1 id="개념"><a href="#개념" class="headerlink" title="개념"></a>개념</h1><p>Jackson ObjectMapper와 Gson은 뭐하는 애들일까? 자바에서 JSON data-binding 지원해주는 라이브러리이다.</p><p><br><br><br></p><h1 id="사용법"><a href="#사용법" class="headerlink" title="사용법"></a>사용법</h1><p>HashMap을 Json으로 변환한뒤 콘솔에 출력하는 예시이다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">HashMap&lt;String, Obejct&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">map.put(<span class="string">"name"</span>, <span class="string">"나혜석"</span>);</span><br><span class="line">map.put(<span class="string">"age"</span>, <span class="number">77</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 1. ObjectMapper 사용 + throws Exception 필수</span></span><br><span class="line">String serializedMap1 = <span class="keyword">new</span> ObjectMapper().writeValueAsString(map);</span><br><span class="line">system.out.println(serializedMap1);</span><br><span class="line"><span class="comment">// output: &#123;"name":"나혜석","age":77&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 2. Gson 사용</span></span><br><span class="line">String serializedMap2 = <span class="keyword">new</span> GsonBuilder().create().toJson(map)</span><br><span class="line">system.out.println(serializedMap2);</span><br><span class="line"><span class="comment">// output: &#123;"name":"나혜석","age":77&#125;</span></span><br></pre></td></tr></table></figure><p>사용하다보면 큰 차이점 하나를 발견할 수 있는데 ObjectMapper는 Exceptionc처리가 필수이다.</p><p><br><br><br></p><h1 id="각-장점"><a href="#각-장점" class="headerlink" title="각 장점"></a>각 장점</h1><table><thead><tr><th align="left">Jackson</th><th align="left">Gson</th></tr></thead><tbody><tr><td align="left">스프링프레임워크에 이미 속해있어 따로 설치안해도 됨</td><td align="left">가장 간단한 toJson/fromJson방식</td></tr><tr><td align="left">다양한 어노테이션 활용가능</td><td align="left">역직렬화시 자바 엔티티에 접근할 필요가 없음</td></tr></tbody></table><ul><li>Jackson:<ul><li>Built into all JAX-RS (Jersey, Apache CXF, RESTEasy, Restlet), and Spring framework</li><li>Extensive annotation support</li></ul></li><li>Gson:<ul><li>Simplicity of toJson/fromJson in the simple cases</li><li>For deserialization, do not need access to the Java entities</li></ul></li></ul><p>출처: <a href="https://www.baeldung.com/jackson-vs-gson">baeldung의 jackson-vs-gson 글</a></p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/JAVA/">JAVA</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/%EC%B0%A8%EC%9D%B4/">차이</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/Gson/">Gson</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2023/01/18/230119objectmappervsgson/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>클라우드 네이티브(Cloud Native)란? 개념,정의</title>
@@ -434,29 +459,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/11/29/221130jQuery-global/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[MySQL/MariaDB] 함수(function) vs 프로시저(Procedure) 차이</title>
-      <link>https://sowon-dev.github.io/2022/11/28/221129MySQL-function-Procedure/</link>
-      <guid>https://sowon-dev.github.io/2022/11/28/221129MySQL-function-Procedure/</guid>
-      <pubDate>Mon, 28 Nov 2022 21:03:57 GMT</pubDate>
-      
-      <description>&lt;p&gt;이번에 진행중인 프로젝트는 프로시저보다 함수가 더 많이 사용되었다. 지난번 담당했던 프로젝트는 오직 프로시저만 썼었다. 둘의 차이가 뭘까? 언뜻 생각해봤을땐 return유무정도인데 깊이있게 알고싶어졌다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>이번에 진행중인 프로젝트는 프로시저보다 함수가 더 많이 사용되었다. 지난번 담당했던 프로젝트는 오직 프로시저만 썼었다. 둘의 차이가 뭘까? 언뜻 생각해봤을땐 return유무정도인데 깊이있게 알고싶어졌다.</p><a id="more"></a><p><br><br><br></p><h1 id="함수"><a href="#함수" class="headerlink" title="함수"></a>함수</h1><ol><li>정의: 항상 리턴값을 가짐</li><li>특징<ul><li>리턴값은 필수이고 오직 하나</li><li>try catch 사용 불가</li></ul></li><li>단점<ul><li>클라이언트실행으로 프로시저보다 속도가 느리다.</li></ul></li><li>선언 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">FUNCTION</span> function_name(</span><br><span class="line">param1,</span><br><span class="line">param2,…</span><br><span class="line">)</span><br><span class="line"><span class="keyword">RETURNS</span> datatype</span><br><span class="line">[<span class="keyword">NOT</span>] <span class="keyword">DETERMINISTIC</span></span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line"> <span class="comment">-- statements</span></span><br><span class="line"><span class="keyword">END</span></span><br></pre></td></tr></table></figure></li><li>선언예시 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">function</span> MultiplyNumbers(@int1 <span class="keyword">as</span> <span class="built_in">int</span>,@int2 <span class="keyword">as</span> <span class="built_in">int</span>)</span><br><span class="line"><span class="keyword">As</span></span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line"><span class="keyword">Return</span> (@int1 * @int2)</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure></li><li>호출 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">MultiplyNumbers(2,2) </span><br><span class="line">// RETURN: 4</span><br></pre></td></tr></table></figure></li></ol><h1 id="프로시저"><a href="#프로시저" class="headerlink" title="프로시저"></a>프로시저</h1><ol><li>정의: 특정 작업을 수행. 여러 SQL문을 한 번에 실행 가능</li><li>특징<ul><li>개발업무와 DB처리를 구분하여 개발할 수 있음</li><li>보수성 뛰어남</li><li>서버 실행이라 속도가 함수보다 상대적으로 빠름</li><li>리턴값 없거나 여러개도 가능 -&gt; 유연성</li><li>try catch 사용가능 -&gt; 에러처리가능</li></ul></li><li>단점<ul><li>재사용성이 좋지 않음</li></ul></li><li>선언 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Create</span> <span class="keyword">Procedure</span> [<span class="keyword">Procedure</span> <span class="keyword">Name</span>] ([Parameter <span class="number">1</span>], [Parameter <span class="number">2</span>], [Parameter <span class="number">3</span>] )</span><br><span class="line"><span class="keyword">Begin</span></span><br><span class="line"><span class="comment">-- SQL Queries..</span></span><br><span class="line"><span class="keyword">End</span></span><br></pre></td></tr></table></figure></li><li>선언 예시 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">PROCEDURE</span> GetAllProducts()</span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line"><span class="keyword">SELECT</span> *  <span class="keyword">FROM</span> products;</span><br><span class="line"><span class="keyword">END</span></span><br></pre></td></tr></table></figure></li><li>호출 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CALL</span> GetAllProducts()</span><br></pre></td></tr></table></figure></li></ol><p><br><br><br></p><h1 id="차이"><a href="#차이" class="headerlink" title="차이"></a>차이</h1><table><thead><tr><th align="center"></th><th align="left">함수(Function)</th><th align="left">프로시저(Procedure)</th></tr></thead><tbody><tr><td align="center">처리주체</td><td align="left">클라이언트에서 처리</td><td align="left">서버로 보내서 처리</td></tr><tr><td align="center">리턴값 유무</td><td align="left">필수</td><td align="left">선택</td></tr><tr><td align="center">리턴값 갯수</td><td align="left">하나만 반환가능</td><td align="left">여러개 반환가능</td></tr><tr><td align="center">호출방법</td><td align="left">select문장안에서 함수호출</td><td align="left">call 프로시저명()</td></tr><tr><td align="center">주사용처</td><td align="left">로직 처리 도와주는 용도</td><td align="left">로직 처리를 직접하는 용도 why? DML문 사용가능해서</td></tr></tbody></table><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://www.geeksforgeeks.org/difference-between-function-and-procedure/">https://www.geeksforgeeks.org/difference-between-function-and-procedure/</a></li><li><a href="https://www.mysqltutorial.org/getting-started-with-mysql-stored-procedures.aspx">https://www.mysqltutorial.org/getting-started-with-mysql-stored-procedures.aspx</a></li><li><a href="https://velog.io/@devjooj/Mysql-Function%EA%B3%BC-Procedure-%EC%B0%A8%EC%9D%B4">https://velog.io/@devjooj/Mysql-Function%EA%B3%BC-Procedure-%EC%B0%A8%EC%9D%B4</a></li><li><a href="https://spiderwebcoding.tistory.com/7">https://spiderwebcoding.tistory.com/7</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/MySQL/">MySQL</category>
-      
-      
-      
-      <comments>https://sowon-dev.github.io/2022/11/28/221129MySQL-function-Procedure/#disqus_thread</comments>
       
     </item>
     
