@@ -8,6 +8,30 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2020/11/09/201110restapi/</loc>
+        <lastmod>2023-01-20T02:31:04.451Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/11/10/201111restapi/</loc>
+        <lastmod>2023-01-20T02:03:26.223Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/11/11/201112restapi/</loc>
+        <lastmod>2023-01-20T02:03:19.296Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2023/01/18/230119objectmappervsgson/</loc>
         <lastmod>2023-01-19T01:22:32.155Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -626,14 +650,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/10/04/201005jspSessionVSCookie/</loc>
         <lastmod>2022-07-08T05:31:35.997Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/11/09/201110restapi/</loc>
-        <lastmod>2022-07-08T05:28:39.445Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -2328,24 +2344,8 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2020/11/11/201112restapi/</loc>
-        <lastmod>2020-11-17T07:38:40.347Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/2020/11/16/201117techbloglist/</loc>
         <lastmod>2020-11-17T07:38:32.291Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/11/10/201111restapi/</loc>
-        <lastmod>2020-11-12T05:07:04.999Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

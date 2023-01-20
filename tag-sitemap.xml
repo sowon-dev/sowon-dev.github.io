@@ -3,6 +3,20 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/RESTfulAPI/</loc>
+        <lastmod>2023-01-20T02:31:04.451Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/ITWILL-JAVA/</loc>
+        <lastmod>2023-01-20T02:03:26.223Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/Gson/</loc>
         <lastmod>2023-01-19T01:22:32.155Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -33,13 +47,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/%25EC%2598%25A4%25EB%258A%2598%25EB%2598%2590%25EB%25AA%25BB%25EC%2595%258C%25EC%2595%2584%25EB%2593%25A3%25EA%25B3%25A0%25EB%25A7%2590%25EC%2595%2598%25EC%258A%25B5%25EB%258B%2588%25EB%258B%25A4/</loc>
         <lastmod>2023-01-18T04:32:48.224Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/ITWILL-JAVA/</loc>
-        <lastmod>2023-01-12T07:21:12.325Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
