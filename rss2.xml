@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Thu, 19 Jan 2023 01:22:32 GMT</pubDate>
+    <pubDate>Wed, 25 Jan 2023 07:30:14 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[디자인패턴] 옵저버 패턴(observer pattern)이란? 개념,정의</title>
+      <link>https://sowon-dev.github.io/2023/01/24/230125ObserverPattern/</link>
+      <guid>https://sowon-dev.github.io/2023/01/24/230125ObserverPattern/</guid>
+      <pubDate>Tue, 24 Jan 2023 22:13:16 GMT</pubDate>
+      
+      <description>&lt;p&gt;오늘 팀장님 코드를 보다가 옵저버 패턴을 만났다. 디자인패턴을 잘 모르기때문에 이참에 공부해보았다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>오늘 팀장님 코드를 보다가 옵저버 패턴을 만났다. 디자인패턴을 잘 모르기때문에 이참에 공부해보았다.</p><a id="more"></a><p>여담으로, 공부해봤지만 디자인 패턴은 여전히 어렵다.</p><h1 id="옵저버-패턴-Observer-pattern-이란"><a href="#옵저버-패턴-Observer-pattern-이란" class="headerlink" title="옵저버 패턴(Observer pattern)이란?"></a>옵저버 패턴(Observer pattern)이란?</h1><p>영단어 observer 뜻 그대로 관찰자와 관련된 패턴이다. 객체의 상태 변화를 관찰하는 관찰자들(옵저버)을 목록에 등록해놓고 상태 변화가 있을때마다 메서드 등을 통해 객체가 직접 목록의 각 옵저버에게 통지(notify)하는 디자인 패턴이다.</p><p><img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Observer.svg" alt="출처 - 나무위키"></p><ul><li>주로 분산 이벤트 핸들링 시스템을 구현하는 데 사용된다. </li><li>발행/구독 모델로 알려져 있기도 하다.</li><li>코틀린에서는 Observer(옵저버)대신 Listener(리스너) 용어를 사용한다.</li></ul><p>자바에서는 옵저버패턴을 위한 클래스와 인터페이스를 제공한다.</p><ul><li><a href="https://docs.oracle.com/javase/8/docs/api/index.html?java/util/Observer.html">docs.oracle - Interface Observer</a></li><li><a href="https://docs.oracle.com/javase/8/docs/api/index.html?java/util/Observable.html">docs.oracle - Class Observable</a></li></ul><p>쉽게 이해할 수 있는 예시는 유튜브 채널(Subject)과 구독자들(Observer)간의 관계이다.<br>유튜브 채널 관리자가 영상을 업로드하면 구독자들에게만 알람이가 가고 구독자가 아닌 사람들에게는 아무런 영향을 끼치지않는다.<br>즉, 객체(Subject)의 상태가 변화하면 Observer 목록에 있는 각 Observer에게 통지(notify)한다.</p><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://ko.wikipedia.org/wiki/%EC%98%B5%EC%84%9C%EB%B2%84_%ED%8C%A8%ED%84%B4">위키백과 - 옵서버 패턴</a></li><li><a href="https://velog.io/@haero_kim/옵저버-패턴-개념-떠먹여드립니다">haero_kim - 옵저버 패턴 개념 떠먹여드립니다</a></li><li><a href="https://velog.io/@hanna2100/디자인패턴-2.-옵저버-패턴-개념과-예제-observer-pattern">hanna2100 - 디자인패턴 2.옵저버 패턴 개념과 예제</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/">디자인패턴</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2023/01/24/230125ObserverPattern/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Jackson ObjectMapper VS Gson 차이</title>
@@ -436,29 +459,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/12/05/221206mariadb-passwordhashing/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[jQuery] Ajax 글로벌 이벤트(Global Event)가 뭐길래</title>
-      <link>https://sowon-dev.github.io/2022/11/29/221130jQuery-global/</link>
-      <guid>https://sowon-dev.github.io/2022/11/29/221130jQuery-global/</guid>
-      <pubDate>Tue, 29 Nov 2022 21:10:59 GMT</pubDate>
-      
-      <description>&lt;p&gt;레거시 소스코드를 분석하면서 jQuery.ajaxSetup()에 대해 알아볼 기회가 생겼다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>레거시 소스코드를 분석하면서 jQuery.ajaxSetup()에 대해 알아볼 기회가 생겼다.</p><a id="more"></a><p>jQuery Ajax는 지역 이벤트(Local Event)와 전역 이벤트(Global Event)로 나뉜다. 둘이 가지고 있는 이벤트가 매우 비슷하다.</p><h1 id="지역-이벤트-Local-Event-vs-전역-이벤트-Global-Event"><a href="#지역-이벤트-Local-Event-vs-전역-이벤트-Global-Event" class="headerlink" title="지역 이벤트(Local Event) vs 전역 이벤트(Global Event)"></a>지역 이벤트(Local Event) vs 전역 이벤트(Global Event)</h1><table><thead><tr><th align="left"></th><th align="left">로컬 이벤트</th><th align="left">글로벌 이벤트</th></tr></thead><tbody><tr><td align="left">셋팅</td><td align="left">global속성을 false(default)설정</td><td align="left">global속성을 true설정</td></tr><tr><td align="left">시행시기</td><td align="left">ajax수행의 특정시점에 함수가 호출되는 callback형태로 이벤트 발생</td><td align="left">개별 혹은 전체 ajax전송에 이벤트 발생</td></tr><tr><td align="left">전송시</td><td align="left">beforeSend</td><td align="left">ajaxSend()</td></tr><tr><td align="left">성공시(응답코드 200 일때)</td><td align="left">success</td><td align="left">ajaxSuccess()</td></tr><tr><td align="left">에러발생시(응답코드 오류일때)</td><td align="left">error</td><td align="left">ajaxError()</td></tr><tr><td align="left">완료시</td><td align="left">complete</td><td align="left">ajaxComplete()</td></tr><tr><td align="left">시작시 정의</td><td align="left"></td><td align="left">ajaxStart()</td></tr><tr><td align="left">정지시</td><td align="left"></td><td align="left">ajaxStop()</td></tr></tbody></table><ul><li>특징<ul><li>지역과 전역에 둘다 존재하는 send, success, error, complete와 관련된 이벤트들은 지역이벤트 callback이 실행 후 전역이벤트가 실행된다.</li></ul></li></ul><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://api.jquery.com/jquery.ajaxsetup/">https://api.jquery.com/jquery.ajaxsetup/</a></li><li><a href="https://www.nextree.co.kr/p10308/">https://www.nextree.co.kr/p10308/</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/jQuery/">jQuery</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/11/29/221130jQuery-global/#disqus_thread</comments>
       
     </item>
     

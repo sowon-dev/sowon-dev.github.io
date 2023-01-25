@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/%25EB%2594%2594%25EC%259E%2590%25EC%259D%25B8%25ED%258C%25A8%25ED%2584%25B4/</loc>
+        <lastmod>2023-01-25T07:30:14.013Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/RESTfulAPI/</loc>
         <lastmod>2023-01-20T02:31:04.451Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -166,13 +173,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/VueJS/</loc>
         <lastmod>2022-07-15T06:53:35.838Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/%25EB%2594%2594%25EC%259E%2590%25EC%259D%25B8%25ED%258C%25A8%25ED%2584%25B4/</loc>
-        <lastmod>2022-07-08T04:48:59.235Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2023/01/24/230125ObserverPattern/</loc>
+        <lastmod>2023-01-25T07:30:14.013Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2020/11/09/201110restapi/</loc>
         <lastmod>2023-01-20T02:31:04.451Z</lastmod>
         <changefreq>weekly</changefreq>
