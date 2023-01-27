@@ -8,6 +8,30 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2023/01/26/230127resttemplate-vs-websocket/</loc>
+        <lastmod>2023-01-27T04:58:29.852Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/12/09/221210spring-resttemplate/</loc>
+        <lastmod>2023-01-27T04:42:26.275Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2021/03/25/210226JS-discordchatbot/</loc>
+        <lastmod>2023-01-27T04:41:38.046Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2023/01/24/230125ObserverPattern/</loc>
         <lastmod>2023-01-26T00:44:37.660Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -210,14 +234,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2022/12/20/221221java-responseentity-refactoring/</loc>
         <lastmod>2022-12-21T00:57:34.181Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/12/09/221210spring-resttemplate/</loc>
-        <lastmod>2022-12-21T00:38:17.930Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1850,14 +1866,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2019/09/06/190907/</loc>
         <lastmod>2021-03-26T05:15:48.542Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2021/03/25/210226JS-discordchatbot/</loc>
-        <lastmod>2021-03-26T04:18:01.025Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

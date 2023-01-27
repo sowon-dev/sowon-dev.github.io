@@ -9,8 +9,35 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Thu, 26 Jan 2023 00:44:37 GMT</pubDate>
+    <pubDate>Fri, 27 Jan 2023 04:58:29 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[Spring]RestTemplate(레스트템플릿)과 Websocket(웹소켓)차이점</title>
+      <link>https://sowon-dev.github.io/2023/01/26/230127resttemplate-vs-websocket/</link>
+      <guid>https://sowon-dev.github.io/2023/01/26/230127resttemplate-vs-websocket/</guid>
+      <pubDate>Thu, 26 Jan 2023 19:43:38 GMT</pubDate>
+      
+      <description>&lt;p&gt;RestTemplate은 간편하게 Rest 방식 API를 호출할 수 있는 라이브러리이고 Spring 3.0부터 지원한다.&lt;br&gt;따라서 RestTemplate과 Websocket 차이점은 결국 REST API와 Websocket API 차이점이라고 볼 수 있다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>RestTemplate은 간편하게 Rest 방식 API를 호출할 수 있는 라이브러리이고 Spring 3.0부터 지원한다.<br>따라서 RestTemplate과 Websocket 차이점은 결국 REST API와 Websocket API 차이점이라고 볼 수 있다.</p><a id="more"></a><p>가장 잘 알고 있는 차이점은 REST API는 클라이언트의 요청이 없으면 서버는 먼저 말을 걸 수 없지만 웹소켓은 서버가 클라이언트에게 먼저 말(메세지)을 걸수있다.<br>즉, REST API는 클라이언트의 요청이 있어야 서버 응답이 있는 반면에 Websocket API는 클라이언트 요청없이도 서버가 클라이언트에 응답할 수 있다.<br>실무자입자에서는 어떠한 차이가 있을까?</p><p><br><br><br></p><h1 id="REST-API와-Websocket-API-차이점"><a href="#REST-API와-Websocket-API-차이점" class="headerlink" title="REST API와 Websocket API 차이점"></a>REST API와 Websocket API 차이점</h1><ul><li>REST API: <ul><li>동기, 비동기 둘다 지원. </li><li>프레임워크가 에러보드까지 구현을 다 해놓아서 커넥션이 안정적이라고 하는편</li></ul></li><li>Websocket API: <ul><li>동기, 비동기 둘다 지원. </li><li>빠른 응답이 장점. </li><li>서버리소스가 많이 든다.</li><li>커넥션 안정성(커넥션 끊을때까지 커넥션이 안 끊김)</li><li>웹소켓을 쓰면 커멘드패턴에 따라서 규칙을 다 맞춰줘야함. 사람이 직접 해야하는 게 많아서 난이도가 있고 서버 리소스가 많이 들지만 커넥션이 매우 안정적임</li></ul></li></ul><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li>부장님 지식</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/%EC%B0%A8%EC%9D%B4/">차이</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/RestTemplate/">RestTemplate</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/Websocket/">Websocket</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2023/01/26/230127resttemplate-vs-websocket/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[디자인패턴] 옵저버 패턴(observer pattern)이란? 개념,정의</title>
@@ -409,6 +436,10 @@
       <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
       
       
+      <category domain="https://sowon-dev.github.io/tags/RestTemplate/">RestTemplate</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/HttpEntity/">HttpEntity</category>
+      
       
       <comments>https://sowon-dev.github.io/2022/12/09/221210spring-resttemplate/#disqus_thread</comments>
       
@@ -434,31 +465,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/12/06/221207sring-webxml/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[MySQL/MariaDB] xml파일에 PASSWORD()가 뭐길래</title>
-      <link>https://sowon-dev.github.io/2022/12/05/221206mariadb-passwordhashing/</link>
-      <guid>https://sowon-dev.github.io/2022/12/05/221206mariadb-passwordhashing/</guid>
-      <pubDate>Mon, 05 Dec 2022 20:16:15 GMT</pubDate>
-      
-      <description>&lt;p&gt;xml파일에 선언하지 않았던 AES_DECRYPT(), UNHEX(), PASSWORD() 함수들이 보였다. 쿼리를 읽었을때 암호화와 복호화인건 알았으나 구체적인 사용방법을 알고 싶어 구글링해보니 MARIADB가 제공하는 내장함수였다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>xml파일에 선언하지 않았던 AES_DECRYPT(), UNHEX(), PASSWORD() 함수들이 보였다. 쿼리를 읽었을때 암호화와 복호화인건 알았으나 구체적인 사용방법을 알고 싶어 구글링해보니 MARIADB가 제공하는 내장함수였다.</p><a id="more"></a><ul><li>예시코드</li></ul><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> USER_NO</span><br><span class="line">, <span class="keyword">AES_DECRYPT</span>(<span class="keyword">UNHEX</span>(USER_NUM), <span class="comment">#&#123;encrypt_key&#125;) AS USER_NUM</span></span><br><span class="line">, <span class="keyword">PASSWORD</span>(<span class="comment">#&#123;user_login_pin&#125;) AS USER_LOGIN_PIN</span></span><br><span class="line"><span class="comment">-- 중략</span></span><br><span class="line"><span class="keyword">from</span> <span class="keyword">USER</span></span><br></pre></td></tr></table></figure><p>마리아DB 공식문서에 너무 잘 나와있어서 이해하기 훨씬 편했다.</p><ul><li><a href="https://mariadb.com/kb/en/">마리아DB 공식 문서-영어</a></li><li><a href="https://mariadb.com/kb/ko/">마리아DB 공식 문서-한국어</a></li></ul><p>한글버전이 있지만 번역되지 않은 페이지가 더 많으므로 영어로 보는 것을 추천한다.<br>그리고 공식문서를 보기위해선 현재 프로젝트가 어떤 버전을 사용하고 있는지 알아야한다. 사용하고 있는 마리아DB버전에 따라 지원되지 않는 함수가 있을 수 있기때문이다.<br>db를 열어 아래 쿼리를 입력해주면 된다.</p><p><br><br><br></p><h1 id="MariaDB-버전확인-하는-방법"><a href="#MariaDB-버전확인-하는-방법" class="headerlink" title="MariaDB 버전확인 하는 방법"></a>MariaDB 버전확인 하는 방법</h1><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">version</span>();</span><br><span class="line"></span><br><span class="line">// 쿼리 결과 예시</span><br><span class="line">10.3.32-MariaDB-log</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="PASSWORD"><a href="#PASSWORD" class="headerlink" title="PASSWORD()"></a>PASSWORD()</h1><blockquote><p>Calculates and returns a hashed password string from the plaintext password str. Returns an empty string (&gt;= MariaDB 10.0.4) if the argument was NULL.<br>The return value is a nonbinary string in the connection character set and collation, determined by the values of the character_set_connection and collation_connection system variables.<br>This is the function that is used for hashing MariaDB passwords for storage in the Password column of the user table (see privileges), usually used with the SET PASSWORD statement. It is not intended for use in other applications<br>출처: <a href="https://mariadb.com/kb/en/password/">https://mariadb.com/kb/en/password</a></p></blockquote><p>순수 문자열을 입력하면 해시처리된 문자열로 바꿔주는 함수이다. 만약 순수 문자열이 NULL인 경우에는 빈 문자열이 반환된다.<br>왜 PASSWORD() 함수를 사용해야할까? 사용자가 입력한 비밀번호를 개발자도 모르는 암호화된 값으로 바꿔서 DB에 저장하기때문이다.<br>어떤 방식으로 암호화될까? <a href="https://mariadb.com/kb/en/authentication-plugin-ed25519/">마리아DB 버전4.1까지는 기존의 SHA-1 알고리즘을 사용했으나 보안의 취약성으로 인해 마리아DB 5.2부터는 ed25519 인증플러그인을 사용한다.</a></p><p><br><br><br></p><h2 id="구문"><a href="#구문" class="headerlink" title="구문"></a>구문</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PASSWORD(str)</span><br></pre></td></tr></table></figure><p><br><br><br></p><h2 id="예시"><a href="#예시" class="headerlink" title="예시"></a>예시</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">PASSWORD</span>(<span class="string">'notagoodpwd'</span>);</span><br><span class="line">+<span class="comment">-------------------------------------------+</span></span><br><span class="line">| PASSWORD('notagoodpwd')                   |</span><br><span class="line">+<span class="comment">-------------------------------------------+</span></span><br><span class="line">| *3A70EE9FC6594F88CE9E959CD51C5A1C002DC937 |</span><br><span class="line">+<span class="comment">-------------------------------------------+</span></span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="HEX-와-UNHEX"><a href="#HEX-와-UNHEX" class="headerlink" title="HEX()와 UNHEX()"></a>HEX()와 UNHEX()</h1><ul><li>HEX(): 기존 텍스트를 16진수 값의 문자로 변환하여 반환한다.</li><li>UNHEX(): HEX의 역산으로 16진수를 숫자로 해석을 하고 그 숫자에 대응하는 문자로 변환한다. 그 결과, 문자들은 바이너리 스트링으로 리턴된다. 그리고 UTF8로 CONVERT 작업을 해주면 기존 텍스트로 변환이 가능하다.</li></ul><p><br><br><br></p><h2 id="예시-1"><a href="#예시-1" class="headerlink" title="예시"></a>예시</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">HEX</span>(<span class="string">'MariaDB'</span>);</span><br><span class="line">+<span class="comment">----------------+</span></span><br><span class="line">| HEX('MariaDB') |</span><br><span class="line">+<span class="comment">----------------+</span></span><br><span class="line">| 4D617269614442 |</span><br><span class="line">+<span class="comment">----------------+</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">UNHEX</span>(<span class="string">'4D617269614442'</span>);</span><br><span class="line">+<span class="comment">-------------------------+</span></span><br><span class="line">| UNHEX('4D617269614442') |</span><br><span class="line">+<span class="comment">-------------------------+</span></span><br><span class="line">| MariaDB                 |</span><br><span class="line">+<span class="comment">-------------------------+</span></span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://mariadb.com/kb/en/password/">https://mariadb.com/kb/en/password/</a></li><li><a href="https://victorydntmd.tistory.com/144">https://victorydntmd.tistory.com/144</a></li><li><a href="https://shxrecord.tistory.com/238">https://shxrecord.tistory.com/238</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/MySQL/">MySQL</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/MariaDB/">MariaDB</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/12/05/221206mariadb-passwordhashing/#disqus_thread</comments>
       
     </item>
     
