@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Fri, 27 Jan 2023 04:58:29 GMT</pubDate>
+    <pubDate>Mon, 30 Jan 2023 05:40:04 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>유저테이블의 PK에 휴대전화번호를 쓰면 안되는 이유</title>
+      <link>https://sowon-dev.github.io/2023/01/29/230130userpk/</link>
+      <guid>https://sowon-dev.github.io/2023/01/29/230130userpk/</guid>
+      <pubDate>Sun, 29 Jan 2023 20:28:59 GMT</pubDate>
+      
+      <description>&lt;p&gt;가장 메인이 되는 User테이블을 만들때 PK로 휴대전화번호를 써도 될까?&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>가장 메인이 되는 User테이블을 만들때 PK로 휴대전화번호를 써도 될까?</p><a id="more"></a><h1 id="실무에서-user테이블의-pk는-뭐로-쓸까"><a href="#실무에서-user테이블의-pk는-뭐로-쓸까" class="headerlink" title="실무에서 user테이블의 pk는 뭐로 쓸까?"></a>실무에서 user테이블의 pk는 뭐로 쓸까?</h1><p>가장 메인이 되는 user테이블의 pk가 개인정보(전화번호 등)이 되어서는 안된다.<br>개인정보보호법에 따라 DB에 저장할때 비밀번호처럼 항상 암호화해서 저장해야한다.<br>따라서 UUID, 일련번호, 이메일을 PK로 주로 사용한다.</p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2023/01/29/230130userpk/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[Spring]RestTemplate(레스트템플릿)과 Websocket(웹소켓)차이점</title>
@@ -442,29 +463,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/12/09/221210spring-resttemplate/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[Java] web.xml이 뭐길래</title>
-      <link>https://sowon-dev.github.io/2022/12/06/221207sring-webxml/</link>
-      <guid>https://sowon-dev.github.io/2022/12/06/221207sring-webxml/</guid>
-      <pubDate>Tue, 06 Dec 2022 19:19:12 GMT</pubDate>
-      
-      <description>&lt;p&gt;자바로 웹어플리케이션을 만드면 필수로 만나게 되는 파일 중 &lt;code&gt;web.xml&lt;/code&gt;이 있다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>자바로 웹어플리케이션을 만드면 필수로 만나게 되는 파일 중 <code>web.xml</code>이 있다.</p><a id="more"></a><h1 id="web-xml이란"><a href="#web-xml이란" class="headerlink" title="web.xml이란"></a>web.xml이란</h1><p>단어로는 Deployment Descriptor로 배포설명자이다.<br>자바 웹 애플리케이션은 배포 설명자 파일을 사용하여 URL이 서블릿에 매핑되는 방법, 인증이 필요한 URL 등의 정보를 확인한다.<br>자바 웹 애플리케이션이면 반드시 하나씩 존재해야하는 파일이며 프로그램에 필요한 전반적인 설정을 지정할 수 있다.<br>프로젝트 실행시 가장 먼저 실행되는 파일로서 메모리에 로딩된다.<br>위치는 WEBCONTENT하위의 WEB-INF폴더 하위에 있으며 가장 많이 사용되는 곳은 에러코드별 페이지처리이다.</p><blockquote><p>In a java web application a file named web.xml is known as deployment descriptor. It is a xml file and <web-app> is the root element for it. When a request comes web server uses web.xml file to map the URL of the request to the specific code that handle the request.<br>출처: <a href="https://www.w3schools.blog/deployment-descriptor-web-xml-file">w3schools</a></p></blockquote><p><br><br><br></p><h1 id="무엇을-설정할수있을까"><a href="#무엇을-설정할수있을까" class="headerlink" title="무엇을 설정할수있을까?"></a>무엇을 설정할수있을까?</h1><ol><li>ServletContext의 초기 파라미터</li><li>Session의 유효시간 설정</li><li>Servlet/JSP에 대한 정의</li><li>Servlet/JSP 매핑: URL 패턴 및 URL이 해당 패턴과 일치하는 요청에 사용할 선언된 서블릿의 이름을 지정. <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>redteam<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/red/*<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   <span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>blueteam<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/blue/*<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure></li><li>Mime Type 매핑</li><li>Welcome File list</li><li>Error Pages 처리 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 존재하지 않는 페이지, 404에러시 처리 페이지를 error.jsp로 설정함 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">error-page</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">error-code</span>&gt;</span>404<span class="tag">&lt;/<span class="name">error-code</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">location</span>&gt;</span>/error.jsp<span class="tag">&lt;/<span class="name">location</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">error-page</span>&gt;</span></span><br></pre></td></tr></table></figure></li><li>리스너: 어떠한 이벤트가 발생하면 호출되어 처리하는 객체 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">listener</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">listener-class</span>&gt;</span>TestListener<span class="tag">&lt;/<span class="name">listener-class</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">listener</span>&gt;</span></span><br></pre></td></tr></table></figure></li><li>필터: <a href="https://sowon-dev.github.io/2021/08/06/210807Spring-filter/">Spring-Filter 포스팅참조</a></li><li>보안: 패턴과 일치하는 URL에 대한 보안 제약조건을 정의할 수 있다. 제약조건에서 사용자 역할을 admin으로 지정하면 등록된 애플리케이션 개발자만 URL에 액세스하도록 만들수있다. <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">security-constraint</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">web-resource-collection</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">web-resource-name</span>&gt;</span>admin<span class="tag">&lt;/<span class="name">web-resource-name</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/admin/*<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="name">web-resource-collection</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">auth-constraint</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">role-name</span>&gt;</span>admin<span class="tag">&lt;/<span class="name">role-name</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;/<span class="name">auth-constraint</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">security-constraint</span>&gt;</span></span><br></pre></td></tr></table></figure></li></ol><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://www.w3schools.blog/deployment-descriptor-web-xml-file">https://www.w3schools.blog/deployment-descriptor-web-xml-file</a></li><li><a href="http://wiki.gurubee.net/pages/viewpage.action?pageId=26740333&amp;">http://wiki.gurubee.net/pages/viewpage.action?pageId=26740333&amp;</a></li><li><a href="https://cloud.google.com/appengine/docs/standard/java/config/webxml?hl=ko">https://cloud.google.com/appengine/docs/standard/java/config/webxml?hl=ko</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/JAVA/">JAVA</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/WEB/">WEB</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/12/06/221207sring-webxml/#disqus_thread</comments>
       
     </item>
     

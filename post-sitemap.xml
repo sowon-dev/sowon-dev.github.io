@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2023/01/29/230130userpk/</loc>
+        <lastmod>2023-01-30T05:40:04.307Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2023/01/26/230127resttemplate-vs-websocket/</loc>
         <lastmod>2023-01-27T04:58:29.852Z</lastmod>
         <changefreq>weekly</changefreq>
