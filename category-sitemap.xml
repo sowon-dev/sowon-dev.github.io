@@ -8,6 +8,13 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/Network/</loc>
+        <lastmod>2023-01-31T08:04:52.763Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/Database/</loc>
         <lastmod>2023-01-30T05:40:04.307Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -52,13 +59,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/Server/</loc>
         <lastmod>2023-01-18T05:12:10.922Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Network/</loc>
-        <lastmod>2023-01-18T04:33:19.616Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
