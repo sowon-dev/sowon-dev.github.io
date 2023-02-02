@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Wed, 01 Feb 2023 04:23:51 GMT</pubDate>
+    <pubDate>Thu, 02 Feb 2023 05:16:20 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>카디널리티(Cardinality) 개념, 정의</title>
+      <link>https://sowon-dev.github.io/2023/02/01/230202db-cardinality/</link>
+      <guid>https://sowon-dev.github.io/2023/02/01/230202db-cardinality/</guid>
+      <pubDate>Wed, 01 Feb 2023 20:04:48 GMT</pubDate>
+      
+      <description>&lt;p&gt;오늘 팀장님에게 sql 작성할때 where에 pk컬럼말고 다른 컬럼을 추가하면 어디에 좋을지에 대해 문의드렸다.&lt;br&gt;내 &lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>오늘 팀장님에게 sql 작성할때 where에 pk컬럼말고 다른 컬럼을 추가하면 어디에 좋을지에 대해 문의드렸다.<br>내 </p><a id="more"></a><h1 id="정의"><a href="#정의" class="headerlink" title="정의"></a>정의</h1><p>카디널리티(Cardinality)는 전체 행에 대한 특정 컬럼의 중복 수치를 나타내는 지표이다.</p><ul><li>중복도가 낮으면 카디널리티가 높다 e.g. 휴대전화번호, 주민등록번호</li><li>중복도가 높으면 카디널리티가 낮다 e.g. 이름(동명이인)</li></ul><p>여기서 중요한 개념은 카디널리티는 상대적이라는 것이다. 카디널리티는 데이터에 따라 상대적이기때문에 개발DB에서는 카디널리티가 낮아도 운영DB에서는 카디널리티가 높을 수 있다. </p><p><br><br><br></p><h1 id="활용"><a href="#활용" class="headerlink" title="활용"></a>활용</h1><p>DB에서 인덱스를 걸 때 최대한 많은 데이터가 걸러져야 성능이 좋다.<br>인덱스로 선택된 데이터가 많을수록 full scan이 되므로 성능이 좋지않다.</p><p>즉, 여러 컬럼을 동시에 인덱싱할때는 카디널리티가 높은 컬럼을(중복이 적은 컬럼을) 우선순위로 두는 것이 인덱싱 전략에 유리하다.<br>다만, 인덱스 키를 많이 사용하게 되면 공간 효울이 낮아지게 된다.</p><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://soft.plusblog.co.kr/87#:~:text=%EC%B9%B4%EB%94%94%EB%84%90%EB%A6%AC%ED%8B%B0(Cardinality)%EB%8A%94%20%ED%8A%B9%EC%A0%95%20%EB%8D%B0%EC%9D%B4%ED%84%B0,%EA%B2%BD%EC%9A%B0%20%EC%B9%B4%EB%94%94%EB%84%90%EB%A6%AC%ED%8B%B0%EB%8A%94%202%EB%8B%A4">https://soft.plusblog.co.kr/87#:~:text=%EC%B9%B4%EB%94%94%EB%84%90%EB%A6%AC%ED%8B%B0(Cardinality)%EB%8A%94%20%ED%8A%B9%EC%A0%95%20%EB%8D%B0%EC%9D%B4%ED%84%B0,%EA%B2%BD%EC%9A%B0%20%EC%B9%B4%EB%94%94%EB%84%90%EB%A6%AC%ED%8B%B0%EB%8A%94%202%EB%8B%A4</a>.</li><li><a href="https://itholic.github.io/database-cardinality/">https://itholic.github.io/database-cardinality/</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2023/02/01/230202db-cardinality/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>IaaS, PaaS, SaaS 차이</title>
@@ -440,27 +461,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/12/15/221216payload/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[Java] TimeUnit의 sleep() 사용하기</title>
-      <link>https://sowon-dev.github.io/2022/12/12/221213java-timeunit/</link>
-      <guid>https://sowon-dev.github.io/2022/12/12/221213java-timeunit/</guid>
-      <pubDate>Mon, 12 Dec 2022 15:39:23 GMT</pubDate>
-      
-      <description>&lt;p&gt;js에서는 &lt;a href=&quot;https://sowon-dev.github.io/2019/09/21/190922/&quot;&gt;setTimeout()이나 setInterval()&lt;/a&gt;을 자주 사용했는데 자바에서는 어떻게 사용할까?&lt;br&gt;바로 TimeUnit의 static메서드인 sleep()이 있다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>js에서는 <a href="https://sowon-dev.github.io/2019/09/21/190922/">setTimeout()이나 setInterval()</a>을 자주 사용했는데 자바에서는 어떻게 사용할까?<br>바로 TimeUnit의 static메서드인 sleep()이 있다.</p><a id="more"></a><h1 id="TimeUnit"><a href="#TimeUnit" class="headerlink" title="TimeUnit"></a>TimeUnit</h1><p>TimeUnit는 자바가 제공하는 Enum타입클래스이다.<br>시간에 관한 열거형 클래스로 두날짜의 차이를 구하기, sleep()걸기 등에 유용하게 쓰인다.</p><ul><li>DAYS </li><li>HOURS </li><li>MICROSECONDS </li><li>MILLISECONDS </li><li>MINUTES </li><li>NANOSECONDS </li><li>SECONDS </li></ul><p><br><br><br></p><h1 id="sleep"><a href="#sleep" class="headerlink" title="sleep()"></a>sleep()</h1><p>TimeUnit.class에 sleep()이 선언되어있다.<br>파라미터에 따라 Thread.sleep()을 쉽게 걸어준다.<br>열거형이기때문에 직관적이고 static 메서드라 바로 사용할 수 있다는 것이 장점이다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Performs a &#123;<span class="doctag">@link</span> Thread#sleep(long, int) Thread.sleep&#125; using</span></span><br><span class="line"><span class="comment"> * this time unit.</span></span><br><span class="line"><span class="comment"> * This is a convenience method that converts time arguments into the</span></span><br><span class="line"><span class="comment"> * form required by the &#123;<span class="doctag">@code</span> Thread.sleep&#125; method.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> timeout the minimum time to sleep. If less than</span></span><br><span class="line"><span class="comment"> * or equal to zero, do not sleep at all.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@throws</span> InterruptedException if interrupted while sleeping</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">sleep</span><span class="params">(<span class="keyword">long</span> timeout)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line"><span class="keyword">if</span> (timeout &gt; <span class="number">0</span>) &#123;</span><br><span class="line"><span class="keyword">long</span> ms = toMillis(timeout);</span><br><span class="line"><span class="keyword">int</span> ns = excessNanos(timeout, ms);</span><br><span class="line">Thread.sleep(ms, ns);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="예시"><a href="#예시" class="headerlink" title="예시"></a>예시</h1><p>다양하게 사용할 수 있다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 5분 지연시키기</span></span><br><span class="line">TimeUnit.MINUTES.Sleep(<span class="number">5</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 10초 지연시키기</span></span><br><span class="line">TimeUnit.SECONDS.sleep(<span class="number">10</span>);</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html">https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/JAVA/">JAVA</category>
-      
-      
-      
-      <comments>https://sowon-dev.github.io/2022/12/12/221213java-timeunit/#disqus_thread</comments>
       
     </item>
     
