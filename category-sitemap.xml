@@ -8,6 +8,13 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/Java/</loc>
+        <lastmod>2023-02-14T08:55:41.580Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/Algorithm/</loc>
         <lastmod>2023-02-13T05:29:39.076Z</lastmod>
         <changefreq>weekly</changefreq>

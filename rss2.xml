@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Tue, 07 Feb 2023 01:55:48 GMT</pubDate>
+    <pubDate>Tue, 14 Feb 2023 08:55:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[WIP]String cannot be case to Integer해결방법</title>
+      <link>https://sowon-dev.github.io/2023/02/13/230214integervalueof/</link>
+      <guid>https://sowon-dev.github.io/2023/02/13/230214integervalueof/</guid>
+      <pubDate>Mon, 13 Feb 2023 23:37:19 GMT</pubDate>
+      
+      <description>&lt;p&gt;String을 int로 변환하는 과정에서 cast 에러가 발생했다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>String을 int로 변환하는 과정에서 cast 에러가 발생했다.</p><a id="more"></a><h1 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h1><p>내가 원했던 건 DB에서 가져온 balance정보를 int로 바꿔주고싶었다. </p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">HashMap&lt;String, String&gt; map = <span class="keyword">new</span> HashMap();</span><br><span class="line">map.put(<span class="string">"balance"</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> curBalance = Integer.parseInt(map.get(<span class="string">"balance"</span>).toString());</span><br><span class="line"></span><br><span class="line"><span class="comment">// 결과</span></span><br><span class="line"><span class="comment">// ClassCastException발생 String cannot be case to Integer</span></span><br></pre></td></tr></table></figure><p>Exception이 발생했다. 혹시나싶어 <code>map.get(&quot;balance&quot;).toString()</code> 에서 <code>toString()</code>을 빼니 아예 컴파일에러가 나서 서버 런이 안되었다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">HashMap&lt;String, String&gt; map = <span class="keyword">new</span> HashMap();</span><br><span class="line">map.put(<span class="string">"balance"</span>, dao.getBalance(user_no));</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> curBalance = Integer.valueOf(map.get(<span class="string">"balance"</span>).toString());</span><br><span class="line"></span><br><span class="line"><span class="comment">// 결과</span></span><br><span class="line"><span class="comment">// ClassCastException발생 String cannot be case to Integer</span></span><br></pre></td></tr></table></figure><p><code>Integer.valueOf</code>도 마찬가지로 exception이 발생했고 <code>map.get(&quot;balance&quot;).toString()</code> 에서 <code>toString()</code>을 빼니 아예 컴파일에러가 나서 서버 런이 안되었다.</p><p><br><br><br></p><h1 id="원인"><a href="#원인" class="headerlink" title="원인"></a>원인</h1><p>데이터타입이 무엇인지 정확히 알기위해 <code>getClass()</code>를 하니 Integer가 나왔다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">map.get(<span class="string">"balance"</span>).getClass()</span><br><span class="line"><span class="comment">// 결과 Java.lang.Integer</span></span><br></pre></td></tr></table></figure><p>이게 말이 되는 건가?<br>HashMap의 데이터타입을 String으로 정의했는데 어떻게 Integer가 들어간걸까?</p><p>(작성중)</p><p><br><br><br></p><h1 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> curBalance = Integer.valueOf(String.valueOf(map.get(<span class="string">"balance"</span>)));</span><br></pre></td></tr></table></figure><p>해결!</p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Java/">Java</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2023/02/13/230214integervalueof/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>String.valueOf() vs toString() 차이 알고쓰자</title>
@@ -440,29 +461,6 @@
       
       
       <comments>https://sowon-dev.github.io/2022/12/22/221223spring-transactional-annotation/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[Server]Mock Server(목서버)는 어때요?</title>
-      <link>https://sowon-dev.github.io/2022/12/21/221222server-mockserver/</link>
-      <guid>https://sowon-dev.github.io/2022/12/21/221222server-mockserver/</guid>
-      <pubDate>Wed, 21 Dec 2022 19:52:19 GMT</pubDate>
-      
-      <description>&lt;p&gt;오늘 회의에서 신규서비스 테스트를 위해 Mock서버, jUnit단위테스트 등의 이야기가 나왔다.&lt;br&gt;외부 API를 테스트를 하려면 어떻게 해야할까?&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>오늘 회의에서 신규서비스 테스트를 위해 Mock서버, jUnit단위테스트 등의 이야기가 나왔다.<br>외부 API를 테스트를 하려면 어떻게 해야할까?</p><a id="more"></a><p>jUnit에 관해서는 이전에 작성한 <a href="https://sowon-dev.github.io/2021/08/12/210813Spring-junit/#Mock">Junit</a> 포스팅을 참고하면 된다.<br>그럼 목서버는 무엇일까?</p><h1 id="먼저-MOCK-목-이-뭘까"><a href="#먼저-MOCK-목-이-뭘까" class="headerlink" title="먼저 MOCK(목)이 뭘까?"></a>먼저 MOCK(목)이 뭘까?</h1><blockquote><p>실제 사용되어야하는 객체의 대체객체로 실제 객체를 만들어서 하기엔 시간이 부족하고 비용이 높은 경우, 구현이 까다로울 경우에 가짜 객체를 만들어서 사용하는데 그중 하나가 Mock객체이다.<br>Mock객체: 행위를 검증하기 위해 사용되는 객체<br>직접 만들거나 스프링프레임워크를 통해서 간단하게 만들수 있음<br>출처: <a href="https://sowon-dev.github.io/2021/08/12/210813Spring-junit/#Mock">Junit - Mock 객체</a></p></blockquote><p><br><br><br></p><h1 id="Mock-서버란"><a href="#Mock-서버란" class="headerlink" title="Mock 서버란?"></a>Mock 서버란?</h1><blockquote><p>For any system you integrate with via HTTP or HTTPS MockServer can be used as:<br>a mock configured to return specific responses for different requests<br>a proxy recording and optionally modifying requests and responses<br>both a proxy for some requests and a mock for other requests at the same time<br>When MockServer receives a request it matches the request against active expectations that have been configured.<br>Then, if no matches are found, it proxies the request if appropriate; otherwise a 404 is returned.<br>For each request received the following steps happen:<br>find matching expectation and perform action<br>if no matching expectation proxy request<br>if not a proxy request return 404<br>An expectation defines the action that is taken, for example, a response could be returned.<br>출처: <a href="https://www.mock-server.com/">https://www.mock-server.com/</a></p></blockquote><p>간단하게 말하자면, 실제 서버처럼 HTTP나 HTTPS 요청과 응답을 주고 받을 수 있는 가짜 서버이다. </p><ul><li>다양한 요청에 특정한 반응을 반환하도록 구성할 수 있음</li><li>프록시를 기록하고 선택적으로 요청과 응답을 수정할 수 있음</li><li>목서버가 예상되는 요청을 받았을땐 이미 작성된 특정 반응을 반환하고 예상되지 않는 요청인 경우 404를 리턴한다.</li></ul><p><br><br><br></p><h1 id="왜-목서버를-사용할까"><a href="#왜-목서버를-사용할까" class="headerlink" title="왜 목서버를 사용할까?"></a>왜 목서버를 사용할까?</h1><p>크게 3가지 이유가 있다.</p><ul><li>testing via HTTP or HTTPS, such as a REST or RPC service.<ul><li>만약 스펙만 존재하고 실제 동작하지 않는 API를 염두하고 해당 API의 데이터를 받는 부분을 개발해야 한다면 어떻게 해야할까? 이럴 때 필요한 것이 가상의 서버, 바로 Mock Server이다.</li></ul></li><li>de-coupling development</li><li>isolate single service</li></ul><p><br><br><br></p><h1 id="목서버를-만드는-방법"><a href="#목서버를-만드는-방법" class="headerlink" title="목서버를 만드는 방법"></a>목서버를 만드는 방법</h1><p>구글링했을때 가장 많이 나오는 방법은 PostMan을 활용하는 것이다. 하지만 무료요금제인 경우 한달에 1000건 요청제한이 있다.<br><a href="https://way-be-developer.tistory.com/239">Postman 으로 Mock Server 구축하기</a>글을 참고!</p><p><br><br><br></p><h1 id="출처"><a href="#출처" class="headerlink" title="출처"></a>출처</h1><ul><li><a href="https://opennote46.tistory.com/208">https://opennote46.tistory.com/208</a></li><li><a href="https://www.mock-server.com/">https://www.mock-server.com/</a></li><li><a href="https://sowon-dev.github.io/2021/08/12/210813Spring-junit/#Mock">Junit - Mock 객체</a></li><li><a href="https://devvkkid.tistory.com/219">https://devvkkid.tistory.com/219</a></li><li><a href="https://velog.io/@kyle/%EC%99%B8%EB%B6%80-API%EB%A5%BC-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%95%A0-%EA%B2%83%EC%9D%B8%EA%B0%80">우아한마켓 - 외부 API를 어떻게 테스트 할 것인가?</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Server/">Server</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%8A%98%EB%98%90%EB%AA%BB%EC%95%8C%EC%95%84%EB%93%A3%EA%B3%A0%EB%A7%90%EC%95%98%EC%8A%B5%EB%8B%88%EB%8B%A4/">오늘또못알아듣고말았습니다</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2022/12/21/221222server-mockserver/#disqus_thread</comments>
       
     </item>
     
