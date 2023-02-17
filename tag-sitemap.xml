@@ -3,8 +3,22 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/%25EC%25B0%25A8%25EC%259D%25B4/</loc>
+        <lastmod>2023-02-17T02:43:02.657Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/%25EB%2594%2594%25EC%259E%2590%25EC%259D%25B8%25ED%258C%25A8%25ED%2584%25B4/</loc>
+        <lastmod>2023-02-17T02:43:02.657Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/ChatGPT/</loc>
-        <lastmod>2023-02-16T06:48:51.584Z</lastmod>
+        <lastmod>2023-02-17T02:32:07.849Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -12,13 +26,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/DataStructure/</loc>
         <lastmod>2023-02-13T05:29:39.076Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/%25EC%25B0%25A8%25EC%259D%25B4/</loc>
-        <lastmod>2023-02-07T01:55:48.552Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -47,13 +54,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/Discord/</loc>
         <lastmod>2023-01-27T04:41:38.046Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/%25EB%2594%2594%25EC%259E%2590%25EC%259D%25B8%25ED%258C%25A8%25ED%2584%25B4/</loc>
-        <lastmod>2023-01-26T00:44:37.660Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

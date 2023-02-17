@@ -8,8 +8,24 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2023/02/16/230217MVPpattern/</loc>
+        <lastmod>2023-02-17T02:43:02.657Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2023/01/24/230125ObserverPattern/</loc>
+        <lastmod>2023-02-17T02:32:30.197Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2023/02/13/230214integervalueof/</loc>
-        <lastmod>2023-02-16T06:48:51.584Z</lastmod>
+        <lastmod>2023-02-17T02:32:07.849Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -74,14 +90,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2021/03/25/210226JS-discordchatbot/</loc>
         <lastmod>2023-01-27T04:41:38.046Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2023/01/24/230125ObserverPattern/</loc>
-        <lastmod>2023-01-26T00:44:37.660Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
