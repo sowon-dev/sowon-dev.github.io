@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Thu, 02 Mar 2023 02:11:56 GMT</pubDate>
+    <pubDate>Fri, 03 Mar 2023 06:30:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[WIP/Gson]MalformedJsonException 에러해결</title>
+      <link>https://sowon-dev.github.io/2023/03/02/230303malformedjsonexception/</link>
+      <guid>https://sowon-dev.github.io/2023/03/02/230303malformedjsonexception/</guid>
+      <pubDate>Thu, 02 Mar 2023 19:12:09 GMT</pubDate>
+      
+      <description>&lt;p&gt;백단 테스트 중 json을 받을 일이 있어서 그냥 작성했더니 아래와 같은 오류가 발생했다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>백단 테스트 중 json을 받을 일이 있어서 그냥 작성했더니 아래와 같은 오류가 발생했다.</p><a id="more"></a><h1 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h1><ul><li><p>jsp코드</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> param = &#123;&#125;;</span><br><span class="line">param.userid = <span class="string">'testuser'</span>;</span><br><span class="line">param.json = <span class="string">'&#123;\"title\":\"테스트제목\", \"detail\":\"테스트1의 설명입니다.\"&#125;'</span>;</span><br><span class="line"></span><br><span class="line">$.ajax(&#123;</span><br><span class="line">url: <span class="string">"/test/json"</span>,</span><br><span class="line">method: <span class="string">"POST"</span>,</span><br><span class="line">data: param,</span><br><span class="line">callback: <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">alert(<span class="built_in">JSON</span>.stringify(data));</span><br><span class="line">&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li><li><p>testVO코드</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestVO</span> </span>&#123;</span><br><span class="line"><span class="keyword">private</span> String title;</span><br><span class="line"><span class="keyword">private</span> String detail;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>컨트롤러코드</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping</span>(value=<span class="string">"/test/json"</span>, method= RequestMethod.POST)</span><br><span class="line"><span class="meta">@ResponseBody</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> TestVO <span class="title">testControl</span><span class="params">(@ResquestParam HashMap&lt;String, String&gt; param)</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">TestVO test = <span class="keyword">new</span> TestVO();</span><br><span class="line">test = <span class="keyword">new</span> Gson().fromJson(param.get(<span class="string">"json"</span>), TestVO<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> test;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>에러메시지</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">com.google.gson.stream.MalformedJsonException: Expected &#39;:&#39; at line 1 column 8 path $.&amp;quot</span><br></pre></td></tr></table></figure></li></ul><p>언제나 에러메시지 안에 답이 있다.</p><p><br><br><br></p><h1 id="해결1-공백-특수문자-제거"><a href="#해결1-공백-특수문자-제거" class="headerlink" title="해결1: 공백, 특수문자 제거"></a>해결1: 공백, 특수문자 제거</h1><p><a href="https://everydayidid.tistory.com/69">com.google.gson.stream.MalformedJsonException - juno.log</a>을 참고하면 특수문자를 제거하는 방법이 있다.<br>내 상황에선 json형태가 깨지기에 사용할 수 없었다. </p><p><br><br><br></p><h1 id="해결2-setter-사용"><a href="#해결2-setter-사용" class="headerlink" title="해결2: setter 사용"></a>해결2: setter 사용</h1><p>jsp코드와 컨트롤러 코드를 수정했다.</p><ul><li>jsp코드<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> param = &#123;&#125;;</span><br><span class="line">param.userid = <span class="string">"testuser"</span>;</span><br><span class="line">param.title = <span class="string">"테스트제목"</span>;</span><br><span class="line">param.detail = <span class="string">"테스트1의 설명입니다"</span>;</span><br><span class="line"></span><br><span class="line">$.ajax(&#123;</span><br><span class="line">url: <span class="string">"/test/json"</span>,</span><br><span class="line">method: <span class="string">"POST"</span>,</span><br><span class="line">data: param,</span><br><span class="line">callback: <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">alert(<span class="built_in">JSON</span>.stringify(data));</span><br><span class="line">&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li><li>컨트롤러코드</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping</span>(value=<span class="string">"/test/json"</span>, method= RequestMethod.POST)</span><br><span class="line"><span class="meta">@ResponseBody</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> TestVO <span class="title">testControl</span><span class="params">(@ResquestParam HashMap&lt;String, String&gt; param)</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">TestVO test = <span class="keyword">new</span> TestVO();</span><br><span class="line">test.setTitle(param.get(<span class="string">"title"</span>));</span><br><span class="line">test.setDetail(param.get(<span class="string">"detail"</span>));</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> test;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>그냥 받았다… 더 좋은 방법이 있다면 댓글로 알려주시면 감사하겠습니다. </p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Java/">Java</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Gson/">Gson</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2023/03/02/230303malformedjsonexception/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[요약]이제야 NFT가 궁금해진 너에게 - 박근모</title>
@@ -442,29 +465,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/01/04/230105postman-multithread/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[안드로이드] 키스토어란? 개념,정의</title>
-      <link>https://sowon-dev.github.io/2023/01/03/230103Android-keystore/</link>
-      <guid>https://sowon-dev.github.io/2023/01/03/230103Android-keystore/</guid>
-      <pubDate>Tue, 03 Jan 2023 04:51:33 GMT</pubDate>
-      
-      <description>&lt;p&gt;오늘 회의에서 키스토어에 대해서 이야기가 나왔다. 앱개발은 전혀 모르므로 이참에 공부해봤다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>오늘 회의에서 키스토어에 대해서 이야기가 나왔다. 앱개발은 전혀 모르므로 이참에 공부해봤다.</p><a id="more"></a><h1 id="Keystore란"><a href="#Keystore란" class="headerlink" title="Keystore란?"></a>Keystore란?</h1><p>안드로이드 앱을 구글 플레이스토어에 올리려면 배포할때 개발자가 서명을 해야한다. 이 서명을 코드서명인증서 즉, 키스토어(Keystore)라고 한다.<br>키스토어(Keystore)는 앱 개발자에 대한 정보를 서명한 암호화된 파일이다.</p><p><br><br><br></p><h1 id="왜-Keystore를-사용할까"><a href="#왜-Keystore를-사용할까" class="headerlink" title="왜 Keystore를 사용할까?"></a>왜 Keystore를 사용할까?</h1><p>추후에 버그픽스등으로 해당 앱 업데이트시 서명이 동일한 지 확인한다. 만약 이 서명을 잃어버리면 아무리 내가 만든 앱이라고해도 이 앱을 업데이트 할 수 없다.<br>즉, 키스토어를 통해서 다른 개발자가 내 앱을 변조 못하게 막는 역할을 한다.</p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Android/">Android</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%8A%98%EB%98%90%EB%AA%BB%EC%95%8C%EC%95%84%EB%93%A3%EA%B3%A0%EB%A7%90%EC%95%98%EC%8A%B5%EB%8B%88%EB%8B%A4/">오늘또못알아듣고말았습니다</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2023/01/03/230103Android-keystore/#disqus_thread</comments>
       
     </item>
     
