@@ -9,11 +9,11 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Fri, 03 Mar 2023 06:30:41 GMT</pubDate>
+    <pubDate>Wed, 08 Mar 2023 01:43:37 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>[WIP/Gson]MalformedJsonException 에러해결</title>
+      <title>[Gson]MalformedJsonException 에러해결</title>
       <link>https://sowon-dev.github.io/2023/03/02/230303malformedjsonexception/</link>
       <guid>https://sowon-dev.github.io/2023/03/02/230303malformedjsonexception/</guid>
       <pubDate>Thu, 02 Mar 2023 19:12:09 GMT</pubDate>
