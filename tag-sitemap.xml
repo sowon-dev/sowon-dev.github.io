@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/%25EC%2598%25A4%25EB%25A5%2598%25EC%259D%25BC%25EC%25A7%2580/</loc>
+        <lastmod>2023-03-13T08:40:02.707Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/Gson/</loc>
         <lastmod>2023-03-08T01:43:37.592Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -222,13 +229,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/GeekNews/</loc>
         <lastmod>2022-06-27T08:19:11.257Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/%25EC%2598%25A4%25EB%25A5%2598%25EC%259D%25BC%25EC%25A7%2580/</loc>
-        <lastmod>2022-05-23T05:27:20.257Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
