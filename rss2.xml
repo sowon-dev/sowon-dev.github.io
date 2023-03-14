@@ -9,11 +9,11 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Mon, 13 Mar 2023 08:40:02 GMT</pubDate>
+    <pubDate>Tue, 14 Mar 2023 07:23:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>[@Autowired]no qualifying bean of type available: expected at least 1 bean which qualifies as autowire candidate 오류해결</title>
+      <title>[@Autowired에러]no qualifying bean of type available: expected at least 1 bean which qualifies as autowire candidate 오류해결</title>
       <link>https://sowon-dev.github.io/2023/03/12/230313autowirederror/</link>
       <guid>https://sowon-dev.github.io/2023/03/12/230313autowirederror/</guid>
       <pubDate>Sun, 12 Mar 2023 23:29:17 GMT</pubDate>
