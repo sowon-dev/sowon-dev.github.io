@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Wed, 22 Mar 2023 04:09:25 GMT</pubDate>
+    <pubDate>Tue, 28 Mar 2023 04:33:12 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>CDN이 뭐길래(개념, 정의)</title>
+      <link>https://sowon-dev.github.io/2023/03/27/230328cdn/</link>
+      <guid>https://sowon-dev.github.io/2023/03/27/230328cdn/</guid>
+      <pubDate>Mon, 27 Mar 2023 19:21:42 GMT</pubDate>
+      
+      <description>&lt;p&gt;CDN이란 뭘까? 서버리스개념을 공부하면서 CDN이 궁금해졌다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>CDN이란 뭘까? 서버리스개념을 공부하면서 CDN이 궁금해졌다.</p><a id="more"></a><h1 id="CDN-Content-Delivery-Network"><a href="#CDN-Content-Delivery-Network" class="headerlink" title="CDN(Content Delivery Network)"></a>CDN(Content Delivery Network)</h1><ul><li>거리상의 문제로 발생하는 페이지로딩속도 향상을 위해서 CDN사용</li><li>웹페이지, 이미지, 폰트 등 정적 콘텐츠를 캐싱할 수 있는 서버</li><li>장점: 페이지로딩속도 향상할 수 있음</li><li>단점: 동적은 CDN에서 처리 불가<ul><li>CDN에서 동적코드 가능하도록 몇몇 함수를 구현할 수 있다.</li></ul></li></ul><p>즉, 특정 국가나 지역만을 타깃으로 하는 웹 서비스를 운영한다면 CDN 서비스를 활용할 필요가 없다.</p><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://aws.amazon.com/ko/what-is/cdn/">https://aws.amazon.com/ko/what-is/cdn/</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Server/">Server</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2023/03/27/230328cdn/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[GITHUB]깃허브액션(github action)</title>
@@ -446,29 +467,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/01/08/230109spring-returnjsonview/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[Gson]한글이 ?로 깨져보일때</title>
-      <link>https://sowon-dev.github.io/2023/01/05/230106gson-korean-encoding/</link>
-      <guid>https://sowon-dev.github.io/2023/01/05/230106gson-korean-encoding/</guid>
-      <pubDate>Thu, 05 Jan 2023 21:07:31 GMT</pubDate>
-      
-      <description>&lt;p&gt;구글에서 만든 &lt;a href=&quot;https://github.com/google/gson&quot;&gt;Gson&lt;/a&gt;을 사용해서 객체를 json으로 혹은 그 반대로 변환하는데 사용하고 있다. 이때 한글이 ?로 깨지는 현상이 나타났다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>구글에서 만든 <a href="https://github.com/google/gson">Gson</a>을 사용해서 객체를 json으로 혹은 그 반대로 변환하는데 사용하고 있다. 이때 한글이 ?로 깨지는 현상이 나타났다.</p><a id="more"></a><h1 id="한글깨질때-produces-quot-text-plain-charset-UTF-8-quot-추가하기"><a href="#한글깨질때-produces-quot-text-plain-charset-UTF-8-quot-추가하기" class="headerlink" title="한글깨질때 produces=&quot;text/plain;charset=UTF-8&quot; 추가하기"></a>한글깨질때 <code>produces=&quot;text/plain;charset=UTF-8&quot;</code> 추가하기</h1><p>컨트롤러 RequestMapping 에 추가하면 된다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping</span>(value=<span class="string">"/test"</span>, method=RequestMethod.GET, produces=<span class="string">"text/plain;charset=UTF-8"</span>)</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="그래도-안될때"><a href="#그래도-안될때" class="headerlink" title="그래도 안될때"></a>그래도 안될때</h1><p>produces를 설정하고 나니까 http통신이 안된다. 그래서 <code>produces = &quot;application/json;charset=utf-8&quot;</code>로 바꿔주니 통신이 되었다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping</span>(value=<span class="string">"/test"</span>, method=RequestMethod.GET, produces=<span class="string">"application/json;charset=UTF-8"</span>)</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="그래도-또-안될때"><a href="#그래도-또-안될때" class="headerlink" title="그래도 또 안될때"></a>그래도 또 안될때</h1><p>하지만 여전히 한글이 깨졌다. 그래서 다시 구글링해서 찾은 내용인 <code>produces = &quot;MediaType.APPLICATION_JSON_UTF8_VALUE&quot;</code>로 바꿔적용했다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping</span>(value=<span class="string">"/test"</span>, method=RequestMethod.GET, produces=<span class="string">"MediaType.APPLICATION_JSON_UTF8_VALUE"</span>)</span><br></pre></td></tr></table></figure><p>해결!</p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/Gson/">Gson</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2023/01/05/230106gson-korean-encoding/#disqus_thread</comments>
       
     </item>
     
