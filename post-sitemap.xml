@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2023/04/09/230410kafka/</loc>
+        <lastmod>2023-04-10T07:45:43.207Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2023/04/06/230407removeduplicatevalueinlist/</loc>
-        <lastmod>2023-04-07T01:08:16.737Z</lastmod>
+        <lastmod>2023-04-07T01:12:25.795Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
