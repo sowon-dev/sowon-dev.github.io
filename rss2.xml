@@ -9,8 +9,33 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Mon, 10 Apr 2023 07:45:43 GMT</pubDate>
+    <pubDate>Tue, 11 Apr 2023 06:22:32 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[모바일] deeplink가 뭐길래(개념, 정의)</title>
+      <link>https://sowon-dev.github.io/2023/04/10/230411deeplink/</link>
+      <guid>https://sowon-dev.github.io/2023/04/10/230411deeplink/</guid>
+      <pubDate>Mon, 10 Apr 2023 20:55:17 GMT</pubDate>
+      
+      <description>&lt;p&gt;오늘 회의를 하다가 부장님이 deeplink를 사용하면된다고 하셨다.&lt;br&gt;deeplink가 뭐지? 처음 듣는 용어라 공부해봤다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>오늘 회의를 하다가 부장님이 deeplink를 사용하면된다고 하셨다.<br>deeplink가 뭐지? 처음 듣는 용어라 공부해봤다.</p><a id="more"></a><h1 id="Deeplink"><a href="#Deeplink" class="headerlink" title="Deeplink"></a>Deeplink</h1><ul><li>링크를 클릭하면 특정 앱으로 이동하거나, 앱이 없다면 설치를 유도하거나, 앱이 있다면 앱 내 특정페이지로 이동시킬 수 있다. </li><li>활용: 모바일 마케팅광고에 흔히 사용하는 방식으로 클릭시 앱이 없다면 앱설치 유도하는 페이지로, 앱이 있다면 앱 내 특정페이지로 이동시킨다.</li></ul><p><br><br><br></p><h1 id="Deeplink-3가지-방식"><a href="#Deeplink-3가지-방식" class="headerlink" title="Deeplink 3가지 방식"></a>Deeplink 3가지 방식</h1><ul><li>URI 스킴 방식 : 앱에 URI 스킴(scheme) 값을 등록하여 딥링크 사용</li><li>앱링크(App Link) : Android 제공 - 도메인 주소를 이용한 딥링크 사용</li><li>유니버셜 링크 (Universal Link) : iOS 제공  - 도메인 주소를 이용한 딥링크 사용</li></ul><p><br><br><br></p><h2 id="1-URI-scheme"><a href="#1-URI-scheme" class="headerlink" title="1 URI scheme"></a>1 URI scheme</h2><p><img src="https://assets-global.website-files.com/607008c6d94a9d637e9a1b5e/62fc5889746fed112ae27c78_c7tZQN4hmkM2vGCpnagTHfwLO537kliihBl-zdxePv5t5lAYDjk6JfXipcQbtqW4fAq4nKYLoIIxjoekZzvjrt_oD-LxGR3A6OuR0ufs4uBfE2-5nUaKvIYKlVOROqL5m7EclUM9c_WU6OjmDQISyAU.png" alt="https://www.airbridge.io/blog/deeplink-101-for-marketers-and-developers"></p><p>가장 일반적으로 딥링크를 사용하는 방식은 URI Scheme 방식이다.<br>이 방식의 한계는 점차 앱이 다양해지면서 앱 스킴값이 중복되는 경우가 존재한다는 것이다. 이런 경우 개발자가 원하는 대로 작동하지 않을 수 있다.</p><h2 id="2-유니버셜-링크와-앱-링크"><a href="#2-유니버셜-링크와-앱-링크" class="headerlink" title="2 유니버셜 링크와 앱 링크"></a>2 유니버셜 링크와 앱 링크</h2><p>유니버설 링크(Universal Links)와 앱 링크(App Links)는 각각 iOS와 Android에서 사용되는 딥 링킹 프로토콜이다.<br>도메인은 딱 1개밖에 없기때문에 이들은 URI 스키마의 한계를 극복하기 위해 앱의 도메인 이름을 운영 체제(OS)에 등록하여 소유권을 증명하는 방식을 사용한다.<br>여기서 도메인이름이란? <code>https://sowon-dev.github.io/categories/Android/</code> 에서 domain name은 <code>sowon-dev.github.io</code>이다.</p><p>이 방식에도 한계가 존재한다.<br>유니버셜링크는 구글에서만, 앱링크는 사파리에서만 정상 작동되고 다른 앱이나 브라우저에서 작동이 안될 수 있다.</p><p><img src="https://assets-global.website-files.com/607008c6d94a9d637e9a1b5e/62fc5889bfab9a2428897cee_tMIk_94XMbU_D5iYHKEmxSsZVB4Ei1E8sPF88cajh6AI3Q3YSXwQduYryDxZKEXn0GE1u_t46Pj8exzs9HfHUbNPSle23Q-SbTKG1ntud1ajlXJCzrJL-KW1uwATktTBsPNy3sxiApRfa_9BcckceMg.png" alt="https://www.airbridge.io/blog/deeplink-101-for-marketers-and-developers"></p><p>결론적으로 현재까진 3가지 방식(URI 스킴 방식, 유니버셜링크, 앱링크)을 모두 사용해야한다.</p><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://www.airbridge.io/blog/deeplink-101-for-marketers-and-developers">https://www.airbridge.io/blog/deeplink-101-for-marketers-and-developers</a></li><li><a href="https://help.dfinery.io/hc/ko/articles/360039757433-%EB%94%A5%EB%A7%81%ED%81%AC-Deeplink-URI%EC%8A%A4%ED%82%B4-%EC%9C%A0%EB%8B%88%EB%B2%84%EC%85%9C-%EB%A7%81%ED%81%AC-%EC%95%B1%EB%A7%81%ED%81%AC-%EA%B5%AC%EB%B6%84%EA%B3%BC-%EC%9D%B4%ED%95%B4">https://help.dfinery.io/hc/ko/articles/360039757433-딥링크-Deeplink-URI스킴-유니버셜-링크-앱링크-구분과-이해</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Android/">Android</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Backjoon/">Backjoon</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4-%EC%B4%88%EA%B2%A9%EC%B0%A8Java-Spring/">패스트캠퍼스(초격차Java/Spring)</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2023/04/10/230411deeplink/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Kafka(카프카)가 뭐길래(개념, 정의)</title>
@@ -444,27 +469,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/01/15/230116nas/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[Spring]RestTemplate response 한글깨짐 UTF-8적용하기</title>
-      <link>https://sowon-dev.github.io/2023/01/12/230113spring-resttemplateutf8/</link>
-      <guid>https://sowon-dev.github.io/2023/01/12/230113spring-resttemplateutf8/</guid>
-      <pubDate>Thu, 12 Jan 2023 15:46:57 GMT</pubDate>
-      
-      <description>&lt;p&gt;최근에 Gson 한글 깨지는 현상을 해결한 블로그 글 &lt;a href=&quot;https://sowon-dev.github.io/2023/01/05/230106gson-korean-encoding/&quot;&gt;Gson 한글이 ?로 깨져보일때&lt;/a&gt;을 포스팅했었다.&lt;br&gt;성공메시지는 한글이라 몰랐는데 에러메시지가 엉망진창으로 인코딩되서 출력되었다.&lt;br&gt;나는 한글을 정말 사랑하는데… 한글 인코딩이 나를 힘들게 한다. 한글아 그만 깨져😠&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>최근에 Gson 한글 깨지는 현상을 해결한 블로그 글 <a href="https://sowon-dev.github.io/2023/01/05/230106gson-korean-encoding/">Gson 한글이 ?로 깨져보일때</a>을 포스팅했었다.<br>성공메시지는 한글이라 몰랐는데 에러메시지가 엉망진창으로 인코딩되서 출력되었다.<br>나는 한글을 정말 사랑하는데… 한글 인코딩이 나를 힘들게 한다. 한글아 그만 깨져😠</p><a id="more"></a><h1 id="문제-현상"><a href="#문제-현상" class="headerlink" title="문제 현상"></a>문제 현상</h1><p>이번에는 어디서 한글이 깨졌는지부터 찾아야했다. log를 뒤진 결과 <code>RestTemplateLoggingInterceptor</code>의 로그까지는 한글이 깨지지않고 출력하나 그 뒤 RestTemplate response를 받는 부분에서 한글이 깨지는 것을 확인했다.<br>RestTemplate 선언하는 방법은 블로그 글 <a href="https://sowon-dev.github.io/2022/12/09/221210spring-resttemplate/">RestTemplate과 HttpEntity가 뭐길래(제네릭과 ParameterizedTypeReference)</a>를 참조하면 된다.</p><p><br><br><br></p><h1 id="수정한-코드"><a href="#수정한-코드" class="headerlink" title="수정한 코드"></a>수정한 코드</h1><p>StringHttpMessageConverter의 default Charset이 ISO-8859-1이라고 한다. 이를 UTF-8로 변경하면 한글이 깨짐없이 잘 출력된다! </p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">RestTemplate restTemplate = <span class="keyword">new</span> RestTemplate(<span class="keyword">new</span> BufferingClientHttpRequestFactory(<span class="keyword">new</span> HttpComponentsClientHttpRequestFactory()));</span><br><span class="line">restTemplate.getMessageConverters().add(<span class="number">0</span>, <span class="keyword">new</span> StringHttpMessageConverter(StandardCharsets.UTF_8)); <span class="comment">// 추가한 부분</span></span><br><span class="line">restTemplate.exchange(apiUrl, HttpMethod.POST, entity, String<span class="class">.<span class="keyword">class</span>)</span>;</span><br></pre></td></tr></table></figure><p>StringHttpMessageConverter가 어떤 역할을 하는 지 좀 더 깊게 궁금했는데 잘 정리된 글이 이미 있었다. 자세한 내용은 <a href="https://cornswrold.tistory.com/402">깡냉쓰님의 RestTemplate 한글 깨짐관련(StringHttpMessageConverter)</a>을 참고하면 된다.</p><p>해결!😎</p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
-      
-      
-      
-      <comments>https://sowon-dev.github.io/2023/01/12/230113spring-resttemplateutf8/#disqus_thread</comments>
       
     </item>
     
