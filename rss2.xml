@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Tue, 11 Apr 2023 06:22:32 GMT</pubDate>
+    <pubDate>Wed, 26 Apr 2023 08:40:57 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>팝업(모달)창에서 datepicker 적용 안되는 오류 해결법</title>
+      <link>https://sowon-dev.github.io/2023/04/25/230426datepicker-error-in-modal/</link>
+      <guid>https://sowon-dev.github.io/2023/04/25/230426datepicker-error-in-modal/</guid>
+      <pubDate>Tue, 25 Apr 2023 21:32:46 GMT</pubDate>
+      
+      <description>&lt;p&gt;화면작업을 하는데 리스트화면에서도 부트스트랩 datepicker를 사용하고 리스트화면의 상세보기 버튼을 눌러 팝업창을 띄우는데 거기서도 datepicker를 써야했다.&lt;br&gt;근데 문제는 리스트화면의 datepicker는 잘 작동하는데 팝업창의 datepicker는 전혀 작동하지않았다.&lt;br&gt;달력아이콘을 클릭해도 달력이 안나오고 input을 클릭해도 포커싱은 되는데 달력이 안나오니 환장할 노릇.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>화면작업을 하는데 리스트화면에서도 부트스트랩 datepicker를 사용하고 리스트화면의 상세보기 버튼을 눌러 팝업창을 띄우는데 거기서도 datepicker를 써야했다.<br>근데 문제는 리스트화면의 datepicker는 잘 작동하는데 팝업창의 datepicker는 전혀 작동하지않았다.<br>달력아이콘을 클릭해도 달력이 안나오고 input을 클릭해도 포커싱은 되는데 달력이 안나오니 환장할 노릇.</p><a id="more"></a><p>오전 내내 이 문제를 가지고 구글링해서 여러 방법을 시도했다.</p><h1 id="원인찾기"><a href="#원인찾기" class="headerlink" title="원인찾기"></a>원인찾기</h1><p>디버깅해보니 캘린더 클릭시 아래 div태그가 disploy:none에서 display:block으로 바뀌지않는 문제였다.</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"ui-datepicker-div"</span> <span class="attr">style</span>=<span class="string">"display=none;"</span>&gt;</span></span><br><span class="line">//중략</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="시도1-팝업화면-show-이벤트-적용"><a href="#시도1-팝업화면-show-이벤트-적용" class="headerlink" title="시도1 : 팝업화면 show 이벤트 적용"></a>시도1 : 팝업화면 show 이벤트 적용</h1><p>리스트화면에 팝업show 이벤트 적용하기 실패했다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'#modal'</span>).on(<span class="string">'show'</span>, function () &#123;</span><br><span class="line">    $.fn.modal.Constructor.prototype.enforceFocus = function () &#123; &#125;;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>혹시몰라서 팝업창 스크립트에서도 아래 코드 적용해봤지만 실패했다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$.fn.modal.Constructor.prototype.enforceFocus = function () &#123; &#125;;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="시도2-팝업화면-shown-이벤트-적용"><a href="#시도2-팝업화면-shown-이벤트-적용" class="headerlink" title="시도2 : 팝업화면 shown 이벤트 적용"></a>시도2 : 팝업화면 shown 이벤트 적용</h1><p>리스트화면에 팝업 shown 이벤트 적용도 실패했다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'#modal'</span>).on(<span class="string">'shown'</span>, function () &#123;</span><br><span class="line">    $.fn.modal.Constructor.prototype.enforceFocus = function () &#123; &#125;;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="시도3-z-index주기"><a href="#시도3-z-index주기" class="headerlink" title="시도3 : z-index주기"></a>시도3 : z-index주기</h1><p>혹시나하고 z-index를 줘봤지만 역시나 실패했다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">style=<span class="string">"z-index:10000;</span></span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="시도4-강제로-div태그-display-block주기"><a href="#시도4-강제로-div태그-display-block주기" class="headerlink" title="시도4 : 강제로 div태그 display:block주기"></a>시도4 : 강제로 div태그 display:block주기</h1><p>팝업창 내에서 달력아이콘에 온클릭이벤트를 걸어 toggle을 줘봤지만 실패했다.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'#달력아이콘'</span>).on(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    $(<span class="string">"#ui-datepicker-div"</span>).toggle()</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h1><p>비흡연자지만 담타를 가시는 차장님을 쫄래쫄래 따라가서 여쭤봤다.<br>이런 에러가 있고 이런 것까지 오전내내했는데 안되는데 뭐가 문제일까요 하고 여쭤봤더니 5분만에 해결해주셨다.</p><p>나의 경우 스크립트와 link를 중복 선언한게 문제였다.<br>그래서 리스트화면의 스크립트태그, link태그는 그대로 두고 팝업창에 선언한 스크립트태그와 link태그를 삭제했더니 잘 작동했다!</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> type=<span class="string">"text/css"</span> href=<span class="string">"/resources/css/bootstrap.css"</span> /&gt; <span class="comment">//삭제</span></span><br><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> type=<span class="string">"text/css"</span> href=<span class="string">"/resources/css/base.css"</span> /&gt; <span class="comment">//삭제</span></span><br><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> type=<span class="string">"text/css"</span> href=<span class="string">"/resources/css/jquery_ui.css"</span> /&gt; <span class="comment">//삭제</span></span><br><span class="line">&lt;script src="/resources/js/jquery_min.js"&gt;&lt;/script&gt; //삭제</span><br><span class="line">&lt;script src="/resources/js/jquery-ui.min.js"&gt;&lt;/script&gt; //삭제</span><br></pre></td></tr></table></figure><p>유레카!<br>감사합니다 차장님!</p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/JSP/">JSP</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2023/04/25/230426datepicker-error-in-modal/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[모바일] deeplink가 뭐길래(개념, 정의)</title>
@@ -442,33 +463,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/01/17/230118cloudnative/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>나스(NAS)란? 개념,정의</title>
-      <link>https://sowon-dev.github.io/2023/01/15/230116nas/</link>
-      <guid>https://sowon-dev.github.io/2023/01/15/230116nas/</guid>
-      <pubDate>Sun, 15 Jan 2023 16:55:28 GMT</pubDate>
-      
-      <description>&lt;p&gt;&lt;a href=&quot;https://sowon-dev.github.io/2023/01/17/230118cloudnative/&quot;&gt;클라우드 네이티브&lt;/a&gt;관련해서 교육을 듣던 중 강사님이 NAS에 관해 아래처럼 말씀하셨다.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;서버 1x.x.x.xx는 NAS로 사용합니다.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;예전에 대리님이 아기 사진이 너무 많아 NAS서버를 만들까한다는 말도 떠오르면서 NAS가 정확히 뭔지 궁금해졌다.&lt;br&gt;문맥상 데이터 저장소같은데 DB와는 또 어떻게 다를까? 외부에서 접근하면 클라우드저장소같은데 그와는 또 어떻게 다를까?&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p><a href="https://sowon-dev.github.io/2023/01/17/230118cloudnative/">클라우드 네이티브</a>관련해서 교육을 듣던 중 강사님이 NAS에 관해 아래처럼 말씀하셨다.</p><blockquote><p>서버 1x.x.x.xx는 NAS로 사용합니다.</p></blockquote><p>예전에 대리님이 아기 사진이 너무 많아 NAS서버를 만들까한다는 말도 떠오르면서 NAS가 정확히 뭔지 궁금해졌다.<br>문맥상 데이터 저장소같은데 DB와는 또 어떻게 다를까? 외부에서 접근하면 클라우드저장소같은데 그와는 또 어떻게 다를까?</p><a id="more"></a><h1 id="NAS-Network-Attached-Storage"><a href="#NAS-Network-Attached-Storage" class="headerlink" title="NAS(Network Attached Storage)"></a>NAS(Network Attached Storage)</h1><ul><li>Network Attached Storage: 네트워크 결합 스토리지</li><li>LAN으로 연결하는 외장 하드디스크</li><li>반대 개념은 컴퓨터에 직접 연결해서 쓰는 DAS(직접 결합 저장장치, Direct Attached Storage) e.g. 내장형 하드디스크</li></ul><p>컴퓨터를 직접 연결하지 않고 근거리 통신 네트워크(LAN)를 통해 데이터를 주고 받는다. 클라우드 스토리지 서비스와 유사한 느낌인데 어떤 차이가 있을까?</p><p><br><br><br></p><h1 id="클라우드-스토리지-서비스와-차이점"><a href="#클라우드-스토리지-서비스와-차이점" class="headerlink" title="클라우드 스토리지 서비스와 차이점"></a>클라우드 스토리지 서비스와 차이점</h1><table><thead><tr><th align="center"></th><th align="left">NAS</th><th align="left">클라우드스토리지</th></tr></thead><tbody><tr><td align="center">정의</td><td align="left">LAN으로 연결하는 외장 하드디스크</td><td align="left"></td></tr><tr><td align="center">보안성</td><td align="left">우수</td><td align="left">개인정보보안취약</td></tr><tr><td align="center">안정성</td><td align="left">하드디스크에 몇개에 의존해서 취약</td><td align="left">우수</td></tr><tr><td align="center">속도</td><td align="left">상대적 빠름</td><td align="left">상대적 느림</td></tr><tr><td align="center">비용</td><td align="left">초기비용많지만 유지비 상대적 저렴</td><td align="left">주로 월정액방식으로 초기비용도 낮고 유지비도 비싸지않다</td></tr></tbody></table><p><br><br><br></p><h1 id="NAS-목적"><a href="#NAS-목적" class="headerlink" title="NAS 목적"></a>NAS 목적</h1><p>사람에 따라 사용방식이 다양하지만 구글링해본 결과 대용량, 개인자료는 NAS에 보관하고 업무용 또는 백업용 자료는 클라우드저장소(구글클라우드)를 많이 사용하는 것으로 보인다.</p><p><br><br><br></p><h1 id="RAID"><a href="#RAID" class="headerlink" title="RAID"></a>RAID</h1><p>NAS에 대해 궁금한 점을 팀장님께 물으니 팀장님이 RAID에 관해서도 함께 설명해주셨다. 안 물어보면 어쩔뻔했어! 이렇게 지식이 확장되는 거 정말 좋다! 재밌어!</p><ul><li>RAID정의: 저장장치 여러 개를 묶어 고용량, 고성능인 저장 장치 한 개와 같은 효과를 얻기 위해 개발된 기법</li><li>사용목적<ol><li>무정지 구현</li><li>고성능 구현</li></ol></li></ul><p>그렇다면 왜 묶어서 사용할까? 나무위키에 그에 관한 설명이 잘 나와있다.</p><blockquote><p>저장장치는 소모품이다. 5년에서 10년정도 수없이 읽고 쓰기를 반복하면 물리적으로 움직이는 부품이 있는 HDD는 물론이요 전자적으로만 작동하는 SSD도 NAND 소자가 닳아 읽고 쓰는 속도가 느려지고, 결국에는 읽고 쓸 수 없는 부분인 불량섹터가 발생하게 된다. 이런 경우에는 불량섹터에 기록되어 있던 정보가 손상되는 것도 문제지만, 이후에 저장장치에 기록되는 데이터의 무결성을 보장할 수 없기 때문에 보통 장치째로 (기존에 기록되어 있던 데이터와 함께) 폐기 처분하게 된다. 여러개의 디스크를 특정 방법으로 연결해주는 시스템인 RAID는 바로 이렇게 저장장치가 갑자기 고장나는 경우를 대비해서 활용할 수 있는 유용한 기법이다. 방대한 양의 데이터를 읽고 쓰며 1년 365일 내내 가용성이 보장되어야 하는 구글이나 페이스북의 서버들을 상상해보자.<br>출처: 나무위키</p></blockquote><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://namu.wiki/w/NAS(%EC%A0%80%EC%9E%A5%EC%9E%A5%EC%B9%98)">https://namu.wiki/w/NAS(%EC%A0%80%EC%9E%A5%EC%9E%A5%EC%B9%98)</a></li><li><a href="https://namu.wiki/w/RAID">https://namu.wiki/w/RAID</a></li><li><a href="https://quarker.tistory.com/175">quarker님 - NAS와 Cloud Storage 서비스 비교</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Server/">Server</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%8A%98%EB%98%90%EB%AA%BB%EC%95%8C%EC%95%84%EB%93%A3%EA%B3%A0%EB%A7%90%EC%95%98%EC%8A%B5%EB%8B%88%EB%8B%A4/">오늘또못알아듣고말았습니다</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2023/01/15/230116nas/#disqus_thread</comments>
       
     </item>
     
