@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Wed, 26 Apr 2023 08:40:57 GMT</pubDate>
+    <pubDate>Tue, 09 May 2023 10:23:46 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Double/Float 변환시 ClassCastException오류 NaN 해결</title>
+      <link>https://sowon-dev.github.io/2023/05/09/230509double-NaN/</link>
+      <guid>https://sowon-dev.github.io/2023/05/09/230509double-NaN/</guid>
+      <pubDate>Tue, 09 May 2023 00:57:24 GMT</pubDate>
+      
+      <description>&lt;p&gt;화면에서 컨트롤러로 파라미터 &lt;code&gt;HashMap&amp;lt;String, String&amp;gt; map&lt;/code&gt;를 받아 double값을 형변환하려고 하는데 ClassCastException이 발생했다.&lt;br&gt;Java.lang.Integer cannot be case to Java.lang.String 이었고 원인을 찾아보니 NaN가 문제였다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>화면에서 컨트롤러로 파라미터 <code>HashMap&lt;String, String&gt; map</code>를 받아 double값을 형변환하려고 하는데 ClassCastException이 발생했다.<br>Java.lang.Integer cannot be case to Java.lang.String 이었고 원인을 찾아보니 NaN가 문제였다.</p><a id="more"></a><h1 id="기존코드와-원인분석"><a href="#기존코드와-원인분석" class="headerlink" title="기존코드와 원인분석"></a>기존코드와 원인분석</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Double fee = Double.valueOf(map.get(<span class="string">"fee"</span>));</span><br></pre></td></tr></table></figure><p>원인은 바로바로 <code>NaN</code>이다!<br>화면에서 map.get(“fee”)의 값이 없어서 <code>NaN</code>으로 파라미터가 컨트롤러로 넘어왔다.<br>내 의도는 화면에서 주는 값이 없으면 서비스단에서 <code>null</code>을 넣는 거였는데 NaN이라 이를 Double로 형변환하려니까 ClassCastException이 발생한 것이었다. </p><p><br><br><br></p><h1 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h1><p>Double에서는 isNaN을 제공해준다. 이를 이용하면 된다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//해결코드</span></span><br><span class="line"><span class="keyword">if</span>(Double.isNaN(Double.valueOf(map.get(<span class="string">"fee"</span>))))&#123;</span><br><span class="line">fee = <span class="keyword">null</span>;</span><br><span class="line">&#125; <span class="keyword">else</span>&#123;</span><br><span class="line">fee = Double.Double.valueOf(map.get(<span class="string">"fee"</span>));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>오늘도 해결!</p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://www.javatpoint.com/java-double-isnan-method">https://www.javatpoint.com/java-double-isnan-method</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/JAVA/">JAVA</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2023/05/09/230509double-NaN/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>팝업(모달)창에서 datepicker 적용 안되는 오류 해결법</title>
@@ -442,27 +463,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/01/18/230119objectmappervsgson/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>클라우드 네이티브(Cloud Native)란? 개념,정의</title>
-      <link>https://sowon-dev.github.io/2023/01/17/230118cloudnative/</link>
-      <guid>https://sowon-dev.github.io/2023/01/17/230118cloudnative/</guid>
-      <pubDate>Tue, 17 Jan 2023 19:24:30 GMT</pubDate>
-      
-      <description>&lt;p&gt;클라우드 네이티브(Cloud Native)란 무엇일까? 이번에 교육을 받으면서 도커, 쿠버네티스, MSA등의 용어가 쏟아졌다. 이들이 어떤 Cloud Native와 관계가 있는지 궁금해서 정확히 알아보았다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>클라우드 네이티브(Cloud Native)란 무엇일까? 이번에 교육을 받으면서 도커, 쿠버네티스, MSA등의 용어가 쏟아졌다. 이들이 어떤 Cloud Native와 관계가 있는지 궁금해서 정확히 알아보았다.</p><a id="more"></a><h1 id="클라우드-네이티브"><a href="#클라우드-네이티브" class="headerlink" title="클라우드 네이티브"></a>클라우드 네이티브</h1><blockquote><p>클라우드 네이티브라는 용어는 클라우드 제공 모델에서 제공하는 분산 컴퓨팅을 활용하기 위해 애플리케이션을 구축 및 실행하는 개념을 의미합니다. 클라우드 네이티브 앱은 클라우드가 제공하는 확장성, 탄력성, 복원성, 유연성을 활용하도록 설계 및 구축되었습니다.(중략) 클라우드 네이티브 서비스는 Kubernetes, Docker, 서버리스 함수, API 및 Kafka와 같은 기술을 사용하여 최신 애플리케이션 개발을 지원합니다. 업계 최고의 클라우드 제공업체를 통해 클라우드 툴과 서비스를 구현하므로 개발자가 운영 작업을 줄이고 애플리케이션을 더 빠르게 구축할 수 있습니다. 클라우드 네이티브 서비스는 개발자에게 마이크로서비스, 서버리스 함수와 같은 클라우드 네이티브 애플리케이션을 구축, 배포, 관리할 수 있는 종합적인 표준 기반 플랫폼을 제공합니다.<br>출처: <a href="https://www.oracle.com/kr/cloud/cloud-native/what-is-cloud-native/">오라클 공식홈페이지</a></p></blockquote><p>클라우드 네이티브란 클라우드의 장점을 모두 활용하는 애플리케이션을 개발하고 실행하기 위한 접근 방식이다.<br>그렇다면 클라우드의 장점이 무엇일까?</p><p><br><br><br></p><h1 id="클라우드의-장점"><a href="#클라우드의-장점" class="headerlink" title="클라우드의 장점"></a>클라우드의 장점</h1><ol><li>확장가능성(Scaling) : 사용량에 따라 편리하게 인스턴스를 증가, 감소할 수 있음</li><li>CI/CD: 구축, 테스트 및 배포를 자동화하여 소프트웨어가 개발 시스템에서 운영 시스템으로 빠르고 안정적인 프로그램 구축가능</li><li>장애대응: 정 서비스에 오류가 발생해도 다른 서비스에 영향을 주지 않음</li></ol><p><br><br><br></p><h1 id="클라우드-네이티브-핵심-구성요소-4가지"><a href="#클라우드-네이티브-핵심-구성요소-4가지" class="headerlink" title="클라우드 네이티브 핵심 구성요소 4가지"></a>클라우드 네이티브 핵심 구성요소 4가지</h1><p><img src="https://images.ctfassets.net/o7xu9whrs0u9/2tVV4YzJRE7JGKzXjj4Xsp/af35d764254ead0c720c5761c74c134e/Cloud-Nateive-technologies-pyramid.jpg" alt=""><br><a href="https://www.influxdata.com/blog/introduction-cloud-native/">사진출처: https://www.influxdata.com/blog/introduction-cloud-native/</a></p><ol><li>DevOps<ul><li>개발 조직과 운영 조직의 통합을 의미: 이전에는 개발과 운영이 분리되어 개발자가 구동할 프로그램 준비를 끝나면, 이후 배포와 운영 작업은 다른 조직이 했다. 만약 우리가 단 몇줄의 코드를 바꿔야 할지라도 바꾼 후에 운영 조직과 다시 소통하여 배포해야 하므로 매우 번거로운 일이 아닐 수 없다. 이를 극복하기 위해 나온 개념으로 서비스의 문제가 생기면 바로 수정해서 즉시 배포하는 과정을 반복하는 것을 목적으로 한다.</li></ul></li><li>CI/CD<ul><li>지속적인 통합 (CI : Continuous Integration)<ul><li>소스 관리(형상관리), 빌드, 테스트를 모두 포함한다. e.g. 젠킨스, Team CI, Travic CI등</li></ul></li><li>지속적인 배포 (CD : Continuous Delivery &amp; Deployment)<ul><li>Continuous Delivery인 경우 빌드는 자동이지만 배포는 수동 반영</li><li>Continuous Deployment인 경우 빌드와 배포까지 모두 자동 반영</li></ul></li></ul></li><li>Container 가상화 기술<ul><li>기존에는 서로 다른 OS환경을 위해 가상머신을 사용해야해서 비용, 운영측면에서 부담이 많았지만 도커라는 컨테이너 가상화 기술을 도입하여 각각의 서비스와 앱을 관리할 수 있게 되었음</li></ul></li><li>MSA(Micro Service Architecture)<ul><li><a href="https://sowon-dev.github.io/2021/04/12/210415MSA/">내가 이해한 MSA(MicroService Architecture)</a> 참고</li></ul></li></ol><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://www.itworld.co.kr/news/248260">IT World - 클라우드 네이티브의 진정한 의미</a></li><li><a href="https://born2bedeveloper.tistory.com/51">jimkwon님 - Cloud Native Architecture - (1)</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Server/">Server</category>
-      
-      
-      
-      <comments>https://sowon-dev.github.io/2023/01/17/230118cloudnative/#disqus_thread</comments>
       
     </item>
     
