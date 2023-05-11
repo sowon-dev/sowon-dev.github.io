@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2023/05/10/230511-count/</loc>
+        <lastmod>2023-05-11T04:34:48.726Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2023/05/09/230509double-NaN/</loc>
         <lastmod>2023-05-09T10:23:46.233Z</lastmod>
         <changefreq>weekly</changefreq>

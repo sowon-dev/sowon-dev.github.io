@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Tue, 09 May 2023 10:23:46 GMT</pubDate>
+    <pubDate>Thu, 11 May 2023 04:34:48 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>count(**)와 count(1) 그리고 count(컬럼명) 차이</title>
+      <link>https://sowon-dev.github.io/2023/05/10/230511-count/</link>
+      <guid>https://sowon-dev.github.io/2023/05/10/230511-count/</guid>
+      <pubDate>Wed, 10 May 2023 18:47:21 GMT</pubDate>
+      
+      <description>&lt;p&gt;SQL에서 count를 셀때 3가지 방법으로 나타낼 수 있다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>SQL에서 count를 셀때 3가지 방법으로 나타낼 수 있다.</p><a id="more"></a><ol><li>count(*)</li><li>count(1)</li><li>count(컬럼명)</li></ol><h1 id="count-vs-count-1"><a href="#count-vs-count-1" class="headerlink" title="count(*) vs count(1)"></a>count(*) vs count(1)</h1><p>사실 둘 사이에는 아무런 차이도 없다.<br>동일하게 동작하는 걸 알 수 있다.<br>다만 가독성을 위해 <code>count(*)</code> 사용하는 것을 좋다고 한다.</p><p><br><br><br></p><h1 id="count-vs-count-컬럼명"><a href="#count-vs-count-컬럼명" class="headerlink" title="count(*) vs count(컬럼명)"></a>count(*) vs count(컬럼명)</h1><ul><li><code>COUNT(*)</code>는 레코드 갯수 전체를 카운트</li><li><code>COUNT(column_name)</code> 컬럼이 null이 아닌 경우 레코드 갯수를 카운트 </li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/%EC%B0%A8%EC%9D%B4/">차이</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2023/05/10/230511-count/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Double/Float 변환시 ClassCastException오류 NaN 해결</title>
@@ -438,31 +461,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/01/24/230125ObserverPattern/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Jackson ObjectMapper VS Gson 차이</title>
-      <link>https://sowon-dev.github.io/2023/01/18/230119objectmappervsgson/</link>
-      <guid>https://sowon-dev.github.io/2023/01/18/230119objectmappervsgson/</guid>
-      <pubDate>Wed, 18 Jan 2023 15:51:35 GMT</pubDate>
-      
-      <description>&lt;p&gt;Object Mapper만 사용하다가 Gson을 알게되면서 둘의 차이점이 궁금해졌다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>Object Mapper만 사용하다가 Gson을 알게되면서 둘의 차이점이 궁금해졌다.</p><a id="more"></a><h1 id="개념"><a href="#개념" class="headerlink" title="개념"></a>개념</h1><p>Jackson ObjectMapper와 Gson은 뭐하는 애들일까? 자바에서 JSON data-binding 지원해주는 라이브러리이다.</p><p><br><br><br></p><h1 id="사용법"><a href="#사용법" class="headerlink" title="사용법"></a>사용법</h1><p>HashMap을 Json으로 변환한뒤 콘솔에 출력하는 예시이다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">HashMap&lt;String, Obejct&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">map.put(<span class="string">"name"</span>, <span class="string">"나혜석"</span>);</span><br><span class="line">map.put(<span class="string">"age"</span>, <span class="number">77</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 1. ObjectMapper 사용 + throws Exception 필수</span></span><br><span class="line">String serializedMap1 = <span class="keyword">new</span> ObjectMapper().writeValueAsString(map);</span><br><span class="line">system.out.println(serializedMap1);</span><br><span class="line"><span class="comment">// output: &#123;"name":"나혜석","age":77&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 2. Gson 사용</span></span><br><span class="line">String serializedMap2 = <span class="keyword">new</span> GsonBuilder().create().toJson(map)</span><br><span class="line">system.out.println(serializedMap2);</span><br><span class="line"><span class="comment">// output: &#123;"name":"나혜석","age":77&#125;</span></span><br></pre></td></tr></table></figure><p>사용하다보면 큰 차이점 하나를 발견할 수 있는데 ObjectMapper는 Exceptionc처리가 필수이다.</p><p><br><br><br></p><h1 id="각-장점"><a href="#각-장점" class="headerlink" title="각 장점"></a>각 장점</h1><table><thead><tr><th align="left">Jackson</th><th align="left">Gson</th></tr></thead><tbody><tr><td align="left">스프링프레임워크에 이미 속해있어 따로 설치안해도 됨</td><td align="left">가장 간단한 toJson/fromJson방식</td></tr><tr><td align="left">다양한 어노테이션 활용가능</td><td align="left">역직렬화시 자바 엔티티에 접근할 필요가 없음</td></tr></tbody></table><ul><li>Jackson:<ul><li>Built into all JAX-RS (Jersey, Apache CXF, RESTEasy, Restlet), and Spring framework</li><li>Extensive annotation support</li></ul></li><li>Gson:<ul><li>Simplicity of toJson/fromJson in the simple cases</li><li>For deserialization, do not need access to the Java entities</li></ul></li></ul><p>출처: <a href="https://www.baeldung.com/jackson-vs-gson">baeldung의 jackson-vs-gson 글</a></p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/JAVA/">JAVA</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%EC%B0%A8%EC%9D%B4/">차이</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/Gson/">Gson</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2023/01/18/230119objectmappervsgson/#disqus_thread</comments>
       
     </item>
     
