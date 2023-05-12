@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Thu, 11 May 2023 04:34:48 GMT</pubDate>
+    <pubDate>Fri, 12 May 2023 06:05:52 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[JS/jQuery]정규표현식 숫자 소수둘째자리까지 적용하기</title>
+      <link>https://sowon-dev.github.io/2023/05/11/230512regex-seconddigit-decimalpoint/</link>
+      <guid>https://sowon-dev.github.io/2023/05/11/230512regex-seconddigit-decimalpoint/</guid>
+      <pubDate>Thu, 11 May 2023 20:55:13 GMT</pubDate>
+      
+      <description>&lt;p&gt;input태그에 소수점 둘째자리까지만 받고 싶었다. input number 타입을 쓰고 step=”0.01”을 쓰는 방법도 있지만 input타입을 text로 써야하는 상황이라 그냥 정규식을 사용했다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>input태그에 소수점 둘째자리까지만 받고 싶었다. input number 타입을 쓰고 step=”0.01”을 쓰는 방법도 있지만 input타입을 text로 써야하는 상황이라 그냥 정규식을 사용했다.</p><a id="more"></a><h1 id="숫자-소수점-둘째짜리만-입력허용하는-경우"><a href="#숫자-소수점-둘째짜리만-입력허용하는-경우" class="headerlink" title="숫자 소수점 둘째짜리만 입력허용하는 경우"></a>숫자 소수점 둘째짜리만 입력허용하는 경우</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"price"</span> <span class="attr">val</span>=<span class="string">"0"</span> /&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#price"</span>).keyup(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"><span class="keyword">let</span> price = $(<span class="keyword">this</span>).val();</span><br><span class="line"><span class="keyword">const</span> regex = <span class="regexp">/(^/</span>d+$)|(^d&#123;<span class="number">1</span>,&#125;.\d&#123;<span class="number">0</span>,<span class="number">2</span>&#125;$)/g;</span><br><span class="line"><span class="keyword">let</span> resultPrice = price.replace(regex, <span class="string">""</span>);</span><br><span class="line">$(<span class="keyword">this</span>).val(resultPrice);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="숫자입력만-허용하는-경우"><a href="#숫자입력만-허용하는-경우" class="headerlink" title="숫자입력만 허용하는 경우"></a>숫자입력만 허용하는 경우</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"price"</span> <span class="attr">val</span>=<span class="string">"0"</span> /&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#price"</span>).keyup(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"><span class="keyword">let</span> price = $(<span class="keyword">this</span>).val();</span><br><span class="line"><span class="keyword">const</span> regex = <span class="regexp">/[^0-9]/g</span>;</span><br><span class="line"><span class="keyword">let</span> resultPrice = price.replace(regex, <span class="string">""</span>);</span><br><span class="line">$(<span class="keyword">this</span>).val(resultPrice);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>이렇게 처리한다면 input태그에 숫자가 아닌 문자는 입력이 아예 안된다!</p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D/">정규표현식</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2023/05/11/230512regex-seconddigit-decimalpoint/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>count(**)와 count(1) 그리고 count(컬럼명) 차이</title>
@@ -438,29 +461,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/01/26/230127resttemplate-vs-websocket/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[디자인패턴] 옵저버 패턴(observer pattern)이란? 개념,정의</title>
-      <link>https://sowon-dev.github.io/2023/01/24/230125ObserverPattern/</link>
-      <guid>https://sowon-dev.github.io/2023/01/24/230125ObserverPattern/</guid>
-      <pubDate>Tue, 24 Jan 2023 22:13:16 GMT</pubDate>
-      
-      <description>&lt;p&gt;오늘 김팀장님 코드를 보다가 옵저버 패턴을 만났다. 디자인패턴을 잘 모르기때문에 이참에 공부해보았다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>오늘 김팀장님 코드를 보다가 옵저버 패턴을 만났다. 디자인패턴을 잘 모르기때문에 이참에 공부해보았다.</p><a id="more"></a><p>여담으로, 공부해봤지만 디자인 패턴은 여전히 어렵다.</p><h1 id="옵저버-패턴-Observer-pattern-이란"><a href="#옵저버-패턴-Observer-pattern-이란" class="headerlink" title="옵저버 패턴(Observer pattern)이란?"></a>옵저버 패턴(Observer pattern)이란?</h1><p>영단어 observer 뜻 그대로 관찰자와 관련된 패턴이다. 객체의 상태 변화를 관찰하는 관찰자들(옵저버)을 목록에 등록해놓고 상태 변화가 있을때마다 메서드 등을 통해 객체가 직접 목록의 각 옵저버에게 통지(notify)하는 디자인 패턴이다.</p><p><img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Observer.svg" alt="출처 - 나무위키"></p><ul><li>주로 분산 이벤트 핸들링 시스템을 구현하는 데 사용된다. </li><li>발행/구독 모델로 알려져 있기도 하다.</li><li>코틀린에서는 Observer(옵저버)대신 Listener(리스너) 용어를 사용한다.</li></ul><p>자바에서는 옵저버패턴을 위한 클래스와 인터페이스를 제공한다.</p><ul><li><a href="https://docs.oracle.com/javase/8/docs/api/index.html?java/util/Observer.html">docs.oracle - Interface Observer</a></li><li><a href="https://docs.oracle.com/javase/8/docs/api/index.html?java/util/Observable.html">docs.oracle - Class Observable</a></li></ul><p>쉽게 이해할 수 있는 예시는 유튜브 채널(Subject)과 구독자들(Observer)간의 관계이다.<br>유튜브 채널 관리자가 영상을 업로드하면 구독자들에게만 알람이가 가고 구독자가 아닌 사람들에게는 아무런 영향을 끼치지않는다.<br>즉, 객체(Subject)의 상태가 변화하면 Observer 목록에 있는 각 Observer에게 통지(notify)한다.</p><p><br><br><br></p><h1 id="리액트도-옵저버"><a href="#리액트도-옵저버" class="headerlink" title="리액트도 옵저버?"></a>리액트도 옵저버?</h1><p>옵저버패턴을 알수록 리액트가 자꾸 떠올랐다.<br><a href="https://medium.com/@shlee1353/리액트-리덕스-redux-와-observer-패턴-a4aae3468a25">Seungho Lee - 리덕스(Redux)와 Observer 패턴</a>에서 왜 자꾸 리액트가 떠올랐는지 확인할 수 있었다.</p><blockquote><p>리액트 사용시 데이터 관리를 손쉽게 하기 위해 리덕스(redux)를 사용하며, 이는 옵저버 패턴을 기반으로 제작되었습니다. 리덕스 스토어(store)는 애플리케이션의 상태트리(state tree)를 관리하고 있습니다. 스토어 내부에서 상태값이 변하면 그것에 대한 액션을 보내줘야합니다.<br>출처: <a href="https://medium.com/@shlee1353/리액트-리덕스-redux-와-observer-패턴-a4aae3468a25">Seungho Lee - 리덕스(Redux)와 Observer 패턴</a></p></blockquote><p>리액트의 리덕스는 옵저버패턴으로 디자인된 것이었다!<br>지식이 연결되는 느낌! 재밌다!</p><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://ko.wikipedia.org/wiki/%EC%98%B5%EC%84%9C%EB%B2%84_%ED%8C%A8%ED%84%B4">위키백과 - 옵서버 패턴</a></li><li><a href="https://velog.io/@haero_kim/옵저버-패턴-개념-떠먹여드립니다">haero_kim - 옵저버 패턴 개념 떠먹여드립니다</a></li><li><a href="https://velog.io/@hanna2100/디자인패턴-2.-옵저버-패턴-개념과-예제-observer-pattern">hanna2100 - 디자인패턴 2.옵저버 패턴 개념과 예제</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/">디자인패턴</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2023/01/24/230125ObserverPattern/#disqus_thread</comments>
       
     </item>
     

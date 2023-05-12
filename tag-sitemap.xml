@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/%25EC%25A0%2595%25EA%25B7%259C%25ED%2591%259C%25ED%2598%2584%25EC%258B%259D/</loc>
+        <lastmod>2023-05-12T06:05:52.221Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/%25EC%25B0%25A8%25EC%259D%25B4/</loc>
         <lastmod>2023-05-11T04:34:48.726Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -348,13 +355,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/MyBatis/</loc>
         <lastmod>2021-08-05T06:30:25.984Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/%25EC%25A0%2595%25EA%25B7%259C%25ED%2591%259C%25ED%2598%2584%25EC%258B%259D/</loc>
-        <lastmod>2021-08-04T04:35:06.178Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
