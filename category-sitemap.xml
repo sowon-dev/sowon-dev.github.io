@@ -8,6 +8,13 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/JAVA/</loc>
+        <lastmod>2023-05-23T04:33:56.021Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/JavaScript/</loc>
         <lastmod>2023-05-12T06:05:52.221Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -17,13 +24,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/Database/</loc>
         <lastmod>2023-05-11T04:34:48.726Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/JAVA/</loc>
-        <lastmod>2023-05-09T10:23:46.233Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

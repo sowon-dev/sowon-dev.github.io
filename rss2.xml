@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Fri, 12 May 2023 06:05:52 GMT</pubDate>
+    <pubDate>Tue, 23 May 2023 04:33:56 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[JAVA] float, Double 소수점 오류(부동소수점) 해결하기</title>
+      <link>https://sowon-dev.github.io/2023/05/21/230522bigdecimal/</link>
+      <guid>https://sowon-dev.github.io/2023/05/21/230522bigdecimal/</guid>
+      <pubDate>Sun, 21 May 2023 21:42:19 GMT</pubDate>
+      
+      <description>&lt;p&gt;사용자가 기입한 확률을 DB에 넣고 싶었다.&lt;br&gt;자세히 말하자면 사용자가 2라고 입력하면 백분율로 환산하여 DB에는 0.02로 넣고싶었다.&lt;br&gt;그런데 입력된 DB 값을 보니 0.02가 아닌  0.019999999999999999…로 되어있었다.&lt;br&gt;난 정확히 0.02를 넣고싶었는데 무엇이 잘못된걸까?&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>사용자가 기입한 확률을 DB에 넣고 싶었다.<br>자세히 말하자면 사용자가 2라고 입력하면 백분율로 환산하여 DB에는 0.02로 넣고싶었다.<br>그런데 입력된 DB 값을 보니 0.02가 아닌  0.019999999999999999…로 되어있었다.<br>난 정확히 0.02를 넣고싶었는데 무엇이 잘못된걸까?</p><a id="more"></a><h1 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h1><p>마리아DB를 사용하고 있고 Data Type은 float이다.<br>VO는 Double형을 선언했다.</p><ul><li>기존코드<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Testvo</span></span>&#123;</span><br><span class="line">  Double rate;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><p><br><br><br></p><h1 id="문제-원인"><a href="#문제-원인" class="headerlink" title="문제 원인"></a>문제 원인</h1><p>컴퓨터의 메모리는 한정적이라 실수의 소숫점 표현에 제한이 있을 수 밖에 없고 이로인해 소수점이하 계산 오차가 발생한다.<br>이를 해결하기 위해서는 2가지 방법이 있다.</p><ol><li>int, long 정수형타입 치환</li><li>BigDecimal 클래스 사용</li></ol><p>계속 소수점을 이용해야했기에 2번방법을 사용했다.</p><p><br><br><br></p><h1 id="BigDecimal-클래스-사용한-사칙연산-간단-예시"><a href="#BigDecimal-클래스-사용한-사칙연산-간단-예시" class="headerlink" title="BigDecimal 클래스 사용한 사칙연산 간단 예시"></a>BigDecimal 클래스 사용한 사칙연산 간단 예시</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">BigDecimal a = <span class="keyword">new</span> BigDecimal(<span class="string">"7"</span>);</span><br><span class="line">BigDecimal a = <span class="keyword">new</span> BigDecimal(<span class="string">"3"</span>);</span><br><span class="line"></span><br><span class="line">a.add(b);</span><br><span class="line">= <span class="number">10</span></span><br><span class="line"></span><br><span class="line">a.subtract(b)</span><br><span class="line">= <span class="number">4</span></span><br><span class="line"></span><br><span class="line">a.multiply(b);</span><br><span class="line">= <span class="number">21</span></span><br><span class="line"></span><br><span class="line">a.divide(b);</span><br><span class="line">= <span class="number">2.3333</span>...</span><br></pre></td></tr></table></figure><p>다른 사칙연산과 달리 나눗셈을 하기 위해서는 <code>setScale()</code>을 사용해야 정확한 소수점 연산이 가능하다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">BigDecimal <span class="title">setScale</span><span class="params">(<span class="keyword">int</span> newScale)</span></span>;</span><br><span class="line"><span class="function">BigDecimal <span class="title">setScale</span><span class="params">(<span class="keyword">int</span> newScale, <span class="keyword">int</span> roundingMode)</span></span>;</span><br><span class="line"><span class="function">BigDecimal <span class="title">setScale</span><span class="params">(<span class="keyword">int</span> newScale, RoundingMode mode)</span></span>;</span><br></pre></td></tr></table></figure><p>첫번째 파라미터는 표시하고자하는 소수점의 자릿수이고<br>두번째 파라미터는 라운딩모드이고 라운딩모드 상수값은 아래와 같다.</p><table><thead><tr><th align="center">RoudingMode의 상수</th><th align="left">설명</th></tr></thead><tbody><tr><td align="center">CELING</td><td align="left">올림</td></tr><tr><td align="center">FLOOR</td><td align="left">내림</td></tr><tr><td align="center">UP</td><td align="left">양수일 때는 올림, 음수일 때는 내림</td></tr><tr><td align="center">DOWN</td><td align="left">양수일 때는 내림, 음수일 때는 올림</td></tr><tr><td align="center">HALF_UP</td><td align="left">5기준으로 반올림(5이상 올림, 5미만 버림)</td></tr><tr><td align="center">HALF_EVEN</td><td align="left">반올림 자리의 값이 짝수면 HALF_DOWN, 홀수면 HALF_UP</td></tr><tr><td align="center">HALF_DOWN</td><td align="left">6기준으로 반올림(6이상 올림, 6미만 버림)</td></tr><tr><td align="center">UNNECESSARY</td><td align="left">나눗셈의 결과가 딱 떨어지는 수가 아니면, ArithmeticException발생</td></tr></tbody></table><p><br><br><br></p><h1 id="해결코드"><a href="#해결코드" class="headerlink" title="해결코드"></a>해결코드</h1><ul><li>Service 코드</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">BigDecimal feeRate = <span class="keyword">new</span> BigDecimal(vo.getRate());</span><br><span class="line">r.setSacle(<span class="number">6</span>, RoudingMode.HALE_UP);</span><br></pre></td></tr></table></figure><p>해결!</p><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://inpa.tistory.com/entry/JAVA-%E2%98%95-%EC%8B%A4%EC%88%98-%ED%91%9C%ED%98%84%EB%B6%80%EB%8F%99-%EC%86%8C%EC%88%98%EC%A0%90-%EC%9B%90%EB%A6%AC-%ED%95%9C%EB%88%88%EC%97%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0#:~:text=double%EA%B3%BC%20float%EC%9D%98%20%EB%B9%84%EA%B5%90%EC%97%B0%EC%82%B0%20%EB%AC%B8%EC%A0%9C,-%EC%8B%A4%EC%88%98%EB%A5%BC%20%EB%8D%94%ED%95%98%EA%B1%B0%EB%82%98&text=%EC%9E%90%EB%B0%94%EC%9D%98%20float%EB%8A%94%204,%EA%B0%80%20%EB%B0%9C%EC%83%9D%ED%95%9C%EB%8B%A4%EB%8A%94%20%EC%A0%90%EC%9D%B4%EB%8B%A4.">Inpa Dev - 소수 정확히 계산하는 방법</a></li><li><a href="https://blog.naver.com/passionisall/222139065323">작은거인 - 부동소수점의 문제점과 해결책 (BigDecimal의 필요성)</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/JAVA/">JAVA</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2023/05/21/230522bigdecimal/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[JS/jQuery]정규표현식 숫자 소수둘째자리까지 적용하기</title>
@@ -434,33 +455,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/01/29/230130userpk/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[Spring]RestTemplate(레스트템플릿)과 Websocket(웹소켓)차이점</title>
-      <link>https://sowon-dev.github.io/2023/01/26/230127resttemplate-vs-websocket/</link>
-      <guid>https://sowon-dev.github.io/2023/01/26/230127resttemplate-vs-websocket/</guid>
-      <pubDate>Thu, 26 Jan 2023 19:43:38 GMT</pubDate>
-      
-      <description>&lt;p&gt;RestTemplate은 간편하게 Rest 방식 API를 호출할 수 있는 라이브러리이고 Spring 3.0부터 지원한다.&lt;br&gt;따라서 RestTemplate과 Websocket 차이점은 결국 REST API와 Websocket API 차이점이라고 볼 수 있다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>RestTemplate은 간편하게 Rest 방식 API를 호출할 수 있는 라이브러리이고 Spring 3.0부터 지원한다.<br>따라서 RestTemplate과 Websocket 차이점은 결국 REST API와 Websocket API 차이점이라고 볼 수 있다.</p><a id="more"></a><p>가장 잘 알고 있는 차이점은 REST API는 클라이언트의 요청이 없으면 서버는 먼저 말을 걸 수 없지만 웹소켓은 서버가 클라이언트에게 먼저 말(메세지)을 걸수있다.<br>즉, REST API는 클라이언트의 요청이 있어야 서버 응답이 있는 반면에 Websocket API는 클라이언트 요청없이도 서버가 클라이언트에 응답할 수 있다.<br>실무자입자에서는 어떠한 차이가 있을까?</p><p><br><br><br></p><h1 id="REST-API와-Websocket-API-차이점"><a href="#REST-API와-Websocket-API-차이점" class="headerlink" title="REST API와 Websocket API 차이점"></a>REST API와 Websocket API 차이점</h1><ul><li>REST API: <ul><li>동기, 비동기 둘다 지원. </li><li>프레임워크가 에러보드까지 구현을 다 해놓아서 커넥션이 안정적이라고 하는편</li></ul></li><li>Websocket API: <ul><li>동기, 비동기 둘다 지원. </li><li>빠른 응답이 장점. </li><li>서버리소스가 많이 든다.</li><li>커넥션 안정성(커넥션 끊을때까지 커넥션이 안 끊김)</li><li>웹소켓을 쓰면 커멘드패턴에 따라서 규칙을 다 맞춰줘야함. 사람이 직접 해야하는 게 많아서 난이도가 있고 서버 리소스가 많이 들지만 커넥션이 매우 안정적임</li></ul></li></ul><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li>부장님 지식</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%EC%B0%A8%EC%9D%B4/">차이</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/RestTemplate/">RestTemplate</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/Websocket/">Websocket</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2023/01/26/230127resttemplate-vs-websocket/#disqus_thread</comments>
       
     </item>
     
