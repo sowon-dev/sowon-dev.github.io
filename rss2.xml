@@ -9,8 +9,33 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Tue, 23 May 2023 04:33:56 GMT</pubDate>
+    <pubDate>Wed, 07 Jun 2023 07:47:49 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>블록체인구축프로젝트를 끝내며 내가 배운 것</title>
+      <link>https://sowon-dev.github.io/2023/06/06/230607prjtreview9/</link>
+      <guid>https://sowon-dev.github.io/2023/06/06/230607prjtreview9/</guid>
+      <pubDate>Tue, 06 Jun 2023 16:34:42 GMT</pubDate>
+      
+      <description>&lt;p&gt;처음 해보는 대규모 파견 프로젝트! 파견도 처음이었고 블록체인, 앱, 웹, 운영등 다양한 분야의 개발자들과 협업하는 것도 처음이었다. 7개월간 모든 것이 신기하고 재미있었다.&lt;br&gt;이번 프로젝트에서는 꼭 웹 백엔드를 맡고싶었는데 팀장님이 믿고 맡겨주셨다! 감사합니다 팀장님!&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>처음 해보는 대규모 파견 프로젝트! 파견도 처음이었고 블록체인, 앱, 웹, 운영등 다양한 분야의 개발자들과 협업하는 것도 처음이었다. 7개월간 모든 것이 신기하고 재미있었다.<br>이번 프로젝트에서는 꼭 웹 백엔드를 맡고싶었는데 팀장님이 믿고 맡겨주셨다! 감사합니다 팀장님!</p><a id="more"></a><p>외부 API와 연동API를 개발하면서 다른 개발자가 써놓은 API명세서 읽고 이해하고 수정사항 요청하는 것도 재밌는 경험이었다.<br>외부 API팀에서 RestAPI로 설계하셨다고했는데 몇몇 delete메서드에 body param을 넣으셔서 “Restful하지않은데 그냥 해주신 그대로 저도 연계API만들면 될까요?”하고 말씀드렸더니 고려해보시곤 path variable만 받는 걸로 수정해주셨다.뭔가 뿌듯~! 제대로 RestAPI를 이해하고 있구나 나자신 칭찬해!</p><p>대부분 나보다 연차가 많으신 시니어개발자분들과 협업하면서 많은 것을 배울 수 있었다. good example이 많았지만 bad example도 있다. 파견이 처음인 나에겐 여러모로 모든 해결과정들이 큰 도움이 되었다. 특히 업무를 대하는 태도와 갑사를 대하는 자세에 대해 많이 배웠다. 찐 어른들… 유연하게 대처하는 자세가 멋있었다.</p><p><br><br><br></p><h1 id="keep"><a href="#keep" class="headerlink" title="keep"></a>keep</h1><p>현재 만족하고 있는 부분과 계속해서 이어갔으면 하는 부분</p><ol><li>레거시 코드를 분석하고 리팩토링하는 능력: 레거시 프로젝트를 고도화하면서 블록체인시스템을 추가하는 프로젝트였기에 레거시 코드를 정확히 읽고 추가 및 수정해서 기존 기능은 문제 없이 사용할 수 있어야하는 것이 이번 작업의 핵심이었다. 처음 해보는 금융관련 도메인이었는데 평소 은행, 증권사 앱을 많이 사용해서 그런지 친숙하게 느껴졌다. 다양한 분야에 관심을 가지고 있어야겠다는 생각이 들었다. </li><li>다른 분야 개발자와 협업하는 능력: 처음에는 용어 정리도 안되고 동일한 내용을 다른 명칭을 사용해서 소통에 혼선이 있었는데 시간을 내어 타 팀 개발자분들과 용어를 맞추고 공통코드 및 공통 용어 적립한 뒤에는 의사소통이 원활하게 이루어졌다. 또한 요구사항 기능을 내 서비스에서만 생각하지않고 타팀 프로세스까지 고려할 수 있게 되었다. 예를 들어, 구매하기기능을 구현할때 내가 담당한 서비스 로직에서만 국한된게 아니라 타팀 서비스에선 해당 기능이 어떻게 구현되는 지까지 고려하여 내 서비스를 설계하다보니 처음에는 너무 헷갈렸는데 나중에는 자연스럽게 프로젝트 전체 흐름을 이해할 수 있게 되었고 아직 정의되지 않은 부분은 확장성있게 짤 수 있게 되었다.</li><li>확장성있는 공통함수 설계 능력: 외부연계API를 만들면서 중복코드를 최대한 없애면서도 언제 생길지 모르는 갑사의 추가 요구사항에 대비해 확장성있게 공통함수로 정의하는데 각고의 노력을 기울였다. 노력이 빛을 봤는지 대부분의 추가, 수정사항에서도 공통함수를 건들이는 일 없이 잘 처리할 수 있었다.팀장님이 잠깐 해당 코드 리뷰도 해주셨는데 은근 튼튼하게 잘 짰다고 칭찬해주셨다. 전부 팀장님한테 배운건데도 칭찬해주셔서 뿌듯했다. 팀장님의 칭찬은 날 춤추게 해~💃</li><li>잘잘못따지기 전에 버그부터 해결하는 마인드: 이번 프로젝트에서는 개발시간이 턱없이 부족했기에 시간단축이 생명이었는데 많은 개발자들이 한 리포에 커밋을 하다보니 잘못된 커밋이나 머지, 엘리야스실수등으로 인해 런타임오류가 발생해 원인을 찾느라 시간을 많이 쓰게 되었다. 이때 잘잘못을 따지고 싶은 마음을 굴뚝같았지만 잘잘못을 따지기보단 일단 빨리 해결부터 하자 마인드가 확고해졌다. 누가 잘못 커밋했는 지 파헤치기전에 일단 버그부터 잡았다. 이는 차장님의 영향이 컸다. 누군지 잡아낸다고 하시면서도 “지금 알아서 뭐하겠어~ 귀찮다~” 하며 버그부터 잡는 모습이 크게 와닿았기때문이다. 앞으로도 해결부터하는 개발자가 되어야지!</li></ol><p><br><br><br></p><h1 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h1><p>개선이 필요하다고 생각되는 부분</p><ol><li>jsp화면을 다 못 끝낸 것: 백엔드 작업하다가 화면에 도움이 필요하여 jsp화면 몇개를 만들었다. 다중 팝업에 데이터를 제이쿼리로만 이동 시켜야해서 굉장히 재미없었다. 흥미를 못 느끼다보니 속도가 늦어졌고 결국 맡았던 3개 화면 중 1개를 다 끝내지 못해서 결국 차장님이 도와주셨고 나는 기능테스트에 투입되어 버그를 잡았다. 아무리 흥미가 없더라도 맡은 업무는 빠르게 쳐내야하는데 이 부분이 개선되어야한다.</li><li>파일서비스를 욕심내지 못한 것: 기능테스트에 치여서 파일서비스 개발에 욕심을 내지 못했다. 잘 만들려면 한도끝도없이 잘 만들어 낼 수 있는 부분인다. File 클래스를 다뤄본 적이 거의 없어서 한 번은 꼭 필요한 부분이다.</li></ol><p><br><br><br></p><h1 id="Try"><a href="#Try" class="headerlink" title="Try"></a>Try</h1><p>Problem의 해결책이 될 수 있는 부분</p><ol><li>다중팝업 jsp화면을 다루는 연습할 것: 테이블이 각 화면마다 있는 다중 팝업데이터 다루는 연습이 필요하다.</li><li>파일서비스 따로 만들어볼 것: 깃헙 리포생성해서 File객체로 오픈소스도움없이 파일 업로드/다운로드 서비스를 따로 만들어봐야겠다. 멀티파트써서 이미지랑 텍스트 다 되게끔 만들어봐야겠다.</li></ol>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2023/06/06/230607prjtreview9/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[JAVA] float, Double 소수점 오류(부동소수점) 해결하기</title>
@@ -434,27 +459,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/01/30/230131iaas-paas-saas/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>유저테이블의 PK에 휴대전화번호를 쓰면 안되는 이유</title>
-      <link>https://sowon-dev.github.io/2023/01/29/230130userpk/</link>
-      <guid>https://sowon-dev.github.io/2023/01/29/230130userpk/</guid>
-      <pubDate>Sun, 29 Jan 2023 20:28:59 GMT</pubDate>
-      
-      <description>&lt;p&gt;가장 메인이 되는 User테이블을 만들때 PK로 휴대전화번호를 써도 될까?&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>가장 메인이 되는 User테이블을 만들때 PK로 휴대전화번호를 써도 될까?</p><a id="more"></a><h1 id="실무에서-user테이블의-pk는-뭐로-쓸까"><a href="#실무에서-user테이블의-pk는-뭐로-쓸까" class="headerlink" title="실무에서 user테이블의 pk는 뭐로 쓸까?"></a>실무에서 user테이블의 pk는 뭐로 쓸까?</h1><p>가장 메인이 되는 user테이블의 pk가 개인정보(전화번호 등)이 되어서는 안된다.<br>개인정보보호법에 따라 DB에 저장할때 비밀번호처럼 항상 암호화해서 저장해야한다.<br>따라서 UUID, 일련번호, 이메일을 PK로 주로 사용한다.</p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
-      
-      
-      
-      <comments>https://sowon-dev.github.io/2023/01/29/230130userpk/#disqus_thread</comments>
       
     </item>
     
