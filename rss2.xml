@@ -9,8 +9,35 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Fri, 09 Jun 2023 06:10:09 GMT</pubDate>
+    <pubDate>Tue, 13 Jun 2023 06:50:12 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[OS/WINDOW]포트가 이미 사용중이라고 서버런이 안될때 포트 확인하는 방법</title>
+      <link>https://sowon-dev.github.io/2023/06/12/230613netstat/</link>
+      <guid>https://sowon-dev.github.io/2023/06/12/230613netstat/</guid>
+      <pubDate>Mon, 12 Jun 2023 19:24:42 GMT</pubDate>
+      
+      <description>&lt;p&gt;오랜만에 프로젝트 셋팅하는데 다른 곳에서는 서버 사용하고 있지 않은데도 포트 80이 이미 사용중이라고 서버 런에 계속 실패했다.&lt;br&gt;구글링하다가도 잘 모르겠어서 결국 과장님에게 도움을 요청했고 1분만에 찾아주셨다.&lt;br&gt;세상에 천재는 참 많다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>오랜만에 프로젝트 셋팅하는데 다른 곳에서는 서버 사용하고 있지 않은데도 포트 80이 이미 사용중이라고 서버 런에 계속 실패했다.<br>구글링하다가도 잘 모르겠어서 결국 과장님에게 도움을 요청했고 1분만에 찾아주셨다.<br>세상에 천재는 참 많다.</p><a id="more"></a><h1 id="1-1-현재-사용중인-포트-확인하기"><a href="#1-1-현재-사용중인-포트-확인하기" class="headerlink" title="1-1 현재 사용중인 포트 확인하기"></a>1-1 현재 사용중인 포트 확인하기</h1><p><code>Win(윈도우키) + R</code> 후 열기 인풋란에 <code>cmd</code>입력해서 윈도우 명령프롬프트 창을 연다.<br>아래 명령어를 입력하면 현재 사용중인 포트 전부를 확인할 수 있다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -ano</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="1-2-현재-사용중인-포트-중-특정-포트만-확인하기"><a href="#1-2-현재-사용중인-포트-중-특정-포트만-확인하기" class="headerlink" title="1-2 현재 사용중인 포트 중 특정 포트만 확인하기"></a>1-2 현재 사용중인 포트 중 특정 포트만 확인하기</h1><p>아래 명령어를 입력하고 찾고싶은 포트번호를 입력하면 된다.<br>예를 들어 <code>8080</code>이 들어간 모든 포트를 리스트업해보고싶다면 <code>netstat -ano | findstr &quot;8080&quot;</code>를 입력한다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">netstat -ano | findstr &quot;포트번호&quot;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 포트 8080 예시</span><br><span class="line">netstat -ano | findstr &quot;8080&quot;</span><br></pre></td></tr></table></figure><p>검색결과가 없으면 사용중인 포트가 아니다.</p><table><thead><tr><th align="center">포트상태</th><th align="center">의미</th></tr></thead><tbody><tr><td align="center">LISTENING</td><td align="center">열린 포트</td></tr><tr><td align="center">CLOSED</td><td align="center">연결이 닫힌 포트</td></tr><tr><td align="center">ESTABLISHED</td><td align="center">연결 중인 포트</td></tr></tbody></table><p>포트상태가 <code>LISTENING</code> 이면 사용중인 포트이다. 사용중이라면 PID를 기억해놓는다.</p><p><br><br><br></p><h1 id="2-작업관리자를-통해서-해당-포트를-사용중인-서비스-종료"><a href="#2-작업관리자를-통해서-해당-포트를-사용중인-서비스-종료" class="headerlink" title="2 작업관리자를 통해서 해당 포트를 사용중인 서비스 종료"></a>2 작업관리자를 통해서 해당 포트를 사용중인 서비스 종료</h1><p><code>Ctrl + Shift + ESC</code>를 통해 작업관리자를 연다.<br><code>세부정보</code>탭을 클릭하면 PID를 확인할 수 있다.<br>동일한 PID 서비스를 찾은 뒤 우클릭해서 <code>작업끝내기</code>를 클릭하면 해결!</p><p><br><br><br></p><h1 id="3-근본원인-찾기-gt-IIS"><a href="#3-근본원인-찾기-gt-IIS" class="headerlink" title="3 근본원인 찾기 -&gt; IIS"></a>3 근본원인 찾기 -&gt; IIS</h1><p>일시적인 해결책말고 좀 더 근본적인 원인을 찾아봤다.<br>문제의 원인은 IIS서비스가 자동실행이 되어 80포트를 사용하고 있었기에 톰캣이 80포트로 실행이 안됐었다.<br>따라서 IIS를 종료해주었다.</p><p><br><br><br></p><h1 id="4-IIS-종료하기"><a href="#4-IIS-종료하기" class="headerlink" title="4 IIS 종료하기"></a>4 IIS 종료하기</h1><p><code>Win(윈도우키) + R</code> 후 열기 인풋란에 <code>iis</code>입력해서 IIS 관리자 창을 연다.<br>왼쪽 <code>연결</code> 패널에서 내 컴퓨터를 더블클릭하면 <code>애플리케이션 풀</code>과 <code>사이트</code>가 하위목록으로 나온다.<br>이 중 <code>사이트</code>를 클릭한 뒤 <code>바인딩</code> 열에 80포트가 있는 지 확인하고 해당 행을 클릭한 뒤 우클릭 혹은 오른쪽 <code>작업</code>패널에서 <code>웹사이트관리 - 중지</code>해주면 된다.<br>해결~!</p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Operating-Systeming/">Operating Systeming</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Tomcat/">Tomcat</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/Port/">Port</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%A5%98%EC%9D%BC%EC%A7%80/">오류일지</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2023/06/12/230613netstat/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>블록체인구축프로젝트를 끝내며 내가 배운 것</title>
@@ -436,29 +463,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/02/01/230202db-cardinality/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>IaaS, PaaS, SaaS 차이</title>
-      <link>https://sowon-dev.github.io/2023/01/30/230131iaas-paas-saas/</link>
-      <guid>https://sowon-dev.github.io/2023/01/30/230131iaas-paas-saas/</guid>
-      <pubDate>Mon, 30 Jan 2023 22:58:49 GMT</pubDate>
-      
-      <description>&lt;p&gt;프로젝트에서 사용중인 클라우드네이티브 서비스가 있는데 PaaS서비스이다. 예전에 이와 관련해서 공부한 적이 있는데 기록하지 않으니 벌써 기억이 가물가물하다. 이참에 다시 정리해보았다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>프로젝트에서 사용중인 클라우드네이티브 서비스가 있는데 PaaS서비스이다. 예전에 이와 관련해서 공부한 적이 있는데 기록하지 않으니 벌써 기억이 가물가물하다. 이참에 다시 정리해보았다.</p><a id="more"></a><p>참고로 클라우드네이티브가 무엇인지 궁금하다면 블로그 글 <a href="https://sowon-dev.github.io/2023/01/17/230118cloudnative/">클라우드 네이티브(Cloud Native)란? 개념,정의</a>을 참조하면 된다.</p><h1 id="한눈에-비교하기"><a href="#한눈에-비교하기" class="headerlink" title="한눈에 비교하기"></a>한눈에 비교하기</h1><p><img src="https://www.redhat.com/cms/managed-files/iaas-paas-saas-diagram3-1638x1046.png" alt="출처: redhat"></p><p><br><br><br></p><h1 id="IaaS-Infrastructure-as-a-Service"><a href="#IaaS-Infrastructure-as-a-Service" class="headerlink" title="IaaS(Infrastructure as a Service)"></a>IaaS(Infrastructure as a Service)</h1><ul><li>정보시스템의 모든 인프라를 인터넷상에서 제공한다. </li><li>언뜻 호스팅 서비스같아오이지만 IaaS의 경우,서버를 이용할 때에 필요한 하드웨어의 스펙이나 OS등을 사용자가 자유롭게 선정할 수 있다.</li><li>장점: 환경 구축 자유도가 높다, 시스템관리자의 부하가 적다.</li><li>단점: 환경 구축에 전문성 필요, 유지보수 범위가 넓다. </li></ul><p><br><br><br></p><h1 id="PaaS-Platform-as-a-Service"><a href="#PaaS-Platform-as-a-Service" class="headerlink" title="PaaS(Platform as a Service)"></a>PaaS(Platform as a Service)</h1><ul><li>정의: 개발 환경이 플랫폼화되어있는 서비스<ul><li>플랫폼화란? 클라우드 환경의 서버, OS, 미들웨어, 데이터베이스 등 애플리케이션 개발에 필요한 환경이 플랫폼으로 갖추어져 있음.</li></ul></li><li>장점: 개발환경의 플랫폼화로 인해 서비스·어플리케이션의 개발에 전념 가능, 초기 비용 및 시간 비용 절감 가능</li><li>단점: 개발환경의 커스텀마이징이 낮다.</li></ul><p><br><br><br></p><h1 id="SaaS-Software-as-a-Service"><a href="#SaaS-Software-as-a-Service" class="headerlink" title="SaaS(Software as a Service)"></a>SaaS(Software as a Service)</h1><ul><li>정의: 패키지 제품으로 아예 서비스를 제공<ul><li>예시: Office365, Gmail 등등</li></ul></li><li>장점: 필요한 서비스를 월별요금제 등으로 결제해서 즉시 사용 가능</li><li>단점: 커스터마이징 불가, 데이터마이그레이션 어려움.</li></ul><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://www.redhat.com/ko/topics/cloud-computing/what-is-paas">https://www.redhat.com/ko/topics/cloud-computing/what-is-paas</a></li><li><a href="https://tagilog.tistory.com/1138">https://tagilog.tistory.com/1138</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Network/">Network</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%EC%B0%A8%EC%9D%B4/">차이</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2023/01/30/230131iaas-paas-saas/#disqus_thread</comments>
       
     </item>
     
