@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Tue, 13 Jun 2023 06:50:12 GMT</pubDate>
+    <pubDate>Wed, 14 Jun 2023 06:01:11 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[HEXO]링크 미리보기 이미지 변경하기(ft.Open Graph)</title>
+      <link>https://sowon-dev.github.io/2023/06/13/230614opengrap-img/</link>
+      <guid>https://sowon-dev.github.io/2023/06/13/230614opengrap-img/</guid>
+      <pubDate>Tue, 13 Jun 2023 19:31:39 GMT</pubDate>
+      
+      <description>&lt;p&gt;내 블로그글의 링크를 복사하여 카카오톡에 공유하는데 미리보기 이미지가 hexo-theme-icarus 이었다.&lt;br&gt;이 부분을 커스텀하고 싶어서 head 소스에서 찾아보니 Open Graph가 담당하고 있었다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>내 블로그글의 링크를 복사하여 카카오톡에 공유하는데 미리보기 이미지가 hexo-theme-icarus 이었다.<br>이 부분을 커스텀하고 싶어서 head 소스에서 찾아보니 Open Graph가 담당하고 있었다.</p><a id="more"></a><h1 id="메타태그란"><a href="#메타태그란" class="headerlink" title="메타태그란?"></a>메타태그란?</h1><p>메타태그는 HEAD사이에 작성하는 웹사이트의 안내자이다.<br>대부분의 포털사이트는 웹 사이트의 제목, 태그의 내용, 본문의 첫 100여 단어등을 검색한 후 사용자의 검색어와 비교해서 검색 결과를 나열해준다.</p><ul><li>참고: <a href="https://sowon-dev.github.io/2020/07/09/200710webi/">meta태그, 내부링크, id와 name속성의 차이</a></li><li>개념글로 강추: <a href="https://blog.ab180.co/posts/open-graph-as-a-website-preview">링크의 미리보기 제목, 설명, 이미지를 결정하는 open graph 태그</a></li></ul><p>메타태그를 편하게 사용할 수 있도록 정의해놓은 프로토콜이 바로 Open Graph이다.</p><p><br><br><br></p><h1 id="Open-Graph"><a href="#Open-Graph" class="headerlink" title="Open Graph"></a>Open Graph</h1><p>Open Graph는 HTML 파일의 메타정보를 쉽게 표시하기 위해서 메타정보에 해당하는 제목, 설명, 이미지 등 다양한 요소들을 통일해서 사용할 수 있도록 정의해놓은 프로토콜</p><table><thead><tr><th align="center">오픈그래프 기본 태그</th><th align="left">설명</th></tr></thead><tbody><tr><td align="center">og:title</td><td align="left">사이트의 제목</td></tr><tr><td align="center">og:type</td><td align="left">사이트의 종류로 <a href="https://ogp.me/#types">type 에 들어갈 수 있는 값 참고 클릭</a></td></tr><tr><td align="center">og:image</td><td align="left">사이트 링크 미리보기 이미지</td></tr><tr><td align="center">og:url</td><td align="left">사이트의 대표 url</td></tr></tbody></table><p><br><br><br></p><h1 id="헥소블로그에-적용하기"><a href="#헥소블로그에-적용하기" class="headerlink" title="헥소블로그에 적용하기"></a>헥소블로그에 적용하기</h1><p>미리보기 이미지를 하나로 고정하고 싶다면 <code>image: /img/고정이미지이름.png</code>를 입력하면된다.<br>하지만 나는 썸네일이 있는 게시글은 썸네일이 미리보기 이미지로 보이고 썸네일이 없다면 내가 지정한 기본 이미지로 보이고 싶었다.</p><ul><li>config.yml<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">head:</span><br><span class="line">    # URL or path to the website's icon</span><br><span class="line">    favicon: /img/star.svg</span><br><span class="line">    # Open Graph metadata</span><br><span class="line">    # https://hexo.io/docs/helpers.html#open-graph</span><br><span class="line">    open_graph:</span><br><span class="line">        # Page title (og:title) (optional)</span><br><span class="line">        # You should leave this blank for most of the time</span><br><span class="line">        title: </span><br><span class="line">        # Page type (og:type) (optional)</span><br><span class="line">        # You should leave this blank for most of the time</span><br><span class="line">        type: article</span><br><span class="line">        # Page URL (og:url) (optional)</span><br><span class="line">        # You should leave this blank for most of the time</span><br><span class="line">        url: </span><br><span class="line">        # Page cover (og:image) (optional)</span><br><span class="line">        # You should leave this blank for most of the time</span><br><span class="line">        image: </span><br><span class="line">        # Site name (og:site_name) (optional)</span><br><span class="line">        # You should leave this blank for most of the time</span><br><span class="line">        site_name: </span><br><span class="line">        # Page author (article:author) (optional)</span><br><span class="line">        # You should leave this blank for most of the time</span><br><span class="line">        author: sowon-dev</span><br></pre></td></tr></table></figure></li></ul><p><br><br><br></p><h1 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h1><p>하지만 나는 썸네일이 있는 게시글은 썸네일이 미리보기 이미지로 보이고 썸네일이 없다면 내가 지정한 기본 이미지로 보이고 싶었다.<br>아래 경로의  <code>og_image.png</code> 찾은 뒤 내가 원하는 이미지로 바꿔치기 해주면 해결!</p><ul><li>경로: public/img/og_image.png</li></ul><p><br><br><br></p><h1 id="카카오톡-미리보기에는-여전히-반영이-안된다면"><a href="#카카오톡-미리보기에는-여전히-반영이-안된다면" class="headerlink" title="카카오톡 미리보기에는 여전히 반영이 안된다면?"></a>카카오톡 미리보기에는 여전히 반영이 안된다면?</h1><p>카카오톡에서 만든 공유 디버거에 해당 글 주소를 입력하면 OG(Open Graph) 프로토콜을 통해 파싱하고 스크랩 결과도 친절하게 알려준다.<br>여기서 캐시 초기화를 누르면 카카오톡 미리보기가 반영된다!</p><ul><li><a href="https://developers.kakao.com/tool/debugger/sharing">공유 디버거</a></li></ul><p>카카오 천재들….덕분에 넘 편하다</p><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://hexo.io/docs/helpers.html#open-graph">hexo 공식문서 open-graph</a></li><li><a href="https://ogp.me/">The Open Graph protocol 공식문서</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/HTML-CSS/">HTML&amp;CSS</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Hexo/">Hexo</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2023/06/13/230614opengrap-img/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[OS/WINDOW]포트가 이미 사용중이라고 서버런이 안될때 포트 확인하는 방법</title>
@@ -442,27 +465,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/02/02/230203Btree/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>카디널리티(Cardinality) 개념, 정의</title>
-      <link>https://sowon-dev.github.io/2023/02/01/230202db-cardinality/</link>
-      <guid>https://sowon-dev.github.io/2023/02/01/230202db-cardinality/</guid>
-      <pubDate>Wed, 01 Feb 2023 20:04:48 GMT</pubDate>
-      
-      <description>&lt;p&gt;오늘 팀장님에게 sql 작성할때 where에 PK컬럼뿐만 아니라 다른 컬럼을 추가로 조건을 걸면 조회성능에 더 좋은지 문의드렸다.&lt;br&gt;PK컬럼은 항상 우선순위로 검색이 되기에 이외 컬럼을 추가한다고해서 조회성능이 좋아지지않는다고 알려주셨다. 그리고 카디널리티 개념을 알려주셨다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>오늘 팀장님에게 sql 작성할때 where에 PK컬럼뿐만 아니라 다른 컬럼을 추가로 조건을 걸면 조회성능에 더 좋은지 문의드렸다.<br>PK컬럼은 항상 우선순위로 검색이 되기에 이외 컬럼을 추가한다고해서 조회성능이 좋아지지않는다고 알려주셨다. 그리고 카디널리티 개념을 알려주셨다.</p><a id="more"></a><p>카디널리티 개념이 흥미로워서 정리해보았다.</p><h1 id="정의"><a href="#정의" class="headerlink" title="정의"></a>정의</h1><p>카디널리티(Cardinality)는 전체 행에 대한 특정 컬럼의 중복 수치를 나타내는 지표이다.</p><ul><li>중복도가 낮으면 카디널리티가 높다 e.g. 휴대전화번호, 주민등록번호</li><li>중복도가 높으면 카디널리티가 낮다 e.g. 이름(동명이인)</li></ul><p>여기서 중요한 개념은 카디널리티는 상대적이라는 것이다. 카디널리티는 데이터에 따라 상대적이기때문에 개발DB에서는 카디널리티가 낮아도 운영DB에서는 카디널리티가 높을 수 있다. </p><p><br><br><br></p><h1 id="활용"><a href="#활용" class="headerlink" title="활용"></a>활용</h1><p>DB에서 인덱스를 걸 때 최대한 많은 데이터가 걸러져야 성능이 좋다.<br>인덱스로 선택된 데이터가 많을수록 full scan이 되므로 성능이 좋지않다.<br><br><br>즉, 여러 컬럼을 동시에 인덱싱할때는 카디널리티가 높은 컬럼을(중복이 적은 컬럼을) 우선순위로 두는 것이 인덱싱 전략에 유리하다.<br>다만, 인덱스 키를 많이 사용하게 되면 공간 효울이 낮아지게 된다.</p><p><br><br><br></p><h1 id="공간효율이-무엇일까"><a href="#공간효율이-무엇일까" class="headerlink" title="공간효율이 무엇일까?"></a>공간효율이 무엇일까?</h1><p>여기서 인덱스(index)란 DB테이블의 검색속도를 향상시키기위한 자료구조로 책 뒤편의 단어와 쪽수를 기재한 색인과 비슷하다.<br>색인이 책에서 어느정도 비중을 차지할 수 있듯 인덱스를 관리하기 위해선 DB의 약 10%에 해당하는 저장공간이 필요하다.<br>따라서, 인덱스키를 많이 걸수록 공간효율이 좋지않다.</p><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li>팀장님 지식</li><li><a href="https://soft.plusblog.co.kr/87#:~:text=%EC%B9%B4%EB%94%94%EB%84%90%EB%A6%AC%ED%8B%B0(Cardinality)%EB%8A%94%20%ED%8A%B9%EC%A0%95%20%EB%8D%B0%EC%9D%B4%ED%84%B0,%EA%B2%BD%EC%9A%B0%20%EC%B9%B4%EB%94%94%EB%84%90%EB%A6%AC%ED%8B%B0%EB%8A%94%202%EB%8B%A4">https://soft.plusblog.co.kr/87#:~:text=%EC%B9%B4%EB%94%94%EB%84%90%EB%A6%AC%ED%8B%B0(Cardinality)%EB%8A%94%20%ED%8A%B9%EC%A0%95%20%EB%8D%B0%EC%9D%B4%ED%84%B0,%EA%B2%BD%EC%9A%B0%20%EC%B9%B4%EB%94%94%EB%84%90%EB%A6%AC%ED%8B%B0%EB%8A%94%202%EB%8B%A4</a>.</li><li><a href="https://itholic.github.io/database-cardinality/">https://itholic.github.io/database-cardinality/</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
-      
-      
-      
-      <comments>https://sowon-dev.github.io/2023/02/01/230202db-cardinality/#disqus_thread</comments>
       
     </item>
     

@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/Hexo/</loc>
+        <lastmod>2023-06-14T06:01:11.349Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/%25EC%2598%25A4%25EB%25A5%2598%25EC%259D%25BC%25EC%25A7%2580/</loc>
         <lastmod>2023-06-13T06:50:12.175Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -369,13 +376,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/APK/</loc>
         <lastmod>2021-07-02T02:17:52.634Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/Hexo/</loc>
-        <lastmod>2021-04-26T13:58:32.927Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
