@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Tue, 20 Jun 2023 04:52:57 GMT</pubDate>
+    <pubDate>Wed, 21 Jun 2023 08:43:48 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[WIP/JAVA/Spring]BeanUtil</title>
+      <link>https://sowon-dev.github.io/2023/06/20/230621beanutil/</link>
+      <guid>https://sowon-dev.github.io/2023/06/20/230621beanutil/</guid>
+      <pubDate>Tue, 20 Jun 2023 23:30:42 GMT</pubDate>
+      
+      <description>&lt;p&gt;이렇게 좋은 유틸이 있었다니 왜 몰랐지!&lt;br&gt;클래스들을 서로 복사하는 작업을 해야하는데 그때마다 엄청난 set때문에 가독성도 떨어지고 코드도 길어지고 참 마음에 안들었다.&lt;br&gt;차장님이 쓴 코드를 읽을 기회가 있었는데 BeanUtil를 이용해서 한 줄로 간결하게 짜여진 코드를 보고 감동했다!&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>이렇게 좋은 유틸이 있었다니 왜 몰랐지!<br>클래스들을 서로 복사하는 작업을 해야하는데 그때마다 엄청난 set때문에 가독성도 떨어지고 코드도 길어지고 참 마음에 안들었다.<br>차장님이 쓴 코드를 읽을 기회가 있었는데 BeanUtil를 이용해서 한 줄로 간결하게 짜여진 코드를 보고 감동했다!</p><a id="more"></a><p>유레카! 내가 찾던 것이 바로 이거야!<br>그래서 BeanUtils에 대해 공부해봤다.</p><h1 id="Class-BeanUtils"><a href="#Class-BeanUtils" class="headerlink" title="Class BeanUtils"></a>Class BeanUtils</h1><p>스프링에서 기본으로 제공해주는 메소드로서 객체를 쉽고 간결하게 복사할 수 있다. 너무너무 편하다!</p><ul><li>패키지: org.springframework.beans</li></ul><p><br><br><br></p><h1 id="기본형"><a href="#기본형" class="headerlink" title="기본형"></a>기본형</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">copyProperties(Object source, Object target)</span><br><span class="line">source - 원본 객체</span><br><span class="line">target - 복사 객체</span><br></pre></td></tr></table></figure><p>예시를 살펴보자</p><p>(작성중)</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/beans/BeanUtils.html">docs.spring.io/spring-framework</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2023/06/20/230621beanutil/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[HEXO]링크공유하기 버튼을 헥소블로그에 커스텀하게 적용하기(ft.AddToAny)</title>
@@ -442,29 +463,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/02/13/230214integervalueof/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>String.valueOf() vs toString() 차이 알고쓰자</title>
-      <link>https://sowon-dev.github.io/2023/02/06/230207stringvalueof-vs-tostring/</link>
-      <guid>https://sowon-dev.github.io/2023/02/06/230207stringvalueof-vs-tostring/</guid>
-      <pubDate>Mon, 06 Feb 2023 16:41:56 GMT</pubDate>
-      
-      <description>&lt;p&gt;비슷한 역할을 하지만 결과는 다른 두 메서드 String.valueOf()와 Object.toString()의 차이에 대해 알아보자.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>비슷한 역할을 하지만 결과는 다른 두 메서드 String.valueOf()와 Object.toString()의 차이에 대해 알아보자.</p><a id="more"></a><h1 id="차이점-Null처리"><a href="#차이점-Null처리" class="headerlink" title="차이점: Null처리"></a>차이점: Null처리</h1><p>가장 큰 차이점은 null처리이다. null처리때문에 보통 Object.toString()을 많이 쓴다. 클라이언트는 null을 볼 필요가 없기때문이다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Object testObj = <span class="keyword">null</span>; </span><br><span class="line"></span><br><span class="line">System.out.println(String.valueOf(testObj)); </span><br><span class="line"><span class="comment">// 결과: null</span></span><br><span class="line"></span><br><span class="line">System.out.println(testObj.toString()); </span><br><span class="line"><span class="comment">// 결과: NullPointerException 오류 발생</span></span><br></pre></td></tr></table></figure><ul><li>String.valueOf(): null인 경우 문자열null을 만들어서 출력<ul><li>null체크: “null”.equals(string) 확인 필수</li></ul></li><li>Object.toString(): null인 경우 NPE 발생<ul><li>Onject의 값이 String타입이 아니어도 출력한다.</li></ul></li></ul><p><br><br><br></p><h1 id="결론"><a href="#결론" class="headerlink" title="결론"></a>결론</h1><p>NPE를 방지하고 싶다면 String.valueOf()를 사용하고 널체크를 꼭 해줘야한다. </p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/JAVA/">JAVA</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%EC%B0%A8%EC%9D%B4/">차이</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2023/02/06/230207stringvalueof-vs-tostring/#disqus_thread</comments>
       
     </item>
     
