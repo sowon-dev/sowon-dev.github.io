@@ -9,7 +9,15 @@
 
     <url>
         <loc>https://sowon-dev.github.io/2023/06/20/230621beanutil/</loc>
-        <lastmod>2023-06-21T08:43:48.557Z</lastmod>
+        <lastmod>2023-06-22T06:09:02.149Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/09/13/opensourceList/</loc>
+        <lastmod>2023-06-22T04:56:33.312Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -2562,14 +2570,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/11/16/201117techbloglist/</loc>
         <lastmod>2020-11-17T07:38:32.291Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/09/13/opensourceList/</loc>
-        <lastmod>2020-11-08T12:52:07.153Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

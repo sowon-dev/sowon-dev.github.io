@@ -3,6 +3,20 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/List/</loc>
+        <lastmod>2023-06-22T04:56:33.312Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/GIT/</loc>
+        <lastmod>2023-06-22T04:56:33.312Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/Hexo/</loc>
         <lastmod>2023-06-20T04:52:57.469Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -61,13 +75,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/Backjoon/</loc>
         <lastmod>2023-04-11T06:22:32.185Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/GIT/</loc>
-        <lastmod>2023-03-22T04:09:25.860Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -222,13 +229,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/C/</loc>
         <lastmod>2022-10-29T15:44:57.076Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/List/</loc>
-        <lastmod>2022-09-09T10:09:07.888Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
