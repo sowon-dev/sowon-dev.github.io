@@ -9,7 +9,15 @@
 
     <url>
         <loc>https://sowon-dev.github.io/2023/06/20/230621beanutil/</loc>
-        <lastmod>2023-06-22T06:25:35.430Z</lastmod>
+        <lastmod>2023-06-23T04:41:23.733Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2023/04/06/230407removeduplicatevalueinlist/</loc>
+        <lastmod>2023-06-23T04:36:32.664Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -106,14 +114,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2023/04/09/230410kafka/</loc>
         <lastmod>2023-04-10T07:45:43.207Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2023/04/06/230407removeduplicatevalueinlist/</loc>
-        <lastmod>2023-04-07T01:12:25.795Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
