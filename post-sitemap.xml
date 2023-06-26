@@ -8,6 +8,38 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2023/06/25/230626webserver-vs-was/</loc>
+        <lastmod>2023-06-26T05:45:49.602Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/10/04/201005jspProcessVSThreadNWebServerVSWAS/</loc>
+        <lastmod>2023-06-26T05:17:08.320Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/03/07/220307Server-tomcat/</loc>
+        <lastmod>2023-06-26T05:16:00.496Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/09/05/220906Tomcat-vs-Apatch/</loc>
+        <lastmod>2023-06-26T05:03:56.006Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2023/06/20/230621beanutil/</loc>
         <lastmod>2023-06-23T04:41:23.733Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -712,14 +744,6 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2022/09/05/220906Tomcat-vs-Apatch/</loc>
-        <lastmod>2022-09-27T07:45:33.952Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/2021/03/22/210323React-componentLifeCycle/</loc>
         <lastmod>2022-09-13T06:59:43.787Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -738,14 +762,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2022/09/04/220905Server-separation/</loc>
         <lastmod>2022-09-07T04:16:49.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/03/07/220307Server-tomcat/</loc>
-        <lastmod>2022-09-05T07:51:21.064Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -3258,14 +3274,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/06/16/200617jspi2/</loc>
         <lastmod>2020-10-05T02:49:03.474Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/10/04/201005jspProcessVSThreadNWebServerVSWAS/</loc>
-        <lastmod>2020-10-05T02:43:40.566Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
