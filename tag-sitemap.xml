@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/jQuery/</loc>
+        <lastmod>2023-06-27T05:31:36.096Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/%25EC%25B0%25A8%25EC%259D%25B4/</loc>
         <lastmod>2023-06-26T05:45:49.602Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -187,13 +194,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/MariaDB/</loc>
         <lastmod>2022-12-06T07:11:27.272Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/jQuery/</loc>
-        <lastmod>2022-12-05T00:59:29.583Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

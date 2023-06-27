@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Mon, 26 Jun 2023 05:45:49 GMT</pubDate>
+    <pubDate>Tue, 27 Jun 2023 05:31:36 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[jQuery] jsTree 검색추가하기</title>
+      <link>https://sowon-dev.github.io/2023/06/26/230627jstree/</link>
+      <guid>https://sowon-dev.github.io/2023/06/26/230627jstree/</guid>
+      <pubDate>Mon, 26 Jun 2023 19:42:12 GMT</pubDate>
+      
+      <description>&lt;p&gt;jsTree는 제이쿼리 플러그인으로 손쉽게 트리구조를 만들 수 있는 라이브러리이다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>jsTree는 제이쿼리 플러그인으로 손쉽게 트리구조를 만들 수 있는 라이브러리이다.</p><a id="more"></a><p>jsTree 사용법은 매우 간단한 편이라 <a href="https://www.jstree.com/api/">jstree 공식 docs</a>를 참고하면 된다.</p><h1 id="검색기능-추가"><a href="#검색기능-추가" class="headerlink" title="검색기능 추가"></a>검색기능 추가</h1><p>plugins부분에 search를 추가하고 검색창에 keyup이벤트로 search()를 호출하면 된다.<br><code>show_only_matches</code> 속성은 디폴트가 false인데 나는 true로 하고싶어서 true로 주었다. 해당 속성은 이름에도 알 수 있듯 검색시 매치되는 노드만 보여준다.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> $testTree = $(<span class="string">'#testTree'</span>);</span><br><span class="line"></span><br><span class="line">$testTree.jstree(&#123;</span><br><span class="line">    <span class="string">'core'</span> : &#123;</span><br><span class="line">        <span class="string">'data'</span> : data,</span><br><span class="line">        <span class="string">"themes"</span>:&#123;</span><br><span class="line">            <span class="string">"icons"</span>:<span class="literal">false</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">"search"</span>: &#123;</span><br><span class="line">        <span class="string">"show_only_matches"</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="string">"show_only_matches_children"</span>: <span class="literal">true</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">"plugins"</span> : [<span class="string">"search"</span>]</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">$(<span class="string">'#search_input'</span>).keyup(debounce(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="keyword">var</span> v = $(<span class="string">'#search_input'</span>).val().trim();</span><br><span class="line">$testTree.jstree(<span class="literal">true</span>).search(v);</span><br><span class="line">&#125;, <span class="number">50</span>));</span><br></pre></td></tr></table></figure><p>Easy<br>Peasy<br>Lemon Squeezy🍋</p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/jQuery/">jQuery</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2023/06/26/230627jstree/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>아파치와 톰캣 분리한다고요?(ft. Web Service Architecture 차이)</title>
@@ -440,31 +463,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/03/01/230302whatisnft/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>MVC패턴과 MVP패턴 차이</title>
-      <link>https://sowon-dev.github.io/2023/02/16/230217MVPpattern/</link>
-      <guid>https://sowon-dev.github.io/2023/02/16/230217MVPpattern/</guid>
-      <pubDate>Thu, 16 Feb 2023 17:17:38 GMT</pubDate>
-      
-      <description>&lt;p&gt;박부장님과 김팀장님 셋이서 함께 치맥을 하던 중 부장님이 요즘은 무슨 공부를 하느냐고 물으셨다.&lt;br&gt;그때그때 궁금한 것들을 공부하고 있지만 디자인 패턴이 흥미롭다고 말씀드렸더니 MVP패턴에 대해 알려주셨다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>박부장님과 김팀장님 셋이서 함께 치맥을 하던 중 부장님이 요즘은 무슨 공부를 하느냐고 물으셨다.<br>그때그때 궁금한 것들을 공부하고 있지만 디자인 패턴이 흥미롭다고 말씀드렸더니 MVP패턴에 대해 알려주셨다.</p><a id="more"></a><p>흘려들을 순 없지! 바로 공부를 해보았다.<br>아무리 봐도 MVC와 차이가 느껴지지 않아 한참을 찾아보았다.</p><h1 id="MVP이란"><a href="#MVP이란" class="headerlink" title="MVP이란"></a>MVP이란</h1><p>Model - View - Presenter로 이뤄진 디자인 패턴이다.<br>MVC에서 Controller가 하는 역할을 Presenter가 한다고 보면 되는데 여기서 궁금증이 생긴다.<br>그러면 MVC 쓰면 되지 왜 MVP를 쓸까?</p><p><br><br><br></p><h2 id="MVC-Pattern과의-차이"><a href="#MVC-Pattern과의-차이" class="headerlink" title="MVC Pattern과의 차이"></a>MVC Pattern과의 차이</h2><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/MVC-Process.svg/800px-MVC-Process.svg.png" alt="위키피디아" style="width: 60%;"><p>MVC패턴에서는 Model과 View가 서로 연결되어 있어 의존관계를 가지고 있다.</p><p><img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Model_View_Presenter_GUI_Design_Pattern.png" alt="위키피디아"><br>MVP패턴은 Model과 View는 서로 연결되지 않고 Presenter를 통해서 변화를 알 수 있게 된다.<br>이렇게 화면과 비즈니스로직이 완전히 분리되면서 테스트가 용이해진다.</p><ul><li>장점: View와 Model을 분리시켜 MVC나 Apple의 MVC에서 하기 힘들었던 테스트가 용이</li><li>단점: View와 Presenter의 의존관계가 강해지고 Controller 대신 Presenter가 복잡해짐</li></ul><p><br><br><br></p><h1 id="MVP패턴에서-뷰가-업데이트-되는-과정"><a href="#MVP패턴에서-뷰가-업데이트-되는-과정" class="headerlink" title="MVP패턴에서 뷰가 업데이트 되는 과정"></a>MVP패턴에서 뷰가 업데이트 되는 과정</h1><p><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*8ps4RHy13puZY4dK.png" alt="https://medium.com/android-news/mvp-depp-dive-c6bb1903ace1"></p><ol><li>사용자가 View에서 액션을 한다.</li><li>View는 Presenter에 액션이 들어왔다고 전달한다.</li><li>Presenter는 View 액션대로 Model이나 Service를 구성한다.</li><li>Update된 Presenter의 데이터를 View에 업데이트 한다.</li></ol><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li>팀장님 지식</li><li><a href="https://ykss.netlify.app/web/design_pattern/">https://ykss.netlify.app/web/design_pattern/</a></li><li><a href="https://medium.com/android-news/mvp-depp-dive-c6bb1903ace1">https://medium.com/android-news/mvp-depp-dive-c6bb1903ace1</a></li><li><a href="https://fomaios.tistory.com/entry/Design-Pattern-MVP-%ED%8C%A8%ED%84%B4%EC%9D%B4%EB%9E%80">https://fomaios.tistory.com/entry/Design-Pattern-MVP-%ED%8C%A8%ED%84%B4%EC%9D%B4%EB%9E%80</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/">디자인패턴</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/%EC%B0%A8%EC%9D%B4/">차이</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2023/02/16/230217MVPpattern/#disqus_thread</comments>
       
     </item>
     
