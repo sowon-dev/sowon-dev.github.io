@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2022/06/05/220605VitualDOM/</loc>
+        <lastmod>2023-06-29T04:34:34.465Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2023/06/06/230607prjtreview9/</loc>
+        <lastmod>2023-06-28T02:15:50.427Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2023/05/10/230511-count/</loc>
         <lastmod>2023-06-28T01:24:19.004Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -18,14 +34,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2023/06/12/230613netstat/</loc>
         <lastmod>2023-06-28T01:11:56.088Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2023/06/06/230607prjtreview9/</loc>
-        <lastmod>2023-06-28T01:10:51.977Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -858,14 +866,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2022/06/02/220603VueJS-checkall/</loc>
         <lastmod>2022-07-15T06:53:35.838Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/06/05/220605VitualDOM/</loc>
-        <lastmod>2022-07-15T06:53:21.906Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
