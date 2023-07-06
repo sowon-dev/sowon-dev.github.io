@@ -8,6 +8,38 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2023/06/26/230627jstree/</loc>
+        <lastmod>2023-07-06T06:05:19.029Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/11/29/221130jQuery-global/</loc>
+        <lastmod>2023-07-06T06:04:42.366Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/11/08/221109jQuery-input-type/</loc>
+        <lastmod>2023-07-06T06:03:42.241Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2023/06/06/230607prjtreview9/</loc>
+        <lastmod>2023-07-06T06:02:32.866Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2023/07/02/230703ads/</loc>
         <lastmod>2023-07-05T04:29:56.705Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -18,14 +50,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2022/06/05/220605VitualDOM/</loc>
         <lastmod>2023-06-29T04:34:34.465Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2023/06/06/230607prjtreview9/</loc>
-        <lastmod>2023-06-28T02:15:50.427Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -50,14 +74,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2023/06/20/230621beanutils/</loc>
         <lastmod>2023-06-28T01:10:25.716Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2023/06/26/230627jstree/</loc>
-        <lastmod>2023-06-27T05:31:36.096Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -536,14 +552,6 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/2022/11/29/221130jQuery-global/</loc>
-        <lastmod>2022-12-05T00:59:29.583Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/2022/11/28/221129MySQL-function-Procedure/</loc>
         <lastmod>2022-12-02T06:59:31.591Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -634,14 +642,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2022/11/10/221111projectreview8/</loc>
         <lastmod>2022-11-14T12:49:13.823Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/11/08/221109jQuery-input-type/</loc>
-        <lastmod>2022-11-10T02:17:41.210Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

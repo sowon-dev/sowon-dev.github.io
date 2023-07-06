@@ -8,22 +8,22 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
-        <lastmod>2023-07-05T04:29:56.705Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/categories/JavaScript/</loc>
-        <lastmod>2023-06-29T04:34:34.465Z</lastmod>
+        <lastmod>2023-07-06T06:05:19.029Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/categories/Journal/%25ED%259A%258C%25EA%25B3%25A0%25EB%25A1%259D/</loc>
-        <lastmod>2023-06-28T02:15:50.427Z</lastmod>
+        <lastmod>2023-07-06T06:02:32.866Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
+        <lastmod>2023-07-06T06:02:32.866Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
