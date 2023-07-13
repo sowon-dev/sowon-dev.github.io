@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Wed, 12 Jul 2023 04:32:28 GMT</pubDate>
+    <pubDate>Thu, 13 Jul 2023 05:56:54 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[톰캣Tomcat]SSL이 뭐길래(ft.HTTPS와 비교, 차이점)</title>
+      <link>https://sowon-dev.github.io/2023/07/12/230713-server-redirectport443/</link>
+      <guid>https://sowon-dev.github.io/2023/07/12/230713-server-redirectport443/</guid>
+      <pubDate>Wed, 12 Jul 2023 19:48:06 GMT</pubDate>
+      
+      <description>&lt;p&gt;톰캣에서 SSL을 적용했는데 개발 중에는 적용된 HTTPS를 없애고 HTTP로만 통신하고싶어서 &lt;code&gt;server.xml&lt;/code&gt;에서 포트를 변경했다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>톰캣에서 SSL을 적용했는데 개발 중에는 적용된 HTTPS를 없애고 HTTP로만 통신하고싶어서 <code>server.xml</code>에서 포트를 변경했다.</p><a id="more"></a><h1 id="코드"><a href="#코드" class="headerlink" title="코드"></a>코드</h1><p>SSL을 미적용하기 위해서 redirectPort포트를 443에서 8443으로 변경했다.</p><ul><li>server.xml<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// SSL적용</span><br><span class="line"><span class="tag">&lt;<span class="name">Connector</span> <span class="attr">connectionTimeout</span>=<span class="string">"20000"</span> <span class="attr">port</span>=<span class="string">"80"</span> <span class="attr">protocol</span>=<span class="string">"HTTP/1.1"</span> <span class="attr">redirectPort</span>=<span class="string">"443"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">// SSL미적용</span><br><span class="line"><span class="tag">&lt;<span class="name">Connector</span> <span class="attr">connectionTimeout</span>=<span class="string">"20000"</span> <span class="attr">port</span>=<span class="string">"8080"</span> <span class="attr">protocol</span>=<span class="string">"HTTP/1.1"</span> <span class="attr">redirectPort</span>=<span class="string">"8443"</span> /&gt;</span></span><br></pre></td></tr></table></figure></li></ul><p>해결은 간단하게 되었지만 SSL이 단순히 인증서라고 생각하고있었는데 정확히 무엇인지 알고싶어졌다.</p><p><br><br><br></p><h1 id="기본부터-하자-HTTP-VS-HTTPS"><a href="#기본부터-하자-HTTP-VS-HTTPS" class="headerlink" title="기본부터 하자! HTTP VS HTTPS"></a>기본부터 하자! HTTP VS HTTPS</h1><p>HTTP는 Hypertext Transfer Protocol의 약자이며 하이퍼텍스트란 링크와 링크로 이루어진 텍스트를 의미하며 그 중 대표적인 것이 HTML이다.<br>즉, Hypertext 인 HTML을 전송하기 위한 통신규약을 의미한다.<br>HTTPS에서 마지막의 S는 Over Secure Socket Layer의 약자로 보안이 강화된 HTTP이다. </p><p><img src="https://media.geeksforgeeks.org/wp-content/uploads/20211117141004/HTTPSdrawio-660x368.png" alt=""><br>HTTP는 암호화되지 않은 방법으로 데이터를 전송하기 때문에 서버와 클라이언트가 주고 받는 메시지를 빼앗기가 쉽다.<br>예를들어 로그인을 위해서 서버로 비밀번호를 전송하거나, 또는 중요한 기밀 문서를 열람하는 과정에서 악의적인 감청이나 데이터의 변조등이 일어날 수 있다. 이를 보안한 것이 HTTPS다.<br>이 블로그도 보안(Secure)된 HTML인 <code>https://sowon-dev.github.io/</code>이다.</p><p><br><br><br></p><h1 id="HTTPS-VS-SSL"><a href="#HTTPS-VS-SSL" class="headerlink" title="HTTPS VS SSL"></a>HTTPS VS SSL</h1><p>SSL는 Secure Socket Layer의 약어로 암호화 소켓층이다.<br><img src="https://wpmudev.com/blog/wp-content/uploads/2021/11/004-https-stack-diagram-vJGB-1050x609.png" alt="https://wpmudev.com/blog/securing-website-https-ssl/"><br>SSL이라는 통신 방법 위에서 동작하는 서비스 중에 하나가 HTTP이다. 그리고 HTTP가 SSL을 이용하면 HTTPS가 된다.</p><p><br><br><br></p><h1 id="SSL-VS-TLS"><a href="#SSL-VS-TLS" class="headerlink" title="SSL VS TLS"></a>SSL VS TLS</h1><p>같은 말!<br>TLS 1.0은 SSL 3.0을 따른다.</p><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://www.geeksforgeeks.org/difference-between-http-and-https/">https://www.geeksforgeeks.org/difference-between-http-and-https/</a></li><li><a href="https://opentutorials.org/course/228/4894">생활코딩 - HTTPS와 SSL 인증서</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Server/">Server</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/%EC%B0%A8%EC%9D%B4/">차이</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2023/07/12/230713-server-redirectport443/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[바닐라JS/Pure JS]iframe 내 태그에 접근하고 싶을때(선택자)</title>
@@ -444,29 +467,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/03/16/230317githubaction/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[@Autowired에러]no qualifying bean of type available: expected at least 1 bean which qualifies as autowire candidate 오류해결</title>
-      <link>https://sowon-dev.github.io/2023/03/12/230313autowirederror/</link>
-      <guid>https://sowon-dev.github.io/2023/03/12/230313autowirederror/</guid>
-      <pubDate>Sun, 12 Mar 2023 23:29:17 GMT</pubDate>
-      
-      <description>&lt;p&gt;스트레스를 주는(?) 생성자주입에러! 나는 분명 모든 스프링빈등록을 어노테이션으로 제대로 걸었다고 생각했는데 자꾸 빈등록할 것이 없단다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>스트레스를 주는(?) 생성자주입에러! 나는 분명 모든 스프링빈등록을 어노테이션으로 제대로 걸었다고 생각했는데 자꾸 빈등록할 것이 없단다.</p><a id="more"></a><h1 id="1-Controller-Service-Repository-누락-어노테이션-찾기"><a href="#1-Controller-Service-Repository-누락-어노테이션-찾기" class="headerlink" title="1. @Controller, @Service, @Repository 누락 어노테이션 찾기"></a>1. @Controller, @Service, @Repository 누락 어노테이션 찾기</h1><p>구글링해보니 @Controller, @Service, @Repository 어노테이션을 누락된 부분을 찾으라는 글이 많았다.<br>하지만 아무리 찾아도 보이지않았다.<br>프로세스 흐름대로 흘러가도 보이지 않는 누락 어노테이션.</p><p><br><br><br></p><h1 id="2-component-scan에-패키지가-누락되었는지-확인하기"><a href="#2-component-scan에-패키지가-누락되었는지-확인하기" class="headerlink" title="2. component-scan에 패키지가 누락되었는지 확인하기"></a>2. component-scan에 패키지가 누락되었는지 확인하기</h1><p><code>root-context.xml</code> 과 <code>servlet-context.xml</code>에서 해당 패키지가 누락되진않았는지 체크해보자.<br>나의 경우 패키지 <code>com.test.api</code>가 누락되서 발생된 에러였다.<br>추가해주니 정상적으로 빈생성이 되고 server run이 성공했다.</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">context:component-scan</span> <span class="attr">base-package</span>=<span class="string">"com.test.dao"</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">context:component-scan</span> <span class="attr">base-package</span>=<span class="string">"com.test.service"</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">context:component-scan</span> <span class="attr">base-package</span>=<span class="string">"com.test.util"</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">context:component-scan</span> <span class="attr">base-package</span>=<span class="string">"com.test.api"</span> /&gt;</span> <span class="comment">&lt;!-- 추가 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%A5%98%EC%9D%BC%EC%A7%80/">오류일지</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2023/03/12/230313autowirederror/#disqus_thread</comments>
       
     </item>
     
