@@ -9,8 +9,35 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Thu, 13 Jul 2023 05:56:54 GMT</pubDate>
+    <pubDate>Mon, 17 Jul 2023 06:42:32 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[JavaScript/jQuery]제이쿼리 선택자(Selector) 비교</title>
+      <link>https://sowon-dev.github.io/2023/07/16/230717js-jquery/</link>
+      <guid>https://sowon-dev.github.io/2023/07/16/230717js-jquery/</guid>
+      <pubDate>Sun, 16 Jul 2023 19:33:41 GMT</pubDate>
+      
+      <description>&lt;p&gt;VanillaJS와 jQuery는 최대 10배 속도차이가 발생난다고 한다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>VanillaJS와 jQuery는 최대 10배 속도차이가 발생난다고 한다.</p><a id="more"></a><p>그래서 이번에 손에 익힐겸 jQuery보다 VanillaJS를 사용하려고 노력해봤다. 제일 헷갈리는 부분은 선택자부분이었다.</p><h1 id="선택자-Selector"><a href="#선택자-Selector" class="headerlink" title="선택자(Selector)"></a>선택자(Selector)</h1><table><thead><tr><th align="center">JavaScript</th><th align="center">jQuery</th></tr></thead><tbody><tr><td align="center">document.getElementById(아이디명)</td><td align="center">$(#아이디명)</td></tr><tr><td align="center">document.getElementsByClassName(클래스명)</td><td align="center">$(.클래스명)</td></tr><tr><td align="center">document.getElementsByTagName(태그명)</td><td align="center">$(태그명)</td></tr></tbody></table><ul><li>querySelector: 매칭된 첫번째 element 반환, 조회값 없을땐 <code>null</code> 반환</li><li>querySelectorAll: 매칭된 모든 element를 NodeList로 반환, 조회값 없을땐 <code>[]</code> 반환</li></ul><p><br><br><br></p><h1 id="코드"><a href="#코드" class="headerlink" title="코드"></a>코드</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 모든 요소</span></span><br><span class="line">$(<span class="string">"*"</span>)</span><br><span class="line"><span class="built_in">document</span>.querySelectorAll(<span class="string">"*"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// ID명이 password인 요소 선택 </span></span><br><span class="line">$(<span class="string">"#password"</span>)</span><br><span class="line"><span class="built_in">document</span>.querySelector(<span class="string">"#password"</span>)</span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">'password'</span>)</span><br><span class="line"><span class="built_in">window</span>[<span class="string">'password'</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">// Class 명이 'btn'인 요소 선택</span></span><br><span class="line">$(<span class="string">".btn"</span>)</span><br><span class="line"><span class="built_in">document</span>.querySelectorAll(<span class="string">".btn"</span>)</span><br><span class="line"><span class="built_in">document</span>.getElementsByClassName(<span class="string">'btn'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// attribute요소 선택</span></span><br><span class="line">$(<span class="string">'a[target=_blank]'</span>)</span><br><span class="line"><span class="built_in">document</span>.querySelectorAll(<span class="string">'a[target=_blank]'</span>)</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://github.com/camsong/You-Dont-Need-jQuery">You-Dont-Need-jQuery 깃헙 리포</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/jQuery/">jQuery</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/%EC%B0%A8%EC%9D%B4/">차이</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/VanillaJS/">VanillaJS</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2023/07/16/230717js-jquery/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[톰캣Tomcat]SSL이 뭐길래(ft.HTTPS와 비교, 차이점)</title>
@@ -444,29 +471,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/03/27/230328cdn/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[GITHUB]깃허브액션(github action)</title>
-      <link>https://sowon-dev.github.io/2023/03/16/230317githubaction/</link>
-      <guid>https://sowon-dev.github.io/2023/03/16/230317githubaction/</guid>
-      <pubDate>Thu, 16 Mar 2023 15:56:43 GMT</pubDate>
-      
-      <description>&lt;p&gt;어제 부장님이 젠키스와 깃헙액션을 이용해서 CI/CD에 관한 걸 말씀해주셨다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>어제 부장님이 젠키스와 깃헙액션을 이용해서 CI/CD에 관한 걸 말씀해주셨다.</p><a id="more"></a><p>젠킨스랑 깃헙액션이 같은 역할을 한다고 생각했는데 아닌거 같아 깃헙액션을 공부하게 되었다.<br>깃헙액션을 가장 잘 소개한 영상이 있다면 바로 드림코딩 엘리님이다.<br>정말 쉽게 잘 설명해주시니까 깃헙액션을 알고싶은 사람이라면 필수 시청해야하는 영상이다!</p><iframe width="100%" height="400px" src="https://www.youtube.com/embed/iLqGzEkusIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><p>이번 글은 위 영상을 요약하면서 추가적으로 구글링한 내용을 덧붙였음을 밝혀둔다.<br>😍엘리님 매번 좋은 영상 감사합니다😍</p><p><br><br><br></p><h1 id="깃과-깃헙-깃헙액션의-관계"><a href="#깃과-깃헙-깃헙액션의-관계" class="headerlink" title="깃과 깃헙, 깃헙액션의 관계"></a>깃과 깃헙, 깃헙액션의 관계</h1><p>버전관리시스템에서 가장 많이 사용하는 GIT과 그걸 배포할 수 있는 GITHUB가 있다.<br>여기서 자동화(CI/CD)를 이용하려면 GITHUB의 레포지토리에다가 jenkins, buildkite, circleci 중 하나를 연결해야 가능했다.<br>하지만 2018년에 깃헙액션이 등장하면서 별도의 외부툴없이 자동화프로세스를 만들 수 있다.</p><p><br><br><br></p><h1 id="여기서-잠깐-CI-CD란"><a href="#여기서-잠깐-CI-CD란" class="headerlink" title="여기서 잠깐 CI/CD란?"></a>여기서 잠깐 CI/CD란?</h1><ul><li>CI: 지속적인 통합</li><li>CD: 지속적인 배포</li></ul><p>깃헙 메인 리포지토리에 새롭게 추가되는 기능들을 CI서버에서 자동으로 빌드하고 테스트하고 지속적으로 배포하는 것을 말한다.<br>CI와 CD의 차이점과 데브옵스까지 궁금하다면 <a href="https://sowon-dev.github.io/2020/12/04/201205devOpsandCICD/">블로그 글 - DevOps와 CI/CD차이</a>에 쉽게 작성해두었으니 참고하면 좋다.</p><p><br><br><br></p><h1 id="깃헙액션-개념"><a href="#깃헙액션-개념" class="headerlink" title="깃헙액션 개념"></a>깃헙액션 개념</h1><p>깃헙액션에는 중요한 5가지 개념이 있다.</p><p><img src="https://www.freecodecamp.org/news/content/images/2022/01/build-your-first-github-action_components.png" alt="https://www.freecodecamp.org"></p><h2 id="1-Events"><a href="#1-Events" class="headerlink" title="1 Events"></a>1 Events</h2><p>어떤 일이 발생했는지를 지정하는 곳<br>아래 예시처럼 특정한 이벤트가 일어났을때 그 후로 뭘 해야할지 wrokflows로 지정해줄 수 있다.<br>e.g</p><ul><li>1) main브랜치로 머지했을때</li><li>2) 커밋을 푸쉬했을때</li><li>3) 이슈를 누군가 만든다면</li></ul><p><br><br><br></p><h2 id="2-Workflows"><a href="#2-Workflows" class="headerlink" title="2 Workflows"></a>2 Workflows</h2><p>특정한 이벤트가 발생하면 어떤 걸 해야하는지 순서를 명시하는 곳.<br>Workflows안에는 하나 또는 다수의 job이 있다.</p><p><br><br><br></p><h2 id="3-Job"><a href="#3-Job" class="headerlink" title="3 Job"></a>3 Job</h2><p>무언가를 실행하는 걸 명시하는 곳<br>job안에는 쉘스크립트로 step을 만들어줄수있다.</p><p><br><br><br></p><h2 id="4-Action"><a href="#4-Action" class="headerlink" title="4 Action"></a>4 Action</h2><p>깃헙액션에서 제일 유용한 부분이다.<br>우리가 자주 사용하는 공개적으로 오픈된 Action들이 미리 정해져 제공된다.<br>npm에서 라이브러리 가져다쓰는 것처럼 깃헙액션도 동일한 것이라고 생각하면 된다.</p><p><br><br><br></p><h2 id="5-Runner"><a href="#5-Runner" class="headerlink" title="5 Runner"></a>5 Runner</h2><p>Job을 실행하는 것이 바로 Runner이다.<br>JOB의 갯수만큼 RUNNER가 존재하며 이들은 독립적으로 실행된다.<br>러너는 VM 혹 도커컨테이너라고도 생각할 수 있다.</p><p><br><br><br></p><h1 id="깃헙액션-흐름"><a href="#깃헙액션-흐름" class="headerlink" title="깃헙액션 흐름"></a>깃헙액션 흐름</h1><p><img src="https://engineering.empathy.co/content/images/size/w1000/2022/07/CI-CD-Blog-Graphic-Final_Medium_CI_CD-1200x400---1-.jpg" alt="https://engineering.empathy.co/"></p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Version-control/">Version control</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/GIT/">GIT</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2023/03/16/230317githubaction/#disqus_thread</comments>
       
     </item>
     
