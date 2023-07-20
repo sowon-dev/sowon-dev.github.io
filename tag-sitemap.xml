@@ -3,6 +3,34 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/ITWILL-JAVA/</loc>
+        <lastmod>2023-07-20T05:10:42.432Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/TIL/</loc>
+        <lastmod>2023-07-20T05:10:42.432Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/%25EC%2584%25A4%25EC%25B9%2598/</loc>
+        <lastmod>2023-07-20T05:09:37.269Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/Tomcat/</loc>
+        <lastmod>2023-07-20T05:09:37.269Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/VanillaJS/</loc>
         <lastmod>2023-07-17T06:45:45.406Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -59,29 +87,8 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/tags/Tomcat/</loc>
-        <lastmod>2023-06-28T01:11:56.088Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/tags/%25EC%2598%25A4%25EB%258A%2598%25EB%2598%2590%25EB%25AA%25BB%25EC%2595%258C%25EC%2595%2584%25EB%2593%25A3%25EA%25B3%25A0%25EB%25A7%2590%25EC%2595%2598%25EC%258A%25B5%25EB%258B%2588%25EB%258B%25A4/</loc>
         <lastmod>2023-06-26T05:45:49.602Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/ITWILL-JAVA/</loc>
-        <lastmod>2023-06-26T05:17:08.320Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/TIL/</loc>
-        <lastmod>2023-06-26T05:17:08.320Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
