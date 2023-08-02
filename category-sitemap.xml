@@ -8,6 +8,20 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/Database/MySQL/</loc>
+        <lastmod>2023-08-02T06:00:09.555Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Database/</loc>
+        <lastmod>2023-08-02T06:00:09.555Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/JAVA/</loc>
         <lastmod>2023-07-20T05:10:42.432Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -38,13 +52,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/Journal/</loc>
         <lastmod>2023-07-06T06:02:32.866Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Database/</loc>
-        <lastmod>2023-06-28T01:24:19.004Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -108,13 +115,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/Algorithm/</loc>
         <lastmod>2023-02-13T05:29:39.076Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Database/MySQL/</loc>
-        <lastmod>2022-12-06T07:11:27.272Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
