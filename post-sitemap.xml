@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2023/08/10/230811jre-jdk/</loc>
+        <lastmod>2023-08-11T05:50:12.613Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2023/08/01/230802mysql-on-duplicate-key-update/</loc>
         <lastmod>2023-08-02T06:00:09.555Z</lastmod>
         <changefreq>weekly</changefreq>
