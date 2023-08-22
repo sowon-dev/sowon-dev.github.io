@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2021/10/19/211020SQL-recurisve/</loc>
+        <lastmod>2023-08-22T08:16:42.021Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2023/08/21/230822withrecursive-treemenu/</loc>
+        <lastmod>2023-08-22T08:16:41.021Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2023/08/10/230811jre-jdk/</loc>
         <lastmod>2023-08-11T05:50:12.613Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1346,14 +1362,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2021/11/29/211130Jpa-auditing/</loc>
         <lastmod>2021-11-30T01:17:07.340Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2021/10/19/211020SQL-recurisve/</loc>
-        <lastmod>2021-10-21T12:27:51.214Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
