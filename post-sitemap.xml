@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2023/08/10/230811jre-jdk/</loc>
+        <lastmod>2023-09-26T01:32:54.367Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2023/08/21/230822withrecursive-treemenu/</loc>
         <lastmod>2023-09-14T15:02:06.781Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -26,14 +34,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2021/10/19/211020SQL-recurisve/</loc>
         <lastmod>2023-08-22T08:16:42.021Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2023/08/10/230811jre-jdk/</loc>
-        <lastmod>2023-08-11T05:50:12.613Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
