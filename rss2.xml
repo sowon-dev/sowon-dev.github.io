@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Mon, 11 Sep 2023 01:08:20 GMT</pubDate>
+    <pubDate>Mon, 16 Oct 2023 05:10:24 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[HTML]IMG태그 기본이미지설정(DEFAULT IMG, ONERROR속성) 에러 해결</title>
+      <link>https://sowon-dev.github.io/2023/10/15/231016imgtag-onerrer/</link>
+      <guid>https://sowon-dev.github.io/2023/10/15/231016imgtag-onerrer/</guid>
+      <pubDate>Sun, 15 Oct 2023 20:01:56 GMT</pubDate>
+      
+      <description>&lt;p&gt;이미지태그사용시 src경로에 이미지가 없다면 기본 이미지를 설정하고 싶었다.&lt;br&gt;찾아보니 onerror 속성을 찾아서 손쉽게 처리할 수 있었다. 그런데 여전히 디폴트이미지를 못 불러오는 에러가 발생했다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>이미지태그사용시 src경로에 이미지가 없다면 기본 이미지를 설정하고 싶었다.<br>찾아보니 onerror 속성을 찾아서 손쉽게 처리할 수 있었다. 그런데 여전히 디폴트이미지를 못 불러오는 에러가 발생했다.</p><a id="more"></a><h1 id="기존코드"><a href="#기존코드" class="headerlink" title="기존코드"></a>기존코드</h1><figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=<span class="string">"/resources/custom/images/main_$&#123;idx&#125;.png"</span> onerror=<span class="string">"/resources/custom/images/main_default.png"</span> alt=<span class="string">"$&#123;name&#125;이미지"</span>&gt;</span><br></pre></td></tr></table></figure><p>잘했다고 생각했으나 여전히 이미지가 엑박이 떴다.<br>해당 경로에 이미지도 제대로 있는 걸 확인했는데 왜 onerror에서 설정한 경로의 기본이미지가 보이지않을까?</p><p><br><br><br></p><h1 id="해결코드"><a href="#해결코드" class="headerlink" title="해결코드"></a>해결코드</h1><figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=<span class="string">"/resources/custom/images/main_$&#123;idx&#125;.png"</span> onerror=<span class="string">"this.src='/resources/custom/images/main_default.png'"</span> alt=<span class="string">"$&#123;name&#125; 아이콘"</span>&gt;</span><br></pre></td></tr></table></figure><p>onerror는 함수가 들어가는 곳으로 src속성과는 다르다. 따라서 그냥 경로를 입력하는 것이 아니라 함수로 입력해야한다.<br>따라서 <code>this.src=</code>를 추가하여 함수로 디폴트png가 있는 src로 연결하도록 바꿔주니 원하는대로 정상작동했다.</p><p>해결!</p><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://www.w3schools.com/jsref/event_onerror.asp">onerror Event</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/HTML-CSS/">HTML&amp;CSS</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/HTML-CSS/">HTML&amp;CSS</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2023/10/15/231016imgtag-onerrer/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[ajax]분명 success인데 왜 계속 error로 가는걸까?</title>
@@ -458,27 +481,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/05/09/230509double-NaN/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>팝업(모달)창에서 datepicker 적용 안되는 오류 해결법</title>
-      <link>https://sowon-dev.github.io/2023/04/25/230426datepicker-error-in-modal/</link>
-      <guid>https://sowon-dev.github.io/2023/04/25/230426datepicker-error-in-modal/</guid>
-      <pubDate>Tue, 25 Apr 2023 21:32:46 GMT</pubDate>
-      
-      <description>&lt;p&gt;화면작업을 하는데 리스트화면에서도 부트스트랩 datepicker를 사용하고 리스트화면의 상세보기 버튼을 눌러 팝업창을 띄우는데 거기서도 datepicker를 써야했다.&lt;br&gt;근데 문제는 리스트화면의 datepicker는 잘 작동하는데 팝업창의 datepicker는 전혀 작동하지않았다.&lt;br&gt;달력아이콘을 클릭해도 달력이 안나오고 input을 클릭해도 포커싱은 되는데 달력이 안나오니 환장할 노릇.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>화면작업을 하는데 리스트화면에서도 부트스트랩 datepicker를 사용하고 리스트화면의 상세보기 버튼을 눌러 팝업창을 띄우는데 거기서도 datepicker를 써야했다.<br>근데 문제는 리스트화면의 datepicker는 잘 작동하는데 팝업창의 datepicker는 전혀 작동하지않았다.<br>달력아이콘을 클릭해도 달력이 안나오고 input을 클릭해도 포커싱은 되는데 달력이 안나오니 환장할 노릇.</p><a id="more"></a><p>오전 내내 이 문제를 가지고 구글링해서 여러 방법을 시도했다.</p><h1 id="원인찾기"><a href="#원인찾기" class="headerlink" title="원인찾기"></a>원인찾기</h1><p>디버깅해보니 캘린더 클릭시 아래 div태그가 disploy:none에서 display:block으로 바뀌지않는 문제였다.</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"ui-datepicker-div"</span> <span class="attr">style</span>=<span class="string">"display=none;"</span>&gt;</span></span><br><span class="line">//중략</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="시도1-팝업화면-show-이벤트-적용"><a href="#시도1-팝업화면-show-이벤트-적용" class="headerlink" title="시도1 : 팝업화면 show 이벤트 적용"></a>시도1 : 팝업화면 show 이벤트 적용</h1><p>리스트화면에 팝업show 이벤트 적용하기 실패했다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'#modal'</span>).on(<span class="string">'show'</span>, function () &#123;</span><br><span class="line">    $.fn.modal.Constructor.prototype.enforceFocus = function () &#123; &#125;;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>혹시몰라서 팝업창 스크립트에서도 아래 코드 적용해봤지만 실패했다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$.fn.modal.Constructor.prototype.enforceFocus = function () &#123; &#125;;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="시도2-팝업화면-shown-이벤트-적용"><a href="#시도2-팝업화면-shown-이벤트-적용" class="headerlink" title="시도2 : 팝업화면 shown 이벤트 적용"></a>시도2 : 팝업화면 shown 이벤트 적용</h1><p>리스트화면에 팝업 shown 이벤트 적용도 실패했다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'#modal'</span>).on(<span class="string">'shown'</span>, function () &#123;</span><br><span class="line">    $.fn.modal.Constructor.prototype.enforceFocus = function () &#123; &#125;;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="시도3-z-index주기"><a href="#시도3-z-index주기" class="headerlink" title="시도3 : z-index주기"></a>시도3 : z-index주기</h1><p>혹시나하고 z-index를 줘봤지만 역시나 실패했다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">style=<span class="string">"z-index:10000;</span></span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="시도4-강제로-div태그-display-block주기"><a href="#시도4-강제로-div태그-display-block주기" class="headerlink" title="시도4 : 강제로 div태그 display:block주기"></a>시도4 : 강제로 div태그 display:block주기</h1><p>팝업창 내에서 달력아이콘에 온클릭이벤트를 걸어 toggle을 줘봤지만 실패했다.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'#달력아이콘'</span>).on(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    $(<span class="string">"#ui-datepicker-div"</span>).toggle()</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h1><p>비흡연자지만 담타를 가시는 차장님을 쫄래쫄래 따라가서 여쭤봤다.<br>이런 에러가 있고 이런 것까지 오전내내했는데 안되는데 뭐가 문제일까요 하고 여쭤봤더니 5분만에 해결해주셨다.</p><p>나의 경우 스크립트와 link를 중복 선언한게 문제였다.<br>그래서 리스트화면의 스크립트태그, link태그는 그대로 두고 팝업창에 선언한 스크립트태그와 link태그를 삭제했더니 잘 작동했다!</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> type=<span class="string">"text/css"</span> href=<span class="string">"/resources/css/bootstrap.css"</span> /&gt; <span class="comment">//삭제</span></span><br><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> type=<span class="string">"text/css"</span> href=<span class="string">"/resources/css/base.css"</span> /&gt; <span class="comment">//삭제</span></span><br><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> type=<span class="string">"text/css"</span> href=<span class="string">"/resources/css/jquery_ui.css"</span> /&gt; <span class="comment">//삭제</span></span><br><span class="line">&lt;script src="/resources/js/jquery_min.js"&gt;&lt;/script&gt; //삭제</span><br><span class="line">&lt;script src="/resources/js/jquery-ui.min.js"&gt;&lt;/script&gt; //삭제</span><br></pre></td></tr></table></figure><p>유레카!<br>감사합니다 차장님!</p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/JSP/">JSP</category>
-      
-      
-      
-      <comments>https://sowon-dev.github.io/2023/04/25/230426datepicker-error-in-modal/#disqus_thread</comments>
       
     </item>
     
