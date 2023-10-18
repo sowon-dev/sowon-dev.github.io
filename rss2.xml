@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Mon, 16 Oct 2023 05:10:24 GMT</pubDate>
+    <pubDate>Wed, 18 Oct 2023 07:38:16 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[Moment.js] isSame 오늘날짜와 비교가 안되는 이유</title>
+      <link>https://sowon-dev.github.io/2023/10/17/231018momentjs-issame/</link>
+      <guid>https://sowon-dev.github.io/2023/10/17/231018momentjs-issame/</guid>
+      <pubDate>Tue, 17 Oct 2023 22:05:03 GMT</pubDate>
+      
+      <description>&lt;p&gt;달력을 만들면서 오늘날짜와 일치하는 셀에는 음영을 넣고 싶었다.&lt;br&gt;여기서 잠깐🤚&lt;br&gt;모먼트js로 달력을 만들고싶다면 &lt;a href=&quot;https://sowon-dev.github.io/2022/08/30/220831js-calendar/&quot;&gt;포스팅:: 동적 달력(캘린더)만들기&lt;/a&gt;을 참조하면 된다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>달력을 만들면서 오늘날짜와 일치하는 셀에는 음영을 넣고 싶었다.<br>여기서 잠깐🤚<br>모먼트js로 달력을 만들고싶다면 <a href="https://sowon-dev.github.io/2022/08/30/220831js-calendar/">포스팅:: 동적 달력(캘린더)만들기</a>을 참조하면 된다.</p><a id="more"></a><h1 id="기존코드"><a href="#기존코드" class="headerlink" title="기존코드"></a>기존코드</h1><p>이번달 1일부터 for문을 돌면서 현재 날짜와 일치하면 class today를 추가해주는 코드를 구현했다. </p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> today = moment();</span><br><span class="line"><span class="keyword">const</span> firstDayOfMonth = moment(&#123;today.year(), today.month() + <span class="number">1</span>&#125;).startOf(<span class="string">'month'</span>);</span><br><span class="line"><span class="keyword">let</span> currentDate = firstDayOfMonth.clone().startOf(<span class="string">'week'</span>); <span class="comment">//달력의 현재 셀 날짜</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">7</span>; i++) &#123;</span><br><span class="line">  <span class="keyword">let</span> cell = $(<span class="string">"&lt;td&gt;&lt;/td&gt;"</span>);</span><br><span class="line">  </span><br><span class="line">  <span class="comment">// 오늘일자인 경우 class 추가하기</span></span><br><span class="line">  <span class="keyword">if</span>(currentDate.isSame(today)&#123;</span><br><span class="line">    cell.addClass(<span class="string">"today"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  tableRow.append(cell);</span><br><span class="line">  currentDate.add(<span class="number">1</span>, <span class="string">'days'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="해결코드"><a href="#해결코드" class="headerlink" title="해결코드"></a>해결코드</h1><p>isSame은 연월일뿐만 아니라 시분초도 같이 확인한 후 같은지 아닌지 판단한다.<br>따라서 포맷도 <code>YYYY-MM-DD</code>로 맞춰주면서 시분초를 00으로 바꿔주는 <code>startOf(&#39;day&#39;)</code>를 사용하면 해결된다.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 오늘일자인 경우 class 추가하기</span></span><br><span class="line"><span class="keyword">if</span>(moment(currentDate.startOf(<span class="string">'day'</span>), <span class="string">"YYYY-MM-DD"</span>).isSame(moment(today.startOf(<span class="string">'day'</span>), <span class="string">"YYYY-MM-DD"</span>)))&#123;</span><br><span class="line">  cell.addClass(<span class="string">"today"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Moment-js/">Moment.js</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2023/10/17/231018momentjs-issame/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[HTML]IMG태그 기본이미지설정(DEFAULT IMG, ONERROR속성) 에러 해결</title>
@@ -460,27 +483,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/05/10/230511-count/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Double/Float 변환시 ClassCastException오류 NaN 해결</title>
-      <link>https://sowon-dev.github.io/2023/05/09/230509double-NaN/</link>
-      <guid>https://sowon-dev.github.io/2023/05/09/230509double-NaN/</guid>
-      <pubDate>Tue, 09 May 2023 00:57:24 GMT</pubDate>
-      
-      <description>&lt;p&gt;화면에서 컨트롤러로 파라미터 &lt;code&gt;HashMap&amp;lt;String, String&amp;gt; map&lt;/code&gt;를 받아 double값을 형변환하려고 하는데 ClassCastException이 발생했다.&lt;br&gt;Java.lang.Integer cannot be case to Java.lang.String 이었고 원인을 찾아보니 NaN가 문제였다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>화면에서 컨트롤러로 파라미터 <code>HashMap&lt;String, String&gt; map</code>를 받아 double값을 형변환하려고 하는데 ClassCastException이 발생했다.<br>Java.lang.Integer cannot be case to Java.lang.String 이었고 원인을 찾아보니 NaN가 문제였다.</p><a id="more"></a><h1 id="기존코드와-원인분석"><a href="#기존코드와-원인분석" class="headerlink" title="기존코드와 원인분석"></a>기존코드와 원인분석</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Double fee = Double.valueOf(map.get(<span class="string">"fee"</span>));</span><br></pre></td></tr></table></figure><p>원인은 바로바로 <code>NaN</code>이다!<br>화면에서 map.get(“fee”)의 값이 없어서 <code>NaN</code>으로 파라미터가 컨트롤러로 넘어왔다.<br>내 의도는 화면에서 주는 값이 없으면 서비스단에서 <code>null</code>을 넣는 거였는데 NaN이라 이를 Double로 형변환하려니까 ClassCastException이 발생한 것이었다. </p><p><br><br><br></p><h1 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h1><p>Double에서는 isNaN을 제공해준다. 이를 이용하면 된다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//해결코드</span></span><br><span class="line"><span class="keyword">if</span>(Double.isNaN(Double.valueOf(map.get(<span class="string">"fee"</span>))))&#123;</span><br><span class="line">fee = <span class="keyword">null</span>;</span><br><span class="line">&#125; <span class="keyword">else</span>&#123;</span><br><span class="line">fee = Double.Double.valueOf(map.get(<span class="string">"fee"</span>));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>오늘도 해결!</p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://www.javatpoint.com/java-double-isnan-method">https://www.javatpoint.com/java-double-isnan-method</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/JAVA/">JAVA</category>
-      
-      
-      
-      <comments>https://sowon-dev.github.io/2023/05/09/230509double-NaN/#disqus_thread</comments>
       
     </item>
     

@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2023/10/17/231018momentjs-issame/</loc>
+        <lastmod>2023-10-18T07:38:16.365Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/08/30/220831js-calendar/</loc>
+        <lastmod>2023-10-18T07:25:06.500Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2023/10/15/231016imgtag-onerrer/</loc>
         <lastmod>2023-10-16T05:10:24.617Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -882,14 +898,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2022/08/23/220824projectreview7/</loc>
         <lastmod>2022-09-01T04:11:53.189Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/08/30/220831js-calendar/</loc>
-        <lastmod>2022-08-31T06:29:14.827Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
