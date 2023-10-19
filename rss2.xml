@@ -9,8 +9,37 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Wed, 18 Oct 2023 07:38:16 GMT</pubDate>
+    <pubDate>Thu, 19 Oct 2023 15:04:51 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[WIP/Moment.js] moment String을 Controller에서 LocalDateTime으로 받기</title>
+      <link>https://sowon-dev.github.io/2023/10/18/231019momentjs-to-localdatetime/</link>
+      <guid>https://sowon-dev.github.io/2023/10/18/231019momentjs-to-localdatetime/</guid>
+      <pubDate>Wed, 18 Oct 2023 20:57:25 GMT</pubDate>
+      
+        
+        
+      <description>&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+&lt;h1 id=&quot;주제&quot;&gt;&lt;a href=&quot;#주제&quot; class=&quot;headerlink&quot; title=&quot;주제&quot;&gt;&lt;/a&gt;주제&lt;/h1&gt;&lt;p&gt;작성중&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<a id="more"></a><h1 id="주제"><a href="#주제" class="headerlink" title="주제"></a>주제</h1><p>작성중</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><p>- </p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Moment-js/">Moment.js</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2023/10/18/231019momentjs-to-localdatetime/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[Moment.js] isSame 오늘날짜와 비교가 안되는 이유</title>
@@ -460,29 +489,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/05/11/230512regex-seconddigit-decimalpoint/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>count(**)와 count(1) 그리고 count(컬럼명) 차이</title>
-      <link>https://sowon-dev.github.io/2023/05/10/230511-count/</link>
-      <guid>https://sowon-dev.github.io/2023/05/10/230511-count/</guid>
-      <pubDate>Wed, 10 May 2023 18:47:21 GMT</pubDate>
-      
-      <description>&lt;p&gt;SQL에서 count를 셀때 3가지 방법으로 나타낼 수 있다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>SQL에서 count를 셀때 3가지 방법으로 나타낼 수 있다.</p><a id="more"></a><ol><li>count(*)</li><li>count(1)</li><li>count(컬럼명)</li></ol><h1 id="count-vs-count-1"><a href="#count-vs-count-1" class="headerlink" title="count(*) vs count(1)"></a>count(*) vs count(1)</h1><p>사실 둘 사이에는 아무런 차이도 없다.<br>동일하게 동작하는 걸 알 수 있다.<br>다만 가독성을 위해 <code>count(*)</code> 사용하는 것을 좋다고 한다.</p><p><br><br><br></p><h1 id="count-vs-count-컬럼명"><a href="#count-vs-count-컬럼명" class="headerlink" title="count(*) vs count(컬럼명)"></a>count(*) vs count(컬럼명)</h1><ul><li><code>COUNT(*)</code>는 레코드 갯수 전체를 카운트</li><li><code>COUNT(column_name)</code> 컬럼이 null이 아닌 경우 레코드 갯수를 카운트 </li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%EC%B0%A8%EC%9D%B4/">차이</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2023/05/10/230511-count/#disqus_thread</comments>
       
     </item>
     
