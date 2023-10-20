@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Thu, 19 Oct 2023 15:04:51 GMT</pubDate>
+    <pubDate>Fri, 20 Oct 2023 00:33:13 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[JS] URL 파라미터(쿼리파라미터Query Parameter) 가져오기</title>
+      <link>https://sowon-dev.github.io/2023/10/19/231020URLsearchparams/</link>
+      <guid>https://sowon-dev.github.io/2023/10/19/231020URLsearchparams/</guid>
+      <pubDate>Thu, 19 Oct 2023 15:26:14 GMT</pubDate>
+      
+      <description>&lt;p&gt;정말 초간단한 Query Parameter 가져오는 방법은 URL객체를 사용하는 것이다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>정말 초간단한 Query Parameter 가져오는 방법은 URL객체를 사용하는 것이다.</p><a id="more"></a><p>네이버 검색을 예로 들어보자.<br>아래와 같은 URL에서 <code>query=가나다</code>만 가져오고 싶다면 어떻게 해야할까?</p><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://search.naver.com/search.naver?where=nexearch&amp;sm=top_hty&amp;fbm=0&amp;ie=utf8&amp;query=가나다</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="URLSearchParams"><a href="#URLSearchParams" class="headerlink" title="URLSearchParams"></a>URLSearchParams</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> urlParams = <span class="keyword">new</span> URLSearchParams(<span class="built_in">window</span>.location.search);</span><br><span class="line"><span class="keyword">const</span> query = urlParams.get(<span class="string">'query'</span>); </span><br><span class="line"><span class="built_in">console</span>.log(query)</span><br><span class="line"><span class="comment">//output: 가나다</span></span><br></pre></td></tr></table></figure><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams">모질라 URLSearchParams 객체</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2023/10/19/231020URLsearchparams/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[WIP/Moment.js] moment String을 Controller에서 LocalDateTime으로 받기</title>
@@ -18,17 +39,11 @@
       <guid>https://sowon-dev.github.io/2023/10/18/231019momentjs-to-localdatetime/</guid>
       <pubDate>Wed, 18 Oct 2023 20:57:25 GMT</pubDate>
       
-        
-        
-      <description>&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-
-&lt;h1 id=&quot;주제&quot;&gt;&lt;a href=&quot;#주제&quot; class=&quot;headerlink&quot; title=&quot;주제&quot;&gt;&lt;/a&gt;주제&lt;/h1&gt;&lt;p&gt;작성중&lt;/p&gt;
-&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;</description>
-        
+      <description>&lt;p&gt;moment으로 startDate를 포맷하여 &lt;code&gt;startDate.format(&amp;quot;YYYY-MM-DDTHH:mm:ss&amp;quot;)&lt;/code&gt; ajax를 이용해 컨트롤러로 보냈다.&lt;br&gt;LocalDateTime 데이터타입이 당연히 받을 수 있을 줄 알았는데 typeMismatch.java.time.LocalDateTime 에러가 발생했다. &lt;/p&gt;</description>
       
       
       
-      <content:encoded><![CDATA[<a id="more"></a><h1 id="주제"><a href="#주제" class="headerlink" title="주제"></a>주제</h1><p>작성중</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><p>- </p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>moment으로 startDate를 포맷하여 <code>startDate.format(&quot;YYYY-MM-DDTHH:mm:ss&quot;)</code> ajax를 이용해 컨트롤러로 보냈다.<br>LocalDateTime 데이터타입이 당연히 받을 수 있을 줄 알았는데 typeMismatch.java.time.LocalDateTime 에러가 발생했다. </p><a id="more"></a><h1 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// request body</span></span><br><span class="line">calendarParam(idx=<span class="number">10</span>, startDate=<span class="number">2023</span><span class="number">-10</span><span class="number">-01</span>T00:<span class="number">00</span>:<span class="number">00</span>, endDate=<span class="number">2023</span><span class="number">-10</span><span class="number">-31</span>T23:<span class="number">59</span>:<span class="number">59</span>)</span><br></pre></td></tr></table></figure><p>클라이언트에서 보내는 데이터는 위와 같다</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Field error in object 'calendarParam' on field 'startDate': rejected value [2023-10-01&amp;amp;#39;T&amp;amp;#39;00:00:00.000]; codes [typeMismatch.calendarParam.startDate,typeMismatch.startDate,typeMismatch.java.time.LocalDateTime,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [calendarParam.startDate,startDate]; arguments []; default message [startDate]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.time.LocalDateTime' for property 'startDate'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.format.annotation.DateTimeFormat java.time.LocalDateTime] for value '2023-10-01&amp;amp;#39;T&amp;amp;#39;00:00:00.000'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2023-10-01&amp;amp;#39;T&amp;amp;#39;00:00:00.000]]</span><br><span class="line">Field error in object 'calendarParam' on field 'end': rejected value [2023-10-31&amp;amp;#39;T&amp;amp;#39;23:59:59.999];</span><br></pre></td></tr></table></figure><p>typeMismatch 에러가 발생했다.<br>혹시 데이터포맷상 <code>startDate.format(&quot;YYYY-MM-DDTHH:mm:ss&quot;)</code>의 <code>T</code> 때문인가 싶어(그럴리없겠지만) 여러가지를 시도했다.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">startDate.format(<span class="string">"YYYY-MM-DD'T'HH:mm:ss"</span>) <span class="comment">//작은따옴표로 감싸보기</span></span><br><span class="line">startDate.format(<span class="string">"YYYY-MM-DD[T]HH:mm:ss"</span>) <span class="comment">//대괄호로 감싸보기</span></span><br><span class="line">startDate.format(<span class="string">"YYYY-MM-DD HH:mm:ss"</span>) <span class="comment">//T없애보기</span></span><br></pre></td></tr></table></figure><p>결과는 여전히 typeMismatch에러였다.</p><p><br><br><br></p><h1 id="해결-String"><a href="#해결-String" class="headerlink" title="해결: String"></a>해결: String</h1><p> LocalDateTime을 쓰고 싶었던 이유는 mybatis에서 시작일과 종료일 날짜연산을 하기위해서였다.<br> LocalDateTime을 String으로 변경하고 나서야 정상 작동했다. String이라도 형식이 맞기때문인지 날짜연산도 잘되었다.<br> 해결!</p>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
@@ -466,29 +481,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/05/21/230522bigdecimal/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[JS/jQuery]정규표현식 숫자 소수둘째자리까지 적용하기</title>
-      <link>https://sowon-dev.github.io/2023/05/11/230512regex-seconddigit-decimalpoint/</link>
-      <guid>https://sowon-dev.github.io/2023/05/11/230512regex-seconddigit-decimalpoint/</guid>
-      <pubDate>Thu, 11 May 2023 20:55:13 GMT</pubDate>
-      
-      <description>&lt;p&gt;input태그에 소수점 둘째자리까지만 받고 싶었다. input number 타입을 쓰고 step=”0.01”을 쓰는 방법도 있지만 input타입을 text로 써야하는 상황이라 그냥 정규식을 사용했다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>input태그에 소수점 둘째자리까지만 받고 싶었다. input number 타입을 쓰고 step=”0.01”을 쓰는 방법도 있지만 input타입을 text로 써야하는 상황이라 그냥 정규식을 사용했다.</p><a id="more"></a><h1 id="숫자-소수점-둘째짜리만-입력허용하는-경우"><a href="#숫자-소수점-둘째짜리만-입력허용하는-경우" class="headerlink" title="숫자 소수점 둘째짜리만 입력허용하는 경우"></a>숫자 소수점 둘째짜리만 입력허용하는 경우</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"price"</span> <span class="attr">val</span>=<span class="string">"0"</span> /&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#price"</span>).keyup(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"><span class="keyword">let</span> price = $(<span class="keyword">this</span>).val();</span><br><span class="line"><span class="keyword">const</span> regex = <span class="regexp">/(^/</span>d+$)|(^d&#123;<span class="number">1</span>,&#125;.\d&#123;<span class="number">0</span>,<span class="number">2</span>&#125;$)/g;</span><br><span class="line"><span class="keyword">let</span> resultPrice = price.replace(regex, <span class="string">""</span>);</span><br><span class="line">$(<span class="keyword">this</span>).val(resultPrice);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="숫자입력만-허용하는-경우"><a href="#숫자입력만-허용하는-경우" class="headerlink" title="숫자입력만 허용하는 경우"></a>숫자입력만 허용하는 경우</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"price"</span> <span class="attr">val</span>=<span class="string">"0"</span> /&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#price"</span>).keyup(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"><span class="keyword">let</span> price = $(<span class="keyword">this</span>).val();</span><br><span class="line"><span class="keyword">const</span> regex = <span class="regexp">/[^0-9]/g</span>;</span><br><span class="line"><span class="keyword">let</span> resultPrice = price.replace(regex, <span class="string">""</span>);</span><br><span class="line">$(<span class="keyword">this</span>).val(resultPrice);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>이렇게 처리한다면 input태그에 숫자가 아닌 문자는 입력이 아예 안된다!</p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D/">정규표현식</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2023/05/11/230512regex-seconddigit-decimalpoint/#disqus_thread</comments>
       
     </item>
     
