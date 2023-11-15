@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/HTML-CSS/</loc>
+        <lastmod>2023-11-15T01:31:19.419Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/MyBatis/</loc>
         <lastmod>2023-11-14T10:50:19.527Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -12,13 +19,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/Moment-js/</loc>
         <lastmod>2023-10-20T00:47:43.665Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/HTML-CSS/</loc>
-        <lastmod>2023-10-16T05:10:24.617Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

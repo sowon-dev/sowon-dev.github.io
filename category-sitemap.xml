@@ -8,6 +8,13 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/HTML-CSS/</loc>
+        <lastmod>2023-11-15T01:31:19.419Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/Database/MySQL/</loc>
         <lastmod>2023-11-14T10:50:19.527Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -24,13 +31,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/JavaScript/</loc>
         <lastmod>2023-10-24T06:57:16.038Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/HTML-CSS/</loc>
-        <lastmod>2023-10-16T05:10:24.617Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
