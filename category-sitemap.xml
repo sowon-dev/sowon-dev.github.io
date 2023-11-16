@@ -9,7 +9,14 @@
 
     <url>
         <loc>https://sowon-dev.github.io/categories/HTML-CSS/</loc>
-        <lastmod>2023-11-15T01:50:16.166Z</lastmod>
+        <lastmod>2023-11-16T02:39:44.708Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
+        <lastmod>2023-11-15T10:50:24.158Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -58,13 +65,6 @@
 
     <url>
         <loc>https://sowon-dev.github.io/categories/Journal/%25ED%259A%258C%25EA%25B3%25A0%25EB%25A1%259D/</loc>
-        <lastmod>2023-07-06T06:02:32.866Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
         <lastmod>2023-07-06T06:02:32.866Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

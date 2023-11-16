@@ -4,7 +4,21 @@
 
     <url>
         <loc>https://sowon-dev.github.io/tags/HTML-CSS/</loc>
-        <lastmod>2023-11-15T01:50:16.166Z</lastmod>
+        <lastmod>2023-11-16T02:39:44.708Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/STS/</loc>
+        <lastmod>2023-11-15T10:50:24.158Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/Eclipse/</loc>
+        <lastmod>2023-11-15T10:50:24.158Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -334,20 +348,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/SpringBoot/</loc>
         <lastmod>2022-04-05T14:15:05.893Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/STS/</loc>
-        <lastmod>2022-03-11T13:12:09.900Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/Eclipse/</loc>
-        <lastmod>2022-03-02T06:44:07.588Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
