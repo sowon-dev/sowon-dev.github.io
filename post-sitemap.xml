@@ -8,8 +8,24 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2024/01/01/240102byte-check/</loc>
+        <lastmod>2024-01-02T00:36:22.586Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2023/10/18/231019momentjs-to-localdatetime/</loc>
+        <lastmod>2024-01-01T23:59:26.983Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2023/11/20/231121js-observer/</loc>
-        <lastmod>2023-11-21T08:09:09.043Z</lastmod>
+        <lastmod>2023-11-21T08:09:55.216Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -50,14 +66,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2023/10/19/231020URLsearchparams/</loc>
         <lastmod>2023-10-24T06:57:16.038Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2023/10/18/231019momentjs-to-localdatetime/</loc>
-        <lastmod>2023-10-20T00:47:43.665Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
