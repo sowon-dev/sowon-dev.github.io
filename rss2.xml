@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Tue, 02 Jan 2024 00:36:22 GMT</pubDate>
+    <pubDate>Mon, 08 Jan 2024 02:30:34 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[JS] URL 파라미터(쿼리파라미터Query Parameter)가져오기(ft.EL표현식)</title>
+      <link>https://sowon-dev.github.io/2024/01/07/240108jsp-el-queryparam/</link>
+      <guid>https://sowon-dev.github.io/2024/01/07/240108jsp-el-queryparam/</guid>
+      <pubDate>Sun, 07 Jan 2024 17:20:47 GMT</pubDate>
+      
+      <description>&lt;p&gt;정말 초간단한 Query Parameter 가져오는 방법은 param 객체를 사용하는 것이다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>정말 초간단한 Query Parameter 가져오는 방법은 param 객체를 사용하는 것이다.</p><a id="more"></a><p>네이버 검색을 예로 들어보자.<br>아래와 같은 URL에서 <code>query=가나다</code>만 가져오고 싶다면 어떻게 해야할까?</p><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://search.naver.com/search.naver?where=nexearch&amp;sm=top_hty&amp;fbm=0&amp;ie=utf8&amp;query=가나다</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="1-EL표현식-사용"><a href="#1-EL표현식-사용" class="headerlink" title="1. EL표현식 사용!"></a>1. EL표현식 사용!</h1><figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$&#123;param.query&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//output : 가나다</span></span><br></pre></td></tr></table></figure><p>해결!</p><p><br><br><br></p><h1 id="2-request사용"><a href="#2-request사용" class="headerlink" title="2. request사용!"></a>2. request사용!</h1><figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= request.getAttribute(<span class="string">"query"</span>) %&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">//output : 가나다</span></span><br></pre></td></tr></table></figure><p>이 방법을 활용하면 String뿐만 아니라 객체도 가져올 수 있다.<br>객체 파라미터를 가져오는 방법은 아래 포스팅 참고하면 된다.</p><ul><li><a href="https://sowon-dev.github.io/2020/10/12/201013spring/">참고: 스프링SPRING에서 페이지이동하기, 파라미터가지고 페이지이동하기</a></li></ul><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://sowon-dev.github.io/2023/10/19/231020URLsearchparams/">js에서 URL 파라미터(쿼리파라미터Query Parameter)가져오기</a></li><li><a href="">jsp에서 URL 파라미터(쿼리파라미터Query Parameter)가져오기(ft.EL표현식)</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/JSP/">JSP</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2024/01/07/240108jsp-el-queryparam/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[JSP/JAVA]글씨쓸때마다 바이트 계산하기</title>
@@ -157,7 +178,7 @@
     </item>
     
     <item>
-      <title>[JS] URL 파라미터(쿼리파라미터Query Parameter) 가져오기</title>
+      <title>[JS] URL 파라미터(쿼리파라미터Query Parameter)가져오기</title>
       <link>https://sowon-dev.github.io/2023/10/19/231020URLsearchparams/</link>
       <guid>https://sowon-dev.github.io/2023/10/19/231020URLsearchparams/</guid>
       <pubDate>Thu, 19 Oct 2023 15:26:14 GMT</pubDate>
@@ -166,7 +187,7 @@
       
       
       
-      <content:encoded><![CDATA[<p>정말 초간단한 Query Parameter 가져오는 방법은 URL객체를 사용하는 것이다.</p><a id="more"></a><p>네이버 검색을 예로 들어보자.<br>아래와 같은 URL에서 <code>query=가나다</code>만 가져오고 싶다면 어떻게 해야할까?</p><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://search.naver.com/search.naver?where=nexearch&amp;sm=top_hty&amp;fbm=0&amp;ie=utf8&amp;query=가나다</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="URLSearchParams"><a href="#URLSearchParams" class="headerlink" title="URLSearchParams"></a>URLSearchParams</h1><p>URLSearchParams 객체를 활용하면 된다!</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> urlParams = <span class="keyword">new</span> URLSearchParams(<span class="built_in">window</span>.location.search);</span><br><span class="line"><span class="keyword">const</span> query = urlParams.get(<span class="string">'query'</span>); </span><br><span class="line"><span class="built_in">console</span>.log(query)</span><br><span class="line"><span class="comment">//output: 가나다</span></span><br></pre></td></tr></table></figure><p>해결!</p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams">MDN URLSearchParams 객체</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p>정말 초간단한 Query Parameter 가져오는 방법은 URL객체를 사용하는 것이다.</p><a id="more"></a><p>네이버 검색을 예로 들어보자.<br>아래와 같은 URL에서 <code>query=가나다</code>만 가져오고 싶다면 어떻게 해야할까?</p><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://search.naver.com/search.naver?where=nexearch&amp;sm=top_hty&amp;fbm=0&amp;ie=utf8&amp;query=가나다</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="URLSearchParams"><a href="#URLSearchParams" class="headerlink" title="URLSearchParams"></a>URLSearchParams</h1><p>URLSearchParams 객체를 활용하면 된다!</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> urlParams = <span class="keyword">new</span> URLSearchParams(<span class="built_in">window</span>.location.search);</span><br><span class="line"><span class="keyword">const</span> query = urlParams.get(<span class="string">'query'</span>); </span><br><span class="line"><span class="built_in">console</span>.log(query)</span><br><span class="line"><span class="comment">//output: 가나다</span></span><br></pre></td></tr></table></figure><p>해결!</p><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams">MDN URLSearchParams 객체</a></li><li><a href="https://sowon-dev.github.io/2023/10/19/231020URLsearchparams/">js에서 URL 파라미터(쿼리파라미터Query Parameter)가져오기</a></li><li><a href="">jsp에서 URL 파라미터(쿼리파라미터Query Parameter)가져오기(ft.EL표현식)</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
@@ -460,31 +481,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/06/26/230627jstree/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>아파치와 톰캣 분리한다고요?(ft. Web Service Architecture 차이)</title>
-      <link>https://sowon-dev.github.io/2023/06/25/230626webserver-vs-was/</link>
-      <guid>https://sowon-dev.github.io/2023/06/25/230626webserver-vs-was/</guid>
-      <pubDate>Sun, 25 Jun 2023 19:47:55 GMT</pubDate>
-      
-      <description>&lt;p&gt;오늘 커피챗에서 이번 프로젝트 서버 설계에 대한 이야기가 나왔다. 아파치와 톰캣을 분리한다고 하셨다. &lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>오늘 커피챗에서 이번 프로젝트 서버 설계에 대한 이야기가 나왔다. 아파치와 톰캣을 분리한다고 하셨다. </p><a id="more"></a><p>가볍게 스쳐 지나간 주제지만 <a href="https://sowon-dev.github.io/2022/09/05/220906Tomcat-vs-Apatch/">아파치 vs 톰캣 포스팅</a>이 떠오르면서 분리하면 어떻게 서버가 도는 건지 궁금해졌다.</p><h1 id="Web-Service-Architecture-종류"><a href="#Web-Service-Architecture-종류" class="headerlink" title="Web Service Architecture 종류"></a>Web Service Architecture 종류</h1><ul><li>Client -&gt; WAS -&gt; DB</li><li>Client -&gt; Web Server -&gt; DB</li><li>Client -&gt; Web Server -&gt; WAS -&gt; DB</li></ul><p>가장 많이 사용하는건 1번 WAS이다. 왜냐하면 WAS가 Web Server의 기능을 대부분 수행할 수 있기때문이다.<br>그럼에도 불구하고 이번 프로젝트에서 3번을 사용한다고 한다.</p><p><br><br><br></p><h1 id="왜-Web-Server와-WAS를-분리하는-걸까"><a href="#왜-Web-Server와-WAS를-분리하는-걸까" class="headerlink" title="왜 Web Server와 WAS를 분리하는 걸까?"></a>왜 Web Server와 WAS를 분리하는 걸까?</h1><ol><li>보안강화: WAS는 DB와 바로 연결되기때문에 WEB SERVER와 WAS를 분리하여 WEB SERVER를 외부서버에 두고 WAS와 DB서버를 내부 서버에 두면 보안을 강화할 수 있다.</li><li>서버부하방지: WAS는 DB조회나 서비스로직을 처리하느라 항상 바쁘기에 단순한 정적페이지는 WEB SERVER를 이용하면 빠르게 사용자에게 보여주고 WAS 부하를 방지할 수 있다.</li><li>로드밸런싱을 위한 여러 대 WAS 연결 가능</li><li>여러 웹 어플리케이션 서비스 가능: 예를들어 PHP APPLICATION과 JAVA APPLICATION 함께 사용 가능하다.</li></ol><p>이번 프로젝트는 사이트가 많은 편인데 정적 페이지도 많으므로 서버 부하가 예상되기에 WEB SERVER를 WAS앞에 두고 DB나 서비스로직이 필요할때마다 WAS를 호출하는 형태로 사용하기 위해 분리한다고 하셨다.<br>아하~ 유레카😎</p><p><br><br><br></p><h1 id="웹서버-WEB-SERVER-VS-웹어플리케이션서버-WAS-Web-Application-Server"><a href="#웹서버-WEB-SERVER-VS-웹어플리케이션서버-WAS-Web-Application-Server" class="headerlink" title="웹서버(WEB SERVER) VS 웹어플리케이션서버(WAS, Web Application Server)"></a><a href="https://sowon-dev.github.io/2020/10/04/201005jspProcessVSThreadNWebServerVSWAS/#%EC%9B%B9%EC%84%9C%EB%B2%84-WEB-SERVER-VS-%EC%9B%B9%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%84%9C%EB%B2%84-WAS-Web-Application-Server">웹서버(WEB SERVER) VS 웹어플리케이션서버(WAS, Web Application Server)</a></h1><p>기본적인 차이점이다.</p><ul><li>웹서버 : DB사용 불가능<ul><li>클라이언트측 정적데이터</li><li>웹 브라우저 클라이언트로부터 HTTP 요청을 받아 정적인 컨텐츠(.html .jpeg .css 등)를 제공하는 컴퓨터 프로그램</li><li>Web Server의 예 : Apache Server, Nginx, IIS(Windows 전용 Web 서버) 등</li></ul></li><li>WAS : DB사용 가능<ul><li>서버측 동적데이터 사용</li><li>DB 조회나 다양한 로직 처리를 요구하는 동적인 컨텐츠를 제공하기 위해 만들어진 Application Server</li><li>WAS의 예 : Ex) Tomcat, JBoss, Jeus, Web Sphere 등</li></ul></li></ul><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li>송과장님 지식</li><li><a href="https://sowon-dev.github.io/2020/10/04/201005jspProcessVSThreadNWebServerVSWAS/#%EC%9B%B9%EC%84%9C%EB%B2%84-WEB-SERVER-VS-%EC%9B%B9%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%84%9C%EB%B2%84-WAS-Web-Application-Server">웹서버(WEB SERVER) VS 웹어플리케이션서버(WAS, Web Application Server)</a></li><li><a href="https://sowon-dev.github.io/2022/09/05/220906Tomcat-vs-Apatch/">아파치 vs 톰캣 같은 거 아냐? 차이점</a></li><li><a href="https://gmlwjd9405.github.io/2018/10/27/webserver-vs-was.html">HeeJeong Kwon - Web Server와 WAS의 차이와 웹 서비스 구조</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Server/">Server</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%8A%98%EB%98%90%EB%AA%BB%EC%95%8C%EC%95%84%EB%93%A3%EA%B3%A0%EB%A7%90%EC%95%98%EC%8A%B5%EB%8B%88%EB%8B%A4/">오늘또못알아듣고말았습니다</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/%EC%B0%A8%EC%9D%B4/">차이</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2023/06/25/230626webserver-vs-was/#disqus_thread</comments>
       
     </item>
     
