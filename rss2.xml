@@ -9,8 +9,58 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Tue, 09 Jan 2024 05:27:58 GMT</pubDate>
+    <pubDate>Thu, 11 Jan 2024 02:46:27 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[네트워크] Socket(소켓) vs Websocket(웹소켓) 차이점</title>
+      <link>https://sowon-dev.github.io/2024/01/10/240111websocket-vs-tcpipsocket/</link>
+      <guid>https://sowon-dev.github.io/2024/01/10/240111websocket-vs-tcpipsocket/</guid>
+      <pubDate>Wed, 10 Jan 2024 16:46:25 GMT</pubDate>
+      
+      <description>&lt;p&gt;오늘 팀장님과 커피챗을 하면서 소켓이야기를 했다.&lt;br&gt;내가 알고 있는 소켓은 클라이언트의 요청없이 서버가 응답하는 것이였는데 오늘 팀장님 말씀을 들어보니까 뭔가 다른 내용이었다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>오늘 팀장님과 커피챗을 하면서 소켓이야기를 했다.<br>내가 알고 있는 소켓은 클라이언트의 요청없이 서버가 응답하는 것이였는데 오늘 팀장님 말씀을 들어보니까 뭔가 다른 내용이었다.</p><a id="more"></a><p>알고보니 팀장님은 소켓통신을 얘기하셨는데 내가 웹소켓으로 오해했기때문이다.<br>이참에 둘 차이를 공부해봤다.<br>내가 제일 부족한 부분은 네트워크인 듯하다. 올해는 이 부분에 대해 집중적으로 공부해봐야겠다. </p><h1 id="Socket-소켓"><a href="#Socket-소켓" class="headerlink" title="Socket(소켓)"></a>Socket(소켓)</h1><p><img src="http://wiki.hash.kr/images/d/d7/OSI_7_%EA%B3%84%EC%B8%B5%EA%B3%BC_TCPIP.jpg" alt="해시넷"></p><ul><li>OSI 7계층은 네트워크를 관리하는 계층이다. 계층별 각 프로토콜, 즉 통신규약이 존재한다. 프로토콜을 구현하려면 구체적인 구현부인 함수가 필요하다.</li><li>소켓이란? 별도의 구현없이 소켓을 이용하여 프로토콜 함수의 BODY를 만들 수 있다. 일반적으로 TCP/IP를 사용한다. <ul><li>연결역할: 일종의 endpoint로 IP와 서비스포트를 통해서 두 개의 소프트웨어를 연결한다.</li><li>데이터송수신역할: 두 개의 소프트웨어를 연결하고 데이터를 송수신한다.</li><li>종류: 클라이언트 소켓, 서버 소켓</li></ul></li><li>TCP/IP 4계층 중 전송계층에서 사용됨<ul><li>TCP통신이란? <a href="https://sowon-dev.github.io/2021/07/30/210730TCPVSUDP/">TCP통신 vs UDP통신 차이점</a></li></ul></li></ul><p><br><br><br></p><h1 id="Websocket-웹소켓-과의-차이점"><a href="#Websocket-웹소켓-과의-차이점" class="headerlink" title="Websocket(웹소켓)과의 차이점"></a>Websocket(웹소켓)과의 차이점</h1><ul><li><a href="https://sowon-dev.github.io/2023/01/26/230127resttemplate-vs-websocket/">웹소켓</a>이란? 서버가 클라이언트에게 먼저 말(메세지)을 걸 수 있다. 즉, 클라이언트 요청없이도 서버가 클라이언트에 응답가능!</li><li>Socket(소켓)과 차이점? <ul><li>동작계층: 소켓은 인터넷프로토콜을 기반하므로 TCP가 속한 OSI 4계층에서 이루어지고 웹소켓은 TCP에 의존하지만 HTTP기반이므로 7계층에서 이루어짐</li><li>데이터형식: TCP에 기반한 소켓통신은 단순히 바이트로 이루어진 데이터, 웹소켓통신은 메시지형식의 데이터</li></ul></li></ul><p>사실 소켓과 웹소켓은 완전 다른 개념이 아니다. 소켓통신을 웹어플리케이션에 맞게 디자인한 것이 웹소캣이다.</p><p><br><br><br></p><h1 id="여담"><a href="#여담" class="headerlink" title="여담"></a>여담</h1><p>팀장님께 네트워크 공부를 어떻게 하면 좋을지 조언을 부탁드리니 <a href="https://www.icqa.or.kr/cn/page/network">네트워크관리사 자격증</a>이 있다고 알려주셨다.<br>올해는 이 자격증을 취득해봐야겠다!</p><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://sowon-dev.github.io/2023/01/26/230127resttemplate-vs-websocket/">RestTemplate(레스트템플릿)과 Websocket(웹소켓)차이점</a></li><li><a href="https://sowon-dev.github.io/2021/07/30/210730TCPVSUDP/">TCP통신 vs UDP통신 차이점</a></li><li><a href="https://velog.io/@rhdmstj17/%EC%86%8C%EC%BC%93%EA%B3%BC-%EC%9B%B9%EC%86%8C%EC%BC%93-%ED%95%9C-%EB%B2%88%EC%97%90-%EC%A0%95%EB%A6%AC-1">Konseo - 소켓과 웹소켓</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Network/">Network</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/%EC%B0%A8%EC%9D%B4/">차이</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/Websocket/">Websocket</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2024/01/10/240111websocket-vs-tcpipsocket/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>[WIP]예약, 대관, 대여프로그램 프로젝트를 끝내며 내가 배운 것</title>
+      <link>https://sowon-dev.github.io/2024/01/10/240111prjtreview10/</link>
+      <guid>https://sowon-dev.github.io/2024/01/10/240111prjtreview10/</guid>
+      <pubDate>Wed, 10 Jan 2024 15:13:12 GMT</pubDate>
+      
+      <description>&lt;p&gt;이번 프로젝트에서는 예약, 대관, 대여프로그램을 주 업무로 맡았다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>이번 프로젝트에서는 예약, 대관, 대여프로그램을 주 업무로 맡았다.</p><a id="more"></a><p>(작성중)</p><h1 id="keep"><a href="#keep" class="headerlink" title="keep"></a>keep</h1><p>현재 만족하고 있는 부분과 계속해서 이어갔으면 하는 부분</p><p><br><br><br></p><h1 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h1><p>개선이 필요하다고 생각되는 부분</p><p><br><br><br></p><h1 id="Try"><a href="#Try" class="headerlink" title="Try"></a>Try</h1><p>Problem의 해결책이 될 수 있는 부분</p><p><br><br><br></p><h1 id="관련-포스팅"><a href="#관련-포스팅" class="headerlink" title="관련 포스팅"></a>관련 포스팅</h1><ul><li><a href="https://sowon-dev.github.io/2023/09/10/230911ajax-sucess-error/">분명 success인데 왜 계속 error로 가는걸까?</a></li><li><a href="https://sowon-dev.github.io/2023/10/15/231016imgtag-onerrer/">IMG태그 기본이미지설정(DEFAULT IMG, ONERROR속성) 에러 해결</a></li><li><a href="https://sowon-dev.github.io/2023/10/17/231018momentjs-issame/">isSame 오늘날짜와 비교가 안되는 이유</a></li><li><a href="https://sowon-dev.github.io/2023/10/18/231019momentjs-to-localdatetime/">moment String을 Controller에서 LocalDateTime으로 받기</a></li><li><a href="https://sowon-dev.github.io/2023/10/19/231020URLsearchparams/">URL 파라미터(쿼리파라미터Query Parameter)가져오기</a></li><li><a href="https://sowon-dev.github.io/2023/11/14/231114mybatis-if-update-all/">mybatis update시 모두 if test를 써야 할 경우</a> </li><li><a href="https://sowon-dev.github.io/2023/11/14/231114mybatis-resultMap-manyassociation/">mybatis 객체 안에 객체 매핑하기</a></li><li><a href="https://sowon-dev.github.io/2023/11/14/231115lable-for/">radio/checkbox 클릭 안 되는 오류가 label for 때문이라고?</a></li><li><a href="https://sowon-dev.github.io/2023/11/20/231121js-observer/">observer 사용하기</a></li><li><a href="https://sowon-dev.github.io/2024/01/01/240102byte-check/">글씨쓸때마다 바이트 계산하기</a></li><li><a href="https://sowon-dev.github.io/2024/01/07/240108jsp-el-queryparam/">URL 파라미터(쿼리파라미터Query Parameter)가져오기(ft.EL표현식)</a></li><li><a href="https://sowon-dev.github.io/2024/01/08/240109domcontentloaded-vs-onload/">DOMContentLoaded와 window.onload차이(ft.페이지 라이프사이클Page Lifecycle)</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2024/01/10/240111prjtreview10/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[JS] DOMContentLoaded와 window.onload차이(ft.페이지 라이프사이클Page Lifecycle)</title>
@@ -431,54 +481,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/07/12/230713-server-redirectport443/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[바닐라JS/Pure JS]iframe 내 태그에 접근하고 싶을때(선택자)</title>
-      <link>https://sowon-dev.github.io/2023/07/08/230709iframe-contentwindow/</link>
-      <guid>https://sowon-dev.github.io/2023/07/08/230709iframe-contentwindow/</guid>
-      <pubDate>Sat, 08 Jul 2023 21:39:21 GMT</pubDate>
-      
-      <description>&lt;p&gt;자주 보는 사이트 중 table의 첫번째 tr을 숨기고 싶어서 스크립트 코드를 만들었다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>자주 보는 사이트 중 table의 첫번째 tr을 숨기고 싶어서 스크립트 코드를 만들었다.</p><a id="more"></a><p>해당 사이트 HTML 구성이 어떻게 되어있는지 몰라서 차근차근 뜯어보았는데<br>iframe 하위에 iframe을 또 부르고 그 하위에 table이 있고 그 하위에 내가 숨기고싶은 tr이 있는 구조였다.</p><h1 id="코드"><a href="#코드" class="headerlink" title="코드"></a>코드</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">id</span>=<span class="string">"sub2"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">id</span>=<span class="string">"ifrm"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">id</span>=<span class="string">"tableList"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">thead</span>&gt;</span></span><br><span class="line">// 중략</span><br><span class="line"><span class="tag">&lt;/<span class="name">thead</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tbody</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span>첫번째 - 숨김처리 하고싶다<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span>두번째<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span>세번째<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure><p>HTML구조를 최대한 간략하게 작성해보았고 스크립트는 아래와 같이 만들어봤다.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 첫번째 tr 숨기기</span></span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">"sub2"</span>).contentWindow.document.getElementById(<span class="string">"ifrm"</span>).contentWindow.document.getElementById(<span class="string">"tableList"</span>).querySelector(<span class="string">"tbody &gt; tr"</span>).style.display = <span class="string">"none"</span>;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="개선-필요점"><a href="#개선-필요점" class="headerlink" title="개선 필요점"></a>개선 필요점</h1><p>크롬 브라우저에서 테스트하면 가끔 <code>TypeError: Cannot read properties of null (reading &#39;contentWindow&#39;)</code> 에러가 발생한다. 어떻게 해결해야하는지 모르겠다. 이 부분 개선필요하다.</p><p><br><br><br></p><h1 id="팀장님-꿀팁🍯"><a href="#팀장님-꿀팁🍯" class="headerlink" title="팀장님 꿀팁🍯"></a>팀장님 꿀팁🍯</h1><p>크롬브라우저에선 개발자도구를 통해 1초만에 js선택자코드를 복사할수있다.<br>F12에서 요소탭의 HTML코드에서 원하는 HTML태그를 우클릭한 후 복사 &gt; JS경로 복사를 선택하면 자동으로 js선택자코드가 클립보드에 복사된다! 그래서 복붙만 해주면 간편하게 이용하면 끝!</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// JS경로 복사를 활용한 간단 버전 </span></span><br><span class="line"><span class="built_in">document</span>.querySelector(<span class="string">"#tableList &gt; tbody &gt; tr:nth-child(1)"</span>).style.display = <span class="string">"none"</span>;</span><br></pre></td></tr></table></figure><p>잘 적용은 되나 가끔 <code>TypeError: Cannot read properties of null (reading &#39;contentWindow&#39;)</code> 에러가 여전히 발생한다. 어떻게 해결할수있을까…</p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/VanillaJS/">VanillaJS</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2023/07/08/230709iframe-contentwindow/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[구글애드센스]수익손실위험 ads.txt파일 문제를 해결해야합니다.(ft.Hexo헥소블로그)</title>
-      <link>https://sowon-dev.github.io/2023/07/02/230703ads/</link>
-      <guid>https://sowon-dev.github.io/2023/07/02/230703ads/</guid>
-      <pubDate>Sun, 02 Jul 2023 22:36:43 GMT</pubDate>
-      
-      <description>&lt;p&gt;오랜만에 들어간 애드센스에서  &lt;code&gt;수익 손실 위험 - 수익에 심각한 영향을 미치지 않도록 사이트에서 발견된 ads.txt 파일 문제를 해결해야 합니다.&lt;/code&gt; 경고메시지를 확인했다.&lt;br&gt;&lt;code&gt;지금 해결하기&lt;/code&gt;를 클릭해봐도 아무런 반응이 없었다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>오랜만에 들어간 애드센스에서  <code>수익 손실 위험 - 수익에 심각한 영향을 미치지 않도록 사이트에서 발견된 ads.txt 파일 문제를 해결해야 합니다.</code> 경고메시지를 확인했다.<br><code>지금 해결하기</code>를 클릭해봐도 아무런 반응이 없었다.</p><a id="more"></a><p><img src="/img/230630ads1.PNG" alt="경고 메시지"></p><p><code>자세히 알아보기</code>를 클릭했더니 안내 페이지가 나왔다.<br>안내페이지 그대로 이행했다. 완벽히 해결 된 후 글을 쓰고 싶어서 며칠을 기다렸다가 드디어 오늘에서야 포스팅을 할 수 있게 되었다!</p><p><br><br><br></p><h1 id="타임라인"><a href="#타임라인" class="headerlink" title="타임라인"></a>타임라인</h1><ul><li>230630 문제 발견 및 ads.txt파일 추가 후 배포</li><li>주말이라 체크하는 거 깜박함…</li><li>230703 문제 해결 완료</li></ul><p>구글측 설명으로는 72시간이면 반영이 된다고 한다.<br>72시간이 걸리는 이유는 구글봇이 돌아다니면서 찾아야한다고!</p><p><br><br><br></p><h1 id="문제발견"><a href="#문제발견" class="headerlink" title="문제발견"></a>문제발견</h1><p><img src="/img/230630ads2.PNG" alt=""></p><p>노란 동그라미에서 알 수 있듯 Ads.txt상태가 <code>찾을 수 없음</code> 이기에 경고메시지가 보였던 것이었다.</p><p><br><br><br></p><h1 id="문제해결"><a href="#문제해결" class="headerlink" title="문제해결"></a>문제해결</h1><p><code>지금 해결하기</code>를 클릭해봐도 아무런 반응이 없었기에 <code>자세히 알아보기</code>를 클릭했다.</p><p><img src="/img/230630ads3.PNG" alt="자세히알아보기"></p><p>귀찮지않을까 했는데 생각보다 간단하고 참 쉬웠다.</p><p><br><br></p><h2 id="해결방법"><a href="#해결방법" class="headerlink" title="해결방법"></a>해결방법</h2><ol><li>root경로에 ads.txt파일 신규생성</li><li>신규 파일에 아래 코드 입력 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">google.com, pub-본인게시자코드, DIRECT, f08c47fec0942fa0</span><br></pre></td></tr></table></figure></li><li>잘 되었는지 블로그뒤에 <code>/ads.txt</code>로 2번에서 작성한 코드가 리턴되는 지 확인하기</li><li>끝!</li></ol><p><br><br><br></p><h1 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h1><p>타임라인에서 말한 그대로 230630에 최상위 경로에 ads.txt 파일명으로 신규 파일을 생성했고 게시자코드를 확인하여 기입한 후 배포를 진행했다.<br>그리고 블로그 <a href="https://sowon-dev.github.io/ads.txt">https://sowon-dev.github.io/ads.txt</a> 를 브라우저 주소창에 입력하여 정상적으로 호출되는 지 확인했다.</p><p><img src="/img/230703ads4.PNG" alt="해결인증샷"></p><p>그리고 230703 오늘에서야 구글애드센스에 들어가봤는데 아래처럼 Ads.txt상태가 <code>승인됨</code>으로 변경되었고 더이상 경고메시지도 안나온다!<br>해결!</p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/Hexo/">Hexo</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/%EA%B5%AC%EA%B8%80%EC%95%A0%EB%93%9C%EC%84%BC%EC%8A%A4/">구글애드센스</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2023/07/02/230703ads/#disqus_thread</comments>
       
     </item>
     

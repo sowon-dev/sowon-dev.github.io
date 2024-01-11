@@ -8,6 +8,27 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/Network/</loc>
+        <lastmod>2024-01-11T02:46:27.381Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Journal/%25ED%259A%258C%25EA%25B3%25A0%25EB%25A1%259D/</loc>
+        <lastmod>2024-01-11T01:54:39.361Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
+        <lastmod>2024-01-11T01:54:39.361Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/JavaScript/</loc>
         <lastmod>2024-01-09T05:27:58.547Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -31,13 +52,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/HTML-CSS/</loc>
         <lastmod>2023-11-16T02:39:44.708Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
-        <lastmod>2023-11-15T10:50:24.158Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -71,13 +85,6 @@
     </url>
 
     <url>
-        <loc>https://sowon-dev.github.io/categories/Journal/%25ED%259A%258C%25EA%25B3%25A0%25EB%25A1%259D/</loc>
-        <lastmod>2023-07-06T06:02:32.866Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://sowon-dev.github.io/categories/Operating-Systeming/</loc>
         <lastmod>2023-06-28T01:11:56.088Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -94,13 +101,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/Android/</loc>
         <lastmod>2023-04-11T06:22:32.185Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Network/</loc>
-        <lastmod>2023-04-10T07:45:43.207Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
