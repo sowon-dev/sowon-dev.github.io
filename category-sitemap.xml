@@ -8,15 +8,29 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/Spring/</loc>
+        <lastmod>2024-03-08T16:44:02.878Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/%25EC%2598%25A4%25ED%2594%2588%25EC%2586%258C%25EC%258A%25A4%25EC%25BB%25A8%25ED%258A%25B8%25EB%25A6%25AC%25EB%25B7%25B0%25ED%2586%25A42020/</loc>
+        <lastmod>2024-03-08T16:27:27.737Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/Journal/%25ED%259A%258C%25EA%25B3%25A0%25EB%25A1%259D/</loc>
-        <lastmod>2024-01-15T04:49:02.683Z</lastmod>
+        <lastmod>2024-03-08T16:20:50.526Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sowon-dev.github.io/categories/Journal/</loc>
-        <lastmod>2024-01-15T04:49:02.683Z</lastmod>
+        <lastmod>2024-03-08T16:20:50.526Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -38,13 +52,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/JSP/</loc>
         <lastmod>2024-01-09T04:56:48.626Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Spring/</loc>
-        <lastmod>2024-01-02T00:36:22.586Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -87,13 +94,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/Operating-Systeming/</loc>
         <lastmod>2023-06-28T01:11:56.088Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/%25EC%2598%25A4%25ED%2594%2588%25EC%2586%258C%25EC%258A%25A4%25EC%25BB%25A8%25ED%258A%25B8%25EB%25A6%25AC%25EB%25B7%25B0%25ED%2586%25A42020/</loc>
-        <lastmod>2023-06-22T04:56:33.312Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

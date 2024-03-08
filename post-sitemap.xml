@@ -8,8 +8,24 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2024/03/08/240309-reset-vs-revert/</loc>
+        <lastmod>2024-03-08T16:44:02.878Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/07/17/200718opensource4/</loc>
+        <lastmod>2024-03-08T16:27:27.737Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2024/01/10/240111prjtreview10/</loc>
-        <lastmod>2024-01-15T04:49:02.683Z</lastmod>
+        <lastmod>2024-03-08T16:20:50.526Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -4090,14 +4106,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/07/17/200718opensource5/</loc>
         <lastmod>2020-09-13T08:58:57.668Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/07/17/200718opensource4/</loc>
-        <lastmod>2020-09-13T08:58:10.224Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
