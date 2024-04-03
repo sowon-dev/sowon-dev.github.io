@@ -8,6 +8,27 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/Journal/%25ED%259A%258C%25EA%25B3%25A0%25EB%25A1%259D/</loc>
+        <lastmod>2024-04-03T05:45:50.317Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
+        <lastmod>2024-04-03T05:45:50.317Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Version-control/</loc>
+        <lastmod>2024-04-03T05:44:51.540Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/Spring/</loc>
         <lastmod>2024-03-08T16:44:02.878Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -17,20 +38,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/%25EC%2598%25A4%25ED%2594%2588%25EC%2586%258C%25EC%258A%25A4%25EC%25BB%25A8%25ED%258A%25B8%25EB%25A6%25AC%25EB%25B7%25B0%25ED%2586%25A42020/</loc>
         <lastmod>2024-03-08T16:27:27.737Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Journal/%25ED%259A%258C%25EA%25B3%25A0%25EB%25A1%259D/</loc>
-        <lastmod>2024-03-08T16:20:50.526Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Journal/</loc>
-        <lastmod>2024-03-08T16:20:50.526Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -101,13 +108,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/Android/</loc>
         <lastmod>2023-04-11T06:22:32.185Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Version-control/</loc>
-        <lastmod>2023-03-22T04:09:25.860Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

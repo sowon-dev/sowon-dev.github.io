@@ -8,6 +8,38 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2024/04/02/240403prjtreview11/</loc>
+        <lastmod>2024-04-03T05:45:50.317Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2024/04/02/240403svn-to-git/</loc>
+        <lastmod>2024-04-03T05:44:51.540Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2020/12/27/201228svn/</loc>
+        <lastmod>2024-04-03T05:44:06.463Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2023/03/16/230317githubaction/</loc>
+        <lastmod>2024-04-03T05:42:41.698Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2024/03/08/240309-reset-vs-revert/</loc>
         <lastmod>2024-03-08T16:44:02.878Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -410,14 +442,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2023/03/27/230328cdn/</loc>
         <lastmod>2023-03-28T04:33:12.455Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2023/03/16/230317githubaction/</loc>
-        <lastmod>2023-03-22T04:09:25.860Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -2642,14 +2666,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2020/12/29/201230taskkillerror/</loc>
         <lastmod>2021-01-05T14:29:56.029Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2020/12/27/201228svn/</loc>
-        <lastmod>2020-12-28T03:23:43.935Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

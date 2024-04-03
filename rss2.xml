@@ -9,8 +9,54 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Fri, 08 Mar 2024 16:44:02 GMT</pubDate>
+    <pubDate>Wed, 03 Apr 2024 05:44:51 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>SVN에서 사내 GITLAB으로 변경하기(ft.migration)</title>
+      <link>https://sowon-dev.github.io/2024/04/02/240403svn-to-git/</link>
+      <guid>https://sowon-dev.github.io/2024/04/02/240403svn-to-git/</guid>
+      <pubDate>Tue, 02 Apr 2024 20:29:32 GMT</pubDate>
+      
+      <description>&lt;p&gt;현재 SVN을 사용하고있는데 사내 GITLAB서버로 변경하는 업무를 맡게되었다.&lt;br&gt;GITHUB는 익숙하지만 GITLAB은 익숙하지않아 초반에 삽질한 시간이 있었다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>현재 SVN을 사용하고있는데 사내 GITLAB서버로 변경하는 업무를 맡게되었다.<br>GITHUB는 익숙하지만 GITLAB은 익숙하지않아 초반에 삽질한 시간이 있었다.</p><a id="more"></a><h1 id="1-gitlab에-new-프로젝트-생성"><a href="#1-gitlab에-new-프로젝트-생성" class="headerlink" title="1 gitlab에 new 프로젝트 생성"></a>1 gitlab에 new 프로젝트 생성</h1><p>사내 gitlab 원격서버에 신규 프로젝트를 생성한다.</p><p><br><br><br></p><h1 id="2-gitlab에-SSH키를-등록하기"><a href="#2-gitlab에-SSH키를-등록하기" class="headerlink" title="2 gitlab에 SSH키를 등록하기"></a>2 gitlab에 SSH키를 등록하기</h1><p>SSH 키가 등록되지않으면 COMMIT, PUSH등을 못한다.</p><ol><li><p>SSH 키 생성은 cmd / gitbash 에서 진행가능하다. </p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -b 4096 -C <span class="string">"sowon-dev@example.com"</span></span><br></pre></td></tr></table></figure><p>암호 설정은 선택 사항으로 암호설정을 원하지 않는다면 Enter키를 계속 누르면 된다.</p></li><li><p>사용자 홈 디렉토리의 .ssh 폴더에 id_rsa (개인 키) 및 id_rsa.pub (공개 키) 총 2개의 파일이 생성된다.</p></li><li><p>SSH 키 읽기    </p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cat id_rsa.pub</span><br></pre></td></tr></table></figure><p>위 명령어로 공개키를 콘솔을 통해서 확인할 수 있다.<br>복사해서 사내 gitlab 원격서버에 신규 프로젝트에서 계정별로 <code>SSH 키 등록</code>에 붙여넣는다.</p></li></ol><p><br><br><br></p><h1 id="3-로컬에-gitlab환경조성"><a href="#3-로컬에-gitlab환경조성" class="headerlink" title="3 로컬에 gitlab환경조성"></a>3 로컬에 gitlab환경조성</h1><p>gitlab의 code에서 <code>Clone with HTTP</code>로 http://아이피/testprjt.git 를 clone하여 로컬에 환경 조성</p><p><br><br><br></p><h1 id="4-SVN-커밋-살리기위한-user-txt-파일-만들기"><a href="#4-SVN-커밋-살리기위한-user-txt-파일-만들기" class="headerlink" title="4 SVN 커밋 살리기위한 user.txt 파일 만들기"></a>4 SVN 커밋 살리기위한 user.txt 파일 만들기</h1><p>원하는 곳에 users.txt 파일에 다음과 같은 내용을 작성한다</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">user1 &#x3D; user1 &lt;user1@email.com&gt;</span><br><span class="line">user2 &#x3D; user2 &lt;user2@email.com&gt;</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">.</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="5-svn을-git으로-clone하기"><a href="#5-svn을-git으로-clone하기" class="headerlink" title="5 svn을 git으로 clone하기"></a>5 svn을 git으로 clone하기</h1><pre><code class="bash">git svn <span class="built_in">clone</span> &lt;SVN 저장소 URL&gt; --no-metadata -A D:/workspace/svn-gitlab/users.txt D:/workspace/svn-gitlab<span class="built_in">cd</span> D:/workspace/svn-gitlabgit remote add origin &lt;gitlab의 원격 저장소 URL&gt;git pull origin main --allow-unrelated-historiesgit push -u origin main</code></pre><p>여기서 절대경로 D:/workspace/svn-gitlab는 gitlab 로컬저장소경로이다.</p><p><br><br><br></p><h1 id="회사에선-왜-GitLab을-쓰라고-할까"><a href="#회사에선-왜-GitLab을-쓰라고-할까" class="headerlink" title="회사에선 왜 GitLab을 쓰라고 할까?"></a>회사에선 왜 GitLab을 쓰라고 할까?</h1><p>가장 근본적인 질문이었다.<br>SVN은 중앙집중 버전 관리 시스템이고 Git은 분산 버전 관리 시스템이다.<br>중앙집중 버전 관리 시스템은 편하지만 commit한 내용에 실수가 있을 시에 서버에(다른 개발자에게) 바로 영향을 미치게 되고 만약 중앙 서버에 문제가 생기면 협업 불가능해진다.<br>그렇다면 익숙한 GitHub보다 왜 GitLab을 사용하라고 하는 것일까?<br>GitHub는 소스가 GitHub에 있다보니 보안에 취약하다.<br>따라서, 아예 내부에서 관리하는 GitLab이나 SVN을 고객사는 더 선호한다.</p><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://sowon-dev.github.io/2020/12/27/201228svn/">SVN과 GIT 차이 포스팅</a></li><li><a href="https://scvspace.kr/1385">Gitlab으로 소스 이관하기(SVN 혹은 신규생성)</a></li><li><a href="https://garve32.tistory.com/43">SVN을 Git으로 Migration 하기</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Version-control/">Version control</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/GIT/">GIT</category>
+      
+      <category domain="https://sowon-dev.github.io/tags/SVN/">SVN</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2024/04/02/240403svn-to-git/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>SSO(Single Sign-On) 프로젝트를 끝내며 내가 배운 것</title>
+      <link>https://sowon-dev.github.io/2024/04/02/240403prjtreview11/</link>
+      <guid>https://sowon-dev.github.io/2024/04/02/240403prjtreview11/</guid>
+      <pubDate>Tue, 02 Apr 2024 20:23:06 GMT</pubDate>
+      
+      
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2024/04/02/240403prjtreview11/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[GIT]reset과 revert의 차이</title>
@@ -429,58 +475,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/08/10/230811jre-jdk/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[MySQL/MariaDB] ON DUPLICATE KEY UPDATE</title>
-      <link>https://sowon-dev.github.io/2023/08/01/230802mysql-on-duplicate-key-update/</link>
-      <guid>https://sowon-dev.github.io/2023/08/01/230802mysql-on-duplicate-key-update/</guid>
-      <pubDate>Tue, 01 Aug 2023 20:41:32 GMT</pubDate>
-      
-      <description>&lt;p&gt;SQL 쿼리 작성시 PK키가 중복되는 경우 지정한 데이터만 INSERT가 아닌 UPDATE 시킬 수는 없을까?&lt;br&gt;ON DUPLICATE KEY UPDATE를 사용하면 된다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>SQL 쿼리 작성시 PK키가 중복되는 경우 지정한 데이터만 INSERT가 아닌 UPDATE 시킬 수는 없을까?<br>ON DUPLICATE KEY UPDATE를 사용하면 된다.</p><a id="more"></a><h1 id="ON-DUPLICATE-KEY-UPDATE"><a href="#ON-DUPLICATE-KEY-UPDATE" class="headerlink" title="ON DUPLICATE KEY UPDATE"></a>ON DUPLICATE KEY UPDATE</h1><p>INSERT시 PK나 UNIQUE KEY가 중복인 경우 원하는 컬럼만 UPDATE하고 중복되지 않은 경우에는 INSERT된다.</p><p><br><br><br></p><h1 id="예시코드"><a href="#예시코드" class="headerlink" title="예시코드"></a>예시코드</h1><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 테이블생성</span></span><br><span class="line"> <span class="keyword">CREATE</span> <span class="keyword">TABLE</span> tb_user (</span><br><span class="line"> user_id <span class="built_in">INT</span>(<span class="number">11</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> AUTO_INCREMENT PRIMARY <span class="keyword">KEY</span></span><br><span class="line">    , <span class="keyword">name</span> <span class="built_in">VARCHAR</span>(<span class="number">20</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span></span><br><span class="line">    , mobile <span class="built_in">VARCHAR</span>(<span class="number">20</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span></span><br><span class="line">    , address <span class="built_in">VARCHAR</span>(<span class="number">50</span>) <span class="keyword">DEFAULT</span> <span class="literal">NULL</span></span><br><span class="line">    , reg_dt <span class="built_in">DATE</span>()</span><br><span class="line">, update_dt <span class="built_in">DATE</span>()</span><br><span class="line">  ) <span class="keyword">ENGINE</span>=<span class="keyword">INNODB</span> <span class="keyword">DEFAULT</span> <span class="keyword">CHARSET</span>=utf8 </span><br><span class="line"></span><br><span class="line"><span class="comment">-- 제약조건</span></span><br><span class="line"> <span class="keyword">ALTER</span> <span class="keyword">TABLE</span> tb_user <span class="keyword">ADD</span> <span class="keyword">UNIQUE</span> (<span class="keyword">name</span>, mobile);</span><br></pre></td></tr></table></figure><p>테이블 tb_user에서 pk는 user_id이고 AUTO_INCREMENT이고 mobile이 UNIQUE KEY인 경우를 예시로 해보자.<br>이름과 휴대전화번호가 쌍으로 없는 경우 INSERT하고, 존재하는 경우 주소만 UPDATE하는 쿼리는 아래와 같다.</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> tb_user</span><br><span class="line">(</span><br><span class="line"><span class="keyword">name</span>,</span><br><span class="line">mobile,</span><br><span class="line">address,</span><br><span class="line">reg_dt</span><br><span class="line">) <span class="keyword">VALUES</span> (</span><br><span class="line"><span class="string">'김테스트'</span>, </span><br><span class="line"><span class="string">'010-1234-1234,</span></span><br><span class="line"><span class="string">'</span>서울 강남구<span class="string">',</span></span><br><span class="line"><span class="string">now()</span></span><br><span class="line"><span class="string">) ON DUPLICATE KEY UPDATE </span></span><br><span class="line"><span class="string">  address = #&#123;address&#125;,</span></span><br><span class="line"><span class="string">  update_dt = now()</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/MySQL/">MySQL</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/MariaDB/">MariaDB</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2023/08/01/230802mysql-on-duplicate-key-update/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[JavaScript/jQuery]제이쿼리 선택자(Selector) 비교</title>
-      <link>https://sowon-dev.github.io/2023/07/16/230717js-jquery/</link>
-      <guid>https://sowon-dev.github.io/2023/07/16/230717js-jquery/</guid>
-      <pubDate>Sun, 16 Jul 2023 19:33:41 GMT</pubDate>
-      
-      <description>&lt;p&gt;VanillaJS와 jQuery는 최대 10배 속도차이가 발생난다고 한다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>VanillaJS와 jQuery는 최대 10배 속도차이가 발생난다고 한다.</p><a id="more"></a><p>그래서 이번에 손에 익힐겸 jQuery보다 VanillaJS를 사용하려고 노력해봤다. 제일 헷갈리는 부분은 선택자부분이었다.</p><h1 id="선택자-Selector"><a href="#선택자-Selector" class="headerlink" title="선택자(Selector)"></a>선택자(Selector)</h1><table><thead><tr><th align="center">JavaScript</th><th align="center">jQuery</th></tr></thead><tbody><tr><td align="center">document.getElementById(아이디명)</td><td align="center">$(#아이디명)</td></tr><tr><td align="center">document.getElementsByClassName(클래스명)</td><td align="center">$(.클래스명)</td></tr><tr><td align="center">document.getElementsByTagName(태그명)</td><td align="center">$(태그명)</td></tr></tbody></table><ul><li>querySelector: 매칭된 첫번째 element 반환, 조회값 없을땐 <code>null</code> 반환</li><li>querySelectorAll: 매칭된 모든 element를 NodeList로 반환, 조회값 없을땐 <code>[]</code> 반환</li></ul><p><br><br><br></p><h1 id="코드"><a href="#코드" class="headerlink" title="코드"></a>코드</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 모든 요소</span></span><br><span class="line">$(<span class="string">"*"</span>)</span><br><span class="line"><span class="built_in">document</span>.querySelectorAll(<span class="string">"*"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// ID명이 password인 요소 선택 </span></span><br><span class="line">$(<span class="string">"#password"</span>)</span><br><span class="line"><span class="built_in">document</span>.querySelector(<span class="string">"#password"</span>)</span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">'password'</span>)</span><br><span class="line"><span class="built_in">window</span>[<span class="string">'password'</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">// Class 명이 'btn'인 요소 선택</span></span><br><span class="line">$(<span class="string">".btn"</span>)</span><br><span class="line"><span class="built_in">document</span>.querySelectorAll(<span class="string">".btn"</span>)</span><br><span class="line"><span class="built_in">document</span>.getElementsByClassName(<span class="string">'btn'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// attribute요소 선택</span></span><br><span class="line">$(<span class="string">'a[target=_blank]'</span>)</span><br><span class="line"><span class="built_in">document</span>.querySelectorAll(<span class="string">'a[target=_blank]'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// input의 value값이 'address'인 요소 선택</span></span><br><span class="line">$(<span class="string">"input[value='address']"</span>)</span><br><span class="line"><span class="built_in">document</span>.querySelector(<span class="string">"input[value='address']"</span>)</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h1><ul><li><a href="https://github.com/camsong/You-Dont-Need-jQuery">You-Dont-Need-jQuery 깃헙 리포</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/jQuery/">jQuery</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/%EC%B0%A8%EC%9D%B4/">차이</category>
-      
-      <category domain="https://sowon-dev.github.io/tags/VanillaJS/">VanillaJS</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2023/07/16/230717js-jquery/#disqus_thread</comments>
       
     </item>
     
