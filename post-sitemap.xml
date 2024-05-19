@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/2024/05/18/240519bookreview001/</loc>
+        <lastmod>2024-05-19T06:18:11.352Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/2022/08/22/bookList/</loc>
+        <lastmod>2024-05-19T06:11:47.536Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/2024/04/02/240403prjtreview11/</loc>
         <lastmod>2024-04-03T06:00:35.819Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1010,14 +1026,6 @@
     <url>
         <loc>https://sowon-dev.github.io/2021/03/22/210323React-componentLifeCycle/</loc>
         <lastmod>2022-09-13T06:59:43.787Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/2022/08/22/bookList/</loc>
-        <lastmod>2022-09-09T10:09:07.888Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

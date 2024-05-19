@@ -9,8 +9,33 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Wed, 03 Apr 2024 05:44:51 GMT</pubDate>
+    <pubDate>Sun, 19 May 2024 06:18:11 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[BookReview]모두의 네트워크 기초 BY 서지영</title>
+      <link>https://sowon-dev.github.io/2024/05/18/240519bookreview001/</link>
+      <guid>https://sowon-dev.github.io/2024/05/18/240519bookreview001/</guid>
+      <pubDate>Sat, 18 May 2024 21:08:34 GMT</pubDate>
+      
+      <description>&lt;p&gt;네트워크가 부족하다고 생각해서 단편적인 유튜브 지식이 아닌 연결된 책에서 정보를 찾고싶었다.&lt;br&gt;그렇게 읽게된 10일만에 모두의 네트워크!&lt;br&gt;각 장마다 목표가 있어서 읽고 시작하면 훨씬 도움이 되며 그림이 많아서 이해가 쉽고 설명이 잘되어있다.&lt;br&gt;연습문제도 있어서 스스로 학습엔 최고!&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>네트워크가 부족하다고 생각해서 단편적인 유튜브 지식이 아닌 연결된 책에서 정보를 찾고싶었다.<br>그렇게 읽게된 10일만에 모두의 네트워크!<br>각 장마다 목표가 있어서 읽고 시작하면 훨씬 도움이 되며 그림이 많아서 이해가 쉽고 설명이 잘되어있다.<br>연습문제도 있어서 스스로 학습엔 최고!</p><a id="more"></a><h1 id="진짜-10일만에-읽을-수-있다"><a href="#진짜-10일만에-읽을-수-있다" class="headerlink" title="진짜 10일만에 읽을 수 있다."></a>진짜 10일만에 읽을 수 있다.</h1><p>총 9장으로 구성되어있고 총 225장이다. 가벼운 단편소설수준이라서 차근차근 읽기만 하면 된다.<br>10일이기때문에 작심3일 3번반복하다보면 어느샌가 다 읽게 된다.</p><p><br><br><br></p><h1 id="추천학습방법"><a href="#추천학습방법" class="headerlink" title="추천학습방법"></a>추천학습방법</h1><p>학습서이기때문에 학습방법이 중요하다.<br>나는 아래와 같이 진행했다.</p><ol><li>하루에 한장읽기</li><li>목표읽기 -&gt; 내용 정독 -&gt; 복습하기(빈칸채우기)</li></ol><p><img src="/img/240519_145206907_01.jpg" alt="목표"></p><p>각 장마다 목표가 있어서 읽고 시작하면 훨씬 도움이 된다.</p><p>각 내용에는 그림이 많아서 이해가 쉽고 설명이 잘되어있다.<br>다만, 케이블등의 실사 사진은 흑백이 아닌 컬러였으면 더 좋았을듯하다.</p><p><img src="/img/240519_145206907_02.jpg" alt="빈칸퀴즈"></p><p>마지막에는 복습을 위한 빈칸퀴즈가 있다.<br>빈칸퀴즈가 있으니 중요 단어가 쏙쏙 정리된다.</p>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/Review/">Review</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/BookReview/">BookReview</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2024/05/18/240519bookreview001/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>SVN에서 사내 GITLAB으로 변경하기(ft.migration)</title>
@@ -456,29 +481,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/08/21/230822withrecursive-treemenu/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>org.springframework.beans.factory.BeanCreationException: Error creating bean with name 해결 의외의 방법</title>
-      <link>https://sowon-dev.github.io/2023/08/10/230811jre-jdk/</link>
-      <guid>https://sowon-dev.github.io/2023/08/10/230811jre-jdk/</guid>
-      <pubDate>Thu, 10 Aug 2023 20:35:47 GMT</pubDate>
-      
-      <description>&lt;p&gt;잘 되던 maven프로젝트가 refresh만 하면 BeanCreationException을 내며 서버런에 실패했다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>잘 되던 maven프로젝트가 refresh만 하면 BeanCreationException을 내며 서버런에 실패했다.</p><a id="more"></a><h1 id="임시방편"><a href="#임시방편" class="headerlink" title="임시방편"></a>임시방편</h1><p>임시방편으로 BeanCreationException이 나는 경우 <code>Project &gt; Clean</code> 후 서버 재시작하곤 했는데 여간 귀찮고 시간이 많이 드는 일이 아닐 수 없다.</p><p><br><br><br></p><h1 id="의외의-해결방법"><a href="#의외의-해결방법" class="headerlink" title="의외의 해결방법"></a>의외의 해결방법</h1><p>성과장님이 JRE 부분을 확인해주셨다.<br><code>Window &gt; Preferences &gt; Java &gt; Installed JREs</code>에서 경로를 jdk로 잡았었는데 그걸 jdk 하위 jre폴더로 잡아보라고 해주셨다.<br>그리고 놀랍게도 해결!<br>원인은 정확히는 모르겠으나… 일주일 내내 구글링해도해도 절대 해결되지않던 이놈의 BeanCreationException 오류를 해결했다!</p><p><br><br><br></p><h1 id="JRE-VS-JDK"><a href="#JRE-VS-JDK" class="headerlink" title="JRE VS JDK"></a>JRE VS JDK</h1><p>JDK가 JRE를 포함하고 있다.</p><h2 id="JDK-Java-Development-Kit-란"><a href="#JDK-Java-Development-Kit-란" class="headerlink" title="JDK(Java Development Kit)란?"></a>JDK(Java Development Kit)란?</h2><ul><li>JDK는 자바 개발키트(Java Development Kit)의 약자</li><li>JDK안에는 개발 시 필요한 라이브러리들과 javac, javadoc 등의 개발 도구들을 포함되어 있다.</li><li>개발을 하려면 당연히 실행도 시켜줘야 하기 때문에 JRE (Java Runtime Environment)도 함께 포함되어 있습니다.</li></ul><p><br><br></p><h2 id="JRE-Java-Runtime-Environment-란"><a href="#JRE-Java-Runtime-Environment-란" class="headerlink" title="JRE(Java Runtime Environment)란?"></a>JRE(Java Runtime Environment)란?</h2><ul><li>JRE는 자바 실행 환경(Java Runtime Environment)의 약자</li><li>자바로 만들어진 프로그램을 실행시키는데 필요한 라이브러리들과 각종 API, 그리고 자바 가상 머신 (JVM)이 포함</li><li>개발(쓰기)은 안되고 실행(읽기)만 된다</li></ul><br># 참고- 성과장님 지식- [자바 JDK, JRE의 차이점(JDK란? JRE란?)](https://coding-factory.tistory.com/826)]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Spring/">Spring</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/%EC%98%A4%EB%A5%98%EC%9D%BC%EC%A7%80/">오류일지</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2023/08/10/230811jre-jdk/#disqus_thread</comments>
       
     </item>
     
