@@ -3,6 +3,20 @@
 
 
     <url>
+        <loc>https://sowon-dev.github.io/tags/Oracle/</loc>
+        <lastmod>2024-10-23T00:56:41.960Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/tags/TIL/</loc>
+        <lastmod>2024-10-23T00:56:41.960Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/tags/BookReview/</loc>
         <lastmod>2024-05-19T06:18:11.352Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -33,13 +47,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/GIT/</loc>
         <lastmod>2024-04-03T05:44:51.540Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/TIL/</loc>
-        <lastmod>2024-04-03T05:44:06.463Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -488,13 +495,6 @@
     <url>
         <loc>https://sowon-dev.github.io/tags/Facebook/</loc>
         <lastmod>2021-02-01T07:44:09.500Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/tags/Oracle/</loc>
-        <lastmod>2021-01-29T04:56:59.732Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

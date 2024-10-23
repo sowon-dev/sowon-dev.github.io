@@ -8,6 +8,20 @@
     </url>
 
     <url>
+        <loc>https://sowon-dev.github.io/categories/Database/Oracle/</loc>
+        <lastmod>2024-10-23T00:56:41.960Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://sowon-dev.github.io/categories/Database/</loc>
+        <lastmod>2024-10-23T00:56:41.960Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sowon-dev.github.io/categories/Journal/Review/</loc>
         <lastmod>2024-05-19T06:18:11.352Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -79,13 +93,6 @@
 
     <url>
         <loc>https://sowon-dev.github.io/categories/Database/MySQL/</loc>
-        <lastmod>2023-11-14T10:50:19.527Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Database/</loc>
         <lastmod>2023-11-14T10:50:19.527Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -185,13 +192,6 @@
     <url>
         <loc>https://sowon-dev.github.io/categories/%25EC%25A0%259C%25EC%25A3%25BC%25EC%25BD%2594%25EB%2594%25A9%25EB%25B2%25A0%25EC%259D%25B4%25EC%258A%25A4%25EC%25BA%25A0%25ED%2594%2584-10%25EA%25B8%25B0/</loc>
         <lastmod>2021-03-24T15:59:00.084Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://sowon-dev.github.io/categories/Database/Oracle/</loc>
-        <lastmod>2021-01-29T04:56:59.732Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
