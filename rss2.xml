@@ -9,8 +9,31 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Fri, 29 Nov 2024 02:12:41 GMT</pubDate>
+    <pubDate>Fri, 29 Nov 2024 08:44:33 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[블로그]헥소테마에서 댓글기능 facebook에서 utterances로 변경하기</title>
+      <link>https://sowon-dev.github.io/2024/11/28/241129utterances/</link>
+      <guid>https://sowon-dev.github.io/2024/11/28/241129utterances/</guid>
+      <pubDate>Thu, 28 Nov 2024 23:23:25 GMT</pubDate>
+      
+      <description>&lt;p&gt;헥소블로그에서 기존 제공하는 페이스북 댓글기능을 사용하고 있었는데 더이상 페이스북을 사용하지않아 삭제하고 싶었다.&lt;br&gt;그러다 우연히 전회사 팀장님 개발블로그에 깃헙아이디로 로그인하여 쓸 수 있는 댓글기능을 보고 유레카를 외쳤다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>헥소블로그에서 기존 제공하는 페이스북 댓글기능을 사용하고 있었는데 더이상 페이스북을 사용하지않아 삭제하고 싶었다.<br>그러다 우연히 전회사 팀장님 개발블로그에 깃헙아이디로 로그인하여 쓸 수 있는 댓글기능을 보고 유레카를 외쳤다.</p><a id="more"></a><p>팀장님께 여쭤보니 손수 보기편한 링크를 주셔서 쉽게 적용가능했다. (감사합니다 팀장님!)</p><h1 id="참고한-블로그"><a href="#참고한-블로그" class="headerlink" title="참고한 블로그"></a>참고한 블로그</h1><ul><li><a href="https://velog.io/@outstandingboy/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EB%8C%93%EA%B8%80-%EA%B8%B0%EB%8A%A5-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0-ft.-Utterances">아웃스탠딩보이님의 블로그에 댓글 기능 추가하기 (ft. Utterances)</a></li><li><a href="https://baek.dev/post/4/">BAEKDEV님의 utterances를 블로그 댓글로 적용하기</a></li></ul><p>위 두 포스팅에서 친절하게 잘 설명되어있어 금방 적용가능하다.<br>다른 점이 있다면 헥소블로그테마는 리액트 jsx기반이다.</p><p><br><br><br></p><h1 id="댓글넣기"><a href="#댓글넣기" class="headerlink" title="댓글넣기"></a>댓글넣기</h1><p>comment.jsx 파일에서 utterances를 추가해줘야한다</p><ul><li>파일위치: layout/common/cpmment.jsx</li></ul><p>아래는 기존 코드를 주석처리하고 utteranc코드를 추가한 모습이다.</p><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = <span class="class"><span class="keyword">class</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</span><br><span class="line">    render() &#123;</span><br><span class="line">        <span class="keyword">const</span> &#123; config, page, helper &#125; = <span class="keyword">this</span>.props;</span><br><span class="line">        <span class="keyword">const</span> &#123; __ &#125; = helper;</span><br><span class="line">        <span class="keyword">const</span> &#123; comment &#125; = config;</span><br><span class="line">        <span class="keyword">if</span> (!comment || <span class="keyword">typeof</span> comment.type !== <span class="string">'string'</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card"</span>&gt;</span></span></span><br><span class="line">            &lt;div class="card-content"&gt;</span><br><span class="line">                &#123;/*</span><br><span class="line">&lt;h3 class="title is-5"&gt;&#123;__('article.comments')&#125;&lt;/h3&gt; </span><br><span class="line">&#123;(() =&gt; &#123;</span><br><span class="line">                    try &#123;</span><br><span class="line">                        let Comment = view.require('comment/' + comment.type);</span><br><span class="line">                        Comment = Comment.Cacheable ? Comment.Cacheable : Comment;</span><br><span class="line">                        return &lt;Comment config=&#123;config&#125; page=&#123;page&#125; helper=&#123;helper&#125; comment=&#123;comment&#125; /&gt;;</span><br><span class="line">                    &#125; catch (e) &#123;</span><br><span class="line">                        logger.w(`Icarus cannot load comment "$&#123;comment.type&#125;"`);</span><br><span class="line">                        return null;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;)()&#125;</span><br><span class="line">*/&#125;</span><br><span class="line">&lt;script src="https://utteranc.es/client.js"</span><br><span class="line">repo="리포지토리 이름"</span><br><span class="line">issue-term="pathname"</span><br><span class="line">theme="github-light"</span><br><span class="line">crossorigin="anonymous"</span><br><span class="line">async&gt;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"><span class="xml">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><p><br><br><br></p><h1 id="페이스북-연결해제하기"><a href="#페이스북-연결해제하기" class="headerlink" title="페이스북 연결해제하기"></a>페이스북 연결해제하기</h1><ul><li>파일위치: theme/hexo-theme-icarus/_config.yml</li></ul><p>위 파일에서 </p><ol><li><code>fb_app_id</code>를 검색하여 지워준다.</li><li><code>comment:</code>를 검색하여 facebook을 지우면 안된다. 지우게되면 comment자체가 비활성화된다.</li></ol>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/Journal/">Journal</category>
+      
+      
+      <category domain="https://sowon-dev.github.io/tags/Hexo/">Hexo</category>
+      
+      
+      <comments>https://sowon-dev.github.io/2024/11/28/241129utterances/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[JAVA] Gmail SMTP 다중 메일 예제</title>
@@ -460,29 +483,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/10/19/231020URLsearchparams/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[Moment.js] moment String을 Controller에서 LocalDateTime으로 받기</title>
-      <link>https://sowon-dev.github.io/2023/10/18/231019momentjs-to-localdatetime/</link>
-      <guid>https://sowon-dev.github.io/2023/10/18/231019momentjs-to-localdatetime/</guid>
-      <pubDate>Wed, 18 Oct 2023 20:57:25 GMT</pubDate>
-      
-      <description>&lt;p&gt;moment으로 startDate를 포맷하여 &lt;code&gt;startDate.format(&amp;quot;YYYY-MM-DDTHH:mm:ss&amp;quot;)&lt;/code&gt; ajax를 이용해 컨트롤러로 보냈다.&lt;br&gt;LocalDateTime 데이터타입이 당연히 받을 수 있을 줄 알았는데 typeMismatch.java.time.LocalDateTime 에러가 발생했다. &lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>moment으로 startDate를 포맷하여 <code>startDate.format(&quot;YYYY-MM-DDTHH:mm:ss&quot;)</code> ajax를 이용해 컨트롤러로 보냈다.<br>LocalDateTime 데이터타입이 당연히 받을 수 있을 줄 알았는데 typeMismatch.java.time.LocalDateTime 에러가 발생했다. </p><a id="more"></a><h1 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// request body</span></span><br><span class="line">calendarParam(idx=<span class="number">10</span>, startDate=<span class="number">2023</span><span class="number">-10</span><span class="number">-01</span>T00:<span class="number">00</span>:<span class="number">00</span>, endDate=<span class="number">2023</span><span class="number">-10</span><span class="number">-31</span>T23:<span class="number">59</span>:<span class="number">59</span>)</span><br></pre></td></tr></table></figure><p>클라이언트에서 보내는 데이터는 위와 같다</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Field error in object 'calendarParam' on field 'startDate': rejected value [2023-10-01&amp;amp;#39;T&amp;amp;#39;00:00:00.000]; codes [typeMismatch.calendarParam.startDate,typeMismatch.startDate,typeMismatch.java.time.LocalDateTime,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [calendarParam.startDate,startDate]; arguments []; default message [startDate]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.time.LocalDateTime' for property 'startDate'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.format.annotation.DateTimeFormat java.time.LocalDateTime] for value '2023-10-01&amp;amp;#39;T&amp;amp;#39;00:00:00.000'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2023-10-01&amp;amp;#39;T&amp;amp;#39;00:00:00.000]]</span><br><span class="line">Field error in object 'calendarParam' on field 'end': rejected value [2023-10-31&amp;amp;#39;T&amp;amp;#39;23:59:59.999];</span><br></pre></td></tr></table></figure><p>typeMismatch 에러가 발생했다.<br>혹시 데이터포맷상 <code>startDate.format(&quot;YYYY-MM-DDTHH:mm:ss&quot;)</code>의 <code>T</code> 때문인가 싶어(그럴리없겠지만) 여러가지를 시도했다.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">startDate.format(<span class="string">"YYYY-MM-DD'T'HH:mm:ss"</span>) <span class="comment">//작은따옴표로 감싸보기</span></span><br><span class="line">startDate.format(<span class="string">"YYYY-MM-DD[T]HH:mm:ss"</span>) <span class="comment">//대괄호로 감싸보기</span></span><br><span class="line">startDate.format(<span class="string">"YYYY-MM-DD HH:mm:ss"</span>) <span class="comment">//T없애보기</span></span><br></pre></td></tr></table></figure><p>결과는 여전히 typeMismatch에러였다.</p><p><br><br><br></p><h1 id="해결-String"><a href="#해결-String" class="headerlink" title="해결: String"></a>해결: String</h1><p> LocalDateTime을 쓰고 싶었던 이유는 mybatis에서 시작일과 종료일 날짜연산을 하기위해서였다.<br> LocalDateTime을 String으로 변경하고 나서야 정상 작동했다. String이라도 형식이 맞기때문인지 날짜연산도 잘되었다.<br> 해결!</p>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/JavaScript/">JavaScript</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/Moment-js/">Moment.js</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2023/10/18/231019momentjs-to-localdatetime/#disqus_thread</comments>
       
     </item>
     
