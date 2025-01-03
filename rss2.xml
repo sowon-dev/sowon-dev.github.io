@@ -9,8 +9,29 @@
     <atom:link href="https://sowon-dev.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>devlog</description>
-    <pubDate>Mon, 09 Dec 2024 05:47:13 GMT</pubDate>
+    <pubDate>Fri, 03 Jan 2025 03:06:13 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>웹 캐싱방지</title>
+      <link>https://sowon-dev.github.io/2025/01/02/250103cahe-control/</link>
+      <guid>https://sowon-dev.github.io/2025/01/02/250103cahe-control/</guid>
+      <pubDate>Thu, 02 Jan 2025 16:54:36 GMT</pubDate>
+      
+      <description>&lt;p&gt;테스트까지 확인 다하고 실서버배포했는데 js함수를 못찾는다는 에러가 떴다.&lt;br&gt;바뀐 js를 못 찾는 문제였다. &lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>테스트까지 확인 다하고 실서버배포했는데 js함수를 못찾는다는 에러가 떴다.<br>바뀐 js를 못 찾는 문제였다. </p><a id="more"></a><p>웹 캐싱문제는 강력새로고침을 하면 해결되지만 일반 사용자는 그마저도 복잡할 수 있다.<br>따라서 캐싱을 방지해야했다.</p><h1 id="캐싱"><a href="#캐싱" class="headerlink" title="캐싱"></a>캐싱</h1><p>캐시를 확인해보니 페이지마다 세세하게 처리되어있었다.<br>에러가 발생한 곳은 주문하기 페이지였다. </p><ul><li>cache-control: private</li><li><a href="https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Cache-Control">Cache-Control</a>;</li></ul><p><br><br><br></p><h1 id="해결법1-메타데이터-설정"><a href="#해결법1-메타데이터-설정" class="headerlink" title="해결법1. 메타데이터 설정"></a>해결법1. 메타데이터 설정</h1><p>메타데이터에 아래 설정울 추가하면 캐싱을 방지할 수 있지만 수정이 별로 없는 사이트나 페이지에 설정하는 경우 불필요한 트래픽을 많이 유발할 수 있다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta http-equiv&#x3D;&quot;Cache-Control&quot; content&#x3D;&quot;no-cache, no-store, must-revalidate&quot;&gt;</span><br></pre></td></tr></table></figure><p>불필요하게 트래픽을 유발하면 사이트가 느려지므로 정적리소스에 버전을 명시하기로 했다.</p><p><br><br><br></p><h1 id="해결법2-정적-리소시-버전-명시"><a href="#해결법2-정적-리소시-버전-명시" class="headerlink" title="해결법2. 정적 리소시 버전 명시"></a>해결법2. 정적 리소시 버전 명시</h1><p>쿼리스트링에 버전을 직접 명시해줘도 되지만 레거시는 컴포넌트가 전혀 분리되지않은 화면이었다.<br>특정 부분 1개만 수정하더라도 관련된 페이지가 20개가 넘어가서 불필요하게 복붙을 해야만했다.<br>따라서 자주 사용하는 common js파일이나 css파일에만 쿼리스트링으로 항상 새로 불러오도록 했다.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Header.jsp나 공통.jsp에 명시</span></span><br><span class="line">&lt;c:<span class="keyword">set</span> var="dateNow" value="&lt;%=new java.util.Date()%&gt;" /&gt;</span><br><span class="line">&lt;c:<span class="keyword">set</span> var="verStamp"&gt;&lt;fmt:formatDate value="$&#123;dateNow&#125;<span class="string">" pattern="</span>yyyyMMddhhmmss<span class="string">" /&gt;&lt;/c:set&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">// 각 jsp 화면상단에 버전 명시</span></span><br><span class="line"><span class="string">&lt;script type="</span>text/javascript<span class="string">" src="</span>/js/common.js?ver=$&#123;verStamp&#125;<span class="string">" &gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="https://sowon-dev.github.io/categories/CS/">CS</category>
+      
+      
+      
+      <comments>https://sowon-dev.github.io/2025/01/02/250103cahe-control/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[OS/WINDOW]배포후 서버재시작에 batch와 윈도우 스케줄러 활용하기</title>
@@ -460,31 +481,6 @@
       
       
       <comments>https://sowon-dev.github.io/2023/11/14/231114mybatis-resultMap-manyassociation/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[mybatis] update시 모두 if test를 써야 할 경우</title>
-      <link>https://sowon-dev.github.io/2023/11/14/231114mybatis-if-update-all/</link>
-      <guid>https://sowon-dev.github.io/2023/11/14/231114mybatis-if-update-all/</guid>
-      <pubDate>Tue, 14 Nov 2023 01:21:04 GMT</pubDate>
-      
-      <description>&lt;p&gt;mybatis에서 update시 모든 컬럼에 if 조건물을 걸어야할때가 있다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>mybatis에서 update시 모든 컬럼에 if 조건물을 걸어야할때가 있다.</p><a id="more"></a><p>아래와 같이 사용하면 된다.</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;update id="testUpdate" parameterType="VO"&gt;</span><br><span class="line">   <span class="keyword">UPDATE</span> testTable</span><br><span class="line">   &lt;<span class="keyword">trim</span> prefix=<span class="string">"SET"</span> suffixOverrides=<span class="string">","</span>&gt;</span><br><span class="line">      &lt;<span class="keyword">if</span> <span class="keyword">test</span>=<span class="string">"testItem1 != null"</span>&gt;testItem1 = <span class="comment">#&#123;testItem1&#125;,&lt;/if&gt;</span></span><br><span class="line">      &lt;<span class="keyword">if</span> <span class="keyword">test</span>=<span class="string">"testItem2 != null"</span>&gt;testItem2 = <span class="comment">#&#123;testItem2&#125;,&lt;/if&gt;</span></span><br><span class="line">   &lt;/<span class="keyword">trim</span>&gt;</span><br><span class="line">   <span class="keyword">WHERE</span></span><br><span class="line">      idx = <span class="comment">#&#123;idx&#125;</span></span><br><span class="line">&lt;/<span class="keyword">update</span>&gt;</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/">Database</category>
-      
-      <category domain="https://sowon-dev.github.io/categories/Database/MySQL/">MySQL</category>
-      
-      
-      <category domain="https://sowon-dev.github.io/tags/MyBatis/">MyBatis</category>
-      
-      
-      <comments>https://sowon-dev.github.io/2023/11/14/231114mybatis-if-update-all/#disqus_thread</comments>
       
     </item>
     
