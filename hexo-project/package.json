@@ -1,0 +1,32 @@
+{
+  "name": "hexo-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "node -e \"const Hexo=require('hexo'); const h=new Hexo(process.cwd(),{}); h.init().then(()=>h.load()).then(()=>h.call('server',{}));\"",
+    "build": "node generate_all.js",
+    "check-security": "python check_security.py",
+    "deploy": "python check_security.py && node generate_all.js && node -e \"const Hexo=require('hexo'); const h=new Hexo(process.cwd(),{}); h.init().then(()=>h.load()).then(()=>h.call('deploy',{}));\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "hexo": "^8.1.2",
+    "hexo-deployer-git": "^4.0.0",
+    "hexo-generator-archive": "^2.0.0",
+    "hexo-generator-category": "^2.0.0",
+    "hexo-generator-index": "^4.0.0",
+    "hexo-generator-search": "^2.4.3",
+    "hexo-generator-sitemap": "^3.0.1",
+    "hexo-generator-tag": "^2.0.0",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-inferno": "^1.0.2",
+    "hexo-renderer-marked": "^7.0.1",
+    "hexo-renderer-stylus": "^3.0.1",
+    "hexo-server": "^3.0.0",
+    "hexo-theme-icarus": "^6.1.1"
+  }
+}

@@ -1,0 +1,105 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+
+# Site
+title: "야망찬 개발자의 블로그"
+subtitle: "If at first you don’t succeed; Call it version 1.0"
+description: "백엔드, 프론트엔드, 데이터베이스 트러블슈팅 및 성장을 기록하는 기술 블로그"
+keywords: "Java, Spring, Frontend, Database, Hexo"
+author: "sowon-dev"
+language: ko
+timezone: Asia/Seoul
+
+# URL
+## Permalinks: 기존 블로그 URL과 100% 일치시켜 포트폴리오 링크 보존
+url: https://sowon-dev.github.io
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true
+  trailing_html: true
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ''
+filename_case: 0
+future: true
+syntax_highlighter: highlight.js
+post_asset_folder: false
+relative_link: false
+prismjs:
+  enable: false
+highlight:
+
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+
+# Home page setting
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+meta_generator: true
+
+# Date / Time format
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: 'mtime'
+
+# Pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+include:
+exclude:
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: icarus
+
+# Search Plugin Configuration
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+
+# Sitemap Plugin Configuration
+sitemap:
+  path: sitemap.xml
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: git
+  repo: https://github.com/sowon-dev/sowon-dev.github.io.git
+  branch: main

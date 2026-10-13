@@ -1,0 +1,77 @@
+# Icarus theme configuration
+version: 6.1.1
+logo: /img/hope.svg
+
+# Navigation bar
+
+navbar:
+  logo: /img/hope.svg
+
+  menu:
+    Home: /
+    Archives: /archives
+    Categories: /categories
+    Tags: /tags
+    About: /about
+
+# Footer configuration
+footer:
+  links:
+    GitHub: https://github.com/sowon-dev
+
+# Article settings
+article:
+  highlight:
+    theme: hybrid    # 어두운 배경 + 컬러 신택스 하이라이팅 + 클립보드 복사
+    clipboard: true
+    fold: unfolded
+  readtime: true
+  licenses:
+    CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+
+# Search provider configuration
+search:
+  type: insight
+
+# Table of contents
+toc: true
+
+# Real-time counter (Busuanzi)
+busuanzi: true
+
+# Comment system (기존에 사용하던 utterances 연동)
+comment:
+  type: utterances
+  repo: sowon-dev/blog-comments
+  issue_term: pathname
+  theme: github-light
+
+# Don't show donate
+donates: []
+
+# Share buttons
+share:
+  type: custom
+
+# Sidebar Widgets configuration (2단 간소화 레이아웃)
+widgets:
+  - type: profile
+    position: left
+    author: Sowon
+    author_title: "If at first you don’t succeed; Call it version 1.0"
+    location: Busan
+    avatar: https://avatars.githubusercontent.com/u/53078820?v=4
+    avatar_rounded: true
+    gravatar: ""
+    follow_link: https://github.com/sowon-dev
+    social_links:
+      Github: https://github.com/sowon-dev
+  - type: toc            # 1. 기존 Catalogue(목차) 복원!
+    position: left
+  - type: categories     # 4대 대분류만 간결하게 표시
+    position: left
+  - type: recent_posts   # 최신 글 위젯
+    position: left
+  - type: tags           # 세부 기술 태그 클라우드
+    position: left
+

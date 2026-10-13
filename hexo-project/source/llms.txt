@@ -1,0 +1,13 @@
+# sowon-dev Tech Blog
+> 백엔드(Java, Spring), 프론트엔드, 데이터베이스 트러블슈팅 및 실무 의사결정과 성장을 기록하는 기술 블로그
+
+- Author: sowon-dev
+- Website: https://sowon-dev.github.io/
+- Categories:
+  - Backend
+  - Frontend
+  - Database
+  - Reflections
+- Feeds & Sitemap:
+  - Sitemap: https://sowon-dev.github.io/sitemap.xml
+  - RSS: https://sowon-dev.github.io/rss2.xml
