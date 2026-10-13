@@ -1,0 +1,56 @@
+name: Deploy Hexo Blog to GitHub Pages
+
+on:
+  push:
+    branches:
+      - source
+    paths:
+      - 'hexo-project/**'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          submodules: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: 'hexo-project/package-lock.json'
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Dependencies
+        working-directory: hexo-project
+        run: npm ci
+
+      - name: Security Check
+        working-directory: hexo-project
+        run: python check_security.py
+
+      - name: Generate Static Files
+        working-directory: hexo-project
+        run: node generate_all.js
+
+      - name: Deploy to main branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: main
+          publish_dir: ./hexo-project/public
+          commit_message: "Site updated via GitHub Actions [skip ci]"
