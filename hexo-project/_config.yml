@@ -9,6 +9,7 @@ keywords: "Java, Spring, Frontend, Database, Hexo"
 author: "sowon-dev"
 language: ko
 timezone: Asia/Seoul
+favicon: /img/star.svg
 
 # URL
 ## Permalinks: 기존 블로그 URL과 100% 일치시켜 포트폴리오 링크 보존

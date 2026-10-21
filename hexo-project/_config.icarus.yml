@@ -2,6 +2,10 @@
 version: 6.1.1
 logo: /img/hope.svg
 
+# Page metadata
+head:
+  favicon: /img/star.svg
+
 # Navigation bar
 
 navbar:
